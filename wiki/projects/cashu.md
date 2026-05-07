@@ -20,7 +20,11 @@ A privacy-preserving digital cash protocol built on Bitcoin. Cashu enables insta
 - Organization lead: [[people/callebtc]].
 
 ## Communication
-- (channels unknown — Slack/Discord/Matrix/Nostr to be discovered)
+- [[communication/cashu-daily-report-dm]] — daily 24h activity digest delivered to [[people/callebtc]] via Telegram.
+- Other channels (Matrix / Telegram / Nostr / Discord) still to be discovered.
+
+## Ingestion signals
+- [[tools/cashu-daily-report]] — daily GitHub activity scrape over `Numo`, `cashu-ts`, `cdk`, `coco`, `cashu.me`, `nuts`, `nutshell`, `BTCNutServer`.
 
 ## Related systems
 - (to be filled as system-level dependencies are observed)
