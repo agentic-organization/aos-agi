@@ -1,0 +1,36 @@
+# mdk
+
+**Status:** active · **Team:** [[teams/marmot-protocol]] · **Hub:** [[teams/foundry]] (via [[projects/white-noise]] lineage) · **Organization:** [[teams/and-other-stuff]]
+
+## Summary
+Marmot Development Kit
+
+## Repository
+- GitHub: [marmot-protocol/mdk](https://github.com/marmot-protocol/mdk)
+- Primary language: **Rust** · stars: 55 · default branch: `master`
+
+
+## Top contributors
+- [[people/erskingardner]] — 94 contributions
+- [[people/dannym-arx]] — 44 contributions
+- [[people/mubarakcoded]] — 23 contributions
+- [[people/jgmontoya]] — 20 contributions
+- `jskitty` — 2 contributions *(occasional; no page)*
+- [[people/kuba-04]] — 1 contributions
+- `mehmetefeumit` — 1 contributions *(occasional; no page)*
+- `sjmcnamara` — 1 contributions *(occasional; no page)*
+
+## Organizational relevance
+Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and its reference implementations (including [[projects/white-noise]]).
+
+## History
+- 2026-05-07: Page created from `data/raw/github/marmot-protocol-2026-05-07.json` (discovery run via [[tools/github-org-discover]]).
+
+## Language bindings
+- `mdk-swift`, `mdk-python`, `mdk-ruby`, `mdk-kotlin`, `mdk-web` — language-specific bindings, primarily driven by [[people/dannym-arx]].
+- `mdk-python-example`, `mdk-kotlin-example`, `mdk-ruby-example` — usage examples.
+
+## Open questions
+- Who is the designated maintainer beyond the top contributors?
+- Communication channels?
+- Is this project part of the public [[projects/white-noise]] umbrella, or tracked separately?

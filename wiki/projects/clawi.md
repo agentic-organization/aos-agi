@@ -60,6 +60,6 @@ Clawi is AOS's managed deployment product for personal AI agents — the commerc
 - Repo URL listed on andotherstuff.org (`github.com/callebtc/openclaw`) flagged as incorrect; Clawi source is private.
 
 ## Open questions
-- Who are the core Clawi maintainers (beyond the link to [[people/calle]])?
+- Who are the core Clawi maintainers (beyond [[people/callebtc]])?
 - How do community contributions to [[projects/openclaw]] and [[projects/hermes]] flow back into the Clawi hosted product?
 - Does Clawi have an organizational Nostr presence?

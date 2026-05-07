@@ -25,6 +25,25 @@ One page per person. Pages evolve as identity resolution, skills, and affiliatio
 - [[people/misovan]] *(status to confirm)*
 - [[people/gohumble]] *(status to confirm)*
 
+### [[teams/marmot-protocol]]
+- [[people/erskingardner]] — lead maintainer (Marmot, White Noise)
+- [[people/hzrd149]]
+- [[people/jgmontoya]]
+- [[people/gzuuus]]
+- [[people/dannym-arx]] — MDK language bindings
+- [[people/pepina-dev]]
+- [[people/mubarakcoded]]
+- [[people/untreu2]]
+- [[people/delcin-raj]]
+- [[people/dennisreimann]]
+- [[people/datawav]]
+- [[people/justinmoon]]
+- [[people/staab]]
+- [[people/alltheseas]]
+- [[people/agent-r3n]]
+- [[people/kuba-04]]
+- [[people/cypherpinkdev]] *(public member, activity to confirm)*
+
 ## Notes
 - All pages describe **role, scope, and responsibilities** — not performance, rating, or tier.
-- Pages for non-Cashu project teams will be added as those are ingested.
+- Cross-team contributors (e.g. nostr ecosystem overlap between `cashubtc` and `marmot-protocol`) may appear under multiple teams; the person page is a single canonical record.
