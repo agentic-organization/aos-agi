@@ -46,9 +46,15 @@ This team is **inferred from GitHub organization membership and observed contrib
 - `cashubtc/nuts` — NUT specifications.
 - `cashubtc/numo` — point-of-sale.
 - `cashubtc/cashu.me` — web wallet.
+- `cashubtc/coco` — TypeScript framework ([[people/egge21m]]).
+- `cashubtc/nutshell` — Python Cashu reference implementation.
+- `cashubtc/BTCNutServer` — Bitcoin/Nut server component.
 - `cashubtc/awesome-cashu` — ecosystem index.
 - `cashubtc/cashu-go` / `elnosh/gonuts` — Go implementation(s).
 - External: `minibits-cash/minibits_wallet`, `zeugmaster/macadamia`, `zeugmaster/cashu-swift`.
+
+## Observational surface
+- [[tools/cashu-daily-report]] — daily ingestion script covering the 8 watched core repos: `Numo`, `cashu-ts`, `cdk`, `coco`, `cashu.me`, `nuts`, `nutshell`, `BTCNutServer`. Output is routed via [[communication/cashu-daily-report-dm]] to [[people/callebtc]].
 
 ## Platform coverage observed
 - **Rust** — `cashubtc/cdk` via [[people/thesimplekid]], [[people/crodas]], [[people/davidcaseria]].

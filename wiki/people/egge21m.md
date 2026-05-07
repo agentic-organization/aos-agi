@@ -19,6 +19,7 @@ TypeScript ecosystem of Cashu. Led the cashu-ts v3 migration; architected the co
 
 ## Repositories
 - `cashubtc/cashu-ts`
+- `cashubtc/coco`
 
 ## Skills
 - [[skills/typescript]]

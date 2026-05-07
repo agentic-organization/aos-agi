@@ -29,6 +29,7 @@ Overall direction of the cashubtc GitHub organization and Cashu protocol design.
 
 ## Accounts
 - GitHub: [callebtc](https://github.com/callebtc)
+- Telegram: reachable (DM target used for [[communication/cashu-daily-report-dm]]; chat ID kept outside this repo).
 
 ## History
 - 2026-05-07: Page created from an internal Q4-2025 cashubtc organization analysis (scope and responsibilities only; no performance details ingested).
