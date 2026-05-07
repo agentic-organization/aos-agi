@@ -40,6 +40,6 @@ All pages should:
 ## See also
 
 - [AGENTS.md](../AGENTS.md) — overall system plan
-- [LLM_WIKI.md](../LLM_WIKI.md) — the Karpathy LLM Wiki pattern this layout is built on
+- [docs/LLM_WIKI.md](../docs/LLM_WIKI.md) — the Karpathy LLM Wiki pattern this layout is built on
 - [graph/entities.json](../graph/entities.json) — underlying entity graph
 - [graph/relationships.json](../graph/relationships.json) — underlying relationship graph
