@@ -15,7 +15,9 @@ A privacy-preserving digital cash protocol built on Bitcoin. Cashu enables insta
 [[concepts/bitcoin]] · [[concepts/payments]] · [[concepts/privacy]]
 
 ## Owners & contributors
-- (not yet mapped — pending ingestion of commit history, CODEOWNERS, and maintainer lists)
+- Primary engineering team: [[teams/cashu-core]].
+- See [[people/index]] for individual contributor pages.
+- Organization lead: [[people/callebtc]].
 
 ## Communication
 - (channels unknown — Slack/Discord/Matrix/Nostr to be discovered)
