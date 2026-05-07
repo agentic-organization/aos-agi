@@ -1,0 +1,494 @@
+[
+  {
+    "sha": "9c590f456054ff1fab7377c0d4b4bb4c8bf48b85",
+    "node_id": "C_kwDOL5Eek9oAKDljNTkwZjQ1NjA1NGZmMWZhYjczNzdjMGQ0YjRiYjRjOGJmNDhiODU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:59:00Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:59:00Z"
+      },
+      "message": "Render kind 8333 like a zap in embeds and the detail page\n\nThe on-chain zap kind used to fall through the \"unknown kind\" path in\nevery surface except InteractionsModal: a bare NIP-31 alt-tag tombstone\non PostDetailPage, a generic embedded preview for nostr: quote URIs,\nand a plain \"This event kind is not supported\" string inside the reply\ncomposer's parent preview. Visually it was nothing like a zap.\n\nRoute kind 8333 through dedicated cards that mirror the 9735 Lightning\ntreatment pixel-for-pixel: amber bolt bubble, sender avatar, \"zapped\"\nverb, amber sats amount, italic comment. Per NIP.md we verify the\nclaimed amount against mempool.space before displaying it, so the new\n`useVerifiedOnchainZap` hook short-circuits to the single-event path of\n`verifyOnchainZap`. Until verification resolves (or if it fails) the\ncard shows a muted \"verifying…\" / \"unverified\" hint next to the amount\nso we don't silently lie.\n\nCovers three surfaces in one pass:\n  - Detail page (nevent URL): new isOnchainZap branch in PostDetailPage\n  - Embedded quotes: new EmbeddedOnchainZapCard in EmbeddedNote\n  - Reply composer parent preview: uses EmbeddedPost -> EmbeddedNote,\n    so it inherits the fix for free.",
+      "tree": {
+        "sha": "776af479a380a26a89db680530fc9ae7c72bb064",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/776af479a380a26a89db680530fc9ae7c72bb064"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/9c590f456054ff1fab7377c0d4b4bb4c8bf48b85",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn9GTQACgkQchHR+ZdE\n+7cpmA/6A4Eek/9CbgyPNQJbEG1jk+a9QPdXB/a0eeRMIiNXJYHghP6/yaU2L8Xs\nrc1DTGbN7LHjPZ6EjIm0tYQwZJjntTt1y71D36ahUv2XXd1nQaBP7EvTuWcWgOLv\nKdd4nvmku7WNUnnypBBaAhNoPll9LyOAxGItlJgZI2kUR7hmlCJX2Ad7sPBniCO3\n1lQ9zyRllVWwwmccDiCH30gPnU+UWyBfExygxWQe78Wbdn6a46Ri74thTN3PdxVm\nkmabJ0q39q1Czw29DRL9Q21SYQfb3Ho8Y1HbWZWcpgiZEBF0tvRQubYWe8iI+4Qn\nIIc5wctc3u0WG+HBy+wPRJiEME+/wJl9I8DwejH+82og8pp76aJ4AFibz9HD0/on\n+70AQxYqK/cYRPtH9yLcvWoCY3IbNHwfpFSLxyFpF3S7d2YaVRmQ1ofPje9RFhAI\nmdkO0Oh5fCBhZSBqTh0KrBWQvY0SvK4vvv1MW9t+iQtfIibtAlcmEB5g1iGEGWEN\n+KcgJyUrW8KTNVGpBt3kr38sJ6RrEaozB8uc6oe8lBKw9ZzXxXNi3bmctY5+/xTY\nC2cadAzn5GUN27129OR5f91VaC4uURHXt0VIaeQrbkWIFUf/FGKZSukuT2QtJIm8\nWoccPY8Kzmw/iw7bI4dr9DVti6pFOO1/fz6Pe0KaELnlAmbRzCw=\n=qXHj\n-----END PGP SIGNATURE-----",
+        "payload": "tree 776af479a380a26a89db680530fc9ae7c72bb064\nparent 589a5f159eed15f98c9aa4d644ad8a44114aae45\nauthor Alex Gleason <alex@alexgleason.me> 1778194740 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778194740 -0700\n\nRender kind 8333 like a zap in embeds and the detail page\n\nThe on-chain zap kind used to fall through the \"unknown kind\" path in\nevery surface except InteractionsModal: a bare NIP-31 alt-tag tombstone\non PostDetailPage, a generic embedded preview for nostr: quote URIs,\nand a plain \"This event kind is not supported\" string inside the reply\ncomposer's parent preview. Visually it was nothing like a zap.\n\nRoute kind 8333 through dedicated cards that mirror the 9735 Lightning\ntreatment pixel-for-pixel: amber bolt bubble, sender avatar, \"zapped\"\nverb, amber sats amount, italic comment. Per NIP.md we verify the\nclaimed amount against mempool.space before displaying it, so the new\n`useVerifiedOnchainZap` hook short-circuits to the single-event path of\n`verifyOnchainZap`. Until verification resolves (or if it fails) the\ncard shows a muted \"verifying…\" / \"unverified\" hint next to the amount\nso we don't silently lie.\n\nCovers three surfaces in one pass:\n  - Detail page (nevent URL): new isOnchainZap branch in PostDetailPage\n  - Embedded quotes: new EmbeddedOnchainZapCard in EmbeddedNote\n  - Reply composer parent preview: uses EmbeddedPost -> EmbeddedNote,\n    so it inherits the fix for free.\n",
+        "verified_at": "2026-05-07T22:59:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/9c590f456054ff1fab7377c0d4b4bb4c8bf48b85",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/9c590f456054ff1fab7377c0d4b4bb4c8bf48b85",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/9c590f456054ff1fab7377c0d4b4bb4c8bf48b85/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "589a5f159eed15f98c9aa4d644ad8a44114aae45",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/589a5f159eed15f98c9aa4d644ad8a44114aae45",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/589a5f159eed15f98c9aa4d644ad8a44114aae45"
+      }
+    ]
+  },
+  {
+    "sha": "589a5f159eed15f98c9aa4d644ad8a44114aae45",
+    "node_id": "C_kwDOL5Eek9oAKDU4OWE1ZjE1OWVlZDE1Zjk4YzlhYTRkNjQ0YWQ4YTQ0MTE0YWFlNDU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:23:50Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:23:50Z"
+      },
+      "message": "Show kind 8333 zaps in the interactions modal Zaps tab\n\nThe Zaps tab only rendered NIP-57 receipts (kind 9735), so a post that\nhad been zapped only on-chain appeared to have no zappers at all. Merge\nthe two rails into a single unified view-model and render them with\nidentical rows — same avatar, same name line, same amber amount badge,\nsame chevron link. The dedup and on-chain verification are already\nhandled by useOnchainZaps upstream; this change is just plumbing.\n\nThe modal now takes the full target event instead of a bare eventId so\nthe on-chain query can compute the `a` coordinate for addressable kinds.\nUpdated all call sites (PostDetailPage, PodcastDetailContent,\nMusicDetailContent) accordingly.",
+      "tree": {
+        "sha": "9fe8c0868e3b6c7fb4178a73a8d74103aa071f7f",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/9fe8c0868e3b6c7fb4178a73a8d74103aa071f7f"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/589a5f159eed15f98c9aa4d644ad8a44114aae45",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn9EPYACgkQchHR+ZdE\n+7cZYhAAoyk9uIP3AMWLzmTfH9YYSkFnPK6E+qrJkxfZLCAYAflPB9bw79QQ1uvn\nGdxJ1Ixv7/Yd4Ees4NaTBZfZLL3K2/WxtIPtX9y+eHXfU3PaQsIEE8HEvSY28owv\nitnHFrevXwUSZq8lz7heM25WfpDY+nV+zPDwTW7W3iGAsuHUjTJXoGjtXoX7aRUL\nDHqVc/Zqk0N238SJC9KriT+Qsgp9S2b3tQ+RMhgnZ5LyObueWp7Ohsc52VzIU3xv\n1PIKg8quPCeJxhEofWk0Bp2D+Sdrq25AeQJ0T36EbrcOvEJNgVz1Y6iyjIeL206j\nqrmr0qDpnqFW2DYdPTDl0rJ6zBWIilGzHtr2V7VGBuzpbUn0WeqDabSYt+TnJr/i\nVaKAekZpGZviSZiECIpoAnbxIX406CHhtgRN/oHG6Fu+hbXTr/Qa8B2EnLMvJxkB\nmCXojDIp27mBhQGRKu3/F8DkAlQVEIAYhvQwYhAnD6LaoXzJvXft9UWd8NZyJLGs\ng+cbr5zy6VaEpSRwy51fgZ5nrFGlZARD7xgW5zsx4VU0lxwKJ1k13ylz/eDkeWx2\nJ9XnGUfEbZZgJpPXlw+DyJnhTr5UX9xx8rzZLCydCT2T49vFfAKJ50k5o404qnpJ\np3hkDrikDS+za7imree671NK6I7vAj4/JSEgPla3gLKLWeA9xKM=\n=8Ueb\n-----END PGP SIGNATURE-----",
+        "payload": "tree 9fe8c0868e3b6c7fb4178a73a8d74103aa071f7f\nparent ae11c91674bbe7c21a09ec0ec1594908b2438cf9\nauthor Alex Gleason <alex@alexgleason.me> 1778192630 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778192630 -0700\n\nShow kind 8333 zaps in the interactions modal Zaps tab\n\nThe Zaps tab only rendered NIP-57 receipts (kind 9735), so a post that\nhad been zapped only on-chain appeared to have no zappers at all. Merge\nthe two rails into a single unified view-model and render them with\nidentical rows — same avatar, same name line, same amber amount badge,\nsame chevron link. The dedup and on-chain verification are already\nhandled by useOnchainZaps upstream; this change is just plumbing.\n\nThe modal now takes the full target event instead of a bare eventId so\nthe on-chain query can compute the `a` coordinate for addressable kinds.\nUpdated all call sites (PostDetailPage, PodcastDetailContent,\nMusicDetailContent) accordingly.\n",
+        "verified_at": "2026-05-07T22:59:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/589a5f159eed15f98c9aa4d644ad8a44114aae45",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/589a5f159eed15f98c9aa4d644ad8a44114aae45",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/589a5f159eed15f98c9aa4d644ad8a44114aae45/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ae11c91674bbe7c21a09ec0ec1594908b2438cf9",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ae11c91674bbe7c21a09ec0ec1594908b2438cf9",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/ae11c91674bbe7c21a09ec0ec1594908b2438cf9"
+      }
+    ]
+  },
+  {
+    "sha": "ae11c91674bbe7c21a09ec0ec1594908b2438cf9",
+    "node_id": "C_kwDOL5Eek9oAKGFlMTFjOTE2NzRiYmU3YzIxYTA5ZWMwZWMxNTk0OTA4YjI0MzhjZjk",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:09:32Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:09:32Z"
+      },
+      "message": "Fill the action-bar zap button after a successful zap\n\nPreviously the bolt icon next to reply/repost/react was stateless: an\noutlined zap icon whether you'd zapped the post or not. This matched\nneither the repost button (flips to the accent color when reposted) nor\nthe reaction button (fills when you've reacted), and the gap was most\nnoticeable with on-chain zaps where users expected the same visual\nconfirmation they get for Lightning.\n\nAdd a useUserZap hook that consults both rails in one REQ: kind 8333\nfiltered by authors+#e (our on-chain zap, self-authored), and kind 9735\nfiltered by #e with a client-side extractZapSender match (NIP-57\nreceipts are authored by the LNURL server, not the zapper). The send\nhooks (useOnchainZap, useZaps) optimistically set the cache to true on\nsuccess so the icon fills immediately, without waiting for the relay to\necho the event back.\n\nWired into every action-bar renderer that carries the zap button:\nNoteCard, PostActionBar, PhotoBottomBar, VinesFeedPage, BookFeedItem.",
+      "tree": {
+        "sha": "e96adaa666b04041394b714592f053e41461dad4",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/e96adaa666b04041394b714592f053e41461dad4"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/ae11c91674bbe7c21a09ec0ec1594908b2438cf9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn9DZwACgkQchHR+ZdE\n+7femw//WzjMes6mslaRzvcANWuOdiFjoN639fDHe0Cq8YEAXHYHutvO8L2Lh7t1\npfso+or4Uul9Lj4v9inMVdLSgRQEjCM3HQfPyWTo13owHdef8P99kvRZJeXbzEz8\nrDp9OPHAUdrBDpL56To1SOO/xLIfi+L3zFejZNKZDdHD1PV1G4VwpW9YMPx6GzRv\n1sp2sAolB165YE2SFtJSXPU/4Y1cm+Enmlr7N++sZVfBzebolOchn+rwjhac9LUV\nopgoQOyEy8kEJ4+IHPzF/9NCR/mxer5Ia6dEdoW2a+2peAuopAsPLG7zcNl8naac\nl3mOpY3EQYtgg+XIyR7Afi45RbV36gItGcZ5p8h1hfCswSqyW5jdx9RNOE5kEKdl\nDgn25Enqml9LXrbLGvqxap7wgVYaQrcUw6mFliYMUKX2eJyx2ZadJkbyKbejjEeq\n+SIpAOdr/NuKvmEU6byI0/XAcOti4P7ZH8RseGcrYPnIPCZTgr+1h5ZZWsUOvfdj\nmWdf/lhtzKSPV3kBiG8ICRw6U9YfPcaTY2DzKHaTlQUrgEiDSCubaRLVnCPsccS+\nrWoRfbit6orHk17b4JyaDwQCc9qkO3G8pd/uYAl1ELY+xGRA54KmBgdCvU5RS/Th\nHcpNVikT5JRDjfBwq0CdhsHX1YwDiX+X2VcUtvwbNG/OowDsw/8=\n=ykYt\n-----END PGP SIGNATURE-----",
+        "payload": "tree e96adaa666b04041394b714592f053e41461dad4\nparent 72989349e8531a6c1380c3b2ac4e7d99f708cd5e\nauthor Alex Gleason <alex@alexgleason.me> 1778191772 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778191772 -0700\n\nFill the action-bar zap button after a successful zap\n\nPreviously the bolt icon next to reply/repost/react was stateless: an\noutlined zap icon whether you'd zapped the post or not. This matched\nneither the repost button (flips to the accent color when reposted) nor\nthe reaction button (fills when you've reacted), and the gap was most\nnoticeable with on-chain zaps where users expected the same visual\nconfirmation they get for Lightning.\n\nAdd a useUserZap hook that consults both rails in one REQ: kind 8333\nfiltered by authors+#e (our on-chain zap, self-authored), and kind 9735\nfiltered by #e with a client-side extractZapSender match (NIP-57\nreceipts are authored by the LNURL server, not the zapper). The send\nhooks (useOnchainZap, useZaps) optimistically set the cache to true on\nsuccess so the icon fills immediately, without waiting for the relay to\necho the event back.\n\nWired into every action-bar renderer that carries the zap button:\nNoteCard, PostActionBar, PhotoBottomBar, VinesFeedPage, BookFeedItem.\n",
+        "verified_at": "2026-05-07T22:59:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ae11c91674bbe7c21a09ec0ec1594908b2438cf9",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/ae11c91674bbe7c21a09ec0ec1594908b2438cf9",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ae11c91674bbe7c21a09ec0ec1594908b2438cf9/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "72989349e8531a6c1380c3b2ac4e7d99f708cd5e",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/72989349e8531a6c1380c3b2ac4e7d99f708cd5e",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/72989349e8531a6c1380c3b2ac4e7d99f708cd5e"
+      }
+    ]
+  },
+  {
+    "sha": "72989349e8531a6c1380c3b2ac4e7d99f708cd5e",
+    "node_id": "C_kwDOL5Eek9oAKDcyOTg5MzQ5ZTg1MzFhNmMxMzgwYzNiMmFjNGU3ZDk5ZjcwOGNkNWU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:09:23Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:09:23Z"
+      },
+      "message": "Document on-chain zaps (kind 8333) in WALLET.md\n\nThe wallet doc covered sending Bitcoin and NIP-73 tx/address pages but\nnever mentioned that the zap-dialog flow also publishes a kind 8333\nattestation pairing the tx with the zapped Nostr event. Add a short\nsection describing the tags and cross-link the full spec in NIP.md.",
+      "tree": {
+        "sha": "274fa933fb0f5897ae16b598c658311d8a59ccb4",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/274fa933fb0f5897ae16b598c658311d8a59ccb4"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/72989349e8531a6c1380c3b2ac4e7d99f708cd5e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn9DZMACgkQchHR+ZdE\n+7eJ4hAAyZT8U+CRdtgAdkj0g1nbBBLLrYTMXU0xEi3FGjuMxLjAwyhJ/98j2f+O\nrUsDrmPnXUtWXKBnGfrnxGjqjOL+ovi6yveEBAUIvQN1/8o1VRW9bKJzGTUm9+Vz\nAl0VB9JpY9zXkciMSeHWch3bc+zrMxZWVJEqkiwie9HousexIM2UxcSJqF+BsuhN\nq2s5pdVrBGVa7aQYk0QIG7EhEonUHY8ZJHDc8oLEzGDqQl+5i7+709z7Rh/et7o3\nMcERlsZpJ515VcVRa++Kq2ZAz5/h+pSVDhBuj40AASAb6L5tfJ7UCd6yjxfSsAfl\n4LPHVqI0V7c0HbMnCBh9P/I30nIwAbGy7SP0DO/cvwYoulxbyzbqa+8ndD60skoh\ndSMV7VzB9cN7x0zBFh/gOHMzuhd1+j8TzZfJOMpmuvKF/x6CvJtKsYzl/c0kIpZq\ndZfHXPfkzswrvT2xy7tVGqe4dD1o5t5lCWERzst6Ge93g1/HSZ5RJWtrIsUi5KXd\nG9DUvrMP6lyPpYmr03mhqfcnjhcAybpJC/cdGeqRc7M+FuWOaWJwutoN2bWcUXl7\nI4Dm2vDRnhTpSyBPOe3kKxyYshjv/LK4SU2t4SXSVQTOXTSTgiSykx+4nMWIt01J\np3okY/kcES9o6Ob2hq+e8RweKeqOfvW5WFZmvlMBuyqz+W+0xRc=\n=aFri\n-----END PGP SIGNATURE-----",
+        "payload": "tree 274fa933fb0f5897ae16b598c658311d8a59ccb4\nparent 1283b56be98e95f0e3c34dcb66464ac6fe698eac\nauthor Alex Gleason <alex@alexgleason.me> 1778191763 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778191763 -0700\n\nDocument on-chain zaps (kind 8333) in WALLET.md\n\nThe wallet doc covered sending Bitcoin and NIP-73 tx/address pages but\nnever mentioned that the zap-dialog flow also publishes a kind 8333\nattestation pairing the tx with the zapped Nostr event. Add a short\nsection describing the tags and cross-link the full spec in NIP.md.\n",
+        "verified_at": "2026-05-07T22:59:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/72989349e8531a6c1380c3b2ac4e7d99f708cd5e",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/72989349e8531a6c1380c3b2ac4e7d99f708cd5e",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/72989349e8531a6c1380c3b2ac4e7d99f708cd5e/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1283b56be98e95f0e3c34dcb66464ac6fe698eac",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/1283b56be98e95f0e3c34dcb66464ac6fe698eac",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/1283b56be98e95f0e3c34dcb66464ac6fe698eac"
+      }
+    ]
+  },
+  {
+    "sha": "1283b56be98e95f0e3c34dcb66464ac6fe698eac",
+    "node_id": "C_kwDOL5Eek9oAKDEyODNiNTZiZTk4ZTk1ZjBlM2MzNGRjYjY2NDY0YWM2ZmU2OThlYWM",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:00:01Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T22:00:01Z"
+      },
+      "message": "Simplify zap success screen\n\nRemove the auto-close progress bar, the \"Sent via Bitcoin/Lightning\" rail\nindicator, and the sats subtext under the USD amount. The screen now\ndismisses only via the Done button, so the rail-specific plumbing\n(autoCloseMs, kind) is gone from the component API as well.\n\nRegression-of: 5c2c3513",
+      "tree": {
+        "sha": "0de1a0a2fcd89d3e0c651800f53b2bd8065755ff",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/0de1a0a2fcd89d3e0c651800f53b2bd8065755ff"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/1283b56be98e95f0e3c34dcb66464ac6fe698eac",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn9C2EACgkQchHR+ZdE\n+7erOQ//ZhPEGYJsHbpeEFhQanzaRN8B6pvGaXved+uaDMKpW476WoGYKxrKPSHW\nUbqF8Qn2xYmC1T0DVWPT/rO4a9O9U309C1C0j0Tx1y0woSrxJ28dhprdNyWJN8od\nOAb18Qk5v9gL4iMgjUkzW6+jNbTecoGDA5XNZ5x7iU1VZKAkPPtVghaHR5deVM4N\n/d9vEgKleXzIxhbunUEbTOaa9ukCde9SGa/bhMEvXEFOjumA1i8ICfiSP+m1weaI\nnLsq8itZqWH9QJRQgsttSHHTltlLmdAcS9XvKdT5JzzCcRAYX4tPXrE/Vc/UyWCQ\ncb5JKQ/5CTzBWkdPWrya6zFghfeLuYziL7vFjtt0wAL2J2EA+/2QJcIOdsgUzxFF\ny88/uiKWUz+BjY9PW4/uJadJWseuzEid3Ko9aTte6K9LGWphwGo1XNCeKgMyH8l2\ny5RQcDVjbgQF5oj+AA55d2pJDCpu+Bhp1GZxCk7XpgpzFwY6F5K6k2cG0BO9U1cO\nrBnR3wYWNmsvmBhBb8ewN/HHa1jZqeoCdWWGU01Rrwjq+K1c3H8OW8KKbzvf2e/2\nrY9XIn2wxyGNs2IMzcGgRSivqDj393oR+rZsjL04r0pH1Vnn3xDdfIzdPJqS4zL9\nGV6lKBvIeFac1XhQ+J/xzERh4rnP7VF20L4CG15qx50svYwBQDo=\n=uqJC\n-----END PGP SIGNATURE-----",
+        "payload": "tree 0de1a0a2fcd89d3e0c651800f53b2bd8065755ff\nparent 5c2c35130f989208a01126a69cf44dc30b0c5bae\nauthor Alex Gleason <alex@alexgleason.me> 1778191201 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778191201 -0700\n\nSimplify zap success screen\n\nRemove the auto-close progress bar, the \"Sent via Bitcoin/Lightning\" rail\nindicator, and the sats subtext under the USD amount. The screen now\ndismisses only via the Done button, so the rail-specific plumbing\n(autoCloseMs, kind) is gone from the component API as well.\n\nRegression-of: 5c2c3513\n",
+        "verified_at": "2026-05-07T22:59:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/1283b56be98e95f0e3c34dcb66464ac6fe698eac",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/1283b56be98e95f0e3c34dcb66464ac6fe698eac",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/1283b56be98e95f0e3c34dcb66464ac6fe698eac/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5c2c35130f989208a01126a69cf44dc30b0c5bae",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/5c2c35130f989208a01126a69cf44dc30b0c5bae",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/5c2c35130f989208a01126a69cf44dc30b0c5bae"
+      }
+    ]
+  },
+  {
+    "sha": "5c2c35130f989208a01126a69cf44dc30b0c5bae",
+    "node_id": "C_kwDOL5Eek9oAKDVjMmMzNTEzMGY5ODkyMDhhMDExMjZhNjljZjQ0ZGMzMGIwYzViYWU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T21:55:57Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-07T21:55:57Z"
+      },
+      "message": "Show a grand success screen after a successful zap\n\nPreviously, a successful send from the Zap dialog auto-closed and surfaced a\ntoast. That undersold what just happened — the user sent Bitcoin. Now both\nrails (on-chain + Lightning) flip the dialog over to a dedicated success\nscreen with an animated check, amount, recipient card, rail indicator, and\n(for on-chain) a \"View transaction\" link to mempool.space. The dialog\nauto-dismisses after six seconds if the user walks away.",
+      "tree": {
+        "sha": "f03317790aeb98120af1a415333a782cc5bd56b9",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/f03317790aeb98120af1a415333a782cc5bd56b9"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/5c2c35130f989208a01126a69cf44dc30b0c5bae",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn9Cm4ACgkQchHR+ZdE\n+7cDyQ//enPDvRYIr9kFm+pn6xzN96zKio8XI238m0KTCOet7Y9Kvh2T2r7jJIGn\nekHiqtNiMXp46394Kkq3F4ud2+I8ctSTgc/SSSeowS/2a+9Tnxt74Di2dQGNoecQ\n3YDUNPXA2yqLuXAkpTUdP6gXdNTUiHtBexE4wljNn3luF5ZcgX4Gvaz/Xt16+XUz\nWIvfdL55cxDx7bkeUkThrDIciCjjEs0FW15W/LWLED6IuPjyEI0TQc3gr19qo9b/\nAlq2JUuVwDXeh57wQESMkvy9vqqxcs8IGrifnJYZn1cQ9Tc/j1IDIshFAaPIW9XA\n8KbE0UfEr0v5HCbt1xq7ktK+wNhoK+BMglCF35BB0grIOlHkpiF0epSUE41++M5H\nmwcfIUE2xBoD5nGzrN8a8nEVHTkfjC5nRlUXDxSl2uOyD4QyqlNwElGyMfvMGrnK\nSX1XWbisXsdn/7cYop8h7qttwXIXU7xsylQtfTHotNN7gBSGEPj/p0nzeF8eEGaz\nIr6JG/LWVUjFWVwkJtAXhdXUGZLJeaWzjk29QY5dI2mCSr4nM+gvjk+5x5NWDWgj\ntgWIron6NXZpjOQMJMaxVBsA++8FgqHCWb7NZjuA+9A1muOxwuZb4WX2qyAaFcP/\nFeHBk90GD0fgptJe/cMWXcA+2of0x03O6xJ1rM3QLtkUa+iaHP0=\n=vc4n\n-----END PGP SIGNATURE-----",
+        "payload": "tree f03317790aeb98120af1a415333a782cc5bd56b9\nparent 4b9fe24b25f8c246214f1c0f0833d2238851f0a7\nauthor Alex Gleason <alex@alexgleason.me> 1778190957 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778190957 -0700\n\nShow a grand success screen after a successful zap\n\nPreviously, a successful send from the Zap dialog auto-closed and surfaced a\ntoast. That undersold what just happened — the user sent Bitcoin. Now both\nrails (on-chain + Lightning) flip the dialog over to a dedicated success\nscreen with an animated check, amount, recipient card, rail indicator, and\n(for on-chain) a \"View transaction\" link to mempool.space. The dialog\nauto-dismisses after six seconds if the user walks away.\n",
+        "verified_at": "2026-05-07T22:59:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/5c2c35130f989208a01126a69cf44dc30b0c5bae",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/5c2c35130f989208a01126a69cf44dc30b0c5bae",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/5c2c35130f989208a01126a69cf44dc30b0c5bae/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4b9fe24b25f8c246214f1c0f0833d2238851f0a7",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/4b9fe24b25f8c246214f1c0f0833d2238851f0a7",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/4b9fe24b25f8c246214f1c0f0833d2238851f0a7"
+      }
+    ]
+  }
+]

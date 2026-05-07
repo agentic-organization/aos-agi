@@ -115,7 +115,8 @@ The [[projects/cashu]] page is the protocol and ecosystem umbrella. Sub-projects
 
 ## Source
 - [andotherstuff.org](https://andotherstuff.org/#foundry-projects) Foundry project listing.
-- `data/raw/github/marmot-protocol-*.json` — discovery snapshots for the Marmot Protocol organization.
-- `data/raw/github/divinevideo-*.json` — discovery snapshots for the Divine (divinevideo) organization.
-- `data/raw/github/soapbox-pub-*.json` — discovery snapshots for the Soapbox (soapbox-pub) organization.
+- `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` — discovery snapshot for the Marmot Protocol organization.
+- `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` — discovery snapshot for the Divine (divinevideo) organization.
+- `data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json` — discovery snapshot for the Soapbox (soapbox-pub) organization.
+- `data/raw/github/daily/2026-05-07/` — first watchlist-wide raw GitHub ingestion run via [[tools/github-daily-ingest]].
 - `data/raw/cashu/` — snapshots of cashu.space, docs.cashu.space pages, and `cashubtc/awesome-cashu` README used to synthesize the Cashu ecosystem pages.

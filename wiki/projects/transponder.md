@@ -18,7 +18,7 @@ MIP-05 Marmot notifications server implementation in Rust
 Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and its reference implementations (including [[projects/white-noise]]).
 
 ## History
-- 2026-05-07: Page created from `data/raw/github/marmot-protocol-2026-05-07.json` (discovery run via [[tools/github-org-discover]]).
+- 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
 ## Open questions
 - Who is the designated maintainer beyond the top contributors?

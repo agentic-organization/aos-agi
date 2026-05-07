@@ -32,7 +32,7 @@ Effectively the public face of Soapbox: across the 9 surveyed `soapbox-pub` repo
 - GitHub: [alexgleason](https://github.com/alexgleason)
 
 ## History
-- 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/soapbox-pub-2026-05-07.json`).
+- 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 
 ## Open questions
 - Formal AOS affiliation (funded, contracted, independent contributor)?

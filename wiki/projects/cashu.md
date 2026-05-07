@@ -16,6 +16,10 @@ Between mints, value moves through the **Bitcoin Lightning Network**. Deposits a
 - GitHub organization: [github.com/cashubtc](https://github.com/cashubtc)
 - Twitter: [@cashubtc](https://twitter.com/cashubtc)
 
+## Repository
+- GitHub organization: [cashubtc](https://github.com/cashubtc)
+- External ecosystem repos watched by daily ingestion: `minibits-cash/minibits_wallet`, `zeugmaster/macadamia`, `zeugmaster/cashu-swift`, `elnosh/gonuts`.
+
 ## Protocol
 Cashu is specified through a family of small, numbered specifications called **NUTs** — "Notation, Usage, and Terminology" — published at [github.com/cashubtc/nuts](https://github.com/cashubtc/nuts). Implementations that follow the NUTs are interoperable with the rest of the ecosystem.
 
@@ -91,7 +95,8 @@ The canonical, continuously-updated index is [github.com/cashubtc/awesome-cashu]
 - Other coordination channels (Matrix, Telegram, Nostr, Discord) are not yet mapped.
 
 ## Ingestion signals
-- [[tools/cashu-daily-report]] — daily GitHub activity scrape over the 8 watched core repos: `Numo`, `cashu-ts`, `cdk`, `coco`, `cashu.me`, `nuts`, `nutshell`, `BTCNutServer`.
+- [[tools/cashu-daily-report]] — daily GitHub activity scrape over `Numo`, `cashu-ts`, `cdk`, `coco`, `cashu.me`, `nuts`, `nutshell`, `BTCNutServer`.
+- [[tools/github-daily-ingest]] — org-wide raw GitHub ingestion for `cashubtc` plus selected external Cashu ecosystem repos, using `data/sources/github-watchlist.json`.
 - `data/raw/cashu/` — snapshots of cashu.space, docs.cashu.space, and `awesome-cashu` used to synthesize this page and the ecosystem project pages.
 
 ## Organizational relevance
@@ -100,6 +105,7 @@ Cashu is one of the AOS **Foundry** projects and the organization's flagship pri
 ## History
 - 2026-05-07: Page expanded from a Foundry-listing stub into a protocol/ecosystem umbrella, using cashu.space, docs.cashu.space, and `cashubtc/awesome-cashu` README as sources (snapshots in `data/raw/cashu/`).
 - 2026-05-07: Original Foundry-listing stub created from andotherstuff.org.
+- 2026-05-07: Repository section and ingestion signals updated after `data/raw/github/daily/2026-05-07/` captured org-wide `cashubtc` activity through [[tools/github-daily-ingest]].
 
 ## Open questions
 - Adoption metrics — how many mints are live? How much value is custodied? (Mint-audit tools like `audit.8333.space` and `bitcoinmints.com` exist but are not yet ingested.)

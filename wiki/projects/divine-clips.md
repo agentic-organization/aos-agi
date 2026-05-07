@@ -20,7 +20,7 @@ DiVine Clips — clipping marketplace for distributing DiVine videos across soci
 Part of the [[teams/divine]] organization — Divine's short-form video social platform on Nostr.
 
 ## History
-- 2026-05-07: Page created from `data/raw/github/divinevideo-2026-05-07.json` (discovery run via [[tools/github-org-discover]]).
+- 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?

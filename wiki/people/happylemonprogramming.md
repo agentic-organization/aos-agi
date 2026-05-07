@@ -28,7 +28,7 @@ Cross-cuts Soapbox's two flagship Nostr apps (the social client and the AI build
 - GitHub: [happylemonprogramming](https://github.com/happylemonprogramming)
 
 ## History
-- 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/soapbox-pub-2026-05-07.json`).
+- 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 
 ## Open questions
 - Formal AOS affiliation (funded, contracted, independent contributor)?

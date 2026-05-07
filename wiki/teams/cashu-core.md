@@ -75,6 +75,7 @@ These are **not** stewarded by `cashubtc/` — they are independent teams/mainta
 
 ## Observational surface
 - [[tools/cashu-daily-report]] — daily ingestion script covering the 8 watched core repos: `Numo`, `cashu-ts`, `cdk`, `coco`, `cashu.me`, `nuts`, `nutshell`, `BTCNutServer`. Output is routed via [[communication/cashu-daily-report-dm]] to [[people/callebtc]].
+- [[tools/github-daily-ingest]] — daily raw GitHub ingestion now observes the full public `cashubtc` organization (36 non-archived, non-fork repos in the 2026-05-07 run) plus selected external Cashu ecosystem repos from `data/sources/github-watchlist.json`.
 
 ## Platform coverage observed
 - **Rust** — `cashubtc/cdk` via [[people/thesimplekid]], [[people/crodas]], [[people/davidcaseria]].
@@ -94,6 +95,7 @@ Noting this on the team page (not as a judgement) so identity/skill ingestion ca
 
 ## History
 - Page created from an internal Q4-2025 cashubtc organization analysis.
+- 2026-05-07: Observational surface expanded from the 8-repo report to org-wide raw GitHub ingestion (`data/raw/github/daily/2026-05-07/`).
 
 ## Open questions
 - Which members are funded by [[teams/and-other-stuff]] and which are independent or funded elsewhere?

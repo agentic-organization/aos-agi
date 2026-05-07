@@ -286,7 +286,9 @@ Raw evidence is stored under `data/raw/`, organized by source.
 
 Currently in use:
 
-- `data/raw/github/<org>-<YYYY-MM-DD>.json` — discovery snapshots produced by `tools/ingestion/github-org-discover.js`.
+- `data/raw/github/org-discovery/<YYYY-MM-DD>/<org>/snapshot.json` — org inventory snapshots produced by `tools/ingestion/github-daily-ingest.js`.
+- `data/raw/github/org-discovery/<YYYY-MM-DD>/<org>/github-org-discover.json` — legacy discovery snapshots produced by `tools/ingestion/github-org-discover.js`.
+- `data/raw/github/daily/<YYYY-MM-DD>/<owner>/<repo>/` — daily raw repository activity pulls produced by `tools/ingestion/github-daily-ingest.js`.
 
 Every wiki page synthesized from evidence should cite its source snapshot in its `## History` section so claims remain auditable.
 
@@ -300,7 +302,8 @@ Tools live under `tools/` and are small, focused, reusable scripts.
 
 ## 9.1 Current tools
 
-- `tools/ingestion/github-org-discover.js` — discover repositories, members, and recently-active contributors for a GitHub organization. Writes a single JSON document to stdout for saving under `data/raw/github/`.
+- `tools/ingestion/github-daily-ingest.js` — daily raw GitHub ingestion from `data/sources/github-watchlist.json`, using `gh api` and storing org/repo evidence under `data/raw/github/`.
+- `tools/ingestion/github-org-discover.js` — discover repositories, members, and recently-active contributors for a GitHub organization. Writes a single JSON document to stdout for saving under `data/raw/github/org-discovery/`.
 - `tools/ingestion/cashu-daily-report.js` — parameterized daily activity report for the `cashubtc` GitHub organization; delivers to Telegram.
 
 Each tool has a corresponding `wiki/tools/<tool>.md` page documenting what it does and how to use it.

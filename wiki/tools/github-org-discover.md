@@ -27,7 +27,7 @@ Maps a GitHub organization — repositories, members, and recently-active contri
 GITHUB_TOKEN=$(gh auth token) \
   node tools/ingestion/github-org-discover.js <org> \
   --contributors-top 10 --recent-days 180 \
-  > data/raw/github/<org>-<YYYY-MM-DD>.json
+  > data/raw/github/org-discovery/<YYYY-MM-DD>/<org>/github-org-discover.json
 ```
 
 Key flags:
@@ -47,7 +47,7 @@ Key flags:
 
 ## History
 - Introduced 2026-05-07 alongside the discovery of [[teams/marmot-protocol]].
-- First consumer: the marmot-protocol discovery run stored at `data/raw/github/marmot-protocol-2026-05-07.json`.
+- First consumer: the marmot-protocol discovery run stored at `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`.
 
 ## Open questions
 - Should contributor sampling paginate beyond the default 100 cap on `/contributors`?

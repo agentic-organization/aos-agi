@@ -1,0 +1,528 @@
+[
+  {
+    "id": "8981510509",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/.github/pulls/3",
+        "id": 3605266397,
+        "number": 3,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "058526e57b846e6a97ea0d6245619b95812840ba",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "20be6c7fbf98e38a6967b408701f48980dae0d23",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:27Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11274936248",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "repository_id": 1107165396,
+      "push_id": 33566334604,
+      "ref": "refs/heads/main",
+      "head": "a4de4067e37ff3a5a3892f48784b610aefd90bb6",
+      "before": "20be6c7fbf98e38a6967b408701f48980dae0d23"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:28Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981386087",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "review": {
+        "id": 4209264878,
+        "node_id": "PRR_kwDOQf4A1M765Eju",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. Contribution standards check complete. Approved.",
+        "commit_id": "058526e57b846e6a97ea0d6245619b95812840ba",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/.github/pull/3#pullrequestreview-4209264878",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/.github/pulls/3",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/.github/pull/3#pullrequestreview-4209264878"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/.github/pulls/3"
+          }
+        },
+        "submitted_at": "2026-05-01T00:11:51Z",
+        "updated_at": "2026-05-01T00:11:51Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/.github/pulls/3",
+        "id": 3605266397,
+        "number": 3,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "058526e57b846e6a97ea0d6245619b95812840ba",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "20be6c7fbf98e38a6967b408701f48980dae0d23",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:11:52Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8934509966",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/.github/pulls/3",
+        "id": 3605266397,
+        "number": 3,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "058526e57b846e6a97ea0d6245619b95812840ba",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "20be6c7fbf98e38a6967b408701f48980dae0d23",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-29T22:13:59Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11221852576",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "ref": "codex/repo-contribution-guardrails",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/repo-contribution-guardrails",
+      "master_branch": "main",
+      "description": "Divine",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-29T22:13:33Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10353451594",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "ref": "fix/debug-error-revert",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/debug-error-revert",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-08T22:48:44Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10353408345",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "ref": "fix/debug-error-revert",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/debug-error-revert",
+      "master_branch": "main",
+      "description": "Divine",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-08T22:46:57Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8219817372",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 1,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/.github/pulls/1",
+        "id": 3366140339,
+        "number": 1,
+        "head": {
+          "ref": "docs/update-org-readme",
+          "sha": "a511f3a3d37aead791266957a0a060d6802aae97",
+          "repo": {
+            "id": 1174901928,
+            "url": "https://api.github.com/repos/rabble-claw/.github",
+            "name": ".github"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "36b997b571aeb7d33d792ce37533d3a171b31e83",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-03-07T01:05:04Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8219817178",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/.github/issues/1",
+        "repository_url": "https://api.github.com/repos/divinevideo/.github",
+        "labels_url": "https://api.github.com/repos/divinevideo/.github/issues/1/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/.github/issues/1/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/.github/issues/1/events",
+        "html_url": "https://github.com/divinevideo/.github/pull/1",
+        "id": 4036862884,
+        "node_id": "PR_kwDOQf4A1M7Iozmz",
+        "number": 1,
+        "title": "docs: refresh Divine org profile README",
+        "user": {
+          "login": "rabble-claw",
+          "id": 263104957,
+          "node_id": "U_kgDOD66pvQ",
+          "avatar_url": "https://avatars.githubusercontent.com/u/263104957?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rabble-claw",
+          "html_url": "https://github.com/rabble-claw",
+          "followers_url": "https://api.github.com/users/rabble-claw/followers",
+          "following_url": "https://api.github.com/users/rabble-claw/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rabble-claw/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rabble-claw/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rabble-claw/subscriptions",
+          "organizations_url": "https://api.github.com/users/rabble-claw/orgs",
+          "repos_url": "https://api.github.com/users/rabble-claw/repos",
+          "events_url": "https://api.github.com/users/rabble-claw/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rabble-claw/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-03-07T01:04:48Z",
+        "updated_at": "2026-04-08T22:37:50Z",
+        "closed_at": "2026-04-08T22:37:50Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/divinevideo/.github/pulls/1",
+          "html_url": "https://github.com/divinevideo/.github/pull/1",
+          "diff_url": "https://github.com/divinevideo/.github/pull/1.diff",
+          "patch_url": "https://github.com/divinevideo/.github/pull/1.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\n\nUpdates the org profile README to reflect current Divine branding, architecture, and active repositories.\n\n## What changed\n\n- Replaced outdated diVine naming with Divine\n- Updated repo map to current core services and apps\n- Added explicit deprecation note:\n  - divine-cdn-worker is deprecated and replaced by divine-blossom\n- Removed stale/obsolete architecture wording and tightened contribution guidance\n\n## Why\n\nThe current org README was out of date and could mislead contributors (and LLM-assisted workflows) about active repos and architecture direction.\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/.github/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/.github/issues/1/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/.github/issues/comments/4210151829",
+        "html_url": "https://github.com/divinevideo/.github/pull/1#issuecomment-4210151829",
+        "issue_url": "https://api.github.com/repos/divinevideo/.github/issues/1",
+        "id": 4210151829,
+        "node_id": "IC_kwDOQf4A1M768dGV",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-08T22:37:49Z",
+        "updated_at": "2026-04-08T22:37:49Z",
+        "body": "Closing this PR — the updates it proposed have already been incorporated (and expanded on) in main.\n\n## What happened\n\nThis branch was opened on March 7 to refresh the org README: fix branding (diVine → Divine), update the repo map, and note the `divine-cdn-worker` deprecation. Since then, commit 7863ea9 on main landed a more comprehensive version of the same overhaul.\n\n## Why not merge\n\nMerging this PR would actually regress the README. The current main version includes:\n\n- **~30 repos** with tech stacks, deployment URLs, and descriptions (vs. ~15 in this PR with no stacks)\n- **Full architecture tables** organized by category (Frontend, Core Backend, Trust & Safety, Edge & Infra, Libraries & SDKs)\n- **Detailed \"How It Works\" sections** covering Nostr protocol, Blossom media storage, C2PA Content Credentials, and Keycast authentication (vs. a 4-bullet summary)\n- **Development setup instructions** for web, mobile, and Rust services\n- **Repos this PR drops entirely**: divine-space, divine-inquisitor, divine-relay-sync, funnel, divine-realness, social-media-age-rules-db, divine-name-sync, divine-identify-verification-service, divine-github-actions, keycast_flutter_demo, c2pa-flutter, c2pa-rs, media-kit, divine-resurrection, brand-guidelines\n\nThe PR also has merge conflicts with the current main branch, which would need to be resolved before merging regardless.\n\n## One thing worth keeping\n\nThe explicit deprecation note for `divine-cdn-worker` → `divine-blossom` is not currently called out on main. If that's still relevant, it could be added as a small follow-up.",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/.github/issues/comments/4210151829/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-08T22:37:49Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]

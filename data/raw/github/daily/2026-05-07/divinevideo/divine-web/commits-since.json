@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "786b321297460fd84084906ba49d34b2cd2ce293",
+    "node_id": "C_kwDOPrslvdoAKDc4NmIzMjEyOTc0NjBmZDg0MDg0OTA2YmE0OWQzNGIyY2QyY2UyOTM",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-07T08:59:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T08:59:09Z"
+      },
+      "message": "fix(video): show event description on video page, not title-as-content (#343)\n\nThe Funnelcake transform was mapping `raw.title` into `ParsedVideoData.content`\n(\"Funnelcake uses title field for content\"). VideoCard guards against\nduplicating the title by rendering content only when it differs from the\ntitle, so the actual Nostr `content` field — the user-authored description —\nnever made it to the page.\n\nMap `raw.content` through instead. The single-video endpoint\n(`/api/videos/{id}`) already populates `raw.content` from `event.content`\nin `fetchVideoById`. List endpoints that omit content fall through to an\nempty string, which the existing VideoCard guard already handles.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "61b602ce0ddb516f686fcf0fd1ccfbe7047d76d9",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/61b602ce0ddb516f686fcf0fd1ccfbe7047d76d9"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/786b321297460fd84084906ba49d34b2cd2ce293",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/FRdCRC1aQ7uu5UhlAAAGesQAHpauSGWwWU7ckEWOba5MzGe\npMo63AADZuobpNqxCSbPQ0Dbv/TEbcjRMsXzV6qeGe3KlQga5ORMb+F6NqvkO5Te\niY5JYdicHT9r/lo8UpWZEJHy68udZrEgXpOLwFM4ljTkaz6LTuNn9P7oKidOqPlc\nP4yFPAq4LGCS1T3kPQRUJYqC7FZW9gqwNnyMaDSTMJkD+PooAVXJg8r4SDDTsNB4\n8z0896fTuFJuFQ1RKDghigLiB3OKYdGaTTKmhaS6CSOtUEV4sOzUyYDIj2ZPWDvW\nWfzyha1PyGGtvfX03ihCDy0jDy1E64OEuCD0CBxyTsDvfwKdNaztIPYPcrxi3MwW\n8dn2PbVE1kgc56qfSrSpbU8AGQcyc3fMtefWu+jXGEtf95A6hlUX2bq+kaxSBMDr\nfOx6dM7nRNRBNfkOnoyf7YQ5i3nWKGDwd3DtLpabtptzE+xMUBFY9X96fG0V+CkV\nZckQe8nuRNdXejTG+f3T2CRGWgLYPrDrlYdFYS73hjOg0148a1BHyN+UwJz7jjj6\nZ1L9E/+qBZThzGvjh3crLxqWL7dWGE4ZICMi213jRvjTOIt8js7sZ5NpoNA7RjPk\npPRFAOEOc0ZwhfJfeNQzlj3ovLshFlj6cc27xE/HdVtA5fuirj1B1BMW1xU4jnQc\n7UZ3OX2ETRq6KhhKFF+r\n=vpdG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 61b602ce0ddb516f686fcf0fd1ccfbe7047d76d9\nparent a35a02f8dfff5bb3f268613e82ae19747f154b17\nauthor rabble <evan@protest.net> 1778144349 +1200\ncommitter GitHub <noreply@github.com> 1778144349 +1200\n\nfix(video): show event description on video page, not title-as-content (#343)\n\nThe Funnelcake transform was mapping `raw.title` into `ParsedVideoData.content`\n(\"Funnelcake uses title field for content\"). VideoCard guards against\nduplicating the title by rendering content only when it differs from the\ntitle, so the actual Nostr `content` field — the user-authored description —\nnever made it to the page.\n\nMap `raw.content` through instead. The single-video endpoint\n(`/api/videos/{id}`) already populates `raw.content` from `event.content`\nin `fetchVideoById`. List endpoints that omit content fall through to an\nempty string, which the existing VideoCard guard already handles.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-07T08:59:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/786b321297460fd84084906ba49d34b2cd2ce293",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/786b321297460fd84084906ba49d34b2cd2ce293",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/786b321297460fd84084906ba49d34b2cd2ce293/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a35a02f8dfff5bb3f268613e82ae19747f154b17",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/a35a02f8dfff5bb3f268613e82ae19747f154b17",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/a35a02f8dfff5bb3f268613e82ae19747f154b17"
+      }
+    ]
+  }
+]

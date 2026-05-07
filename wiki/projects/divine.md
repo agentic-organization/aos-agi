@@ -53,7 +53,7 @@ A Foundry-listed project on andotherstuff.org. Engineering lives in the `divinev
 
 ## History
 - 2026-05-07: Page created from andotherstuff.org Foundry project listing.
-- 2026-05-07: Page expanded after `divinevideo` GitHub org discovery (snapshot: `data/raw/github/divinevideo-2026-05-07.json`). Engineering link added, multi-repo structure documented, migration note about `rabble/nostrvine` added.
+- 2026-05-07: Page expanded after `divinevideo` GitHub org discovery (snapshot: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`). Engineering link added, multi-repo structure documented, migration note about `rabble/nostrvine` added.
 
 ## Open questions
 - Update the andotherstuff.org Foundry card to point at `divinevideo/divine-mobile` (or a Divine landing page) rather than the old `rabble/nostrvine`.

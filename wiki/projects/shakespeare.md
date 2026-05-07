@@ -38,7 +38,7 @@ An open-source AI app builder that runs entirely in the browser — a React PWA 
 A **Foundry** project owned by [[teams/soapbox]]. Strategically central because Shakespeare is the AOS-blessed surface for "build with AI on Nostr" — it functionally pairs with [[projects/clawi]] (agent runtime) and [[projects/ditto]] (social client) as Soapbox's contribution to the AOS Foundry triad.
 
 ## History
-- 2026-05-07: Page expanded from Foundry stub using `soapbox-pub` discovery snapshot (`data/raw/github/soapbox-pub-2026-05-07.json`).
+- 2026-05-07: Page expanded from Foundry stub using `soapbox-pub` discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 - 2026-05-07: Original Foundry-listing stub created from andotherstuff.org.
 
 ## Open questions

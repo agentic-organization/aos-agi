@@ -4,6 +4,28 @@ Source-specific data fetchers for the Organization Intelligence Agent. Each scri
 
 ## Scripts
 
+### `github-daily-ingest.js`
+
+Reads `data/sources/github-watchlist.json`, resolves watched GitHub orgs through the `gh` CLI, and stores raw per-repository API responses for later normalization and LLM wiki synthesis. No `GITHUB_TOKEN` is required; authentication is handled by the local `gh` session.
+
+```bash
+node tools/ingestion/github-daily-ingest.js --since-hours 24
+```
+
+Output:
+
+```text
+data/raw/github/org-discovery/<YYYY-MM-DD>/<org>/snapshot.json
+data/raw/github/daily/<YYYY-MM-DD>/<owner>/<repo>/*.json
+data/raw/github/daily/<YYYY-MM-DD>/run.json
+data/raw/github/daily/<YYYY-MM-DD>/commands.sh
+```
+
+Flags: `--watchlist <path>`, `--out <path>`, `--date <YYYY-MM-DD>`, `--since-hours N`, `--limit N`, `--only owner/repo`, `--dry-run`, `--force`.
+
+**Captured in the wiki:**
+- [[tools/github-daily-ingest]] — tool page.
+
 ### `github-org-discover.js`
 
 Maps a GitHub organization — repositories, members, recently-active contributors — into a single JSON document. Use as the first pass when bootstrapping a team in the wiki. Driven by the [`github-org-discovery`](../../.agents/skills/github-org-discovery/SKILL.md) skill.
@@ -12,7 +34,7 @@ Maps a GitHub organization — repositories, members, recently-active contributo
 GITHUB_TOKEN=$(gh auth token) \
   node tools/ingestion/github-org-discover.js <org> \
   --contributors-top 10 --recent-days 180 \
-  > data/raw/github/<org>-<YYYY-MM-DD>.json
+  > data/raw/github/org-discovery/<YYYY-MM-DD>/<org>/github-org-discover.json
 ```
 
 Flags: `--include-archived`, `--include-forks`, `--exclude <names>`, `--contributors-top N`, `--recent-days N`, `--no-members`.

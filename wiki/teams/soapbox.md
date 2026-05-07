@@ -60,7 +60,7 @@ Where the others have multiple maintainers and broader org membership, Soapbox c
 - (channels unknown — Soapbox-side coordination likely happens on Nostr and/or GitLab issues; concrete channels yet to be confirmed.)
 
 ## History
-- 2026-05-07: Team page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/soapbox-pub-2026-05-07.json`).
+- 2026-05-07: Team page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 
 ## Open questions
 - Is there a wider Soapbox team we don't see (private repos, contractors paid via AOS, etc.)?

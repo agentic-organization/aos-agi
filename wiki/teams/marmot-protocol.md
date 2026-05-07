@@ -86,7 +86,7 @@ Org creation: 2025-02-26. Currently hosts 32 active public repositories (4 archi
 Noting these as facts about current distribution, not verdicts.
 
 ## Ingestion provenance
-- Discovery run: `data/raw/github/marmot-protocol-2026-05-07.json`.
+- Discovery run: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`.
 - Tool: [[tools/github-org-discover]].
 
 ## Open questions

@@ -46,7 +46,7 @@ Observed activity across 10 repos in the [divinevideo](https://github.com/divine
 - GitHub: [dcadenas](https://github.com/dcadenas)
 
 ## History
-- 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/divinevideo-2026-05-07.json`).
+- 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`).
 
 ## Open questions
 - Full name, location, timezone?

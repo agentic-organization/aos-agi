@@ -1,0 +1,1005 @@
+[
+  {
+    "id": "8981518228",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 18,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18",
+        "id": 3604884944,
+        "number": 18,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "1306270632056f7a1a38d29f82902cbf954a07a4",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "dfc4359def77d91dcc81108e3a37468d973ff749",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:47Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11274944187",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "repository_id": 1129745922,
+      "push_id": 33566342513,
+      "ref": "refs/heads/main",
+      "head": "1aa205ab76e617c8b334193a4b4d1387170f8126",
+      "before": "dfc4359def77d91dcc81108e3a37468d973ff749"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:48Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981396387",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4209266956,
+        "node_id": "PRR_kwDOQ1aOAs765FEM",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. Contribution standards check complete. Approved.",
+        "commit_id": "1306270632056f7a1a38d29f82902cbf954a07a4",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-push-service/pull/18#pullrequestreview-4209266956",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-push-service/pull/18#pullrequestreview-4209266956"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18"
+          }
+        },
+        "submitted_at": "2026-05-01T00:12:17Z",
+        "updated_at": "2026-05-01T00:12:17Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18",
+        "id": 3604884944,
+        "number": 18,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "1306270632056f7a1a38d29f82902cbf954a07a4",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "dfc4359def77d91dcc81108e3a37468d973ff749",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:12:19Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8931867546",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 18,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18",
+        "id": 3604884944,
+        "number": 18,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "1306270632056f7a1a38d29f82902cbf954a07a4",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "dfc4359def77d91dcc81108e3a37468d973ff749",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-29T20:42:49Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11218876480",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "ref": "codex/repo-contribution-guardrails",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/repo-contribution-guardrails",
+      "master_branch": "main",
+      "description": "Push notification service for diVine mobile app",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-29T20:42:34Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10359567540",
+    "type": "PushEvent",
+    "actor": {
+      "id": 18184,
+      "login": "dcadenas",
+      "display_login": "dcadenas",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "repository_id": 1129745922,
+      "push_id": 32652148016,
+      "ref": "refs/heads/main",
+      "head": "dfc4359def77d91dcc81108e3a37468d973ff749",
+      "before": "f064a4ccdde8ea00b31c82bab52b173a4d2ed8e4"
+    },
+    "public": true,
+    "created_at": "2026-04-09T03:10:26Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8225265974",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 18184,
+      "login": "dcadenas",
+      "display_login": "dcadenas",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/16",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-push-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/16/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/16/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/16/events",
+        "html_url": "https://github.com/divinevideo/divine-push-service/issues/16",
+        "id": 4215400085,
+        "node_id": "I_kwDOQ1aOAs77QeaV",
+        "number": 16,
+        "title": "Add APNS content_available and mutable_content to FCM messages",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [
+          {
+            "login": "dcadenas",
+            "id": 18184,
+            "node_id": "MDQ6VXNlcjE4MTg0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/dcadenas",
+            "html_url": "https://github.com/dcadenas",
+            "followers_url": "https://api.github.com/users/dcadenas/followers",
+            "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+            "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+            "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+            "repos_url": "https://api.github.com/users/dcadenas/repos",
+            "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          }
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-04-07T04:26:42Z",
+        "updated_at": "2026-04-09T03:10:26Z",
+        "closed_at": "2026-04-09T03:10:26Z",
+        "assignee": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "iOS silently drops data-only FCM messages when the app is killed unless the APNS payload includes `content_available: 1` and `mutable_content: 1`. The Notification Service Extension needs these to wake up.\n\n## Fix\nIn `src/event_handler.rs` `create_fcm_payload()`, change `apns: None` to use `ApnsConfig` with `Aps { content_available: Some(ContentAvailable::On), mutable_content: Some(MutableContent::On) }`.\n\nThe `firebase-messaging-rs` crate already has full support: `ApnsConfig`, `Aps`, `ContentAvailable::On`, `MutableContent::On` are all available in `firebase_messaging_rs::fcm::ios`.\n\nAlso update `fcm_sender.rs` Message construction to pass `payload.apns` instead of `None`.\n\n## Files to change\n- `src/event_handler.rs` (create_fcm_payload, line ~779-785)\n- `src/fcm_sender.rs` (send_single, line ~148-157, pass payload.apns)\n- `src/models.rs` (FcmPayload already has `apns: Option<serde_json::Value>` but should use `Option<ApnsConfig>` from the crate)",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/16/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/16/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-09T03:10:26Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8225265740",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 18184,
+      "login": "dcadenas",
+      "display_login": "dcadenas",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 17,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/17",
+        "id": 3496084621,
+        "number": 17,
+        "head": {
+          "ref": "tasks-266",
+          "sha": "f703b59ad0fba05174952f1a6d7947ec11bf5608",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "f064a4ccdde8ea00b31c82bab52b173a4d2ed8e4",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-09T03:10:24Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8225244048",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4079475530,
+        "node_id": "PRR_kwDOQ1aOAs7zJ9tK",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Looks good. Thanks for making the follow-up changes quickly.\n\nThe transport-level APNS ownership is now explicit, the alert payload no longer duplicates `title`/`body` in custom data, and the tests reflect the intended serialized shape for both alert and background paths.\n\nI think this is ready to merge.",
+        "commit_id": "f703b59ad0fba05174952f1a6d7947ec11bf5608",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-push-service/pull/17#pullrequestreview-4079475530",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/17",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-push-service/pull/17#pullrequestreview-4079475530"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/17"
+          }
+        },
+        "submitted_at": "2026-04-09T03:09:21Z",
+        "updated_at": "2026-04-09T03:09:21Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/17",
+        "id": 3496084621,
+        "number": 17,
+        "head": {
+          "ref": "tasks-266",
+          "sha": "f703b59ad0fba05174952f1a6d7947ec11bf5608",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "f064a4ccdde8ea00b31c82bab52b173a4d2ed8e4",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-04-09T03:09:22Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8224856751",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 18184,
+      "login": "dcadenas",
+      "display_login": "dcadenas",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-push-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/events",
+        "html_url": "https://github.com/divinevideo/divine-push-service/pull/17",
+        "id": 4215458462,
+        "node_id": "PR_kwDOQ1aOAs7QYgSN",
+        "number": 17,
+        "title": "chore: Add APNS content_available and mutable_content to FCM messages",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-07T04:41:55Z",
+        "updated_at": "2026-04-09T03:10:24Z",
+        "closed_at": "2026-04-09T03:10:24Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/17",
+          "html_url": "https://github.com/divinevideo/divine-push-service/pull/17",
+          "diff_url": "https://github.com/divinevideo/divine-push-service/pull/17.diff",
+          "patch_url": "https://github.com/divinevideo/divine-push-service/pull/17.patch",
+          "merged_at": "2026-04-09T03:10:24Z"
+        },
+        "body": "Closes #16\n\n## Problem\n\nData-only FCM messages (no `notification` field) are silently dropped on iOS when the app is killed or suspended. Without `content-available` and `mutable-content` in the APNS payload, iOS has no reason to wake the app or route the notification through the Notification Service Extension.\n\n## Why this approach\n\nThe root cause is that `Message::Token` was constructed with `apns: None` in `RealFcmClient::send_single()` — the single point where Firebase messages are built. Fixing it here means every outgoing message automatically gets the correct APNS config, with no opt-in required per notification type.\n\nAPNS config was placed in `fcm_sender.rs` (transport layer) rather than in `FcmPayload`/`event_handler.rs` because: (1) all our messages need these flags, (2) the typed `ApnsConfig` API from `firebase-messaging-rs` is cleaner than the `serde_json::Value` that `FcmPayload.apns` uses, and (3) it keeps event handling decoupled from iOS delivery mechanics.\n\nTwo code paths based on message content:\n- **Alert path** — messages with title/body get a `RichAlert` in `aps.alert`, plus `content-available: 1` and `mutable-content: 1`, with `apns-push-type: alert` and priority 10. Title/body are filtered from custom data to avoid duplication with `aps.alert`.\n- **Background path** — data-only messages without title/body use `ios_background_notification()` which sets `content-available: 1` with background push type and priority 5.\n\nA `debug_assert!` guards against future code accidentally setting `FcmPayload.apns`, enforcing that APNS config is transport-owned.\n\n## Trade-offs\n\n- **Android unaffected** — FCM ignores the `apns` field for Android devices.\n- **Requires iOS Notification Service Extension** — the diVine iOS app must have one to leverage `mutable-content`. Assumed already in place.\n- **No per-message opt-out** — every message gets the APNS override. Intentional since all messages are data-only and need background delivery.\n\n## Test plan\n\n- `test_build_apns_config_creates_alert_payload_from_data_only_message` — verifies alert path JSON structure\n- `test_build_apns_config_uses_background_transport_without_alert_fields` — verifies background path JSON structure\n- All existing tests pass, clippy clean",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/comments/4211112660",
+        "html_url": "https://github.com/divinevideo/divine-push-service/pull/17#issuecomment-4211112660",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17",
+        "id": 4211112660,
+        "node_id": "IC_kwDOQ1aOAs77AHrU",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-09T02:49:22Z",
+        "updated_at": "2026-04-09T02:49:22Z",
+        "body": "Addressed all three points:\n\n1. **`FcmPayload.apns` footgun** — Added `debug_assert!(payload.apns.is_none())` with a comment that APNS config is transport-owned in `fcm_sender.rs`. This makes the contract explicit without runtime cost in release builds.\n\n2. **Title/body duplication in APNS custom data** — Filtering `title` and `body` keys from the data `HashMap` before passing to `ApnsConfig::new()` in the alert path. The alert payload no longer duplicates these values.\n\n3. **Dead comment cleanup** — Removed the `// Removed unused imports` comment.\n\nSee commit f703b59.",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/comments/4211112660/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-09T02:49:22Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10359044755",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 18184,
+      "login": "dcadenas",
+      "display_login": "dcadenas",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "ref": "wt/tasks-266",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/wt/tasks-266",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-09T02:49:16Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10359043413",
+    "type": "PushEvent",
+    "actor": {
+      "id": 18184,
+      "login": "dcadenas",
+      "display_login": "dcadenas",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "repository_id": 1129745922,
+      "push_id": 32651624160,
+      "ref": "refs/heads/tasks-266",
+      "head": "f703b59ad0fba05174952f1a6d7947ec11bf5608",
+      "before": "f76e540e54b091e5806a9d817f1346a6d5e1b71d"
+    },
+    "public": true,
+    "created_at": "2026-04-09T02:49:11Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10359037956",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 18184,
+      "login": "dcadenas",
+      "display_login": "dcadenas",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "ref": "wt/tasks-266",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/wt/tasks-266",
+      "master_branch": "main",
+      "description": "Push notification service for diVine mobile app",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-09T02:48:59Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8218438069",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-push-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/events",
+        "html_url": "https://github.com/divinevideo/divine-push-service/pull/17",
+        "id": 4215458462,
+        "node_id": "PR_kwDOQ1aOAs7QYgSN",
+        "number": 17,
+        "title": "chore: Add APNS content_available and mutable_content to FCM messages",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-07T04:41:55Z",
+        "updated_at": "2026-04-09T03:10:24Z",
+        "closed_at": "2026-04-09T03:10:24Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/17",
+          "html_url": "https://github.com/divinevideo/divine-push-service/pull/17",
+          "diff_url": "https://github.com/divinevideo/divine-push-service/pull/17.diff",
+          "patch_url": "https://github.com/divinevideo/divine-push-service/pull/17.patch",
+          "merged_at": "2026-04-09T03:10:24Z"
+        },
+        "body": "Closes #16\n\n## Problem\n\nData-only FCM messages (no `notification` field) are silently dropped on iOS when the app is killed or suspended. Without `content-available` and `mutable-content` in the APNS payload, iOS has no reason to wake the app or route the notification through the Notification Service Extension.\n\n## Why this approach\n\nThe root cause is that `Message::Token` was constructed with `apns: None` in `RealFcmClient::send_single()` — the single point where Firebase messages are built. Fixing it here means every outgoing message automatically gets the correct APNS config, with no opt-in required per notification type.\n\nAPNS config was placed in `fcm_sender.rs` (transport layer) rather than in `FcmPayload`/`event_handler.rs` because: (1) all our messages need these flags, (2) the typed `ApnsConfig` API from `firebase-messaging-rs` is cleaner than the `serde_json::Value` that `FcmPayload.apns` uses, and (3) it keeps event handling decoupled from iOS delivery mechanics.\n\nTwo code paths based on message content:\n- **Alert path** — messages with title/body get a `RichAlert` in `aps.alert`, plus `content-available: 1` and `mutable-content: 1`, with `apns-push-type: alert` and priority 10. Title/body are filtered from custom data to avoid duplication with `aps.alert`.\n- **Background path** — data-only messages without title/body use `ios_background_notification()` which sets `content-available: 1` with background push type and priority 5.\n\nA `debug_assert!` guards against future code accidentally setting `FcmPayload.apns`, enforcing that APNS config is transport-owned.\n\n## Trade-offs\n\n- **Android unaffected** — FCM ignores the `apns` field for Android devices.\n- **Requires iOS Notification Service Extension** — the diVine iOS app must have one to leverage `mutable-content`. Assumed already in place.\n- **No per-message opt-out** — every message gets the APNS override. Intentional since all messages are data-only and need background delivery.\n\n## Test plan\n\n- `test_build_apns_config_creates_alert_payload_from_data_only_message` — verifies alert path JSON structure\n- `test_build_apns_config_uses_background_transport_without_alert_fields` — verifies background path JSON structure\n- All existing tests pass, clippy clean",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/comments/4209879178",
+        "html_url": "https://github.com/divinevideo/divine-push-service/pull/17#issuecomment-4209879178",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/17",
+        "id": 4209879178,
+        "node_id": "IC_kwDOQ1aOAs767aiK",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-08T21:45:50Z",
+        "updated_at": "2026-04-08T21:45:50Z",
+        "body": "The core APNS fix looks right, and I think the transport-level placement in `fcm_sender.rs` is the correct direction. I’d like one small follow-up before merge for two reasons:\n\n1. `FcmPayload.apns` is now effectively ignored. `build_apns_config()` constructs APNS config from scratch and `send_single()` always uses that result, while the payload model still exposes an `apns` field. Nothing in this repo sets `payload.apns` today, so this is not a live bug, but it is a latent footgun and makes the model misleading. At minimum, please add a `debug_assert!(payload.apns.is_none())` plus a short comment explaining that APNS is transport-owned here. Longer-term, we may want to remove `apns` from `FcmPayload` entirely.\n\n2. In the alert path, `title` and `body` are currently duplicated: once in `aps.alert` and again as top-level APNS custom data because the full `data` map is passed into `ApnsConfig::new()`. That is probably harmless, but it adds bytes and makes the payload contract a bit muddier for any Notification Service Extension. Please filter `title` and `body` out of the custom APNS data before building the alert payload.\n\nThe dead `// Removed unused imports` comment can also be cleaned up while you’re in there, but I don’t consider that blocking.",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/comments/4209879178/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-08T21:45:50Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10298725860",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "repository_id": 1129745922,
+      "push_id": 32591608695,
+      "ref": "refs/heads/tasks-266",
+      "head": "f76e540e54b091e5806a9d817f1346a6d5e1b71d",
+      "before": "0da3da0bdda94ca64bf82849bc103c4a1bb5aef3"
+    },
+    "public": true,
+    "created_at": "2026-04-07T18:29:31Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]

@@ -22,7 +22,7 @@ Observed activity across 1 repo in the [divinevideo](https://github.com/divinevi
 - GitHub: [ryzizub](https://github.com/ryzizub)
 
 ## History
-- 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/divinevideo-2026-05-07.json`).
+- 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`).
 
 ## Open questions
 - Full name, location, timezone?
