@@ -21,7 +21,7 @@ A decentralized community platform for creators and their audiences. Chorus enab
 - (channels unknown — Slack/Discord/Matrix/Nostr to be discovered)
 
 ## Related systems
-- (to be filled as system-level dependencies are observed)
+- **Integrated [[projects/cashu]] wallet** — Chorus ships a NIP-60/61 Cashu wallet for in-community payments and nutzaps. This is confirmed by the [awesome-cashu](https://github.com/cashubtc/awesome-cashu) listing, which places Chorus in its "Wallets — Nostr NIP-60/61 support" section. Chorus is therefore one of the clearest cross-team ties from [[teams/and-other-stuff]]'s own product roster into the [[teams/cashu-core]] ecosystem.
 
 ## Required capabilities / skills
 - [[skills/community]]

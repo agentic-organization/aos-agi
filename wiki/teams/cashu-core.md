@@ -38,7 +38,27 @@ This team is **inferred from GitHub organization membership and observed contrib
 - [[people/gohumble]]
 
 ## Projects stewarded
-- [[projects/cashu]]
+- [[projects/cashu]] — protocol umbrella.
+
+### Reference implementations (inside `cashubtc/`)
+- [[projects/nuts]] — protocol specs.
+- [[projects/cdk]] (Rust) + bindings [[projects/cdk-swift]], [[projects/cdk-kotlin]], [[projects/cdk-python]].
+- [[projects/cashu-ts]], [[projects/cashu-crypto-ts]], [[projects/coco]] (TypeScript/JavaScript).
+- [[projects/nutshell]] (Python — mint + wallet + library).
+- [[projects/cashu-me]] (web wallet), [[projects/numo]] (Android PoS).
+- [[projects/mintd]] (Rust mint, inside CDK), [[projects/cdk-wallet]] (Rust CLI wallet, inside CDK).
+- [[projects/npub-cash]] — Lightning-address provider.
+- [[projects/cashu-redeem]] — redemption web tool.
+- [[projects/awesome-cashu]] — ecosystem index.
+- [[projects/enuts]] — historical mobile wallet (in revival).
+
+### External ecosystem projects in the broader Cashu community
+These are **not** stewarded by `cashubtc/` — they are independent teams/maintainers building on the protocol. Documented on their own pages:
+
+- Wallets — [[projects/minibits]], [[projects/macadamia]], [[projects/sovran]], [[projects/nutstash]], [[projects/agicash]], [[projects/harbor]], [[projects/zeus]], [[projects/kashir]], [[projects/cocod]], [[projects/nutsack]], [[projects/sixty-nuts]].
+- Mints — [[projects/nutmix]] (Go).
+- Libraries — [[projects/cashuswift]], [[projects/cashu-jdk]].
+- Applications — [[projects/athenut]], [[projects/btcnutserver]], [[projects/hashpool]], [[projects/routstr]], [[projects/otrta-client]], [[projects/tollgate]], [[projects/wally]], [[projects/0xchat]], [[projects/keychat]], [[projects/iris]], [[projects/shopstr]], [[projects/x-cashu]], [[projects/proxnut]], [[projects/bitcoinmints]], [[projects/cashumints-space]], [[projects/mint-audit]].
 
 ## Known repositories (organization-level)
 - `cashubtc/cdk` — Rust Cashu Development Kit.
