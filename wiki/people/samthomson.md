@@ -2,7 +2,7 @@
 
 **Canonical id:** `person_samthomson`
 **Status:** active
-**Primary affiliation:** [[teams/divine]]
+**Primary affiliation:** [[teams/divine]] · **Also contributes to:** [[teams/soapbox]]
 
 ## Role
 - Contributor — Divine web front-end
@@ -29,3 +29,13 @@ Observed activity across 1 repo in the [divinevideo](https://github.com/divinevi
 - Formal AOS affiliation (funded, contracted, independent)?
 - Nostr public key, other communication channels?
 - Primary maintainer responsibilities beyond repo-level contributions?
+
+
+## Cross-team observations — Soapbox
+
+Also active in the [soapbox-pub](https://github.com/soapbox-pub) organization on `shakespeare` (~61 contribs in the last 90 days). This makes samthomson a **cross-team person**, contributing to both:
+
+- [[teams/divine]] — `divinevideo/divine-web`
+- [[teams/soapbox]] — `soapbox-pub/shakespeare` ([[projects/shakespeare]])
+
+Documented from `soapbox-pub` discovery snapshot (`data/raw/github/soapbox-pub-2026-05-07.json`).

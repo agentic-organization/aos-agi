@@ -6,10 +6,10 @@ One page per project. Pages evolve as maintainers, communication channels, skill
 
 | Project | Focus | Repo |
 |---|---|---|
-| [[projects/shakespeare]] | AI-first dev platform (Nostr) | GitLab · soapbox-pub/shakespeare |
+| [[projects/shakespeare]] | AI-first dev platform (Nostr) | GitLab · soapbox-pub/shakespeare (mirror on GitHub) |
 | [[projects/agora]] | Global activist network (Nostr) | GitLab · soapbox-pub/agora |
 | [[projects/clawi]] | Managed cloud AI agent platform | private (see page) |
-| [[projects/ditto]] | Customizable Nostr social platform | GitLab · soapbox-pub/ditto |
+| [[projects/ditto]] | Customizable Nostr social platform | GitLab · soapbox-pub/ditto (mirror on GitHub) |
 | [[projects/divine]] | Short-form looping video on Nostr | GitHub · divinevideo/* |
 | [[projects/white-noise]] | Private Nostr-based messaging | GitHub · marmot-protocol/* |
 | [[projects/flotilla]] | Community/social platform (Nostr) | GitHub · coracle-social/flotilla |
@@ -62,7 +62,22 @@ Engineering pages for components under [[teams/divine]] (the `divinevideo` GitHu
 ### Features
 - [[projects/divine-badges]] · [[projects/divine-clips]]
 
+## Soapbox sub-projects
+Engineering pages for components under [[teams/soapbox]] (the `soapbox-pub` GitHub org).
+
+### Active
+- [[projects/ditto]] — Nostr social client (Soapbox-built, Foundry-listed)
+- [[projects/shakespeare]] — AI-first app builder (Soapbox-built, Foundry-listed)
+- [[projects/nostrify]] — Soapbox's Nostr framework
+- [[projects/openclaw-skills]] — skills targeting [[projects/openclaw]] / [[projects/clawi]]
+- [[projects/nostr-skills]] — Nostr-protocol skill pack
+
+### Legacy / lower velocity
+- [[projects/soapbox]] — original Mastodon-fork client (still the most-starred Soapbox repo)
+- [[projects/rebased]] — Pleroma-derived Elixir backend (last push 2025-04)
+
 ## Source
 - [andotherstuff.org](https://andotherstuff.org/#foundry-projects) Foundry project listing.
 - `data/raw/github/marmot-protocol-*.json` — discovery snapshots for the Marmot Protocol organization.
 - `data/raw/github/divinevideo-*.json` — discovery snapshots for the Divine (divinevideo) organization.
+- `data/raw/github/soapbox-pub-*.json` — discovery snapshots for the Soapbox (soapbox-pub) organization.
