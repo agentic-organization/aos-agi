@@ -27,6 +27,10 @@ See [[projects/index]] for the full list. As of page creation, 13 projects are l
 - [[teams/lab]] — exploration and research (upstream of the Foundry)
 - [[teams/studio]] — ideation and design (upstream of the Foundry)
 
+## Engineering teams
+- [[teams/cashu-core]] — cashubtc GitHub org; stewards [[projects/cashu]].
+- [[teams/marmot-protocol]] — marmot-protocol GitHub org; stewards [[projects/marmot]] and [[projects/white-noise]] plus their reference implementations.
+
 ## History
 - Page created from andotherstuff.org Foundry project listing.
 

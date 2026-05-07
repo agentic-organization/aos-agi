@@ -1,0 +1,40 @@
+# whitenoise
+
+**Status:** active · **Team:** [[teams/marmot-protocol]] · **Hub:** [[teams/foundry]] (via [[projects/white-noise]] lineage) · **Organization:** [[teams/and-other-stuff]]
+
+## Summary
+The White Noise Flutter App
+
+## Repository
+- GitHub: [marmot-protocol/whitenoise](https://github.com/marmot-protocol/whitenoise)
+- Primary language: **Dart** · stars: 62 · default branch: `master`
+- Homepage: https://whitenoise.chat
+
+## Tags / concepts
+[[concepts/e2ee]] · [[concepts/messaging]] · [[concepts/messaging-layer-security]] · [[concepts/nostr]]
+
+## Top contributors
+- [[people/pepina-dev]] — 115 contributions
+- [[people/erskingardner]] — 91 contributions
+- [[people/untreu2]] — 39 contributions
+- [[people/dannym-arx]] — 26 contributions
+- [[people/jgmontoya]] — 18 contributions
+- [[people/mubarakcoded]] — 5 contributions
+- [[people/datawav]] — 2 contributions
+- `nikitawvi` — 2 contributions *(occasional; no page)*
+
+## Organizational relevance
+Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and its reference implementations (including [[projects/white-noise]]).
+
+## History
+- 2026-05-07: Page created from `data/raw/github/marmot-protocol-2026-05-07.json` (discovery run via [[tools/github-org-discover]]).
+
+## Related
+- [[projects/whitenoise-rs]] — the shared Rust core used by this Flutter app.
+- [[projects/white-noise]] — the AOS Foundry umbrella page for the product (website, branding, user-facing).
+- [[projects/wn-tui]] — terminal UI companion.
+
+## Open questions
+- Who is the designated maintainer beyond the top contributors?
+- Communication channels?
+- Is this project part of the public [[projects/white-noise]] umbrella, or tracked separately?

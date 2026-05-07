@@ -27,7 +27,9 @@ When a skill turns out to be wrong, incomplete, or outdated:
 
 ## Current skills
 
-- [`llm-wiki/`](llm-wiki/) — Maintain the living Markdown wiki in `wiki/`: page types, interlinking, incremental updates, evidence handling, stub-and-grow pattern.
+- [`llm-wiki/`](llm-wiki/) — Maintain the living Markdown wiki in `wiki/`: page types, interlinking, incremental evolution, evidence handling, stub-and-grow pattern.
+- [`github-org-discovery/`](github-org-discovery/) — Map a GitHub organization (repos, members, active contributors) and ingest the results into the wiki.
+- [`pr-workflow/`](pr-workflow/) — Every change to this repo goes through a feature branch and a pull request, never a direct push to `main`.
 
 ## Adding a skill
 
