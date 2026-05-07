@@ -3,6 +3,7 @@
 **Canonical id:** `person_erskingardner`
 **Status:** active
 **Primary affiliation:** [[teams/marmot-protocol]]
+**Secondary affiliation:** [[teams/divine]] (cross-team contribution to [[projects/keycast]])
 
 ## Role
 - Lead maintainer — Marmot Protocol / White Noise
@@ -45,12 +46,14 @@ Observed activity across 13 repos in the [marmot-protocol](https://github.com/ma
 - [[projects/transponder]]
 - [[projects/whitenoise]]
 - [[projects/whitenoise-rs]]
+- [[projects/keycast]] *(cross-team: [[teams/divine]])*
 
 ## Accounts
 - GitHub: [erskingardner](https://github.com/erskingardner)
 
 ## History
 - 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/marmot-protocol-2026-05-07.json`).
+- 2026-05-07: divinevideo discovery surfaced 74 contributions to [[projects/keycast]]; secondary affiliation to [[teams/divine]] added.
 
 ## Open questions
 - Full name, location, timezone?

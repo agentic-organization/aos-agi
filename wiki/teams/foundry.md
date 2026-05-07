@@ -30,6 +30,7 @@ See [[projects/index]] for the full list. As of page creation, 13 projects are l
 ## Engineering teams
 - [[teams/cashu-core]] — cashubtc GitHub org; stewards [[projects/cashu]].
 - [[teams/marmot-protocol]] — marmot-protocol GitHub org; stewards [[projects/marmot]] and [[projects/white-noise]] plus their reference implementations.
+- [[teams/divine]] — divinevideo GitHub org; stewards [[projects/divine]] and its full stack (auth, storage, moderation, relays, clients).
 
 ## History
 - Page created from andotherstuff.org Foundry project listing.
