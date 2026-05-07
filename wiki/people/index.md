@@ -44,6 +44,32 @@ One page per person. Pages evolve as identity resolution, skills, and affiliatio
 - [[people/kuba-04]]
 - [[people/cypherpinkdev]] *(public member, activity to confirm)*
 
+### [[teams/divine]]
+- [[people/rabble]] — lead contributor
+- [[people/NotThatKindOfDrLiz]] — cross-repo ops / release engineering
+- [[people/dcadenas]] — auth and service stack
+- [[people/mbradley]]
+- [[people/elphiethewitch]]
+- [[people/realmeylisdev]]
+- [[people/hm21]]
+- [[people/omartinma]]
+- [[people/B0berman]]
+- [[people/JohnWeidner]]
+- [[people/ryzizub]]
+- [[people/Josh-Sanford]]
+- [[people/dogelover911]]
+- [[people/samthomson]]
+- [[people/sergey3bv]]
+- [[people/irab]]
+- [[people/franbis]]
+- [[people/samchristenoliphant]]
+- [[people/Zyphrenn]]
+- [[people/tkhumush]]
+- [[people/GitKalle]]
+- [[people/TheSeydiCharyyev]]
+- [[people/redaranj]] *(public member, activity to confirm)*
+- [[people/erskingardner]] *(cross-team; primary affiliation is [[teams/marmot-protocol]])*
+
 ## Notes
 - All pages describe **role, scope, and responsibilities** — not performance, rating, or tier.
 - Cross-team contributors (e.g. nostr ecosystem overlap between `cashubtc` and `marmot-protocol`) may appear under multiple teams; the person page is a single canonical record.
