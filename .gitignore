@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets
+.env
+*.key
+*.pem
+secrets/
+
+# Large / transient
+*.log
+logs/*.log
+data/raw/**/*.tmp
+data/derived/embeddings/*.bin
+data/derived/embeddings/*.npy
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

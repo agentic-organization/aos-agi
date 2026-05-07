@@ -7,6 +7,8 @@ Build an evolving organization intelligence agent that continuously observes org
 
 https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 
+A verbatim copy of Karpathy's LLM Wiki gist is stored alongside this document in [LLM_WIKI.md](LLM_WIKI.md) as the canonical reference for the wiki pattern.
+
 The agent’s purpose is to construct and continuously evolve an internal model of the organization:
 
 - Who works with whom
@@ -190,6 +192,7 @@ org-memory/
     concepts/
     glossary/
     skills/
+    tools/
 
   runs/
     ingestion/
