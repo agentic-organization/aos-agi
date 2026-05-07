@@ -1,47 +1,108 @@
 # Cashu
 
-**Status:** active · **Hub:** [[teams/foundry]] · **Organization:** [[teams/and-other-stuff]]
+**Status:** active · **Hub:** [[teams/foundry]] · **Organization:** [[teams/and-other-stuff]] · **Steward team:** [[teams/cashu-core]]
 
 ## Summary
-A privacy-preserving digital cash protocol built on Bitcoin. Cashu enables instant, private, and offline-capable payments using ecash tokens, providing a decentralized alternative to traditional payment systems.
+**Cashu is a free and open-source Chaumian ecash protocol built for Bitcoin.** It represents a digital bearer token stored on a user's device — behaviorally close to physical cash: instant, nearly free, and redeemable for bitcoin at any time. Transactions preserve user privacy via blind signatures: a Cashu mint never sees a database of user accounts.
 
-## Website
-- [https://cashu.space](https://cashu.space)
+An ecash system has two halves — a **mint** (custodian of reserves, signs tokens) and a **wallet** (holds tokens client-side). Anyone can run a mint for their application: a standalone wallet, a web paywall, a streaming-payment gateway, a voucher system, a rewards program.
 
-## Repository
-- (no repository listed)
+Between mints, value moves through the **Bitcoin Lightning Network**. Deposits and withdrawals happen via Lightning; tokens within a single mint transfer peer-to-peer and are redeemable for on-chain or Lightning bitcoin by the mint at any time.
 
-## Tags / concepts
-[[concepts/bitcoin]] · [[concepts/payments]] · [[concepts/privacy]]
+## Website & docs
+- Home: [cashu.space](https://cashu.space/)
+- Documentation: [docs.cashu.space](https://docs.cashu.space/)
+- Blog: [blog.cashu.space](https://blog.cashu.space/)
+- GitHub organization: [github.com/cashubtc](https://github.com/cashubtc)
+- Twitter: [@cashubtc](https://twitter.com/cashubtc)
+
+## Protocol
+Cashu is specified through a family of small, numbered specifications called **NUTs** — "Notation, Usage, and Terminology" — published at [github.com/cashubtc/nuts](https://github.com/cashubtc/nuts). Implementations that follow the NUTs are interoperable with the rest of the ecosystem.
+
+### Cryptographic core — BDHKE
+The foundational primitive is **Blind Diffie-Hellmann Key Exchange (BDHKE)**, based on David Wagner's 1996 variant of David Chaum's blinding scheme. Three actors:
+
+- **Bob** (mint) holds private key `k` (one per amount), publishes public key `K = kG`.
+- **Alice** (user) picks a secret `x`, computes `Y = hash_to_curve(x)`, picks a blinding factor `r`, sends `B_ = Y + rG` to Bob (*blinding*).
+- Bob signs: returns `C_ = kB_` (*signing*).
+- Alice unblinds: `C = C_ - rK = kY` (*unblinding*). The pair `(x, C)` is now a token she can spend.
+- To redeem, any holder sends `(x, C)` back to Bob, who checks that `k·hash_to_curve(x) == C` and marks `x` as spent (*verification*).
+
+Key properties that follow: the mint cannot link a signed token to the user who requested the blind signature; double-spending is prevented via the spent-secrets list; tokens are bearer instruments.
+
+### Related protocol artifacts
+- **NIP-60 / NIP-61** — Nostr protocol NIPs for carrying Cashu wallets and nutzap payments over Nostr relays. A large share of Nostr-native wallets (chorus, Iris, Nutsack, Olas, chachi, Shopstr, and others) implement these for interoperability.
+- **NUT-24 / x-cashu** — an in-progress HTTP 402 "Payment Required" scheme using Cashu tokens in HTTP headers, enabling pay-per-request API access.
+
+## Ecosystem
+
+The Cashu ecosystem is much larger than the `cashubtc` GitHub organization. The `cashubtc` org hosts the canonical implementations and specs; the broader ecosystem of wallets, mints, and applications extends far beyond, maintained by independent teams and individuals.
+
+### Reference implementations (inside `cashubtc/`)
+- [[projects/cashu-ts]] — TypeScript library, powers most web wallets.
+- [[projects/cdk]] — **Cashu Development Kit** — Rust library, powers the most mint and wallet deployments. Ships bindings for Swift ([[projects/cdk-swift]]), Kotlin ([[projects/cdk-kotlin]]), and Python ([[projects/cdk-python]]).
+- [[projects/coco]] — modular TypeScript toolkit for building wallets and apps.
+- [[projects/nutshell]] — Python reference implementation; ships as both a **mint** and a **CLI wallet**.
+- [[projects/cashu-crypto-ts]] — low-level TypeScript crypto primitives (blinding, unblinding, etc.).
+- [[projects/cashu-me]] — the reference web wallet.
+- [[projects/numo]] — Android point-of-sale app for merchants.
+- [[projects/nuts]] — protocol specifications repo.
+
+### Mints (featured on docs.cashu.space/mints)
+- [[projects/nutshell]] — Python reference mint (and wallet).
+- [[projects/mintd]] — Rust mint built on CDK.
+- [[projects/nutmix]] — Go mint implementation (community-maintained).
+
+### Wallets (featured on docs.cashu.space/wallets)
+- [[projects/cashu-me]] — web (TypeScript/Vue).
+- [[projects/minibits]] — mobile (Android/iOS).
+- [[projects/macadamia]] — iOS (Swift).
+- [[projects/sovran]] — iOS.
+- [[projects/nutstash]] — web; multimint; Nostr token transfer.
+- [[projects/agicash]] — web wallet built on Open Secret.
+- [[projects/cdk-wallet]] — CDK-based CLI wallet (Rust).
+- [[projects/nutshell]] — Python CLI wallet.
+
+### Featured applications (docs.cashu.space/projects)
+- [[projects/athenut]] — privacy-preserving web search (Kagi-powered, pay in sats).
+- [[projects/btcnutserver]] — BTCPay Server plugin for accepting Cashu.
+- [[projects/hashpool]] — accountless mining pool using ecash for mining shares.
+- [[projects/npub-cash]] — Lightning-address provider backed by Cashu mints for Nostr pubkeys.
+- [[projects/numo]] — tap-to-pay Bitcoin point of sale.
+- [[projects/cashu-redeem]] — browser tool to redeem any Cashu token to Lightning.
+- [[projects/routstr]] — marketplace for buying and selling LLM API access with Cashu.
+- [[projects/tollgate]] — turns a WiFi router into a decentralized ISP using Bitcoin and ecash.
+
+### Other notable ecosystem projects
+- [[projects/harbor]] — desktop ecash wallet.
+- [[projects/zeus]] — Lightning wallet with Cashu integration.
+- [[projects/kashir]] — React Native ecash wallet with Nostr integration.
+- [[projects/chorus]] — AOS-Foundry community app with an integrated Cashu wallet (NIP-60/61).
+
+The canonical, continuously-updated index is [github.com/cashubtc/awesome-cashu](https://github.com/cashubtc/awesome-cashu) — a collaborative list with 100+ projects at the time of ingestion.
 
 ## Owners & contributors
-- Primary engineering team: [[teams/cashu-core]].
-- See [[people/index]] for individual contributor pages.
+- Primary engineering team: [[teams/cashu-core]] — the `cashubtc` GitHub organization maintainers.
 - Organization lead: [[people/callebtc]].
+- External wallet/app teams exist as separate projects; see each project page for its maintainer.
 
 ## Communication
 - [[communication/cashu-daily-report-dm]] — daily 24h activity digest delivered to [[people/callebtc]] via Telegram.
-- Other channels (Matrix / Telegram / Nostr / Discord) still to be discovered.
+- Other coordination channels (Matrix, Telegram, Nostr, Discord) are not yet mapped.
 
 ## Ingestion signals
-- [[tools/cashu-daily-report]] — daily GitHub activity scrape over `Numo`, `cashu-ts`, `cdk`, `coco`, `cashu.me`, `nuts`, `nutshell`, `BTCNutServer`.
-
-## Related systems
-- (to be filled as system-level dependencies are observed)
-
-## Required capabilities / skills
-- [[skills/bitcoin]]
-- [[skills/payments]]
-- [[skills/privacy]]
+- [[tools/cashu-daily-report]] — daily GitHub activity scrape over the 8 watched core repos: `Numo`, `cashu-ts`, `cdk`, `coco`, `cashu.me`, `nuts`, `nutshell`, `BTCNutServer`.
+- `data/raw/cashu/` — snapshots of cashu.space, docs.cashu.space, and `awesome-cashu` used to synthesize this page and the ecosystem project pages.
 
 ## Organizational relevance
-Part of AOS's **Foundry** hub — projects the Foundry supports and stewards as part of the freedom-tech ecosystem.
+Cashu is one of the AOS **Foundry** projects and the organization's flagship privacy-payments surface. Its dependency graph reaches into multiple other AOS projects — [[projects/chorus]] ships a Cashu wallet, and Cashu's NIP-60/61 tooling makes it the de-facto ecash layer of the wider Nostr ecosystem that [[teams/soapbox]], [[teams/divine]], and [[teams/marmot-protocol]] also build on.
 
 ## History
-- 2026-05-07: Page created from andotherstuff.org Foundry project listing.
+- 2026-05-07: Page expanded from a Foundry-listing stub into a protocol/ecosystem umbrella, using cashu.space, docs.cashu.space, and `cashubtc/awesome-cashu` README as sources (snapshots in `data/raw/cashu/`).
+- 2026-05-07: Original Foundry-listing stub created from andotherstuff.org.
 
 ## Open questions
-- Who are the primary maintainers and active contributors?
-- Which AOS hub(s) beyond the Foundry engage with this project (Lab? Studio?)?
-- What is the current development velocity and release cadence?
-- Which other Foundry projects does it depend on or integrate with?
+- Adoption metrics — how many mints are live? How much value is custodied? (Mint-audit tools like `audit.8333.space` and `bitcoinmints.com` exist but are not yet ingested.)
+- Governance — which NUTs are considered stable vs experimental, and who decides? The NUTs repo is the authoritative source but the governance model is not yet mapped here.
+- Which regulated or custodial mints are operating Cashu in production, and what is their operational posture?
+- Cross-pollination — of the Nostr-native wallets implementing NIP-60/61, how many share library dependencies versus reimplement?
