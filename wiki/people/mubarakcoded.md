@@ -30,7 +30,7 @@ Observed activity across 4 repos in the [marmot-protocol](https://github.com/mar
 - GitHub: [mubarakcoded](https://github.com/mubarakcoded)
 
 ## History
-- 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/marmot-protocol-2026-05-07.json`).
+- 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`).
 
 ## Open questions
 - Full name, location, timezone?

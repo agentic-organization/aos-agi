@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "description": "GitHub repositories and organizations to observe during daily raw ingestion. Synthesized from wiki project, team, and tool pages on 2026-05-07.",
+  "defaults": {
+    "include_archived": false,
+    "include_forks": false,
+    "repo_endpoints": [
+      "repo",
+      "events",
+      "issues_updated",
+      "pulls_updated",
+      "commits_since",
+      "releases"
+    ]
+  },
+  "sources": [
+    {
+      "id": "marmot-protocol",
+      "type": "github_org",
+      "owner": "marmot-protocol",
+      "mode": "all_public_non_archived",
+      "include_archived": false,
+      "include_forks": false,
+      "projects": [
+        "[[projects/marmot]]",
+        "[[projects/white-noise]]"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "divine",
+      "type": "github_org",
+      "owner": "divinevideo",
+      "mode": "all_public_non_archived",
+      "include_archived": false,
+      "include_forks": false,
+      "projects": [
+        "[[projects/divine]]"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "soapbox",
+      "type": "github_org",
+      "owner": "soapbox-pub",
+      "mode": "all_public_non_archived",
+      "include_archived": false,
+      "include_forks": false,
+      "projects": [
+        "[[projects/ditto]]",
+        "[[projects/shakespeare]]",
+        "[[projects/nostrify]]",
+        "[[projects/openclaw-skills]]",
+        "[[projects/nostr-skills]]",
+        "[[projects/soapbox]]",
+        "[[projects/rebased]]"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cashu-core",
+      "type": "github_org",
+      "owner": "cashubtc",
+      "mode": "all_public_non_archived",
+      "include_archived": false,
+      "include_forks": false,
+      "projects": [
+        "[[projects/cashu]]"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "foundry-single-repos",
+      "type": "github_repos",
+      "repos": [
+        {
+          "owner": "coracle-social",
+          "name": "flotilla",
+          "project": "[[projects/flotilla]]"
+        },
+        {
+          "owner": "andotherstuff",
+          "name": "chorus",
+          "project": "[[projects/chorus]]"
+        },
+        {
+          "owner": "permissionlesstech",
+          "name": "bitchat",
+          "project": "[[projects/bitchat]]"
+        },
+        {
+          "owner": "zapstore",
+          "name": "zapstore",
+          "project": "[[projects/zapstore]]"
+        },
+        {
+          "owner": "DanConwayDev",
+          "name": "ngit-cli",
+          "project": "[[projects/ngit]]"
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cashu-external-repos",
+      "type": "github_repos",
+      "repos": [
+        {
+          "owner": "minibits-cash",
+          "name": "minibits_wallet",
+          "project": "[[projects/cashu]]"
+        },
+        {
+          "owner": "zeugmaster",
+          "name": "macadamia",
+          "project": "[[projects/cashu]]"
+        },
+        {
+          "owner": "zeugmaster",
+          "name": "cashu-swift",
+          "project": "[[projects/cashu]]"
+        },
+        {
+          "owner": "elnosh",
+          "name": "gonuts",
+          "project": "[[projects/cashu]]"
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "external-dependencies",
+      "type": "github_repos",
+      "repos": [
+        {
+          "owner": "hzrd149",
+          "name": "blossom",
+          "project": "[[projects/divine-blossom]]",
+          "reason": "Protocol dependency linked from the Divine Blossom project page."
+        }
+      ],
+      "enabled": true
+    }
+  ]
+}

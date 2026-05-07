@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "d57d0a27128b1a8a9adf465b20d13ef1a6ecb52e",
+    "node_id": "C_kwDOQYdXTdoAKGQ1N2QwYTI3MTI4YjFhOGE5YWRmNDY1YjIwZDEzZWYxYTZlY2I1MmU",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-07T02:51:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T02:51:42Z"
+      },
+      "message": "fix: Fastly KV sync scaling + NIP-05 status + write-path verification (#44)\n\n* docs: Fastly KV cron sync scaling spec and implementation plan\n\nDesign spec and task-level implementation plan for fixing the hourly\ncron that syncs D1 usernames to Fastly KV. Sequential sync of 131K+\nusers times out; solution: delta sync (2hr window) for steady state,\npaginated admin endpoint for full backfills, both with 10x concurrency.\n\n* feat: cron sync scaling -- delta sync, pagination, concurrent Fastly KV writes\n\nReplace sequential full-table Fastly KV sync (timed out at 131K users)\nwith delta cron + paginated admin endpoint + bounded concurrency.\n\n- syncBatch: promise pool with configurable concurrency (default 10)\n- Cron handler: delta sync via updated_at index (2hr overlap window)\n- Admin POST /sync/fastly: cursor-based pagination, dry_run mode\n- getActiveUsernamesPaginated + countActiveUsernames queries\n- Admin UI: sync button with progress bar, confirm/cancel/stop\n- scripts/backfill-fastly-kv.sh: CLI for full backfill (--dry-run/--apply)\n- Remove dead code: bulkSyncToFastly, getAllActiveUsernames\n- Migration: idx_usernames_updated_at index\n- 275 tests passing (25 new)\n\n* fix: code review fixes -- remaining calc, response contract, defensive errors\n\n- Fix remaining calculation: use COUNT WHERE id > cursor instead of\n  subtracting cursor ID from total (was producing wrong numbers)\n- Add deleted field to non-dry-run response to match spec contract\n- Add total field to dry-run response for accurate UI progress bar\n- Remove dead processed variable\n- syncBatch: error instead of silent discard when sync item has no data\n- Backfill script: clarify auth expects Keycast session cookie\n\n* fix: backfill script cookie name (__session) and countActiveUsernames truthiness guard\n\n* feat: NIP-05 status check, single-user re-sync, write-path verification\n\nCompletes issue #40 items 2-4:\n\n- GET /username/:name/nip05-status compares Fastly KV with DB\n- POST /username/:name/sync-to-fastly re-syncs one username with read-back\n- syncAndVerifyUsername wraps sync + GET verification on all individual\n  write paths (assign, revoke, claim, set-atproto). Batch/cron paths\n  skip verification to avoid doubling API calls at scale.\n- Admin UI: Fastly KV status indicator + re-sync button on username detail\n\n* fix: add durable Fastly sync reconciliation\n\n* fix: tighten Fastly queue recovery semantics\n\n* fix: handle revoked fastly cleanup and sync reporting\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>\nCo-authored-by: rabble <evan@protest.net>",
+      "tree": {
+        "sha": "5b426a739e2f489accc713b6be03df7bd25867f8",
+        "url": "https://api.github.com/repos/divinevideo/divine-name-server/git/trees/5b426a739e2f489accc713b6be03df7bd25867f8"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-name-server/git/commits/d57d0a27128b1a8a9adf465b20d13ef1a6ecb52e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp+/4+CRC1aQ7uu5UhlAAA65kQAGUIrM2fl+ZjOecpxASHRt5B\nVPW4W7OLXZe6J52eH/9bcczMdQc+LWHqAt+Xl8gPjtwWYG63Wo0vexK0BLu9bs5+\nDWvUE47haynxbbBal7jtqBL8D12YGxUOqP5DY6k+GaCDTnyK5WMGtsgEkrbRdloJ\nqikJL738JX/PtdbrWaRx7HVMspQ/u55CUNFHZhnHANgdYP2kgmRe6crgSjsDhwEE\nkRfIjgLdPfUHfN/FqWS5uoq/dYBmb3zFGaqamXfOE5XgZybcXOnL6tMzCJUsuLjP\nQxMIM/9CEWd1QKpp3I+XBWedzDDxS1fVp7O+4F87Pkp5W01148nDutW8OhERZUbE\nEzIG+Mr+Atwu/dWUbFn2ykw30tSc4Ghhm6annlUfbo9rXGH7zaKf3P+H19aAsD+x\ns6R5f+bb8aKIODCIkV/KLzOdyIqhIq19ehGX6P052/JqzA51Vih3nxdOCAqIzqe1\n88lB1RffqPgr9f8wEYe8+SWyvDhUGOWu2k2BKSa27n7Q7d+IDw66DOnYDLsSMhVK\nn47sY2286OaijZz2dNqleJhrj46R3MxZFtUk3t1B6hahv7dXIMYohv84yLD9PBay\nTsiHMy9wrStmKQD+vPgqjkRrgYVaQTnj0sFo0zZYYQe+rtsmn3WHuWXuU5MW8kxz\nTgltm5LzGoGAhc7YDuP4\n=vW9T\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5b426a739e2f489accc713b6be03df7bd25867f8\nparent 7cf28441a50b038ecdf24fef86be3c4d6387bda5\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778122302 -0400\ncommitter GitHub <noreply@github.com> 1778122302 +1200\n\nfix: Fastly KV sync scaling + NIP-05 status + write-path verification (#44)\n\n* docs: Fastly KV cron sync scaling spec and implementation plan\n\nDesign spec and task-level implementation plan for fixing the hourly\ncron that syncs D1 usernames to Fastly KV. Sequential sync of 131K+\nusers times out; solution: delta sync (2hr window) for steady state,\npaginated admin endpoint for full backfills, both with 10x concurrency.\n\n* feat: cron sync scaling -- delta sync, pagination, concurrent Fastly KV writes\n\nReplace sequential full-table Fastly KV sync (timed out at 131K users)\nwith delta cron + paginated admin endpoint + bounded concurrency.\n\n- syncBatch: promise pool with configurable concurrency (default 10)\n- Cron handler: delta sync via updated_at index (2hr overlap window)\n- Admin POST /sync/fastly: cursor-based pagination, dry_run mode\n- getActiveUsernamesPaginated + countActiveUsernames queries\n- Admin UI: sync button with progress bar, confirm/cancel/stop\n- scripts/backfill-fastly-kv.sh: CLI for full backfill (--dry-run/--apply)\n- Remove dead code: bulkSyncToFastly, getAllActiveUsernames\n- Migration: idx_usernames_updated_at index\n- 275 tests passing (25 new)\n\n* fix: code review fixes -- remaining calc, response contract, defensive errors\n\n- Fix remaining calculation: use COUNT WHERE id > cursor instead of\n  subtracting cursor ID from total (was producing wrong numbers)\n- Add deleted field to non-dry-run response to match spec contract\n- Add total field to dry-run response for accurate UI progress bar\n- Remove dead processed variable\n- syncBatch: error instead of silent discard when sync item has no data\n- Backfill script: clarify auth expects Keycast session cookie\n\n* fix: backfill script cookie name (__session) and countActiveUsernames truthiness guard\n\n* feat: NIP-05 status check, single-user re-sync, write-path verification\n\nCompletes issue #40 items 2-4:\n\n- GET /username/:name/nip05-status compares Fastly KV with DB\n- POST /username/:name/sync-to-fastly re-syncs one username with read-back\n- syncAndVerifyUsername wraps sync + GET verification on all individual\n  write paths (assign, revoke, claim, set-atproto). Batch/cron paths\n  skip verification to avoid doubling API calls at scale.\n- Admin UI: Fastly KV status indicator + re-sync button on username detail\n\n* fix: add durable Fastly sync reconciliation\n\n* fix: tighten Fastly queue recovery semantics\n\n* fix: handle revoked fastly cleanup and sync reporting\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>\nCo-authored-by: rabble <evan@protest.net>",
+        "verified_at": "2026-05-07T02:51:43Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-name-server/commits/d57d0a27128b1a8a9adf465b20d13ef1a6ecb52e",
+    "html_url": "https://github.com/divinevideo/divine-name-server/commit/d57d0a27128b1a8a9adf465b20d13ef1a6ecb52e",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-name-server/commits/d57d0a27128b1a8a9adf465b20d13ef1a6ecb52e/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7cf28441a50b038ecdf24fef86be3c4d6387bda5",
+        "url": "https://api.github.com/repos/divinevideo/divine-name-server/commits/7cf28441a50b038ecdf24fef86be3c4d6387bda5",
+        "html_url": "https://github.com/divinevideo/divine-name-server/commit/7cf28441a50b038ecdf24fef86be3c4d6387bda5"
+      }
+    ]
+  }
+]

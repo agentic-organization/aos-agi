@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "55caf2c5774548f01ed30ed795d384f7d82e976a",
+    "node_id": "C_kwDOQht-UtoAKDU1Y2FmMmM1Nzc0NTQ4ZjAxZWQzMGVkNzk1ZDM4NGY3ZDgyZTk3NmE",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-07T00:11:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T00:11:33Z"
+      },
+      "message": "fix(transcoder): write empty VTT stub when provider returns no transcribable speech (#124)\n\nProduction effect: silent / music-only / non-speech videos used to surface\nas HTTP 500 from the transcoder, which left no VTT object in GCS at all.\nThe edge then served `GET /{hash}/vtt` as 202 \"in_progress\" forever,\nblocking any downstream consumer that polled until completion.\n\nThe provider response itself is correct in those cases — Parakeet (an\nacoustic model) genuinely cannot produce text from silence/music, and\nthe existing `normalize_transcript_to_vtt` rightly rejects the empty\nresponse so it doesn't render the raw JSON envelope as a fake VTT cue.\nThe bug was in the caller: it treated normalize errors uniformly as\nfailures rather than distinguishing \"transcript empty (success, no\nspeech)\" from \"transcript failed (real error)\".\n\nAdds a small classifier `is_empty_transcript_normalize_error` that\nmatches the three normalize-side messages indicating an empty result.\nprocess_transcribe now substitutes `ParsedVtt::empty(...)` when that\nclassifier fires, parallel to how the existing transcript-drop guards\n(LowProviderConfidence, LowSignalHeuristic, LoopHallucination,\nImplausibleTextDensity) already do. Result: an empty `WEBVTT\\n\\n` is\nwritten to GCS, the edge serves 200, and downstream consumers see\n\"transcribed, no captions\" rather than \"still pending.\"\n\nReal provider failures (5xx, timeouts, JSON parse errors, missing\nconfig) are NOT reclassified — those continue to webhook `failed` and\nreturn Err to the caller as before.\n\nTests: classifier matches the three empty-content errors and rejects\nfive distinct real-failure shapes. Cargo suite: 116 passing.\n\nBackstory: surfaced during the Parakeet backfill of 5,932 user-uploaded\nvideos since 2026-04-19. ~1,051 of them returned this code path\nbecause the previous Gemini-2.5-Pro pipeline had been hallucinating\nfake transcripts on silent/music audio. Their old VTTs were correctly\ndeleted during backfill, but no new VTT was written, leaving them\nstuck in 202 in_progress state until this fix lands.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "469d01661b78628db3fb4f26d7ec5910a2fc8272",
+        "url": "https://api.github.com/repos/divinevideo/divine-blossom/git/trees/469d01661b78628db3fb4f26d7ec5910a2fc8272"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-blossom/git/commits/55caf2c5774548f01ed30ed795d384f7d82e976a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp+9i1CRC1aQ7uu5UhlAAAGYEQABPZNmN3VLhP3DnLzo/zdljD\niOVgid55TdzCxb9S67He9FXDDSObStCfqNR47HnBupmMrsBFim83ZMX53agh04o6\nrAr3M2Kh4k2pnm4exnkiv3YlMPmhnISoZakyVoKt8TSyviWLMi75lHbA4Mlm7qum\nLZOtuhED2Z90YSBxhM6EwDbBb6daf4xqOtnJp1pV4cJithAdo7er30Njop48xQDS\nodW+4/t/F/iy/yyI+lRcqIB8Sk/cKWELt7pQwwNbJBUAhULL8CF1wvMAMzZr2pX0\nPgMtz38bdmonK2oFu2duNJarVJDuYOxBYhBK3yZJ8AqfklDVY3K41j9m3CgGvQsG\n4m9clMpGRSptEpeQroTs9ZmgXmwGoacYtc8h5KraXrdRpmwyJYVv0q+niEQSRVqx\ns3mts3IG8qA57ZZYIuXuwBgHddI7rF/d65PdVy7/VWzKCWor0NMc7n+pGZQwhBcC\nyoZcsz2uEAJm7VDWs8v4BpP39Z/fk1uYSu+Iov3fa/kGjDeNviVP+KTdGieN3AIP\nmaOnB5G4m+53ZazCyNdmw5Hr1pdXwLnYtVKhajaB/jV/ZsmM5KnJiVUrG0KHCCfq\n5knA6jH/ZqEKdaCYisiRhoih48p69lC+YsrelvSE77whcwCOYoGNxUb084uEbzQV\n8Dlr585Qs41NoC0Horuv\n=U6I2\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 469d01661b78628db3fb4f26d7ec5910a2fc8272\nparent 2e14dbf597afeee639a2d25284135f59a1d3b4fa\nauthor rabble <evan@protest.net> 1778112693 +1200\ncommitter GitHub <noreply@github.com> 1778112693 +1200\n\nfix(transcoder): write empty VTT stub when provider returns no transcribable speech (#124)\n\nProduction effect: silent / music-only / non-speech videos used to surface\nas HTTP 500 from the transcoder, which left no VTT object in GCS at all.\nThe edge then served `GET /{hash}/vtt` as 202 \"in_progress\" forever,\nblocking any downstream consumer that polled until completion.\n\nThe provider response itself is correct in those cases — Parakeet (an\nacoustic model) genuinely cannot produce text from silence/music, and\nthe existing `normalize_transcript_to_vtt` rightly rejects the empty\nresponse so it doesn't render the raw JSON envelope as a fake VTT cue.\nThe bug was in the caller: it treated normalize errors uniformly as\nfailures rather than distinguishing \"transcript empty (success, no\nspeech)\" from \"transcript failed (real error)\".\n\nAdds a small classifier `is_empty_transcript_normalize_error` that\nmatches the three normalize-side messages indicating an empty result.\nprocess_transcribe now substitutes `ParsedVtt::empty(...)` when that\nclassifier fires, parallel to how the existing transcript-drop guards\n(LowProviderConfidence, LowSignalHeuristic, LoopHallucination,\nImplausibleTextDensity) already do. Result: an empty `WEBVTT\\n\\n` is\nwritten to GCS, the edge serves 200, and downstream consumers see\n\"transcribed, no captions\" rather than \"still pending.\"\n\nReal provider failures (5xx, timeouts, JSON parse errors, missing\nconfig) are NOT reclassified — those continue to webhook `failed` and\nreturn Err to the caller as before.\n\nTests: classifier matches the three empty-content errors and rejects\nfive distinct real-failure shapes. Cargo suite: 116 passing.\n\nBackstory: surfaced during the Parakeet backfill of 5,932 user-uploaded\nvideos since 2026-04-19. ~1,051 of them returned this code path\nbecause the previous Gemini-2.5-Pro pipeline had been hallucinating\nfake transcripts on silent/music audio. Their old VTTs were correctly\ndeleted during backfill, but no new VTT was written, leaving them\nstuck in 202 in_progress state until this fix lands.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-07T00:11:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-blossom/commits/55caf2c5774548f01ed30ed795d384f7d82e976a",
+    "html_url": "https://github.com/divinevideo/divine-blossom/commit/55caf2c5774548f01ed30ed795d384f7d82e976a",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-blossom/commits/55caf2c5774548f01ed30ed795d384f7d82e976a/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2e14dbf597afeee639a2d25284135f59a1d3b4fa",
+        "url": "https://api.github.com/repos/divinevideo/divine-blossom/commits/2e14dbf597afeee639a2d25284135f59a1d3b4fa",
+        "html_url": "https://github.com/divinevideo/divine-blossom/commit/2e14dbf597afeee639a2d25284135f59a1d3b4fa"
+      }
+    ]
+  }
+]

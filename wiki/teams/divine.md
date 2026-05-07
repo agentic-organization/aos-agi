@@ -113,7 +113,7 @@ Cross-team:
 Stated descriptively; not a verdict.
 
 ## Ingestion provenance
-- Discovery run: `data/raw/github/divinevideo-2026-05-07.json`.
+- Discovery run: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`.
 - Tool: [[tools/github-org-discover]].
 
 ## Open questions

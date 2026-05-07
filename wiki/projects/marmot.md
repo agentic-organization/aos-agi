@@ -50,7 +50,7 @@ A Foundry-listed project on andotherstuff.org. Engineering lives in [[teams/marm
 
 ## History
 - 2026-05-07: Page created from andotherstuff.org Foundry project listing.
-- 2026-05-07: Page expanded after `marmot-protocol` GitHub org discovery (snapshot: `data/raw/github/marmot-protocol-2026-05-07.json`). Website corrected from the andotherstuff.org-listed GitHub URL to the canonical [marmot.build](https://marmot.build/). Top contributors and engineering-team link added.
+- 2026-05-07: Page expanded after `marmot-protocol` GitHub org discovery (snapshot: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`). Website corrected from the andotherstuff.org-listed GitHub URL to the canonical [marmot.build](https://marmot.build/). Top contributors and engineering-team link added.
 
 ## Open questions
 - Formal spec-lead role beyond commit activity?

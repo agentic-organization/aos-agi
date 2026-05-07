@@ -22,7 +22,7 @@ Observed activity across 1 repo in the [divinevideo](https://github.com/divinevi
 - GitHub: [samthomson](https://github.com/samthomson)
 
 ## History
-- 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/divinevideo-2026-05-07.json`).
+- 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`).
 
 ## Open questions
 - Full name, location, timezone?
@@ -38,4 +38,4 @@ Also active in the [soapbox-pub](https://github.com/soapbox-pub) organization on
 - [[teams/divine]] — `divinevideo/divine-web`
 - [[teams/soapbox]] — `soapbox-pub/shakespeare` ([[projects/shakespeare]])
 
-Documented from `soapbox-pub` discovery snapshot (`data/raw/github/soapbox-pub-2026-05-07.json`).
+Documented from `soapbox-pub` discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).

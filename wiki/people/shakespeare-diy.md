@@ -37,7 +37,7 @@ This is the clearest evidence in the wiki so far that AOS projects are being **p
 - GitHub: [shakespeare-diy](https://github.com/shakespeare-diy)
 
 ## History
-- 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/soapbox-pub-2026-05-07.json`).
+- 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 
 ## Open questions
 - How is the account operated — fully autonomous, supervised by Alex/Soapbox, or a mix? What governance, if any, is applied to its commits across orgs?

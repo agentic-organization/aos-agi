@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "ea153f789dedcb7db6842643636316ba5d30c946",
+    "node_id": "C_kwDOQYdZgdoAKGVhMTUzZjc4OWRlZGNiN2RiNjg0MjY0MzYzNjMxNmJhNWQzMGM5NDY",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-07T02:49:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T02:49:07Z"
+      },
+      "message": "feat: notify relay on QUARANTINE for reversible enforcement (#133)\n\n* refactor(publisher): add automated source mode + export CATEGORY_LABELS\n\npublishLabelEvent now accepts {source: 'human-moderator' | 'automated'};\nmetadata.verified flips false for automated sources, content text adapts.\nAdds mockRelay injection mirroring publishToFaro for testability.\nExports CATEGORY_LABELS so callers can pick the canonical label name\nwithout duplicating the table.\n\nStandalone polish; no caller changes. Sets up the relay-quarantine\nenforcement work without coupling to its architecture.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: notifyRelay() helper for relay quarantine enforcement\n\nPairs with notifyBlossom: same {success, skipped, error} shape, same\nfire-and-forget failure mode at call sites. Maps action transitions\nonto funnelcake's quarantine admin endpoint:\n\n- QUARANTINE → POST   /api/moderation/quarantine     (add to set)\n- SAFE / AGE_RESTRICTED → DELETE /api/moderation/quarantine/{event_id}\n- PERMANENT_BAN → skip (NIP-09 delete already removes the event)\n- REVIEW       → skip (internal-only state)\n- no event_id  → skip with reason\n\nOutbound NIP-98 token (kind 27235) signed with NOSTR_PRIVATE_KEY,\nincluding a payload-tag sha256 hash on bodied requests. event_id is\nvalidated as 64-char lowercase hex on every call so a malformed id\nnever reaches the relay.\n\nReuses the existing nostr-tools / @noble/hashes deps. fetcher is\ninjectable for tests.\n\n11 unit tests (vitest) cover: skip cases, POST/DELETE shape, NIP-98\ntoken contents (u, method, payload tags), HTTP-level and network-level\nerrors, and id validation.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: notify relay on QUARANTINE/clear in handleModerationResult and admin moderate paths\n\nWires notifyRelay() into three call sites, paired with the existing\nnotifyBlossom() calls so manual + automated moderation transitions\nflip funnelcake's quarantined_events_set symmetrically:\n\n- handleModerationResult (queue path): uses result.nostrContext.eventId\n- /admin/api/moderate: extends the D1 SELECT to pull event_id and uses it\n- /api/v1/moderate: looks up event_id from D1 post-write (request body\n  doesn't carry it) and reports relay_notified in the JSON response\n\nFailure handling matches notifyBlossom's: log a warning, don't fail the\nwhole moderation. PERMANENT_BAN remains handled by NIP-09 delete; the\nnotifier short-circuits on it internally.\n\nAll 1144 tests pass; no test changes needed (existing tests don't\nconfigure FUNNELCAKE_ADMIN_URL, so notifyRelay correctly skips).\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: tighten QUARANTINE DM template — 24h SLA + author-still-sees note\n\nUpdates the QUARANTINE branch in selectTemplate() to:\n- explicitly mention the 24-hour human review SLA\n- reassure the creator that the video is still visible to them via the\n  direct link / their own profile while it's hidden from public feeds\n\nWithout this the relay-side hide otherwise looks like a silent\nshadow-ban from the creator's perspective.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* chore: FUNNELCAKE_ADMIN_URL for relay quarantine notifier\n\nProduction points at relay.divine.video. Empty string disables\nrelay-side enforcement (notifyRelay returns skipped, broadly safe).\n\nNOSTR_PRIVATE_KEY (already configured) signs the NIP-98 token; the\nmatching pubkey 81549b…cd2898 is already in ADMIN_PUBKEYS for\nfunnelcake-api production via divine-iac-coreconfig.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: DM creator on auto-QUARANTINE with under-review template\n\nTwo coordinated changes:\n\n(1) QUARANTINE template now states the 24-hour SLA explicitly and tells\nthe creator the video is still visible to them via direct link / their\nprofile. Without that, the relay-side hide reads as a silent shadow-ban.\n\n(2) handleModerationResult (queue path) now sends a DM on QUARANTINE.\nManual admin-moderate QUARANTINEs intentionally still don't DM — that's\nexisting product policy preserved by the \"DM exclusion for QUARANTINE\nvia admin moderate\" test in src/index.test.mjs.\n\ndm-sender.test.mjs now asserts the 24h SLA and \"your profile / direct\nlink\" reassurance is present in the QUARANTINE template; two existing\ntests that pinned the old \"temporarily hidden\" wording updated to\nmatch. 53/53 dm-sender tests pass; full 1144 suite green.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: backfill script — sync existing QUARANTINE rows into relay set\n\nscripts/backfill-quarantine-relay.mjs reads QUARANTINE rows with non-null\nevent_id from prod D1 (via wrangler d1 execute --remote), then calls\nnotifyRelay() with action='QUARANTINE' for each row to add it to\nfunnelcake's quarantined_events_set.\n\n- --dry-run prints actions without making calls\n- --limit N caps run size (useful for staged rollout)\n- --concurrency tunes parallelism (default 5; chunks throttle 250ms)\n- Resumable: writes scripts/.backfill-quarantine-relay.checkpoint;\n  reruns skip already-processed sha256s\n- Lazy node:* imports so the script's pure helpers (parseArgs,\n  processChunk) stay importable from vitest workerd tests\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "f65eb7a8a056ab8526900a5a32abbcf8cff789a7",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/f65eb7a8a056ab8526900a5a32abbcf8cff789a7"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/ea153f789dedcb7db6842643636316ba5d30c946",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp+/2jCRC1aQ7uu5UhlAAAR6cQAD96U+6YmdZ0Q3n5kWQMWNYx\n34Rdg58iUjxeo0TaS8fGE+341c1ZkqynnXyLo5pFEgWxX70RumyfSzXWbe7jNzva\ne0RH9HW6aFFVa+ZBia6y4hE0fmWK0R3Bi9O7jk7eL8Gq5aFuiE8gefcIFNTbettz\nVV78ayJyTYxE3WHlH2rGXenJujN3T+21XMXD3yWbSW5JR70s4LxlUvp4gRc7983h\n6GTswQCI0cLemCb+XSwtzyCM4jKaOMJRAWTjQgPKulVf0qzPKRbxwBDZRoXH7MzE\n8ls0hKhAdJ6X588SOCasheDH9pFv8mzPBVh+dYZftbI17CnHQj409Xovr1BIZb/P\n8Uk3WSCUMY3RQGX4RnVc4XdksgOa8ZBZMsAgPWM6KPlQphfzXMyqT09/PXwL5Uol\nmNMx8HqAKCcRLkSKxBRCneSAHuEONzHzlerZZvzB/bBWReAnyhfRt1KeYYZfwCPf\nX49oIOJCIjIDDN3ZWb1QlTyEwDN08TBbvR5CknqPRDFk3Pi6RYC3dhSiczvx72db\nGTHJn8mssSqrcJTYRt3HxFYbwEGm+KegWo1jFUCPoSoV/FYInFAcMok6ByPWu4GW\nDF9f6z+dAvNNtHXJ6ZUjN5bMZi/JRAex6OG+GUm07HsVxkhs60C5RzzSFxF/yaAe\nN89VKZ2WSII3qYEYSmLo\n=Rv+l\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f65eb7a8a056ab8526900a5a32abbcf8cff789a7\nparent 501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12\nauthor rabble <evan@protest.net> 1778122147 +1200\ncommitter GitHub <noreply@github.com> 1778122147 +1200\n\nfeat: notify relay on QUARANTINE for reversible enforcement (#133)\n\n* refactor(publisher): add automated source mode + export CATEGORY_LABELS\n\npublishLabelEvent now accepts {source: 'human-moderator' | 'automated'};\nmetadata.verified flips false for automated sources, content text adapts.\nAdds mockRelay injection mirroring publishToFaro for testability.\nExports CATEGORY_LABELS so callers can pick the canonical label name\nwithout duplicating the table.\n\nStandalone polish; no caller changes. Sets up the relay-quarantine\nenforcement work without coupling to its architecture.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: notifyRelay() helper for relay quarantine enforcement\n\nPairs with notifyBlossom: same {success, skipped, error} shape, same\nfire-and-forget failure mode at call sites. Maps action transitions\nonto funnelcake's quarantine admin endpoint:\n\n- QUARANTINE → POST   /api/moderation/quarantine     (add to set)\n- SAFE / AGE_RESTRICTED → DELETE /api/moderation/quarantine/{event_id}\n- PERMANENT_BAN → skip (NIP-09 delete already removes the event)\n- REVIEW       → skip (internal-only state)\n- no event_id  → skip with reason\n\nOutbound NIP-98 token (kind 27235) signed with NOSTR_PRIVATE_KEY,\nincluding a payload-tag sha256 hash on bodied requests. event_id is\nvalidated as 64-char lowercase hex on every call so a malformed id\nnever reaches the relay.\n\nReuses the existing nostr-tools / @noble/hashes deps. fetcher is\ninjectable for tests.\n\n11 unit tests (vitest) cover: skip cases, POST/DELETE shape, NIP-98\ntoken contents (u, method, payload tags), HTTP-level and network-level\nerrors, and id validation.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: notify relay on QUARANTINE/clear in handleModerationResult and admin moderate paths\n\nWires notifyRelay() into three call sites, paired with the existing\nnotifyBlossom() calls so manual + automated moderation transitions\nflip funnelcake's quarantined_events_set symmetrically:\n\n- handleModerationResult (queue path): uses result.nostrContext.eventId\n- /admin/api/moderate: extends the D1 SELECT to pull event_id and uses it\n- /api/v1/moderate: looks up event_id from D1 post-write (request body\n  doesn't carry it) and reports relay_notified in the JSON response\n\nFailure handling matches notifyBlossom's: log a warning, don't fail the\nwhole moderation. PERMANENT_BAN remains handled by NIP-09 delete; the\nnotifier short-circuits on it internally.\n\nAll 1144 tests pass; no test changes needed (existing tests don't\nconfigure FUNNELCAKE_ADMIN_URL, so notifyRelay correctly skips).\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: tighten QUARANTINE DM template — 24h SLA + author-still-sees note\n\nUpdates the QUARANTINE branch in selectTemplate() to:\n- explicitly mention the 24-hour human review SLA\n- reassure the creator that the video is still visible to them via the\n  direct link / their own profile while it's hidden from public feeds\n\nWithout this the relay-side hide otherwise looks like a silent\nshadow-ban from the creator's perspective.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* chore: FUNNELCAKE_ADMIN_URL for relay quarantine notifier\n\nProduction points at relay.divine.video. Empty string disables\nrelay-side enforcement (notifyRelay returns skipped, broadly safe).\n\nNOSTR_PRIVATE_KEY (already configured) signs the NIP-98 token; the\nmatching pubkey 81549b…cd2898 is already in ADMIN_PUBKEYS for\nfunnelcake-api production via divine-iac-coreconfig.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: DM creator on auto-QUARANTINE with under-review template\n\nTwo coordinated changes:\n\n(1) QUARANTINE template now states the 24-hour SLA explicitly and tells\nthe creator the video is still visible to them via direct link / their\nprofile. Without that, the relay-side hide reads as a silent shadow-ban.\n\n(2) handleModerationResult (queue path) now sends a DM on QUARANTINE.\nManual admin-moderate QUARANTINEs intentionally still don't DM — that's\nexisting product policy preserved by the \"DM exclusion for QUARANTINE\nvia admin moderate\" test in src/index.test.mjs.\n\ndm-sender.test.mjs now asserts the 24h SLA and \"your profile / direct\nlink\" reassurance is present in the QUARANTINE template; two existing\ntests that pinned the old \"temporarily hidden\" wording updated to\nmatch. 53/53 dm-sender tests pass; full 1144 suite green.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: backfill script — sync existing QUARANTINE rows into relay set\n\nscripts/backfill-quarantine-relay.mjs reads QUARANTINE rows with non-null\nevent_id from prod D1 (via wrangler d1 execute --remote), then calls\nnotifyRelay() with action='QUARANTINE' for each row to add it to\nfunnelcake's quarantined_events_set.\n\n- --dry-run prints actions without making calls\n- --limit N caps run size (useful for staged rollout)\n- --concurrency tunes parallelism (default 5; chunks throttle 250ms)\n- Resumable: writes scripts/.backfill-quarantine-relay.checkpoint;\n  reruns skip already-processed sha256s\n- Lazy node:* imports so the script's pure helpers (parseArgs,\n  processChunk) stay importable from vitest workerd tests\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-07T02:49:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/ea153f789dedcb7db6842643636316ba5d30c946",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/ea153f789dedcb7db6842643636316ba5d30c946",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/ea153f789dedcb7db6842643636316ba5d30c946/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12"
+      }
+    ]
+  },
+  {
+    "sha": "501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12",
+    "node_id": "C_kwDOQYdZgdoAKDUwMWUyYWM2NTY4YjJjOTFkYzc5YTVlOWUxZmQwYzA2Y2U4YTRjMTI",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-07T02:40:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T02:40:33Z"
+      },
+      "message": "feat: report-only review (no pre-moderation of uploads) (#134)\n\n* feat: pivot to report-only review (no pre-moderation of uploads)\n\nStops queueing every new upload for manual review. Content is playable by\ndefault; the team queue surfaces ONLY items a user has reported via\nPOST /api/v1/report (1984/NIP-56 style).\n\nBehavior:\n- /api/v1/scan + /api/v1/batch-scan: no longer enqueue moderation. Response\n  body now includes {queued: false, reason: 'reactive_moderation'}.\n- relay-poller cron: no longer enqueues new Nostr video events. Still logs\n  observed events for telemetry (status: 'reactive_skip').\n- /api/v1/report: writes a moderation_results row directly (bypassing the\n  queue/pipeline since the team is already going to look). Branches by type:\n  - NSFW report types (nudity, porn, nsfw, sexual, explicit, adult, etc.)\n    → action: AGE_RESTRICTED + provider: 'user-report'. Auto age-gates while\n    pending team confirmation.\n  - All other report types → action: REVIEW + provider: 'user-report'.\n  - AI report types still record an ai_detection_event for telemetry.\n- Both land in the dashboard's existing FLAGGED filter\n  (action IN REVIEW/AGE_RESTRICTED/PERMANENT_BAN AND reviewed_by IS NULL).\n\nConflict resolution on existing rows: PERMANENT_BAN preserved; only\nupgrades action when stricter (SAFE→REVIEW, SAFE/REVIEW→AGE_RESTRICTED).\n\nTests: 804 pass / 0 fail. New: isNsfwReportType helper, NSFW report writes\nAGE_RESTRICTED row, non-NSFW report writes REVIEW row, scan/batch-scan no\nlonger queue.\n\nCost shape: T&S queue load shifts from ~upload-volume per day to\n~report-volume per day. Hive billing remains zero (Hive deprecated in PR\n#131; PR #132 plumbing left in place but unused).\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(review): address C1+I1+I2+I3 from code review on PR #134\n\nC1: ON CONFLICT now preserves moderator-decided rows. When\nmoderation_results.reviewed_by IS NOT NULL, the action/provider/categories/\nmoderated_at fields are kept as-is. Subsequent reports cannot overwrite a\nhuman moderator's decision.\n\nI1: /api/v1/report validates sha256 (isValidSha256) and reporter_pubkey\n(isValidPubkey), normalizes sha256 to lowercase before storage, returns\n400 with specific error messages for malformed input.\n\nI2: NSFW reports now require >= 2 distinct reporter_pubkeys before auto\nAGE_RESTRICTED. First NSFW report writes REVIEW; second distinct\nreporter promotes to AGE_RESTRICTED. Defends against single-token grief\nwhere one API caller could otherwise mass age-restrict by varying the\nreporter_pubkey field. addReport returns distinctReporterCount alongside\nthe legacy escalate field.\n\nI3: New REACTIVE_MODERATION_ONLY env var. When 'true' (now the wrangler\ndefault), the queue consumer ack-skips every message instead of running\nmoderateVideo. Drains in-flight queue messages from before deploy\nwithout re-flooding the team's REVIEW queue with manual-review rows.\nReversible via env flip alone.\n\nNew tests: malformed sha rejection, malformed pubkey rejection, first\nNSFW writes REVIEW, NSFW writes AGE_RESTRICTED only at 2+ distinct\nreporters. createDbMock extended with reporterCount config so tests can\nsimulate multi-reporter scenarios. 807/807 pass.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* docs: spec + plan for moderation dashboard speedup\n\nFive-PR plan to make moderator-facing pages load in <1.5s. Root causes\ndocumented (per-row funnelcake fan-out, missing-column SELECTs,\ncorrelated subquery, uncached aggregations). Two rounds of independent\nreview; both blocking and important issues resolved.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(tests): match new addReport return shape (escalate + distinctReporterCount)\n\nCI failure on PR #134: 3 tests in src/reports.test.mjs used toEqual()\nstrict deep-equality and broke when the I2 fix extended addReport to\nreturn {escalate, distinctReporterCount} instead of just {escalate}.\n\nSwitch to toMatchObject() so the extra field is allowed AND assert the\nexpected count value at each escalation tier.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "cb0f7b8067ccbb5c80b2bc5f8cf2c184a3f8d88f",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/cb0f7b8067ccbb5c80b2bc5f8cf2c184a3f8d88f"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp+/uhCRC1aQ7uu5UhlAAAnygQAJ329AX4LBKonJ+rn17kQYBI\nh7LuBSmuzDRNstgK1SqNl6CXd53wD5Ltshr7TqXBiSchYcz0bt0AyQiIjC1Ab6vF\nP43x8SjbEQ2m0FxbGeu67ifsPDvkj8LL4iffInemfXEzDGuT+ohR+ffgZABCvxS4\nFOn3ydmWu3PA+zRthGML8mS5vjmCZqhXus2d2iFfSyCf7fe+teuAjk41+8Y5kgsv\njwjuJTw07Nu20MnSAJ/6bckf2/s3WNyiDv1qK5IzmVFtSPfnD+50CI1Ah6y6evyt\nUXFp72BwrT3ul21q9Bgx1+z+ORgwHB1cfbunfWarCf5//vJkpAs/KakkpnPMaI1R\nmVR1vqRB45B6UeemN1v+0pooT6ap21lIbLwLCrSvQBQVlQeJZw3LF30TLBdm4un8\nva931wNQTcwfV6/T+SYUaTaFwnWXFMChCgjc9LoPR7HiSz3uRKHS2W7aDU74HaS4\nkcfhDNqrKk34ztpvxJn2XKLGD0s+JdubBzFE65Ye6gvdrWc7cg4Z11sRa7OFICRv\nSdHgmK2JnIIproAz9AjCZ+wgcha1Nbqhye3oldK+WB3G8glYRLKfCZJh545chKeP\n9DevcAOxzHE2w+w6wkJ0zO8tcnK1s5WgbiG39ASLud6oWPKg1NJOIZCxbHNnjjSd\n3AsH4PE0XuwkpicWppvM\n=8+2G\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree cb0f7b8067ccbb5c80b2bc5f8cf2c184a3f8d88f\nparent 5b148cc4a17d9726164b53163e5a3eab1bc572c3\nauthor rabble <evan@protest.net> 1778121633 +1200\ncommitter GitHub <noreply@github.com> 1778121633 +1200\n\nfeat: report-only review (no pre-moderation of uploads) (#134)\n\n* feat: pivot to report-only review (no pre-moderation of uploads)\n\nStops queueing every new upload for manual review. Content is playable by\ndefault; the team queue surfaces ONLY items a user has reported via\nPOST /api/v1/report (1984/NIP-56 style).\n\nBehavior:\n- /api/v1/scan + /api/v1/batch-scan: no longer enqueue moderation. Response\n  body now includes {queued: false, reason: 'reactive_moderation'}.\n- relay-poller cron: no longer enqueues new Nostr video events. Still logs\n  observed events for telemetry (status: 'reactive_skip').\n- /api/v1/report: writes a moderation_results row directly (bypassing the\n  queue/pipeline since the team is already going to look). Branches by type:\n  - NSFW report types (nudity, porn, nsfw, sexual, explicit, adult, etc.)\n    → action: AGE_RESTRICTED + provider: 'user-report'. Auto age-gates while\n    pending team confirmation.\n  - All other report types → action: REVIEW + provider: 'user-report'.\n  - AI report types still record an ai_detection_event for telemetry.\n- Both land in the dashboard's existing FLAGGED filter\n  (action IN REVIEW/AGE_RESTRICTED/PERMANENT_BAN AND reviewed_by IS NULL).\n\nConflict resolution on existing rows: PERMANENT_BAN preserved; only\nupgrades action when stricter (SAFE→REVIEW, SAFE/REVIEW→AGE_RESTRICTED).\n\nTests: 804 pass / 0 fail. New: isNsfwReportType helper, NSFW report writes\nAGE_RESTRICTED row, non-NSFW report writes REVIEW row, scan/batch-scan no\nlonger queue.\n\nCost shape: T&S queue load shifts from ~upload-volume per day to\n~report-volume per day. Hive billing remains zero (Hive deprecated in PR\n#131; PR #132 plumbing left in place but unused).\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(review): address C1+I1+I2+I3 from code review on PR #134\n\nC1: ON CONFLICT now preserves moderator-decided rows. When\nmoderation_results.reviewed_by IS NOT NULL, the action/provider/categories/\nmoderated_at fields are kept as-is. Subsequent reports cannot overwrite a\nhuman moderator's decision.\n\nI1: /api/v1/report validates sha256 (isValidSha256) and reporter_pubkey\n(isValidPubkey), normalizes sha256 to lowercase before storage, returns\n400 with specific error messages for malformed input.\n\nI2: NSFW reports now require >= 2 distinct reporter_pubkeys before auto\nAGE_RESTRICTED. First NSFW report writes REVIEW; second distinct\nreporter promotes to AGE_RESTRICTED. Defends against single-token grief\nwhere one API caller could otherwise mass age-restrict by varying the\nreporter_pubkey field. addReport returns distinctReporterCount alongside\nthe legacy escalate field.\n\nI3: New REACTIVE_MODERATION_ONLY env var. When 'true' (now the wrangler\ndefault), the queue consumer ack-skips every message instead of running\nmoderateVideo. Drains in-flight queue messages from before deploy\nwithout re-flooding the team's REVIEW queue with manual-review rows.\nReversible via env flip alone.\n\nNew tests: malformed sha rejection, malformed pubkey rejection, first\nNSFW writes REVIEW, NSFW writes AGE_RESTRICTED only at 2+ distinct\nreporters. createDbMock extended with reporterCount config so tests can\nsimulate multi-reporter scenarios. 807/807 pass.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* docs: spec + plan for moderation dashboard speedup\n\nFive-PR plan to make moderator-facing pages load in <1.5s. Root causes\ndocumented (per-row funnelcake fan-out, missing-column SELECTs,\ncorrelated subquery, uncached aggregations). Two rounds of independent\nreview; both blocking and important issues resolved.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(tests): match new addReport return shape (escalate + distinctReporterCount)\n\nCI failure on PR #134: 3 tests in src/reports.test.mjs used toEqual()\nstrict deep-equality and broke when the I2 fix extended addReport to\nreturn {escalate, distinctReporterCount} instead of just {escalate}.\n\nSwitch to toMatchObject() so the extra field is allowed AND assert the\nexpected count value at each escalation tier.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-07T02:40:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5b148cc4a17d9726164b53163e5a3eab1bc572c3",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/5b148cc4a17d9726164b53163e5a3eab1bc572c3",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/5b148cc4a17d9726164b53163e5a3eab1bc572c3"
+      }
+    ]
+  },
+  {
+    "sha": "5b148cc4a17d9726164b53163e5a3eab1bc572c3",
+    "node_id": "C_kwDOQYdZgdoAKDViMTQ4Y2M0YTE3ZDk3MjYxNjRiNTMxNjNlNWEzZWFiMWJjNTcyYzM",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-07T02:27:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T02:27:31Z"
+      },
+      "message": "perf: moderation dashboard speedup (kill fan-out, KV-cache stats, untriaged window function, legacy backfill) (#136)\n\n* docs: spec + plan for moderation dashboard speedup\n\nFive-PR plan to make moderator-facing pages load in <1.5s. Root causes\ndocumented (per-row funnelcake fan-out, missing-column SELECTs,\ncorrelated subquery, uncached aggregations). Two rounds of independent\nreview; both blocking and important issues resolved.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* test: scope vitest discovery to src/ and scripts/\n\nDefault vitest test-file discovery walks the entire repo, picking up\nduplicate copies of every test from .worktrees/ and .claude/worktrees/\nleft over from prior work. Run `npm test` and you get hundreds of\nredundant test runs plus an unhandled error from a stale-schema\nworktree.\n\nAdd explicit include + exclude scopes so vitest only sees the\ncanonical source tree. No production code change.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* perf: add composite indexes + lookup_attempted_at column\n\nAdds four indexes that the dashboard's hot-path queries actually need:\n- idx_moderation_action_date eliminates the TEMP B-TREE FOR ORDER BY\n  on the primary list query (verified via EXPLAIN QUERY PLAN).\n- idx_moderation_uploaded_by_date supports buildUploaderHistory.\n- idx_bunny_events_sha256_received supports the latest-event-per-sha\n  CTE that follow-up commits will introduce.\n- idx_moderation_unreviewed (partial, WHERE reviewed_by IS NULL)\n  speeds up the FLAGGED filter and the pending-review counts.\n\nAdds nullable moderation_results.lookup_attempted_at column for the\nbackfill cron to track 404s and avoid hammering funnelcake on\npermanent misses.\n\nWires migrations_dir into the BLOSSOM_DB binding so miniflare\n(used by @cloudflare/vitest-pool-workers) replays migrations on\nevery test boot — keeps the test schema in lockstep with prod.\n\nscripts/verify-query-plans.mjs runs EXPLAIN QUERY PLAN against the\nremote D1 and fails if any of the four hot queries regress to a\ncorrelated scan or a temp B-tree sort.\n\nNo code-path change yet; later commits in this branch will start\nusing the new indexes and column.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* perf: kill per-row funnelcake fan-out in /admin/api/videos\n\nRoot cause:\n  enrichAdminLookupVideo (src/index.mjs:852) fires\n  fetchFunnelcakeLookupVideo whenever eventId/divineUrl/nostrContext\n  is null on the row. The list-endpoint SELECT omitted event_id,\n  title, author, content_url, published_at — even though those\n  columns have existed since migration 004 — so every card on every\n  page render fired one HTTP call to relay.divine.video. With 50\n  cards/page that's 50 parallel ~1.6s requests, bounded by the\n  Workers 50-subrequest cap; perceived dashboard load was 5–15s.\n\nFix:\n- Extract pure buildAdminVideoFromRow helper into\n  src/admin/lookup-helpers.mjs. Mirrors buildStoredLookupMetadata's\n  nostrContext shape exactly, so response keys are unchanged.\n- Widen the SELECT in /admin/api/videos, getAdminLookupVideo, and\n  /api/v1/decisions to include the previously-missing columns.\n- Replace Promise.all(videoRows.map(getAdminLookupVideo)) with a\n  synchronous mapper. Per-page round-trips drop from ~150-250 to ~3.\n- Batch uploader_enforcement: one WHERE pubkey IN (?,?,…) query\n  for all unique uploaders on the page.\n\nField-level shape change to acknowledge:\n  nostrContext.client and nostrContext.content used to be filled\n  from the funnelcake response. They are not stored in\n  moderation_results. List view now leaves them null. The\n  single-video detail endpoint /admin/api/video/:id keeps the\n  on-demand funnelcake fetch so opened videos still show those\n  fields. Dashboard cards do not surface them.\n\nTests:\n- New: src/admin/lookup-helpers.test.mjs (6 tests, pure helper).\n- Updated: src/index.test.mjs > \"returns mirrored relay context\n  fields...\" → \"returns stored relay context fields without per-row\n  fan-out\". Now asserts zero funnelcake calls (regression gate) and\n  reads metadata from the row.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* perf: KV-cache /admin/api/stats and /admin/api/ai-detection/stats\n\ncachedStat helper wraps an expensive aggregate compute in a\n60s KV cache. Read is blocking; write is non-blocking via\nctx.waitUntil (or awaited inline when ctx is missing — keeps\nexisting tests that call worker.fetch(req, env) without ctx\nworking without changes).\n\n?fresh=1 bypasses the cache read but still writes the fresh\nvalue back, which prevents a cache stampede when many\nmoderators hit Refresh at once.\n\nStats response shape unchanged; the closure constructs the\nsame {totalInD1, totalModerated, untriaged, pendingFlagged,\nbreakdown, pending} object the dashboard already expects.\n\nTests: src/admin/cache.test.mjs (4 tests) — miss/hit/fresh/\ncorrupt-cache fall-through.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* perf: untriaged endpoint — window function, parallel KV, Nostr cache\n\nThree changes consolidated into one endpoint cleanup:\n\n1. Replace four hand-rolled correlated subqueries\n   (WHERE received_at = (SELECT MAX(received_at) WHERE sha256 = ...))\n   with a window-function CTE in src/admin/bunny-events.mjs:\n   ROW_NUMBER() OVER (PARTITION BY sha256 ORDER BY received_at DESC).\n   Backed by idx_bunny_events_sha256_received from migration 009.\n   Note: the natural-looking GROUP BY sha256 HAVING received_at =\n   MAX(received_at) form returns nondeterministic non-aggregate\n   columns in SQLite — only when MAX is in the SELECT does the\n   \"bare column\" rule apply. Window function is correct.\n\n2. Parallelize the moderation-flag KV reads. The old code did\n   `for (const row) await env.MODERATION_KV.get(...)` — sequential\n   N round-trips. Now Promise.all(rows.map(...)) hits them all at once.\n\n3. KV-cache the per-row Nostr fetch with a 1-hour TTL. The Triage\n   list rarely changes its top entries within an hour, and a cache\n   miss falls through to the existing fetchNostrEventBySha256 call.\n   Untriaged goes from ~50 parallel WS calls to typically 0-3.\n\nUntriaged COUNT(*) wrapped in cachedStat with 60s TTL.\n\nTests: src/admin/bunny-events.test.mjs (7 tests) — single-sha latest,\norder, exclude deleted/error, LIMIT/OFFSET, COUNT distinct, single-row\nhelper. The order-determinism test seeds two rows with different\nhls_url and asserts the helper picks the row with the larger\nreceived_at — this is the test that fails on the GROUP BY HAVING\nvariant.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: backfill cron for legacy moderation_results lookup columns\n\nAfter PR2 widened SELECTs to read event_id/title/author/content_url/\npublished_at directly from D1 instead of fetching from funnelcake,\n~98% of legacy rows still have those columns null because the\nwriters only started populating them after migration 004.\nrunBackfill catches them up: every minute, take up to N rows where\nevent_id IS NULL, call fetchFunnelcakeLookupVideo, persist the\nresult. Idempotent (UPDATE WHERE event_id IS NULL), rate-limited\n(BACKFILL_ROWS_PER_TICK, default 200), and KV-mutex protected\nagainst the cron and the manual trigger overlapping. 404s record\nlookup_attempted_at so we don't re-poll for 7 days. HTTP errors\nleave the row untouched and retry next tick.\n\nWires into the existing every-minute cron alongside creator-delete\n(both gated by their own flags). Shipped dark behind\nBACKFILL_ENABLED=false; flip via wrangler secret put after\nverifying with /admin/api/backfill/run?count=100.\n\nAt default 200/min, 316k legacy rows ≈ 26h of backfill.\n\nTests: src/admin/backfill-lookup-columns.test.mjs (9 tests):\n- updates row from funnelcake-shaped lookup\n- idempotent (second run on same row picks 0)\n- 404 sets lookup_attempted_at only\n- HTTP error leaves row unchanged\n- honors limit option\n- KV mutex blocks concurrent runs\n- skips recently-attempted rows (within 7 days)\n- skipped:disabled when flag is off\n- throws when fetchLookup is missing\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "470f7522c834178a4c165e2c1d7e3649146c5a3c",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/470f7522c834178a4c165e2c1d7e3649146c5a3c"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/5b148cc4a17d9726164b53163e5a3eab1bc572c3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp+/iTCRC1aQ7uu5UhlAAAYpQQAB62HfMUBy4fxumbNvn0t4i0\nHIlpgs2U32/JB6+2kGSsVwSiy837cPgMZJEfK0oUMqb1dS6OfzAZ8MRGiD49l3VR\nU3CPBJKzZLqN646slt8f40Gt+UgBNPLJbvlHd8MtZc2MgIHywEwcMxO7muSmLDZL\nJnrujq8T7pQ//LTaUL0r0H82ueZzBjexZvJJ+HteKwOWRMcDLW8l2t6Wb052lc4Y\nXHVpY0T3kKZN5TnzETVDx2cA4pWR4aOx62RZUkq38uh1/9TMtKZbUi8xhZm7s5SY\nfKsVslsxHKLOTWmP86GRWtqWM1QYaocciSr0h4G03R4Ae3tzNFvAoOLDRMTKOLU4\nargObDqYxV1H8UXJ1rBxCIA4EwN1lGRXQmXktp3wVd3VGijYtFFtdLVIgA5J2jee\nTNi4BCGn4+u6tjHN9ZkOfXXC2vNi4Wk4GNsdRVPhxEUuge3Bg8RBKfVccSY/172q\nKTQgUdC9zSkDioOSAj5KDUp0nXaVxsaC0tZx6M6uIfTGMAM0JJQ3lGxGCxwO+BIE\nWQ3XyrkiNdDoBe7RoC4NvZ2Q3LAxN/OD0lazsJ2T++LUL8bx3XwVeaMZts6CTrhM\nJKt4ug7YAAt4DEOFuFa1Dz/WvGgCSIvdylT31iFT5a+YklcLIJymbk/fY/WxG8er\nuvo35hza4AaoN6LVBJ3T\n=+2OU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 470f7522c834178a4c165e2c1d7e3649146c5a3c\nparent f58525fc5e0b027e7d28814827c13320e17b2b81\nauthor rabble <evan@protest.net> 1778120851 +1200\ncommitter GitHub <noreply@github.com> 1778120851 +1200\n\nperf: moderation dashboard speedup (kill fan-out, KV-cache stats, untriaged window function, legacy backfill) (#136)\n\n* docs: spec + plan for moderation dashboard speedup\n\nFive-PR plan to make moderator-facing pages load in <1.5s. Root causes\ndocumented (per-row funnelcake fan-out, missing-column SELECTs,\ncorrelated subquery, uncached aggregations). Two rounds of independent\nreview; both blocking and important issues resolved.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* test: scope vitest discovery to src/ and scripts/\n\nDefault vitest test-file discovery walks the entire repo, picking up\nduplicate copies of every test from .worktrees/ and .claude/worktrees/\nleft over from prior work. Run `npm test` and you get hundreds of\nredundant test runs plus an unhandled error from a stale-schema\nworktree.\n\nAdd explicit include + exclude scopes so vitest only sees the\ncanonical source tree. No production code change.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* perf: add composite indexes + lookup_attempted_at column\n\nAdds four indexes that the dashboard's hot-path queries actually need:\n- idx_moderation_action_date eliminates the TEMP B-TREE FOR ORDER BY\n  on the primary list query (verified via EXPLAIN QUERY PLAN).\n- idx_moderation_uploaded_by_date supports buildUploaderHistory.\n- idx_bunny_events_sha256_received supports the latest-event-per-sha\n  CTE that follow-up commits will introduce.\n- idx_moderation_unreviewed (partial, WHERE reviewed_by IS NULL)\n  speeds up the FLAGGED filter and the pending-review counts.\n\nAdds nullable moderation_results.lookup_attempted_at column for the\nbackfill cron to track 404s and avoid hammering funnelcake on\npermanent misses.\n\nWires migrations_dir into the BLOSSOM_DB binding so miniflare\n(used by @cloudflare/vitest-pool-workers) replays migrations on\nevery test boot — keeps the test schema in lockstep with prod.\n\nscripts/verify-query-plans.mjs runs EXPLAIN QUERY PLAN against the\nremote D1 and fails if any of the four hot queries regress to a\ncorrelated scan or a temp B-tree sort.\n\nNo code-path change yet; later commits in this branch will start\nusing the new indexes and column.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* perf: kill per-row funnelcake fan-out in /admin/api/videos\n\nRoot cause:\n  enrichAdminLookupVideo (src/index.mjs:852) fires\n  fetchFunnelcakeLookupVideo whenever eventId/divineUrl/nostrContext\n  is null on the row. The list-endpoint SELECT omitted event_id,\n  title, author, content_url, published_at — even though those\n  columns have existed since migration 004 — so every card on every\n  page render fired one HTTP call to relay.divine.video. With 50\n  cards/page that's 50 parallel ~1.6s requests, bounded by the\n  Workers 50-subrequest cap; perceived dashboard load was 5–15s.\n\nFix:\n- Extract pure buildAdminVideoFromRow helper into\n  src/admin/lookup-helpers.mjs. Mirrors buildStoredLookupMetadata's\n  nostrContext shape exactly, so response keys are unchanged.\n- Widen the SELECT in /admin/api/videos, getAdminLookupVideo, and\n  /api/v1/decisions to include the previously-missing columns.\n- Replace Promise.all(videoRows.map(getAdminLookupVideo)) with a\n  synchronous mapper. Per-page round-trips drop from ~150-250 to ~3.\n- Batch uploader_enforcement: one WHERE pubkey IN (?,?,…) query\n  for all unique uploaders on the page.\n\nField-level shape change to acknowledge:\n  nostrContext.client and nostrContext.content used to be filled\n  from the funnelcake response. They are not stored in\n  moderation_results. List view now leaves them null. The\n  single-video detail endpoint /admin/api/video/:id keeps the\n  on-demand funnelcake fetch so opened videos still show those\n  fields. Dashboard cards do not surface them.\n\nTests:\n- New: src/admin/lookup-helpers.test.mjs (6 tests, pure helper).\n- Updated: src/index.test.mjs > \"returns mirrored relay context\n  fields...\" → \"returns stored relay context fields without per-row\n  fan-out\". Now asserts zero funnelcake calls (regression gate) and\n  reads metadata from the row.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* perf: KV-cache /admin/api/stats and /admin/api/ai-detection/stats\n\ncachedStat helper wraps an expensive aggregate compute in a\n60s KV cache. Read is blocking; write is non-blocking via\nctx.waitUntil (or awaited inline when ctx is missing — keeps\nexisting tests that call worker.fetch(req, env) without ctx\nworking without changes).\n\n?fresh=1 bypasses the cache read but still writes the fresh\nvalue back, which prevents a cache stampede when many\nmoderators hit Refresh at once.\n\nStats response shape unchanged; the closure constructs the\nsame {totalInD1, totalModerated, untriaged, pendingFlagged,\nbreakdown, pending} object the dashboard already expects.\n\nTests: src/admin/cache.test.mjs (4 tests) — miss/hit/fresh/\ncorrupt-cache fall-through.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* perf: untriaged endpoint — window function, parallel KV, Nostr cache\n\nThree changes consolidated into one endpoint cleanup:\n\n1. Replace four hand-rolled correlated subqueries\n   (WHERE received_at = (SELECT MAX(received_at) WHERE sha256 = ...))\n   with a window-function CTE in src/admin/bunny-events.mjs:\n   ROW_NUMBER() OVER (PARTITION BY sha256 ORDER BY received_at DESC).\n   Backed by idx_bunny_events_sha256_received from migration 009.\n   Note: the natural-looking GROUP BY sha256 HAVING received_at =\n   MAX(received_at) form returns nondeterministic non-aggregate\n   columns in SQLite — only when MAX is in the SELECT does the\n   \"bare column\" rule apply. Window function is correct.\n\n2. Parallelize the moderation-flag KV reads. The old code did\n   `for (const row) await env.MODERATION_KV.get(...)` — sequential\n   N round-trips. Now Promise.all(rows.map(...)) hits them all at once.\n\n3. KV-cache the per-row Nostr fetch with a 1-hour TTL. The Triage\n   list rarely changes its top entries within an hour, and a cache\n   miss falls through to the existing fetchNostrEventBySha256 call.\n   Untriaged goes from ~50 parallel WS calls to typically 0-3.\n\nUntriaged COUNT(*) wrapped in cachedStat with 60s TTL.\n\nTests: src/admin/bunny-events.test.mjs (7 tests) — single-sha latest,\norder, exclude deleted/error, LIMIT/OFFSET, COUNT distinct, single-row\nhelper. The order-determinism test seeds two rows with different\nhls_url and asserts the helper picks the row with the larger\nreceived_at — this is the test that fails on the GROUP BY HAVING\nvariant.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* feat: backfill cron for legacy moderation_results lookup columns\n\nAfter PR2 widened SELECTs to read event_id/title/author/content_url/\npublished_at directly from D1 instead of fetching from funnelcake,\n~98% of legacy rows still have those columns null because the\nwriters only started populating them after migration 004.\nrunBackfill catches them up: every minute, take up to N rows where\nevent_id IS NULL, call fetchFunnelcakeLookupVideo, persist the\nresult. Idempotent (UPDATE WHERE event_id IS NULL), rate-limited\n(BACKFILL_ROWS_PER_TICK, default 200), and KV-mutex protected\nagainst the cron and the manual trigger overlapping. 404s record\nlookup_attempted_at so we don't re-poll for 7 days. HTTP errors\nleave the row untouched and retry next tick.\n\nWires into the existing every-minute cron alongside creator-delete\n(both gated by their own flags). Shipped dark behind\nBACKFILL_ENABLED=false; flip via wrangler secret put after\nverifying with /admin/api/backfill/run?count=100.\n\nAt default 200/min, 316k legacy rows ≈ 26h of backfill.\n\nTests: src/admin/backfill-lookup-columns.test.mjs (9 tests):\n- updates row from funnelcake-shaped lookup\n- idempotent (second run on same row picks 0)\n- 404 sets lookup_attempted_at only\n- HTTP error leaves row unchanged\n- honors limit option\n- KV mutex blocks concurrent runs\n- skips recently-attempted rows (within 7 days)\n- skipped:disabled when flag is off\n- throws when fetchLookup is missing\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-07T02:27:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/5b148cc4a17d9726164b53163e5a3eab1bc572c3",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/5b148cc4a17d9726164b53163e5a3eab1bc572c3",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/5b148cc4a17d9726164b53163e5a3eab1bc572c3/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f58525fc5e0b027e7d28814827c13320e17b2b81",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/f58525fc5e0b027e7d28814827c13320e17b2b81",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/f58525fc5e0b027e7d28814827c13320e17b2b81"
+      }
+    ]
+  },
+  {
+    "sha": "f58525fc5e0b027e7d28814827c13320e17b2b81",
+    "node_id": "C_kwDOQYdZgdoAKGY1ODUyNWZjNWUwYjAyN2U3ZDI4ODE0ODI3YzEzMzIwZTE3YjJiODE",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-07T00:49:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T00:49:14Z"
+      },
+      "message": "fix(relay-admin): fail loudly when Cloudflare Access blocks the worker (#135)\n\n* fix(relay-admin): fail loudly when CF Access blocks the worker\n\nSymptom: moderation dashboard delete button silently failed with\n\"Event action failed: Relay admin error: HTTP 302\" because the worker\nhad no CF_ACCESS_CLIENT_ID/CF_ACCESS_CLIENT_SECRET secrets and got\nbounced to the Cloudflare Access login page instead of reaching\nrelay.admin.divine.video/api/moderate. Took ~30 minutes of curl + log\nspelunking to find the missing secrets — should have been obvious from\nthe dashboard error.\n\nThree changes (defense in depth):\n\n1. callRelayAdminAction: log a clear console.warn at request time\n   whenever CF_ACCESS_CLIENT_ID/SECRET aren't both set, so the missing\n   config shows up in `wrangler tail` BEFORE the first user action\n   triggers the failure.\n\n2. callRelayAdminAction: detect a 302 to *.cloudflareaccess.com\n   specifically (with redirect: 'manual' so workerd surfaces it) and\n   throw a self-documenting error that names the likely cause\n   (token missing vs token expired/unauthorized) and points at the\n   project memory file.\n\n3. /admin/api/event/{id}/delete: bubble up the underlying failure error\n   from relayResult.failures[0].error instead of swallowing it under a\n   generic \"Failed to delete relay event\" message. Dashboard now shows\n   the actual root cause string.\n\nTests: 805/805 pass. New regression test asserts that with no CF Access\nsecrets and a mocked CF Access 302 redirect, the dashboard endpoint\nreturns 502 with an error message that mentions Cloudflare Access (not\na generic HTTP 302) AND that a console.warn fires on the missing\nsecrets.\n\nSetup runbook: see project memory cf_access_relay_admin_secrets.md.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(relay-admin): point at api-relay-prod.divine.video, not the stale relay.admin.divine.video deployment\n\nDiagnosis from production tail:\n\nThe default RELAY_ADMIN_URL pointed at https://relay.admin.divine.video,\nwhich routes to a stale \"divine-relay-admin-api\" worker deployment\nthat lacks the NOSTR_NSEC Secrets Store binding required by\nhandleModerate -> getSecretKey (divine-relay-manager/worker/src/nip86.ts).\n\nTail of that worker on every dashboard delete attempt:\n  TypeError: Cannot read properties of undefined (reading 'get')\n\nRoot cause in nip86.ts getSecretKey:\n  const nsec = typeof env.NOSTR_NSEC === 'string'\n    ? env.NOSTR_NSEC\n    : await env.NOSTR_NSEC.get();   // crashes when binding is undefined\n  if (!nsec) throw ...               // defensive check is AFTER the crash\n\nThe newer divine-relay-admin-api-prod worker (route\napi-relay-prod.divine.video) was deployed with wrangler.prod.toml which\nDOES bind NOSTR_NSEC via [[secrets_store_secrets]]. That's the worker\nthe relay-admin UI actually calls (per VITE_PROD_API_URL). Pointing\nthe moderation worker at the same host fixes the missing binding by\nhitting the working deployment.\n\nDefensive code fix in divine-relay-manager/worker/src/nip86.ts (move\nthe !nsec check before the .get() call) is a separate followup PR\nfiled against that repo, since this repo can't fix the relay-admin\nworker directly.\n\nAfter deploy, the user must add the divine-moderation-service service\ntoken to the \"Relay Admin API (Production)\" Cloudflare Access policy\n(it's currently scoped to \"admin-tools\" wildcard which does NOT cover\napi-relay-prod.divine.video — different domain).\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "873aa281375782a24d2d110153c67689a742d3a8",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/873aa281375782a24d2d110153c67689a742d3a8"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/f58525fc5e0b027e7d28814827c13320e17b2b81",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp++GKCRC1aQ7uu5UhlAAAvn8QAKb1oj5S3/RFqKwsDhs4HhsU\nA/9w99Joa1d659WiHE4v3arrK1OA/VnH0UfkXmh7opDnomTcsNStoAaLeAXrg9K6\nfCkOPzjL3fH7ZZVTAkTM8l7+Ino39fewSLDJ7abKkWDqJkKCM+ZOqC8xnDO7RaTu\nOMX4y4IQ4mYACbctlnoUPJpbwNcuAChZ0c3lv8Vx6xSD63FGvqzfJ8lGFg5uCycC\nrOeVaSJuziNF9T/Z9aLNPAhPlkZ6fijyFqRwLDqkW7wiimuBxjBWiLcRK4J5Iohj\nG5Ew6tr2hJPhtn6gG7f31lFZyIRsvZvRwEK+pgHEfXgcka/wiGu2UHQxwm8gVoYt\nziBT+o9lUfnMIHlGefokWS3Zgy1/T4fIwZzhoPSxcpWrxxdzDwMss3yF2Ror8oeB\nCp8gj6OObAjhkFZELyUhOQyPK3GKit/awlMQ27CGo4Lv1eFFDoXv+R6pPJ2GyNmH\nuTcaQ8s7+plJTMprNyln7FQKSJoya+9gsVV+8hhPoC80olfZ0fNex40fp8KlZ8Ia\nB+2lxvsFcNb9er861lSFmtaFWM66I+6j3+CiPIJv79+2f7RfLKMehdpdf9xGVqou\nZgPTjBdaThK0camCFfD88piSbSsij9AsCMGZu8hqxxo7lo6I6ItkdExqheUz+aLH\n4BEnJSSWfB43dX/jGmsV\n=jdM1\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 873aa281375782a24d2d110153c67689a742d3a8\nparent a163fe61c4e853c273af8cd52c50af033ff482aa\nauthor rabble <evan@protest.net> 1778114954 +1200\ncommitter GitHub <noreply@github.com> 1778114954 +1200\n\nfix(relay-admin): fail loudly when Cloudflare Access blocks the worker (#135)\n\n* fix(relay-admin): fail loudly when CF Access blocks the worker\n\nSymptom: moderation dashboard delete button silently failed with\n\"Event action failed: Relay admin error: HTTP 302\" because the worker\nhad no CF_ACCESS_CLIENT_ID/CF_ACCESS_CLIENT_SECRET secrets and got\nbounced to the Cloudflare Access login page instead of reaching\nrelay.admin.divine.video/api/moderate. Took ~30 minutes of curl + log\nspelunking to find the missing secrets — should have been obvious from\nthe dashboard error.\n\nThree changes (defense in depth):\n\n1. callRelayAdminAction: log a clear console.warn at request time\n   whenever CF_ACCESS_CLIENT_ID/SECRET aren't both set, so the missing\n   config shows up in `wrangler tail` BEFORE the first user action\n   triggers the failure.\n\n2. callRelayAdminAction: detect a 302 to *.cloudflareaccess.com\n   specifically (with redirect: 'manual' so workerd surfaces it) and\n   throw a self-documenting error that names the likely cause\n   (token missing vs token expired/unauthorized) and points at the\n   project memory file.\n\n3. /admin/api/event/{id}/delete: bubble up the underlying failure error\n   from relayResult.failures[0].error instead of swallowing it under a\n   generic \"Failed to delete relay event\" message. Dashboard now shows\n   the actual root cause string.\n\nTests: 805/805 pass. New regression test asserts that with no CF Access\nsecrets and a mocked CF Access 302 redirect, the dashboard endpoint\nreturns 502 with an error message that mentions Cloudflare Access (not\na generic HTTP 302) AND that a console.warn fires on the missing\nsecrets.\n\nSetup runbook: see project memory cf_access_relay_admin_secrets.md.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(relay-admin): point at api-relay-prod.divine.video, not the stale relay.admin.divine.video deployment\n\nDiagnosis from production tail:\n\nThe default RELAY_ADMIN_URL pointed at https://relay.admin.divine.video,\nwhich routes to a stale \"divine-relay-admin-api\" worker deployment\nthat lacks the NOSTR_NSEC Secrets Store binding required by\nhandleModerate -> getSecretKey (divine-relay-manager/worker/src/nip86.ts).\n\nTail of that worker on every dashboard delete attempt:\n  TypeError: Cannot read properties of undefined (reading 'get')\n\nRoot cause in nip86.ts getSecretKey:\n  const nsec = typeof env.NOSTR_NSEC === 'string'\n    ? env.NOSTR_NSEC\n    : await env.NOSTR_NSEC.get();   // crashes when binding is undefined\n  if (!nsec) throw ...               // defensive check is AFTER the crash\n\nThe newer divine-relay-admin-api-prod worker (route\napi-relay-prod.divine.video) was deployed with wrangler.prod.toml which\nDOES bind NOSTR_NSEC via [[secrets_store_secrets]]. That's the worker\nthe relay-admin UI actually calls (per VITE_PROD_API_URL). Pointing\nthe moderation worker at the same host fixes the missing binding by\nhitting the working deployment.\n\nDefensive code fix in divine-relay-manager/worker/src/nip86.ts (move\nthe !nsec check before the .get() call) is a separate followup PR\nfiled against that repo, since this repo can't fix the relay-admin\nworker directly.\n\nAfter deploy, the user must add the divine-moderation-service service\ntoken to the \"Relay Admin API (Production)\" Cloudflare Access policy\n(it's currently scoped to \"admin-tools\" wildcard which does NOT cover\napi-relay-prod.divine.video — different domain).\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-07T00:49:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/f58525fc5e0b027e7d28814827c13320e17b2b81",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/f58525fc5e0b027e7d28814827c13320e17b2b81",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/f58525fc5e0b027e7d28814827c13320e17b2b81/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a163fe61c4e853c273af8cd52c50af033ff482aa",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/a163fe61c4e853c273af8cd52c50af033ff482aa",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/a163fe61c4e853c273af8cd52c50af033ff482aa"
+      }
+    ]
+  }
+]

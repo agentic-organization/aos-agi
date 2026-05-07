@@ -28,7 +28,7 @@ Small but real contribution to the Nostrify framework.
 - GitHub: [patrickReiis](https://github.com/patrickReiis)
 
 ## History
-- 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/soapbox-pub-2026-05-07.json`).
+- 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 
 ## Open questions
 - Formal AOS affiliation (funded, contracted, independent contributor)?

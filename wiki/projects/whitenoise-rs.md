@@ -24,7 +24,7 @@ The Rust brain for the White Noise app
 Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and its reference implementations (including [[projects/white-noise]]).
 
 ## History
-- 2026-05-07: Page created from `data/raw/github/marmot-protocol-2026-05-07.json` (discovery run via [[tools/github-org-discover]]).
+- 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
 ## Related
 - [[projects/whitenoise]] — the Flutter app consuming this crate.

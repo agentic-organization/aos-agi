@@ -34,7 +34,7 @@ The tool [`tools/ingestion/github-org-discover.js`](../../../tools/ingestion/git
 node tools/ingestion/github-org-discover.js <org> \
   --contributors-top 10 \
   --recent-days 180 \
-  > data/raw/github/<org>-<YYYY-MM-DD>.json
+  > data/raw/github/org-discovery/<YYYY-MM-DD>/<org>/github-org-discover.json
 ```
 
 Useful flags:

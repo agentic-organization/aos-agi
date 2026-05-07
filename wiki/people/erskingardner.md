@@ -52,7 +52,7 @@ Observed activity across 13 repos in the [marmot-protocol](https://github.com/ma
 - GitHub: [erskingardner](https://github.com/erskingardner)
 
 ## History
-- 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/marmot-protocol-2026-05-07.json`).
+- 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`).
 - 2026-05-07: divinevideo discovery surfaced 74 contributions to [[projects/keycast]]; secondary affiliation to [[teams/divine]] added.
 
 ## Open questions

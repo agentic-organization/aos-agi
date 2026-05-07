@@ -1,0 +1,604 @@
+[
+  {
+    "id": "8981502974",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1193425731,
+      "name": "divinevideo/divine-upload-server",
+      "url": "https://api.github.com/repos/divinevideo/divine-upload-server"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 5,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-upload-server/pulls/5",
+        "id": 3605339370,
+        "number": 5,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "a117697996671665ef65f60654c6e00085af94a2",
+          "repo": {
+            "id": 1193425731,
+            "url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+            "name": "divine-upload-server"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "602966937d123325c0d0a67229f53015ba276526",
+          "repo": {
+            "id": 1193425731,
+            "url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+            "name": "divine-upload-server"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:06Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11274928317",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1193425731,
+      "name": "divinevideo/divine-upload-server",
+      "url": "https://api.github.com/repos/divinevideo/divine-upload-server"
+    },
+    "payload": {
+      "repository_id": 1193425731,
+      "push_id": 33566326591,
+      "ref": "refs/heads/main",
+      "head": "2994079f78ecd53d203d529382752579942a1a41",
+      "before": "602966937d123325c0d0a67229f53015ba276526"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:07Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981380773",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1193425731,
+      "name": "divinevideo/divine-upload-server",
+      "url": "https://api.github.com/repos/divinevideo/divine-upload-server"
+    },
+    "payload": {
+      "review": {
+        "id": 4209263833,
+        "node_id": "PRR_kwDORyI7Q8765ETZ",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. Contribution standards check complete. Approved.",
+        "commit_id": "a117697996671665ef65f60654c6e00085af94a2",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-upload-server/pull/5#pullrequestreview-4209263833",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-upload-server/pulls/5",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-upload-server/pull/5#pullrequestreview-4209263833"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-upload-server/pulls/5"
+          }
+        },
+        "submitted_at": "2026-05-01T00:11:39Z",
+        "updated_at": "2026-05-01T00:11:40Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-upload-server/pulls/5",
+        "id": 3605339370,
+        "number": 5,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "a117697996671665ef65f60654c6e00085af94a2",
+          "repo": {
+            "id": 1193425731,
+            "url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+            "name": "divine-upload-server"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "602966937d123325c0d0a67229f53015ba276526",
+          "repo": {
+            "id": 1193425731,
+            "url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+            "name": "divine-upload-server"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:11:41Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8934992367",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1193425731,
+      "name": "divinevideo/divine-upload-server",
+      "url": "https://api.github.com/repos/divinevideo/divine-upload-server"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 5,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-upload-server/pulls/5",
+        "id": 3605339370,
+        "number": 5,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "a117697996671665ef65f60654c6e00085af94a2",
+          "repo": {
+            "id": 1193425731,
+            "url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+            "name": "divine-upload-server"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "602966937d123325c0d0a67229f53015ba276526",
+          "repo": {
+            "id": 1193425731,
+            "url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+            "name": "divine-upload-server"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-29T22:33:11Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11222383384",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1193425731,
+      "name": "divinevideo/divine-upload-server",
+      "url": "https://api.github.com/repos/divinevideo/divine-upload-server"
+    },
+    "payload": {
+      "ref": "codex/repo-contribution-guardrails",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/repo-contribution-guardrails",
+      "master_branch": "main",
+      "description": "Resumable upload data plane for Divine Blossom",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-29T22:32:55Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8219026752",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1193425731,
+      "name": "divinevideo/divine-upload-server",
+      "url": "https://api.github.com/repos/divinevideo/divine-upload-server"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/events",
+        "html_url": "https://github.com/divinevideo/divine-upload-server/pull/2",
+        "id": 4163432622,
+        "node_id": "PR_kwDORyI7Q87OXEAX",
+        "number": 2,
+        "title": "fix: cap advertised resumable chunk size to route limit",
+        "user": {
+          "login": "rabble",
+          "id": 76,
+          "node_id": "MDQ6VXNlcjc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rabble",
+          "html_url": "https://github.com/rabble",
+          "followers_url": "https://api.github.com/users/rabble/followers",
+          "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+          "organizations_url": "https://api.github.com/users/rabble/orgs",
+          "repos_url": "https://api.github.com/users/rabble/repos",
+          "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rabble/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-03-29T08:51:54Z",
+        "updated_at": "2026-04-08T22:05:43Z",
+        "closed_at": "2026-04-08T22:05:43Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/divinevideo/divine-upload-server/pulls/2",
+          "html_url": "https://github.com/divinevideo/divine-upload-server/pull/2",
+          "diff_url": "https://github.com/divinevideo/divine-upload-server/pull/2.diff",
+          "patch_url": "https://github.com/divinevideo/divine-upload-server/pull/2.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\n- cap advertised resumable chunk size to the configured upload-route body limit\n- add a regression test proving the server never advertises a chunk larger than the route can accept\n- document the new `RESUMABLE_MAX_REQUEST_BODY_SIZE` env var\n\n## Test Plan\n- [x] `cargo test --manifest-path /Users/rabble/code/divine/divine-upload-server/.worktrees/fix-resumable-ingress-contract/Cargo.toml`",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/comments/4210003585",
+        "html_url": "https://github.com/divinevideo/divine-upload-server/pull/2#issuecomment-4210003585",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2",
+        "id": 4210003585,
+        "node_id": "IC_kwDORyI7Q876746B",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-08T22:05:43Z",
+        "updated_at": "2026-04-08T22:05:43Z",
+        "body": "Closing as superseded by PR #1 (5303eeb), plus follow-up fixes in PR #3 and PR #4. The docs and ignore changes from this branch are already on main, and the remaining code here is stale relative to the current resumable upload behavior.",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/comments/4210003585/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-08T22:05:43Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8219026729",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1193425731,
+      "name": "divinevideo/divine-upload-server",
+      "url": "https://api.github.com/repos/divinevideo/divine-upload-server"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 2,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-upload-server/pulls/2",
+        "id": 3462152215,
+        "number": 2,
+        "head": {
+          "ref": "fix-resumable-ingress-contract",
+          "sha": "c06a212fae9f02738b1cd4f9b74d51dfc28e9666",
+          "repo": {
+            "id": 1193425731,
+            "url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+            "name": "divine-upload-server"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "5303eeb02f0351ea2499fda30a767ff3eb298daa",
+          "repo": {
+            "id": 1193425731,
+            "url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+            "name": "divine-upload-server"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-03-29T08:51:54Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8219026591",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1193425731,
+      "name": "divinevideo/divine-upload-server",
+      "url": "https://api.github.com/repos/divinevideo/divine-upload-server"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-upload-server",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/events",
+        "html_url": "https://github.com/divinevideo/divine-upload-server/pull/2",
+        "id": 4163432622,
+        "node_id": "PR_kwDORyI7Q87OXEAX",
+        "number": 2,
+        "title": "fix: cap advertised resumable chunk size to route limit",
+        "user": {
+          "login": "rabble",
+          "id": 76,
+          "node_id": "MDQ6VXNlcjc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rabble",
+          "html_url": "https://github.com/rabble",
+          "followers_url": "https://api.github.com/users/rabble/followers",
+          "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+          "organizations_url": "https://api.github.com/users/rabble/orgs",
+          "repos_url": "https://api.github.com/users/rabble/repos",
+          "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rabble/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-03-29T08:51:54Z",
+        "updated_at": "2026-04-08T22:05:43Z",
+        "closed_at": "2026-04-08T22:05:43Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/divinevideo/divine-upload-server/pulls/2",
+          "html_url": "https://github.com/divinevideo/divine-upload-server/pull/2",
+          "diff_url": "https://github.com/divinevideo/divine-upload-server/pull/2.diff",
+          "patch_url": "https://github.com/divinevideo/divine-upload-server/pull/2.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\n- cap advertised resumable chunk size to the configured upload-route body limit\n- add a regression test proving the server never advertises a chunk larger than the route can accept\n- document the new `RESUMABLE_MAX_REQUEST_BODY_SIZE` env var\n\n## Test Plan\n- [x] `cargo test --manifest-path /Users/rabble/code/divine/divine-upload-server/.worktrees/fix-resumable-ingress-contract/Cargo.toml`",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/comments/4210003586",
+        "html_url": "https://github.com/divinevideo/divine-upload-server/pull/2#issuecomment-4210003586",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/2",
+        "id": 4210003586,
+        "node_id": "IC_kwDORyI7Q876746C",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-08T22:05:43Z",
+        "updated_at": "2026-04-08T22:05:43Z",
+        "body": "Closing as superseded by PR #1 (5303eeb), plus follow-up fixes in PR #3 and PR #4. The docs and ignore changes from this branch are already on main, and the remaining code here is stale relative to the current resumable upload behavior.",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-upload-server/issues/comments/4210003586/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-08T22:05:43Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]

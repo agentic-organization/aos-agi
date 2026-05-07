@@ -1,0 +1,544 @@
+[
+  {
+    "id": "11274931049",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "repository_id": 1187507811,
+      "push_id": 33566329333,
+      "ref": "refs/heads/main",
+      "head": "1420d4f9c9f70364276c7863e0a4f65fd49cdf06",
+      "before": "e4ec1ae9f183cffe0abbf2ce7b198b6a9abea251"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:14Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981504971",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 10,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-sky/pulls/10",
+        "id": 3605311641,
+        "number": 10,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "70e1571ccf9466a7fa2653d4a8cc2f58279147fe",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "e4ec1ae9f183cffe0abbf2ce7b198b6a9abea251",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:13Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981382428",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "review": {
+        "id": 4209264232,
+        "node_id": "PRR_kwDORsfuY8765EZo",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. Contribution standards check complete. Approved.",
+        "commit_id": "70e1571ccf9466a7fa2653d4a8cc2f58279147fe",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-sky/pull/10#pullrequestreview-4209264232",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-sky/pulls/10",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-sky/pull/10#pullrequestreview-4209264232"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-sky/pulls/10"
+          }
+        },
+        "submitted_at": "2026-05-01T00:11:43Z",
+        "updated_at": "2026-05-01T00:11:43Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-sky/pulls/10",
+        "id": 3605311641,
+        "number": 10,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "70e1571ccf9466a7fa2653d4a8cc2f58279147fe",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "e4ec1ae9f183cffe0abbf2ce7b198b6a9abea251",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:11:44Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8934818269",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 10,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-sky/pulls/10",
+        "id": 3605311641,
+        "number": 10,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "70e1571ccf9466a7fa2653d4a8cc2f58279147fe",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "e4ec1ae9f183cffe0abbf2ce7b198b6a9abea251",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-29T22:26:17Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11222195986",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "ref": "codex/repo-contribution-guardrails",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/repo-contribution-guardrails",
+      "master_branch": "main",
+      "description": "Divine sky services",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-29T22:26:02Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10354246737",
+    "type": "PushEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "repository_id": 1187507811,
+      "push_id": 32646871555,
+      "ref": "refs/heads/main",
+      "head": "e4ec1ae9f183cffe0abbf2ce7b198b6a9abea251",
+      "before": "f164e4d99f43f66a296a3c56364ac99765fb9d81"
+    },
+    "public": true,
+    "created_at": "2026-04-08T23:19:43Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8220748922",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 9,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-sky/pulls/9",
+        "id": 3485571999,
+        "number": 9,
+        "head": {
+          "ref": "docs/phase1-atproto-rollout-runbooks",
+          "sha": "bffba5aa2501020915000a66229058cd1dc360db",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "f164e4d99f43f66a296a3c56364ac99765fb9d81",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-08T23:19:42Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10354181437",
+    "type": "PushEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "repository_id": 1187507811,
+      "push_id": 32646806947,
+      "ref": "refs/heads/docs/phase1-atproto-rollout-runbooks",
+      "head": "bffba5aa2501020915000a66229058cd1dc360db",
+      "before": "3fdc7aad4ee84a0d698d69b3766be86fb5f6738e"
+    },
+    "public": true,
+    "created_at": "2026-04-08T23:16:50Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10354130460",
+    "type": "PushEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "repository_id": 1187507811,
+      "push_id": 32646756102,
+      "ref": "refs/heads/docs/phase1-atproto-rollout-runbooks",
+      "head": "3fdc7aad4ee84a0d698d69b3766be86fb5f6738e",
+      "before": "cc33e99a531c5643790d5139b4924a7d8cafe170"
+    },
+    "public": true,
+    "created_at": "2026-04-08T23:14:40Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8220583030",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "review": {
+        "id": 4078838170,
+        "node_id": "PRR_kwDORsfuY87zHiGa",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Aligned the checklist wording so the ArgoCD-managed GKE service list now matches the deploy docs. The entryway/login/pds contract changes look correct, and the smoke-script sync concern did not apply because the script already validates entryway.divine.video.",
+        "commit_id": "cc33e99a531c5643790d5139b4924a7d8cafe170",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-sky/pull/9#pullrequestreview-4078838170",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-sky/pulls/9",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-sky/pull/9#pullrequestreview-4078838170"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-sky/pulls/9"
+          }
+        },
+        "submitted_at": "2026-04-08T23:12:17Z",
+        "updated_at": "2026-04-08T23:12:17Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-sky/pulls/9",
+        "id": 3485571999,
+        "number": 9,
+        "head": {
+          "ref": "docs/phase1-atproto-rollout-runbooks",
+          "sha": "bffba5aa2501020915000a66229058cd1dc360db",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "f164e4d99f43f66a296a3c56364ac99765fb9d81",
+          "repo": {
+            "id": 1187507811,
+            "url": "https://api.github.com/repos/divinevideo/divine-sky",
+            "name": "divine-sky"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-04-08T23:12:18Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10354070096",
+    "type": "PushEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1187507811,
+      "name": "divinevideo/divine-sky",
+      "url": "https://api.github.com/repos/divinevideo/divine-sky"
+    },
+    "payload": {
+      "repository_id": 1187507811,
+      "push_id": 32646696193,
+      "ref": "refs/heads/docs/phase1-atproto-rollout-runbooks",
+      "head": "cc33e99a531c5643790d5139b4924a7d8cafe170",
+      "before": "36b6ee7581d53d84c79719609ad533fc51788335"
+    },
+    "public": true,
+    "created_at": "2026-04-08T23:12:02Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]

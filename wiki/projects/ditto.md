@@ -37,7 +37,7 @@ A fully customizable social platform built on Nostr — a Nostr client framed fo
 Ditto is one of AOS's **Foundry** projects, owned and operated by [[teams/soapbox]] (Alex Gleason's project label). Soapbox's earlier "soapbox" Mastodon-fork client has effectively been succeeded by Ditto on the active-development axis.
 
 ## History
-- 2026-05-07: Page expanded from Foundry stub using [`tools/ingestion/github-org-discover.js`](../tools/github-org-discover.md) snapshot of `soapbox-pub` (`data/raw/github/soapbox-pub-2026-05-07.json`).
+- 2026-05-07: Page expanded from Foundry stub using [`tools/ingestion/github-org-discover.js`](../tools/github-org-discover.md) snapshot of `soapbox-pub` (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 - 2026-05-07: Original Foundry-listing stub created from andotherstuff.org.
 
 ## Open questions

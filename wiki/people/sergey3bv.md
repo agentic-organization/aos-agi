@@ -31,7 +31,7 @@ Observed activity across 4 repos in the [divinevideo](https://github.com/divinev
 - GitHub: [sergey3bv](https://github.com/sergey3bv)
 
 ## History
-- 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/divinevideo-2026-05-07.json`).
+- 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`).
 
 ## Open questions
 - Full name, location, timezone?
@@ -47,4 +47,4 @@ Also a small contributor (~2 contribs in the last 90 days) on `soapbox-pub/nostr
 - [[teams/divine]] — Divine services stack (Blossom, moderation, push, Keycast)
 - [[teams/soapbox]] — Nostrify framework
 
-Documented from `soapbox-pub` discovery snapshot (`data/raw/github/soapbox-pub-2026-05-07.json`).
+Documented from `soapbox-pub` discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).

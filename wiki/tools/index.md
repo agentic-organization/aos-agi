@@ -8,6 +8,7 @@ Pages focus on: purpose, skill mappings, users, related systems, signals emitted
 
 ### Ingestion
 - [[tools/cashu-daily-report]] — daily 24h activity scrape of 8 `cashubtc` repos.
+- [[tools/github-daily-ingest]] — daily raw GitHub scrape over the repository/org watchlist.
 - [[tools/github-org-discover]] — maps a GitHub org (repos, members, active contributors) into a single JSON snapshot.
 
 ### Delivery / gateways

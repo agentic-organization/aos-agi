@@ -9,7 +9,8 @@ A privacy-preserving digital cash protocol built on Bitcoin. Cashu enables insta
 - [https://cashu.space](https://cashu.space)
 
 ## Repository
-- (no repository listed)
+- GitHub organization: [cashubtc](https://github.com/cashubtc)
+- External ecosystem repos watched by daily ingestion: `minibits-cash/minibits_wallet`, `zeugmaster/macadamia`, `zeugmaster/cashu-swift`, `elnosh/gonuts`.
 
 ## Tags / concepts
 [[concepts/bitcoin]] · [[concepts/payments]] · [[concepts/privacy]]
@@ -25,6 +26,7 @@ A privacy-preserving digital cash protocol built on Bitcoin. Cashu enables insta
 
 ## Ingestion signals
 - [[tools/cashu-daily-report]] — daily GitHub activity scrape over `Numo`, `cashu-ts`, `cdk`, `coco`, `cashu.me`, `nuts`, `nutshell`, `BTCNutServer`.
+- [[tools/github-daily-ingest]] — org-wide raw GitHub ingestion for `cashubtc` plus selected external Cashu ecosystem repos, using `data/sources/github-watchlist.json`.
 
 ## Related systems
 - (to be filled as system-level dependencies are observed)
@@ -39,6 +41,7 @@ Part of AOS's **Foundry** hub — projects the Foundry supports and stewards as 
 
 ## History
 - 2026-05-07: Page created from andotherstuff.org Foundry project listing.
+- 2026-05-07: Repository section and ingestion signals updated after `data/raw/github/daily/2026-05-07/` captured org-wide `cashubtc` activity through [[tools/github-daily-ingest]].
 
 ## Open questions
 - Who are the primary maintainers and active contributors?
