@@ -13,7 +13,7 @@ One page per project. Pages evolve as maintainers, communication channels, skill
 | [[projects/divine]] | Short-form looping video on Nostr | GitHub · divinevideo/* |
 | [[projects/white-noise]] | Private Nostr-based messaging | GitHub · marmot-protocol/* |
 | [[projects/flotilla]] | Community/social platform (Nostr) | GitHub · coracle-social/flotilla |
-| [[projects/cashu]] | Bitcoin ecash / privacy payments | GitHub · cashubtc |
+| [[projects/cashu]] | Bitcoin ecash / privacy payments | GitHub · cashubtc (see [[projects/cashu]] for full ecosystem) |
 | [[projects/chorus]] | Decentralized community for creators | GitHub · andotherstuff/chorus |
 | [[projects/bitchat]] | Offline Bluetooth messaging | GitHub · permissionlesstech/bitchat |
 | [[projects/marmot]] | Protocol: MLS over Nostr | GitHub · marmot-protocol/marmot |
@@ -76,9 +76,47 @@ Engineering pages for components under [[teams/soapbox]] (the `soapbox-pub` GitH
 - [[projects/soapbox]] — original Mastodon-fork client (still the most-starred Soapbox repo)
 - [[projects/rebased]] — Pleroma-derived Elixir backend (last push 2025-04)
 
+## Cashu ecosystem
+
+The [[projects/cashu]] page is the protocol and ecosystem umbrella. Sub-projects below are split by role and by whether they sit inside the `cashubtc/` GitHub organization (stewarded by [[teams/cashu-core]]) or are independent.
+
+### Protocol & reference implementations (`cashubtc/`)
+- [[projects/nuts]] — the NUT specifications.
+- [[projects/cdk]] — Rust Cashu Development Kit (+ [[projects/mintd]], [[projects/cdk-wallet]], [[projects/cdk-swift]], [[projects/cdk-kotlin]], [[projects/cdk-python]]).
+- [[projects/cashu-ts]] · [[projects/cashu-crypto-ts]] · [[projects/coco]] — TypeScript stack.
+- [[projects/nutshell]] — Python reference mint + wallet + library.
+- [[projects/cashu-me]] — reference web wallet.
+- [[projects/numo]] — Android point-of-sale.
+- [[projects/npub-cash]] — Lightning-address provider.
+- [[projects/cashu-redeem]] — redemption web tool.
+- [[projects/awesome-cashu]] — ecosystem index (meta).
+- [[projects/enuts]] — historical mobile wallet, being revived.
+
+### Wallets (independent)
+- [[projects/minibits]] (mobile), [[projects/macadamia]] (iOS/Swift), [[projects/sovran]] (iOS).
+- [[projects/nutstash]] (web), [[projects/agicash]] (web), [[projects/harbor]] (desktop).
+- [[projects/zeus]] (Lightning + Cashu), [[projects/kashir]] (React Native + Nostr).
+- [[projects/cocod]] (CLI daemon), [[projects/nutsack]] (NIP-60 framework), [[projects/sixty-nuts]] (Python NIP-60).
+
+### Mints (independent)
+- [[projects/nutmix]] (Go).
+
+### Libraries (independent)
+- [[projects/cashuswift]] (Swift), [[projects/cashu-jdk]] (Java).
+
+### Applications & tools
+- [[projects/athenut]] (search), [[projects/btcnutserver]] (BTCPay plugin), [[projects/hashpool]] (mining pool).
+- [[projects/routstr]] + [[projects/otrta-client]] (LLM marketplace).
+- [[projects/tollgate]] + [[projects/wally]] (decentralized WiFi ISP).
+- [[projects/0xchat]] · [[projects/keychat]] · [[projects/iris]] · [[projects/shopstr]] — messengers/clients with Cashu wallets.
+- [[projects/x-cashu]] + [[projects/proxnut]] — HTTP 402 paywall stack.
+- [[projects/bitcoinmints]] · [[projects/cashumints-space]] · [[projects/mint-audit]] — mint discovery/audit.
+- AOS-internal integration: [[projects/chorus]] ships a NIP-60/61 Cashu wallet.
+
 ## Source
 - [andotherstuff.org](https://andotherstuff.org/#foundry-projects) Foundry project listing.
 - `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` — discovery snapshot for the Marmot Protocol organization.
 - `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` — discovery snapshot for the Divine (divinevideo) organization.
 - `data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json` — discovery snapshot for the Soapbox (soapbox-pub) organization.
 - `data/raw/github/daily/2026-05-07/` — first watchlist-wide raw GitHub ingestion run via [[tools/github-daily-ingest]].
+- `data/raw/cashu/` — snapshots of cashu.space, docs.cashu.space pages, and `cashubtc/awesome-cashu` README used to synthesize the Cashu ecosystem pages.
