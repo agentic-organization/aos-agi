@@ -1,6 +1,6 @@
 # tools/ingestion
 
-Source-specific data fetchers for the Organization Intelligence Agent. Each script pulls from one source (GitHub, Slack, etc.), emits a derived artifact (a report, a dump, a JSON record), and does **not** write into `wiki/` or `graph/` directly — synthesis is a separate step.
+Source-specific data fetchers for the Organization Intelligence Agent. Each script pulls from one source (GitHub, Slack, etc.), emits a derived artifact (a report, a dump, a JSON record), and does **not** write into `wiki/` directly — synthesis is a separate step.
 
 ## Scripts
 

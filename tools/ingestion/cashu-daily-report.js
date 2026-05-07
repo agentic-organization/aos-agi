@@ -31,7 +31,7 @@
  * This script is part of org-memory's ingestion/observation tooling. It reads
  * the public GitHub API only and produces a single text artifact. It does not
  * write into the wiki directly — the agent's synthesis step is responsible
- * for integrating its output into wiki/ and graph/.
+ * for integrating its output into wiki/.
  */
 
 const https = require('https');

@@ -35,7 +35,7 @@
  *                   to 60 req/hr.
  *
  * Part of org-memory's ingestion layer. Read-only — this script never writes
- * into wiki/ or graph/. Synthesis is a separate step.
+ * into wiki/. Synthesis is a separate step.
  */
 
 const https = require('https');

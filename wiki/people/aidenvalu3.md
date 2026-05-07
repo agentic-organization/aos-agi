@@ -20,7 +20,7 @@ Listed as a cashubtc organization member. Identity may overlap with `a1denvalu3`
 - 2026-05-07: Page created from an internal Q4-2025 cashubtc organization analysis (scope and responsibilities only; no performance details ingested).
 
 ## Notes
-Flagged as inactive in the Q4-2025 ingestion window. Identity overlap with `a1denvalu3` to be confirmed via [[directory/identities/]].
+Flagged as inactive in the Q4-2025 ingestion window. Identity overlap with `a1denvalu3` to be confirmed (open question, no canonical identity-mapping layer in this repo).
 
 ## Open questions
 - Full name, location, timezone?
