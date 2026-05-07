@@ -70,6 +70,18 @@ One page per person. Pages evolve as identity resolution, skills, and affiliatio
 - [[people/redaranj]] *(public member, activity to confirm)*
 - [[people/erskingardner]] *(cross-team; primary affiliation is [[teams/marmot-protocol]])*
 
+### [[teams/soapbox]]
+- [[people/alexgleason]] — lead maintainer / founder
+- [[people/Danidfra]]
+- [[people/marykatefain]]
+- [[people/happylemonprogramming]]
+- [[people/xyzshantaram]]
+- [[people/DanConwayDev]]
+- [[people/patrickReiis]]
+- [[people/samthomson]] *(cross-team; primary affiliation is [[teams/divine]])*
+- [[people/sergey3bv]] *(cross-team; primary affiliation is [[teams/divine]])*
+- [[people/shakespeare-diy]] — **automation account** (the Shakespeare project itself contributing code across orgs)
+
 ## Notes
 - All pages describe **role, scope, and responsibilities** — not performance, rating, or tier.
 - Cross-team contributors (e.g. nostr ecosystem overlap between `cashubtc` and `marmot-protocol`) may appear under multiple teams; the person page is a single canonical record.
