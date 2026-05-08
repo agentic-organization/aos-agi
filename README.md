@@ -14,13 +14,24 @@ This repository is **not** the agent. It is the agent's long-term memory: raw ev
 
 ```
 docs/     — reference docs (incl. LLM_WIKI.md)
-tools/    — ingestion scripts (small, focused, reusable)
-data/     — raw evidence (data/raw/<source>/…)
+tools/    — ingestion scripts + wiki search layer (small, focused, reusable)
+data/     — raw evidence (data/raw/<source>/…) and search build artifacts (gitignored)
 wiki/     — living Markdown knowledge base
 .agents/  — agent skills (reusable procedures)
 ```
 
 Directories are created when they have content to hold. No empty scaffold directories.
+
+## Search
+
+Hybrid BM25 + sentence-transformer search over the wiki. BM25 works immediately; vectors are optional and built on a bigger machine:
+
+```bash
+tools/search/build.sh                           # build BM25 index
+node tools/search/search.js "your query"        # query (hybrid if embeddings present, else BM25)
+```
+
+See [`.agents/skills/wiki-search/SKILL.md`](.agents/skills/wiki-search/SKILL.md) for the full workflow including embedding.
 
 ## Loop
 

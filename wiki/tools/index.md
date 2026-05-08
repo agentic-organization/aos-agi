@@ -11,6 +11,9 @@ Pages focus on: purpose, skill mappings, users, related systems, signals emitted
 - [[tools/github-daily-ingest]] — daily raw GitHub scrape over the repository/org watchlist.
 - [[tools/github-org-discover]] — maps a GitHub org (repos, members, active contributors) into a single JSON snapshot.
 
+### Search
+- [[tools/wiki-search]] — hybrid BM25 + sentence-transformer search over the wiki. BM25 ships live; vector half runs on a bigger machine.
+
 ### Delivery / gateways
 - [[tools/openclaw-message-gateway]] — `openclaw message send` CLI used by scripts to deliver reports to chat platforms.
 
