@@ -31,6 +31,7 @@ When a skill turns out to be wrong, incomplete, or outdated:
 - [`github-daily-ingestion/`](github-daily-ingestion/) — Run the daily `gh`-based GitHub raw ingestion pipeline and apply the LLM Wiki update loop to new evidence.
 - [`github-org-discovery/`](github-org-discovery/) — Map a GitHub organization (repos, members, active contributors) and ingest the results into the wiki.
 - [`pr-workflow/`](pr-workflow/) — Every change to this repo goes through a feature branch and a pull request, never a direct push to `main`.
+- [`wiki-search/`](wiki-search/) — Build and query the wiki search layer (BM25 always on; sentence-transformer vectors optional). Covers how to rebuild after wiki changes and how to run the embedder on a bigger machine.
 
 ## Adding a skill
 
