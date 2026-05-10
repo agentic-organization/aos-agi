@@ -1,0 +1,89 @@
+[
+  {
+    "sha": "6051904c65227ad5878df03340d40eeefb9e6dd7",
+    "node_id": "C_kwDOH-XoldoAKDYwNTE5MDRjNjUyMjdhZDU4NzhkZjAzMzQwZDQwZWVlZmI5ZTZkZDc",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-08T15:38:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T15:38:37Z"
+      },
+      "message": "Merge pull request #987 from cashubtc/fix/pydantic-list-str-dos\n\nfix(models): correctly apply Pydantic max_length to list string fields",
+      "tree": {
+        "sha": "d2cb6924acd237c687d1d88f0b68c9b9baea4c69",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/d2cb6924acd237c687d1d88f0b68c9b9baea4c69"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/6051904c65227ad5878df03340d40eeefb9e6dd7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/gN9CRC1aQ7uu5UhlAAAWyoQAK3Y1ceTUpbl+OUeduX/P05o\npGNg1tx6anGLSW4IFSVqtwc1VtV6UPVKxKYZl80oLyodynmm4ou9cQJAHcQW5fdc\necIhabI5zBSfYFUYmWHq94e35Hk0vPYy2032K+dpXLgWf9vqEpf4i/P5uaP+Ex9l\n60X7ZV5CX6Ep78yYXqq8hx3SJCXGDHCAjKZhHcZG226gqhJDC3ommBsRkWpan+5F\n4NRLfakgy6fJ68geoZx5IPvE63+jJwXrnSzTqERr4g+gOA8F5QP1cDZV35vhHvJi\nem0r83rbuu63Dk1EuSsFBppLLFX0mlbIBme8+gSnyS9kZhkxY73EsIlKCLpQJj61\n7pTz99ldcbyUN/EuMlNYKsl2eqeVN4240vQvqwMv3y5yseHYNdTDkYsB24lGjSMk\nHJ9/7l1+DcunnTqAWALSapu/oXd9t2OJhIH79hhSrGcSFPs9Rykq/a05vbDMbP0f\nSmjoHJNVf0T8j6zaZvE5VkelxPFDyziyQbMRNdzGXXVloaS7GbJ4Ki686WPrIX1N\nuSeWXf2n+MwMxgacB9cWe42HWz3gmgeqM1SLHgOfvskvA3t8b3k1Ip1XAw6vpziL\nx1BgBZo62iunwAtIbRtpfK/LtFACnDl9TxOLtsqKWfUqMVgVFp9TYCb6LaCLxZhJ\n96GG9OUqGeqqIeEOwSl6\n=NVn5\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d2cb6924acd237c687d1d88f0b68c9b9baea4c69\nparent 75926d776bdea71217beb5ec3da48b9b4c27f983\nparent fd5f05a87343aa34f4bb32521bb54f753bc8e7fe\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1778254717 +0200\ncommitter GitHub <noreply@github.com> 1778254717 +0200\n\nMerge pull request #987 from cashubtc/fix/pydantic-list-str-dos\n\nfix(models): correctly apply Pydantic max_length to list string fields",
+        "verified_at": "2026-05-08T15:38:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/6051904c65227ad5878df03340d40eeefb9e6dd7",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/6051904c65227ad5878df03340d40eeefb9e6dd7",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/6051904c65227ad5878df03340d40eeefb9e6dd7/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "75926d776bdea71217beb5ec3da48b9b4c27f983",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/75926d776bdea71217beb5ec3da48b9b4c27f983",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/75926d776bdea71217beb5ec3da48b9b4c27f983"
+      },
+      {
+        "sha": "fd5f05a87343aa34f4bb32521bb54f753bc8e7fe",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/fd5f05a87343aa34f4bb32521bb54f753bc8e7fe",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/fd5f05a87343aa34f4bb32521bb54f753bc8e7fe"
+      }
+    ]
+  }
+]

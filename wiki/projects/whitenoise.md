@@ -27,6 +27,7 @@ The White Noise Flutter App
 Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and its reference implementations (including [[projects/white-noise]]).
 
 ## History
+- 2026-05-10: 2026-05-07 → 2026-05-10 daily ingestion (`data/raw/github/daily/2026-05-10/marmot-protocol/whitenoise/`) recorded 5 commits, 13 updated PRs, 22 updated issues, and release **v2026.5.7+24** (published 2026-05-07): finishes block functionality (blocked users hidden from invites/previews/timeline/search/notifications), end-to-end video attachments, app-wide offline notice, **on-disk DB encryption**, and three security fixes pushed into [[projects/mdk]]. Commit-window contributors: [[people/erskingardner]], [[people/pepina-dev]].
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
 ## Related

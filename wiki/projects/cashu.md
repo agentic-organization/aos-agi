@@ -103,6 +103,7 @@ The canonical, continuously-updated index is [github.com/cashubtc/awesome-cashu]
 Cashu is one of the AOS **Foundry** projects and the organization's flagship privacy-payments surface. Its dependency graph reaches into multiple other AOS projects — [[projects/chorus]] ships a Cashu wallet, and Cashu's NIP-60/61 tooling makes it the de-facto ecash layer of the wider Nostr ecosystem that [[teams/soapbox]], [[teams/divine]], and [[teams/marmot-protocol]] also build on.
 
 ## History
+- 2026-05-10: Added [[projects/orchard]] (mint-management web app, sole maintainer [[people/orangeshyguy21]]) to the cashubtc sub-project graph after `data/raw/github/daily/2026-05-10/cashubtc/orchard/` showed concentrated activity (27 commits in 72h, NUT-21/22/29 work).
 - 2026-05-07: Page expanded from a Foundry-listing stub into a protocol/ecosystem umbrella, using cashu.space, docs.cashu.space, and `cashubtc/awesome-cashu` README as sources (snapshots in `data/raw/cashu/`).
 - 2026-05-07: Original Foundry-listing stub created from andotherstuff.org.
 - 2026-05-07: Repository section and ingestion signals updated after `data/raw/github/daily/2026-05-07/` captured org-wide `cashubtc` activity through [[tools/github-daily-ingest]].

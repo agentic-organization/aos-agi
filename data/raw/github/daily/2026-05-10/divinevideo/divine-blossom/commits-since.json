@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "eeb8a3212754544d1b7c51181b81b31dbee23085",
+    "node_id": "C_kwDOQht-UtoAKGVlYjhhMzIxMjc1NDU0NGQxYjdjNTExODFiODFiMzFkYmVlMjMwODU",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-08T22:35:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T22:35:46Z"
+      },
+      "message": "fix(auth): broaden BUD-01 GET acceptance per Postel's law (#129)\n\nThree small relaxations on the BUD-01 GET auth path so we accept what\nreal-world clients actually send, while still rejecting obviously bad\nauth events:\n\n1. Auth-scheme prefix is now case-insensitive — `Nostr `, `nostr `,\n   `NOSTR ` all parse. RFC 7235 says auth-scheme tokens are\n   case-insensitive and clients have shipped lowercase variants.\n\n2. The `t` action tag is matched case-insensitively in get_action(), so\n   `Get` / `GET` / `gEt` all map to AuthAction::Get. The Blossom spec\n   doesn't mandate case for the action value.\n\n3. validate_blossom_get_event now accepts events with multiple `x`\n   tags — BUD-01 allows authorising multiple blobs in one event, but\n   we previously only checked the first x tag and rejected when the\n   match was elsewhere in the list. Now we iterate every x tag and\n   accept if any matches the requested hash.\n\nOut of scope: case-insensitive NIP-98 method tag and URL canonicalisation\n(query-strip / trailing-slash). Defer until we see a concrete client\nreporting that pattern.\n\nTests: 30 viewer_auth + 99 blossom-core pass (5 new regression tests\ncovering all three relaxations + a \"still rejects when truly invalid\"\ncounter-test).",
+      "tree": {
+        "sha": "f3213e93d9659afd6ce58e5dc8fd3b1be6d50f7c",
+        "url": "https://api.github.com/repos/divinevideo/divine-blossom/git/trees/f3213e93d9659afd6ce58e5dc8fd3b1be6d50f7c"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-blossom/git/commits/eeb8a3212754544d1b7c51181b81b31dbee23085",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/mVCCRC1aQ7uu5UhlAAAaqMQACaB6kf13usXHGBtvJBENmay\nSON8Oh9CLP/U5FWGES0hztemvs+qRdD42HjH6e2dbD26FOvmzuM5/djeAvScybg7\nOJXZXtYzNHW5YYZCJ5v8pxJWcS6ETRXvQareQJCiB0JuRHe5tsVbBb0jyH05rgot\nEDiwQKBCIblGadFrokSEloNf6RijPXoMdnQpMrmuAg0MruXZMQGFH7xDUN4+V9+O\nU2TxRTKwqK7xl+pDWZvncIQ5KRmEW2jI0BaO541NDjQEi4gUvPSnDEA8hIFBiQsa\nNKC2OnGlLAEXsqH1rRO3VV4IMQYN5P0f6EPP+/rXxwsYKzVefmNTXEk/5age3aEO\nAY5q82b7bYpYpcbLtVwdHRYWkmdwadPvlhD+aYl8dnx+7gAvZ2QqLZ4qZSV/VJ4Y\nIPqEd78r74elpWWzbG3I9r1IKTCsckrsHQaffUhL+AF1cOdfvD4eN+MetpNyix2f\nai0BrUiJGzpfTczS59ZaqJN2qr/OdNeBglXebAGdpjsolem4dznQ+1DXgh7pFqYO\n9jAd+vjLAZjiq60WasLSfjmOnhPRLJ+akInoLmsAIZZXITNmdbkS8bkfWG3YWXha\nzTJ0a6fuRavjup8TsHVJ5mxkYPTlKNtYMQAhzFti1MLsGCQ5fLfdeWHk4a5uX4dc\n9/070FWpLoQr1EVE0onI\n=oYvv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f3213e93d9659afd6ce58e5dc8fd3b1be6d50f7c\nparent f7633ad854f6d313fd0dbae8c69f4268b4b3ed61\nauthor rabble <evan@protest.net> 1778279746 +1200\ncommitter GitHub <noreply@github.com> 1778279746 +1200\n\nfix(auth): broaden BUD-01 GET acceptance per Postel's law (#129)\n\nThree small relaxations on the BUD-01 GET auth path so we accept what\nreal-world clients actually send, while still rejecting obviously bad\nauth events:\n\n1. Auth-scheme prefix is now case-insensitive — `Nostr `, `nostr `,\n   `NOSTR ` all parse. RFC 7235 says auth-scheme tokens are\n   case-insensitive and clients have shipped lowercase variants.\n\n2. The `t` action tag is matched case-insensitively in get_action(), so\n   `Get` / `GET` / `gEt` all map to AuthAction::Get. The Blossom spec\n   doesn't mandate case for the action value.\n\n3. validate_blossom_get_event now accepts events with multiple `x`\n   tags — BUD-01 allows authorising multiple blobs in one event, but\n   we previously only checked the first x tag and rejected when the\n   match was elsewhere in the list. Now we iterate every x tag and\n   accept if any matches the requested hash.\n\nOut of scope: case-insensitive NIP-98 method tag and URL canonicalisation\n(query-strip / trailing-slash). Defer until we see a concrete client\nreporting that pattern.\n\nTests: 30 viewer_auth + 99 blossom-core pass (5 new regression tests\ncovering all three relaxations + a \"still rejects when truly invalid\"\ncounter-test).",
+        "verified_at": "2026-05-08T22:35:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-blossom/commits/eeb8a3212754544d1b7c51181b81b31dbee23085",
+    "html_url": "https://github.com/divinevideo/divine-blossom/commit/eeb8a3212754544d1b7c51181b81b31dbee23085",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-blossom/commits/eeb8a3212754544d1b7c51181b81b31dbee23085/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f7633ad854f6d313fd0dbae8c69f4268b4b3ed61",
+        "url": "https://api.github.com/repos/divinevideo/divine-blossom/commits/f7633ad854f6d313fd0dbae8c69f4268b4b3ed61",
+        "html_url": "https://github.com/divinevideo/divine-blossom/commit/f7633ad854f6d313fd0dbae8c69f4268b4b3ed61"
+      }
+    ]
+  },
+  {
+    "sha": "f7633ad854f6d313fd0dbae8c69f4268b4b3ed61",
+    "node_id": "C_kwDOQht-UtoAKGY3NjMzYWQ4NTRmNmQzMTNmZDBkYmFlOGM2OWY0MjY4YjRiM2VkNjE",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-08T22:18:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T22:18:34Z"
+      },
+      "message": "fix(auth): dispatch BUD-01 viewer auth based on path context (#127)\n\n* fix(auth): dispatch BUD-01 viewer auth based on path context\n\ndiagnose_viewer_auth_request always dispatched BUD-01 (kind 24242)\nevents to validate_viewer_event which requires AuthAction::List. Blob\nviewer requests (e.g. /sha256.ext) need AuthAction::Get, causing valid\nget-scoped auth to be rejected with \"Invalid action tag.\"\n\nUse blob_hash_from_path to detect blob paths and route to\nvalidate_blob_viewer_event (which checks AuthAction::Get + hash match)\nwhen appropriate. Move blob_hash_from_path to viewer_auth as shared\npub(crate) helper.\n\nCloses #126\n\n* test: regression tests for BUD-01 viewer auth dispatch on blob paths\n\nCovers the exact dispatch path that was broken: diagnose_viewer_auth_request\nnow routes BUD-01 get events to validate_blob_viewer_event on blob paths.\n\n- Accepts BUD-01 get+hash on blob path (was rejected before fix)\n- Rejects BUD-01 list on blob path (blob paths require get)",
+      "tree": {
+        "sha": "5604d8ee33593e20293b782085d6ad944941fddf",
+        "url": "https://api.github.com/repos/divinevideo/divine-blossom/git/trees/5604d8ee33593e20293b782085d6ad944941fddf"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-blossom/git/commits/f7633ad854f6d313fd0dbae8c69f4268b4b3ed61",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/mE6CRC1aQ7uu5UhlAAA4vIQAKfwkfFAFzdhyOUQaSkZKeAf\nCaCNANbe6GBfntIZIp+cjl2eHAsjB4R66Gsant25yCd5239AMmgLIxHC/tGLghEj\nCfo/1EapqLgIZZd+Z0XwAcgqy49CdnU/g5SoYDLShkgWaq1IThLZRvCUOJg8R89n\n2a6p69AhH2VdXJFuhEAf/8nGi820k54rR3KmII/IgQPIEuP2D5gGG3cVjFR+P8B2\n5oRul+Cggc7mfl6IMywL3xTHdXMNy1d3yXUD3mYlB5I9xBhn//J0T7ibusgobmbu\n2cVf0knkBm0eyD9kKZNYvdffa74BgrZeZGpxpdXPSMM9Z5OPQfwMprOlBvn1cYt2\nie9p63g3CWTwOeMY6TWpHKO+PwhWngTyv0R0tYIr4fYR0EG1nUl07AQVx/ySChnO\nHNwiul5E46SN7LDlKldRHWQZowb15krduyly+RVmqEu5KbJlVNQd/THSg/96sXBH\nELk2ZkgLehRKg7CmnvZrD8ZWk6xaioJWU9lWbLdPZszMe2kdo+CoyEQWBMFAVyIX\nQyOkgNwvP2e4ZZbpILMKJxV6hnBDpFZm0KL+qFzyKQPT3HWmhjNtalay9W26NVIk\n8f53lxVmSFlmYH/0oCFo+I5MFs51f+D0V2jnDu0FscYsJ8CnVXemHc9o5w69emQF\n7WgtR8xjp19AsWlnoPgu\n=1VTy\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5604d8ee33593e20293b782085d6ad944941fddf\nparent 55caf2c5774548f01ed30ed795d384f7d82e976a\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778278714 -0400\ncommitter GitHub <noreply@github.com> 1778278714 +1200\n\nfix(auth): dispatch BUD-01 viewer auth based on path context (#127)\n\n* fix(auth): dispatch BUD-01 viewer auth based on path context\n\ndiagnose_viewer_auth_request always dispatched BUD-01 (kind 24242)\nevents to validate_viewer_event which requires AuthAction::List. Blob\nviewer requests (e.g. /sha256.ext) need AuthAction::Get, causing valid\nget-scoped auth to be rejected with \"Invalid action tag.\"\n\nUse blob_hash_from_path to detect blob paths and route to\nvalidate_blob_viewer_event (which checks AuthAction::Get + hash match)\nwhen appropriate. Move blob_hash_from_path to viewer_auth as shared\npub(crate) helper.\n\nCloses #126\n\n* test: regression tests for BUD-01 viewer auth dispatch on blob paths\n\nCovers the exact dispatch path that was broken: diagnose_viewer_auth_request\nnow routes BUD-01 get events to validate_blob_viewer_event on blob paths.\n\n- Accepts BUD-01 get+hash on blob path (was rejected before fix)\n- Rejects BUD-01 list on blob path (blob paths require get)",
+        "verified_at": "2026-05-08T22:18:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-blossom/commits/f7633ad854f6d313fd0dbae8c69f4268b4b3ed61",
+    "html_url": "https://github.com/divinevideo/divine-blossom/commit/f7633ad854f6d313fd0dbae8c69f4268b4b3ed61",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-blossom/commits/f7633ad854f6d313fd0dbae8c69f4268b4b3ed61/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "55caf2c5774548f01ed30ed795d384f7d82e976a",
+        "url": "https://api.github.com/repos/divinevideo/divine-blossom/commits/55caf2c5774548f01ed30ed795d384f7d82e976a",
+        "html_url": "https://github.com/divinevideo/divine-blossom/commit/55caf2c5774548f01ed30ed795d384f7d82e976a"
+      }
+    ]
+  }
+]
