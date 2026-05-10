@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "7f0bfabda3ff99965d098cef01ef0141c0580925",
+    "node_id": "C_kwDOI3GlzNoAKDdmMGJmYWJkYTNmZjk5OTY1ZDA5OGNlZjAxZWYwMTQxYzA1ODA5MjU",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-08T13:52:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T13:52:27Z"
+      },
+      "message": "docs(examples): add README and align bolt12 example with Makefile port (#650)\n\n- Add examples/README.md covering how to run each demo, the top-level\n  Makefile targets for spinning up local mints, and per-example mint\n  requirements.\n- Update bolt12Wallet_example.ts MINT_URL from :8085 to :3338 so it\n  works out-of-the-box with the standard `DEV=1 make cdk-up` flow.\n  The 8085 port pre-dated the Makefile and had no technical reason.",
+      "tree": {
+        "sha": "89fbdb3ce488aae10cb2f593c2888b1f97c7b4ec",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/89fbdb3ce488aae10cb2f593c2888b1f97c7b4ec"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/7f0bfabda3ff99965d098cef01ef0141c0580925",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/eqbCRC1aQ7uu5UhlAAA5v8QABvgcJwmqZiAAK+TH9LQqU2y\ns7JdIYSqSkcbP5O0gbqjw2SpVDwAOAPXBUwz3jr+8jZ/wPsGeoJUCr+jKwEhJb8z\noa8ebUwby3eqeNO9V090E+AdIEt5gJvECIeKp/n97vZg2QrJsBXD2TMSagrrWuzU\nuYrAipcKwXIobdC0OkcMOrJaLBBAVzcuexXnKzQ/oRtd6FWZjUBbdi2OEhGvkQe8\nHODKN2EFG1PMnQC5KSUPJ21t7HqD+CxnAkX4G7o0jHbbZw1fEM71rLd4BmHnduFF\nXQf8FM3eLa9m75JJCej8+9mo0W8EkLGkGt1f9snvOuVQc6IF59XzQUE6IQMOfItn\nFtvkgDVm6qvroK6NryaK44VWKQvo14K/QhLULclzSCj8v28ZVoc9lH3vDuOqSkN8\n0TC5XZ31eI1vGurRHCcwlE7FBYkE9bIUkOCKNEsd6wB9B2gdiVVZl4+PNI9TFV0g\n3CNyv4k/NgpkMenIdLGu+st/GTUOqGnE8Jqf/5WOg4Mp6C6h5qMf8hY6uHLNvn5H\n89bkpkRpyyHgELkDGkPSZZ/0n7V2xp/d8J9astSVtncOKe+QGZA1E7cIyOO5PhRj\nfTts1ys+6Os2sQs7rx7Gs9s8oxLKZ8zWjVdvCFFNcC5BjUvoHR3xE3CcCkYGDHlv\njbSqPjk4ceLJwEBn6LZJ\n=PJsU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 89fbdb3ce488aae10cb2f593c2888b1f97c7b4ec\nparent e35c05350dee1ca551e76daeb5d466317a5ca860\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778248347 +0100\ncommitter GitHub <noreply@github.com> 1778248347 +0100\n\ndocs(examples): add README and align bolt12 example with Makefile port (#650)\n\n- Add examples/README.md covering how to run each demo, the top-level\n  Makefile targets for spinning up local mints, and per-example mint\n  requirements.\n- Update bolt12Wallet_example.ts MINT_URL from :8085 to :3338 so it\n  works out-of-the-box with the standard `DEV=1 make cdk-up` flow.\n  The 8085 port pre-dated the Makefile and had no technical reason.",
+        "verified_at": "2026-05-08T13:52:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/7f0bfabda3ff99965d098cef01ef0141c0580925",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/7f0bfabda3ff99965d098cef01ef0141c0580925",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/7f0bfabda3ff99965d098cef01ef0141c0580925/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e35c05350dee1ca551e76daeb5d466317a5ca860",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/e35c05350dee1ca551e76daeb5d466317a5ca860",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/e35c05350dee1ca551e76daeb5d466317a5ca860"
+      }
+    ]
+  },
+  {
+    "sha": "e35c05350dee1ca551e76daeb5d466317a5ca860",
+    "node_id": "C_kwDOI3GlzNoAKGUzNWMwNTM1MGRlZTFjYTU1MWU3NmRhZWI1ZDQ2NjMxN2E1Y2E4NjA",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-08T13:51:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T13:51:22Z"
+      },
+      "message": "fix(wallet): treat expiry: 0 as no-expiry in validateMintQuote (#648)\n\nCDK emits expiry: 0 on mint quote responses to mean \"no expiry\"; the\nspec defines expiry as <int|null> where null is \"no expiry\". cashu-ts\nwas reading 0 as a real Unix timestamp (epoch 1970) and rejecting all\nsuch quotes as expired.\n\nTreat 0 as the null case so wallets can mint against CDK without\nhitting \"Mint quote ... has expired\" on quotes the mint considers\nperpetually valid. Adds a unit test pinning the new behaviour.\n\nAffects all mint methods (bolt11/bolt12/onchain) since validateMintQuote\nis method-agnostic.",
+      "tree": {
+        "sha": "602e19e23bfe0bf6a52b9370b5067e52b757c347",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/602e19e23bfe0bf6a52b9370b5067e52b757c347"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/e35c05350dee1ca551e76daeb5d466317a5ca860",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/epaCRC1aQ7uu5UhlAAAFxAQAFS9s94NulMiQYiZy+5bED2f\nd4ZAmfkJW1lpiPp1hnGdfNQdY5yNNmGB6bOfYlzOTERDKQKNTDbFyxQWwYUQhvP2\nsshFU8BApmxpLK2NEYP2suO04279cbU2/HtCd5+ZmzoI9gq5LFBkI+3tzmMKX0a7\n1zGVfxFgKlSl6ha6oYNT6+7qapZohKNUs98MmNGNFtZMPJSOW0j5lMULBm95FYQN\n084+kFUYodp+hZBiR/CFvPClkEohAQ7vwTbsf9bamG9G0h1QU+ghgwgssfC5IHvR\nW0LvwM2weOU2AuO7CaWNb26bMlSbqNuGtt77NJ8zoN6IimZINQ77DEH5sG/jsTQ/\n0aJBb9NFAde94/MCuZco7jP9gJ8LGaUnkeWzDGvAMETsOTwt/yXe87msL/MjOioY\nM7g4rlZo0gcnxRRObwmW5RPX4bwgSokGHIVcymSUpRu1GgqkPAuTxpxAx3p9IBVt\nKfgpwfiiUyaJk+fRf8KyHoqzZblGyFTLqnN7TC9u/Z2kGHLteehhXVIOYUiczCFC\ng+hS/nMF8uCc+ALbgtvkuUKcAq1EMw6DWzJFjRetiqD0gUeEFRHeurRXEOjYeheV\nzPs0l+xNIEdWp6yCtngv0iRPZ0sU5hTo5hUpZa811fbiPjdq8B5GaVP8s6HZtksl\nm9cb9/SLs6i1gjTJ+b77\n=FccE\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 602e19e23bfe0bf6a52b9370b5067e52b757c347\nparent 067b38d530d2a43f62b1c2b8ea7308976d6a0c6e\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778248282 +0100\ncommitter GitHub <noreply@github.com> 1778248282 +0100\n\nfix(wallet): treat expiry: 0 as no-expiry in validateMintQuote (#648)\n\nCDK emits expiry: 0 on mint quote responses to mean \"no expiry\"; the\nspec defines expiry as <int|null> where null is \"no expiry\". cashu-ts\nwas reading 0 as a real Unix timestamp (epoch 1970) and rejecting all\nsuch quotes as expired.\n\nTreat 0 as the null case so wallets can mint against CDK without\nhitting \"Mint quote ... has expired\" on quotes the mint considers\nperpetually valid. Adds a unit test pinning the new behaviour.\n\nAffects all mint methods (bolt11/bolt12/onchain) since validateMintQuote\nis method-agnostic.",
+        "verified_at": "2026-05-08T13:51:23Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/e35c05350dee1ca551e76daeb5d466317a5ca860",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/e35c05350dee1ca551e76daeb5d466317a5ca860",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/e35c05350dee1ca551e76daeb5d466317a5ca860/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e"
+      }
+    ]
+  },
+  {
+    "sha": "067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+    "node_id": "C_kwDOI3GlzNoAKDA2N2IzOGQ1MzBkMmE0M2Y2MmIxYzJiOGVhNzMwODk3NmQ2YTBjNmU",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-08T13:50:04Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T13:50:04Z"
+      },
+      "message": "fix(mint): treat null amount on BOLT12 mint quote as no-amount (#649)\n\n* fix(mint): treat null amount on BOLT12 mint quote as no-amount\n\nPer NUT-25 the BOLT12 mint quote `amount` field is <int|null>; null\nmeans an amountless offer. CDK emits explicit null on the wire.\nnormalizeMintQuoteBolt12Fields was checking `=== undefined` only, so\nthe call fell through to `Amount.from(null)` which throws\n\"Unsupported amount input type\" — breaking every BOLT12 amountless\nmint quote against CDK.\n\nTreat null and undefined alike (Postel-style), matching the spec\nintent and matching how other nullable wire fields are handled.\nAdds a regression test pinning the new behaviour.\n\n* refactor(utils): add nullIfUndefined/undefinedIfNull helpers",
+      "tree": {
+        "sha": "3c6705ba00042e1a3d4aa526aab29d23b0f21368",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/3c6705ba00042e1a3d4aa526aab29d23b0f21368"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/eoMCRC1aQ7uu5UhlAAA3XUQAKFp19h5ObTGGL7gCQuMH39o\nt5iWjdjpelvwU6snBAx/g1e9r7P2HQEKzYQQ7Hbe4ZjjKAmzwpbdPSrIGgW9Nwqp\ne5VvPdQpn4nTmXtA8zZ3e4uJbNllArgTBFlrBKS+wWWxVOfeCnSVKeMWi122ZCKT\naDr2D61nwk+inkrLnhsOafbLL4O2S1vdQxacMUCbF2FinJSbUA4SZGUsri85tFkQ\nhLGZs2XYpP386o0aFmp3RV9tTfoSjD1uxhvAJcpn8GYFqtNoQqHqJmLKvwKjoqwv\nUi5j1g3t/SKEb8eTfLsHov5BJluq6t0lKhN/nPArdvMjYrSaCH0roiEBrbGSBK9R\naSfKXoiEDvvcJj6Bmsjg1466DVju9Ur7QY2Mx9wN+YAbMtDRCpJ69BhnitmlZPqI\nT1r4gzVRL1+JI1w1iNrV1S57fa6m8ZkIESemBMWYVRj+uNeQnTNSINERGfNB8ar3\nOWdEXSkAT7M6Awgtqpu/T1xCzg0Tew6OJ0u1+fYLpsWyzsbC1Cge9p6cMX2pSQJU\ntaSvfUXtsEnlsRzgRFMgh8/fFlogTEEC8wN6iYbfDY43Z6zbnL1TcHXiK5YwnCtK\nJc1414ZgoBcIECIuh8zOrcqUZEHIFIFitJVbdQYwy/EgHjzzclssLFnaIUyS339h\nXGb/dempS2KfrvHgQazS\n=PteG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3c6705ba00042e1a3d4aa526aab29d23b0f21368\nparent b55e064aa886f1ca79f18cc8903ffd7535295ded\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778248204 +0100\ncommitter GitHub <noreply@github.com> 1778248204 +0100\n\nfix(mint): treat null amount on BOLT12 mint quote as no-amount (#649)\n\n* fix(mint): treat null amount on BOLT12 mint quote as no-amount\n\nPer NUT-25 the BOLT12 mint quote `amount` field is <int|null>; null\nmeans an amountless offer. CDK emits explicit null on the wire.\nnormalizeMintQuoteBolt12Fields was checking `=== undefined` only, so\nthe call fell through to `Amount.from(null)` which throws\n\"Unsupported amount input type\" — breaking every BOLT12 amountless\nmint quote against CDK.\n\nTreat null and undefined alike (Postel-style), matching the spec\nintent and matching how other nullable wire fields are handled.\nAdds a regression test pinning the new behaviour.\n\n* refactor(utils): add nullIfUndefined/undefinedIfNull helpers",
+        "verified_at": "2026-05-08T13:50:05Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b55e064aa886f1ca79f18cc8903ffd7535295ded",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/b55e064aa886f1ca79f18cc8903ffd7535295ded",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/b55e064aa886f1ca79f18cc8903ffd7535295ded"
+      }
+    ]
+  }
+]

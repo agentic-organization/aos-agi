@@ -90,6 +90,7 @@ The [[projects/cashu]] page is the protocol and ecosystem umbrella. Sub-projects
 - [[projects/npub-cash]] — Lightning-address provider.
 - [[projects/cashu-redeem]] — redemption web tool.
 - [[projects/awesome-cashu]] — ecosystem index (meta).
+- [[projects/orchard]] — mint-management web app.
 - [[projects/enuts]] — historical mobile wallet, being revived.
 
 ### Wallets (independent)
@@ -106,6 +107,7 @@ The [[projects/cashu]] page is the protocol and ecosystem umbrella. Sub-projects
 
 ### Applications & tools
 - [[projects/athenut]] (search), [[projects/btcnutserver]] (BTCPay plugin), [[projects/hashpool]] (mining pool).
+- [[projects/orchard]] (mint-management web app, `cashubtc/`).
 - [[projects/routstr]] + [[projects/otrta-client]] (LLM marketplace).
 - [[projects/tollgate]] + [[projects/wally]] (decentralized WiFi ISP).
 - [[projects/0xchat]] · [[projects/keychat]] · [[projects/iris]] · [[projects/shopstr]] — messengers/clients with Cashu wallets.

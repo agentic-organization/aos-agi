@@ -1,0 +1,576 @@
+[
+  {
+    "sha": "49fa8662cef6f78603aedb051c4c4104b308e8f1",
+    "node_id": "C_kwDOQ5G0RdoAKDQ5ZmE4NjYyY2VmNmY3ODYwM2FlZGIwNTFjNGM0MTA0YjMwOGU4ZjE",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-07T12:49:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T12:49:08Z"
+      },
+      "message": "Stop retaining notification sender metadata (#48)",
+      "tree": {
+        "sha": "54503f653618aa79cb06d8abf64d3c033a340ec1",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/git/trees/54503f653618aa79cb06d8abf64d3c033a340ec1"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/transponder/git/commits/49fa8662cef6f78603aedb051c4c4104b308e8f1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/IpECRC1aQ7uu5UhlAAA8j0QALDOy4sHIcquYaonrMq9lqgX\nml27/eGU9oa248BfyQiTl+WisA40C667pVB9qWSqBLRI7yHaoUC3oK9t/Vt12l2r\n7UhWvGUuWujiQ7jZS3/JnlejVHGShwbfXqnTDlZv9RwCa1PUSrU5KtYQeGPHnBF0\nBIsLJVk6L3dxZDCrjUIsVQNAyhBSugWhNBNpYLIz9FPLeDjjlDmqtEiPltq6XmT9\nefUprZ4shMcL6K1aO760K9ZrA/M1nJZVdL3ENsB4bF3/UOh3lq8NldjQQDO6zQTR\n4hxBTUXgGq/TMX7bpmtlecbiHpC0N+bHHWoLUsN92weuM2PHOTncieRAqVLdkP3P\nHyU1g6WesguhpR1sp7jeOPQNNZtGxGSInqWptWeKQ9b+SejwrjPCOyyYeZesvkLq\nKBjp5jy02El87U9IO+IAQSDI6/sUFnPbEp0QYMP59hiMOgyDsgGmyUs/1Z0AFt57\nfEgZV+8j2FVXDMddLdnBPQorfeTMwZX1HFJwoHSF3A0qYaLCUyVYBIKBDERJ6gTn\n3j3pAwnmoaAWMjDUGfHGL44SqoK3A9B20VnPFMA551GZgPZec2sjCS45l1ihLXgz\nZMqfwS7/fHICo44OVD6/nkFvyRo1wBKD9Pgz02k+q0kslNWEGZtvMsTu5rbsAQiN\n7rZBjRJ7mz8DUVVr1f46\n=becL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 54503f653618aa79cb06d8abf64d3c033a340ec1\nparent 2f4999c7f5933fa6d4539cb82132d7271c5591b0\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1778158148 +0200\ncommitter GitHub <noreply@github.com> 1778158148 +0200\n\nStop retaining notification sender metadata (#48)",
+        "verified_at": "2026-05-07T12:49:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/49fa8662cef6f78603aedb051c4c4104b308e8f1",
+    "html_url": "https://github.com/marmot-protocol/transponder/commit/49fa8662cef6f78603aedb051c4c4104b308e8f1",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/commits/49fa8662cef6f78603aedb051c4c4104b308e8f1/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2f4999c7f5933fa6d4539cb82132d7271c5591b0",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/2f4999c7f5933fa6d4539cb82132d7271c5591b0",
+        "html_url": "https://github.com/marmot-protocol/transponder/commit/2f4999c7f5933fa6d4539cb82132d7271c5591b0"
+      }
+    ]
+  },
+  {
+    "sha": "2f4999c7f5933fa6d4539cb82132d7271c5591b0",
+    "node_id": "C_kwDOQ5G0RdoAKDJmNDk5OWM3ZjU5MzNmYTZkNDUzOWNiODIxMzJkNzI3MWM1NTkxYjA",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-07T12:48:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T12:48:46Z"
+      },
+      "message": "Reject unencrypted clearnet relay URLs (#52)",
+      "tree": {
+        "sha": "49d219d782b603aadbd5ae695a1b71ab18acc010",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/git/trees/49d219d782b603aadbd5ae695a1b71ab18acc010"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/transponder/git/commits/2f4999c7f5933fa6d4539cb82132d7271c5591b0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/IovCRC1aQ7uu5UhlAAAZMYQAGIBItgvggSZCdJLGcskzEXF\n/pbKNdSUYbSLT8uF6aeHmIlABui2tUZH9ONRtnpgVYWobyI7c0xmUYgfnFRzp5HU\nEQ+ATeId/kDgxhN4QHTMdIEtyCVfMrWt+yas2+P/77th+0FtLIqdcD4fKzbJvo/H\nHC+EXAO7vJavrNNJ867d24TqNpf/N7hWFxsNhyoxd5QlFqJTzE6w6ipjPASM+9Gh\nLPfEHBK8qUcliRBe8l70rVVvKyL5mjOu+/8Q5Uy/wrBtJySRbsjYf89W1ONhYWZE\nerwy+uoluKVzg2cbftYEGsXpSrXf+QQ1KaPagFJX02j2jpGYAMf/X1bPeMt1vn6v\n3KHAbeNKuCEFrFD8r5Iyw/x3mwTGXFiSQOudAjkcsVvt+MDamif4jfPXVTzUfKDR\nrERU21dgvqOO8d4UMSAf5wo/BJ6Qo7ehOCDOJuCJOKThVxz+mhNqAUIGyKCICOCG\nAwt7fhp2lSafri9WsKkAuemyEhE5EiPsX4YmA61FQZLfhAMCM+SV/Bu4Kk6u7M4Q\nFSO461uw5uxIlejRGXiReemPVdkBHoNXt7v2zugNMAGGosVT2pk1Wj8j0B4Ygu/z\nYYhgGLZCw/W/9h3/eHCGr+CKif82ODPMZQkNeTYHYhjTyjzgR82bPvfujrj2Lr1s\nze9mHkUeIh37VWy9Ge+J\n=2AS9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 49d219d782b603aadbd5ae695a1b71ab18acc010\nparent cb1ae1f3782f6f41dffeef89ba2b5d4f5e39f6d3\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1778158126 +0200\ncommitter GitHub <noreply@github.com> 1778158126 +0200\n\nReject unencrypted clearnet relay URLs (#52)",
+        "verified_at": "2026-05-07T12:48:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/2f4999c7f5933fa6d4539cb82132d7271c5591b0",
+    "html_url": "https://github.com/marmot-protocol/transponder/commit/2f4999c7f5933fa6d4539cb82132d7271c5591b0",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/commits/2f4999c7f5933fa6d4539cb82132d7271c5591b0/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cb1ae1f3782f6f41dffeef89ba2b5d4f5e39f6d3",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/cb1ae1f3782f6f41dffeef89ba2b5d4f5e39f6d3",
+        "html_url": "https://github.com/marmot-protocol/transponder/commit/cb1ae1f3782f6f41dffeef89ba2b5d4f5e39f6d3"
+      }
+    ]
+  },
+  {
+    "sha": "cb1ae1f3782f6f41dffeef89ba2b5d4f5e39f6d3",
+    "node_id": "C_kwDOQ5G0RdoAKGNiMWFlMWYzNzgyZjZmNDFkZmZlZWY4OWJhMmI1ZDRmNWUzOWY2ZDM",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-07T12:30:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T12:30:59Z"
+      },
+      "message": "Harden rate limiter cache capacity handling (#50)\n\n* Harden rate limiter cache capacity handling\n\n* Address rate limiter review feedback",
+      "tree": {
+        "sha": "ca97a253a923591a195700e3226f6c459df0b548",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/git/trees/ca97a253a923591a195700e3226f6c459df0b548"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/transponder/git/commits/cb1ae1f3782f6f41dffeef89ba2b5d4f5e39f6d3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/IYDCRC1aQ7uu5UhlAAADncQAIXjPWRZYLUIBKCfq38KU5uK\ny+/BIbonyrtGoAOJXDGtb8Ah1Pi6NQExVYp/19VzWiEMianKNPo5+/xeMNga2SUu\n1g+U3tv2+L/M3+QyIlNIlpR768TrzpzU789AaJr/Irf86NXfkvhEe+I0bkulRdBs\np2F3AiLZSwJY9bacBenGzFiQhDVQ5oDj23opnnxgQ2LMRMfQtwCK7y5vwyvoiUmg\nJbm2r+ysN48+jswUR9p2FsLf4Mh9AtMtrqaN8CRNh2GmreYwwwJ9riSrkJdM0Ljw\nScrtE9WZSwtx2njPAdTF5/IMsLkdeVV2fMtEh4eSwC+DCp4ABEmC/B5XD0eZ1qAB\nBD5C76omsKsDjTuBzWSBjNo1k/phWEDvNo8PI0L5fHOvn9CU3v6SGMoNUwlB1jJ8\nhGV3ln4UCn8ipogq+o0qXYqLQkwe2NvfxG20RHb/vJ3ALAOYbvcqsoIn6MHDEt+4\nNdDTQ8fXxA34QI2nJMCqtp4IrEk7SwKJjr8DZEaekSu7XpcAr7jK64vB5WzGu8qP\nRf6BgxTyTN6jruqya5OXW6Mu6gunZYwSj/6nmwsv2KyHupBAKBN2SQtsc4u+GcCL\nsveF3rpTvPZF3sesCVrdXMGLlvuxvdA2pXiuCONHZwEHvuHS1AsyWXMN3g/VV9A9\nzHMWOOT5YIQgDpDu12/O\n=50bb\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ca97a253a923591a195700e3226f6c459df0b548\nparent 7117674b831d1a46420cb214d52079b3000d0d5c\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1778157059 +0200\ncommitter GitHub <noreply@github.com> 1778157059 +0200\n\nHarden rate limiter cache capacity handling (#50)\n\n* Harden rate limiter cache capacity handling\n\n* Address rate limiter review feedback",
+        "verified_at": "2026-05-07T12:31:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/cb1ae1f3782f6f41dffeef89ba2b5d4f5e39f6d3",
+    "html_url": "https://github.com/marmot-protocol/transponder/commit/cb1ae1f3782f6f41dffeef89ba2b5d4f5e39f6d3",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/commits/cb1ae1f3782f6f41dffeef89ba2b5d4f5e39f6d3/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7117674b831d1a46420cb214d52079b3000d0d5c",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/7117674b831d1a46420cb214d52079b3000d0d5c",
+        "html_url": "https://github.com/marmot-protocol/transponder/commit/7117674b831d1a46420cb214d52079b3000d0d5c"
+      }
+    ]
+  },
+  {
+    "sha": "7117674b831d1a46420cb214d52079b3000d0d5c",
+    "node_id": "C_kwDOQ5G0RdoAKDcxMTc2NzRiODMxZDFhNDY0MjBjYjIxNGQ1MjA3OWIzMDAwZDBkNWM",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-07T12:29:53Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T12:29:53Z"
+      },
+      "message": "Require opt-in for generate-keys secrets (#51)",
+      "tree": {
+        "sha": "c5819645dba1478df7d2470b1dfbcf9179f7d735",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/git/trees/c5819645dba1478df7d2470b1dfbcf9179f7d735"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/transponder/git/commits/7117674b831d1a46420cb214d52079b3000d0d5c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/IXBCRC1aQ7uu5UhlAAAKccQAGqFVfcNNUwSOyw8Hda4aY9N\nHMtWU3XC9RXoRUNqv/CVDefB8BxHljHg4JiJf+sgMPGTbVmxrhayVMHuqUC/Waef\niAwi/KDfZdLX6KjoxgfFXqJqagfy3UHFl3S+KehvMznV5rudHS1gWxBBmp1lmmJd\nExvdLLqOvwNYOAuVZ/GUQE/h7fl7wPSgkUloHcq1f0Ya7I4iE8HyLRk73J/7JxGc\nMPk0IQLemtxRG/vKVCnMNTl5gy4aRoRzvlTY3jJNFV5kjSmkw5655IQMh71oRBNO\noSW5qsAQzOzPUb3OqVTk0OOvn1mm/IwLHZutM55HNarkAfzbHYjID48qbInJFqOT\n6OcPbruUq1pfO7l3ua0iISBSrLjRJpgbO57jnGPNbo87K6PYR30G+qgm1FwhYS/G\neRpliCrdMHRLMwHK+IN1flupxWXsJ62XnkD07WXlhUSDXTEVTZZg4SmaD5mtfj9c\nGJz3gaabiBDtLkJQDyvCR+fWM9IHWVq1Zvv8gVMSmesJ39O9J+I/ahz9C9UN5EdV\n+7ZEc5Qd2nWLlNTQnHf58g/raymRmqMT5/EFTium8fUiUwxM4dUbLPJfSaXfsNRq\nWbANR3SB4yp3zPnid8q4y7HeYZvsCUwdkayC4YHA2/DAW3OCiLLsf5EcuMcuUWri\nMapUZAvcswVq1Wtpgr09\n=OSKm\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c5819645dba1478df7d2470b1dfbcf9179f7d735\nparent 5ce940b0febe6ec5ecb0697844f50d2ee61868c6\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1778156993 +0200\ncommitter GitHub <noreply@github.com> 1778156993 +0200\n\nRequire opt-in for generate-keys secrets (#51)",
+        "verified_at": "2026-05-07T12:29:54Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/7117674b831d1a46420cb214d52079b3000d0d5c",
+    "html_url": "https://github.com/marmot-protocol/transponder/commit/7117674b831d1a46420cb214d52079b3000d0d5c",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/commits/7117674b831d1a46420cb214d52079b3000d0d5c/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5ce940b0febe6ec5ecb0697844f50d2ee61868c6",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/5ce940b0febe6ec5ecb0697844f50d2ee61868c6",
+        "html_url": "https://github.com/marmot-protocol/transponder/commit/5ce940b0febe6ec5ecb0697844f50d2ee61868c6"
+      }
+    ]
+  },
+  {
+    "sha": "5ce940b0febe6ec5ecb0697844f50d2ee61868c6",
+    "node_id": "C_kwDOQ5G0RdoAKDVjZTk0MGIwZmViZTZlYzVlY2IwNjk3ODQ0ZjUwZDJlZTYxODY4YzY",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-07T12:28:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T12:28:01Z"
+      },
+      "message": "Drop retained sender identity from notifications (#49)",
+      "tree": {
+        "sha": "cdca3857e485531209e0204a0900f419785686ef",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/git/trees/cdca3857e485531209e0204a0900f419785686ef"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/transponder/git/commits/5ce940b0febe6ec5ecb0697844f50d2ee61868c6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/IVRCRC1aQ7uu5UhlAAAgEMQABgOLaQGSSylbbdi3oxhmIpT\n3Mg/l9QU9Z5eUky9ixuT56cZT9i7ie0RkfjNBec2e3FzDkgBRYHf5DQa5Wq/vOJW\nVBtyrEtTjw/dhpRmQ3bM+aT3yrLm9RJBDZC0MaruNCbTL776SsEaoYOr+WhP5fMv\n4zZnV0WZx0p8/wRd22lOZzNd+jqSE6SBRM/Tj51tD7VVvDOVxwNVaDQ/Xkh3G3P5\nMOFwB5kN4QpTklg5riZ7LML0MuFGx3HB5RK2vJnSAKyf73D6W+3uKTlDOFUQiyqg\nZDngQEJThhjvuF4PbfOYa8BjF0XzEVTTc+1I6jDkvKkyT2xQGuCNpxZRGf7ODa/u\nJV+z9BXBto9PtNejApmvFYPYSaCNaOGK+Z4Zn5pHnHGdgVaH2yrfYQNGyKITsRo5\nAcSv/fGi23PA9WArOgUm4xxB9vRiHSXjaPsF7/yThVHgnKPBLXJFRlyL5hcHgTxX\ncL6UblzU0+pErC3hZj0G8EGJksMx5muNKccPE1XzVZagiaVy79fFb2hAGTWfi9Ae\n4o7m/XJy/XXETlZZSN8tsJ2k3b7hf8PM/dR32VJB+dAWCZ4I9iJa4sTOlnhhxd0N\nhXoXX4ojH7g5Uvo2Nkkctih1AjVUQ8bI1RGCCcsxN9DfuLc7p0M/KOc/KAuoH6bl\ngXBisFHwy0eT1T68/rcy\n=HoLj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree cdca3857e485531209e0204a0900f419785686ef\nparent 2c5a2bc09f858ea969a2cf8d75b820c0202967f9\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1778156881 +0200\ncommitter GitHub <noreply@github.com> 1778156881 +0200\n\nDrop retained sender identity from notifications (#49)",
+        "verified_at": "2026-05-07T12:28:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/5ce940b0febe6ec5ecb0697844f50d2ee61868c6",
+    "html_url": "https://github.com/marmot-protocol/transponder/commit/5ce940b0febe6ec5ecb0697844f50d2ee61868c6",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/commits/5ce940b0febe6ec5ecb0697844f50d2ee61868c6/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2c5a2bc09f858ea969a2cf8d75b820c0202967f9",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/2c5a2bc09f858ea969a2cf8d75b820c0202967f9",
+        "html_url": "https://github.com/marmot-protocol/transponder/commit/2c5a2bc09f858ea969a2cf8d75b820c0202967f9"
+      }
+    ]
+  },
+  {
+    "sha": "2c5a2bc09f858ea969a2cf8d75b820c0202967f9",
+    "node_id": "C_kwDOQ5G0RdoAKDJjNWEyYmMwOWY4NThlYTk2OWEyY2Y4ZDc1YjgyMGMwMjAyOTY3Zjk",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-07T09:10:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T09:10:37Z"
+      },
+      "message": "[codex] Pin GitHub Actions to immutable SHAs (#46)\n\n* Pin GitHub Actions to immutable SHAs\n\n* Update action pins to latest versions\n\n* Scope CI workflow permissions",
+      "tree": {
+        "sha": "ed8fc6b3cbfc645aac5bc45309dd81262f69a7f1",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/git/trees/ed8fc6b3cbfc645aac5bc45309dd81262f69a7f1"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/transponder/git/commits/2c5a2bc09f858ea969a2cf8d75b820c0202967f9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/FcNCRC1aQ7uu5UhlAAAKc8QAAnQhoKgOwK07xA9k/xpSrv0\n/q+saClVjBAoMBI6fWCUjN1szy1vTu7ChBRGVmFzr1/MnubIGhaGESwGM9bsZnlD\nCJyRo32zXlTAZw+wOd7FqdQBhqxnTo7uGVOIPBH0pQHiGEVsA+MR/U6RDnOcBIoL\nIIZNN+JgMpQ/ynP1vVNGdvrqew7NGfrHg0aPWkZsQMkNAfGoWpLJf5nIunO+fXd/\nwDD1aYBsAMGm7e9etzXVpHNnFv02Ydi0xng+2GQJwKQYmVe800Ed/sHBdPbU7mwO\noGJoaKie3uTyeh3gS0CDjGvXzHe8XEdpDyfwuBLguaBr9T57PIsAMzHmVdZLnbxS\nsi2KuFLi0cj0HJCRnD6LjApg2tU2OslWM5xNZUPujSY6Ct7itO57/I9X/jjpS1x9\nMMM40Tk7t0KRtgo9mtYnTmpznckHI3BCNkcr80Li5NvEROM637iv2nGe1+rLsuue\nR9aaETmCywrBRCS74xJ+YVUhiaLGj4yICcw45/T3sHXm9gHRIaAb5dJPHx6PYvMK\nfGFZSNsIwspZnF23nDdMPvIKxoZawjeyE5undVwHNsGU/Jaddd0yWzY9GD3eYAfN\nDVBWLNpMne4xcMH37XhSlm8ATNZqTKcuXpKAsY0/IoQSH368cf58/NiL0Jzxo068\nyYKoCQiwsU107Mm1eRp5\n=d7ov\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ed8fc6b3cbfc645aac5bc45309dd81262f69a7f1\nparent ffb7bd643110ce3623303320c0b93629451bd64a\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1778145037 +0200\ncommitter GitHub <noreply@github.com> 1778145037 +0200\n\n[codex] Pin GitHub Actions to immutable SHAs (#46)\n\n* Pin GitHub Actions to immutable SHAs\n\n* Update action pins to latest versions\n\n* Scope CI workflow permissions",
+        "verified_at": "2026-05-07T09:10:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/2c5a2bc09f858ea969a2cf8d75b820c0202967f9",
+    "html_url": "https://github.com/marmot-protocol/transponder/commit/2c5a2bc09f858ea969a2cf8d75b820c0202967f9",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/commits/2c5a2bc09f858ea969a2cf8d75b820c0202967f9/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ffb7bd643110ce3623303320c0b93629451bd64a",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/ffb7bd643110ce3623303320c0b93629451bd64a",
+        "html_url": "https://github.com/marmot-protocol/transponder/commit/ffb7bd643110ce3623303320c0b93629451bd64a"
+      }
+    ]
+  },
+  {
+    "sha": "ffb7bd643110ce3623303320c0b93629451bd64a",
+    "node_id": "C_kwDOQ5G0RdoAKGZmYjdiZDY0MzExMGNlMzYyMzMwMzMyMGMwYjkzNjI5NDUxYmQ2NGE",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-07T09:10:19Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-07T09:10:19Z"
+      },
+      "message": "[codex] Skip unchanged inbox relay republishes (#47)\n\n* Skip unchanged inbox relay republishes\n\n* Keep inbox publish failures non-fatal",
+      "tree": {
+        "sha": "1bbbccac27e28c06ba391ff7c2689802db614643",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/git/trees/1bbbccac27e28c06ba391ff7c2689802db614643"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/transponder/git/commits/ffb7bd643110ce3623303320c0b93629451bd64a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/Fb8CRC1aQ7uu5UhlAAAnmkQAGJYNNblBSg3Z7cMuPzyt8Nu\ndrpLrznlyAsPfieRv2areVSshbigBbSD+wjXLmSSlZKBd5I3vxDIkWxNvhHgCeqg\nig+fZCsetNhrYD3g/P7IP8gTjlZvhOJ323er8LTfN8L9/8ozDhkCprM9Y9fn+y50\noyGnXwY45qI4I27pxA1I1v6crivtBBcbOlHmODZFMsdNpcUgpsXcinzD8LZaiERR\nhS+e8Ueisc3Pxk8MdVMSYex2LROxuruKQRUMxmY4LQopEx3P8nrh1RiwQDjlzLMv\n6QpBcaAKtGMPuSgiVmUYYHr7LXG9xed+DCRUx0lcgqOXkNGJm1OFtaP5T8Cc54cY\nezXHjum/bUJa/yMfbu/bC8NEr7BFZ3e7ANRzRJ/90Q34siArTW4a+/AqXs0DrNDl\nZWNFINso/o8HZUVsylWCVMRs+zhB3wWFxhMNpYKD4floRpuAWEB/jqil0q0pJSMd\nwFA+w7HczaCmz2BQP4OhhL9YMWaTvHUJw9rPDE4Aex6uPPaenRxAZ3BDHpCQXr61\n4P4oU5vsgUO7NZYwOPSzNPQ9reNnwjIyJBt9MPV7x+KCfO5fM22rTGsL5tpBc0RP\ntoXFDgUKiv6wR2qlISoVWMry06v6uNAylw2siu+1PEarSDsYW4oPqdNTRX9Q9APt\nsAfsAZfJz+QTEj4bUpwo\n=ZfY8\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1bbbccac27e28c06ba391ff7c2689802db614643\nparent 149f3c08de4e9666f15d35f97c3ffee24cc6254d\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1778145019 +0200\ncommitter GitHub <noreply@github.com> 1778145019 +0200\n\n[codex] Skip unchanged inbox relay republishes (#47)\n\n* Skip unchanged inbox relay republishes\n\n* Keep inbox publish failures non-fatal",
+        "verified_at": "2026-05-07T09:10:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/ffb7bd643110ce3623303320c0b93629451bd64a",
+    "html_url": "https://github.com/marmot-protocol/transponder/commit/ffb7bd643110ce3623303320c0b93629451bd64a",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/commits/ffb7bd643110ce3623303320c0b93629451bd64a/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "149f3c08de4e9666f15d35f97c3ffee24cc6254d",
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/commits/149f3c08de4e9666f15d35f97c3ffee24cc6254d",
+        "html_url": "https://github.com/marmot-protocol/transponder/commit/149f3c08de4e9666f15d35f97c3ffee24cc6254d"
+      }
+    ]
+  }
+]

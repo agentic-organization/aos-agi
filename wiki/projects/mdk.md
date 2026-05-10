@@ -24,6 +24,7 @@ Marmot Development Kit
 Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and its reference implementations (including [[projects/white-noise]]).
 
 ## History
+- 2026-05-10: 2026-05-07 → 2026-05-10 daily ingestion (`data/raw/github/daily/2026-05-10/marmot-protocol/mdk/` and the four binding repos) recorded **15 commits + 17 PRs + 17 issues** on the core `mdk` repo (top human committers [[people/erskingardner]], [[people/dannym-arx]]; `dependabot[bot]` x5). The four bindings (`mdk-kotlin`, `mdk-python`, `mdk-ruby`, `mdk-swift`) absorbed ~14–15 `github-actions[bot]` commits each — auto-bumps in lockstep with core releases. Three security fixes from this window are referenced in the [[projects/whitenoise]] v2026.5.7+24 release notes.
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
 ## Language bindings

@@ -24,6 +24,7 @@ One page per person. Pages evolve as identity resolution, skills, and affiliatio
 - [[people/aidenvalu3]] *(status to confirm)*
 - [[people/misovan]] *(status to confirm)*
 - [[people/gohumble]] *(status to confirm)*
+- [[people/orangeshyguy21]] — sole active maintainer, [[projects/orchard]]
 
 ### [[teams/marmot-protocol]]
 - [[people/erskingardner]] — lead maintainer (Marmot, White Noise)

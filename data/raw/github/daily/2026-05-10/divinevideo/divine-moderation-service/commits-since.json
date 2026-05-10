@@ -1,0 +1,412 @@
+[
+  {
+    "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+    "node_id": "C_kwDOQYdZgdoAKGMyYTVhN2JiMjZlMGVlN2FlZWFkZTc4YmE1MmFjMWYxODg2NzAzMTE",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-09T00:46:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-09T00:46:45Z"
+      },
+      "message": "feat: thumbnail-only cards, click to open full-screen video modal (#142)\n\nDashboard cards never embed a <video> element anymore. Each card renders\na lazy-loaded <img> thumbnail; clicking opens a singleton full-screen\nmodal that holds the only <video> element on the page.\n\nWhy: 50 cards × <video preload=\"auto\"> created a request storm. Even\npreload=\"none\" left cards as black boxes (no first-frame decode), and\nmoderators want to scan thumbnails and dive into one video at a time —\nnot a wall of inline players.\n\nHow:\n- Replace both card render sites (createTriageCard, createVideoCard)\n  with <img loading=\"lazy\" onclick=openVideoModal()>\n- Thumbnail src = media.divine.video/{sha}.jpg (Blossom auto-generates\n  these for native uploads). On 404 (external Blossom imports without\n  divine thumbnails) onerror swaps the img for a clickable\n  \"▶ Tap to view\" fallback that still opens the modal.\n- Add singleton #video-modal with one reusable <video controls\n  playsinline>. openVideoModal sets src + plays; closeVideoModal pauses,\n  clears src, and load()s so the browser stops fetching when dismissed.\n- Escape key and click-on-backdrop both close the modal.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "ec9a4f19e5cb3b0cf2e5d8d1a6fd012b72106596",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/ec9a4f19e5cb3b0cf2e5d8d1a6fd012b72106596"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/oP2CRC1aQ7uu5UhlAAAMNEQAFr86/6goN93LFGfp+79Wqd9\n69ExAS6NHSE6p0n2DvkztDUYWhrmunYBeygqOatQcYAd1i/qS2+2h1QT1qE4zc4g\nhQTQ5eM3gZ5sO+vCJ13dZxkMnUjITZzESt+F2e56VxJGenMjed9E2/K/v45kL/U4\nVcfI/9fk4te6ZBDYUZot+F0CcK4w0PzMYlacvtHZpL1R21S0OKPJPUU3SY6dCUp6\n37EOfhfS/Gy43GVJmfgTek0v3Dqv0dEtY8nuRLjosuBy1240n5CSIBjEeJu6gmaO\n5XpRUXwenQvM+W0EQvptkDNuTx71rueDhh/4kE1YT7VzCZVgeO0U+1zxMpnvaEny\nS36O4hW5mvGjdVqUZjGOx3feXUIV8bA/aCu/5zz+JndeuBSdnDEIdG6OF/qU7jWO\nXVhkPNcMDH63fZS76sSX0RjBOLLFiwvLCQP5wT59g2yfhWmc7xtcyNfBuTWvSzO2\nSEjI9Bh5uKmMmr4CeN1SNXzNo6D6rqNAhueyGUC21Kch0fU/VrIa7bO1awobOH5L\ndT51LAZpRBs4zLcmvaoPw5RZr/+F68e48sUjfXWHgeb98ov+8Rb4iKXLcv7nybny\nWI0GIaQk2uOgpZSsxmMNoZpQfFY8SMFCGvYuJbZ3mvRh2UICaDcX8BIHsOwT5LTU\nSfLxnO7RGqDZgu6nKwLf\n=9PzU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ec9a4f19e5cb3b0cf2e5d8d1a6fd012b72106596\nparent cf1aaa92e76c63a19f8a79670111cffe41371334\nauthor rabble <evan@protest.net> 1778287605 +1200\ncommitter GitHub <noreply@github.com> 1778287605 +1200\n\nfeat: thumbnail-only cards, click to open full-screen video modal (#142)\n\nDashboard cards never embed a <video> element anymore. Each card renders\na lazy-loaded <img> thumbnail; clicking opens a singleton full-screen\nmodal that holds the only <video> element on the page.\n\nWhy: 50 cards × <video preload=\"auto\"> created a request storm. Even\npreload=\"none\" left cards as black boxes (no first-frame decode), and\nmoderators want to scan thumbnails and dive into one video at a time —\nnot a wall of inline players.\n\nHow:\n- Replace both card render sites (createTriageCard, createVideoCard)\n  with <img loading=\"lazy\" onclick=openVideoModal()>\n- Thumbnail src = media.divine.video/{sha}.jpg (Blossom auto-generates\n  these for native uploads). On 404 (external Blossom imports without\n  divine thumbnails) onerror swaps the img for a clickable\n  \"▶ Tap to view\" fallback that still opens the modal.\n- Add singleton #video-modal with one reusable <video controls\n  playsinline>. openVideoModal sets src + plays; closeVideoModal pauses,\n  clears src, and load()s so the browser stops fetching when dismissed.\n- Escape key and click-on-backdrop both close the modal.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-09T00:46:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/c2a5a7bb26e0ee7aeeade78ba52ac1f188670311/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cf1aaa92e76c63a19f8a79670111cffe41371334",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/cf1aaa92e76c63a19f8a79670111cffe41371334",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/cf1aaa92e76c63a19f8a79670111cffe41371334"
+      }
+    ]
+  },
+  {
+    "sha": "cf1aaa92e76c63a19f8a79670111cffe41371334",
+    "node_id": "C_kwDOQYdZgdoAKGNmMWFhYTkyZTc2YzYzYTE5ZjhhNzk2NzAxMTFjZmZlNDEzNzEzMzQ",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-08T09:46:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T09:46:26Z"
+      },
+      "message": "fix(admin-video): per-fetch try/catch + KV-cache nostr fallback (#140)\n\n* fix: KV-cache the Nostr imeta-url fallback in /admin/video proxy\n\nThe fallback added in #138 opened a fresh WebSocket to relay.divine.video\non every miss. With a 50-card dashboard render hitting the proxy in\nparallel, that meant up to 50 concurrent WS connections per page load —\nexhausting per-isolate budgets and surfacing as 500/502 in the moderator\nconsole.\n\nCache the relay lookup result in MODERATION_KV with a 5-min TTL. Sentinel\nempty string represents \"no event found\" so negative results are also\ncached. Write goes through ctx.waitUntil so the request itself doesn't\nwait on KV.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix: GCS direct fallback for /admin/video proxy\n\nAdd a layer between the stored-content_url candidate and the relay\nimeta-url fallback that hits GCS bucket divine-blossom-media directly\nat the same sha path. The Blossom CDN sits in front of this bucket and\nthe bucket is publicly readable, so when the CDN returns 404 (moderation\nenforcement, VCL gates, etc.) the underlying bytes are still reachable\nwithout auth or relay roundtrip.\n\nBucket name configurable via env.GCS_BUCKET, defaulting to\ndivine-blossom-media (the production bucket per\ndivine-blossom/README.md).\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "81d899c3da9fe0c56622c6aaca8ada058a52d37e",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/81d899c3da9fe0c56622c6aaca8ada058a52d37e"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/cf1aaa92e76c63a19f8a79670111cffe41371334",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/bDyCRC1aQ7uu5UhlAAAmyQQAA4pe/lAa9vdWNKjxqXw9w33\nCseVj2NSm4d20Zqmxl672COo5xdtwG4oP1GpDNtpMgn9VZoFMOQnjLgSxAkzCHrT\nE+4tXV+zUaVaEGApnuMdJJjHI+7LoPZpQS9nLTnENFjC+QFDbDwcdwxkpnQIB7G9\nGRAyH99UBMi2RvK5NIWcQAAQiqbSE22CAw4hjH50W9QEC0tq5gjiVzR9OfpwY8Rg\nX3VMu9TzfUdQofXHN5504xbnLi1X20WxgvzmF4SmEZSA/hbfbCkvXxzqJmNIS4Km\notbUWs9vagekfORpH6vkAMlh1x8SvN4f3giZkp5yHvpaE3t7hEF8Xz6OcIFvC/01\n6eqbJoPoQleUv/lQphBLKunkIKYofKu50iz2f65EY5n1NfCHU3yuaGZaXcBJSdeI\nBKXExCpPda6QN/Huca5pANNGbZla+JXZI5b7hTa2ADMhe+Xktgkv4owhLhxYZqoZ\nPZI+v5ZTb1HjAKgl2a+k8g6xnvZeczMIqyLGMlbIsWvKVQGywGg4mZ9W12rupGmB\nFIIRSROCL+9sQXYBCbUaaJGENZQb9mvTuXcTNStv+MVriI0UtgzeAxRLD92R7yDg\nKItQzqNdXEMy1oH2A18T7lhu13if2aPJTcSA6RB5qeSTwwH+IsIl3p1UKiTXVcgE\nxDG8lGk4QJl/nMYUjfRY\n=CWNF\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 81d899c3da9fe0c56622c6aaca8ada058a52d37e\nparent c42445cbd43bfd2b7531602f4f0fd0811ae832e9\nauthor rabble <evan@protest.net> 1778233586 +1200\ncommitter GitHub <noreply@github.com> 1778233586 +1200\n\nfix(admin-video): per-fetch try/catch + KV-cache nostr fallback (#140)\n\n* fix: KV-cache the Nostr imeta-url fallback in /admin/video proxy\n\nThe fallback added in #138 opened a fresh WebSocket to relay.divine.video\non every miss. With a 50-card dashboard render hitting the proxy in\nparallel, that meant up to 50 concurrent WS connections per page load —\nexhausting per-isolate budgets and surfacing as 500/502 in the moderator\nconsole.\n\nCache the relay lookup result in MODERATION_KV with a 5-min TTL. Sentinel\nempty string represents \"no event found\" so negative results are also\ncached. Write goes through ctx.waitUntil so the request itself doesn't\nwait on KV.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix: GCS direct fallback for /admin/video proxy\n\nAdd a layer between the stored-content_url candidate and the relay\nimeta-url fallback that hits GCS bucket divine-blossom-media directly\nat the same sha path. The Blossom CDN sits in front of this bucket and\nthe bucket is publicly readable, so when the CDN returns 404 (moderation\nenforcement, VCL gates, etc.) the underlying bytes are still reachable\nwithout auth or relay roundtrip.\n\nBucket name configurable via env.GCS_BUCKET, defaulting to\ndivine-blossom-media (the production bucket per\ndivine-blossom/README.md).\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-08T09:46:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/cf1aaa92e76c63a19f8a79670111cffe41371334",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/cf1aaa92e76c63a19f8a79670111cffe41371334",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/cf1aaa92e76c63a19f8a79670111cffe41371334/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c42445cbd43bfd2b7531602f4f0fd0811ae832e9",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/c42445cbd43bfd2b7531602f4f0fd0811ae832e9",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/c42445cbd43bfd2b7531602f4f0fd0811ae832e9"
+      }
+    ]
+  },
+  {
+    "sha": "c42445cbd43bfd2b7531602f4f0fd0811ae832e9",
+    "node_id": "C_kwDOQYdZgdoAKGM0MjQ0NWNiZDQzYmZkMmI3NTMxNjAyZjRmMGZkMDgxMWFlODMyZTk",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-08T09:32:40Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T09:32:40Z"
+      },
+      "message": "fix: dashboard speedup followups (4 must-fix + 3 should-fix from PR #136 review) (#137)\n\n* fix: PR #136 review followups (4 must-fix + 3 should-fix)\n\nPR #136 merged before the must-fix commit landed; this branch carries\nthe carry-overs and adds the should-fix items the reviewer flagged.\n\nMust-fix:\n\n1. latestBunnyEventBySha status_name filter timing (correctness bug).\n   Filtering status_name INSIDE the CTE before ROW_NUMBER() silently\n   resurrects deleted shas: a sha with finished@100 and deleted@200\n   has the deleted row dropped from the CTE, making finished@100 the\n   \"latest\" — but the old correlated subquery (MAX over all rows then\n   require winner not be deleted) excluded it. Move the filter to\n   AFTER ranking, on rn=1. Same fix in countLatestBunnyEvents. New\n   regression test pins the correct semantic.\n\n2. enrichAdminLookupVideo guard for client/content (detail-view bug).\n   After PR #136 widened the SELECT, enriched.nostrContext is truthy\n   on stored rows — but its `client` and `content` fields are\n   hardcoded null because moderation_results doesn't store them. The\n   single-video detail view (/admin/api/video/:id) was therefore\n   silently dropping those fields from card UI. Widen the guard to\n   trigger funnelcake when the stored nostrContext lacks both. List\n   endpoints don't go through this helper any more, so the fetch\n   only fires per detail-view click — by design.\n\n3. Refresh button now bypasses the stats cache. dashboard.html\n   previously called loadVideos() which left stats served from the\n   60s KV cache. Add refreshDashboard() that calls loadRealStats(true)\n   and loadAIDetectionStats(true), both of which pass ?fresh=1 to\n   skip the cache read while still writing back.\n\n4. /api/v1/decisions reverts to its original public-API column set.\n   PR #136 inadvertently widened it via ADMIN_VIDEO_COLUMNS, leaking\n   event_id/title/author/content_url/published_at to downstream\n   consumers (e.g. divine-relay-manager) that may not tolerate\n   unexpected fields. Comment now flags the contract pin.\n\nShould-fix:\n\n5. Backfill mutex TOCTOU honesty. KV doesn't expose CAS; read-then-\n   write is racy under exactly-simultaneous calls. Document that the\n   mutex is best-effort and the worst case is a duplicate funnelcake\n   batch (UPDATE WHERE event_id IS NULL keeps DB writes idempotent).\n\n6. Migration 009 ALTER TABLE non-idempotent comment. SQLite/D1 lacks\n   ADD COLUMN IF NOT EXISTS. Wrangler's migration tracker prevents\n   reruns under normal deploys; document the manual-replay caveat\n   for future operators.\n\n7. cachedStat: never let a cache-write failure mask a successful\n   compute. KV.put().catch() logs and moves on; the freshly computed\n   value still returns. Production path (ctx.waitUntil) and fallback\n   path (await) both safe.\n\nTests:\n- New regression test in bunny-events.test.mjs (finished→deleted).\n- New test in lookup-helpers.test.mjs (event_id but no title/author).\n- 164 tests passing across 5 changed files.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(ci): drop accidental backfill-relay-decisions import/handler\n\nThe previous commit on this branch unintentionally bundled an import\nand handler for runRelayDecisionBackfill — code from a separate\nparallel feature whose .mjs file isn't on this branch. CI's vite\nimport-analysis correctly flagged it as a missing module. This\ncommit removes both the import (line 38) and the\n/admin/api/backfill/decisions handler that referenced it.\n\nThe dashboard-speedup followups themselves are unaffected — this is\nonly a cleanup of the misrouted bundling.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "beafa9b44cde5b7a1f403a6520190bd5ad45643f",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/beafa9b44cde5b7a1f403a6520190bd5ad45643f"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/c42445cbd43bfd2b7531602f4f0fd0811ae832e9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/a24CRC1aQ7uu5UhlAAAGGIQAHZCImd3nHh4fmkEU/nInt6l\nsJcnKy/lDZFOTV4jG+qraN46WNX9RWrRv5ZI1FRUQ02YFSSOORD4yQ/ZjrhTu5jm\nGYAU7H0Jg+H9YE55jwoalA6cWqC7uBIIDK1zOw0oogeftI5/HfxurZFaOvoR48M5\nJI5ZgbFuL2hqLQzh+BjoMSpf/TUSz0kT4PjfM2MxktSB5RrxmaQDsH2f7WwGIdh9\n1Q94Ww010wY/ShTCRjFAWqEk/Wa5AnK9GJBjuBu/FG3LMfOQB1K/r9kuEBsXTnQq\njhhKvZxZLK5jL7vaw7KKKB8/Su3PLXkMZMSWOw++n0TH6uMgMv86d3GbUp6eu1Qx\nJTMZvh8TrB4NqQaTfYUXvLM2H0K04kg60WUcHV/L+jCE5Qi3ON/aIDZgoYYATeIp\nbTMkLXblxgDIZELxGCgLM0x2ZbCpEaL2KY+LvA0r+/+bm/AwFaPRKeRheaYYvxV9\nEWpcUAuuqQKz6nd8A1CdnEsmY2YWsKSg+ZFpu1tD1fGOBRviaOsOATha7yBqFPk8\nMYH8O47BOGNeSlVYhPQ+vQn/AyMfRuu+cxI5DKP9oK2L3q1fg0iHMd7ec/+ZVu9P\njYcXA+pmr2r4gqhMaOSNqYJg3SddxxACO6kOB8AM/Otjpdzr5ycxG7oTHF88TgKG\nzuuwXYDCTN8xaOjsZm57\n=H2NF\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree beafa9b44cde5b7a1f403a6520190bd5ad45643f\nparent 2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd\nauthor rabble <evan@protest.net> 1778232760 +1200\ncommitter GitHub <noreply@github.com> 1778232760 +1200\n\nfix: dashboard speedup followups (4 must-fix + 3 should-fix from PR #136 review) (#137)\n\n* fix: PR #136 review followups (4 must-fix + 3 should-fix)\n\nPR #136 merged before the must-fix commit landed; this branch carries\nthe carry-overs and adds the should-fix items the reviewer flagged.\n\nMust-fix:\n\n1. latestBunnyEventBySha status_name filter timing (correctness bug).\n   Filtering status_name INSIDE the CTE before ROW_NUMBER() silently\n   resurrects deleted shas: a sha with finished@100 and deleted@200\n   has the deleted row dropped from the CTE, making finished@100 the\n   \"latest\" — but the old correlated subquery (MAX over all rows then\n   require winner not be deleted) excluded it. Move the filter to\n   AFTER ranking, on rn=1. Same fix in countLatestBunnyEvents. New\n   regression test pins the correct semantic.\n\n2. enrichAdminLookupVideo guard for client/content (detail-view bug).\n   After PR #136 widened the SELECT, enriched.nostrContext is truthy\n   on stored rows — but its `client` and `content` fields are\n   hardcoded null because moderation_results doesn't store them. The\n   single-video detail view (/admin/api/video/:id) was therefore\n   silently dropping those fields from card UI. Widen the guard to\n   trigger funnelcake when the stored nostrContext lacks both. List\n   endpoints don't go through this helper any more, so the fetch\n   only fires per detail-view click — by design.\n\n3. Refresh button now bypasses the stats cache. dashboard.html\n   previously called loadVideos() which left stats served from the\n   60s KV cache. Add refreshDashboard() that calls loadRealStats(true)\n   and loadAIDetectionStats(true), both of which pass ?fresh=1 to\n   skip the cache read while still writing back.\n\n4. /api/v1/decisions reverts to its original public-API column set.\n   PR #136 inadvertently widened it via ADMIN_VIDEO_COLUMNS, leaking\n   event_id/title/author/content_url/published_at to downstream\n   consumers (e.g. divine-relay-manager) that may not tolerate\n   unexpected fields. Comment now flags the contract pin.\n\nShould-fix:\n\n5. Backfill mutex TOCTOU honesty. KV doesn't expose CAS; read-then-\n   write is racy under exactly-simultaneous calls. Document that the\n   mutex is best-effort and the worst case is a duplicate funnelcake\n   batch (UPDATE WHERE event_id IS NULL keeps DB writes idempotent).\n\n6. Migration 009 ALTER TABLE non-idempotent comment. SQLite/D1 lacks\n   ADD COLUMN IF NOT EXISTS. Wrangler's migration tracker prevents\n   reruns under normal deploys; document the manual-replay caveat\n   for future operators.\n\n7. cachedStat: never let a cache-write failure mask a successful\n   compute. KV.put().catch() logs and moves on; the freshly computed\n   value still returns. Production path (ctx.waitUntil) and fallback\n   path (await) both safe.\n\nTests:\n- New regression test in bunny-events.test.mjs (finished→deleted).\n- New test in lookup-helpers.test.mjs (event_id but no title/author).\n- 164 tests passing across 5 changed files.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(ci): drop accidental backfill-relay-decisions import/handler\n\nThe previous commit on this branch unintentionally bundled an import\nand handler for runRelayDecisionBackfill — code from a separate\nparallel feature whose .mjs file isn't on this branch. CI's vite\nimport-analysis correctly flagged it as a missing module. This\ncommit removes both the import (line 38) and the\n/admin/api/backfill/decisions handler that referenced it.\n\nThe dashboard-speedup followups themselves are unaffected — this is\nonly a cleanup of the misrouted bundling.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-08T09:32:41Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/c42445cbd43bfd2b7531602f4f0fd0811ae832e9",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/c42445cbd43bfd2b7531602f4f0fd0811ae832e9",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/c42445cbd43bfd2b7531602f4f0fd0811ae832e9/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd"
+      }
+    ]
+  },
+  {
+    "sha": "2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd",
+    "node_id": "C_kwDOQYdZgdoAKDI4ODJlMTNiZjNiZGVlMmRiZmY4YmVlYTI5ZWUzNWY1ZmMxYWM5ZGQ",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-08T09:32:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T09:32:26Z"
+      },
+      "message": "fix: stop preloading every video on the moderation dashboard (#139)\n\nThe dashboard renders 50 cards per page, each with a <video> element. Two\nof them used preload=\"metadata\" / preload=\"auto\", which made the browser\nfire 50 parallel range requests against /admin/video/{sha}.mp4 the moment\nthe page rendered. With the new Nostr-relay imeta-url fallback, every miss\nalso costs a relay round-trip — multiplying the load.\n\nSwitch both to preload=\"none\". The existing onmouseenter=\"this.play()\"\ntriggers the actual fetch on demand, so playback UX is unchanged but the\ninitial load drops 50 video fetches to zero.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "81298bdec3173a28288cc518354c32c3601da1e7",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/81298bdec3173a28288cc518354c32c3601da1e7"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/a2qCRC1aQ7uu5UhlAAAEyEQAHZJNkA1nI8zS+br2uoL1H5g\n7d/5Uj4lxQY8fxyjy4VRospV/yJDIPOaE8jstMPS6WfnuNJaImAvqJxvX9bbKkr2\nhpXlM4P8yt5/MneXOJnLWvCuuC0cQxb9a9KWOKW08m+bIJ95zQtGgfGk98CUGKzf\nbmUqihvGLPU3HZymY5yu8Dq9+wUJDouKLJxs67UKf35WQVSrLsCZ2apViEhUCg6P\nvkm3h1ckchfcpQj9YH++JNNx+w1ohpFUPPHqF0nBsek1pdXslhoP9J+7xP2r2ovN\nfBfsFO9lxpCfO7/nBXckSFjAMWPE6ct99Vqb3y+aMYixpfzi9bMvJOkQxOs5JW0/\nL90trAhbVyzY14tHAAfgok0jjMvwg5Kr/yL07ZRM7IH3vrHeh1eOP1UKHgFi0dy6\nWqke23nCNtJHcJhNmRo1UZWxNC63jqyZfVn8SHPSTvGBPIMCpKlgYJjxJhQHEWjg\n/woQUEn4tcFGy7xaHTW27iHSLy2lgSi631asPOggg6MdkldYYACWfp38tJ3R7DW7\ncSqfhF4/6AbpW/6zuNPKIRPnYJ9RiwFS2zOb1R/XIJ4VOAaSp/iFNdeQKMiIy8tT\nn2KKkZ+VLggAJ5QZEJr2MwO8tK9tnts41URN4b6W5ktOnHdT4KaMI4lnd3vusSrP\nbQXD4gd3s2SWSCEocQxj\n=GRrh\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 81298bdec3173a28288cc518354c32c3601da1e7\nparent bc1f50263517a6c940ef60f76b2c0192c5d37087\nauthor rabble <evan@protest.net> 1778232746 +1200\ncommitter GitHub <noreply@github.com> 1778232746 +1200\n\nfix: stop preloading every video on the moderation dashboard (#139)\n\nThe dashboard renders 50 cards per page, each with a <video> element. Two\nof them used preload=\"metadata\" / preload=\"auto\", which made the browser\nfire 50 parallel range requests against /admin/video/{sha}.mp4 the moment\nthe page rendered. With the new Nostr-relay imeta-url fallback, every miss\nalso costs a relay round-trip — multiplying the load.\n\nSwitch both to preload=\"none\". The existing onmouseenter=\"this.play()\"\ntriggers the actual fetch on demand, so playback UX is unchanged but the\ninitial load drops 50 video fetches to zero.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-08T09:32:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bc1f50263517a6c940ef60f76b2c0192c5d37087",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/bc1f50263517a6c940ef60f76b2c0192c5d37087",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/bc1f50263517a6c940ef60f76b2c0192c5d37087"
+      }
+    ]
+  },
+  {
+    "sha": "bc1f50263517a6c940ef60f76b2c0192c5d37087",
+    "node_id": "C_kwDOQYdZgdoAKGJjMWY1MDI2MzUxN2E2Yzk0MGVmNjBmNzZiMmMwMTkyYzVkMzcwODc",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-08T09:25:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T09:25:34Z"
+      },
+      "message": "fix: fall back to Nostr imeta URL when admin video proxy can't serve from CDN (#138)\n\nThe /admin/video/{sha}.mp4 proxy returns 404/500/502 for many videos because\ncontent_url is stored as the divine CDN URL (media.divine.video/{sha}) — the\nexact URL the proxy already tried and got 404 from. The dedup at line 2782\ncorrectly skips that candidate, leaving zero working sources.\n\nTwo-part fix:\n1. Last-resort fallback in the proxy: fetch the Nostr event from\n   relay.divine.video and try its imeta url before giving up. This unblocks\n   moderators viewing external Blossom-hosted videos right now.\n2. Source fix: stop writing cdnUrl as content_url when nostrContext.url is\n   missing — leaving null lets the fallback run instead of poisoning the\n   stored candidate.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "b09ad85571b50e14c7e695c04faf2484e23e9279",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/b09ad85571b50e14c7e695c04faf2484e23e9279"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/bc1f50263517a6c940ef60f76b2c0192c5d37087",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/awOCRC1aQ7uu5UhlAAAvywQABuelGKs2l0hRCspfUUmLcuS\ni+crQGNDcJ2tM8xVgMg41ap+ysnsH6IzQzcjIMIsm370FRSbOsfx1BcZ1OIW49XD\nU5H/xffXY0FQz0W/904KPJcyxivOtWYXJJLDlnywzFKIdX+pl1kYY5yaiUo9rVH+\nsjNjgAMS9HKdBiZrPiOI9C6GQjLGGVCAle9ghlFrhyN2QqPHg+d3YyCIEVV7oXZ4\nSllzoeSpC+82C41R7VMLXROYv+4YoSzpIHHdyGNWk1XcMIVdudva5StKfq/92C9w\nXh9EMm/5cF5MHQZaOWHEzCtnH3P9KOCJA+oy9ySNgga9Ib/jwQ5GCoC3UMEmVFgD\n+OdtLNNU2pw+aHPlJcHbNwOS3dFnHHEdn6JVp/hm542RIM89QqwWi+Z8t19/XiLU\nt0727bLoSsknPNwj4+zFEburn38o00X+eybPwL8P5Tei21c8hJXKzzhj4EXW1I6k\nRkVULlq40wAZ5bF1zbfjk7As3NC4YwhuIDxgZf5J5M8431iYqGpZPbW4sXG0QOts\nDXsgn/7w0LuCSFIS/iz2WQbK+Z4bkCN0Qz/ojU8XCJjrgOreAijgzaCvkKMX4+BB\nMzXexdzSQrTuYojo70irWeRTHkFk0ZGcM8ppPtH+O7Lf7tYLWr4a5QWebWftBGeS\nNYZz4Su8VYmUIZA6Admt\n=WpVe\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b09ad85571b50e14c7e695c04faf2484e23e9279\nparent ea153f789dedcb7db6842643636316ba5d30c946\nauthor rabble <evan@protest.net> 1778232334 +1200\ncommitter GitHub <noreply@github.com> 1778232334 +1200\n\nfix: fall back to Nostr imeta URL when admin video proxy can't serve from CDN (#138)\n\nThe /admin/video/{sha}.mp4 proxy returns 404/500/502 for many videos because\ncontent_url is stored as the divine CDN URL (media.divine.video/{sha}) — the\nexact URL the proxy already tried and got 404 from. The dedup at line 2782\ncorrectly skips that candidate, leaving zero working sources.\n\nTwo-part fix:\n1. Last-resort fallback in the proxy: fetch the Nostr event from\n   relay.divine.video and try its imeta url before giving up. This unblocks\n   moderators viewing external Blossom-hosted videos right now.\n2. Source fix: stop writing cdnUrl as content_url when nostrContext.url is\n   missing — leaving null lets the fallback run instead of poisoning the\n   stored candidate.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-08T09:25:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/bc1f50263517a6c940ef60f76b2c0192c5d37087",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/bc1f50263517a6c940ef60f76b2c0192c5d37087",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/bc1f50263517a6c940ef60f76b2c0192c5d37087/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ea153f789dedcb7db6842643636316ba5d30c946",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/ea153f789dedcb7db6842643636316ba5d30c946",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/ea153f789dedcb7db6842643636316ba5d30c946"
+      }
+    ]
+  }
+]
