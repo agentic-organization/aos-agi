@@ -55,7 +55,7 @@ const orgRoot = path.join(OUT_ROOT, 'org-discovery', DATE);
 function ghApi(endpoint, options = {}) {
   return new Promise((resolve, reject) => {
     const args = ['api'];
-    if (options.paginate) args.push('--paginate', '--slurp');
+    if (options.paginate) args.push('--paginate');
     args.push(endpoint);
     execFile('gh', args, { timeout: 60000, maxBuffer: 50 * 1024 * 1024 }, (err, stdout, stderr) => {
       if (err) {
@@ -87,7 +87,7 @@ function shellQuote(s) {
 }
 
 function commandFor(endpoint, file, options = {}) {
-  const paginate = options.paginate ? ' --paginate --slurp' : '';
+  const paginate = options.paginate ? ' --paginate' : '';
   return `gh api${paginate} ${shellQuote(endpoint)} > ${shellQuote(file)}`;
 }
 

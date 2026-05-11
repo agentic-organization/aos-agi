@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "59aa42cc4cb5257beff49fd337b6c55857c80f73",
+    "node_id": "C_kwDOMvLjydoAKDU5YWE0MmNjNGNiNTI1N2JlZmY0OWZkMzM3YjZjNTU4NTdjODBmNzM",
+    "commit": {
+      "author": {
+        "name": "Javier G. Montoya S.",
+        "email": "jgmontoya@pm.me",
+        "date": "2026-05-08T14:19:40Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T14:19:40Z"
+      },
+      "message": "Feat/add group state streaming (#808)\n\n* feat(group_state_streaming): emit LeftGroup and RemovedFromGroup ona per-(account, group) stream so open chat views can react to membership changes\n\n* test(integration/group_state_streaming): add scenario",
+      "tree": {
+        "sha": "320b8fe8df24716a44b93441ed84fa73b0bb8b18",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/320b8fe8df24716a44b93441ed84fa73b0bb8b18"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/59aa42cc4cb5257beff49fd337b6c55857c80f73",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/fD8CRC1aQ7uu5UhlAAAwv4QAGyEzFIITv0naRtNl2gPCPOy\nbnCydOuN55fRjHyzJqqcadZ/dMHNi202DDuAW0wUp+XkXwIe5bAP27KqOy2uZFPH\n5BAi2WsJ9/SRpimRqYJvAgwlNpNt+FXQLGPhTwkGAa3skd5Yi7IC1ju6bFLZgyEG\nF6xCLbntS51o2v0j0IKSD5wQ+OEyly/MGbfw2Zf0QHNibUd0D+cH8aFU2dBn8Zs7\nsOOqAsWh6TaYcj6uqnl/rdDcYvVqhEj92nvT4HSbNtvaT7zEmhViwtP7MCnJy5DW\n8yPn46IIM4zdnYHwInUT+iZ/xR3re+FF/SedPRWJ/K+geUU/n6fe72uRg5QBvhuT\nBL0Nyi0r7gUgJy7Knwge7JnZ+0hh89uzsvdm70aLdKpD2Ny6arvcaPSLeenPjp/1\nJRcyEiY+OcEEOKStU8MjvXuYqKVJCWAxdjDOwRqGWEEE7U2dDvWFFXiQzOzHevLU\nltCCftj+C/HPr8BCdOFMHccIBXL6Nro10xlahuueY+LYVxU/SqPB0NJJ6AdWxvWI\nPsVgjqJOLh2EBZq7oQaS+wj/lBGa7QPakbdXK+mmjkG+Jp0REoqBSPObKJWubc/J\n/DO36BOxC6qDlqQykMHfiv3N/Cvff/tqg8KALWABfL5mOWes6l5dHWrAIhfWYsFn\nudg3rqNneIvwYmMCrMZQ\n=KWXi\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 320b8fe8df24716a44b93441ed84fa73b0bb8b18\nparent 49e5f20c43fd72f1d07ea3675350754650955371\nauthor Javier G. Montoya S. <jgmontoya@pm.me> 1778249980 -0400\ncommitter GitHub <noreply@github.com> 1778249980 -0400\n\nFeat/add group state streaming (#808)\n\n* feat(group_state_streaming): emit LeftGroup and RemovedFromGroup ona per-(account, group) stream so open chat views can react to membership changes\n\n* test(integration/group_state_streaming): add scenario",
+        "verified_at": "2026-05-08T14:19:41Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/59aa42cc4cb5257beff49fd337b6c55857c80f73",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/59aa42cc4cb5257beff49fd337b6c55857c80f73",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/59aa42cc4cb5257beff49fd337b6c55857c80f73/comments",
+    "author": {
+      "login": "jgmontoya",
+      "id": 11434422,
+      "node_id": "MDQ6VXNlcjExNDM0NDIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11434422?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jgmontoya",
+      "html_url": "https://github.com/jgmontoya",
+      "followers_url": "https://api.github.com/users/jgmontoya/followers",
+      "following_url": "https://api.github.com/users/jgmontoya/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jgmontoya/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jgmontoya/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jgmontoya/subscriptions",
+      "organizations_url": "https://api.github.com/users/jgmontoya/orgs",
+      "repos_url": "https://api.github.com/users/jgmontoya/repos",
+      "events_url": "https://api.github.com/users/jgmontoya/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jgmontoya/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "49e5f20c43fd72f1d07ea3675350754650955371",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/49e5f20c43fd72f1d07ea3675350754650955371",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/49e5f20c43fd72f1d07ea3675350754650955371"
+      }
+    ]
+  },
+  {
+    "sha": "49e5f20c43fd72f1d07ea3675350754650955371",
+    "node_id": "C_kwDOMvLjydoAKDQ5ZTVmMjBjNDNmZDcyZjFkMDdlYTM2NzUzNTA3NTQ2NTA5NTUzNzE",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-08T14:09:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T14:09:01Z"
+      },
+      "message": "Recover external signer subscriptions after registration (#811)",
+      "tree": {
+        "sha": "0745026d39e804bb40aeeb509eccd8fe35f96fe7",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/0745026d39e804bb40aeeb509eccd8fe35f96fe7"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/49e5f20c43fd72f1d07ea3675350754650955371",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/e59CRC1aQ7uu5UhlAAAhToQAKSQuKrsvmn19jDItq5/2jbt\nIGEKJs1DK84Tf7VPlGjFF+eARvsmDmj9545kCGUmZ6duoEV4bV5c3eyPMI0RFWyB\nUPFO3xbvjvAs4RXv+W2n/BwbrWwZr8CLCZpnWVhMbwAgu0nKStwXltE/qpXhsUGI\nZ+/SZkBymVhJRDHK/1poQxgU4dieODJg8kWBUz4Bg64kRyPx6tvPVN3MFSOPasxr\nSC+zNrJjUNmRc6bnx1rzqEAZzELfHJ5lcUHx91vNP6gZqCwEy52m7UEog+Z3cGUD\niFayR/NPQ5TUyYhrflyYsOv/FGAgMbQ1YVZi39LEN5iNc3i4Hz8w8chOMkI14mjb\nafXXhaXYSSiNIOCWJ6oSBVSVCBXjGtFAkD4kQD7yGL/jMfu9+6sokLMtWsPKzRuF\nxW2aoXaNgXRL3Gz8uk+Gk82WWyBLzEJqKioAP/xWJlyshHRmvgng2PRTpJZHOsGv\nn37WDbqkaYzRxEbYuU9FyvHuV1wMy+98fSMMn43skun6/K6KrK82EcGCZrl77Z0F\nsn5WeOoi7z7ztaGWT7vDrzf5fz1MtH8r/l8GuqVopf+qy7SeJYLlocJlOaWPMX+Y\ntHb+YokIDofLI6+fCLqH4DR/Y1bBVReiHmQGGnynSTNWrOorOVoRPliXP7O2xnrI\nrji4ATnIPNdCWPU+wvE8\n=uE0U\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0745026d39e804bb40aeeb509eccd8fe35f96fe7\nparent cc1d899d29bdd5b5ededb07dc8c3c0ec905c2b3e\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1778249341 +0200\ncommitter GitHub <noreply@github.com> 1778249341 +0200\n\nRecover external signer subscriptions after registration (#811)",
+        "verified_at": "2026-05-08T14:09:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/49e5f20c43fd72f1d07ea3675350754650955371",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/49e5f20c43fd72f1d07ea3675350754650955371",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/49e5f20c43fd72f1d07ea3675350754650955371/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cc1d899d29bdd5b5ededb07dc8c3c0ec905c2b3e",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/cc1d899d29bdd5b5ededb07dc8c3c0ec905c2b3e",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/cc1d899d29bdd5b5ededb07dc8c3c0ec905c2b3e"
+      }
+    ]
+  }
+]

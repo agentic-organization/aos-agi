@@ -40,6 +40,8 @@ Ditto is one of AOS's **Foundry** projects, owned and operated by [[teams/soapbo
 - 2026-05-07: Page expanded from Foundry stub using [`tools/ingestion/github-org-discover.js`](../tools/github-org-discover.md) snapshot of `soapbox-pub` (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 - 2026-05-07: Original Foundry-listing stub created from andotherstuff.org.
 
+- 2026-05-11: GitHub mirror activity via `data/raw/github/daily/2026-05-11/soapbox-pub/ditto/`: **9 commits** in the 72h window, including releases **v2.14.0** (2026-05-09) and **v2.14.1** (2026-05-11). Commit themes: repost header on reposted reactions/zaps/reposts, on-chain zaps (kind 8333) as notifications, Restore button for embedded snapshot card recovery, event recovery dialog layout tightening, `e` tag in draft article deletion events, avatar-to-profile links preferring `naddr`.
+
 ## Open questions
 - Where do Ditto contributors discuss day-to-day work — Nostr group, Discord/Matrix, GitLab issues only?
 - Who currently runs the flagship `ditto.pub` instance and what is its operational footprint?

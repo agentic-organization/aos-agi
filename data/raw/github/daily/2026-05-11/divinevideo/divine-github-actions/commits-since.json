@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "eb1cebff33ba42105388cc3155a010a5f1111526",
+    "node_id": "C_kwDOQ1GIt9oAKGViMWNlYmZmMzNiYTQyMTA1Mzg4Y2MzMTU1YTAxMGE1ZjExMTE1MjY",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-08T07:22:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T07:22:59Z"
+      },
+      "message": "feat: brain-autofix reusable workflows (auto-rebase + auto-fix-tests) (#2)\n\n* feat: brain-autofix reusable workflows (auto-rebase + auto-fix-tests)\n\nTwo opt-in reusable workflows that complement the divine-brain\npipeline. Each repo opts in by adding ~10 lines of caller workflow;\nopts out per-PR via label or per-repo via a `.brain-autofix.disabled`\nfile.\n\nauto-rebase.yml — pure-git, no LLM. On pull_request synchronize /\nlabeled / opened / reopened / ready_for_review:\n  - skip if PR labeled do-not-touch or wip\n  - skip if .brain-autofix.disabled at repo root\n  - skip if last commit carries [skip-autofix] (loop-break)\n  - merge or rebase from base; auto-resolve trivial conflicts:\n      lockfiles (pnpm/npm/yarn/cargo/go) regenerated via the relevant\n      tool; generated artifacts (dist/, build/, .next/, .turbo/) kept\n      PR-side and rebuilt on next CI\n  - any non-trivial conflict aborts cleanly with a PR comment listing\n    files that need human help\n  - push back to PR branch with [brain-autofix][skip-autofix] trailer\n  - --force-with-lease only in rebase mode; merge mode is fast-forward\n  - explicit refusal to push to the repo default branch\n\nauto-fix-tests.yml — Claude Code in runner. Triggered by:\n  - pull_request labeled (label = `auto-fix`), OR\n  - issue_comment containing `/brain-fix` from a maintainer, OR\n  - workflow_run completed=failure on a PR carrying the `auto-fix` label\n  Then:\n  - all the same skip checks as auto-rebase plus an idempotency tag\n    keyed by head_sha (max 1 attempt per push)\n  - install deps, capture failing test output (last 8KB), hand to\n    Claude Code with --max-turns and a tight system prompt\n  - re-run tests; ONLY push if they now pass\n  - commit with [brain-autofix][skip-autofix] trailer + a note saying\n    human review still required (auto-fix may have masked a real bug)\n  - posts a PR comment with the agent's run log on success / failure /\n    no-changes paths\n\nANTHROPIC_API_KEY flows via `secrets:` not `env:` and is never echoed.\n\nREADME documents opt-in for both, including the caller-workflow\nsnippets and the four guardrail mechanisms (loop-break trailer,\ndisable file, label opt-out, idempotency tag).\n\n* fix: review-driven fixes to brain-autofix workflows\n\nFound four bugs reviewing the previous commit with fresh eyes:\n\n1. Lockfile regen could commit a broken file. If the repo's package\n   manager (pnpm/yarn/cargo/go) wasn't on the runner, the regen would\n   silently fail, but my code still `git add`ed the file with\n   conflict markers in it. Fixed via a `regen()` helper that:\n     - early-returns \"unresolved\" when the tool isn't on PATH\n     - sanity-checks the regenerated file for `<<<<<<<` / `=======`\n       markers and treats their presence as failure\n     - captures regen output to /tmp/regen.log for the PR comment\n\n2. Fork PR push-back fails silently. `secrets.GITHUB_TOKEN` can't\n   write to a fork branch. Both workflows now skip cleanly with a\n   \"PR is from a fork, cannot push back\" reason. Documented in README.\n\n3. Missing concurrency. Two close webhooks (labeled right after\n   synchronize) raced. Both workflows now have a `concurrency:` group\n   keyed on the PR number with `cancel-in-progress: true` — the\n   later event has fresher info anyway.\n\n4. README caller example mentioned `push: branches: [main]`, but the\n   v0 job filter only accepts pull_request events. Removed the\n   misleading example and added a \"Note on triggers\" callout.",
+      "tree": {
+        "sha": "0e7253b1cee1880ef88c4b32b800ae5be5dcf15b",
+        "url": "https://api.github.com/repos/divinevideo/divine-github-actions/git/trees/0e7253b1cee1880ef88c4b32b800ae5be5dcf15b"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-github-actions/git/commits/eb1cebff33ba42105388cc3155a010a5f1111526",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/Y9TCRC1aQ7uu5UhlAAAN2UQAF6pkUYPjw4W0RXEhISse1Rz\nZsxZlJNRZsGeJ5bJptz9MhS3IqbaKOJ931oXxB8/RXoLsBK4s4fgb406Dgh+IVdG\nBHEHtCAMrvO6xuqeoaxBE9JbJk41phz+sZbTdqlCWISaTzVPV5tdsusS4BIMDh8c\nGxKg0uAHIGnx8yFcO234qPHlQ6UE5/0qCb5WXG8P/lGhrm5nHcx96x+RDyPB/nph\ngQ4BFtPn2X/JNJnDRvdKMyX0UvrFxCeR/TqrGLY9HnYIAs74rGw4KiT2zLyfbI4y\nlsPOmyZwFbwCO1z/vfrRnBV4RFNHBt1NcFn/It9TzlkOY4RavPVkBOSG8I5BBhFc\nXT8gFe6JyyqufDuzIrUiFK+phqE/SHfQh+SewonXZx9wbLxRyLxjwy87dl2BDOZ5\nP7I1vCCDMOCf2P019iFYA+RXc1rN5nRMMdPOo60t6CNYQDWXmuKZTHHdFOMfy8JJ\nXe8ZTSIztFqdDMGqUZdpdjJyYMIiJ33aoBz5KY4Txq9UTn8Pk1hmTNCp4AHhjmUm\nkSWiQJ6KI8EsejRjFdUHbcxHWB4USwqeGuPYl+O5FpX9iMOiQzXLzqFNuy6d0E2Z\n8N/9tDxbgblcJohoRjtarwe5YrWpiZGXZJhBkAx+4R6u3T8Vl0USdT/pYOFoUeLb\n2hZLDOcxtGPnOeb/Il9t\n=Xf6u\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0e7253b1cee1880ef88c4b32b800ae5be5dcf15b\nparent 9595d94821f4d9b39096ccad2e191da596394dd8\nauthor rabble <evan@protest.net> 1778224979 +1200\ncommitter GitHub <noreply@github.com> 1778224979 +1200\n\nfeat: brain-autofix reusable workflows (auto-rebase + auto-fix-tests) (#2)\n\n* feat: brain-autofix reusable workflows (auto-rebase + auto-fix-tests)\n\nTwo opt-in reusable workflows that complement the divine-brain\npipeline. Each repo opts in by adding ~10 lines of caller workflow;\nopts out per-PR via label or per-repo via a `.brain-autofix.disabled`\nfile.\n\nauto-rebase.yml — pure-git, no LLM. On pull_request synchronize /\nlabeled / opened / reopened / ready_for_review:\n  - skip if PR labeled do-not-touch or wip\n  - skip if .brain-autofix.disabled at repo root\n  - skip if last commit carries [skip-autofix] (loop-break)\n  - merge or rebase from base; auto-resolve trivial conflicts:\n      lockfiles (pnpm/npm/yarn/cargo/go) regenerated via the relevant\n      tool; generated artifacts (dist/, build/, .next/, .turbo/) kept\n      PR-side and rebuilt on next CI\n  - any non-trivial conflict aborts cleanly with a PR comment listing\n    files that need human help\n  - push back to PR branch with [brain-autofix][skip-autofix] trailer\n  - --force-with-lease only in rebase mode; merge mode is fast-forward\n  - explicit refusal to push to the repo default branch\n\nauto-fix-tests.yml — Claude Code in runner. Triggered by:\n  - pull_request labeled (label = `auto-fix`), OR\n  - issue_comment containing `/brain-fix` from a maintainer, OR\n  - workflow_run completed=failure on a PR carrying the `auto-fix` label\n  Then:\n  - all the same skip checks as auto-rebase plus an idempotency tag\n    keyed by head_sha (max 1 attempt per push)\n  - install deps, capture failing test output (last 8KB), hand to\n    Claude Code with --max-turns and a tight system prompt\n  - re-run tests; ONLY push if they now pass\n  - commit with [brain-autofix][skip-autofix] trailer + a note saying\n    human review still required (auto-fix may have masked a real bug)\n  - posts a PR comment with the agent's run log on success / failure /\n    no-changes paths\n\nANTHROPIC_API_KEY flows via `secrets:` not `env:` and is never echoed.\n\nREADME documents opt-in for both, including the caller-workflow\nsnippets and the four guardrail mechanisms (loop-break trailer,\ndisable file, label opt-out, idempotency tag).\n\n* fix: review-driven fixes to brain-autofix workflows\n\nFound four bugs reviewing the previous commit with fresh eyes:\n\n1. Lockfile regen could commit a broken file. If the repo's package\n   manager (pnpm/yarn/cargo/go) wasn't on the runner, the regen would\n   silently fail, but my code still `git add`ed the file with\n   conflict markers in it. Fixed via a `regen()` helper that:\n     - early-returns \"unresolved\" when the tool isn't on PATH\n     - sanity-checks the regenerated file for `<<<<<<<` / `=======`\n       markers and treats their presence as failure\n     - captures regen output to /tmp/regen.log for the PR comment\n\n2. Fork PR push-back fails silently. `secrets.GITHUB_TOKEN` can't\n   write to a fork branch. Both workflows now skip cleanly with a\n   \"PR is from a fork, cannot push back\" reason. Documented in README.\n\n3. Missing concurrency. Two close webhooks (labeled right after\n   synchronize) raced. Both workflows now have a `concurrency:` group\n   keyed on the PR number with `cancel-in-progress: true` — the\n   later event has fresher info anyway.\n\n4. README caller example mentioned `push: branches: [main]`, but the\n   v0 job filter only accepts pull_request events. Removed the\n   misleading example and added a \"Note on triggers\" callout.",
+        "verified_at": "2026-05-08T07:22:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-github-actions/commits/eb1cebff33ba42105388cc3155a010a5f1111526",
+    "html_url": "https://github.com/divinevideo/divine-github-actions/commit/eb1cebff33ba42105388cc3155a010a5f1111526",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-github-actions/commits/eb1cebff33ba42105388cc3155a010a5f1111526/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9595d94821f4d9b39096ccad2e191da596394dd8",
+        "url": "https://api.github.com/repos/divinevideo/divine-github-actions/commits/9595d94821f4d9b39096ccad2e191da596394dd8",
+        "html_url": "https://github.com/divinevideo/divine-github-actions/commit/9595d94821f4d9b39096ccad2e191da596394dd8"
+      }
+    ]
+  }
+]

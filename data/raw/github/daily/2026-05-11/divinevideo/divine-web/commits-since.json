@@ -1,0 +1,494 @@
+[
+  {
+    "sha": "b5702a1afacaf4e70f12160861271aa879024f89",
+    "node_id": "C_kwDOPrslvdoAKGI1NzAyYTFhZmFjYWY0ZTcwZjEyMTYwODYxMjcxYWE4NzkwMjRmODk",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-10T18:59:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-10T18:59:08Z"
+      },
+      "message": "fix(legal): render headings at brand-correct Extra Bold weight (#359)\n\nThe brand rule at src/index.css:215 declares h1, h2 { font-weight: 800 },\nbut these pages used Tailwind's font-bold (700) on h1 and font-semibold\n(600) on h2. Utility classes have higher specificity than bare element\nselectors, so the page-level classes clobbered the brand intent and every\nsection heading rendered ~200 weight units lighter than the rest of the\nsite. Switched both to font-extrabold so the computed weight matches the\nbrand utility (font-extrabold = 800), confirmed across /terms, /privacy,\n/dmca, and /safety.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "9471a19558a044b11e0719c8b1c29ed0ada5eac1",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/9471a19558a044b11e0719c8b1c29ed0ada5eac1"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/b5702a1afacaf4e70f12160861271aa879024f89",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqANV8CRC1aQ7uu5UhlAAAUxwQAIm31Oah+YPh1qNvsoLauiRz\ncnefJWu1y1X1nHWD/dcL64f1nQzUnSk2JVTsPbq1E/5ExzFtYPdHbL8Wfck5rbMA\n8u6H91XmPIogyri+0HL6BAn4rSWVjEmqw2qwGeTtKuurHw5dZHAbCokusFn/3HkS\n0rNXwUGG/NIl32X31V3BAOXnrPnKGR7z7ZqKsjgGil0uEWS23rVeXknQJBd2gfYB\nlKWDE3vCyQ9iESm2Qw8DOH/nu3pi52YvaRdKTiIrbPKQgdopWVBMZ8UcFpvEj1Ip\nzoO55fXYP0888OfB5q4W+vnsySogLJ0DEhmXlOpzTgbjck5nN/din4WICpbYX6VV\n6C0ugkqyRHESrI/kGR4mnY+u8MmsH7H5Ti0gBJwkN8B96GvLKMcGEkw92K2UUVb2\nCnDajEm9IXlFHf0JJaYyS5zalJHiurhFGsIhIfHW8h0qhSTng4vhoi8RIThygdwg\nh37CqdMZbzcmznkRVdIsnxZGcYP0+srqH9TaV/gYv4eu9n0tgMQkRJ7AU+RJ1GkJ\nMIZ575JomQIh34/Te+GEmmy5F9a39WPRkBtwO5mV2gpz4A60KDpJyzKmZgqX6Rqe\ny+nXV2bcCm4PCBAyr1dqT8RWc3jGmKib2t1RnXGJ4pog4BCWLCiJbxJ06pJn2oO2\nqvA+VSkhL3fo8PRKt7K6\n=ggq0\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9471a19558a044b11e0719c8b1c29ed0ada5eac1\nparent ed1bf90b648a75086a40b4f8a45779939e819128\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778439548 -0500\ncommitter GitHub <noreply@github.com> 1778439548 -0500\n\nfix(legal): render headings at brand-correct Extra Bold weight (#359)\n\nThe brand rule at src/index.css:215 declares h1, h2 { font-weight: 800 },\nbut these pages used Tailwind's font-bold (700) on h1 and font-semibold\n(600) on h2. Utility classes have higher specificity than bare element\nselectors, so the page-level classes clobbered the brand intent and every\nsection heading rendered ~200 weight units lighter than the rest of the\nsite. Switched both to font-extrabold so the computed weight matches the\nbrand utility (font-extrabold = 800), confirmed across /terms, /privacy,\n/dmca, and /safety.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-10T18:59:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/b5702a1afacaf4e70f12160861271aa879024f89",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/b5702a1afacaf4e70f12160861271aa879024f89",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/b5702a1afacaf4e70f12160861271aa879024f89/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ed1bf90b648a75086a40b4f8a45779939e819128",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/ed1bf90b648a75086a40b4f8a45779939e819128",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/ed1bf90b648a75086a40b4f8a45779939e819128"
+      }
+    ]
+  },
+  {
+    "sha": "ed1bf90b648a75086a40b4f8a45779939e819128",
+    "node_id": "C_kwDOPrslvdoAKGVkMWJmOTBiNjQ4YTc1MDg2YTQwYjRmOGE0NTc3OTkzOWU4MTkxMjg",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-09T01:56:06Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-09T01:56:06Z"
+      },
+      "message": "fix(og): rich link previews for Slack/Twitter (PR1: meta-refresh + tags) (#357)\n\n* docs: spec for OG / Twitter Card link preview fixes\n\nDocuments the root cause of bare-link Slack unfurls (meta-refresh in\ncrawler HTML) and the planned two-PR rollout: urgent tag fix first,\nthen /embed/:id route and broader route coverage.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* docs: implementation plan for OG/Twitter Card link previews\n\n13 tasks across 2 PRs. PR 1 fixes the meta-refresh bug + adds player\ntags (the urgent Slack fix). PR 2 lands /embed/:id, route coverage,\nand prod validation.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* refactor(compute-js): extract ogTags helpers into their own module\n\nPull buildCrawlerHtml, escapeHtml, cleanText, truncateText out of\nindex.js into compute-js/src/ogTags.js so they can be unit-tested\nin jsdom without Fastly bindings.\n\nKey behaviour changes vs. inline version:\n- Remove <meta http-equiv=\"refresh\"> (fixes Slack unfurl bail-out)\n- Add og:image:width / og:image:height (default 1200×630, overridable)\n- Add optional video block for og:video:* and twitter:player:*\n- Replace \"Redirecting to...\" body with a plain link\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* fix(compute-js): only emit og:image dims when both supplied; set defaults at call sites\n\nDrop the hard-coded 1200×630 defaults from buildCrawlerHtml (now null/null)\nand only emit og:image:width / og:image:height meta tags when both values are\ntruthy.  Pass explicit 1200×630 at the video (with videoMeta passthrough hook\nfor Task 3) and category call sites; leave handleProfileOgTags without dims so\navatars no longer claim to be 1200×630.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* test(compute-js): cover buildCrawlerHtml refresh removal + video block\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* feat(compute-js): wire og:video + twitter:player into video page OG tags\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "2e171c736b55c4d3f93abbfa7d357c73d959282f",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/2e171c736b55c4d3f93abbfa7d357c73d959282f"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/ed1bf90b648a75086a40b4f8a45779939e819128",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/pQ2CRC1aQ7uu5UhlAAAHZgQAIH/Qr0mgVlm5e43Y3Sw4cBU\nIAX1GwNiRO06VENqmqiIGbwWldo+z5T/t3+O6AD6OR6gykVHuqO28iVqbVWmtkCD\n+CLEjTXXB3a0NY5DfZwu3Yin8mBKQfOsx4O998cKAa7F4z6oC2z0X890kuOEqAlS\nBYbCbomWWdo2Qt69ZlKB4c8pFsav7YfYml08QjRhQm/TFFnnNCXVonI0qLscUB6w\nCKidZXP81MTuXDabDcbmsyEeLfIrnOCeyNAJgMJiTTzA1qRYeAnwipl3hEh64sy/\nk1V1Fni6hfpErUuRTgX16Yo2lDrK9p5XaPWmTfrD4gkNmXyIYAJURzpAm27TxW3B\nWY9uWoO8PIqlAmPUmavVqrIugiwmWuzz/txS8LK+K/1NhYTVj94KiUh6vmli0m2x\nMJPuCZlcIpfeZrFElKYug8e6ZdKKQGuv3L4hpoQ0Hpq8jm9FgOmRxCmh16jaAVyE\nfBcPSTBvftKFSvJ13IH7CE3AthCDwRmrzadpX2GL4UQvNAjZPyZCzYSxikcKj3Rf\n1Aj/Lu0SJifKBpNrbDOmdfbkf/I1d5PfZjc9YNoE578IrFMiBgZq+SgVCYc7azHA\nfJRRDfrFx1wH/3PdY2vaVus5LakQz1q07Q5kT1GBXX2FNY3OJeOZ9TcNGIqecXuj\nDPOFvZUiL3azP05ztDiB\n=CRhv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2e171c736b55c4d3f93abbfa7d357c73d959282f\nparent 361437ae36be00dd9358eca112242755978e98be\nauthor rabble <evan@protest.net> 1778291766 +1200\ncommitter GitHub <noreply@github.com> 1778291766 +1200\n\nfix(og): rich link previews for Slack/Twitter (PR1: meta-refresh + tags) (#357)\n\n* docs: spec for OG / Twitter Card link preview fixes\n\nDocuments the root cause of bare-link Slack unfurls (meta-refresh in\ncrawler HTML) and the planned two-PR rollout: urgent tag fix first,\nthen /embed/:id route and broader route coverage.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* docs: implementation plan for OG/Twitter Card link previews\n\n13 tasks across 2 PRs. PR 1 fixes the meta-refresh bug + adds player\ntags (the urgent Slack fix). PR 2 lands /embed/:id, route coverage,\nand prod validation.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* refactor(compute-js): extract ogTags helpers into their own module\n\nPull buildCrawlerHtml, escapeHtml, cleanText, truncateText out of\nindex.js into compute-js/src/ogTags.js so they can be unit-tested\nin jsdom without Fastly bindings.\n\nKey behaviour changes vs. inline version:\n- Remove <meta http-equiv=\"refresh\"> (fixes Slack unfurl bail-out)\n- Add og:image:width / og:image:height (default 1200×630, overridable)\n- Add optional video block for og:video:* and twitter:player:*\n- Replace \"Redirecting to...\" body with a plain link\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* fix(compute-js): only emit og:image dims when both supplied; set defaults at call sites\n\nDrop the hard-coded 1200×630 defaults from buildCrawlerHtml (now null/null)\nand only emit og:image:width / og:image:height meta tags when both values are\ntruthy.  Pass explicit 1200×630 at the video (with videoMeta passthrough hook\nfor Task 3) and category call sites; leave handleProfileOgTags without dims so\navatars no longer claim to be 1200×630.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* test(compute-js): cover buildCrawlerHtml refresh removal + video block\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* feat(compute-js): wire og:video + twitter:player into video page OG tags\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-09T01:56:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/ed1bf90b648a75086a40b4f8a45779939e819128",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/ed1bf90b648a75086a40b4f8a45779939e819128",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/ed1bf90b648a75086a40b4f8a45779939e819128/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "361437ae36be00dd9358eca112242755978e98be",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/361437ae36be00dd9358eca112242755978e98be",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/361437ae36be00dd9358eca112242755978e98be"
+      }
+    ]
+  },
+  {
+    "sha": "361437ae36be00dd9358eca112242755978e98be",
+    "node_id": "C_kwDOPrslvdoAKDM2MTQzN2FlMzZiZTAwZGQ5MzU4ZWNhMTEyMjQyNzU1OTc4ZTk4YmU",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-09T01:55:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-09T01:55:08Z"
+      },
+      "message": "feat: sim-suppression hooks for divine-brain virtual-persona PR runner (#351)\n\n* feat(sim-suppression): hooks for divine-brain virtual-persona PR runner\n\nThree small surface-level changes that let divine-brain's virtual-\npersona PR runner (https://github.com/divinevideo/divine-brain) drive\ndivine.video against staging without contaminating production data:\n\n1. **Firebase Analytics gate at initializeApp** (src/lib/analytics.ts).\n   The existing GDPR consent gate is too late — Firebase auto-tracking\n   via GTM fires `page_view` to G-FTDHC8JHYF before the consent\n   listener gets a chance. Empirically verified: a 32s headless\n   scroll session against divine.video produced 2 real GA4 sessions\n   with `_fv=1` in the prod cohort. The new gate short-circuits\n   `initializeAnalytics()` itself when `window.__DIVINE_ANALYTICS_DISABLED__`\n   is set, so `initializeApp` is never called and no Firebase bootstrap\n   happens.\n\n2. **HubSpot script-tag guard** (index.html). The HubSpot tracker\n   (`js-na2.hs-scripts.com/244466832.js`) loads independently of the\n   Firebase consent listener and emits `track-na2.hubspot.com/__ptq.gif`\n   page-view pixels. The static `<script src=...>` is replaced with a\n   tiny inline guard that only injects the HubSpot script when the\n   suppression flag is unset.\n\n3. **Relay override hook** (src/lib/simRelay.ts + src/App.tsx). New\n   `resolveRelayUrl()` / `resolveRelayUrls()` read\n   `localStorage.DIVINE_RELAY_OVERRIDE` and use a wss:// override (with\n   a defensive scheme check — non-wss values are ignored) when set.\n   App.tsx's `defaultConfig` now wraps `PRIMARY_RELAY.url` and the\n   bootstrap relay list in `resolveRelay*` so sim sessions route to\n   `wss://relay.staging.divine.video` while production traffic\n   (no flag set) gets the default unchanged.\n\nProduction behavior is unchanged: the suppression flag is never set\nin production, so all three guards fall through to the original\nbehavior. Both flags are set by divine-brain's Stagehand\n`page.addInitScript` BEFORE document parse, so the guards see them.\n\nTests:\n  src/lib/simRelay.test.ts            — 7 specs (override\n                                          accept/reject, scheme guard,\n                                          empty value, array variant,\n                                          non-prod entries preserved)\n  src/lib/analytics-suppression.test.ts — 2 specs (initializeAnalytics\n                                          early-return, trackEvent\n                                          no-op under suppression)\n\nEmpirical motivation + cross-references:\n  divine-brain commit b700ba0 — first real-world smoke run that\n  surfaced these three gaps:\n  https://github.com/divinevideo/divine-brain/blob/main/docs/notes/2026-05-08-first-real-persona-run.md\n\nRe-running the smoke after this PR ships should produce\n`prod_relay_touched: false`, `analytics_events_emitted: 0`, exit 0.\n\n* fix: move HubSpot guard out of inline script",
+      "tree": {
+        "sha": "38ea9d15962320034ff415c2a83dd81967e27e1c",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/38ea9d15962320034ff415c2a83dd81967e27e1c"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/361437ae36be00dd9358eca112242755978e98be",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/pP8CRC1aQ7uu5UhlAAAYeEQAGtl2K4qfi+mu9X8BCXNBy60\nhu0E9HHWZjLiIJEX+9ZArM7r0eBZJ6XPO5LCIBcHFyV6VCUpp1mx6xPSnagC3XB4\nX4uy+4ySPVJiXKlnfczXoTpdS+FC07wg6sGR8ufj1tthZMp/LLw62ee+IPW5jSM+\n8Mav9FsDfzi+SNiFPpTi5ALzq5xQXajuu2Lz365ZywQh6LFUFKwQUzohcGvqj6kf\nLryqYpN7cTfcMxsi/DkdSh429HTSmF6GtnVvoDgbdYvcMz2fEJRZUHSGPaMailcY\nFKhg2d72Jr1WQoqE6kfPWk6uZg6HWUcrtGeEs+bkpMYSASmX0ehHcjUmOMdqJHNA\n6SiexxjzLNlu7kSXSyERx+304/L+BhuPyst8GnSL3qey9Ctqj2a8qWpYxOMkpkme\njUp9g4votSMBqKyNamuKbQZ0EUW6F0ejfoF+gNTWiiuhg9lzgVTjiRXTdn68UBfv\nc34/9OsJpidJkhfvTswLqeWSEq2Bggdy9BphB2xt4xbWwMgoY9lj9F7X5nR7KHTJ\n2lCPUpSeLB+784Xr+z/k7TfzGr9sNoIRcehCuCYVzroKodWxeFjVx3r4k9lCGO/K\nylZkPByQJSPN71vHdL22260TF0IIUUOypt17hO1AgBBG6haCQUfcNGCUkVolB55i\n4WkAwJ3AhcK6bRcLKtgI\n=NPlF\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 38ea9d15962320034ff415c2a83dd81967e27e1c\nparent 298f0e42495f0f817f2ad1808df09a76a4585786\nauthor rabble <evan@protest.net> 1778291708 +1200\ncommitter GitHub <noreply@github.com> 1778291708 +1200\n\nfeat: sim-suppression hooks for divine-brain virtual-persona PR runner (#351)\n\n* feat(sim-suppression): hooks for divine-brain virtual-persona PR runner\n\nThree small surface-level changes that let divine-brain's virtual-\npersona PR runner (https://github.com/divinevideo/divine-brain) drive\ndivine.video against staging without contaminating production data:\n\n1. **Firebase Analytics gate at initializeApp** (src/lib/analytics.ts).\n   The existing GDPR consent gate is too late — Firebase auto-tracking\n   via GTM fires `page_view` to G-FTDHC8JHYF before the consent\n   listener gets a chance. Empirically verified: a 32s headless\n   scroll session against divine.video produced 2 real GA4 sessions\n   with `_fv=1` in the prod cohort. The new gate short-circuits\n   `initializeAnalytics()` itself when `window.__DIVINE_ANALYTICS_DISABLED__`\n   is set, so `initializeApp` is never called and no Firebase bootstrap\n   happens.\n\n2. **HubSpot script-tag guard** (index.html). The HubSpot tracker\n   (`js-na2.hs-scripts.com/244466832.js`) loads independently of the\n   Firebase consent listener and emits `track-na2.hubspot.com/__ptq.gif`\n   page-view pixels. The static `<script src=...>` is replaced with a\n   tiny inline guard that only injects the HubSpot script when the\n   suppression flag is unset.\n\n3. **Relay override hook** (src/lib/simRelay.ts + src/App.tsx). New\n   `resolveRelayUrl()` / `resolveRelayUrls()` read\n   `localStorage.DIVINE_RELAY_OVERRIDE` and use a wss:// override (with\n   a defensive scheme check — non-wss values are ignored) when set.\n   App.tsx's `defaultConfig` now wraps `PRIMARY_RELAY.url` and the\n   bootstrap relay list in `resolveRelay*` so sim sessions route to\n   `wss://relay.staging.divine.video` while production traffic\n   (no flag set) gets the default unchanged.\n\nProduction behavior is unchanged: the suppression flag is never set\nin production, so all three guards fall through to the original\nbehavior. Both flags are set by divine-brain's Stagehand\n`page.addInitScript` BEFORE document parse, so the guards see them.\n\nTests:\n  src/lib/simRelay.test.ts            — 7 specs (override\n                                          accept/reject, scheme guard,\n                                          empty value, array variant,\n                                          non-prod entries preserved)\n  src/lib/analytics-suppression.test.ts — 2 specs (initializeAnalytics\n                                          early-return, trackEvent\n                                          no-op under suppression)\n\nEmpirical motivation + cross-references:\n  divine-brain commit b700ba0 — first real-world smoke run that\n  surfaced these three gaps:\n  https://github.com/divinevideo/divine-brain/blob/main/docs/notes/2026-05-08-first-real-persona-run.md\n\nRe-running the smoke after this PR ships should produce\n`prod_relay_touched: false`, `analytics_events_emitted: 0`, exit 0.\n\n* fix: move HubSpot guard out of inline script",
+        "verified_at": "2026-05-09T01:55:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/361437ae36be00dd9358eca112242755978e98be",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/361437ae36be00dd9358eca112242755978e98be",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/361437ae36be00dd9358eca112242755978e98be/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "298f0e42495f0f817f2ad1808df09a76a4585786",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/298f0e42495f0f817f2ad1808df09a76a4585786",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/298f0e42495f0f817f2ad1808df09a76a4585786"
+      }
+    ]
+  },
+  {
+    "sha": "298f0e42495f0f817f2ad1808df09a76a4585786",
+    "node_id": "C_kwDOPrslvdoAKDI5OGYwZTQyNDk1ZjBmODE3ZjJhZDE4MDhkZjA5YTc2YTQ1ODU3ODY",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-08T22:12:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T22:12:58Z"
+      },
+      "message": "revert: undo three-state age gate (#348) (#354)\n\n* Revert \"fix(player): use NIP-98 for age-gated viewer auth (#348)\"\n\nThis reverts commit 7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc.\n\n* fix: preserve NIP-98 viewer auth from #348\n\nKeep the BUD-01 → NIP-98 fix for MP4 direct fetches. Blossom's viewer\nauth rejects BUD-01 get events; NIP-98 (kind 27235) works correctly.\nThis was the non-regressing part of #348.\n\n* test: revert incidental cleanups from age-gate revert\n\nTwo small cleanups to keep this PR a tight scoped revert:\n\n- funnelcakeTransform.test.ts: restore U+2019 (right single quote) in\n  \"world's\"; the PR accidentally introduced U+2018 (left single quote /\n  high-reversed-9), looks like editor smart-quote drift.\n- VideoCard.test.tsx: restore the VideoPlayer mock's hlsUrl prop and\n  data-hls-url attribute. Removing it lost test surface for asserting\n  what HLS URL VideoCard passes through, and isn't related to the\n  age-gate revert.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: rabble <evan@protest.net>\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "f8a034da4330c0252ffedde22c5f48a5ef580360",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/f8a034da4330c0252ffedde22c5f48a5ef580360"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/298f0e42495f0f817f2ad1808df09a76a4585786",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/l/qCRC1aQ7uu5UhlAAAoIEQAFvNyV3LdeVylmQOxB5yVyp1\n++qhseSW8iWQlmqGI3d5fgsjnTZ6HUJSuJbScETO/wzpSMKaWfVNIeFlB4ApDN+c\nHmaQXqppHufPJ79KtTD8z9VtlR/ITOJuFojQSGf++xjayd28vCr45tZMLcpuMisT\nTml+g7Zuuk40Xh8/1J/s4WLTJ4I8AaGRF6VmQZ1KmColDa21VjYOnO+08ZX/Lk2K\n/DczYFQZJs7eZWSkvoKyW/240hWwulYieE2vxxuA+pp3qPSfwV34buykOiyWMIk8\noZQVV/7154ar8V+jl7jltNfvyNstSQ/31oKQ8nCaKB/NdFCPeypYi50r8BRIiNgl\n0muN9EfbU00Fu5XJe3CB5S4s5SDimedUKBS70CkKrWdOd68EIqblap5WTO2qWRdY\n95TzRV/9Z85kMOZ7+Vlv8ibuBTcAdQf/fZOk+FKlbzfzBDOns/xQbma5564+uoer\nQnTNPwbuf7zBawwF6nYLpzio1fBxGPCxSa/lLKTLbJ7FzUwWBf7t2SKOHCj7mLqx\nrKte3lqaqKrPcoI1NRUN/ZADOT26g6n4pIis8ngoIlQ9GXjUVuPTnO+n2N9pxII9\n7Z8qZjKdwVYOMKIvmRxPzNuiBXFKkMrnhzENc8lYdxcAUZOnL+kWZhKhqPPPVREF\ndUpOUQVs8OZnbQFB7O+R\n=R1et\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f8a034da4330c0252ffedde22c5f48a5ef580360\nparent da0a10245c3a2ab4920b2b6204e3b1c8f300cc53\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778278378 -0400\ncommitter GitHub <noreply@github.com> 1778278378 +1200\n\nrevert: undo three-state age gate (#348) (#354)\n\n* Revert \"fix(player): use NIP-98 for age-gated viewer auth (#348)\"\n\nThis reverts commit 7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc.\n\n* fix: preserve NIP-98 viewer auth from #348\n\nKeep the BUD-01 → NIP-98 fix for MP4 direct fetches. Blossom's viewer\nauth rejects BUD-01 get events; NIP-98 (kind 27235) works correctly.\nThis was the non-regressing part of #348.\n\n* test: revert incidental cleanups from age-gate revert\n\nTwo small cleanups to keep this PR a tight scoped revert:\n\n- funnelcakeTransform.test.ts: restore U+2019 (right single quote) in\n  \"world's\"; the PR accidentally introduced U+2018 (left single quote /\n  high-reversed-9), looks like editor smart-quote drift.\n- VideoCard.test.tsx: restore the VideoPlayer mock's hlsUrl prop and\n  data-hls-url attribute. Removing it lost test surface for asserting\n  what HLS URL VideoCard passes through, and isn't related to the\n  age-gate revert.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: rabble <evan@protest.net>\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+        "verified_at": "2026-05-08T22:12:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/298f0e42495f0f817f2ad1808df09a76a4585786",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/298f0e42495f0f817f2ad1808df09a76a4585786",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/298f0e42495f0f817f2ad1808df09a76a4585786/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "da0a10245c3a2ab4920b2b6204e3b1c8f300cc53",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/da0a10245c3a2ab4920b2b6204e3b1c8f300cc53",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/da0a10245c3a2ab4920b2b6204e3b1c8f300cc53"
+      }
+    ]
+  },
+  {
+    "sha": "da0a10245c3a2ab4920b2b6204e3b1c8f300cc53",
+    "node_id": "C_kwDOPrslvdoAKGRhMGExMDI0NWMzYTJhYjQ5MjBiMmI2MjA0ZTNiMWM4ZjMwMGNjNTM",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-08T21:57:25Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T21:57:25Z"
+      },
+      "message": "feat: linkify bare nostr identifiers in note content (#355)\n\nNoteContent and InlineNostrText only matched the NIP-21 prefixed form\n(nostr:npub1...). User-typed video descriptions and bios commonly use\nthe bare form (npub1..., note1..., etc.) which rendered as plain text.\n\n- Make `nostr:` prefix optional via `(?:nostr:)?` in both regexes.\n- Add `\\b` word boundaries to prevent mid-word false matches like\n  `xxxnpub1...yyy`.\n- Add `naddr1` to NoteContent (was missing — kind 30000+ addressable\n  refs weren't linkified).\n- Add tests covering bare + prefixed forms for every supported\n  identifier type, plus regression coverage for URLs and hashtags.\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "28312699334840a1443ab7fd707b3ab9a694fbd3",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/28312699334840a1443ab7fd707b3ab9a694fbd3"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/da0a10245c3a2ab4920b2b6204e3b1c8f300cc53",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/lxFCRC1aQ7uu5UhlAAAeqEQAINPESIGQsWxkMe3QXK6850Y\nFFp2S9f0ad2cKcJBdQ97x9281amLm15iWFV44E8TuNPUrTjHhjIYwgmsDSd59FEK\nnktE+MrziYu60ifSeC7n89YdwVNRoEobrSAFIOmwfOFlNcH2P6Wa7C1QtaNvy3Bm\noxTpACvn1yJbYLmWe6CYtt2TsAuT1RSE3eMZTNBw8x8Ut+HTMfVkxkABX61ieTuL\nkoF4SjMIvIJFDqifl9bUdwTyBcffjzQSAVocSgoE4tO83rpgzCAbUDhkY9zBOGfC\nLEj1e3BdWR0x7t7TpSECFWyseerTDCohBHoCsSIskGoZ9jlzvIvXCjDulyjI3i/y\nEINXwYTG2kg08J/Lx1P/hPouXmDvdTKP+bwdmdPbcwdCROjWCZRTtzEyC20qHupr\n18YgPCbKr9kFRuePpB/kjmDuyrfEPLUZsKd3PrCo41/gXgg6ZQDTvNtQ11rD6niE\nsEzASuIi6JwD6adBAOFKpJ9+GRfNWuW4km38laCoOxPIJFSCqGS1ByhWQS5jxo3l\nOkMs3u/DQ7Vnkw1pUyK03hAzT3IYktIjA4XM2ZutbjC4OIxR4P8H7yGO4ryvjE2/\nn2B6x5/XKikJoYzCOwkk34AHIcz6uNNCajNSdiVTosIMy9/UpZkZQMXEk31YTtRg\nEivNf96yYVutwc4p9Vnj\n=qwxU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 28312699334840a1443ab7fd707b3ab9a694fbd3\nparent 7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc\nauthor rabble <evan@protest.net> 1778277445 +1200\ncommitter GitHub <noreply@github.com> 1778277445 +1200\n\nfeat: linkify bare nostr identifiers in note content (#355)\n\nNoteContent and InlineNostrText only matched the NIP-21 prefixed form\n(nostr:npub1...). User-typed video descriptions and bios commonly use\nthe bare form (npub1..., note1..., etc.) which rendered as plain text.\n\n- Make `nostr:` prefix optional via `(?:nostr:)?` in both regexes.\n- Add `\\b` word boundaries to prevent mid-word false matches like\n  `xxxnpub1...yyy`.\n- Add `naddr1` to NoteContent (was missing — kind 30000+ addressable\n  refs weren't linkified).\n- Add tests covering bare + prefixed forms for every supported\n  identifier type, plus regression coverage for URLs and hashtags.\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+        "verified_at": "2026-05-08T21:57:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/da0a10245c3a2ab4920b2b6204e3b1c8f300cc53",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/da0a10245c3a2ab4920b2b6204e3b1c8f300cc53",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/da0a10245c3a2ab4920b2b6204e3b1c8f300cc53/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc"
+      }
+    ]
+  },
+  {
+    "sha": "7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc",
+    "node_id": "C_kwDOPrslvdoAKDdjODc0YTRiZDNjMTUyNmI1ZDkyZDM5ODRjNDliOTcyZjJiZmQ0ZGM",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-08T17:10:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T17:10:17Z"
+      },
+      "message": "fix(player): use NIP-98 for age-gated viewer auth (#348)\n\n* fix: preserve unknown age-gate state in Funnelcake transform\n\n* fix: enrich classics feed with moderation age-gate metadata\n\n* fix: block protected subtitles and prefetch before verification\n\n* fix: show age gate for protected media with unknown status\n\n* fix: CI\n\n* fix(player): add auth headers for protected media with unknown age status\n\nVideoPlayer gated auth header injection on `videoData?.ageRestricted`\n(truthy check). Classic vines with unknown moderation status have\nageRestricted=undefined, so auth was never added after age verification\neven though Blossom requires it. Uses `!== false` + URL check to match\nthe pattern in #279.\n\n* fix(player): use NIP-98 for viewer auth instead of BUD-01\n\nBlossom's media_viewer_context validates BUD-01 events with\nAuthAction::List, rejecting the ['t', 'get'] events the player\nsends. NIP-98 (kind 27235) validates correctly for all viewer\nendpoints. The HLS auth loader already uses NIP-98; this aligns\nthe MP4 direct-fetch path to match.\n\n* test(player): update auth header test to expect NIP-98 (no sha256)\n\nBlossom's viewer auth rejects BUD-01 get events, so the player now\nuses NIP-98 for all viewer requests. Update the test to match.\n\n* fix(player): only auth poster for explicitly age-restricted videos\n\nThe !== false pattern on poster auth was too aggressive — it tried\nto authenticate posters for all videos with unknown moderation\nstatus, breaking poster display when the user hasn't verified yet.\nPoster auth should only trigger for explicitly restricted content.\nThe preflight HEAD check handles discovery for unknown status.\n\n* test(player): cover ageRestricted undefined/false auth paths, drop stale dep\n\nAdd test cases for the two untested branches: ageRestricted===undefined\ntriggers auth (unknown moderation status treated as potentially restricted),\nageRestricted===false skips auth entirely. Remove videoData?.sha256 from\nthe effect dependency array since the MP4 fetch no longer uses it.\n\n* chore: document poster and card age-gate design decisions\n\nExplain why poster auth uses truthy-only (not !== false) and why\nVideoCard gates on explicit true only. Both are intentional: the\npreflight HEAD check handles unknown-status discovery at playback\ntime, avoiding false positives in the card grid and poster loading.\n\n* fix(auth): propagate three-state ageRestricted through thumbnail auth\n\nVideoGrid and ThumbnailPlayer coerced undefined to false via !!, causing\nverified users to get 401s on thumbnails for unknown-status protected\nmedia. Pass ageRestricted through unchanged and treat undefined as\n\"maybe restricted\" in useAuthenticatedMediaUrl (ageRestricted !== false).\n\nVideoPlayer poster intentionally keeps !! (comment explains why).\n\nRegression tests: verified user gets auth on unknown-status, auth skipped\non explicitly safe media.\n\n---------\n\nCo-authored-by: Dmitriy E <dsanichweb@gmail.com>",
+      "tree": {
+        "sha": "dbaecc1ce78f9de77acd033166e36a328151aea3",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/dbaecc1ce78f9de77acd033166e36a328151aea3"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/hj5CRC1aQ7uu5UhlAAAJzoQABJhtc51Qwegf/ht4sQCGIAn\nJTSVXayK/Txz/kFIzQHNr0ou8gKdUeBU1FSSwGwI61gDf96dgeaSXPpMYQ/rzl6W\nEfZSz8iCyOl0DLBrt6W6PcDruIZ7T55TYLoNqQyxg8QA0xEY/Sta0myrer+bi62m\ncbqKK+taQPWCwKkuXp1BV8YyzLBlzyLOi/3mitEMevCnSd6cVwLojLKPRKF4KbrY\n9oIesfFVdwRf0vbkLHyo8HZ1NaZfI2KHeU2AaTUoQE5PBcDT9lAOUXU42CW6e7rZ\n3r2a1bu9WOMN0wHmi9/j8HqKXxGgbi4LCVnrJzBpSfVaTQi32ThqGZBa9ZYzjuNX\nCesQl23FRIzHWfCRIEUxRWQ58jMiTIRqeijteqhIFnE+EkehTWUBCktPWUAb4Ess\nJnQjPCYL2X8zevPVuUQB6I5KoqlVtmRnaw5vxFy7neYHorSxZIZUqhAjEQcPlhYU\nr2MTjyG6S0OV9jDoS9OlpbMQmRSv+n04k8U5H3aA6cFgmCLUP24SfsFUYO37OgPP\nhM/8+3nsUGVRLUba6i8po4KkpaQ2uMM8TvcXMzhpyGyPWLiB8CI8zTPwuapE/Z1z\ntCgczufUi4vH8TtP0RBCNX1p+6kpBDBP6t04zHe2KesIac+LO8XWYLTtEJ7GkWSj\nPWhHB/mnnJH91tMmsTrf\n=wKUU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dbaecc1ce78f9de77acd033166e36a328151aea3\nparent 42a18ccce6803e5d1ac30b337502de9c626ff101\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778260217 -0400\ncommitter GitHub <noreply@github.com> 1778260217 -0400\n\nfix(player): use NIP-98 for age-gated viewer auth (#348)\n\n* fix: preserve unknown age-gate state in Funnelcake transform\n\n* fix: enrich classics feed with moderation age-gate metadata\n\n* fix: block protected subtitles and prefetch before verification\n\n* fix: show age gate for protected media with unknown status\n\n* fix: CI\n\n* fix(player): add auth headers for protected media with unknown age status\n\nVideoPlayer gated auth header injection on `videoData?.ageRestricted`\n(truthy check). Classic vines with unknown moderation status have\nageRestricted=undefined, so auth was never added after age verification\neven though Blossom requires it. Uses `!== false` + URL check to match\nthe pattern in #279.\n\n* fix(player): use NIP-98 for viewer auth instead of BUD-01\n\nBlossom's media_viewer_context validates BUD-01 events with\nAuthAction::List, rejecting the ['t', 'get'] events the player\nsends. NIP-98 (kind 27235) validates correctly for all viewer\nendpoints. The HLS auth loader already uses NIP-98; this aligns\nthe MP4 direct-fetch path to match.\n\n* test(player): update auth header test to expect NIP-98 (no sha256)\n\nBlossom's viewer auth rejects BUD-01 get events, so the player now\nuses NIP-98 for all viewer requests. Update the test to match.\n\n* fix(player): only auth poster for explicitly age-restricted videos\n\nThe !== false pattern on poster auth was too aggressive — it tried\nto authenticate posters for all videos with unknown moderation\nstatus, breaking poster display when the user hasn't verified yet.\nPoster auth should only trigger for explicitly restricted content.\nThe preflight HEAD check handles discovery for unknown status.\n\n* test(player): cover ageRestricted undefined/false auth paths, drop stale dep\n\nAdd test cases for the two untested branches: ageRestricted===undefined\ntriggers auth (unknown moderation status treated as potentially restricted),\nageRestricted===false skips auth entirely. Remove videoData?.sha256 from\nthe effect dependency array since the MP4 fetch no longer uses it.\n\n* chore: document poster and card age-gate design decisions\n\nExplain why poster auth uses truthy-only (not !== false) and why\nVideoCard gates on explicit true only. Both are intentional: the\npreflight HEAD check handles unknown-status discovery at playback\ntime, avoiding false positives in the card grid and poster loading.\n\n* fix(auth): propagate three-state ageRestricted through thumbnail auth\n\nVideoGrid and ThumbnailPlayer coerced undefined to false via !!, causing\nverified users to get 401s on thumbnails for unknown-status protected\nmedia. Pass ageRestricted through unchanged and treat undefined as\n\"maybe restricted\" in useAuthenticatedMediaUrl (ageRestricted !== false).\n\nVideoPlayer poster intentionally keeps !! (comment explains why).\n\nRegression tests: verified user gets auth on unknown-status, auth skipped\non explicitly safe media.\n\n---------\n\nCo-authored-by: Dmitriy E <dsanichweb@gmail.com>",
+        "verified_at": "2026-05-08T17:10:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/7c874a4bd3c1526b5d92d3984c49b972f2bfd4dc/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "42a18ccce6803e5d1ac30b337502de9c626ff101",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/42a18ccce6803e5d1ac30b337502de9c626ff101",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/42a18ccce6803e5d1ac30b337502de9c626ff101"
+      }
+    ]
+  }
+]

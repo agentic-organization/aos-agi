@@ -29,6 +29,7 @@
 Part of the [[teams/divine]] organization — Divine's short-form video social platform on Nostr.
 
 ## History
+- 2026-05-11: `data/raw/github/daily/2026-05-11/divinevideo/divine-web/` captured **6 commits** in the 72h window. Themes: brand-correct Extra Bold legal headings, rich link previews for Slack/Twitter, sim-suppression hooks for divine-brain virtual-persona, revert three-state age gate, bare Nostr identifier linkification.
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
 ## Open questions
