@@ -153,7 +153,7 @@ function embedQuery(queryText, modelId) {
     path.join(__dirname, 'embed.py'),
     '--query', queryText,
     '--model', modelId,
-  ], { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024,
+  ], { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024, timeout: 120000,
       env: { ...process.env, PYTHONPATH: '' }
   });
   const meta = JSON.parse(out);
