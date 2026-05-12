@@ -1,8 +1,16 @@
-# mini-agi
+# AOS Organization Intelligence (aos-agi)
 
-Persistent organizational memory for the Organization Intelligence Agent.
+Persistent organizational memory for **AOS** — the And Other Stuff ecosystem spanning Cashu, Nostr, and adjacent open-source projects.
 
-This repository is **not** the agent. It is the agent's long-term memory: raw evidence, reusable ingestion tools, and a living Markdown wiki inspired by Karpathy's [LLM Wiki](docs/LLM_WIKI.md) pattern.
+This repository is **not** the agent. It is the agent's long-term memory: raw evidence, reusable ingestion tools, and a living Markdown wiki inspired by Karpathy's [LLM Wiki](docs/LLM_WIKI.md) pattern. It is derived from the [mini-agi](https://github.com/agentic-organization/mini-agi) template and customized for AOS-specific observation targets.
+
+## What lives here
+
+- **People**: [[people/callebtc]], [[people/alexgleason]], [[people/rabble]], and 50+ others across Cashu, Nostr, and Divine ecosystems.
+- **Projects**: [[projects/cashu]], [[projects/nutshell]], [[projects/cdk]], [[projects/nostr-skills]], [[projects/athenut]], [[projects/soapbox]], and more.
+- **Teams**: [[teams/cashu-core]], [[teams/divine]], [[teams/and-other-stuff]].
+- **Tools**: Operational scripts like [[tools/cashu-daily-report]] and [[tools/github-daily-ingest]].
+- **Evidence**: Raw GitHub snapshots under `data/raw/github/` dating back to 2026-05-07.
 
 ## Start here
 
