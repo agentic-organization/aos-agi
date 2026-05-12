@@ -57,6 +57,8 @@ Useful flags:
 - 2026-05-10: Second daily ingestion run, stored at `data/raw/github/daily/2026-05-10/`. 107 repositories attempted with 0 endpoint errors over a 72-hour window (`since=2026-05-07T04:18:25Z`). Highest-activity repos: `divinevideo/divine-mobile` (56 commits, 78 PRs, 100 issues, release **1.0.12**), `cashubtc/orchard` (27 commits, sole author [[people/orangeshyguy21]] — surfaced as a new project page [[projects/orchard]]), `marmot-protocol/mdk` (15 commits, 17 PRs), `marmot-protocol/whitenoise` (release **v2026.5.7+24**), `soapbox-pub/ditto` (11 commits by [[people/alexgleason]]).
 - 2026-05-07: Tool introduced and first full daily ingestion run stored at `data/raw/github/daily/2026-05-07/`. The run attempted 114 repositories with 0 endpoint errors and captured 2,956 events, 95 recent commits, 175 updated issues, 2,915 PR records, and 538 releases.
 
+- 2026-05-11: Daily ingestion run at `data/raw/github/daily/2026-05-11/` — **107 repositories** attempted, **0 endpoint errors**, **0 watchlist errors** over a 72-hour window. Tool script fix: removed unsupported `--slurp` flag from `gh api --paginate` calls in `tools/ingestion/github-daily-ingest.js` so the tool works with `gh` CLI ≤2.46.0. Highest-activity repos: `divinevideo/divine-mobile` (54 commits, release 1.0.13), `cashubtc/orchard` (16 commits), `cashubtc/cashu-ts` (10 commits), `soapbox-pub/ditto` (9 commits, releases v2.14.0/v2.14.1).
+
 ## Open questions
 - Should daily runs capture README and CODEOWNERS files for ownership inference?
 - Should `pulls-updated.json` filter by `updated_at` in a later normalization stage, since GitHub's pulls endpoint does not accept `since`?

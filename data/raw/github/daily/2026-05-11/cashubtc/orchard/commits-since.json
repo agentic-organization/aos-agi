@@ -1,0 +1,1324 @@
+[
+  {
+    "sha": "28d72092bc44799105b0dfa933061b6ecfc46640",
+    "node_id": "C_kwDONCTCxNoAKDI4ZDcyMDkyYmM0NDc5OTEwNWIwZGZhOTMzMDYxYjZlY2ZjNDY2NDA",
+    "commit": {
+      "author": {
+        "name": "osygy",
+        "email": "159221325+orangeshyguy21@users.noreply.github.com",
+        "date": "2026-05-09T22:25:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-09T22:25:01Z"
+      },
+      "message": "Merge pull request #186 from cashubtc/client-uuid\n\nfix: Swap client crypto.randomUUID for uuid",
+      "tree": {
+        "sha": "8cf6abc1e8665e0b7def4f0578c44ac63c741d28",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/8cf6abc1e8665e0b7def4f0578c44ac63c741d28"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/28d72092bc44799105b0dfa933061b6ecfc46640",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/7Q9CRC1aQ7uu5UhlAAAE8QQAFt6MctK6B8kZ/cUNUYWAmgH\nR3iDoaoQXOtG8S6pWkPL4u/dmuL/h7dpzS4EELwFjrd4oGxdAImNYvxJVsz8demn\nPZAxTFEaE35Z07HMA3baZe8mrTyp5joXSoPD+Zj45gxPJYqoTTJUoJSkyLM/lLKJ\n2+IKiSdOZ4da72u3OzKhkzMy1U5xE3YmNQxBcSeRsgfNTD2PAVEfCM2Qw/yN6pMf\nWoSdrJ1t0lg/MYc9fh3jTJXqxPNH6mYydOUmBSTaa6EFe/RHtENUhHhVSQFOx/hs\ncIQbWEjxcWtu2bLxQdWtPQod7pkuzEBz6KuYGmPLKAdn8rjVX+i++YbACmFcr6K6\n9+cD7FbSCtR7TsG4I/cqBbQOyIp1OAKQ/1pS5EU2lrrc6zd/9q/lAZznD5qMJ3H3\noxYszFfEIRLutD9Dt5Zh85T/4r4ZrgjuUE/GOti5UDBbaufGvOg9ycepfl1ZzFuM\nbafK5uGu5Lj1WA1qcf86AE5RcdD9rSW1fWvm90G1jxcm9ZxxYTaxaUvp7BpVZPpc\nPJ1gMXeTli/ped7gvq+E4xIRATxWVoIH0Ci4skRzS9Xs/EVph6cZr9QlhltQ0Hrk\n8RrfCQllq+m8e1X27chmYbkCN7rRV6HbOkt8EG0CAj6aZj0RQ2CRAsknzW7/b330\nmgXJsnf39f8rCsP8ogFe\n=2w0y\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8cf6abc1e8665e0b7def4f0578c44ac63c741d28\nparent dac6b5d36a275386b477349bc3cc20dfa97c0bf1\nparent f8b48f6477e55d46fc5170d7f264343b3af9524f\nauthor osygy <159221325+orangeshyguy21@users.noreply.github.com> 1778365501 -0600\ncommitter GitHub <noreply@github.com> 1778365501 -0600\n\nMerge pull request #186 from cashubtc/client-uuid\n\nfix: Swap client crypto.randomUUID for uuid",
+        "verified_at": "2026-05-09T22:25:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/28d72092bc44799105b0dfa933061b6ecfc46640",
+    "html_url": "https://github.com/cashubtc/orchard/commit/28d72092bc44799105b0dfa933061b6ecfc46640",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/28d72092bc44799105b0dfa933061b6ecfc46640/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dac6b5d36a275386b477349bc3cc20dfa97c0bf1",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/dac6b5d36a275386b477349bc3cc20dfa97c0bf1",
+        "html_url": "https://github.com/cashubtc/orchard/commit/dac6b5d36a275386b477349bc3cc20dfa97c0bf1"
+      },
+      {
+        "sha": "f8b48f6477e55d46fc5170d7f264343b3af9524f",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/f8b48f6477e55d46fc5170d7f264343b3af9524f",
+        "html_url": "https://github.com/cashubtc/orchard/commit/f8b48f6477e55d46fc5170d7f264343b3af9524f"
+      }
+    ]
+  },
+  {
+    "sha": "f8b48f6477e55d46fc5170d7f264343b3af9524f",
+    "node_id": "C_kwDONCTCxNoAKGY4YjQ4ZjY0NzdlNTVkNDZmYzUxNzBkN2YyNjQzNDNiM2FmOTUyNGY",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T22:19:06Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T22:19:06Z"
+      },
+      "message": "chore: lock client uuid swap with specs\n\nReview follow-up on PR #186. Reorder\nai-chat-compiled-message imports to Vendor → Native\n→ Shared per AGENTS.md, and add specs for the three\nclasses whose constructors switched RNG (asserting\nv4 format and per-instance uniqueness so a future\nswap to a non-v4 generator fails loudly).",
+      "tree": {
+        "sha": "8cf6abc1e8665e0b7def4f0578c44ac63c741d28",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/8cf6abc1e8665e0b7def4f0578c44ac63c741d28"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/f8b48f6477e55d46fc5170d7f264343b3af9524f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf+y2gAKCRDIEX/9hYaL\nV9fKAP40qka32McwSmFsvguOKTE6CjUyHHjNaqsQgMNSrgPuOgD/bqExmmMKwC7X\nC+KXOB4O2YAjc2+iqCwvORYDdeVAiQU=\n=4EhI\n-----END PGP SIGNATURE-----",
+        "payload": "tree 8cf6abc1e8665e0b7def4f0578c44ac63c741d28\nparent 81938edb1b1a1da5380af14a9e780fe94654d867\nauthor Shyguy <orangeshyguy@pm.me> 1778365146 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778365146 -0600\n\nchore: lock client uuid swap with specs\n\nReview follow-up on PR #186. Reorder\nai-chat-compiled-message imports to Vendor → Native\n→ Shared per AGENTS.md, and add specs for the three\nclasses whose constructors switched RNG (asserting\nv4 format and per-instance uniqueness so a future\nswap to a non-v4 generator fails loudly).\n",
+        "verified_at": "2026-05-09T22:17:52Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/f8b48f6477e55d46fc5170d7f264343b3af9524f",
+    "html_url": "https://github.com/cashubtc/orchard/commit/f8b48f6477e55d46fc5170d7f264343b3af9524f",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/f8b48f6477e55d46fc5170d7f264343b3af9524f/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "81938edb1b1a1da5380af14a9e780fe94654d867",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/81938edb1b1a1da5380af14a9e780fe94654d867",
+        "html_url": "https://github.com/cashubtc/orchard/commit/81938edb1b1a1da5380af14a9e780fe94654d867"
+      }
+    ]
+  },
+  {
+    "sha": "81938edb1b1a1da5380af14a9e780fe94654d867",
+    "node_id": "C_kwDONCTCxNoAKDgxOTM4ZWRiMWIxYTFkYTUzODBhZjE0YTllNzgwZmU5NDY1NGQ4Njc",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T22:17:56Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T22:17:56Z"
+      },
+      "message": "chore: e2e assert applyAiModel option exists\n\napplyAiModel was relying on getByRole('option', ...)\nwith exact-name matching, which silently picked a\ndifferent option (or no option) when AI_MODEL wasn't\npresent in the autocomplete — bleeding into a\nconfusing AI inference timeout in the spec project.\nFilter mat-options by hasText, assert the option\ncount is 1, and assert the input commits the value\nso missing models fail loudly in the settings setup.",
+      "tree": {
+        "sha": "ad139f147fea7f559d168114b58814b668a51ea7",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/ad139f147fea7f559d168114b58814b668a51ea7"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/81938edb1b1a1da5380af14a9e780fe94654d867",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf+ylAAKCRDIEX/9hYaL\nVxEqAP90wEG8JBflRDfjEm1KKJ2pPlgbClbCYCbyHUwFq3+QgwD+OWgcgPNMN1XF\n4Iz86DXeEQkzFkp8kka+uG9DHKZqxAU=\n=6nMp\n-----END PGP SIGNATURE-----",
+        "payload": "tree ad139f147fea7f559d168114b58814b668a51ea7\nparent f9ddea5007f2216775f37efb886a4815f859c7b4\nauthor Shyguy <orangeshyguy@pm.me> 1778365076 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778365076 -0600\n\nchore: e2e assert applyAiModel option exists\n\napplyAiModel was relying on getByRole('option', ...)\nwith exact-name matching, which silently picked a\ndifferent option (or no option) when AI_MODEL wasn't\npresent in the autocomplete — bleeding into a\nconfusing AI inference timeout in the spec project.\nFilter mat-options by hasText, assert the option\ncount is 1, and assert the input commits the value\nso missing models fail loudly in the settings setup.\n",
+        "verified_at": "2026-05-09T22:17:52Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/81938edb1b1a1da5380af14a9e780fe94654d867",
+    "html_url": "https://github.com/cashubtc/orchard/commit/81938edb1b1a1da5380af14a9e780fe94654d867",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/81938edb1b1a1da5380af14a9e780fe94654d867/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f9ddea5007f2216775f37efb886a4815f859c7b4",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/f9ddea5007f2216775f37efb886a4815f859c7b4",
+        "html_url": "https://github.com/cashubtc/orchard/commit/f9ddea5007f2216775f37efb886a4815f859c7b4"
+      }
+    ]
+  },
+  {
+    "sha": "f9ddea5007f2216775f37efb886a4815f859c7b4",
+    "node_id": "C_kwDONCTCxNoAKGY5ZGRlYTUwMDdmMjIxNjc3NWYzN2VmYjg4NmE0ODE1Zjg1OWM3YjQ",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T19:22:16Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T19:22:16Z"
+      },
+      "message": "fix: swap client crypto.randomUUID for uuid\n\ncrypto.randomUUID() is gated behind secure context, so client\nUUID generation threw \"not a function\" for operators accessing\nOrchard over plain HTTP from non-localhost origins (LAN IPs,\n.local, .onion). EventData construction failed before any\nPENDING event could emit. Replace all five client call sites with\nuuid v4, which uses crypto.getRandomValues internally and has\nno secure-context restriction.",
+      "tree": {
+        "sha": "82757c17a80f4480f566f650d286140f289d691d",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/82757c17a80f4480f566f650d286140f289d691d"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/f9ddea5007f2216775f37efb886a4815f859c7b4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf+JaAAKCRDIEX/9hYaL\nV0eWAP9imxkyh1wduC6guqHECBKxK/taTTT6QSW3YwyE0GLJcQEApT+OcbcNUnQv\nh+g9rBqZWlJG+6s0gbUPsUzD95CbpAw=\n=Atxq\n-----END PGP SIGNATURE-----",
+        "payload": "tree 82757c17a80f4480f566f650d286140f289d691d\nparent dac6b5d36a275386b477349bc3cc20dfa97c0bf1\nauthor Shyguy <orangeshyguy@pm.me> 1778354536 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778354536 -0600\n\nfix: swap client crypto.randomUUID for uuid\n\ncrypto.randomUUID() is gated behind secure context, so client\nUUID generation threw \"not a function\" for operators accessing\nOrchard over plain HTTP from non-localhost origins (LAN IPs,\n.local, .onion). EventData construction failed before any\nPENDING event could emit. Replace all five client call sites with\nuuid v4, which uses crypto.getRandomValues internally and has\nno secure-context restriction.\n",
+        "verified_at": "2026-05-09T19:25:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/f9ddea5007f2216775f37efb886a4815f859c7b4",
+    "html_url": "https://github.com/cashubtc/orchard/commit/f9ddea5007f2216775f37efb886a4815f859c7b4",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/f9ddea5007f2216775f37efb886a4815f859c7b4/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dac6b5d36a275386b477349bc3cc20dfa97c0bf1",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/dac6b5d36a275386b477349bc3cc20dfa97c0bf1",
+        "html_url": "https://github.com/cashubtc/orchard/commit/dac6b5d36a275386b477349bc3cc20dfa97c0bf1"
+      }
+    ]
+  },
+  {
+    "sha": "dac6b5d36a275386b477349bc3cc20dfa97c0bf1",
+    "node_id": "C_kwDONCTCxNoAKGRhYzZiNWQzNmEyNzUzODZiNDc3MzQ5YmMzY2MyMGRmYTk3YzBiZjE",
+    "commit": {
+      "author": {
+        "name": "osygy",
+        "email": "159221325+orangeshyguy21@users.noreply.github.com",
+        "date": "2026-05-09T19:03:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-09T19:03:26Z"
+      },
+      "message": "Merge pull request #185 from cashubtc/keyset-analytics\n\nFix: Keyset analytic accuracy",
+      "tree": {
+        "sha": "babee7d3d06264b22188a5dca0e35c296b314ed3",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/babee7d3d06264b22188a5dca0e35c296b314ed3"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/dac6b5d36a275386b477349bc3cc20dfa97c0bf1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/4T+CRC1aQ7uu5UhlAAAj50QAB2wKMMuTH8BLZbvZ8HJMZpg\nkNMIBUeGdzspuF6Ip1hNG9QKA5zddrSGndHZmdr7aJvEY0Q7Jua06AenT35iOIcr\nwGGW6rWPq3ujtpO1/cvrSmeiiGP10srUrKgJ1X3FVk7mEnuNUk4eUiPro7R0++M5\nUxGURc8MNYufHAfUIN1NIGqDI5QTqpbwTAJBzlSz7H5Hd9v9a5eompj2GeYisfO3\nMhp7pT5lnGXa43v/Z6vFr0w8lC2LYuxQTCCYnOKaAav7Yi9Jgtkrk1sOSrZuHSKK\npjyzVqY0TzSiUEfrib2KCz8wFDvosXYqrXXd0/KOl2IoWDV1mgGKONoHxk/K0A2Y\nN0MBdsr6Br2HScak7hOp+UVfG61MXx3XqUL4O4gF2jMrsAVGR9iOFAF5pJnIThSF\nCIgBEpG+wcyAgfBL9uKc2QGRvgds1LQTf7ZY9v98zuEfpKGmBsAY5Kfm9xJAslg2\nsgM2R9CV9fFzXja002Gbqtj8gShECIAX2m8qvnJZpGqKfKYLR4odkuUq3QtrrLOt\nxn1Pid0Y3hGsj6eAvizh3HZpYNkIRm7dYFsv6RO+BUsgYQOk67tUChBdquwlVnMJ\nkwQu6raEJSyfo0rAoOpZkeW/wwoCeSlqs/2RXkt+7JcsDYgeUM8Lpk0+TeW1Jn73\n65wb33pG2FV2hfmml1QH\n=ae6Q\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree babee7d3d06264b22188a5dca0e35c296b314ed3\nparent f0df4c04c218c00a92f19cf4484260a0c3a68fca\nparent b7c623dec88cf23f6458468a317b8265b5666b30\nauthor osygy <159221325+orangeshyguy21@users.noreply.github.com> 1778353406 -0600\ncommitter GitHub <noreply@github.com> 1778353406 -0600\n\nMerge pull request #185 from cashubtc/keyset-analytics\n\nFix: Keyset analytic accuracy",
+        "verified_at": "2026-05-09T19:03:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/dac6b5d36a275386b477349bc3cc20dfa97c0bf1",
+    "html_url": "https://github.com/cashubtc/orchard/commit/dac6b5d36a275386b477349bc3cc20dfa97c0bf1",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/dac6b5d36a275386b477349bc3cc20dfa97c0bf1/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f0df4c04c218c00a92f19cf4484260a0c3a68fca",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/f0df4c04c218c00a92f19cf4484260a0c3a68fca",
+        "html_url": "https://github.com/cashubtc/orchard/commit/f0df4c04c218c00a92f19cf4484260a0c3a68fca"
+      },
+      {
+        "sha": "b7c623dec88cf23f6458468a317b8265b5666b30",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/b7c623dec88cf23f6458468a317b8265b5666b30",
+        "html_url": "https://github.com/cashubtc/orchard/commit/b7c623dec88cf23f6458468a317b8265b5666b30"
+      }
+    ]
+  },
+  {
+    "sha": "b7c623dec88cf23f6458468a317b8265b5666b30",
+    "node_id": "C_kwDONCTCxNoAKGI3YzYyM2RlYzg4Y2YyM2Y2NDU4NDY4YTMxN2I4MjY1YjU2NjZiMzA",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:40:18Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:40:18Z"
+      },
+      "message": "chore: drop unused eslint-disable in spec\n\nThe eslint-disable-next-line directive added in\nthe nutshell listFees LAG test was suppressing\nnothing — the project's ESLint config has no\n@typescript-eslint/no-require-imports rule\nenabled. Lint flagged it as an unused directive.",
+      "tree": {
+        "sha": "babee7d3d06264b22188a5dca0e35c296b314ed3",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/babee7d3d06264b22188a5dca0e35c296b314ed3"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/b7c623dec88cf23f6458468a317b8265b5666b30",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHQEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf9/kgAKCRDIEX/9hYaL\nV1WsAPdJ+upbKJS8LY8TtvNhXAu7MWWOn4GDiFly4oIe8XceAQDtua79Tj85rxGD\nSHQpunbMZLs/1II2fTcFcocDCKKWAw==\n=NAYv\n-----END PGP SIGNATURE-----",
+        "payload": "tree babee7d3d06264b22188a5dca0e35c296b314ed3\nparent 106ef2da47876f4e129567f247da4e92745ac008\nauthor Shyguy <orangeshyguy@pm.me> 1778352018 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778352018 -0600\n\nchore: drop unused eslint-disable in spec\n\nThe eslint-disable-next-line directive added in\nthe nutshell listFees LAG test was suppressing\nnothing — the project's ESLint config has no\n@typescript-eslint/no-require-imports rule\nenabled. Lint flagged it as an unused directive.\n",
+        "verified_at": "2026-05-09T18:58:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/b7c623dec88cf23f6458468a317b8265b5666b30",
+    "html_url": "https://github.com/cashubtc/orchard/commit/b7c623dec88cf23f6458468a317b8265b5666b30",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/b7c623dec88cf23f6458468a317b8265b5666b30/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "106ef2da47876f4e129567f247da4e92745ac008",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/106ef2da47876f4e129567f247da4e92745ac008",
+        "html_url": "https://github.com/cashubtc/orchard/commit/106ef2da47876f4e129567f247da4e92745ac008"
+      }
+    ]
+  },
+  {
+    "sha": "106ef2da47876f4e129567f247da4e92745ac008",
+    "node_id": "C_kwDONCTCxNoAKDEwNmVmMmRhNDc4NzZmNGUxMjk1NjdmMjQ3ZGE0ZTkyNzQ1YWMwMDg",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:32:19Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:32:19Z"
+      },
+      "message": "chore: doc cdk listFees fan-out invariant\n\nAdd JSDoc on listFees explaining why GROUP BY (op\n× unit) safely collapses the op→proof→keyset\nfan-out — relying on the Cashu spec invariant that\nproofs in one op share a unit. Folds the prior\ninline Postgres-FD note into the same JSDoc so\nthe rationale lives in one place.",
+      "tree": {
+        "sha": "d84db4d6f0e90857cc10ea1a4e3b439a31260612",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/d84db4d6f0e90857cc10ea1a4e3b439a31260612"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/106ef2da47876f4e129567f247da4e92745ac008",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf99swAKCRDIEX/9hYaL\nVwS1AP9GaUb0Hx+AodJiW/mNt1v4Hv9YOku0T2EYTNOAn2CeEQEA1bxukbhm8RAh\nWkyDDaADAl5L0d/wxSeuoyjAS09wTwo=\n=6OVC\n-----END PGP SIGNATURE-----",
+        "payload": "tree d84db4d6f0e90857cc10ea1a4e3b439a31260612\nparent 0c012773330a096345eb4fd8af0387777548a623\nauthor Shyguy <orangeshyguy@pm.me> 1778351539 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778351539 -0600\n\nchore: doc cdk listFees fan-out invariant\n\nAdd JSDoc on listFees explaining why GROUP BY (op\n× unit) safely collapses the op→proof→keyset\nfan-out — relying on the Cashu spec invariant that\nproofs in one op share a unit. Folds the prior\ninline Postgres-FD note into the same JSDoc so\nthe rationale lives in one place.\n",
+        "verified_at": "2026-05-09T18:58:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/106ef2da47876f4e129567f247da4e92745ac008",
+    "html_url": "https://github.com/cashubtc/orchard/commit/106ef2da47876f4e129567f247da4e92745ac008",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/106ef2da47876f4e129567f247da4e92745ac008/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0c012773330a096345eb4fd8af0387777548a623",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/0c012773330a096345eb4fd8af0387777548a623",
+        "html_url": "https://github.com/cashubtc/orchard/commit/0c012773330a096345eb4fd8af0387777548a623"
+      }
+    ]
+  },
+  {
+    "sha": "0c012773330a096345eb4fd8af0387777548a623",
+    "node_id": "C_kwDONCTCxNoAKDBjMDEyNzczMzMwYTA5NjM0NWViNGZkOGFmMDM4Nzc3NzU0OGE2MjM",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:25:47Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:25:47Z"
+      },
+      "message": "chore: seed nutshell listFees LAG with NULL\n\nLAG(keyset_fees_paid, 1, 0) emits a giant spurious\nfee event for the first row of each partition when\nthe operator restores a nutshell DB whose first\nsnapshot already carries non-zero keyset_fees_paid.\nSwitch the seed to NULL so the first row is treated\nas a baseline (the existing WHERE fee > 0 drops it),\nexpand the JSDoc, and add two tests: a shape\nassertion locking in NULL, and an in-memory sqlite\nrun that proves restored-baseline rows are dropped\nwhile real per-partition deltas come through.",
+      "tree": {
+        "sha": "184c88d74ceec950e91144c804a5b0822b994bdc",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/184c88d74ceec950e91144c804a5b0822b994bdc"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/0c012773330a096345eb4fd8af0387777548a623",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf98KwAKCRDIEX/9hYaL\nV3JuAQCLxoMixFG3lmd3hy1P6HJRX+UNI/FJjm2+ZqyijjD2dwD/dBeJujmFgnn6\nvTmUNQkMCgIkYJXzqjgskPtDS9wCgwY=\n=t8fv\n-----END PGP SIGNATURE-----",
+        "payload": "tree 184c88d74ceec950e91144c804a5b0822b994bdc\nparent 5d21e0c1636089214af1ee564d0d39e426b1180d\nauthor Shyguy <orangeshyguy@pm.me> 1778351147 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778351147 -0600\n\nchore: seed nutshell listFees LAG with NULL\n\nLAG(keyset_fees_paid, 1, 0) emits a giant spurious\nfee event for the first row of each partition when\nthe operator restores a nutshell DB whose first\nsnapshot already carries non-zero keyset_fees_paid.\nSwitch the seed to NULL so the first row is treated\nas a baseline (the existing WHERE fee > 0 drops it),\nexpand the JSDoc, and add two tests: a shape\nassertion locking in NULL, and an in-memory sqlite\nrun that proves restored-baseline rows are dropped\nwhile real per-partition deltas come through.\n",
+        "verified_at": "2026-05-09T18:58:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/0c012773330a096345eb4fd8af0387777548a623",
+    "html_url": "https://github.com/cashubtc/orchard/commit/0c012773330a096345eb4fd8af0387777548a623",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/0c012773330a096345eb4fd8af0387777548a623/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5d21e0c1636089214af1ee564d0d39e426b1180d",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/5d21e0c1636089214af1ee564d0d39e426b1180d",
+        "html_url": "https://github.com/cashubtc/orchard/commit/5d21e0c1636089214af1ee564d0d39e426b1180d"
+      }
+    ]
+  },
+  {
+    "sha": "5d21e0c1636089214af1ee564d0d39e426b1180d",
+    "node_id": "C_kwDONCTCxNoAKDVkMjFlMGMxNjM2MDg5MjE0YWYxZWU1NjRkMGQzOWU0MjZiMTE4MGQ",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:10:52Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:10:52Z"
+      },
+      "message": "chore: extract getPreRangeEnd helper\n\nThe \"hour-floor minus 1 second\" pre-range bound\nwas duplicated across three call sites (mint\ndashboard, lightning dashboard load, and the\nkeysets subsection). Move it into a new\nanalytics helper module so the rule lives in one\nplace — and add a small spec covering the\nhour-floor and the bucket-separation invariant.",
+      "tree": {
+        "sha": "e8fccfcc2e83e7757defacabb065755fa16ea613",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/e8fccfcc2e83e7757defacabb065755fa16ea613"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/5d21e0c1636089214af1ee564d0d39e426b1180d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf94rAAKCRDIEX/9hYaL\nV1NOAP4zCfNycSdXJZax0F0ou5Ib66AYmaerlJo9nclvMpTVXgD+Oa8iSPil504g\nREpR/ODVvBG65M1332CstYdEy6W0AAk=\n=HPuw\n-----END PGP SIGNATURE-----",
+        "payload": "tree e8fccfcc2e83e7757defacabb065755fa16ea613\nparent 04ceb32d58cd5ddfc930d1f990d4470d5b8d6d89\nauthor Shyguy <orangeshyguy@pm.me> 1778350252 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778350252 -0600\n\nchore: extract getPreRangeEnd helper\n\nThe \"hour-floor minus 1 second\" pre-range bound\nwas duplicated across three call sites (mint\ndashboard, lightning dashboard load, and the\nkeysets subsection). Move it into a new\nanalytics helper module so the rule lives in one\nplace — and add a small spec covering the\nhour-floor and the bucket-separation invariant.\n",
+        "verified_at": "2026-05-09T18:58:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/5d21e0c1636089214af1ee564d0d39e426b1180d",
+    "html_url": "https://github.com/cashubtc/orchard/commit/5d21e0c1636089214af1ee564d0d39e426b1180d",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/5d21e0c1636089214af1ee564d0d39e426b1180d/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "04ceb32d58cd5ddfc930d1f990d4470d5b8d6d89",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/04ceb32d58cd5ddfc930d1f990d4470d5b8d6d89",
+        "html_url": "https://github.com/cashubtc/orchard/commit/04ceb32d58cd5ddfc930d1f990d4470d5b8d6d89"
+      }
+    ]
+  },
+  {
+    "sha": "04ceb32d58cd5ddfc930d1f990d4470d5b8d6d89",
+    "node_id": "C_kwDONCTCxNoAKDA0Y2ViMzJkNThjZDVkZGZjOTMwZDFmOTkwZDQ0NzBkNWI4ZDZkODk",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:04:49Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T18:04:49Z"
+      },
+      "message": "chore: pin custom-bucket date in keyset agg\n\naggregateKeysetsForMetric is called twice (issued\nand redeemed) and getBucketDate's custom branch\nfalls back to Math.min(...data) when date_start is\nabsent — so the two piles could land on different\nbucket dates for the same keyset. Short-circuit the\ncustom case to date_start ?? 0 before delegating to\nthe helper, so both calls deterministically agree.\nNo user-visible change today; removes a tripwire.",
+      "tree": {
+        "sha": "a74d402cb7c4f6f4d9d43299f1f512fdee3126e1",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/a74d402cb7c4f6f4d9d43299f1f512fdee3126e1"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/04ceb32d58cd5ddfc930d1f990d4470d5b8d6d89",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf93QQAKCRDIEX/9hYaL\nV9tEAQDhmt+WSOzgEB0JaQ6XY8EpaPTT9idu2qcskpXpeakjnQEAzgq2Ndn0Cg+a\nX4mmf2ZN3umSs+btDYpWasyi1dBRKQI=\n=hvdi\n-----END PGP SIGNATURE-----",
+        "payload": "tree a74d402cb7c4f6f4d9d43299f1f512fdee3126e1\nparent d24bfec96e6a7c717871a276439df6fd6c896070\nauthor Shyguy <orangeshyguy@pm.me> 1778349889 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778349889 -0600\n\nchore: pin custom-bucket date in keyset agg\n\naggregateKeysetsForMetric is called twice (issued\nand redeemed) and getBucketDate's custom branch\nfalls back to Math.min(...data) when date_start is\nabsent — so the two piles could land on different\nbucket dates for the same keyset. Short-circuit the\ncustom case to date_start ?? 0 before delegating to\nthe helper, so both calls deterministically agree.\nNo user-visible change today; removes a tripwire.\n",
+        "verified_at": "2026-05-09T18:58:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/04ceb32d58cd5ddfc930d1f990d4470d5b8d6d89",
+    "html_url": "https://github.com/cashubtc/orchard/commit/04ceb32d58cd5ddfc930d1f990d4470d5b8d6d89",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/04ceb32d58cd5ddfc930d1f990d4470d5b8d6d89/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d24bfec96e6a7c717871a276439df6fd6c896070",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/d24bfec96e6a7c717871a276439df6fd6c896070",
+        "html_url": "https://github.com/cashubtc/orchard/commit/d24bfec96e6a7c717871a276439df6fd6c896070"
+      }
+    ]
+  },
+  {
+    "sha": "d24bfec96e6a7c717871a276439df6fd6c896070",
+    "node_id": "C_kwDONCTCxNoAKGQyNGJmZWM5NmU2YTdjNzE3ODcxYTI3NjQzOWRmNmZkNmM4OTYwNzA",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T17:58:19Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T17:58:19Z"
+      },
+      "message": "chore: widen watchdog freshness to 25h\n\nThe 300s window flapped on quiet mints whose\nnutshell write cadence is much longer than 5\nminutes (operators can configure once-per-day\nfee calculation). Bump to 90000s to cover a\ndaily-cadence with a 1h buffer for cron skew,\nrestarts, and maintenance. Spec stale fixture\nmoved to ~27.8h ago to keep exercising the\nstale path.",
+      "tree": {
+        "sha": "e373f0517829b32ad9135d92e8bd458fb6ca225e",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/e373f0517829b32ad9135d92e8bd458fb6ca225e"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/d24bfec96e6a7c717871a276439df6fd6c896070",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf91uwAKCRDIEX/9hYaL\nV018AQDfUSVGl+m1TRLDG3BcvsYTWSWBFsV7PQ47NgisIOov8wD/aUucADcl5l7o\nawmS7AJmehJBjejyZAF+XJx88N+SZQk=\n=72vC\n-----END PGP SIGNATURE-----",
+        "payload": "tree e373f0517829b32ad9135d92e8bd458fb6ca225e\nparent 90a0f7a91b05dd1c4bd3e79ff82e7ba00ea95550\nauthor Shyguy <orangeshyguy@pm.me> 1778349499 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778349499 -0600\n\nchore: widen watchdog freshness to 25h\n\nThe 300s window flapped on quiet mints whose\nnutshell write cadence is much longer than 5\nminutes (operators can configure once-per-day\nfee calculation). Bump to 90000s to cover a\ndaily-cadence with a 1h buffer for cron skew,\nrestarts, and maintenance. Spec stale fixture\nmoved to ~27.8h ago to keep exercising the\nstale path.\n",
+        "verified_at": "2026-05-09T18:58:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/d24bfec96e6a7c717871a276439df6fd6c896070",
+    "html_url": "https://github.com/cashubtc/orchard/commit/d24bfec96e6a7c717871a276439df6fd6c896070",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/d24bfec96e6a7c717871a276439df6fd6c896070/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "90a0f7a91b05dd1c4bd3e79ff82e7ba00ea95550",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/90a0f7a91b05dd1c4bd3e79ff82e7ba00ea95550",
+        "html_url": "https://github.com/cashubtc/orchard/commit/90a0f7a91b05dd1c4bd3e79ff82e7ba00ea95550"
+      }
+    ]
+  },
+  {
+    "sha": "90a0f7a91b05dd1c4bd3e79ff82e7ba00ea95550",
+    "node_id": "C_kwDONCTCxNoAKDkwYTBmN2E5MWIwNWRkMWM0YmQzZTc5ZmY4MmU3YmEwMGVhOTU1NTA",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T17:55:45Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T17:55:45Z"
+      },
+      "message": "chore: drop swaps_fee enum entry\n\nSunsets the swaps_fee MintAnalyticsMetric. The\nunderlying writes were already removed earlier on\nthis branch (replaced by the per-operation\nfees_amount stream), so this finishes the cleanup\nby dropping the enum entry, its GraphQL valuesMap\ndescription, and the lingering reference in the\ntool service test SDL. schema.gql and\ngenerated.types.ts will refresh on the next\n`npm run generate:types`.",
+      "tree": {
+        "sha": "d8cac2f8308c09cef30f7f269ffc925031f49b2f",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/d8cac2f8308c09cef30f7f269ffc925031f49b2f"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/90a0f7a91b05dd1c4bd3e79ff82e7ba00ea95550",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf91IQAKCRDIEX/9hYaL\nV3piAPsEAuY8YdJc7UZV+TB7KMqzK2n9tekMsQx+Bn3XK1LbNAEA0ucnx+G0NfWL\nxEtjv+oT2nOtqFeWqyO6r29DSj9gpgo=\n=E9FR\n-----END PGP SIGNATURE-----",
+        "payload": "tree d8cac2f8308c09cef30f7f269ffc925031f49b2f\nparent 50036ae588b687a1d289fda7b87c970852b6baeb\nauthor Shyguy <orangeshyguy@pm.me> 1778349345 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778349345 -0600\n\nchore: drop swaps_fee enum entry\n\nSunsets the swaps_fee MintAnalyticsMetric. The\nunderlying writes were already removed earlier on\nthis branch (replaced by the per-operation\nfees_amount stream), so this finishes the cleanup\nby dropping the enum entry, its GraphQL valuesMap\ndescription, and the lingering reference in the\ntool service test SDL. schema.gql and\ngenerated.types.ts will refresh on the next\n`npm run generate:types`.\n",
+        "verified_at": "2026-05-09T18:58:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/90a0f7a91b05dd1c4bd3e79ff82e7ba00ea95550",
+    "html_url": "https://github.com/cashubtc/orchard/commit/90a0f7a91b05dd1c4bd3e79ff82e7ba00ea95550",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/90a0f7a91b05dd1c4bd3e79ff82e7ba00ea95550/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "50036ae588b687a1d289fda7b87c970852b6baeb",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/50036ae588b687a1d289fda7b87c970852b6baeb",
+        "html_url": "https://github.com/cashubtc/orchard/commit/50036ae588b687a1d289fda7b87c970852b6baeb"
+      }
+    ]
+  },
+  {
+    "sha": "50036ae588b687a1d289fda7b87c970852b6baeb",
+    "node_id": "C_kwDONCTCxNoAKDUwMDM2YWU1ODhiNjg3YTFkMjg5ZmRhN2I4N2M5NzA4NTJiNmJhZWI",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T02:54:46Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T02:54:46Z"
+      },
+      "message": "chore: expand analytics e2e matrix to all units/intervals\n\nGeneralises the mint-analytics pipeline spec from sat-only / hour-only\nto all three units (sat, usd, eur) and all four intervals (hour, day,\nweek, month), skipping combinations the stack hasn't provisioned.\nExtracts a `fetchAnalyticsRows` helper to de-duplicate the inline GQL\nfetch. Also sets `MINT_WATCHDOG_IGNORE_MISMATCH=true` on the\ncln-nutshell-postgres stack to prevent a shared-node false-positive\nfrom freezing balance-log writes.",
+      "tree": {
+        "sha": "096ee2f1ceb8c537eac2d3897c6c6b737517cde0",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/096ee2f1ceb8c537eac2d3897c6c6b737517cde0"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/50036ae588b687a1d289fda7b87c970852b6baeb",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf6h9gAKCRDIEX/9hYaL\nV7htAQDgXWeNXn96wvXEcVpZun3TP1N+LQSn+eN+5YGSJGizeAEA2miZCaVrhz8N\nTQNRR6XWvpttYVae2qD5vOB2U0H7+wA=\n=EJ55\n-----END PGP SIGNATURE-----",
+        "payload": "tree 096ee2f1ceb8c537eac2d3897c6c6b737517cde0\nparent 1dce9444d2ff7675bd39903e74ff2032c5a67c11\nauthor Shyguy <orangeshyguy@pm.me> 1778295286 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778295286 -0600\n\nchore: expand analytics e2e matrix to all units/intervals\n\nGeneralises the mint-analytics pipeline spec from sat-only / hour-only\nto all three units (sat, usd, eur) and all four intervals (hour, day,\nweek, month), skipping combinations the stack hasn't provisioned.\nExtracts a `fetchAnalyticsRows` helper to de-duplicate the inline GQL\nfetch. Also sets `MINT_WATCHDOG_IGNORE_MISMATCH=true` on the\ncln-nutshell-postgres stack to prevent a shared-node false-positive\nfrom freezing balance-log writes.\n",
+        "verified_at": "2026-05-09T02:53:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/50036ae588b687a1d289fda7b87c970852b6baeb",
+    "html_url": "https://github.com/cashubtc/orchard/commit/50036ae588b687a1d289fda7b87c970852b6baeb",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/50036ae588b687a1d289fda7b87c970852b6baeb/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1dce9444d2ff7675bd39903e74ff2032c5a67c11",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/1dce9444d2ff7675bd39903e74ff2032c5a67c11",
+        "html_url": "https://github.com/cashubtc/orchard/commit/1dce9444d2ff7675bd39903e74ff2032c5a67c11"
+      }
+    ]
+  },
+  {
+    "sha": "1dce9444d2ff7675bd39903e74ff2032c5a67c11",
+    "node_id": "C_kwDONCTCxNoAKDFkY2U5NDQ0ZDJmZjc2NzViZDM5OTAzZTc0ZmYyMDMyYzVhNjdjMTE",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T02:54:32Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-09T02:54:32Z"
+      },
+      "message": "fix: remove double fiat division in tooltip formatter\n\nThe tooltip formatter was calling `formatFiatAmount(amount / 100, ...)`,\nbut the chart pipeline already converts cents→dollars upstream in\n`getAmountData`. The extra `/100` produced values like `$0.02` for a\n`$1.61` fee-revenue bar. Removes the division and adds unit tests pinning\nthe contract (input is already dollars, not cents).",
+      "tree": {
+        "sha": "c441bd5ef846fd6861ad1efcb834fbf37c818a3f",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/c441bd5ef846fd6861ad1efcb834fbf37c818a3f"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/1dce9444d2ff7675bd39903e74ff2032c5a67c11",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf6h6AAKCRDIEX/9hYaL\nV6IRAP4uIAIQvabnSsNI27nDr95pxd6vc8iKJHPmZgDnyd+VyQEAnEDqcqI9muBZ\ndriUuPwZJfK7pD+U+/Aot1eTlUQqMA4=\n=lTgo\n-----END PGP SIGNATURE-----",
+        "payload": "tree c441bd5ef846fd6861ad1efcb834fbf37c818a3f\nparent 677660db9f8fbcd6a84d06329ab6c4d6db1a2d19\nauthor Shyguy <orangeshyguy@pm.me> 1778295272 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778295272 -0600\n\nfix: remove double fiat division in tooltip formatter\n\nThe tooltip formatter was calling `formatFiatAmount(amount / 100, ...)`,\nbut the chart pipeline already converts cents→dollars upstream in\n`getAmountData`. The extra `/100` produced values like `$0.02` for a\n`$1.61` fee-revenue bar. Removes the division and adds unit tests pinning\nthe contract (input is already dollars, not cents).\n",
+        "verified_at": "2026-05-09T02:53:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/1dce9444d2ff7675bd39903e74ff2032c5a67c11",
+    "html_url": "https://github.com/cashubtc/orchard/commit/1dce9444d2ff7675bd39903e74ff2032c5a67c11",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/1dce9444d2ff7675bd39903e74ff2032c5a67c11/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "677660db9f8fbcd6a84d06329ab6c4d6db1a2d19",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/677660db9f8fbcd6a84d06329ab6c4d6db1a2d19",
+        "html_url": "https://github.com/cashubtc/orchard/commit/677660db9f8fbcd6a84d06329ab6c4d6db1a2d19"
+      }
+    ]
+  },
+  {
+    "sha": "677660db9f8fbcd6a84d06329ab6c4d6db1a2d19",
+    "node_id": "C_kwDONCTCxNoAKDY3NzY2MGRiOWY4ZmJjZDZhODRkMDYzMjlhYjZjNGQ2ZGIxYTJkMTk",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-08T21:48:15Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-08T21:48:15Z"
+      },
+      "message": "chore: test & format & v bump",
+      "tree": {
+        "sha": "65aad462ee771686b18a5232ee5df83dcf005254",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/65aad462ee771686b18a5232ee5df83dcf005254"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/677660db9f8fbcd6a84d06329ab6c4d6db1a2d19",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf5aHwAKCRDIEX/9hYaL\nVyFJAQDljNLcLuXhJSvqK3FM6iez7DwMpXmpjZ2H2ADI2wTkCAEA9gkxMjF+AN65\nwvnarNZGneWzQBJFgd5cNBVYOSP+kgU=\n=azcX\n-----END PGP SIGNATURE-----",
+        "payload": "tree 65aad462ee771686b18a5232ee5df83dcf005254\nparent f339064a623ec9bd3a1fd641f27f7a154bab1696\nauthor Shyguy <orangeshyguy@pm.me> 1778276895 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778276895 -0600\n\nchore: test & format & v bump\n",
+        "verified_at": "2026-05-08T21:47:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/677660db9f8fbcd6a84d06329ab6c4d6db1a2d19",
+    "html_url": "https://github.com/cashubtc/orchard/commit/677660db9f8fbcd6a84d06329ab6c4d6db1a2d19",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/677660db9f8fbcd6a84d06329ab6c4d6db1a2d19/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f339064a623ec9bd3a1fd641f27f7a154bab1696",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/f339064a623ec9bd3a1fd641f27f7a154bab1696",
+        "html_url": "https://github.com/cashubtc/orchard/commit/f339064a623ec9bd3a1fd641f27f7a154bab1696"
+      }
+    ]
+  },
+  {
+    "sha": "f339064a623ec9bd3a1fd641f27f7a154bab1696",
+    "node_id": "C_kwDONCTCxNoAKGYzMzkwNjRhNjIzZWM5YmQzYTFmZDY0MWYyN2Y3YTE1NGJhYjE2OTY",
+    "commit": {
+      "author": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-08T21:40:17Z"
+      },
+      "committer": {
+        "name": "Shyguy",
+        "email": "orangeshyguy@pm.me",
+        "date": "2026-05-08T21:40:17Z"
+      },
+      "message": "chore: add mint-subsection-database e2e spec\n\nAdds e2e spec and companion markdown for the mint database page's\nbackup-critical surface: Create Backup download flow (@canary),\nrestore form structure, invalid-filename blocking, toggle behavior,\nand malformed-file resilience. Also adds `mkdir -p /app/data/tmp`\nto both Dockerfile stages for backup temp-file support.",
+      "tree": {
+        "sha": "4c4b3b2fb2ff5ae236441322e5af122e170faab6",
+        "url": "https://api.github.com/repos/cashubtc/orchard/git/trees/4c4b3b2fb2ff5ae236441322e5af122e170faab6"
+      },
+      "url": "https://api.github.com/repos/cashubtc/orchard/git/commits/f339064a623ec9bd3a1fd641f27f7a154bab1696",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS3TkF1zqfq+XFC6GnIEX/9hYaLVwUCaf5YQQAKCRDIEX/9hYaL\nV3gmAQDebOdRmulZ5q5zLAQq6AsdP9tMZoUWrv9KDH38nuJ6uwEA0OAuP2urNtD7\nOAEJjEIIs/QQY9xQ4aqEbiLjcHkymQ4=\n=Q9d2\n-----END PGP SIGNATURE-----",
+        "payload": "tree 4c4b3b2fb2ff5ae236441322e5af122e170faab6\nparent 0e564e6bab3574e2d7a1e03d875a86087087c21a\nauthor Shyguy <orangeshyguy@pm.me> 1778276417 -0600\ncommitter Shyguy <orangeshyguy@pm.me> 1778276417 -0600\n\nchore: add mint-subsection-database e2e spec\n\nAdds e2e spec and companion markdown for the mint database page's\nbackup-critical surface: Create Backup download flow (@canary),\nrestore form structure, invalid-filename blocking, toggle behavior,\nand malformed-file resilience. Also adds `mkdir -p /app/data/tmp`\nto both Dockerfile stages for backup temp-file support.\n",
+        "verified_at": "2026-05-08T21:39:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/orchard/commits/f339064a623ec9bd3a1fd641f27f7a154bab1696",
+    "html_url": "https://github.com/cashubtc/orchard/commit/f339064a623ec9bd3a1fd641f27f7a154bab1696",
+    "comments_url": "https://api.github.com/repos/cashubtc/orchard/commits/f339064a623ec9bd3a1fd641f27f7a154bab1696/comments",
+    "author": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "orangeshyguy21",
+      "id": 159221325,
+      "node_id": "U_kgDOCX2GTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159221325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/orangeshyguy21",
+      "html_url": "https://github.com/orangeshyguy21",
+      "followers_url": "https://api.github.com/users/orangeshyguy21/followers",
+      "following_url": "https://api.github.com/users/orangeshyguy21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/orangeshyguy21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/orangeshyguy21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/orangeshyguy21/subscriptions",
+      "organizations_url": "https://api.github.com/users/orangeshyguy21/orgs",
+      "repos_url": "https://api.github.com/users/orangeshyguy21/repos",
+      "events_url": "https://api.github.com/users/orangeshyguy21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/orangeshyguy21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0e564e6bab3574e2d7a1e03d875a86087087c21a",
+        "url": "https://api.github.com/repos/cashubtc/orchard/commits/0e564e6bab3574e2d7a1e03d875a86087087c21a",
+        "html_url": "https://github.com/cashubtc/orchard/commit/0e564e6bab3574e2d7a1e03d875a86087087c21a"
+      }
+    ]
+  }
+]

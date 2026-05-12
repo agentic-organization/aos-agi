@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "a42527e65766531ee4b96990c033c45cfa27b11a",
+    "node_id": "C_kwDOI3GlzNoAKGE0MjUyN2U2NTc2NjUzMWVlNGI5Njk5MGMwMzNjNDVjZmEyN2IxMWE",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-10T20:34:12Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-10T20:34:12Z"
+      },
+      "message": "feat(errors): add CTSError base class (#657)\n\n* feat(errors): add CTSError base class\n\n* feat(errors): preserve wrapped error causes\n\n* test(wallet): cover fee lookup error causes",
+      "tree": {
+        "sha": "4558f4dc08e4ca10b1fcd62e6c682545ee63dac1",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/4558f4dc08e4ca10b1fcd62e6c682545ee63dac1"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/a42527e65766531ee4b96990c033c45cfa27b11a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAOvECRC1aQ7uu5UhlAAAfzoQAEh2E8FTbKFM4OScleJGH2kN\nMQwA7hGxTexqyBcNV44dTE3ffsdieV814ApvHSgKkr+FFyx0Mcbx1zxWvXbvrG4N\nbqEu0QXrN4zHwMCginIaY+2Ja/c+RPflP3Qs8xWAvrgh6YlEb9liybB8CHPNgBe3\nUGAFJHBllnP0M6ZkH2Y6jppq2/g28vX9VPgmNcrCpc+BM03kqcqEUP0pB45l+SES\nawgLe2NuL9BOty9c0uC6m67zr+trPdeaBuWhl8eBAAF5xlYjvdnwSJl2oSHDnP6i\nJVEKzFCjW9o5YTufmVgJ1JaxES5mSF8RFh+WNiRzAblms+27KWrFSHec646v6hVl\nyFoBp1C4qo3+tXEwhnB5MCVtbnoQrM7ci7aOKYj2L7p/BBjYdLWwbkBkWBiJInBT\n1Qpm5+J9sQ8G2VQNsFvuURzMBdb+9ViiAqlADukFazaAePfSXhMQSZLG5kGe0Ogx\nP7qkE0+esFmBj9wtuSOAuQsrGg9phJjHNLXY4Q6QJBrztMC3FIltOFm/jW53a4mG\n41CBqVijVY2TyLzZ3UT4lkxXiey5yhVE/I2XSFA+NUdvekyuFV/eOX5gKunAdv0K\nJ3Mx2YcBPBgSAvvhauVKH4NdxhFu27aLZbh8Y9Uaaow7U7Z/LC25cFVtUsctt0lk\np3Zvldp3PpDu33PzsJND\n=HJlL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4558f4dc08e4ca10b1fcd62e6c682545ee63dac1\nparent 16f533b09b63bfab324501d8704a8e3396724d0c\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778445252 +0100\ncommitter GitHub <noreply@github.com> 1778445252 +0100\n\nfeat(errors): add CTSError base class (#657)\n\n* feat(errors): add CTSError base class\n\n* feat(errors): preserve wrapped error causes\n\n* test(wallet): cover fee lookup error causes",
+        "verified_at": "2026-05-10T20:34:12Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/a42527e65766531ee4b96990c033c45cfa27b11a",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/a42527e65766531ee4b96990c033c45cfa27b11a",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/a42527e65766531ee4b96990c033c45cfa27b11a/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "16f533b09b63bfab324501d8704a8e3396724d0c",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/16f533b09b63bfab324501d8704a8e3396724d0c",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/16f533b09b63bfab324501d8704a8e3396724d0c"
+      }
+    ]
+  },
+  {
+    "sha": "16f533b09b63bfab324501d8704a8e3396724d0c",
+    "node_id": "C_kwDOI3GlzNoAKDE2ZjUzM2IwOWI2M2JmYWIzMjQ1MDFkODcwNGE4ZTMzOTY3MjRkMGM",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-10T10:18:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-10T10:18:48Z"
+      },
+      "message": "feat(types): align nullable wire fields with spec (T | null) (#655)\n\nHarmonize types and runtime normalization for `<X|null>` wire fields\nthat were previously `T?` (undefined-flavored) or typed as required:\n\n- `MintQuoteBolt12Response.amount`: `Amount?` → `Amount | null` (NUT-25)\n- `SwapMethod.min_amount`, `max_amount`: `AmountLike` → `AmountLike | null`\n  (NUT-04/05/25/XX — were previously typed as required, despite spec\n  defining them as `<int|null>`)\n\nEach field is normalized at the response boundary via `nullIfUndefined`,\nso mints that omit these entirely (e.g. older Nutshell builds for\nSwapMethod, or non-spec mints for the bolt12 amount) get coerced to\nspec-faithful `null` rather than leaking `undefined` past the type guard.\n\nAlso removes the now-unused internal `undefinedIfNull` helper — its sole\ncall site was the old bolt12 amount path.\n\nConsumer compatibility: code using `??`, optional chaining, or truthy\nchecks is unaffected. Code that compared `q.amount === undefined` on a\nbolt12 mint quote response, or destructured `min_amount`/`max_amount`\nwith a default value, will need to switch to null-safe checks (`?? 0`,\n`!= null`, truthy). Bolt12 adoption is still early enough that downstream\nimpact is small in practice.",
+      "tree": {
+        "sha": "d291d05e9024921a8212fcbada7201c71fbc6b01",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/d291d05e9024921a8212fcbada7201c71fbc6b01"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/16f533b09b63bfab324501d8704a8e3396724d0c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAFuICRC1aQ7uu5UhlAAA7YIQAG3jfAXM0hmNb6oZxbk6xyAm\nEkiiWDH2ubSH4lxkd0bUcbfTcBTcgrqmaGnaRZtQNqfMn3d7nz1tSUzbEGEwgQey\nGmEVFcZj07UFlSe6yf351GgXP3EQ19NDnTiHOCeguPMy7kwuDUCpYSGYvKvH92FK\n/NZGNVb58qivDw87/ayj333kmc1BkDarR7CWkXnmS+bV87XfkawphOmBxTin1dvn\nIKEM+4vX1kCQ21PLaPVmbn7bLe5HYDBQ2NPeowXyDli00itMqjEd3NxEJ/ka2j6U\ntb6wk+zDkxHnKnJpE6Apy3jgW5J96JeW1x5Lay4yfD8ePkdLEznISIMiINKVQRHT\nybO8A6QcoWEZI821sXda7seuLIjhxKPsLHk9J3eTvLUxsptEhoh3svVYptGwh8MM\nLe7+bD+0Qz10ppqHwcLcIATG7qC3tqgLHJpFQQ5WqKftci0CQ5TzIcY9Lz0LAKF9\nShIY67wUaSNCwoRsP5VQB4qhN0hmP1Nq2VACgWdDBfMun2lgk/Lz8fl3UKxqsUXM\nO7677y6yQwbEhy9OPPWLbbsxHF7XHXmCG8gn1gZkOUJualXxUe7CfXR56c8Om7B2\n4x6EKovWiy3WSkgQmHlDEvJc0fqxBrd2QxYtJ+iZGA3nrCBa5FuWtUTCphr0+2aU\niA2+Wmn7qgYQ2/uTBbsz\n=dyx3\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d291d05e9024921a8212fcbada7201c71fbc6b01\nparent dc042934fb90b2360a5c21dea1a620756a44efc3\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778408328 +0100\ncommitter GitHub <noreply@github.com> 1778408328 +0100\n\nfeat(types): align nullable wire fields with spec (T | null) (#655)\n\nHarmonize types and runtime normalization for `<X|null>` wire fields\nthat were previously `T?` (undefined-flavored) or typed as required:\n\n- `MintQuoteBolt12Response.amount`: `Amount?` → `Amount | null` (NUT-25)\n- `SwapMethod.min_amount`, `max_amount`: `AmountLike` → `AmountLike | null`\n  (NUT-04/05/25/XX — were previously typed as required, despite spec\n  defining them as `<int|null>`)\n\nEach field is normalized at the response boundary via `nullIfUndefined`,\nso mints that omit these entirely (e.g. older Nutshell builds for\nSwapMethod, or non-spec mints for the bolt12 amount) get coerced to\nspec-faithful `null` rather than leaking `undefined` past the type guard.\n\nAlso removes the now-unused internal `undefinedIfNull` helper — its sole\ncall site was the old bolt12 amount path.\n\nConsumer compatibility: code using `??`, optional chaining, or truthy\nchecks is unaffected. Code that compared `q.amount === undefined` on a\nbolt12 mint quote response, or destructured `min_amount`/`max_amount`\nwith a default value, will need to switch to null-safe checks (`?? 0`,\n`!= null`, truthy). Bolt12 adoption is still early enough that downstream\nimpact is small in practice.",
+        "verified_at": "2026-05-10T10:18:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/16f533b09b63bfab324501d8704a8e3396724d0c",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/16f533b09b63bfab324501d8704a8e3396724d0c",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/16f533b09b63bfab324501d8704a8e3396724d0c/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dc042934fb90b2360a5c21dea1a620756a44efc3",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/dc042934fb90b2360a5c21dea1a620756a44efc3",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/dc042934fb90b2360a5c21dea1a620756a44efc3"
+      }
+    ]
+  },
+  {
+    "sha": "dc042934fb90b2360a5c21dea1a620756a44efc3",
+    "node_id": "C_kwDOI3GlzNoAKGRjMDQyOTM0ZmI5MGIyMzYwYTVjMjFkZWExYTYyMDc1NmE0NGVmYzM",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-10T09:51:57Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-10T09:51:57Z"
+      },
+      "message": "fix(wallet): verify DLEQ on received proofs even without requireDleq (NUT-12) (#656)\n\n* fix(wallet): verify DLEQ on received proofs even without requireDleq (NUT-12)\n\nNUT-12 requires wallets to verify any DLEQ included on a received Proof. Previously\nprepareSwapToReceive only ran the check when the caller passed `requireDleq: true`,\nso a token whose proofs carried a DLEQ was accepted without verification by default.\n\n- Add `verifyDleqIfPresent` helper: returns true when no DLEQ is present, otherwise\n  delegates to `hasValidDleq`. Distinct from the stricter \"must be present and valid\"\n  semantic of `hasValidDleq`.\n- Harden `hasValidDleq` to catch crypto-layer throws (out-of-range scalar, bad point\n  encoding) and return false, while still propagating the legitimate\n  \"Undefined key for amount\" error.\n- prepareSwapToReceive now always validates: `requireDleq: true` keeps the strict\n  check; otherwise verify-if-present runs unconditionally.\n\n* fix(wallet): guard mint-response paths against undefined sigs and add recovery hints\n\nConvert opaque \"undefined is not an object (in dleq)\" TypeErrors into\ninformative throws when a mint response is sparse or a proof is missing,\nand point each post-commit failure at the NUT-09 restore recovery path\nso downstream SDK consumers know how to recover stuck funds.\n\n* test(NUT12): cover undefined-signature guard in OutputData.toProof",
+      "tree": {
+        "sha": "73f1467dd99a94e63a33691c0b562a31719d80ff",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/73f1467dd99a94e63a33691c0b562a31719d80ff"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/dc042934fb90b2360a5c21dea1a620756a44efc3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAFU9CRC1aQ7uu5UhlAAA4OUQAAN5wNltbOIOoQ4KwSlB88LH\napYgublKvWXOCCiHr22K8gxrMrAvLd0Yuf51zooFFiwe+q8nxTjMeMSTIkKbBIDp\nlEDGTg8wsW6SVf+xy748k9opZccd6hGhE7Kn16HhiEjfoeVHwJ3IUkheEjAhSWw5\nXf/wWF1QhM6KTeckZiy5qOefD+0Ym313wZCVtPBBiRDDBbH5zutl0yW+TQXYZCsj\nGjLd6hQadT96kyu53iIGT1oLSyGPQ4z1CFK3Vac4FqMWByCYGo2y/qgLjzTq1RV/\ngsVxNVLMPJP8myhxfcSukeHUFd3jR2XBHh6Aybb25xd+r+YPOdopHmiiuCv/xlZv\n+p1t5ZIG1gK8KggKUwnqspQmJZVgpRnEAbiMyI/LcmGKM4wshVmh56czzvgjayS6\nMo0X/5JkfUbMrQYUXl7ZEUdE3ApQPMA2QGnGyRODwQRmeqh7K//0B1CMivnX9JE8\nS0QoOuex0WHIpOljf99KcHuGuIjOsNsmvaGixGYUbOMoe42NzK8Q9kc+yJe6XYmr\ngL49dPfhLn5YNkbKn8q9qlj2Ah4HHmkGttyfAaqQOPZzXmxqZvBYG/EBu2tip1/C\nlmczbju0JCAhI70W4XpnBN0pWGZu15IJa8+m+gKa4xCYmMCuetkmZaaKqBHblNRu\n8TcaQrAh2nDe19LflIm0\n=2YB4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 73f1467dd99a94e63a33691c0b562a31719d80ff\nparent 441b3cf851c988c8d898061454ffe98d98b9a296\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778406717 +0100\ncommitter GitHub <noreply@github.com> 1778406717 +0100\n\nfix(wallet): verify DLEQ on received proofs even without requireDleq (NUT-12) (#656)\n\n* fix(wallet): verify DLEQ on received proofs even without requireDleq (NUT-12)\n\nNUT-12 requires wallets to verify any DLEQ included on a received Proof. Previously\nprepareSwapToReceive only ran the check when the caller passed `requireDleq: true`,\nso a token whose proofs carried a DLEQ was accepted without verification by default.\n\n- Add `verifyDleqIfPresent` helper: returns true when no DLEQ is present, otherwise\n  delegates to `hasValidDleq`. Distinct from the stricter \"must be present and valid\"\n  semantic of `hasValidDleq`.\n- Harden `hasValidDleq` to catch crypto-layer throws (out-of-range scalar, bad point\n  encoding) and return false, while still propagating the legitimate\n  \"Undefined key for amount\" error.\n- prepareSwapToReceive now always validates: `requireDleq: true` keeps the strict\n  check; otherwise verify-if-present runs unconditionally.\n\n* fix(wallet): guard mint-response paths against undefined sigs and add recovery hints\n\nConvert opaque \"undefined is not an object (in dleq)\" TypeErrors into\ninformative throws when a mint response is sparse or a proof is missing,\nand point each post-commit failure at the NUT-09 restore recovery path\nso downstream SDK consumers know how to recover stuck funds.\n\n* test(NUT12): cover undefined-signature guard in OutputData.toProof",
+        "verified_at": "2026-05-10T09:51:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/dc042934fb90b2360a5c21dea1a620756a44efc3",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/dc042934fb90b2360a5c21dea1a620756a44efc3",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/dc042934fb90b2360a5c21dea1a620756a44efc3/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "441b3cf851c988c8d898061454ffe98d98b9a296",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/441b3cf851c988c8d898061454ffe98d98b9a296",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/441b3cf851c988c8d898061454ffe98d98b9a296"
+      }
+    ]
+  },
+  {
+    "sha": "441b3cf851c988c8d898061454ffe98d98b9a296",
+    "node_id": "C_kwDOI3GlzNoAKDQ0MWIzY2Y4NTFjOTg4YzhkODk4MDYxNDU0ZmZlOThkOThiOWEyOTY",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-10T09:51:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-10T09:51:29Z"
+      },
+      "message": "feat(nut12): deterministic DLEQ nonce derivation (#638)\n\n* feat(nut12): add deterministic DLEQ nonce\n\n* chore: ignore defensive code that cannot be exercised\n\n* chore: ignore codecov on untestable defensive code branch\n\n* chore: use single SECP256K1_N substraction in line with NUT13\n\n* refactor(nut12): use raw private key, not the SHA256 of it",
+      "tree": {
+        "sha": "5e91fdc239e3cc76f47a4c500fdf7d80b320212b",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/5e91fdc239e3cc76f47a4c500fdf7d80b320212b"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/441b3cf851c988c8d898061454ffe98d98b9a296",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAFUhCRC1aQ7uu5UhlAAAYPcQAByTC+2HbgtNexlkMOzB4MrK\nRGL1IV8059JwjpqXWSpqD6mjN6x2Ee4qmT0wKiXbOm5MPSGxksHRcvnTPaBN4PGk\n4o3QIzclux8r3tvkQKg9cF8qJb033oYU8WPm9EWKb29xFZg7A3urolLli/oAxGMu\nMdFOxq0jl3qHmN2lUs9hbLaktY2RnW4De5ylWtegbRHXCmtmf2zDg7UoCrEXLBh5\n5k7EFkFThuEYMT9PVoeNNHI9fRGKYRFOGKejI/alhI1ImRxA11TBBKLYQBOICYWX\neE8FD2aH3rqFzpf1S+I/B5Yv6lYGq6cJ9OGDkDc6qmq1Yk4+MMNomV1QEFV4Gg8U\nPsA2gPCMBYTQaHeLKwhnCtHToQ5mKX3fHImiCKzOcTfxiUwyhwijeDqO6mXBZMmf\nGO6RCXePCFe3xwrKOBLj/MzPYnLtW0zYKEiRwPdOx+/MSNQcEE+/7MBaj9NZDZhc\nM3FdSnEpq/LyXRHvmyv7/kPhpKrcCDItgVl2GKh+tuk+/+KRqVfmiPwXMoStPXi8\nfBs0Z7LXNTAnZCymYbUIGMe7w+qSrEvSsEaag78mdrLCyVpH445XAHzAUmLtcsdZ\njJlU26qfC9NEG4JT8f8rrk3LQKrtfPAt0VJVy6F+4AvWDmHsTQfzQ+pWvP3ofrLD\nfcBF5IUwcEtUQLm5Bcvi\n=UbEC\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5e91fdc239e3cc76f47a4c500fdf7d80b320212b\nparent 0f0dc04f14698406cbb11f5619ad0d04c36d3413\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778406689 +0100\ncommitter GitHub <noreply@github.com> 1778406689 +0100\n\nfeat(nut12): deterministic DLEQ nonce derivation (#638)\n\n* feat(nut12): add deterministic DLEQ nonce\n\n* chore: ignore defensive code that cannot be exercised\n\n* chore: ignore codecov on untestable defensive code branch\n\n* chore: use single SECP256K1_N substraction in line with NUT13\n\n* refactor(nut12): use raw private key, not the SHA256 of it",
+        "verified_at": "2026-05-10T09:51:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/441b3cf851c988c8d898061454ffe98d98b9a296",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/441b3cf851c988c8d898061454ffe98d98b9a296",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/441b3cf851c988c8d898061454ffe98d98b9a296/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0f0dc04f14698406cbb11f5619ad0d04c36d3413",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/0f0dc04f14698406cbb11f5619ad0d04c36d3413",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/0f0dc04f14698406cbb11f5619ad0d04c36d3413"
+      }
+    ]
+  },
+  {
+    "sha": "0f0dc04f14698406cbb11f5619ad0d04c36d3413",
+    "node_id": "C_kwDOI3GlzNoAKDBmMGRjMDRmMTQ2OTg0MDZjYmIxMWY1NjE5YWQwZDA0YzM2ZDM0MTM",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-10T09:44:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-10T09:44:38Z"
+      },
+      "message": "fix(mint): coerce omitted payment_preimage and witness to null (#653)\n\nPer NUT-23, MeltQuoteBolt11Response.payment_preimage is `<str | null>`,\nand per NUT-07, ProofState.witness is also `<str | null>`. Both TS types\nalready declare `string | null`, but the runtime didn't normalize either\nfield — mints that omit them (very common pre-payment for preimage, and\nfor non-NUT-10 proofs for witness) leave the value as `undefined`,\nsilently breaking consumer checks like `payment_preimage === null`.\n\nApply the existing Postel-style `nullIfUndefined` helper to both fields:\n\n- `normalizeMeltBoltFields` now coerces `payment_preimage` after the\n  fee_reserve/request validation. Covers bolt11 and bolt12 (NUT-25's\n  response aliases NUT-23).\n- `check()` iterates the validated `states` array and coerces each\n  `witness` field.\n\nTests added for both code paths in the existing MSW unit suites.",
+      "tree": {
+        "sha": "1073e17ae9255834c86b4475741b39763a2973d8",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/1073e17ae9255834c86b4475741b39763a2973d8"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/0f0dc04f14698406cbb11f5619ad0d04c36d3413",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAFOGCRC1aQ7uu5UhlAAAbhUQACs/kwHIGVpuuYh4tyOGwyhr\nGwDObZ7mdY4WA753O8La2fsWx/WVHC58GLtCeYvCjPFp0eLgNbfAZ4uxZr3Ja6l1\npFfoD0SuNYsW2jHzvYFl9PEmG5YRXif7KR/TbrvuOvKkc2WFAC5EoT1fEt2KQQap\n+4ZrzDdNHfit27pO2nf9Dwk282rH4hdvNZwNdh+XDJIm4lt/3BkRuMG9uVKh0pUf\ntH+VLDfx/KQAV+ehXzEOyI8EKmJVSAPz/54SJdECf47EEyiaIhBP1SX7602y6SV5\n0v9XxHYJFpxXZwnV/ibub9KbmPLMjWBOktcwkNQbMsoE31sXL7/vuVQ7bzLYBF2P\n2+MsaPrAsibBcaqgfbVeGdFnHtx6RSF36WRfBwNwrPcVFJUUbawqtmlBm9rLUurV\nDuXWJ0CYKcnbjxrou+XeiKJoCC1bEZs+dvADvaLVcFGuSPspldN6WPnYkY7fK3+4\n7ACVfdoOZPBtN2FKaIIXEuRBHVPbnFJVq3PrzgnePbp4v5ZNn/94JROd1JVKQwh8\nd2sP9J1tE/v3pl0WKT+MHR9IqBliTW3hIC1bWTdu9jwZMV1psLKS0CX5pRIPodQR\nm/8awWlUfX9/U4c4m1V/FicrWc9kZn2+hOVKeMG6U4m25YthkfuGKYG2R8BUEQbW\nqwtKyjWQ+Bm0xjzOOqc/\n=qOHq\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1073e17ae9255834c86b4475741b39763a2973d8\nparent f9d3205c61ddca3ba17848df042af8bb609789d4\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778406278 +0100\ncommitter GitHub <noreply@github.com> 1778406278 +0100\n\nfix(mint): coerce omitted payment_preimage and witness to null (#653)\n\nPer NUT-23, MeltQuoteBolt11Response.payment_preimage is `<str | null>`,\nand per NUT-07, ProofState.witness is also `<str | null>`. Both TS types\nalready declare `string | null`, but the runtime didn't normalize either\nfield — mints that omit them (very common pre-payment for preimage, and\nfor non-NUT-10 proofs for witness) leave the value as `undefined`,\nsilently breaking consumer checks like `payment_preimage === null`.\n\nApply the existing Postel-style `nullIfUndefined` helper to both fields:\n\n- `normalizeMeltBoltFields` now coerces `payment_preimage` after the\n  fee_reserve/request validation. Covers bolt11 and bolt12 (NUT-25's\n  response aliases NUT-23).\n- `check()` iterates the validated `states` array and coerces each\n  `witness` field.\n\nTests added for both code paths in the existing MSW unit suites.",
+        "verified_at": "2026-05-10T09:44:38Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/0f0dc04f14698406cbb11f5619ad0d04c36d3413",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/0f0dc04f14698406cbb11f5619ad0d04c36d3413",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/0f0dc04f14698406cbb11f5619ad0d04c36d3413/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f9d3205c61ddca3ba17848df042af8bb609789d4",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/f9d3205c61ddca3ba17848df042af8bb609789d4",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/f9d3205c61ddca3ba17848df042af8bb609789d4"
+      }
+    ]
+  },
+  {
+    "sha": "f9d3205c61ddca3ba17848df042af8bb609789d4",
+    "node_id": "C_kwDOI3GlzNoAKGY5ZDMyMDVjNjFkZGNhM2JhMTc4NDhkZjA0MmFmOGJiNjA5Nzg5ZDQ",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-10T09:42:11Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-10T09:42:11Z"
+      },
+      "message": "feat(wallet): add maxSpendableAfterFees primitive (#654)\n\nReturns the largest spendable amount from a proof set after subtracting\nthe per-proof input fees the mint charges, and (optionally) a melt\nquote's `fee_reserve`. Single step of a \"melt all funds\" iteration —\ncaller fetches a quote, calls this with the quote's fee_reserve, then\nre-quotes for the returned amount until the result stabilises.\n\nClamps to Amount.zero() when fees exceed total, to keep callers\ninside an iteration loop without underflow throws.",
+      "tree": {
+        "sha": "de718998e102580bbfd672166ad61ab8825b775e",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/de718998e102580bbfd672166ad61ab8825b775e"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/f9d3205c61ddca3ba17848df042af8bb609789d4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAFLzCRC1aQ7uu5UhlAAAuX0QAJg/C35YWZV4kiOGcmRjEbQu\nZ61vx4VpxcWaiHSSW04b9QZUZ/nwYnmIb9iPWCfPO4VLE3iXoatyY91SEdAx0yVg\nltFjIr+jjpInZTsSY1rMlvY65E8w4fZLwsy13rz6DeUEPaSLYsvHGOouWZlKZGDN\n2Cuo5l+8kWeolzkaRgFknN/TJiDIDSlxUd4Etsu0Wrghff1NNOF5GJOXpsqN5t/f\npamvwvyCDmTS10iaQoWgt8CdMcB8vBHOaVl6YLZNz+3wZr5VtbHOhxQju8i/+PY9\nGZpXVDDmsb1bu9feu0/Rsk7kawIfXGYJM0FD6uk5anv8yIhuAZNh7A0PaFV8sO/e\nvENtYOj40eaKmXy4SyqRrFLyDsuqtGY0/LBo6UFJkI3Ic9CjzWPE7i/+twGB20+l\nNHubxbfXjkduP24df1cLmQTYgQgLvZoWvogy5STh59+JsDUSmOcaE/XzDCE5hoJT\n88LKfKdsUHKUfjLA5JqDw179x9t6p/ha0WlQaHBevjby9+jzuibH80/3t/KSvacA\n5dq9jzv8qIIf9+5+6bY/MDpsn8B+Xrg7ejhUrblL/pMpiNzXsaQKM8XyoEyCp4X2\nWuTql0bqRV8azNpoERS4wd9pK6nqkcNOXXRIJlqvT+KWZazy/F+CDbvLOFhStr6P\nl8rMhYTbH/kt8IivQS+1\n=mX8C\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree de718998e102580bbfd672166ad61ab8825b775e\nparent 9e4fc5f12ec4c5cf715ce37b44e70077dfb2e1e7\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778406131 +0100\ncommitter GitHub <noreply@github.com> 1778406131 +0100\n\nfeat(wallet): add maxSpendableAfterFees primitive (#654)\n\nReturns the largest spendable amount from a proof set after subtracting\nthe per-proof input fees the mint charges, and (optionally) a melt\nquote's `fee_reserve`. Single step of a \"melt all funds\" iteration —\ncaller fetches a quote, calls this with the quote's fee_reserve, then\nre-quotes for the returned amount until the result stabilises.\n\nClamps to Amount.zero() when fees exceed total, to keep callers\ninside an iteration loop without underflow throws.",
+        "verified_at": "2026-05-10T09:42:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/f9d3205c61ddca3ba17848df042af8bb609789d4",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/f9d3205c61ddca3ba17848df042af8bb609789d4",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/f9d3205c61ddca3ba17848df042af8bb609789d4/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9e4fc5f12ec4c5cf715ce37b44e70077dfb2e1e7",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/9e4fc5f12ec4c5cf715ce37b44e70077dfb2e1e7",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/9e4fc5f12ec4c5cf715ce37b44e70077dfb2e1e7"
+      }
+    ]
+  },
+  {
+    "sha": "9e4fc5f12ec4c5cf715ce37b44e70077dfb2e1e7",
+    "node_id": "C_kwDOI3GlzNoAKDllNGZjNWYxMmVjNGM1Y2Y3MTVjZTM3YjQ0ZTcwMDc3ZGZiMmUxZTc",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-10T09:41:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-10T09:41:10Z"
+      },
+      "message": "refactor(mint): cast wire values as AmountLike, not Amount, in normalizers (#652)\n\nThe `normalize*Fields` helpers in `Mint.ts` accept JSON-parsed values that\narrive as `number | bigint | string` (i.e. `AmountLike`) and feed them\nthrough `Amount.from(...)`. Casting them `as Amount` made each call site\nread as if Amount instances arrive on the wire — they don't. `as AmountLike`\nhonestly describes the input and would catch future drift if `Amount` ever\ngains a field that wire data wouldn't satisfy.\n\nNo behaviour change.",
+      "tree": {
+        "sha": "51ff6ffc09dddfbfdd57a77a952985ac9a419eeb",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/51ff6ffc09dddfbfdd57a77a952985ac9a419eeb"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/9e4fc5f12ec4c5cf715ce37b44e70077dfb2e1e7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAFK2CRC1aQ7uu5UhlAAAgEIQAAknii0kx5esD+X1G6SlZdFQ\nMQvnyGJJBXwLMNcyp1FyC/juYsADytFbF/Q6KhWAGu4gaxbguHw455JowQNwnMGZ\nQGsNM4DxNWvFYHwFnyAEpjhaZsx82+/SYirthMC356/weYAvVqVfSaQ676LDpD51\n+/P1au0UsgCUAHGsJ/dzEQlDyieGJIzzAXpkdu/hH8/xtep28DUidNZPmOTZcKWw\nTucYNHxPsvHqnT9ohBkVeWtZdED8d09XdcccNvurGBamTYxRjAnIMm7FHBvgGdDa\nfrNRAC/mboaDSeSFq8WNgqVO7pGXu0cRtlOIOwicavII5FxGEg+YOCmajU0u9GR7\nsIz5Gg4dzb+GF+4s2/1upvGtO+YCj0ZGfYbASGz16gmzgWOGWI4vMKSbLP7cDvh5\nRvhpq+oFqjQsOQ/71gxZGMpJwsIidGH8uPfkmRl3rBfCIJ6XRieGdP7kfTcp2zSR\nlrUoU3y3rhTZ+4t3gsG1io7OY0su1D0cQ/5D5uLnNT/vmrf9pO+0sKljgXvi3yMd\nS0Rkl91j9J+527WpfpqtRCJG8ulnxR8oeFRqRPJCdzjfODmwdtdgpyO0cB7DV7Kj\n+6IHB/0SFwiFOLKQ9lJl5yslS5U9cexy61RhaqnXDgghAvTKgxJjXOoAhfKxCwrr\nU/sJDhyULbAFubVKckmI\n=Ux63\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 51ff6ffc09dddfbfdd57a77a952985ac9a419eeb\nparent 7f0bfabda3ff99965d098cef01ef0141c0580925\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778406070 +0100\ncommitter GitHub <noreply@github.com> 1778406070 +0100\n\nrefactor(mint): cast wire values as AmountLike, not Amount, in normalizers (#652)\n\nThe `normalize*Fields` helpers in `Mint.ts` accept JSON-parsed values that\narrive as `number | bigint | string` (i.e. `AmountLike`) and feed them\nthrough `Amount.from(...)`. Casting them `as Amount` made each call site\nread as if Amount instances arrive on the wire — they don't. `as AmountLike`\nhonestly describes the input and would catch future drift if `Amount` ever\ngains a field that wire data wouldn't satisfy.\n\nNo behaviour change.",
+        "verified_at": "2026-05-10T09:41:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/9e4fc5f12ec4c5cf715ce37b44e70077dfb2e1e7",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/9e4fc5f12ec4c5cf715ce37b44e70077dfb2e1e7",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/9e4fc5f12ec4c5cf715ce37b44e70077dfb2e1e7/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7f0bfabda3ff99965d098cef01ef0141c0580925",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/7f0bfabda3ff99965d098cef01ef0141c0580925",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/7f0bfabda3ff99965d098cef01ef0141c0580925"
+      }
+    ]
+  },
+  {
+    "sha": "7f0bfabda3ff99965d098cef01ef0141c0580925",
+    "node_id": "C_kwDOI3GlzNoAKDdmMGJmYWJkYTNmZjk5OTY1ZDA5OGNlZjAxZWYwMTQxYzA1ODA5MjU",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-08T13:52:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T13:52:27Z"
+      },
+      "message": "docs(examples): add README and align bolt12 example with Makefile port (#650)\n\n- Add examples/README.md covering how to run each demo, the top-level\n  Makefile targets for spinning up local mints, and per-example mint\n  requirements.\n- Update bolt12Wallet_example.ts MINT_URL from :8085 to :3338 so it\n  works out-of-the-box with the standard `DEV=1 make cdk-up` flow.\n  The 8085 port pre-dated the Makefile and had no technical reason.",
+      "tree": {
+        "sha": "89fbdb3ce488aae10cb2f593c2888b1f97c7b4ec",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/89fbdb3ce488aae10cb2f593c2888b1f97c7b4ec"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/7f0bfabda3ff99965d098cef01ef0141c0580925",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/eqbCRC1aQ7uu5UhlAAA5v8QABvgcJwmqZiAAK+TH9LQqU2y\ns7JdIYSqSkcbP5O0gbqjw2SpVDwAOAPXBUwz3jr+8jZ/wPsGeoJUCr+jKwEhJb8z\noa8ebUwby3eqeNO9V090E+AdIEt5gJvECIeKp/n97vZg2QrJsBXD2TMSagrrWuzU\nuYrAipcKwXIobdC0OkcMOrJaLBBAVzcuexXnKzQ/oRtd6FWZjUBbdi2OEhGvkQe8\nHODKN2EFG1PMnQC5KSUPJ21t7HqD+CxnAkX4G7o0jHbbZw1fEM71rLd4BmHnduFF\nXQf8FM3eLa9m75JJCej8+9mo0W8EkLGkGt1f9snvOuVQc6IF59XzQUE6IQMOfItn\nFtvkgDVm6qvroK6NryaK44VWKQvo14K/QhLULclzSCj8v28ZVoc9lH3vDuOqSkN8\n0TC5XZ31eI1vGurRHCcwlE7FBYkE9bIUkOCKNEsd6wB9B2gdiVVZl4+PNI9TFV0g\n3CNyv4k/NgpkMenIdLGu+st/GTUOqGnE8Jqf/5WOg4Mp6C6h5qMf8hY6uHLNvn5H\n89bkpkRpyyHgELkDGkPSZZ/0n7V2xp/d8J9astSVtncOKe+QGZA1E7cIyOO5PhRj\nfTts1ys+6Os2sQs7rx7Gs9s8oxLKZ8zWjVdvCFFNcC5BjUvoHR3xE3CcCkYGDHlv\njbSqPjk4ceLJwEBn6LZJ\n=PJsU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 89fbdb3ce488aae10cb2f593c2888b1f97c7b4ec\nparent e35c05350dee1ca551e76daeb5d466317a5ca860\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778248347 +0100\ncommitter GitHub <noreply@github.com> 1778248347 +0100\n\ndocs(examples): add README and align bolt12 example with Makefile port (#650)\n\n- Add examples/README.md covering how to run each demo, the top-level\n  Makefile targets for spinning up local mints, and per-example mint\n  requirements.\n- Update bolt12Wallet_example.ts MINT_URL from :8085 to :3338 so it\n  works out-of-the-box with the standard `DEV=1 make cdk-up` flow.\n  The 8085 port pre-dated the Makefile and had no technical reason.",
+        "verified_at": "2026-05-08T13:52:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/7f0bfabda3ff99965d098cef01ef0141c0580925",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/7f0bfabda3ff99965d098cef01ef0141c0580925",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/7f0bfabda3ff99965d098cef01ef0141c0580925/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e35c05350dee1ca551e76daeb5d466317a5ca860",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/e35c05350dee1ca551e76daeb5d466317a5ca860",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/e35c05350dee1ca551e76daeb5d466317a5ca860"
+      }
+    ]
+  },
+  {
+    "sha": "e35c05350dee1ca551e76daeb5d466317a5ca860",
+    "node_id": "C_kwDOI3GlzNoAKGUzNWMwNTM1MGRlZTFjYTU1MWU3NmRhZWI1ZDQ2NjMxN2E1Y2E4NjA",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-08T13:51:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T13:51:22Z"
+      },
+      "message": "fix(wallet): treat expiry: 0 as no-expiry in validateMintQuote (#648)\n\nCDK emits expiry: 0 on mint quote responses to mean \"no expiry\"; the\nspec defines expiry as <int|null> where null is \"no expiry\". cashu-ts\nwas reading 0 as a real Unix timestamp (epoch 1970) and rejecting all\nsuch quotes as expired.\n\nTreat 0 as the null case so wallets can mint against CDK without\nhitting \"Mint quote ... has expired\" on quotes the mint considers\nperpetually valid. Adds a unit test pinning the new behaviour.\n\nAffects all mint methods (bolt11/bolt12/onchain) since validateMintQuote\nis method-agnostic.",
+      "tree": {
+        "sha": "602e19e23bfe0bf6a52b9370b5067e52b757c347",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/602e19e23bfe0bf6a52b9370b5067e52b757c347"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/e35c05350dee1ca551e76daeb5d466317a5ca860",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/epaCRC1aQ7uu5UhlAAAFxAQAFS9s94NulMiQYiZy+5bED2f\nd4ZAmfkJW1lpiPp1hnGdfNQdY5yNNmGB6bOfYlzOTERDKQKNTDbFyxQWwYUQhvP2\nsshFU8BApmxpLK2NEYP2suO04279cbU2/HtCd5+ZmzoI9gq5LFBkI+3tzmMKX0a7\n1zGVfxFgKlSl6ha6oYNT6+7qapZohKNUs98MmNGNFtZMPJSOW0j5lMULBm95FYQN\n084+kFUYodp+hZBiR/CFvPClkEohAQ7vwTbsf9bamG9G0h1QU+ghgwgssfC5IHvR\nW0LvwM2weOU2AuO7CaWNb26bMlSbqNuGtt77NJ8zoN6IimZINQ77DEH5sG/jsTQ/\n0aJBb9NFAde94/MCuZco7jP9gJ8LGaUnkeWzDGvAMETsOTwt/yXe87msL/MjOioY\nM7g4rlZo0gcnxRRObwmW5RPX4bwgSokGHIVcymSUpRu1GgqkPAuTxpxAx3p9IBVt\nKfgpwfiiUyaJk+fRf8KyHoqzZblGyFTLqnN7TC9u/Z2kGHLteehhXVIOYUiczCFC\ng+hS/nMF8uCc+ALbgtvkuUKcAq1EMw6DWzJFjRetiqD0gUeEFRHeurRXEOjYeheV\nzPs0l+xNIEdWp6yCtngv0iRPZ0sU5hTo5hUpZa811fbiPjdq8B5GaVP8s6HZtksl\nm9cb9/SLs6i1gjTJ+b77\n=FccE\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 602e19e23bfe0bf6a52b9370b5067e52b757c347\nparent 067b38d530d2a43f62b1c2b8ea7308976d6a0c6e\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778248282 +0100\ncommitter GitHub <noreply@github.com> 1778248282 +0100\n\nfix(wallet): treat expiry: 0 as no-expiry in validateMintQuote (#648)\n\nCDK emits expiry: 0 on mint quote responses to mean \"no expiry\"; the\nspec defines expiry as <int|null> where null is \"no expiry\". cashu-ts\nwas reading 0 as a real Unix timestamp (epoch 1970) and rejecting all\nsuch quotes as expired.\n\nTreat 0 as the null case so wallets can mint against CDK without\nhitting \"Mint quote ... has expired\" on quotes the mint considers\nperpetually valid. Adds a unit test pinning the new behaviour.\n\nAffects all mint methods (bolt11/bolt12/onchain) since validateMintQuote\nis method-agnostic.",
+        "verified_at": "2026-05-08T13:51:23Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/e35c05350dee1ca551e76daeb5d466317a5ca860",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/e35c05350dee1ca551e76daeb5d466317a5ca860",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/e35c05350dee1ca551e76daeb5d466317a5ca860/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e"
+      }
+    ]
+  },
+  {
+    "sha": "067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+    "node_id": "C_kwDOI3GlzNoAKDA2N2IzOGQ1MzBkMmE0M2Y2MmIxYzJiOGVhNzMwODk3NmQ2YTBjNmU",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-08T13:50:04Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-08T13:50:04Z"
+      },
+      "message": "fix(mint): treat null amount on BOLT12 mint quote as no-amount (#649)\n\n* fix(mint): treat null amount on BOLT12 mint quote as no-amount\n\nPer NUT-25 the BOLT12 mint quote `amount` field is <int|null>; null\nmeans an amountless offer. CDK emits explicit null on the wire.\nnormalizeMintQuoteBolt12Fields was checking `=== undefined` only, so\nthe call fell through to `Amount.from(null)` which throws\n\"Unsupported amount input type\" — breaking every BOLT12 amountless\nmint quote against CDK.\n\nTreat null and undefined alike (Postel-style), matching the spec\nintent and matching how other nullable wire fields are handled.\nAdds a regression test pinning the new behaviour.\n\n* refactor(utils): add nullIfUndefined/undefinedIfNull helpers",
+      "tree": {
+        "sha": "3c6705ba00042e1a3d4aa526aab29d23b0f21368",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/3c6705ba00042e1a3d4aa526aab29d23b0f21368"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp/eoMCRC1aQ7uu5UhlAAA3XUQAKFp19h5ObTGGL7gCQuMH39o\nt5iWjdjpelvwU6snBAx/g1e9r7P2HQEKzYQQ7Hbe4ZjjKAmzwpbdPSrIGgW9Nwqp\ne5VvPdQpn4nTmXtA8zZ3e4uJbNllArgTBFlrBKS+wWWxVOfeCnSVKeMWi122ZCKT\naDr2D61nwk+inkrLnhsOafbLL4O2S1vdQxacMUCbF2FinJSbUA4SZGUsri85tFkQ\nhLGZs2XYpP386o0aFmp3RV9tTfoSjD1uxhvAJcpn8GYFqtNoQqHqJmLKvwKjoqwv\nUi5j1g3t/SKEb8eTfLsHov5BJluq6t0lKhN/nPArdvMjYrSaCH0roiEBrbGSBK9R\naSfKXoiEDvvcJj6Bmsjg1466DVju9Ur7QY2Mx9wN+YAbMtDRCpJ69BhnitmlZPqI\nT1r4gzVRL1+JI1w1iNrV1S57fa6m8ZkIESemBMWYVRj+uNeQnTNSINERGfNB8ar3\nOWdEXSkAT7M6Awgtqpu/T1xCzg0Tew6OJ0u1+fYLpsWyzsbC1Cge9p6cMX2pSQJU\ntaSvfUXtsEnlsRzgRFMgh8/fFlogTEEC8wN6iYbfDY43Z6zbnL1TcHXiK5YwnCtK\nJc1414ZgoBcIECIuh8zOrcqUZEHIFIFitJVbdQYwy/EgHjzzclssLFnaIUyS339h\nXGb/dempS2KfrvHgQazS\n=PteG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3c6705ba00042e1a3d4aa526aab29d23b0f21368\nparent b55e064aa886f1ca79f18cc8903ffd7535295ded\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778248204 +0100\ncommitter GitHub <noreply@github.com> 1778248204 +0100\n\nfix(mint): treat null amount on BOLT12 mint quote as no-amount (#649)\n\n* fix(mint): treat null amount on BOLT12 mint quote as no-amount\n\nPer NUT-25 the BOLT12 mint quote `amount` field is <int|null>; null\nmeans an amountless offer. CDK emits explicit null on the wire.\nnormalizeMintQuoteBolt12Fields was checking `=== undefined` only, so\nthe call fell through to `Amount.from(null)` which throws\n\"Unsupported amount input type\" — breaking every BOLT12 amountless\nmint quote against CDK.\n\nTreat null and undefined alike (Postel-style), matching the spec\nintent and matching how other nullable wire fields are handled.\nAdds a regression test pinning the new behaviour.\n\n* refactor(utils): add nullIfUndefined/undefinedIfNull helpers",
+        "verified_at": "2026-05-08T13:50:05Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/067b38d530d2a43f62b1c2b8ea7308976d6a0c6e/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b55e064aa886f1ca79f18cc8903ffd7535295ded",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/b55e064aa886f1ca79f18cc8903ffd7535295ded",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/b55e064aa886f1ca79f18cc8903ffd7535295ded"
+      }
+    ]
+  }
+]

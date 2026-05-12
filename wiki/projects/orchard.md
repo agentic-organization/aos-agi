@@ -29,6 +29,8 @@ Orchard sits inside the `cashubtc/` GitHub organization, so it inherits stewards
 ## History
 - 2026-05-10: Page created from `data/raw/github/daily/2026-05-10/cashubtc/orchard/` and `data/raw/github/org-discovery/2026-05-10/cashubtc/snapshot.json` after the daily ingestion run via [[tools/github-daily-ingest]].
 
+- 2026-05-11: `data/raw/github/daily/2026-05-11/cashubtc/orchard/` captured **16 commits** in the 72h window. Themes: client `crypto.randomUUID` → `uuid` swap with specs and review follow-up, keyset analytic accuracy, e2e assert `applyAiModel` option, `listFees` LAG/fan-out invariant + `getPreRangeEnd` helper, custom-bucket date pinning in keyset aggregation. All commits by [[people/orangeshyguy21]].
+
 ## Open questions
 - Is orangeshyguy21 a [[teams/cashu-core]] member or an external maintainer hosted under `cashubtc/`?
 - Is Orchard intended as the canonical operator UI for Cashu mints, or one of several?

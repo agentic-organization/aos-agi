@@ -60,6 +60,7 @@ Where the others have multiple maintainers and broader org membership, Soapbox c
 - (channels unknown — Soapbox-side coordination likely happens on Nostr and/or GitLab issues; concrete channels yet to be confirmed.)
 
 ## History
+- 2026-05-11: Ditto (Soapbox's primary active project) shipped releases **v2.14.0** (2026-05-09) and **v2.14.1** (2026-05-11) on its GitHub mirror; 9 commits in the 72h window per `data/raw/github/daily/2026-05-11/soapbox-pub/ditto/`.
 - 2026-05-07: Team page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 
 ## Open questions

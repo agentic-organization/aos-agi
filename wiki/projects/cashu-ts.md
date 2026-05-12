@@ -22,6 +22,8 @@ The **TypeScript reference library** for Cashu. Powers most web wallets in the e
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
 
+- 2026-05-11: `data/raw/github/daily/2026-05-11/cashubtc/cashu-ts/` captured **10 commits** in the 72h window. Themes: new `CTSError` base class, deterministic DLEQ nonce derivation (NUT-12), verify DLEQ on received proofs without explicit request, `maxSpendableAfterFees` primitive, coerce omitted `payment_preimage`/`witness` to null, treat `expiry: 0` as no-expiry in mint-quote validation, docs/examples aligned to Makimoto BOLT12 example.
+
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
 - Which Cashu library (cashu-ts, CDK, Nutshell, etc.) it builds on.

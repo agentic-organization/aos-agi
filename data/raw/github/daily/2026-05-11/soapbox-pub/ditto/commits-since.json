@@ -1,0 +1,740 @@
+[
+  {
+    "sha": "ac901ac09629741da43384633b198cdf4379354a",
+    "node_id": "C_kwDOL5Eek9oAKGFjOTAxYWMwOTYyOTc0MWRhNDMzODQ2MzNiMTk4Y2RmNDM3OTM1NGE",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-11T02:42:40Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-11T02:42:40Z"
+      },
+      "message": "release: v2.14.1",
+      "tree": {
+        "sha": "ed0e6bea955b19114d64e91e0255769f5baff7cd",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/ed0e6bea955b19114d64e91e0255769f5baff7cd"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/ac901ac09629741da43384633b198cdf4379354a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoBQiAACgkQchHR+ZdE\n+7eyfA//cir95Ne61s3HjVxCS0ObNUx0lxc8qau6eJoKS2tykuJffFhJdO33Jf8q\noFnrIkuAH9toh+m0y1hrj16wsKgqgtSaRfR2xF+0a+Y+7DMQdB1KOyOxPPbeUvTn\nPURCSU1GrAYmBgFaa56Rp5BTDPm0whPucM715xgjzxRjluhqJTWoDPVtuI195k7S\nLkjcnyCjQTP+iFRKoU7VSR588CgzMp0xDbfwWt2GtUiyiFVZ2hHNdvWySywzucFP\nGW1Ihp1eADzxWER0pCdkTWn4elpiquE3kijyAdjNYJ1bZ6zSKsSEUJalsKPhUgqB\nwtmuJVP1TjhXv7VBrHzhd/gEe2GLqvYbvJOx2XKd2vG4UTUJjZ/TsqiUk0Yxiitu\n9upFUBN3T56N1peIQrVN62GePCBcCaRysg3iI1TKMU3LOQVxb5Qq8BiLSINo5Imb\no6Hrs3Yd3IHeKXe09DfHsg1GnnyE2V5rq/QkTi4Nw3PHEnC3aAAKOgqw/70c4thh\nriNdKSKyp4hggfW/VT9GEcw++cyvV0jyElPbFfEXDsqW1DUnJLUsAaqjPyKwf8/o\nanuL+PLIzeCrCZm+RhC4OXxO71SSo+AvbqPw0aG3kqyaqJm4CdDYh94J4HSE4qFF\nI1znA/aGhcBt4k4m0n4hXypeUauVEx+SGJ1baZkhN//Yz0PrVE0=\n=VEt+\n-----END PGP SIGNATURE-----",
+        "payload": "tree ed0e6bea955b19114d64e91e0255769f5baff7cd\nparent e54d7c8155d60e8776a72cec81b988638aa794f0\nauthor Alex Gleason <alex@alexgleason.me> 1778467360 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778467360 -0700\n\nrelease: v2.14.1\n",
+        "verified_at": "2026-05-11T02:42:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ac901ac09629741da43384633b198cdf4379354a",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/ac901ac09629741da43384633b198cdf4379354a",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ac901ac09629741da43384633b198cdf4379354a/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e54d7c8155d60e8776a72cec81b988638aa794f0",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/e54d7c8155d60e8776a72cec81b988638aa794f0",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/e54d7c8155d60e8776a72cec81b988638aa794f0"
+      }
+    ]
+  },
+  {
+    "sha": "e54d7c8155d60e8776a72cec81b988638aa794f0",
+    "node_id": "C_kwDOL5Eek9oAKGU1NGQ3YzgxNTVkNjBlODc3NmE3MmNlYzgxYjk4ODYzOGFhNzk0ZjA",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-11T02:21:43Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-11T02:21:43Z"
+      },
+      "message": "Show repost header on reposted reactions, zaps, reposts, and poll votes\n\nNoteCard's reaction/repost/zap/poll-vote branches return early with their\nown ActivityCard layouts, skipping the inline 'X reposted' header that\nthe normal note layout renders below. As a result, when one of these\nevents appeared in a feed via a kind 6/16 repost, the reposter\nattribution was silently dropped.\n\nAdd an optional `header` slot to ActivityCard and pass the repost header\ninto all four early-return branches when `repostedBy` is set.",
+      "tree": {
+        "sha": "15ed8249398a3fd28da47d9482924d13fd003ef3",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/15ed8249398a3fd28da47d9482924d13fd003ef3"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/e54d7c8155d60e8776a72cec81b988638aa794f0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoBPTcACgkQchHR+ZdE\n+7eMIA/9FT6CKo44IpO/w9nwXSiqK69pAy1bSKuFrvdiWCrhLnZcgyjeXWZ/M18l\nVCx1LnLFPxU/VwarwuOwXzMgOgAW8bMup1BmvC2tU4lC4T52XFn0+Wb41XuF7SDL\nJ4q8pfWIgsV3DlusU/27big4EfJl5KCpS9LqUQSuKz2vaZtSK0H7r8zQBuWyWUYT\nM6L8rWXNFbQ+Luhs1R6v17Tdb1Uhp96+gqelV4aIzP5aN7ZkFRn1ZHT4N/XDHLlG\nRbYDOqbFqvd3OaBtrBxwxnXFCsM1H9QP3bOenY2CtipkaYA0PsrXqT2+Asu+nmq9\naY3w4GehPj277f6J0nyqM0qsKZzFZ95SmaUF0vNKzHFi7752wNvW/ryEfwjuCEG8\n3hfabVRDzEQ5wMyhACoSPh/EXIwbntWWe0cROsjuj5KWaiEzlrKyFP0W/+TtdANm\njsaCLHOMji6AiMoG2dJ47eDkCS7ZpwGNOqZ5ktqDV+qHWBXR6cRLLgXj+mzGXdpH\n9yvDr7GlDALTOzuAV5urIqahm60kg0sq9GUQpWJ2GSth9oVeaNy7+BffYqJ6suBs\nz3D+M4A6YMLdoQMFI/xo9THSdP9m/2To7JB3B8U1i7ds7PaA67Kr692xcfq9Wd+E\nwqw2OfPc3SkN8YPr3vu4Ym2E0X+heUOT51pQw2VO3OVDa8qz9y8=\n=lDl5\n-----END PGP SIGNATURE-----",
+        "payload": "tree 15ed8249398a3fd28da47d9482924d13fd003ef3\nparent d84f2b790f1540e64a35f8050bb6f800f0b9b309\nauthor Alex Gleason <alex@alexgleason.me> 1778466103 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778466103 -0700\n\nShow repost header on reposted reactions, zaps, reposts, and poll votes\n\nNoteCard's reaction/repost/zap/poll-vote branches return early with their\nown ActivityCard layouts, skipping the inline 'X reposted' header that\nthe normal note layout renders below. As a result, when one of these\nevents appeared in a feed via a kind 6/16 repost, the reposter\nattribution was silently dropped.\n\nAdd an optional `header` slot to ActivityCard and pass the repost header\ninto all four early-return branches when `repostedBy` is set.\n",
+        "verified_at": "2026-05-11T02:24:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/e54d7c8155d60e8776a72cec81b988638aa794f0",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/e54d7c8155d60e8776a72cec81b988638aa794f0",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/e54d7c8155d60e8776a72cec81b988638aa794f0/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d84f2b790f1540e64a35f8050bb6f800f0b9b309",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/d84f2b790f1540e64a35f8050bb6f800f0b9b309",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/d84f2b790f1540e64a35f8050bb6f800f0b9b309"
+      }
+    ]
+  },
+  {
+    "sha": "d84f2b790f1540e64a35f8050bb6f800f0b9b309",
+    "node_id": "C_kwDOL5Eek9oAKGQ4NGYyYjc5MGYxNTQwZTY0YTM1ZjgwNTBiYjZmODAwZjBiOWIzMDk",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-10T00:06:10Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-10T00:06:10Z"
+      },
+      "message": "Link people-list avatars to profiles and prefer naddr for kind 3\n\nStacked avatars in PeopleAvatarStack are now clickable, navigating to\nthe user's npub profile so readers can jump straight to a member from a\nfollow list, follow set, or follow pack — not only from the surrounding\npost. Each avatar is wrapped in a Link with a stopPropagation handler so\nthe click doesn't bubble up to the card-level navigation, and the focus\nring is now visible on keyboard focus.\n\nKind 3 follow-list events are legacy replaceable kinds (NIP-01) but\nfell outside the 10000–19999 range that NoteCard, EmbeddedPeopleListCard,\nPostDetailPage, and NoteMoreMenu all special-cased — so clicking a\nfollow list in a feed went to a per-event nevent that pinned to a stale\nrevision instead of the stable naddr. The four call sites are now\nunified behind a new lib/encodeEvent.ts helper that treats kinds 0, 3,\nand 41 as replaceable, alongside 10000–19999 and 30000–39999. The same\nhelper exposes encodeEventNevent for callers that intentionally want to\nreference a historical version (e.g. the profile-recovery dialog).",
+      "tree": {
+        "sha": "e47751821d9e9d2d9908e2b4e146c9bccef87ae4",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/e47751821d9e9d2d9908e2b4e146c9bccef87ae4"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/d84f2b790f1540e64a35f8050bb6f800f0b9b309",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn/y/IACgkQchHR+ZdE\n+7fZgA//Xz4NZLxJkyKrlENxCGrgPZdK3XBqy9lFIqJhyd6GtRe1mZsk2qXIqPYz\nJ7UJe6mTZJx+O1Iin44uMnANYJjuz5dUaVGlmmunxMIpE58KXU3ZIVMlHEyGxXNj\nXBTsY542Nfwgop59HUzQ8m1OiwGfSwVf5Kt4Rnlz4sS3I5VVDKdO/vP455to6AAu\nROudWWvWOdp7DLmpKc0t351aw9BX8FzsHvgB0Fp4Pr7ymVOgBDPpQ6R/IgtZRuMM\nlSUkbzlWUdPArhdqeJATIpb4mVOrbX6uWqbMvRV4kI9mfeo2gJbvj1TXBuiueQJC\npGXAS9tNKKhA/XUl60+bmbHVLBq5FpDzPcQM4GqipeOOl1KZIaPkhIaRmfImZBez\nV+jPjocg+7Tcq2so9QhENDFbK6Teq7qS3277RyGzjsfkpPuqD2ASf3B36YtQ7TTg\neqpKC+fHuX9pzeG7QgWXFf8j4R660I24Nm1ROFPoFQ511QUSrXSVU1+phPYC0Omg\neVyiX7q6IcKkDzwigZqIJKcYovdXAC5HaUvfAhghzXjJfKl1pqTQ1kEC0gsyOwdl\neCnj6ZjAJOZIpzNpG24U8SrsEXiHW8YmOyxXY1vmZWzcYER+CxmQip0pQKBd2Zck\n+x5Yl7C6s00SDMAGCpdXNBVnorp78zO5F3Gc3hPemYQ6NbCvNRc=\n=FSz+\n-----END PGP SIGNATURE-----",
+        "payload": "tree e47751821d9e9d2d9908e2b4e146c9bccef87ae4\nparent a2dbc169b2ca57c16a6bfb4c41dad29eccb09917\nauthor Alex Gleason <alex@alexgleason.me> 1778371570 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778371570 -0700\n\nLink people-list avatars to profiles and prefer naddr for kind 3\n\nStacked avatars in PeopleAvatarStack are now clickable, navigating to\nthe user's npub profile so readers can jump straight to a member from a\nfollow list, follow set, or follow pack — not only from the surrounding\npost. Each avatar is wrapped in a Link with a stopPropagation handler so\nthe click doesn't bubble up to the card-level navigation, and the focus\nring is now visible on keyboard focus.\n\nKind 3 follow-list events are legacy replaceable kinds (NIP-01) but\nfell outside the 10000–19999 range that NoteCard, EmbeddedPeopleListCard,\nPostDetailPage, and NoteMoreMenu all special-cased — so clicking a\nfollow list in a feed went to a per-event nevent that pinned to a stale\nrevision instead of the stable naddr. The four call sites are now\nunified behind a new lib/encodeEvent.ts helper that treats kinds 0, 3,\nand 41 as replaceable, alongside 10000–19999 and 30000–39999. The same\nhelper exposes encodeEventNevent for callers that intentionally want to\nreference a historical version (e.g. the profile-recovery dialog).\n",
+        "verified_at": "2026-05-11T02:17:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/d84f2b790f1540e64a35f8050bb6f800f0b9b309",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/d84f2b790f1540e64a35f8050bb6f800f0b9b309",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/d84f2b790f1540e64a35f8050bb6f800f0b9b309/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a2dbc169b2ca57c16a6bfb4c41dad29eccb09917",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a2dbc169b2ca57c16a6bfb4c41dad29eccb09917",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/a2dbc169b2ca57c16a6bfb4c41dad29eccb09917"
+      }
+    ]
+  },
+  {
+    "sha": "a2dbc169b2ca57c16a6bfb4c41dad29eccb09917",
+    "node_id": "C_kwDOL5Eek9oAKGEyZGJjMTY5YjJjYTU3YzE2YTZiZmI0YzQxZGFkMjllY2NiMDk5MTc",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:53:17Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:53:17Z"
+      },
+      "message": "Show kind 8333 on-chain zaps as notifications\n\nLightning (kind 9735) and on-chain (kind 8333) zaps now share a single\n\"zap\" group bucket in the notifications page and render with the same\nheader, sats label, and Zap icon. The Zaps preference toggles both kinds\ntogether; native and push notification queries pick up 8333 automatically\nthrough the shared kind list.",
+      "tree": {
+        "sha": "4c9d6b0c2114e971213c17b5f799639991be110a",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/4c9d6b0c2114e971213c17b5f799639991be110a"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/a2dbc169b2ca57c16a6bfb4c41dad29eccb09917",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn/yO0ACgkQchHR+ZdE\n+7fd1RAA5XblgXw6PCvYI98rTsD90dgOyMcLCitCxPxvD1w79PPbzz7pXCsiuTL2\noNxZEH33hfcRs99QhUjdBjPdIjufSPhS7MrAx1OhoqxkY/qLoyZLa9qyvCkHyvhg\ntUSZhvSWA7nQ/bRadPa3s7aW3Z2PWrFxbZaOyg01vCJl0OWHbeN3XNCsLh8AoeZs\nAGHoeLA9/0oXDgEhHYhM2/38qpiEbfe7onj+7TFLaaWiE+r1R8owq/Ym4vC/ekzo\nkz5hLb09MabNE+dahbUuLvCf1UMZ71pw49dR1rDEHu43fbd5yJwy9YFhu4Kxe9oU\nqL+P/H+HOnUxK5rSmVE41VnGOmGIVM63fNyAelMWX2i5BI3glExw1CZacLaPfRp9\ny5mUh3lj7py9qy1zYv4oYWTqj3DH/h23T34X5ASKSYHJHOBqqtCokVAqPlS/cqiO\nrXjbSN0eebrqLNZwlTqUofcDbaeNpPeEMHetTT1NX70QkpPm0geBtOgyJKBKGF4h\n3vmAVNO7Mwikn0vAJE2AZrhcmmujDvDBCDageZnHjM2t2KaA2T3oqtxVffbWS9jQ\nWzJWnA5DHZzxQewuis+zwWpxcNvgFwIF1TLBrLf6wQ+AG+Gh/PDZpARK65ltnjzf\nGrkW+2jOhdmzOs7kkTPffr534nPip71fNi5OLZuMcCx+/qUF0sw=\n=+pH5\n-----END PGP SIGNATURE-----",
+        "payload": "tree 4c9d6b0c2114e971213c17b5f799639991be110a\nparent 845c270f600f862fe6320f178bf15b69efed7e7e\nauthor Alex Gleason <alex@alexgleason.me> 1778370797 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778370797 -0700\n\nShow kind 8333 on-chain zaps as notifications\n\nLightning (kind 9735) and on-chain (kind 8333) zaps now share a single\n\"zap\" group bucket in the notifications page and render with the same\nheader, sats label, and Zap icon. The Zaps preference toggles both kinds\ntogether; native and push notification queries pick up 8333 automatically\nthrough the shared kind list.\n",
+        "verified_at": "2026-05-11T02:17:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a2dbc169b2ca57c16a6bfb4c41dad29eccb09917",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/a2dbc169b2ca57c16a6bfb4c41dad29eccb09917",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a2dbc169b2ca57c16a6bfb4c41dad29eccb09917/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "845c270f600f862fe6320f178bf15b69efed7e7e",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/845c270f600f862fe6320f178bf15b69efed7e7e",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/845c270f600f862fe6320f178bf15b69efed7e7e"
+      }
+    ]
+  },
+  {
+    "sha": "845c270f600f862fe6320f178bf15b69efed7e7e",
+    "node_id": "C_kwDOL5Eek9oAKDg0NWMyNzBmNjAwZjg2MmZlNjMyMGYxNzhiZjE1YjY5ZWZlZDdlN2U",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:36:05Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:36:05Z"
+      },
+      "message": "release: v2.14.0",
+      "tree": {
+        "sha": "ebb393d0f8e2b0aa2b0ac449af7ec230081923cf",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/ebb393d0f8e2b0aa2b0ac449af7ec230081923cf"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/845c270f600f862fe6320f178bf15b69efed7e7e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn/xOUACgkQchHR+ZdE\n+7f2Qw/+OdpXgjwkRqXll3g2+WbVy7V2r8gu5THPS9oFgXqmLkLtafGdPhpfHVDe\nkyxkKEJYKQgO82arJaUvtmpDHfYWD7YEg0Y7/iMXztP19JLqdnYASg37qCLnm87Q\n31V4zjKDY++84+FwcrpU933rs03gkYb3q7I+0pYFcuaQJmvHcwPg7GxQnR9fdJ7+\npSTju4ZwOTzmdoWwZLMaf2UGG5gnrzh/PGAJ5ol85XARE4VHkOjSZnRE9Eo8ahBu\n1denzcEhj/Ypw9T2SWwwa5uP14L5HdiVw6l+S26AtDu+9+9pofqw+JfvQV0nquKq\nrDV/1DBdcl5XGSjmzzsZG0zV1jAZMIeUR/wEZX2vxoUr+as2ClYrfPPPQctp5MU/\nc7gHM6zf0ZvGHgpvJgAnT0XGoFMxyaHPncZ90mFtYLghcQSayvZoZxwHd41w9eIN\nuUbqze/jG2XjowS6rKcYf5ma7JRApBGFTDI2WhtomSMCQ9TCtvyadelzsAKULAzw\nji4bxN8oSv1nrXmEG0TN/Ltl9q3+lnq+OE9/V3s8ulU2eOM0MVs88I1aMnom0gs1\nVIvF2MsyDaecnFuZWJ3XpOomwbuVc5Du1nKkX72skdUKXDHt74c4tVxoX+k8QgaM\neaTHNRIyKcRsZ1iENyu26g+tMrwDPRPkmP3rV36qPIH5/qCxNIA=\n=4QYx\n-----END PGP SIGNATURE-----",
+        "payload": "tree ebb393d0f8e2b0aa2b0ac449af7ec230081923cf\nparent ed6ac39015b4edc43ca37dfa1bee4a74bba9f434\nauthor Alex Gleason <alex@alexgleason.me> 1778369765 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778369765 -0700\n\nrelease: v2.14.0\n",
+        "verified_at": "2026-05-09T23:41:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/845c270f600f862fe6320f178bf15b69efed7e7e",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/845c270f600f862fe6320f178bf15b69efed7e7e",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/845c270f600f862fe6320f178bf15b69efed7e7e/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ed6ac39015b4edc43ca37dfa1bee4a74bba9f434",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ed6ac39015b4edc43ca37dfa1bee4a74bba9f434",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/ed6ac39015b4edc43ca37dfa1bee4a74bba9f434"
+      }
+    ]
+  },
+  {
+    "sha": "ed6ac39015b4edc43ca37dfa1bee4a74bba9f434",
+    "node_id": "C_kwDOL5Eek9oAKGVkNmFjMzkwMTViNGVkYzQzY2EzN2RmYTFiZWU0YTc0YmJhOWY0MzQ",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:31:55Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:31:55Z"
+      },
+      "message": "Move the Restore button inside the embedded snapshot card\n\nPosition the Restore button (or Current badge) absolutely in the\ntop-right corner of the embedded post, replacing the row beneath it.\nEach snapshot now occupies just one container's worth of vertical\nspace, and the action sits next to the content it acts on instead of\ndetached below it. The overlay stops click and keyboard propagation so\nclicking Restore doesn't also navigate away to the embedded card's\nlink target.",
+      "tree": {
+        "sha": "9829b94c4191db5fc2bf6e5252446c12c768b832",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/9829b94c4191db5fc2bf6e5252446c12c768b832"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/ed6ac39015b4edc43ca37dfa1bee4a74bba9f434",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn/w+sACgkQchHR+ZdE\n+7ed5hAAh+cuGc/Czsj9ViYouWZ1bweNHivqThh79GEDe7Bz+Rq2pwezBQGjPJd1\naQUlWLEE81zPHFSscd1qnWAzF7RH5V/kMK4Q3T89CAs127rngS4HG/eDXeyeOzYF\ndHwKLvN3tm54ecaobFOmetK+xwmrwW00PwliE0+/VqEDDZV7qurS3f9rhh+vZKo7\nGyk4knn9iO+PYCiLD8EvkDr6Oz0dAD3vSXjf+aA/mUm/Yw47XoH2v2zAfx25/9eF\n9AT0lqfaoMQ/KQNUVs9RVcb8hP9eJ+aZ+Smk0I4FyMkRCyHmmzM0hnEc5HPMIDof\n0DtfQmNS4P61FeNG0Qvz2CWU7+Txa7DY9aaplwR39er8Z7Z1d+Lh+NdyW2vOSCyS\nXDOdJidKm0k4EJCDD1cv1mIsfbi7fhmuAQPz1ospnuLX+vIeGbG7uZva4ThVT8bq\nzZeSisqLuezP7AQu1VYNGsBgp6buzJ9UdWrtcbiKJMm+vQd/kGEm1cHyJ+YXb69J\newM4OQewrg262VlocmbJx3hB+gwQ8d7jfbrUvsOT7g4Ltg/qiK87q9oT+fyqDv9M\nAbtew/GOk77lAwBAUmWEvdKW4bLpHRNcYNEU80+jFtkUm+V+f6a9LMGM7CWrrfej\n7LSCLY3KmQ7QD6BCHbj7HKnsd2DhTMn3VqllPlnG1NYPnq0VqKA=\n=Dh2I\n-----END PGP SIGNATURE-----",
+        "payload": "tree 9829b94c4191db5fc2bf6e5252446c12c768b832\nparent ba4b95972fece80d9a2f675a586a90c974a46214\nauthor Alex Gleason <alex@alexgleason.me> 1778369515 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778369515 -0700\n\nMove the Restore button inside the embedded snapshot card\n\nPosition the Restore button (or Current badge) absolutely in the\ntop-right corner of the embedded post, replacing the row beneath it.\nEach snapshot now occupies just one container's worth of vertical\nspace, and the action sits next to the content it acts on instead of\ndetached below it. The overlay stops click and keyboard propagation so\nclicking Restore doesn't also navigate away to the embedded card's\nlink target.\n",
+        "verified_at": "2026-05-09T23:33:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ed6ac39015b4edc43ca37dfa1bee4a74bba9f434",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/ed6ac39015b4edc43ca37dfa1bee4a74bba9f434",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ed6ac39015b4edc43ca37dfa1bee4a74bba9f434/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ba4b95972fece80d9a2f675a586a90c974a46214",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ba4b95972fece80d9a2f675a586a90c974a46214",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/ba4b95972fece80d9a2f675a586a90c974a46214"
+      }
+    ]
+  },
+  {
+    "sha": "ba4b95972fece80d9a2f675a586a90c974a46214",
+    "node_id": "C_kwDOL5Eek9oAKGJhNGI5NTk3MmZlY2U4MGQ5YTJmNjc1YTU4NmE5MGM5NzRhNDYyMTQ",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:24:56Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:24:56Z"
+      },
+      "message": "Tighten the event recovery dialog layout\n\nThe double-container effect — outer card frame around an embedded post\nthat already had its own border — wasted vertical space and made each\nsnapshot read like two stacked boxes. Drop the outer frame so the\nembedded card is the only container, with a primary-colored ring on the\ncurrent version. The redundant date row also goes (the embedded card\ndisplays its own timestamp), leaving just a right-aligned Restore button\nor 'Current' badge below each snapshot.",
+      "tree": {
+        "sha": "68a5d2a6419f4280f2daa6ae34ca4772b6027846",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/68a5d2a6419f4280f2daa6ae34ca4772b6027846"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/ba4b95972fece80d9a2f675a586a90c974a46214",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn/wkgACgkQchHR+ZdE\n+7d7jRAAhzwK4d7kHpI1cIrrzbb67y7K26Rn3WERnA2Xqdd1/r4Ias1BmfCS/hyO\ncmDfaDtw4Fe3fEEHci6fF4b0xxFCvNXbg32kBbdrz3H8RLV0dROTOL6kQ220t4bJ\nmcSuV8oWTzzlk/4Q94Ck3SCFVWj8xMVutKR9CP5NACalKQoalUiUeeww6EglXzpx\nvpvKScUgBNY9j2XaJwn45QE08u4IyKnST03ezxwvOn8Nlx72dDLzcoXIya1RIdFj\nfYvs8Z+Y3ibP7bACebQhVe7qsNr8eNRlJLASeu6LdFirU67LxKfAvCGd+ScURKJM\nB1I5Ch1RiBmYYMOixy4CXoziWzqc87Kaco+93m7s0Ls9Bg0SicnE2UeULOzRSYjU\nOA9Au+h02ynnkwIHNEi7Ap48DGHgPMWMS/+WGLloLF22+Chbdkpjf/PZ0PjeNCCG\neHlUPZzsEOtLbOMw2lxZsrOS1NHrF6T7h4O2J26JjNvCVpkF4WoNvQcgh5+ZgYHU\n3u53wy57THT8O4eJ6ue8u/gq6eR9uRQbBnQ2qvRDGy5dg0BCrQxgT9qnwZngzruP\nOAJpV3BeOsZujtb04hqNzOjQ5UbcvchapTtPWndr67D//bd2RX7n4/fKfaF5z5G8\nvykkoJTrpnubHNG3oWO8TizFuUdOudSn4oi2RuVg7P3Bet02qCM=\n=BUuA\n-----END PGP SIGNATURE-----",
+        "payload": "tree 68a5d2a6419f4280f2daa6ae34ca4772b6027846\nparent 440e00fb47a7e8adc59bcc6579965859ed0b6554\nauthor Alex Gleason <alex@alexgleason.me> 1778369096 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778369096 -0700\n\nTighten the event recovery dialog layout\n\nThe double-container effect — outer card frame around an embedded post\nthat already had its own border — wasted vertical space and made each\nsnapshot read like two stacked boxes. Drop the outer frame so the\nembedded card is the only container, with a primary-colored ring on the\ncurrent version. The redundant date row also goes (the embedded card\ndisplays its own timestamp), leaving just a right-aligned Restore button\nor 'Current' badge below each snapshot.\n",
+        "verified_at": "2026-05-09T23:33:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ba4b95972fece80d9a2f675a586a90c974a46214",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/ba4b95972fece80d9a2f675a586a90c974a46214",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ba4b95972fece80d9a2f675a586a90c974a46214/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "440e00fb47a7e8adc59bcc6579965859ed0b6554",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/440e00fb47a7e8adc59bcc6579965859ed0b6554",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/440e00fb47a7e8adc59bcc6579965859ed0b6554"
+      }
+    ]
+  },
+  {
+    "sha": "440e00fb47a7e8adc59bcc6579965859ed0b6554",
+    "node_id": "C_kwDOL5Eek9oAKDQ0MGUwMGZiNDdhN2U4YWRjNTliY2M2NTc5OTY1ODU5ZWQwYjY1NTQ",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:19:14Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-09T23:19:14Z"
+      },
+      "message": "Add a Restore button to recover previous versions of replaceable events\n\nThe note 3-dots menu now exposes a 'Restore previous version' option for\nreplaceable and addressable events the current user owns, sitting next\nto Delete. It opens a generic EventRecoveryDialog modeled after the\nexisting profile/mute-list/badge recovery dialogs — querying past\nversions with nostr.req() (to bypass NPool's NSet deduplication) using\nthe same (kind, authors[, #d]) filter shape, and rendering each\nhistorical version through EmbeddedPost so any kind displays correctly.\n\nRestoring republishes the chosen snapshot's content and tags via\nuseNostrPublish with the snapshot passed as 'prev' so published_at is\npreserved. Inline isAddressableKind helpers in useDeleteEvent and\nuseNostrPublish are now sourced from a shared src/lib/eventKinds.ts.",
+      "tree": {
+        "sha": "b0cd51c91ccceeefa252dcbaec894aae74cd397f",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/b0cd51c91ccceeefa252dcbaec894aae74cd397f"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/440e00fb47a7e8adc59bcc6579965859ed0b6554",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn/wPIACgkQchHR+ZdE\n+7ft6xAAkRfaZ1hWUGPX2/Q4qMiuSDgbt9oNzAtSsoyZYtG7vm/PwtAaswd+NXmO\nvb1/HWXjPIrv04GhtrHWnAzgm7hSUpr0EzQsTxUfNrVX/bP4mmVj+3iFs7XvI0ln\n+kdfjHGHhFcDAFZgnkGQDVT28/G0dVc39By1jjNLrbWOdMRWExitceFviuhbaZ/C\n7fKsnx7Hf1fJLu73xtTJDCcrvtWXYNyqApOynvZpcnrDMBjL2Jl1tw/YVQmbKH+T\nk+bjdDNLqYTPkt8Cu16UoZZoY987wmi46Ef3zpKtOQx/nGMSwaymB4WzR1lj1GOz\noyHxcgZTW9IXJccDPq/iklCibs8bM14ZPVcop1bpeIGHoWV4Q0f+0qZOU8cm7tA8\nC0gMbDXGwDS2XSBMrGkzrpBQDdo+KFoXKR23hiHe9BwyIRezQwPbouy822xe3P+k\nWwuo9yzWIhSfHm3I7bsDcECcEizYGnaus7SIf4ny/zPki0/O/pS9mM6JrG9pBXIC\nRHNl8csKH6hMwDj7kAacau5gV8RaYpgVsP+P+BsrWjIn5XCOV1LljDrfC4tc7mAZ\n7iSwcRz3/upq+BmMyzkRUCJ1L79xQCl+Re+xevVSxaYqRRbE4IkRONiGkMmnZvDl\nkFgH9JXgn+K5ak3DyVIyys08spQjmqrhj+sCsWsocWmovnmAomE=\n=CY5v\n-----END PGP SIGNATURE-----",
+        "payload": "tree b0cd51c91ccceeefa252dcbaec894aae74cd397f\nparent 0a41cee6bf971c636df7fddfbc6834cf6d221035\nauthor Alex Gleason <alex@alexgleason.me> 1778368754 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778368754 -0700\n\nAdd a Restore button to recover previous versions of replaceable events\n\nThe note 3-dots menu now exposes a 'Restore previous version' option for\nreplaceable and addressable events the current user owns, sitting next\nto Delete. It opens a generic EventRecoveryDialog modeled after the\nexisting profile/mute-list/badge recovery dialogs — querying past\nversions with nostr.req() (to bypass NPool's NSet deduplication) using\nthe same (kind, authors[, #d]) filter shape, and rendering each\nhistorical version through EmbeddedPost so any kind displays correctly.\n\nRestoring republishes the chosen snapshot's content and tags via\nuseNostrPublish with the snapshot passed as 'prev' so published_at is\npreserved. Inline isAddressableKind helpers in useDeleteEvent and\nuseNostrPublish are now sourced from a shared src/lib/eventKinds.ts.\n",
+        "verified_at": "2026-05-09T23:33:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/440e00fb47a7e8adc59bcc6579965859ed0b6554",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/440e00fb47a7e8adc59bcc6579965859ed0b6554",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/440e00fb47a7e8adc59bcc6579965859ed0b6554/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0a41cee6bf971c636df7fddfbc6834cf6d221035",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0a41cee6bf971c636df7fddfbc6834cf6d221035",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/0a41cee6bf971c636df7fddfbc6834cf6d221035"
+      }
+    ]
+  },
+  {
+    "sha": "0a41cee6bf971c636df7fddfbc6834cf6d221035",
+    "node_id": "C_kwDOL5Eek9oAKDBhNDFjZWU2YmY5NzFjNjM2ZGY3ZmRkZmJjNjgzNGNmNmQyMjEwMzU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-08T19:09:06Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-08T19:09:06Z"
+      },
+      "message": "Include an `e` tag in draft article deletion events\n\nThe deletion event for a NIP-37 draft wrap (kind 31234) only carried\nthe addressable `a` coordinate. Per NIP-09, a deletion should also\nreference the specific event by id when available, so relays and\nclients that key their deletion logic on `e` tags don't miss it.\n\nLook up the draft's event id from the TanStack Query cache (the drafts\nlist already stores it as `eventId` when parsing the wrap) and append\nan `e` tag alongside the existing `a` tag. Falls back gracefully to\n`a` only if the event id can't be resolved.\n\nRegression-of: e93c6651",
+      "tree": {
+        "sha": "1be1596703102de78d40570136d2454e85d40cd7",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/1be1596703102de78d40570136d2454e85d40cd7"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/0a41cee6bf971c636df7fddfbc6834cf6d221035",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmn+NNIACgkQchHR+ZdE\n+7ekCQ/+Ja8MJFBYsYF7dBUTI0b+2hWZ7B1QMAnRgE2LZOeAK9Men7TPEEVN9o0E\nXjgMJVVxIBE66ujjNqgjSPjnOUMxH0YJ5w/GikZyrGTNCC2bPUOJlOkzTt7d5GKI\n4LRrpKjFOGHWZRwxzkEu2m+QxtvGm/mC4PKsil4Klrks7jqJu5xhNbWU5ppWviWx\nrPtDb1D/q4NHr94b1M05InowycU9KKqnKoT30yYan0Dz0sYM17BnV/EM1ceonYLi\nn9EmdfNhXs05I5b57vAKFaMK/9MP9U8KCVox3msYuhFD/rvwPw0wDBwBsx44R/ez\n43AhxHS0sHxGf89w1iNzFGIDlfPJa3p9d/nrsm/g7TBELypigqpVMVcEUp3YohsS\nuMrWF1Dn2kv1RZzvlgPV8FrNkSrkqcR7V7aq3mSVjVZ9DEnZU+RweSlBqbPOB0uT\nM0FFh4FxlJJqG8dr/eMg437nQtL+jPh5Isy19NmOhsXhZhgSLrPDWwZJKEHLk5yi\ns17A1n7kcDBu5BwLkZuOjmWqZcYH8ErehtXetya/8YYgPCEXf7EHICNPBSWiwSgm\nG6TQ44LC2D6TKB9oPRRzwyHWnDfLbe+0XmppbNQdLYJM8Edi7UxH5mehIqrHBJxR\ncf0RIYb/v62I2SkqFyA0dYWtkve1N2oUPiOEo5AY3jab8qO28FM=\n=OMs5\n-----END PGP SIGNATURE-----",
+        "payload": "tree 1be1596703102de78d40570136d2454e85d40cd7\nparent 9c590f456054ff1fab7377c0d4b4bb4c8bf48b85\nauthor Alex Gleason <alex@alexgleason.me> 1778267346 -0700\ncommitter Alex Gleason <alex@alexgleason.me> 1778267346 -0700\n\nInclude an `e` tag in draft article deletion events\n\nThe deletion event for a NIP-37 draft wrap (kind 31234) only carried\nthe addressable `a` coordinate. Per NIP-09, a deletion should also\nreference the specific event by id when available, so relays and\nclients that key their deletion logic on `e` tags don't miss it.\n\nLook up the draft's event id from the TanStack Query cache (the drafts\nlist already stores it as `eventId` when parsing the wrap) and append\nan `e` tag alongside the existing `a` tag. Falls back gracefully to\n`a` only if the event id can't be resolved.\n\nRegression-of: e93c6651\n",
+        "verified_at": "2026-05-08T19:13:25Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0a41cee6bf971c636df7fddfbc6834cf6d221035",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/0a41cee6bf971c636df7fddfbc6834cf6d221035",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0a41cee6bf971c636df7fddfbc6834cf6d221035/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c590f456054ff1fab7377c0d4b4bb4c8bf48b85",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/9c590f456054ff1fab7377c0d4b4bb4c8bf48b85",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/9c590f456054ff1fab7377c0d4b4bb4c8bf48b85"
+      }
+    ]
+  }
+]
