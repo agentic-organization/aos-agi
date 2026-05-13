@@ -41,6 +41,8 @@ One of the two canonical mint stacks alongside [[projects/mintd]] (CDK/Rust).
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
 - 2026-05-11: Added contributors section from `gh api repos/cashubtc/nutshell/contributors` and `data/raw/github/daily/2026-05-11/cashubtc/nutshell/commits-since.json`.
 
+- 2026-05-12: `data/raw/github/daily/2026-05-12/cashubtc/nutshell/` captured **1 commit** in the 24h window: fix promises order index (#991).
+
 ## Open questions
 - Funding model and activity cadence.
 - Current deployment footprint and active user count, if any.

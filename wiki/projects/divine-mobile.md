@@ -34,6 +34,8 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 
 - 2026-05-11: `data/raw/github/daily/2026-05-11/divinevideo/divine-mobile/` captured **54 commits** in the 72h window and release **1.0.13** (published 2026-05-10). Commit themes: video-editor audio extraction, DM auto-sweep of failed outgoing states, profile memCacheWidth fix, notification row styling, IdentitySkeletonizer component, pro_video_editor bump to 1.16.1, liker/reposter list in video. Committers: [[people/rabble]], [[people/realmeylisdev]], [[people/notthatkindofdrliz]], [[people/hm21]], [[people/mbradley]], [[people/untreu2]], `evgenibir`, `Chardot`.
 
+- 2026-05-12: `data/raw/github/daily/2026-05-12/divinevideo/divine-mobile/` captured **18 commits** in the 24h window. Themes: notification-system refactor (delete legacy Riverpod stack, dedupe WS-first notifications, complete tap-target routing, retire legacy list-item screens, throw typed API exceptions), profile features (banner upload from setup, linkify profile/list text, pre-seed cached profile), video/editor work (native video-player in feed, metadata screen redesign), canonical subtitle overlay in feed, cache_sync package with follower/following integration, auth copy updates, search per-source fallback outcomes, CI fixes (cupertino_http CocoaPods link, TestFlight group cleanup). Committers: [[people/rabble]], [[people/realmeylisdev]], [[people/notthatkindofdrliz]], [[people/hm21]], [[people/mbradley]].
+
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?
 - Runtime deployment: where is this service hosted?

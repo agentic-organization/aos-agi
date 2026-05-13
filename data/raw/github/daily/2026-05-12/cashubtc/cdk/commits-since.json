@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "8ce06b1a8620e5c584f12a7733e7bc072ec45ea7",
+    "node_id": "C_kwDOJbajnNoAKDhjZTA2YjFhODYyMGU1YzU4NGYxMmE3NzMzZTdiYzA3MmVjNDVlYTc",
+    "commit": {
+      "author": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-03T19:54:11Z"
+      },
+      "committer": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-12T02:26:55Z"
+      },
+      "message": "feat: add cdk review for agents",
+      "tree": {
+        "sha": "a044600504fafe8f7687a984a41315b94cef6c42",
+        "url": "https://api.github.com/repos/cashubtc/cdk/git/trees/a044600504fafe8f7687a984a41315b94cef6c42"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk/git/commits/8ce06b1a8620e5c584f12a7733e7bc072ec45ea7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQT7FBefWxISmS43iYljrW0Ju/53gwUCagKP7wAKCRBjrW0Ju/53\ng9aZAQCEl/NAglmqE45YWEXcgYoJb+Cmgh7VyWBNHDVRQkeqbQEAq+/eaxPiy4/j\n4YMbr7xtJh2jKy36Q21SO98k4IW4/ww=\n=d13D\n-----END PGP SIGNATURE-----",
+        "payload": "tree a044600504fafe8f7687a984a41315b94cef6c42\nparent 743508f55892c913004256fb2f3b01dfdaba3746\nauthor thesimplekid <tsk@thesimplekid.com> 1777838051 +0100\ncommitter thesimplekid <tsk@thesimplekid.com> 1778552815 -0400\nchange-id wwrwsssnnvrnvtkosronyokllrruywon\n\nfeat: add cdk review for agents\n",
+        "verified_at": "2026-05-12T02:27:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk/commits/8ce06b1a8620e5c584f12a7733e7bc072ec45ea7",
+    "html_url": "https://github.com/cashubtc/cdk/commit/8ce06b1a8620e5c584f12a7733e7bc072ec45ea7",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk/commits/8ce06b1a8620e5c584f12a7733e7bc072ec45ea7/comments",
+    "author": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "743508f55892c913004256fb2f3b01dfdaba3746",
+        "url": "https://api.github.com/repos/cashubtc/cdk/commits/743508f55892c913004256fb2f3b01dfdaba3746",
+        "html_url": "https://github.com/cashubtc/cdk/commit/743508f55892c913004256fb2f3b01dfdaba3746"
+      }
+    ]
+  },
+  {
+    "sha": "743508f55892c913004256fb2f3b01dfdaba3746",
+    "node_id": "C_kwDOJbajnNoAKDc0MzUwOGY1NTg5MmM5MTMwMDQyNTZmYjJmM2IwMWRmZGFiYTM3NDY",
+    "commit": {
+      "author": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-11T19:17:19Z"
+      },
+      "committer": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-12T02:15:36Z"
+      },
+      "message": "feat: add tests for db",
+      "tree": {
+        "sha": "719ab5c35d936a0dbc13c8c8aa6cd37e0290eca9",
+        "url": "https://api.github.com/repos/cashubtc/cdk/git/trees/719ab5c35d936a0dbc13c8c8aa6cd37e0290eca9"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk/git/commits/743508f55892c913004256fb2f3b01dfdaba3746",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQT7FBefWxISmS43iYljrW0Ju/53gwUCagKNSAAKCRBjrW0Ju/53\ngyAfAPkBOn7Rj20IDr4og/pxqCyuycUdMzdtF7RVrSqCHrvPOQD/fEcz9Eh2sbrt\noxo0C/UUuvoAdDR09/eeCKqaeSqQxAQ=\n=EeDJ\n-----END PGP SIGNATURE-----",
+        "payload": "tree 719ab5c35d936a0dbc13c8c8aa6cd37e0290eca9\nparent 9c72cb9b5b589f05151a4c0ad547cb1e71c38a81\nauthor thesimplekid <tsk@thesimplekid.com> 1778527039 -0400\ncommitter thesimplekid <tsk@thesimplekid.com> 1778552136 -0400\nchange-id tsuzkyutklkvqqqzzqnryyktmuyrpqxr\n\nfeat: add tests for db\n",
+        "verified_at": "2026-05-12T02:15:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk/commits/743508f55892c913004256fb2f3b01dfdaba3746",
+    "html_url": "https://github.com/cashubtc/cdk/commit/743508f55892c913004256fb2f3b01dfdaba3746",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk/commits/743508f55892c913004256fb2f3b01dfdaba3746/comments",
+    "author": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c72cb9b5b589f05151a4c0ad547cb1e71c38a81",
+        "url": "https://api.github.com/repos/cashubtc/cdk/commits/9c72cb9b5b589f05151a4c0ad547cb1e71c38a81",
+        "html_url": "https://github.com/cashubtc/cdk/commit/9c72cb9b5b589f05151a4c0ad547cb1e71c38a81"
+      }
+    ]
+  },
+  {
+    "sha": "9c72cb9b5b589f05151a4c0ad547cb1e71c38a81",
+    "node_id": "C_kwDOJbajnNoAKDljNzJjYjliNWI1ODlmMDUxNTFhNGMwYWQ1NDdjYjFlNzFjMzhhODE",
+    "commit": {
+      "author": {
+        "name": "Cesar Rodas",
+        "email": "cesar@rodasm.com.py",
+        "date": "2026-04-09T22:14:58Z"
+      },
+      "committer": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-12T02:15:36Z"
+      },
+      "message": "Consolidate FFI runtime handling into RuntimeGuard\n\nThe ad-hoc Handle::try_current() / Runtime::new() pattern was duplicated across\nevery FFI constructor (sqlite, postgres, wallet_repository).  Extract a shared\nRuntimeGuard that detects an existing Tokio runtime or creates one, and keeps\nit alive for the lifetime of the FFI object so that async pool operations\n(semaphore acquire) work in foreign-language contexts that lack a Tokio\nreactor.\n\nAlso replace tokio::time::timeout in the connection pool with a\ntry_acquire_owned fast-path + plain acquire_owned await, since the timeout\nrequired the Tokio time driver which UniFFI's Python bridge does not provide.",
+      "tree": {
+        "sha": "15dea6fc8583f55915398277d1d7bafaf77b98e0",
+        "url": "https://api.github.com/repos/cashubtc/cdk/git/trees/15dea6fc8583f55915398277d1d7bafaf77b98e0"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk/git/commits/9c72cb9b5b589f05151a4c0ad547cb1e71c38a81",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQT7FBefWxISmS43iYljrW0Ju/53gwUCagKNSAAKCRBjrW0Ju/53\ng4lzAP9Rxskm3F40EhOFZgRC9M0hZknVbqItfT06mm3aEMpBZQD/R63F8A+uA3Aw\nUh0ZQKnkOTJPeJ1a4Vk9c2C3/dqHtQk=\n=7Mgf\n-----END PGP SIGNATURE-----",
+        "payload": "tree 15dea6fc8583f55915398277d1d7bafaf77b98e0\nparent 128e68d42c94c54a5b6bdcef182258f14cfe5dba\nauthor Cesar Rodas <cesar@rodasm.com.py> 1775772898 -0300\ncommitter thesimplekid <tsk@thesimplekid.com> 1778552136 -0400\nchange-id zlysulwlmuzmouszooxmvtlmmnzkylrv\n\nConsolidate FFI runtime handling into RuntimeGuard\n\nThe ad-hoc Handle::try_current() / Runtime::new() pattern was duplicated across\nevery FFI constructor (sqlite, postgres, wallet_repository).  Extract a shared\nRuntimeGuard that detects an existing Tokio runtime or creates one, and keeps\nit alive for the lifetime of the FFI object so that async pool operations\n(semaphore acquire) work in foreign-language contexts that lack a Tokio\nreactor.\n\nAlso replace tokio::time::timeout in the connection pool with a\ntry_acquire_owned fast-path + plain acquire_owned await, since the timeout\nrequired the Tokio time driver which UniFFI's Python bridge does not provide.\n",
+        "verified_at": "2026-05-12T02:15:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk/commits/9c72cb9b5b589f05151a4c0ad547cb1e71c38a81",
+    "html_url": "https://github.com/cashubtc/cdk/commit/9c72cb9b5b589f05151a4c0ad547cb1e71c38a81",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk/commits/9c72cb9b5b589f05151a4c0ad547cb1e71c38a81/comments",
+    "author": {
+      "login": "crodas",
+      "id": 36463,
+      "node_id": "MDQ6VXNlcjM2NDYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36463?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/crodas",
+      "html_url": "https://github.com/crodas",
+      "followers_url": "https://api.github.com/users/crodas/followers",
+      "following_url": "https://api.github.com/users/crodas/following{/other_user}",
+      "gists_url": "https://api.github.com/users/crodas/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/crodas/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/crodas/subscriptions",
+      "organizations_url": "https://api.github.com/users/crodas/orgs",
+      "repos_url": "https://api.github.com/users/crodas/repos",
+      "events_url": "https://api.github.com/users/crodas/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/crodas/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "128e68d42c94c54a5b6bdcef182258f14cfe5dba",
+        "url": "https://api.github.com/repos/cashubtc/cdk/commits/128e68d42c94c54a5b6bdcef182258f14cfe5dba",
+        "html_url": "https://github.com/cashubtc/cdk/commit/128e68d42c94c54a5b6bdcef182258f14cfe5dba"
+      }
+    ]
+  },
+  {
+    "sha": "128e68d42c94c54a5b6bdcef182258f14cfe5dba",
+    "node_id": "C_kwDOJbajnNoAKDEyOGU2OGQ0MmM5NGM1NGE1YjZiZGNlZjE4MjI1OGYxNGNmZTVkYmE",
+    "commit": {
+      "author": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-04-01T13:51:33Z"
+      },
+      "committer": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-12T02:15:36Z"
+      },
+      "message": "fix: replace blocking Condvar pool with async Semaphore\n\nThe SQLite connection pool used std::sync::Condvar to wait for free connections, which blocks the OS thread.\nUnder the default pool size of 1, concurrent requests can block all Tokio worker threads, deadlocking the runtime\nthe task holding the connection can never be scheduled to release it.\nReplace with tokio::sync::Semaphore so waiters yield to the async runtime instead of blocking.",
+      "tree": {
+        "sha": "33ef40660d9709bda4221e8965fe0a92e765d9b9",
+        "url": "https://api.github.com/repos/cashubtc/cdk/git/trees/33ef40660d9709bda4221e8965fe0a92e765d9b9"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk/git/commits/128e68d42c94c54a5b6bdcef182258f14cfe5dba",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQT7FBefWxISmS43iYljrW0Ju/53gwUCagKNSAAKCRBjrW0Ju/53\ng18tAPkB3b5OR6drtZhi8m6K2YR/a3E4zfGisA5ZjS259ve4CwD/XdtKYyOSmGam\nmGBCBEhdQZRZEjPkSUbnIjHUUg3iUwI=\n=F1cK\n-----END PGP SIGNATURE-----",
+        "payload": "tree 33ef40660d9709bda4221e8965fe0a92e765d9b9\nparent 586daed16075e8c42b21f0b7711df11bb147ea05\nauthor thesimplekid <tsk@thesimplekid.com> 1775051493 +0100\ncommitter thesimplekid <tsk@thesimplekid.com> 1778552136 -0400\nchange-id olwxwmqvsyxuyutzzmmulqytqvswqton\n\nfix: replace blocking Condvar pool with async Semaphore\n\nThe SQLite connection pool used std::sync::Condvar to wait for free connections, which blocks the OS thread.\nUnder the default pool size of 1, concurrent requests can block all Tokio worker threads, deadlocking the runtime\nthe task holding the connection can never be scheduled to release it.\nReplace with tokio::sync::Semaphore so waiters yield to the async runtime instead of blocking.\n",
+        "verified_at": "2026-05-12T02:15:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk/commits/128e68d42c94c54a5b6bdcef182258f14cfe5dba",
+    "html_url": "https://github.com/cashubtc/cdk/commit/128e68d42c94c54a5b6bdcef182258f14cfe5dba",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk/commits/128e68d42c94c54a5b6bdcef182258f14cfe5dba/comments",
+    "author": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "586daed16075e8c42b21f0b7711df11bb147ea05",
+        "url": "https://api.github.com/repos/cashubtc/cdk/commits/586daed16075e8c42b21f0b7711df11bb147ea05",
+        "html_url": "https://github.com/cashubtc/cdk/commit/586daed16075e8c42b21f0b7711df11bb147ea05"
+      }
+    ]
+  }
+]

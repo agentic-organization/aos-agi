@@ -25,6 +25,8 @@ Two active deployments share the lineage:
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
 
+- 2026-05-12: `data/raw/github/daily/2026-05-12/cashubtc/cashu-redeem/` captured **2 commits** in the 24h window. Themes: CI pipeline addition (GitHub Actions workflow). Committers: `asmogo`.
+
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
 - Which Cashu library (cashu-ts, CDK, Nutshell, etc.) it builds on.

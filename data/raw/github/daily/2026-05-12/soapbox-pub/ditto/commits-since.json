@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "0022b86299bce8a4ba288dbc6beee2a85989c524",
+    "node_id": "C_kwDOL5Eek9oAKDAwMjJiODYyOTliY2U4YTRiYTI4OGRiYzZiZWVlMmE4NTk4OWM1MjQ",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-12T04:17:22Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-12T04:19:33Z"
+      },
+      "message": "Truncate the version-update toast excerpt to 60 characters\n\nThe release-summary paragraph (max 500 chars by convention) skipped the\ntruncation that the legacy first-bullet fallback applied, so toasts could\nrender an entire paragraph. Truncate both branches uniformly on a word\nboundary with an ellipsis, matching the prior 60-character cap.\n\nRegression-of: d044218c",
+      "tree": {
+        "sha": "eb40dec9b799ca64396762c6de3adeaa5fdc4152",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/eb40dec9b799ca64396762c6de3adeaa5fdc4152"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/0022b86299bce8a4ba288dbc6beee2a85989c524",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoCqlUACgkQchHR+ZdE\n+7czeRAAjEfpaKxIZlCHX2acdQgZ4pL4ibMFLqhbEsgHjKKNUjstChSAkqzfaD+V\n5KL8Fl7jznCwVeOZ4tgI7YAmZy/e0oTcKWbpROmSTSnqm8NKK2V6lYq/AC5N+ySS\nmWcu+8+EnKC8cIxdb3lOR71sQpPYwcYNJ0cYcVuRe9AXoA6EJXojNQOcd7aD5yAZ\n6GJoNrWo5TYnzDacmjGe9zXUh0uE0rD73NtcUtVwqFcU11H/egO1GDjpYbR1ZsqQ\nNOl8M9wzpM3GiBX2DG/5tRx5PLD694vZpoldjwRCdKckf/Ys+BLJ/nU0XjY31IJr\nfP7/UiB6a5n59uXleoazBoB8dqXObbaCypSgKbQjLGnVOsbbtcuoqE0P2n4Wfi7+\nJ2CZtx0IzmSJTeaZ/AiqmBvFo2SNe/vjoTpcYX6pTvB71o6wEWaGp3P2L8+Q2JKO\ngjKHYPyYszljqsbFa6pC8+hdzd+39ByfAgh+ITAhG/K2U1WXamVVIIximLjM3CYM\n/uDeQ/NVvAu+cEfovdvQmyA+Ik3ADUeyRlxj2Kn6oCo/36ZXhYhlm/xPOs3PFElx\ncQK1PmPZ38SNFyCbQEnIUf8nZBmfBqtm85NkT0cSDE1ae3lrvSf+pyYHtcUHfFrI\neddlFzCJS5s7Z3dXmGCEm95FcqDE3cqEWXPOHDfD8BHokKv0W8o=\n=yoZL\n-----END PGP SIGNATURE-----",
+        "payload": "tree eb40dec9b799ca64396762c6de3adeaa5fdc4152\nparent abc37151ad383c43530180837ccfd63875fff976\nauthor Alex Gleason <alex@alexgleason.me> 1778559442 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778559573 -0500\n\nTruncate the version-update toast excerpt to 60 characters\n\nThe release-summary paragraph (max 500 chars by convention) skipped the\ntruncation that the legacy first-bullet fallback applied, so toasts could\nrender an entire paragraph. Truncate both branches uniformly on a word\nboundary with an ellipsis, matching the prior 60-character cap.\n\nRegression-of: d044218c\n",
+        "verified_at": "2026-05-12T04:21:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0022b86299bce8a4ba288dbc6beee2a85989c524",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/0022b86299bce8a4ba288dbc6beee2a85989c524",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0022b86299bce8a4ba288dbc6beee2a85989c524/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "abc37151ad383c43530180837ccfd63875fff976",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/abc37151ad383c43530180837ccfd63875fff976",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/abc37151ad383c43530180837ccfd63875fff976"
+      }
+    ]
+  },
+  {
+    "sha": "abc37151ad383c43530180837ccfd63875fff976",
+    "node_id": "C_kwDOL5Eek9oAKGFiYzM3MTUxYWQzODNjNDM1MzAxODA4MzdjY2ZkNjM4NzVmZmY5NzY",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-12T04:04:13Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-12T04:04:13Z"
+      },
+      "message": "Fetch BTC price from mempool.space instead of CoinGecko\n\nConsolidates Bitcoin-related HTTP onto a single host — the rest of the\nwallet already uses mempool.space for addresses, txs, UTXOs, fees, and\nbroadcast — so dropping the CoinGecko dependency removes one external\nservice from the connect-src surface and simplifies CSP / privacy review.\n\nmempool.space's /api/v1/prices returns USD (and several other fiat\ncurrencies) at the same shape we need, so fetchBtcPrice keeps its\n`Promise<number>` signature and every caller continues to read from\nthe same React Query cache key.",
+      "tree": {
+        "sha": "8644a32ec3ed9879bf83cd351e3de4fa4f8e887d",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/8644a32ec3ed9879bf83cd351e3de4fa4f8e887d"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/abc37151ad383c43530180837ccfd63875fff976",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoCpr0ACgkQchHR+ZdE\n+7d56w/+O8fVlTTbLiiFCe48Fj5IGiNzBn4X3LG3TBRRwWAZcnSo2LpOMonhR90k\nHzSD1RNIMcGBim1dwaxc58uuFTmMJOYhliyPAVblfPp7V00KsdoWsdoRs4LeAqpJ\nKm+Bqt3fAxbnW7QeRccRTU4u1eUFBdycvB/+vddP0yZj1mV766e6c0ldSzKUJrB+\noAcwzLOmebwMCjWhVIHh+NzDgqLlWqVYYW0Ft96hTDL8XjkUc8qiV0gr0T9RqQOg\nW91Zaj8E/zmvV2bUtgfCk8tYnIvFYoD7WUtPxNBVCC5aG4ulxGsTTSFq8MnWg77U\n0UJeO2yMpC4+hQ5KR2GAWm9QWf8lvzKjLqQ00BjlG4teiM6+/L2Hyibp2IBSQ14M\n8l0hrdXUTK4W481aeVcfeQqOdsxsEkfEZ2RmdpFYZ8OET2fgxXJtaFjVdi8s2Yqm\nrQP5iG3RjnC9KcLx/AvUoeegN99PQe0Thknuo3SdtPZqbz1dkgy0VHjN5dw/5KvE\nmQAjJlsOWxag8HbqxgbLPZwjzQSRCZmhekvP4mQqEWVWmujLCvJri7aZHYk/kxtc\nDhO1JicAeGtv+R1zTsRaIFMOxOLVKyIE7ocyyDVQ5sW6VLxX8qRbxEMhAl0kgrGW\nhLVZBbq2aqzhPB31jPMGcKdkk6+GsxXd/pEORj3jh1SH+jV4SJc=\n=rmsn\n-----END PGP SIGNATURE-----",
+        "payload": "tree 8644a32ec3ed9879bf83cd351e3de4fa4f8e887d\nparent 814d1909f6ebbde96cd5778bd543a152efcc2a98\nauthor Alex Gleason <alex@alexgleason.me> 1778558653 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778558653 -0500\n\nFetch BTC price from mempool.space instead of CoinGecko\n\nConsolidates Bitcoin-related HTTP onto a single host — the rest of the\nwallet already uses mempool.space for addresses, txs, UTXOs, fees, and\nbroadcast — so dropping the CoinGecko dependency removes one external\nservice from the connect-src surface and simplifies CSP / privacy review.\n\nmempool.space's /api/v1/prices returns USD (and several other fiat\ncurrencies) at the same shape we need, so fetchBtcPrice keeps its\n`Promise<number>` signature and every caller continues to read from\nthe same React Query cache key.\n",
+        "verified_at": "2026-05-12T04:06:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/abc37151ad383c43530180837ccfd63875fff976",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/abc37151ad383c43530180837ccfd63875fff976",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/abc37151ad383c43530180837ccfd63875fff976/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "814d1909f6ebbde96cd5778bd543a152efcc2a98",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/814d1909f6ebbde96cd5778bd543a152efcc2a98",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/814d1909f6ebbde96cd5778bd543a152efcc2a98"
+      }
+    ]
+  }
+]
