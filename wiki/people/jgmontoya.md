@@ -40,6 +40,8 @@ Observed activity across 7 repos in the [marmot-protocol](https://github.com/mar
 ## History
 - 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`).
 
+- 2026-05-14: Daily ingestion (`data/raw/github/daily/2026-05-14/marmot-protocol/whitenoise-rs/`) captured **1 commit** by [[people/jgmontoya]] in the 24h window: database write-lock contention fix via batching shared-user lookups and unifying retry_on_lock (#831) in [[projects/whitenoise-rs]].
+
 ## Open questions
 - Full name, location, timezone?
 - Formal AOS affiliation (funded, contracted, independent)?

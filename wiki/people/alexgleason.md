@@ -34,6 +34,8 @@ Effectively the public face of Soapbox: across the 9 surveyed `soapbox-pub` repo
 ## History
 - 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 
+- 2026-05-14: Daily ingestion (`data/raw/github/daily/2026-05-14/soapbox-pub/ditto/`) captured **6 commits** by [[people/alexgleason]] in the 24h window (GitHub mirror). Themes: zap amounts displayed as USD by default with unified on-chain/Lightning icon, reaction and zap overlays consistently across all feeds, feed toggles for reactions and zaps, zap amounts in notifications linked to underlying events, Mute All dropdown next to Follow All buttons in [[projects/ditto]].
+
 ## Open questions
 - Formal AOS affiliation (funded, contracted, independent contributor)?
 - Nostr public key, primary day-to-day communication channel.

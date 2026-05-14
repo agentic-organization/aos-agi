@@ -27,8 +27,13 @@ The White Noise Flutter App
 Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and its reference implementations (including [[projects/white-noise]]).
 
 ## History
-- 2026-05-10: 2026-05-07 → 2026-05-10 daily ingestion (`data/raw/github/daily/2026-05-10/marmot-protocol/whitenoise/`) recorded 5 commits, 13 updated PRs, 22 updated issues, and release **v2026.5.7+24** (published 2026-05-07): finishes block functionality (blocked users hidden from invites/previews/timeline/search/notifications), end-to-end video attachments, app-wide offline notice, **on-disk DB encryption**, and three security fixes pushed into [[projects/mdk]]. Commit-window contributors: [[people/erskingardner]], [[people/pepina-dev]].
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
+
+- 2026-05-10: 2026-05-07 → 2026-05-10 daily ingestion (`data/raw/github/daily/2026-05-10/marmot-protocol/whitenoise/`) recorded 5 commits, 13 updated PRs, 22 updated issues, and release **v2026.5.7+24** (published 2026-05-07): finishes block functionality (blocked users hidden from invites/previews/timeline/search/notifications), end-to-end video attachments, app-wide offline notice, **on-disk DB encryption**, and three security fixes pushed into [[projects/mdk]]. Commit-window contributors: [[people/erskingardner]], [[people/pepina-dev]].
+
+- 2026-05-12: `data/raw/github/daily/2026-05-12/marmot-protocol/whitenoise/` captured **2 commits** in the 24h window. Themes: bug-report screen closes with success snackbar after submission, chat summary loaded via point query so archived chats render correctly. Committers: [[people/pepina-dev]].
+
+- 2026-05-14: `data/raw/github/daily/2026-05-14/marmot-protocol/whitenoise/` captured **2 commits** in the 24h window. Themes: Chinese localizations (#647), adoption of whitenoise-rs arch-refactor with per-account sessions replacing the god object (#649). Committers: stupidloud, Danny M.
 
 ## Related
 - [[projects/whitenoise-rs]] — the shared Rust core used by this Flutter app.

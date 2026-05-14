@@ -75,6 +75,8 @@ Observed activity across 23 repos in the [divinevideo](https://github.com/divine
 ## History
 - 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`).
 
+- 2026-05-14: Daily ingestion (`data/raw/github/daily/2026-05-14/divinevideo/divine-mobile/`) captured **16 commits** by [[people/rabble]] in the 24h window. Themes: mentions resolution across surfaces (#4353), For You feed routing through recommendations (#4309), plus additional UI and routing refinements in [[projects/divine-mobile]].
+
 ## Open questions
 - Full name, location, timezone?
 - Formal AOS affiliation (funded, contracted, independent)?

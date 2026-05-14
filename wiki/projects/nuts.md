@@ -22,6 +22,8 @@ Key NUTs include the mandatory primitives (minting, melting via Lightning, BDHKE
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
 
+- 2026-05-14: `data/raw/github/daily/2026-05-14/cashubtc/nuts/` captured **2 commits** in the 24h window. Themes: new error code 12003 for expired keysets, NUT-29 error codes for duplicate quote IDs. Committers: gudnuf, kvngmikey.
+
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
 - Which Cashu library (cashu-ts, CDK, Nutshell, etc.) it builds on.
