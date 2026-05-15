@@ -1,0 +1,2337 @@
+[
+  {
+    "id": "9371140232",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 4014186,
+      "login": "sashailinsky",
+      "display_login": "sashailinsky",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sashailinsky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4014186?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-12T15:46:30Z"
+  },
+  {
+    "id": "9160257160",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 69768251,
+      "login": "systemsoftware",
+      "display_login": "systemsoftware",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/systemsoftware",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69768251?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-06T19:20:36Z"
+  },
+  {
+    "id": "9073027020",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 57543709,
+      "login": "eureka-cpu",
+      "display_login": "eureka-cpu",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/eureka-cpu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57543709?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-04T19:16:00Z"
+  },
+  {
+    "id": "9005125821",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 89645414,
+      "login": "kehiy",
+      "display_login": "kehiy",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kehiy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89645414?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/58",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/events",
+        "html_url": "https://github.com/hzrd149/blossom/pull/58",
+        "id": 2825292029,
+        "node_id": "PR_kwDOLVb1Ds6JvHNh",
+        "number": 58,
+        "title": "bud-12: media servers information document.",
+        "user": {
+          "login": "kehiy",
+          "id": 89645414,
+          "node_id": "MDQ6VXNlcjg5NjQ1NDE0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/89645414?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kehiy",
+          "html_url": "https://github.com/kehiy",
+          "followers_url": "https://api.github.com/users/kehiy/followers",
+          "following_url": "https://api.github.com/users/kehiy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/kehiy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/kehiy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/kehiy/subscriptions",
+          "organizations_url": "https://api.github.com/users/kehiy/orgs",
+          "repos_url": "https://api.github.com/users/kehiy/repos",
+          "events_url": "https://api.github.com/users/kehiy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/kehiy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 49,
+        "created_at": "2025-02-01T16:12:42Z",
+        "updated_at": "2026-05-01T19:32:33Z",
+        "closed_at": "2026-05-01T14:10:55Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/pulls/58",
+          "html_url": "https://github.com/hzrd149/blossom/pull/58",
+          "diff_url": "https://github.com/hzrd149/blossom/pull/58.diff",
+          "patch_url": "https://github.com/hzrd149/blossom/pull/58.patch",
+          "merged_at": null
+        },
+        "body": "as we know currently we have more clients relaying on blobs and users/clients need to interact with blossom servers more. this bud is similar to nip-11 and help users and clients to understand media servers behavior.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/58/reactions",
+          "total_count": 2,
+          "+1": 2,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4361223528",
+        "html_url": "https://github.com/hzrd149/blossom/pull/58#issuecomment-4361223528",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/58",
+        "id": 4361223528,
+        "node_id": "IC_kwDOLVb1Ds8AAAABA_L9aA",
+        "user": {
+          "login": "kehiy",
+          "id": 89645414,
+          "node_id": "MDQ6VXNlcjg5NjQ1NDE0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/89645414?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kehiy",
+          "html_url": "https://github.com/kehiy",
+          "followers_url": "https://api.github.com/users/kehiy/followers",
+          "following_url": "https://api.github.com/users/kehiy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/kehiy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/kehiy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/kehiy/subscriptions",
+          "organizations_url": "https://api.github.com/users/kehiy/orgs",
+          "repos_url": "https://api.github.com/users/kehiy/repos",
+          "events_url": "https://api.github.com/users/kehiy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/kehiy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-01T19:32:33Z",
+        "updated_at": "2026-05-01T19:32:33Z",
+        "body": "@hzrd149 if you need it for UI, a simple homepage can do the job. 🧐",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4361223528/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T19:32:33Z"
+  },
+  {
+    "id": "9002903998",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/58",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/events",
+        "html_url": "https://github.com/hzrd149/blossom/pull/58",
+        "id": 2825292029,
+        "node_id": "PR_kwDOLVb1Ds6JvHNh",
+        "number": 58,
+        "title": "bud-12: media servers information document.",
+        "user": {
+          "login": "kehiy",
+          "id": 89645414,
+          "node_id": "MDQ6VXNlcjg5NjQ1NDE0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/89645414?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kehiy",
+          "html_url": "https://github.com/kehiy",
+          "followers_url": "https://api.github.com/users/kehiy/followers",
+          "following_url": "https://api.github.com/users/kehiy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/kehiy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/kehiy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/kehiy/subscriptions",
+          "organizations_url": "https://api.github.com/users/kehiy/orgs",
+          "repos_url": "https://api.github.com/users/kehiy/repos",
+          "events_url": "https://api.github.com/users/kehiy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/kehiy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 49,
+        "created_at": "2025-02-01T16:12:42Z",
+        "updated_at": "2026-05-01T19:32:33Z",
+        "closed_at": "2026-05-01T14:10:55Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/pulls/58",
+          "html_url": "https://github.com/hzrd149/blossom/pull/58",
+          "diff_url": "https://github.com/hzrd149/blossom/pull/58.diff",
+          "patch_url": "https://github.com/hzrd149/blossom/pull/58.patch",
+          "merged_at": null
+        },
+        "body": "as we know currently we have more clients relaying on blobs and users/clients need to interact with blossom servers more. this bud is similar to nip-11 and help users and clients to understand media servers behavior.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/58/reactions",
+          "total_count": 2,
+          "+1": 2,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4360827216",
+        "html_url": "https://github.com/hzrd149/blossom/pull/58#issuecomment-4360827216",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/58",
+        "id": 4360827216,
+        "node_id": "IC_kwDOLVb1Ds8AAAABA-zxUA",
+        "user": {
+          "login": "hzrd149",
+          "id": 8001706,
+          "node_id": "MDQ6VXNlcjgwMDE3MDY=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8001706?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/hzrd149",
+          "html_url": "https://github.com/hzrd149",
+          "followers_url": "https://api.github.com/users/hzrd149/followers",
+          "following_url": "https://api.github.com/users/hzrd149/following{/other_user}",
+          "gists_url": "https://api.github.com/users/hzrd149/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/hzrd149/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/hzrd149/subscriptions",
+          "organizations_url": "https://api.github.com/users/hzrd149/orgs",
+          "repos_url": "https://api.github.com/users/hzrd149/repos",
+          "events_url": "https://api.github.com/users/hzrd149/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/hzrd149/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-01T18:05:48Z",
+        "updated_at": "2026-05-01T18:05:48Z",
+        "body": "@quentintaranpino The HEAD requests cover all the specific questions a client might have about a blossom server and a specific blob. however I still have a feeling something is missing to describe the general way a server behaves or at least what mime type it accepts\r\n\r\nFor example there is nothing in the spec currently that lets servers advertise the information that is on my servers [homepage](https://cdn.hzrd149.com/)\r\n<img width=\"772\" height=\"748\" alt=\"image\" src=\"https://github.com/user-attachments/assets/ff0af324-758b-4ca4-a97f-de7eee97b870\" />\r\n\r\n\r\nThese aren't strict rules since my server may reject any upload ( or download ) for any reason. blob deleted, reported, to large, etc. but having the general guidance may be useful.\r\nIts clearly useful in UI form for the user to see, but I'm unsure of how to express through the spec ( maybe endpoint ) without opening up for the possibility of additional fields that start to break interoperability",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4360827216/reactions",
+          "total_count": 1,
+          "+1": 1,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T18:05:48Z"
+  },
+  {
+    "id": "11299391457",
+    "type": "PushEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "repository_id": 760673550,
+      "push_id": 33590784638,
+      "ref": "refs/heads/simpler-put",
+      "head": "ef8859e7631a481ffc1d7737a9679ed8981ab41a",
+      "before": "2259b7399c820fef677450ce16a7301cc250975f"
+    },
+    "public": true,
+    "created_at": "2026-05-01T16:16:41Z"
+  },
+  {
+    "id": "8996521557",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 89645414,
+      "login": "kehiy",
+      "display_login": "kehiy",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kehiy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89645414?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/58",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/events",
+        "html_url": "https://github.com/hzrd149/blossom/pull/58",
+        "id": 2825292029,
+        "node_id": "PR_kwDOLVb1Ds6JvHNh",
+        "number": 58,
+        "title": "bud-12: media servers information document.",
+        "user": {
+          "login": "kehiy",
+          "id": 89645414,
+          "node_id": "MDQ6VXNlcjg5NjQ1NDE0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/89645414?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kehiy",
+          "html_url": "https://github.com/kehiy",
+          "followers_url": "https://api.github.com/users/kehiy/followers",
+          "following_url": "https://api.github.com/users/kehiy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/kehiy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/kehiy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/kehiy/subscriptions",
+          "organizations_url": "https://api.github.com/users/kehiy/orgs",
+          "repos_url": "https://api.github.com/users/kehiy/repos",
+          "events_url": "https://api.github.com/users/kehiy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/kehiy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 49,
+        "created_at": "2025-02-01T16:12:42Z",
+        "updated_at": "2026-05-01T19:32:33Z",
+        "closed_at": "2026-05-01T14:10:55Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/pulls/58",
+          "html_url": "https://github.com/hzrd149/blossom/pull/58",
+          "diff_url": "https://github.com/hzrd149/blossom/pull/58.diff",
+          "patch_url": "https://github.com/hzrd149/blossom/pull/58.patch",
+          "merged_at": null
+        },
+        "body": "as we know currently we have more clients relaying on blobs and users/clients need to interact with blossom servers more. this bud is similar to nip-11 and help users and clients to understand media servers behavior.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/58/reactions",
+          "total_count": 2,
+          "+1": 2,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4359684705",
+        "html_url": "https://github.com/hzrd149/blossom/pull/58#issuecomment-4359684705",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/58",
+        "id": 4359684705,
+        "node_id": "IC_kwDOLVb1Ds8AAAABA9uCYQ",
+        "user": {
+          "login": "kehiy",
+          "id": 89645414,
+          "node_id": "MDQ6VXNlcjg5NjQ1NDE0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/89645414?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kehiy",
+          "html_url": "https://github.com/kehiy",
+          "followers_url": "https://api.github.com/users/kehiy/followers",
+          "following_url": "https://api.github.com/users/kehiy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/kehiy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/kehiy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/kehiy/subscriptions",
+          "organizations_url": "https://api.github.com/users/kehiy/orgs",
+          "repos_url": "https://api.github.com/users/kehiy/repos",
+          "events_url": "https://api.github.com/users/kehiy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/kehiy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-01T14:10:55Z",
+        "updated_at": "2026-05-01T14:10:55Z",
+        "body": "Make's sense.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4359684705/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T14:10:55Z"
+  },
+  {
+    "id": "8996520881",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 89645414,
+      "login": "kehiy",
+      "display_login": "kehiy",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kehiy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89645414?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 58,
+      "pull_request": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/pulls/58",
+        "id": 2310828897,
+        "number": 58,
+        "head": {
+          "ref": "bud-information",
+          "sha": "a18cad1f680e166e6c2084b14c69419b08f44c8c",
+          "repo": {
+            "id": 910919239,
+            "url": "https://api.github.com/repos/kehiy/blossom",
+            "name": "blossom"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "385913adef85ba17f9e5a5e7bf8f2660b78330b6",
+          "repo": {
+            "id": 760673550,
+            "url": "https://api.github.com/repos/hzrd149/blossom",
+            "name": "blossom"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T06:33:24Z"
+  },
+  {
+    "id": "8990285865",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 6727442,
+      "login": "Coro365",
+      "display_login": "Coro365",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Coro365",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6727442?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-01T09:06:00Z"
+  },
+  {
+    "id": "8987640935",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 125748180,
+      "login": "quentintaranpino",
+      "display_login": "quentintaranpino",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/quentintaranpino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/125748180?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/58",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/events",
+        "html_url": "https://github.com/hzrd149/blossom/pull/58",
+        "id": 2825292029,
+        "node_id": "PR_kwDOLVb1Ds6JvHNh",
+        "number": 58,
+        "title": "bud-12: media servers information document.",
+        "user": {
+          "login": "kehiy",
+          "id": 89645414,
+          "node_id": "MDQ6VXNlcjg5NjQ1NDE0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/89645414?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kehiy",
+          "html_url": "https://github.com/kehiy",
+          "followers_url": "https://api.github.com/users/kehiy/followers",
+          "following_url": "https://api.github.com/users/kehiy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/kehiy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/kehiy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/kehiy/subscriptions",
+          "organizations_url": "https://api.github.com/users/kehiy/orgs",
+          "repos_url": "https://api.github.com/users/kehiy/repos",
+          "events_url": "https://api.github.com/users/kehiy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/kehiy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 49,
+        "created_at": "2025-02-01T16:12:42Z",
+        "updated_at": "2026-05-01T19:32:33Z",
+        "closed_at": "2026-05-01T14:10:55Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/pulls/58",
+          "html_url": "https://github.com/hzrd149/blossom/pull/58",
+          "diff_url": "https://github.com/hzrd149/blossom/pull/58.diff",
+          "patch_url": "https://github.com/hzrd149/blossom/pull/58.patch",
+          "merged_at": null
+        },
+        "body": "as we know currently we have more clients relaying on blobs and users/clients need to interact with blossom servers more. this bud is similar to nip-11 and help users and clients to understand media servers behavior.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/58/reactions",
+          "total_count": 2,
+          "+1": 2,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/58/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4358166064",
+        "html_url": "https://github.com/hzrd149/blossom/pull/58#issuecomment-4358166064",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/58",
+        "id": 4358166064,
+        "node_id": "IC_kwDOLVb1Ds8AAAABA8RWMA",
+        "user": {
+          "login": "quentintaranpino",
+          "id": 125748180,
+          "node_id": "U_kgDOB37D1A",
+          "avatar_url": "https://avatars.githubusercontent.com/u/125748180?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/quentintaranpino",
+          "html_url": "https://github.com/quentintaranpino",
+          "followers_url": "https://api.github.com/users/quentintaranpino/followers",
+          "following_url": "https://api.github.com/users/quentintaranpino/following{/other_user}",
+          "gists_url": "https://api.github.com/users/quentintaranpino/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/quentintaranpino/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/quentintaranpino/subscriptions",
+          "organizations_url": "https://api.github.com/users/quentintaranpino/orgs",
+          "repos_url": "https://api.github.com/users/quentintaranpino/repos",
+          "events_url": "https://api.github.com/users/quentintaranpino/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/quentintaranpino/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-01T06:33:24Z",
+        "updated_at": "2026-05-01T06:33:24Z",
+        "body": "Hello. \r\n\r\nEvery use case in this thread already has a cheaper primitive. Per-endpoint auth is detectable with HEAD + status, mime/size with a probe upload, the operator pubkey is solvable with a domain→pubkey mapping along the lines of NIP-05, and policy/contact info lives just fine on the HTML homepage the server is already serving anyway. \r\n\r\nAs for discovery, that's an O(N) problem and it's better solved by an external directory than by N unverifiable self-descriptions. The BUD doesn't close any real gap, in fact, it duplicates channels that already exist.\r\n\r\nThe cost, in my opinion, is permanent. Once the endpoint is part of the spec, every conforming client inherits questions that didn't exist before. For examble fetch ordering relative to the first upload, cache TTL, behavior on 4xx/5xx/timeout, etc. These specs don't get un-merged, and the surface that grows on top of them constrains every subsequent BUD.\r\n\r\nAs for precedents (NIP-11 and NUT-06) both ended up exactly where @hzrd149 already pointed out. And someone in this thread has already said they want to extend the document with non-standard fields 🤣. Add to that the impersonation issue @fiatjaf raised (a self-declared name is strictly weaker than the domain Blossom already inherits for free), and the balance doesn't add up. My opinion, **close it.** ",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4358166064/reactions",
+          "total_count": 1,
+          "+1": 1,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T06:33:24Z"
+  },
+  {
+    "id": "8986937099",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 1172179,
+      "login": "v0l",
+      "display_login": "v0l",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/v0l",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1172179?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 103,
+      "pull_request": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/pulls/103",
+        "id": 3607541943,
+        "number": 103,
+        "head": {
+          "ref": "compliance-test",
+          "sha": "a15096bd226e01f7177c96a629b22d6d9927e0c7",
+          "repo": {
+            "id": 862870417,
+            "url": "https://api.github.com/repos/v0l/blossom",
+            "name": "blossom"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "ef3c79e40d38cee6cdc974056ae86a582e708197",
+          "repo": {
+            "id": 760673550,
+            "url": "https://api.github.com/repos/hzrd149/blossom",
+            "name": "blossom"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T05:48:39Z"
+  },
+  {
+    "id": "8986936714",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 1172179,
+      "login": "v0l",
+      "display_login": "v0l",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/v0l",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1172179?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/103",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/103/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/103/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/103/events",
+        "html_url": "https://github.com/hzrd149/blossom/pull/103",
+        "id": 4356669494,
+        "node_id": "PR_kwDOLVb1Ds7XBri3",
+        "number": 103,
+        "title": "Add Blossom server compliance test suite",
+        "user": {
+          "login": "v0l",
+          "id": 1172179,
+          "node_id": "MDQ6VXNlcjExNzIxNzk=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1172179?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/v0l",
+          "html_url": "https://github.com/v0l",
+          "followers_url": "https://api.github.com/users/v0l/followers",
+          "following_url": "https://api.github.com/users/v0l/following{/other_user}",
+          "gists_url": "https://api.github.com/users/v0l/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/v0l/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/v0l/subscriptions",
+          "organizations_url": "https://api.github.com/users/v0l/orgs",
+          "repos_url": "https://api.github.com/users/v0l/repos",
+          "events_url": "https://api.github.com/users/v0l/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/v0l/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-30T08:47:03Z",
+        "updated_at": "2026-05-01T05:48:42Z",
+        "closed_at": "2026-05-01T05:48:42Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/pulls/103",
+          "html_url": "https://github.com/hzrd149/blossom/pull/103",
+          "diff_url": "https://github.com/hzrd149/blossom/pull/103.diff",
+          "patch_url": "https://github.com/hzrd149/blossom/pull/103.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\n\n- Adds a comprehensive compliance test suite covering **BUD-00 through BUD-12**, validating Blossom server implementations against the BUD specifications\n- Each BUD has its own test module (`bud-XX.test.ts`) with both mandatory and optional behavior checks\n- Includes an HTML + JSON report generator (`report.ts`) with per-server and per-BUD breakdowns\n\n## What's included\n\n**Test modules** (`bud-00.test.ts` – `bud-12.test.ts`):\n- BUD-00: Server reachability\n- BUD-01: Server requirements (CORS, error responses, blob retrieval, HEAD, range requests)\n- BUD-02: Blob upload (PUT /upload, descriptors, X-SHA-256, duplicate handling)\n- BUD-03: Skipped (client-side only, no server endpoints)\n- BUD-04: Blob mirror (PUT /mirror, descriptor validation, error cases)\n- BUD-05: Blob delete (DELETE /<sha256>, authorization)\n- BUD-06: Blob upload (media) (PUT /media)\n- BUD-07: Blob list (GET /list/<pubkey>)\n- BUD-08: Blob TTL (upload with expiry)\n- BUD-09: Blob report (PUT /report with kind:1984 events)\n- BUD-10: Skipped (client-side only)\n- BUD-11: Auth tokens (kind:24242, header validation)\n- BUD-12: Identical blob deduplication\n\n**Helpers** (`helpers/`):\n- `http.ts` — HTTP request wrapper with auto-retry on 401 (detects auth-required servers)\n- `nostr.ts` — Key pair generation, kind:24242 auth event building, base64url encoding\n- `crypto.ts` — SHA-256 hashing, random bytes/blobs\n- `assert.ts` — Assertion framework with pass/fail/warn/skip states\n- `cleanup.ts` — Tracks and deletes uploaded blobs after each test run\n- `test-blob.ts` — Generates unique PNG test images with Blossom branding\n- `config.ts` — Server URL configuration via `BLOSSOM_SERVER_URL` env var\n\n**Report generator** (`report.ts`):\n- Runs all BUD tests against one or multiple servers\n- Outputs `results.json` and styled `index.html` with pass/fail/warn breakdowns\n\n## Usage\n\n```bash\ncd compliance-test\nbun install\n\n# Test a single server\nBLOSSOM_SERVER_URL=https://your-server.com bun run report.ts\n\n# Or import individual test modules\nBLOSSOM_SERVER_URL=https://your-server.com bun test\n```",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/103/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/103/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4358037321",
+        "html_url": "https://github.com/hzrd149/blossom/pull/103#issuecomment-4358037321",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/103",
+        "id": 4358037321,
+        "node_id": "IC_kwDOLVb1Ds8AAAABA8JfSQ",
+        "user": {
+          "login": "v0l",
+          "id": 1172179,
+          "node_id": "MDQ6VXNlcjExNzIxNzk=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1172179?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/v0l",
+          "html_url": "https://github.com/v0l",
+          "followers_url": "https://api.github.com/users/v0l/followers",
+          "following_url": "https://api.github.com/users/v0l/following{/other_user}",
+          "gists_url": "https://api.github.com/users/v0l/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/v0l/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/v0l/subscriptions",
+          "organizations_url": "https://api.github.com/users/v0l/orgs",
+          "repos_url": "https://api.github.com/users/v0l/repos",
+          "events_url": "https://api.github.com/users/v0l/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/v0l/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-01T05:48:39Z",
+        "updated_at": "2026-05-01T05:48:39Z",
+        "body": "Ok moved here: https://github.com/v0l/blossom-compliance",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4358037321/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T05:48:39Z"
+  },
+  {
+    "id": "8976715905",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/103",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/103/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/103/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/103/events",
+        "html_url": "https://github.com/hzrd149/blossom/pull/103",
+        "id": 4356669494,
+        "node_id": "PR_kwDOLVb1Ds7XBri3",
+        "number": 103,
+        "title": "Add Blossom server compliance test suite",
+        "user": {
+          "login": "v0l",
+          "id": 1172179,
+          "node_id": "MDQ6VXNlcjExNzIxNzk=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1172179?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/v0l",
+          "html_url": "https://github.com/v0l",
+          "followers_url": "https://api.github.com/users/v0l/followers",
+          "following_url": "https://api.github.com/users/v0l/following{/other_user}",
+          "gists_url": "https://api.github.com/users/v0l/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/v0l/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/v0l/subscriptions",
+          "organizations_url": "https://api.github.com/users/v0l/orgs",
+          "repos_url": "https://api.github.com/users/v0l/repos",
+          "events_url": "https://api.github.com/users/v0l/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/v0l/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-30T08:47:03Z",
+        "updated_at": "2026-05-01T05:48:42Z",
+        "closed_at": "2026-05-01T05:48:42Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/pulls/103",
+          "html_url": "https://github.com/hzrd149/blossom/pull/103",
+          "diff_url": "https://github.com/hzrd149/blossom/pull/103.diff",
+          "patch_url": "https://github.com/hzrd149/blossom/pull/103.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\n\n- Adds a comprehensive compliance test suite covering **BUD-00 through BUD-12**, validating Blossom server implementations against the BUD specifications\n- Each BUD has its own test module (`bud-XX.test.ts`) with both mandatory and optional behavior checks\n- Includes an HTML + JSON report generator (`report.ts`) with per-server and per-BUD breakdowns\n\n## What's included\n\n**Test modules** (`bud-00.test.ts` – `bud-12.test.ts`):\n- BUD-00: Server reachability\n- BUD-01: Server requirements (CORS, error responses, blob retrieval, HEAD, range requests)\n- BUD-02: Blob upload (PUT /upload, descriptors, X-SHA-256, duplicate handling)\n- BUD-03: Skipped (client-side only, no server endpoints)\n- BUD-04: Blob mirror (PUT /mirror, descriptor validation, error cases)\n- BUD-05: Blob delete (DELETE /<sha256>, authorization)\n- BUD-06: Blob upload (media) (PUT /media)\n- BUD-07: Blob list (GET /list/<pubkey>)\n- BUD-08: Blob TTL (upload with expiry)\n- BUD-09: Blob report (PUT /report with kind:1984 events)\n- BUD-10: Skipped (client-side only)\n- BUD-11: Auth tokens (kind:24242, header validation)\n- BUD-12: Identical blob deduplication\n\n**Helpers** (`helpers/`):\n- `http.ts` — HTTP request wrapper with auto-retry on 401 (detects auth-required servers)\n- `nostr.ts` — Key pair generation, kind:24242 auth event building, base64url encoding\n- `crypto.ts` — SHA-256 hashing, random bytes/blobs\n- `assert.ts` — Assertion framework with pass/fail/warn/skip states\n- `cleanup.ts` — Tracks and deletes uploaded blobs after each test run\n- `test-blob.ts` — Generates unique PNG test images with Blossom branding\n- `config.ts` — Server URL configuration via `BLOSSOM_SERVER_URL` env var\n\n**Report generator** (`report.ts`):\n- Runs all BUD tests against one or multiple servers\n- Outputs `results.json` and styled `index.html` with pass/fail/warn breakdowns\n\n## Usage\n\n```bash\ncd compliance-test\nbun install\n\n# Test a single server\nBLOSSOM_SERVER_URL=https://your-server.com bun run report.ts\n\n# Or import individual test modules\nBLOSSOM_SERVER_URL=https://your-server.com bun test\n```",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/103/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/103/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4356110018",
+        "html_url": "https://github.com/hzrd149/blossom/pull/103#issuecomment-4356110018",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/103",
+        "id": 4356110018,
+        "node_id": "IC_kwDOLVb1Ds8AAAABA6T2wg",
+        "user": {
+          "login": "hzrd149",
+          "id": 8001706,
+          "node_id": "MDQ6VXNlcjgwMDE3MDY=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8001706?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/hzrd149",
+          "html_url": "https://github.com/hzrd149",
+          "followers_url": "https://api.github.com/users/hzrd149/followers",
+          "following_url": "https://api.github.com/users/hzrd149/following{/other_user}",
+          "gists_url": "https://api.github.com/users/hzrd149/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/hzrd149/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/hzrd149/subscriptions",
+          "organizations_url": "https://api.github.com/users/hzrd149/orgs",
+          "repos_url": "https://api.github.com/users/hzrd149/repos",
+          "events_url": "https://api.github.com/users/hzrd149/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/hzrd149/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-30T20:58:10Z",
+        "updated_at": "2026-04-30T20:58:10Z",
+        "body": "This is awesome, and very similar to something else I tried ( and failed ) to build https://github.com/hzrd149/blossom-audit\r\n\r\nI think it would be better to put this in its own repo and link to it here or in https://github.com/hzrd149/awesome-blossom as a compliance testing tool",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4356110018/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-30T20:58:10Z"
+  },
+  {
+    "id": "8968922851",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 125748180,
+      "login": "quentintaranpino",
+      "display_login": "quentintaranpino",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/quentintaranpino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/125748180?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/102",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/102/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/102/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/102/events",
+        "html_url": "https://github.com/hzrd149/blossom/pull/102",
+        "id": 4245933160,
+        "node_id": "PR_kwDOLVb1Ds7RtcUo",
+        "number": 102,
+        "title": "Multi part uploads using PATCH /<sha256>",
+        "user": {
+          "login": "hzrd149",
+          "id": 8001706,
+          "node_id": "MDQ6VXNlcjgwMDE3MDY=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8001706?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/hzrd149",
+          "html_url": "https://github.com/hzrd149",
+          "followers_url": "https://api.github.com/users/hzrd149/followers",
+          "following_url": "https://api.github.com/users/hzrd149/following{/other_user}",
+          "gists_url": "https://api.github.com/users/hzrd149/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/hzrd149/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/hzrd149/subscriptions",
+          "organizations_url": "https://api.github.com/users/hzrd149/orgs",
+          "repos_url": "https://api.github.com/users/hzrd149/repos",
+          "events_url": "https://api.github.com/users/hzrd149/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/hzrd149/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-04-11T22:38:45Z",
+        "updated_at": "2026-04-30T17:12:00Z",
+        "closed_at": null,
+        "assignee": null,
+        "active_lock_reason": null,
+        "draft": true,
+        "pull_request": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/pulls/102",
+          "html_url": "https://github.com/hzrd149/blossom/pull/102",
+          "diff_url": "https://github.com/hzrd149/blossom/pull/102.diff",
+          "patch_url": "https://github.com/hzrd149/blossom/pull/102.patch",
+          "merged_at": null
+        },
+        "body": "Another attempt at a multi-part upload endpoint combining #98, #67 and #100\r\n\r\n[Readable version](https://github.com/hzrd149/blossom/blob/multi-part-uploads-2/buds/14.md)",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/102/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/102/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4354557581",
+        "html_url": "https://github.com/hzrd149/blossom/pull/102#issuecomment-4354557581",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/102",
+        "id": 4354557581,
+        "node_id": "IC_kwDOLVb1Ds8AAAABA41GjQ",
+        "user": {
+          "login": "quentintaranpino",
+          "id": 125748180,
+          "node_id": "U_kgDOB37D1A",
+          "avatar_url": "https://avatars.githubusercontent.com/u/125748180?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/quentintaranpino",
+          "html_url": "https://github.com/quentintaranpino",
+          "followers_url": "https://api.github.com/users/quentintaranpino/followers",
+          "following_url": "https://api.github.com/users/quentintaranpino/following{/other_user}",
+          "gists_url": "https://api.github.com/users/quentintaranpino/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/quentintaranpino/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/quentintaranpino/subscriptions",
+          "organizations_url": "https://api.github.com/users/quentintaranpino/orgs",
+          "repos_url": "https://api.github.com/users/quentintaranpino/repos",
+          "events_url": "https://api.github.com/users/quentintaranpino/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/quentintaranpino/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-30T17:12:00Z",
+        "updated_at": "2026-04-30T17:12:00Z",
+        "body": "Interesting, I’ll check it out.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4354557581/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-30T17:12:00Z"
+  },
+  {
+    "id": "8949635310",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 1172179,
+      "login": "v0l",
+      "display_login": "v0l",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/v0l",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1172179?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 103,
+      "pull_request": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/pulls/103",
+        "id": 3607541943,
+        "number": 103,
+        "head": {
+          "ref": "compliance-test",
+          "sha": "a15096bd226e01f7177c96a629b22d6d9927e0c7",
+          "repo": {
+            "id": 862870417,
+            "url": "https://api.github.com/repos/v0l/blossom",
+            "name": "blossom"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "ef3c79e40d38cee6cdc974056ae86a582e708197",
+          "repo": {
+            "id": 760673550,
+            "url": "https://api.github.com/repos/hzrd149/blossom",
+            "name": "blossom"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-30T08:47:03Z"
+  },
+  {
+    "id": "8853668471",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 63018272,
+      "login": "aydencook03",
+      "display_login": "aydencook03",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aydencook03",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63018272?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-04-28T03:06:12Z"
+  },
+  {
+    "id": "8844778200",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 32180229,
+      "login": "gqgs",
+      "display_login": "gqgs",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gqgs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32180229?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-04-27T20:32:13Z"
+  },
+  {
+    "id": "8808015292",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 68782063,
+      "login": "nogringo",
+      "display_login": "nogringo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nogringo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68782063?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/97",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/97/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/97/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/97/events",
+        "html_url": "https://github.com/hzrd149/blossom/issues/97",
+        "id": 4067718691,
+        "node_id": "I_kwDOLVb1Ds7ydHYj",
+        "number": 97,
+        "title": "Proposal: Blob Ownership",
+        "user": {
+          "login": "nogringo",
+          "id": 68782063,
+          "node_id": "MDQ6VXNlcjY4NzgyMDYz",
+          "avatar_url": "https://avatars.githubusercontent.com/u/68782063?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nogringo",
+          "html_url": "https://github.com/nogringo",
+          "followers_url": "https://api.github.com/users/nogringo/followers",
+          "following_url": "https://api.github.com/users/nogringo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nogringo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nogringo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nogringo/subscriptions",
+          "organizations_url": "https://api.github.com/users/nogringo/orgs",
+          "repos_url": "https://api.github.com/users/nogringo/repos",
+          "events_url": "https://api.github.com/users/nogringo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nogringo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2026-03-12T22:47:27Z",
+        "updated_at": "2026-04-27T00:36:53Z",
+        "closed_at": "2026-04-22T22:42:54Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "### Summary\n\nThis PR introduces **Blob Ownership**, an ownership model for blobs where:\n- Multiple pubkeys can be owners of a single blob\n- Anyone can become an owner by claiming ownership\n- Blobs may be deleted when no owners remain\n\n### Motivation\n\n**Immutable uploads**: Alice uploads a blob and designates Bob as the sole owner. Alice cannot delete it alone, ensuring the blob persists even if the uploader changes their mind.\n\n### [BUD here](https://nostrhub.io/naddr1qvzqqqrcvypzpv3tq6c9rl2jx2tx4y6y5c6dj4krmse60a0vmjkea5gam3qjpfljqythwumn8ghj7un9d3shjtnrv9kk2mr4wvhxzursqqfxyaty943xcmmz94hhwmn9wfeks6ts5v4rhj)",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/97/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/97/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4323444999",
+        "html_url": "https://github.com/hzrd149/blossom/issues/97#issuecomment-4323444999",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/97",
+        "id": 4323444999,
+        "node_id": "IC_kwDOLVb1Ds8AAAABAbKJBw",
+        "user": {
+          "login": "nogringo",
+          "id": 68782063,
+          "node_id": "MDQ6VXNlcjY4NzgyMDYz",
+          "avatar_url": "https://avatars.githubusercontent.com/u/68782063?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nogringo",
+          "html_url": "https://github.com/nogringo",
+          "followers_url": "https://api.github.com/users/nogringo/followers",
+          "following_url": "https://api.github.com/users/nogringo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nogringo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nogringo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nogringo/subscriptions",
+          "organizations_url": "https://api.github.com/users/nogringo/orgs",
+          "repos_url": "https://api.github.com/users/nogringo/repos",
+          "events_url": "https://api.github.com/users/nogringo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nogringo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-27T00:36:53Z",
+        "updated_at": "2026-04-27T00:36:53Z",
+        "body": "The BUD link is reaccessible.",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4323444999/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-27T00:36:53Z"
+  },
+  {
+    "id": "8793819347",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 88546580,
+      "login": "4xvgal",
+      "display_login": "4xvgal",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/4xvgal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88546580?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-04-26T02:10:47Z"
+  },
+  {
+    "id": "8782304270",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 842,
+      "login": "raucao",
+      "display_login": "raucao",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/raucao",
+      "avatar_url": "https://avatars.githubusercontent.com/u/842?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/41",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/events",
+        "html_url": "https://github.com/hzrd149/blossom/issues/41",
+        "id": 2684853591,
+        "node_id": "I_kwDOLVb1Ds6gB51X",
+        "number": 41,
+        "title": "/media endpoint should allow more flexibility.",
+        "user": {
+          "login": "fishcakeday",
+          "id": 128653975,
+          "node_id": "U_kgDOB6salw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/128653975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/fishcakeday",
+          "html_url": "https://github.com/fishcakeday",
+          "followers_url": "https://api.github.com/users/fishcakeday/followers",
+          "following_url": "https://api.github.com/users/fishcakeday/following{/other_user}",
+          "gists_url": "https://api.github.com/users/fishcakeday/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/fishcakeday/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/fishcakeday/subscriptions",
+          "organizations_url": "https://api.github.com/users/fishcakeday/orgs",
+          "repos_url": "https://api.github.com/users/fishcakeday/repos",
+          "events_url": "https://api.github.com/users/fishcakeday/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/fishcakeday/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2024-11-22T22:51:58Z",
+        "updated_at": "2026-04-25T08:49:20Z",
+        "closed_at": null,
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "While I am happy to see there is a way to optimize the media, there is no provision for any sort of HLS/DASH transcoding with VBR (variable bitrate) or any other optimizations. If we were to allow for YT like experience, and potentially reusage of the transcoding burden, the current scheme will prevent any improvements in this space, and will limit any video content to a short clip. There is also a question of uploads that would exceed server limitations, and would benefit from usage of TUS (or similar standard) to break them down into smaller chunks to allow resume or parallel uploading.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/41/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4318576860",
+        "html_url": "https://github.com/hzrd149/blossom/issues/41#issuecomment-4318576860",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/41",
+        "id": 4318576860,
+        "node_id": "IC_kwDOLVb1Ds8AAAABAWhA3A",
+        "user": {
+          "login": "raucao",
+          "id": 842,
+          "node_id": "MDQ6VXNlcjg0Mg==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/842?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/raucao",
+          "html_url": "https://github.com/raucao",
+          "followers_url": "https://api.github.com/users/raucao/followers",
+          "following_url": "https://api.github.com/users/raucao/following{/other_user}",
+          "gists_url": "https://api.github.com/users/raucao/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/raucao/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/raucao/subscriptions",
+          "organizations_url": "https://api.github.com/users/raucao/orgs",
+          "repos_url": "https://api.github.com/users/raucao/repos",
+          "events_url": "https://api.github.com/users/raucao/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/raucao/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-25T08:47:27Z",
+        "updated_at": "2026-04-25T08:49:20Z",
+        "body": "I understand your intention. However, from a user perspective I think the media hosting server makes the most sense for this role, so I think it was the right call to add this as an optional feature that Blossom servers may or may not do. As a new user, you already have to somewhat understand what relays and file/media servers are, which is much more complex than having one server for all of it (regardless of it being centralized or federated or p2p). Adding additional (probably authenticated) services on top adds friction both in hosting and using apps that deal with images. It also adds additional server connections and round trips, both HTTP and WebSockets.\n\nThat said, I do see the need for separate services when it comes to transcoding video. At least much more so than with photos. My hunch for moving forward with the existing BUD would be that if there's any kind of media optimization being done, then the endpoints, rules, and settings for photos and videos should likely not be the same.\n\nFWIW, during testing of my PWA's photo uploads over the last couple of days, the processing time especially on my phone is basically the last remaining pain point when using the photo upload feature. (Since `createImageBitmap` is kind of flaky in Chromium on Android, my app is already falling back to stepped downscaling via canvas, and it's already using `OffscreenCanvas` in a worker. So there's not much more I can do client-side to improve the situation.)",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4318576860/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-25T08:47:27Z"
+  },
+  {
+    "id": "8762482132",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/41",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/events",
+        "html_url": "https://github.com/hzrd149/blossom/issues/41",
+        "id": 2684853591,
+        "node_id": "I_kwDOLVb1Ds6gB51X",
+        "number": 41,
+        "title": "/media endpoint should allow more flexibility.",
+        "user": {
+          "login": "fishcakeday",
+          "id": 128653975,
+          "node_id": "U_kgDOB6salw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/128653975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/fishcakeday",
+          "html_url": "https://github.com/fishcakeday",
+          "followers_url": "https://api.github.com/users/fishcakeday/followers",
+          "following_url": "https://api.github.com/users/fishcakeday/following{/other_user}",
+          "gists_url": "https://api.github.com/users/fishcakeday/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/fishcakeday/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/fishcakeday/subscriptions",
+          "organizations_url": "https://api.github.com/users/fishcakeday/orgs",
+          "repos_url": "https://api.github.com/users/fishcakeday/repos",
+          "events_url": "https://api.github.com/users/fishcakeday/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/fishcakeday/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2024-11-22T22:51:58Z",
+        "updated_at": "2026-04-25T08:49:20Z",
+        "closed_at": null,
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "While I am happy to see there is a way to optimize the media, there is no provision for any sort of HLS/DASH transcoding with VBR (variable bitrate) or any other optimizations. If we were to allow for YT like experience, and potentially reusage of the transcoding burden, the current scheme will prevent any improvements in this space, and will limit any video content to a short clip. There is also a question of uploads that would exceed server limitations, and would benefit from usage of TUS (or similar standard) to break them down into smaller chunks to allow resume or parallel uploading.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/41/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4314393467",
+        "html_url": "https://github.com/hzrd149/blossom/issues/41#issuecomment-4314393467",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/41",
+        "id": 4314393467,
+        "node_id": "IC_kwDOLVb1Ds8AAAABAShrew",
+        "user": {
+          "login": "hzrd149",
+          "id": 8001706,
+          "node_id": "MDQ6VXNlcjgwMDE3MDY=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8001706?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/hzrd149",
+          "html_url": "https://github.com/hzrd149",
+          "followers_url": "https://api.github.com/users/hzrd149/followers",
+          "following_url": "https://api.github.com/users/hzrd149/following{/other_user}",
+          "gists_url": "https://api.github.com/users/hzrd149/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/hzrd149/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/hzrd149/subscriptions",
+          "organizations_url": "https://api.github.com/users/hzrd149/orgs",
+          "repos_url": "https://api.github.com/users/hzrd149/repos",
+          "events_url": "https://api.github.com/users/hzrd149/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/hzrd149/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-24T15:41:21Z",
+        "updated_at": "2026-04-24T15:41:21Z",
+        "body": "This issue is pretty stale, mostly because I've forgotten about it. \n\n@raucao the current `/media` endpoints is intentionally limited to prevent this exact use case. blossom servers shouldn't become processing / transcoding servers since their primary role is to serve existing data. The existing `/media` endpoint was the simplest way I could think of to offload image optimization to a trusted server without the client needing to understand image optimization.\n\nThat said async and customizable media optimization is needed by lots of nostr clients. whether its HSL encoding or generating thumbnails someone needs to do the work but I don't think that should be blossom servers, I think it needs to be something else",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4314393467/reactions",
+          "total_count": 1,
+          "+1": 1,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T15:41:21Z"
+  },
+  {
+    "id": "8754871871",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 842,
+      "login": "raucao",
+      "display_login": "raucao",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/raucao",
+      "avatar_url": "https://avatars.githubusercontent.com/u/842?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/41",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/events",
+        "html_url": "https://github.com/hzrd149/blossom/issues/41",
+        "id": 2684853591,
+        "node_id": "I_kwDOLVb1Ds6gB51X",
+        "number": 41,
+        "title": "/media endpoint should allow more flexibility.",
+        "user": {
+          "login": "fishcakeday",
+          "id": 128653975,
+          "node_id": "U_kgDOB6salw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/128653975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/fishcakeday",
+          "html_url": "https://github.com/fishcakeday",
+          "followers_url": "https://api.github.com/users/fishcakeday/followers",
+          "following_url": "https://api.github.com/users/fishcakeday/following{/other_user}",
+          "gists_url": "https://api.github.com/users/fishcakeday/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/fishcakeday/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/fishcakeday/subscriptions",
+          "organizations_url": "https://api.github.com/users/fishcakeday/orgs",
+          "repos_url": "https://api.github.com/users/fishcakeday/repos",
+          "events_url": "https://api.github.com/users/fishcakeday/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/fishcakeday/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2024-11-22T22:51:58Z",
+        "updated_at": "2026-04-25T08:49:20Z",
+        "closed_at": null,
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "While I am happy to see there is a way to optimize the media, there is no provision for any sort of HLS/DASH transcoding with VBR (variable bitrate) or any other optimizations. If we were to allow for YT like experience, and potentially reusage of the transcoding burden, the current scheme will prevent any improvements in this space, and will limit any video content to a short clip. There is also a question of uploads that would exceed server limitations, and would benefit from usage of TUS (or similar standard) to break them down into smaller chunks to allow resume or parallel uploading.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/41/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/41/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4313004464",
+        "html_url": "https://github.com/hzrd149/blossom/issues/41#issuecomment-4313004464",
+        "issue_url": "https://api.github.com/repos/hzrd149/blossom/issues/41",
+        "id": 4313004464,
+        "node_id": "IC_kwDOLVb1Ds8AAAABARM5sA",
+        "user": {
+          "login": "raucao",
+          "id": 842,
+          "node_id": "MDQ6VXNlcjg0Mg==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/842?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/raucao",
+          "html_url": "https://github.com/raucao",
+          "followers_url": "https://api.github.com/users/raucao/followers",
+          "following_url": "https://api.github.com/users/raucao/following{/other_user}",
+          "gists_url": "https://api.github.com/users/raucao/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/raucao/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/raucao/subscriptions",
+          "organizations_url": "https://api.github.com/users/raucao/orgs",
+          "repos_url": "https://api.github.com/users/raucao/repos",
+          "events_url": "https://api.github.com/users/raucao/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/raucao/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-24T12:07:24Z",
+        "updated_at": "2026-04-24T12:09:49Z",
+        "body": "Similarly, for photo uploads, it would be very useful to not only have the server decide how to optimize the image, because it also depends on the use case, which only the client can know.\n\nFor example, in my app I'm creating both full-size photos and thumbnails, and I'm also specifying a different JPEG quality between them. With the current spec, I could move the full-size processing to the media endpoint and hope that the servers I don't control optimize in a way that it looks good in my app and still loads reasonably fast on mobile connections. However, I can't move processing of thumbnails at all.",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/comments/4313004464/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T12:07:24Z"
+  },
+  {
+    "id": "8692465031",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 89645414,
+      "login": "kehiy",
+      "display_login": "kehiy",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kehiy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89645414?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 78,
+      "pull_request": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/pulls/78",
+        "id": 2706959769,
+        "number": 78,
+        "head": {
+          "ref": "master",
+          "sha": "ce1887d0e229ff95b461094d3e0d93089f2efc3e",
+          "repo": {
+            "id": 910919239,
+            "url": "https://api.github.com/repos/kehiy/blossom",
+            "name": "blossom"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "385913adef85ba17f9e5a5e7bf8f2660b78330b6",
+          "repo": {
+            "id": 760673550,
+            "url": "https://api.github.com/repos/hzrd149/blossom",
+            "name": "blossom"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-22T22:37:33Z"
+  },
+  {
+    "id": "8690978377",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/63",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/63/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/63/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/63/events",
+        "html_url": "https://github.com/hzrd149/blossom/issues/63",
+        "id": 2939128852,
+        "node_id": "I_kwDOLVb1Ds6vL4wU",
+        "number": 63,
+        "title": "add file expiration time to blossom header",
+        "user": {
+          "login": "alltheseas",
+          "id": 64376233,
+          "node_id": "MDQ6VXNlcjY0Mzc2MjMz",
+          "avatar_url": "https://avatars.githubusercontent.com/u/64376233?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/alltheseas",
+          "html_url": "https://github.com/alltheseas",
+          "followers_url": "https://api.github.com/users/alltheseas/followers",
+          "following_url": "https://api.github.com/users/alltheseas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/alltheseas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/alltheseas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/alltheseas/subscriptions",
+          "organizations_url": "https://api.github.com/users/alltheseas/orgs",
+          "repos_url": "https://api.github.com/users/alltheseas/repos",
+          "events_url": "https://api.github.com/users/alltheseas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/alltheseas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 5,
+        "created_at": "2025-03-21T18:01:11Z",
+        "updated_at": "2026-04-22T22:44:56Z",
+        "closed_at": "2026-04-22T22:44:56Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "@erskingardner has a practical use case for Blossom servers, which requires an expiration date. \n\n> For group messaging, blossom servers definitely don't need to keep the files around forever, they should be downloaded/cached to the client device. I think an expiration flag on blossom blobs would be a good addition to that protocol. Then White Noise and other chat clients could signal that the files should only be kept around for a month, for example, when uploading.\n\nhttps://njump.me/nevent1qvzqqqqqqypzq9eemymaerqvwdc25f6ctyuvzx0zt3qld3zp5hf5cmfc2qlrzdh0qyfhwumn8ghj7am0wsh82arcduhx7mn99uq32amnwvaz7tmjv4kxz7fwv3sk6atn9e5k7tcqypf7zayk7ghcxejwhc8qz5ztgc3rgdsr3mhf6p38un0gn528dn5lvxssc76\n\n@hzrd149 advises it is possible to add this to Blossom spec\n\n> It would be useful, but unfortunately there isn't an \"expiration\" header in the HTTP spec. so we would need to make our own\n\nhttps://njump.me/nevent1qvzqqqqqqypzqfngzhsvjggdlgeycm96x4emzjlwf8dyyzdfg4hefp89zpkdgz99qyfhwumn8ghj7am0wsh82arcduhx7mn99uq32amnwvaz7tmjv4kxz7fwv3sk6atn9e5k7tcqyq28whyjzxgmm4axf0h6s07c4qnvu3lnqvu6t5grdw0vsp0yx49p25djxg6",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/63/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/63/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-22T22:44:56Z"
+  },
+  {
+    "id": "8690936746",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/97",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/97/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/97/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/97/events",
+        "html_url": "https://github.com/hzrd149/blossom/issues/97",
+        "id": 4067718691,
+        "node_id": "I_kwDOLVb1Ds7ydHYj",
+        "number": 97,
+        "title": "Proposal: Blob Ownership",
+        "user": {
+          "login": "nogringo",
+          "id": 68782063,
+          "node_id": "MDQ6VXNlcjY4NzgyMDYz",
+          "avatar_url": "https://avatars.githubusercontent.com/u/68782063?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nogringo",
+          "html_url": "https://github.com/nogringo",
+          "followers_url": "https://api.github.com/users/nogringo/followers",
+          "following_url": "https://api.github.com/users/nogringo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nogringo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nogringo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nogringo/subscriptions",
+          "organizations_url": "https://api.github.com/users/nogringo/orgs",
+          "repos_url": "https://api.github.com/users/nogringo/repos",
+          "events_url": "https://api.github.com/users/nogringo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nogringo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2026-03-12T22:47:27Z",
+        "updated_at": "2026-04-27T00:36:53Z",
+        "closed_at": "2026-04-22T22:42:54Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "### Summary\n\nThis PR introduces **Blob Ownership**, an ownership model for blobs where:\n- Multiple pubkeys can be owners of a single blob\n- Anyone can become an owner by claiming ownership\n- Blobs may be deleted when no owners remain\n\n### Motivation\n\n**Immutable uploads**: Alice uploads a blob and designates Bob as the sole owner. Alice cannot delete it alone, ensuring the blob persists even if the uploader changes their mind.\n\n### [BUD here](https://nostrhub.io/naddr1qvzqqqrcvypzpv3tq6c9rl2jx2tx4y6y5c6dj4krmse60a0vmjkea5gam3qjpfljqythwumn8ghj7un9d3shjtnrv9kk2mr4wvhxzursqqfxyaty943xcmmz94hhwmn9wfeks6ts5v4rhj)",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/97/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/97/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-22T22:42:55Z"
+  },
+  {
+    "id": "8690919126",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/issues/52",
+        "repository_url": "https://api.github.com/repos/hzrd149/blossom",
+        "labels_url": "https://api.github.com/repos/hzrd149/blossom/issues/52/labels{/name}",
+        "comments_url": "https://api.github.com/repos/hzrd149/blossom/issues/52/comments",
+        "events_url": "https://api.github.com/repos/hzrd149/blossom/issues/52/events",
+        "html_url": "https://github.com/hzrd149/blossom/issues/52",
+        "id": 2748977670,
+        "node_id": "I_kwDOLVb1Ds6j2hIG",
+        "number": 52,
+        "title": "BUD-01: Server must allow Content-Length header to be visible to CORS clients",
+        "user": {
+          "login": "rleed",
+          "id": 101502594,
+          "node_id": "U_kgDOBgzOgg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/101502594?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rleed",
+          "html_url": "https://github.com/rleed",
+          "followers_url": "https://api.github.com/users/rleed/followers",
+          "following_url": "https://api.github.com/users/rleed/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rleed/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rleed/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rleed/subscriptions",
+          "organizations_url": "https://api.github.com/users/rleed/orgs",
+          "repos_url": "https://api.github.com/users/rleed/repos",
+          "events_url": "https://api.github.com/users/rleed/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rleed/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2024-12-19T00:05:43Z",
+        "updated_at": "2026-04-22T22:42:01Z",
+        "closed_at": "2026-04-22T22:42:00Z",
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "BUD-01: Server must allow Content-Length header to be visible to CORS clients on HEAD request response. This is done with the following header:\r\n`Access-Control-Expose-Headers: Content-Length`\r\nWithout the server specifically enabling this, the content length is opaque and there is no practical way to determine the length of a Blossom blob. The Content-Range header should be made available as well.",
+        "reactions": {
+          "url": "https://api.github.com/repos/hzrd149/blossom/issues/52/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/hzrd149/blossom/issues/52/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-22T22:42:01Z"
+  },
+  {
+    "id": "10906780048",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "ref": "http-status-codes",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/http-status-codes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-22T14:43:51Z"
+  },
+  {
+    "id": "10906733875",
+    "type": "PushEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "repository_id": 760673550,
+      "push_id": 33198518696,
+      "ref": "refs/heads/master",
+      "head": "ef3c79e40d38cee6cdc974056ae86a582e708197",
+      "before": "10d7cecbca977dff1ae4f97619ad08b43364d95d"
+    },
+    "public": true,
+    "created_at": "2026-04-22T14:42:45Z"
+  },
+  {
+    "id": "8678171532",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 99,
+      "pull_request": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/pulls/99",
+        "id": 3517918121,
+        "number": 99,
+        "head": {
+          "ref": "sunset-header",
+          "sha": "7479b3eda3a33aab440ae8f5929b713542927e3b",
+          "repo": {
+            "id": 760673550,
+            "url": "https://api.github.com/repos/hzrd149/blossom",
+            "name": "blossom"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "234e0e01d38557d5017558b0e8d3e9faf3d1d2ff",
+          "repo": {
+            "id": 760673550,
+            "url": "https://api.github.com/repos/hzrd149/blossom",
+            "name": "blossom"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-22T14:42:44Z"
+  },
+  {
+    "id": "8492072557",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 98,
+      "pull_request": {
+        "url": "https://api.github.com/repos/hzrd149/blossom/pulls/98",
+        "id": 3493903036,
+        "number": 98,
+        "head": {
+          "ref": "http-status-codes",
+          "sha": "94d04be9fc5905f4831d7a6e65a8f267e8e287f5",
+          "repo": {
+            "id": 760673550,
+            "url": "https://api.github.com/repos/hzrd149/blossom",
+            "name": "blossom"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "234e0e01d38557d5017558b0e8d3e9faf3d1d2ff",
+          "repo": {
+            "id": 760673550,
+            "url": "https://api.github.com/repos/hzrd149/blossom",
+            "name": "blossom"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-16T15:39:02Z"
+  },
+  {
+    "id": "10667551362",
+    "type": "PushEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "repository_id": 760673550,
+      "push_id": 32959373173,
+      "ref": "refs/heads/master",
+      "head": "10d7cecbca977dff1ae4f97619ad08b43364d95d",
+      "before": "234e0e01d38557d5017558b0e8d3e9faf3d1d2ff"
+    },
+    "public": true,
+    "created_at": "2026-04-16T15:39:03Z"
+  },
+  {
+    "id": "10667455532",
+    "type": "PushEvent",
+    "actor": {
+      "id": 8001706,
+      "login": "hzrd149",
+      "display_login": "hzrd149",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hzrd149",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8001706?"
+    },
+    "repo": {
+      "id": 760673550,
+      "name": "hzrd149/blossom",
+      "url": "https://api.github.com/repos/hzrd149/blossom"
+    },
+    "payload": {
+      "repository_id": 760673550,
+      "push_id": 32959277346,
+      "ref": "refs/heads/http-status-codes",
+      "head": "94d04be9fc5905f4831d7a6e65a8f267e8e287f5",
+      "before": "c996e37aa67cd2c15e4becaca5cd12e7378aa95d"
+    },
+    "public": true,
+    "created_at": "2026-04-16T15:36:43Z"
+  }
+]

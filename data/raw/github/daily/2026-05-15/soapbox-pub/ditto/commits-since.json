@@ -1,0 +1,658 @@
+[
+  {
+    "sha": "243c493ad26ebd7b9e8bc0e3a3f4caa76adff5ea",
+    "node_id": "C_kwDOL5Eek9oAKDI0M2M0OTNhZDI2ZWJkN2I5ZThiYzBlM2EzZjRjYWE3NmFkZmY1ZWE",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T02:00:42Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T02:00:42Z"
+      },
+      "message": "Auto-release iOS builds to the App Store once Apple approves review\n\nSet fastlane's deliver automatic_release to true so the build moves\nstraight from \"Pending Developer Release\" to live on the store as\nsoon as App Review approves it, instead of waiting for a manual click\nin App Store Connect.",
+      "tree": {
+        "sha": "f77c84856c1d74778892bef8fb09b5db86b5dde4",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/f77c84856c1d74778892bef8fb09b5db86b5dde4"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/243c493ad26ebd7b9e8bc0e3a3f4caa76adff5ea",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoGfkoACgkQchHR+ZdE\n+7e5vhAAvYGatghrt1HL32mDy6HBJTLoOXv/WUedtRwKYPhfuCjpak3ohZsuoDPf\nzvUXYGvCp8w2mGFq0he1aEEfcgKP9md2B/bZSk/0WzBOvRXTSRXSPkuDwmH322lL\noiQsQsxR8wsdxh+m68+k+/dkwPOuewaT2Iw0P7zrlvRLG2hHehS/3ON8XxlHLv5b\nvrMtXjytDzj2M8RhB5BmLOCP+aesYrD7naDCKyZMUm81sscghYyFntlsz40smfqO\nkzpQ/+IizszRRUoGmsVcx/BWmVPyRpBcrczmQ/PG9iXUsnoRrGhQQ6t7bbMM3r+7\nuE2TXlqeTDk4aEYyTiyaY8rwe7E6RjCib9VaPpmZ08Eg7yUQabI5aW2ztHgI547K\n136otnWIz2CLxawMUSkSiKwRtKtGntxVvbG5DKz8wCDZbO0IGHZG3ZX83I274VyH\nRTEbjznD+2mvIEVYE8tKsV059I9YXqO/qo/gc0eo+i+RqLeNdW28WeHrARM93f5l\nBZ9QFgDHf/LxUzAnjLxCLFS3OgXIi/Gb4Xft9jvX81hs/74p/KyHC8fq2v/0pRYz\nfE1x1ETSgVu0ty3vZ2iL+C/jM7aOut8TNa262VPFlr/nNdlmnQ9k0dymhso0KHHl\nbo51TLZFcRzodqkorNVUL171PSBGWaxDgmDsWoQsf3+eVPxKtEQ=\n=+0B0\n-----END PGP SIGNATURE-----",
+        "payload": "tree f77c84856c1d74778892bef8fb09b5db86b5dde4\nparent eb4dd7ee5408855f079e78b00810e09149081e04\nauthor Alex Gleason <alex@alexgleason.me> 1778810442 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778810442 -0500\n\nAuto-release iOS builds to the App Store once Apple approves review\n\nSet fastlane's deliver automatic_release to true so the build moves\nstraight from \"Pending Developer Release\" to live on the store as\nsoon as App Review approves it, instead of waiting for a manual click\nin App Store Connect.\n",
+        "verified_at": "2026-05-15T02:01:07Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/243c493ad26ebd7b9e8bc0e3a3f4caa76adff5ea",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/243c493ad26ebd7b9e8bc0e3a3f4caa76adff5ea",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/243c493ad26ebd7b9e8bc0e3a3f4caa76adff5ea/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "eb4dd7ee5408855f079e78b00810e09149081e04",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/eb4dd7ee5408855f079e78b00810e09149081e04",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/eb4dd7ee5408855f079e78b00810e09149081e04"
+      }
+    ]
+  },
+  {
+    "sha": "eb4dd7ee5408855f079e78b00810e09149081e04",
+    "node_id": "C_kwDOL5Eek9oAKGViNGRkN2VlNTQwODg1NWYwNzllNzhiMDA4MTBlMDkxNDkwODFlMDQ",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T01:45:30Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T01:45:30Z"
+      },
+      "message": "release: v2.15.1",
+      "tree": {
+        "sha": "e9a972e3c0f8bc932ac72317509983bff9d17f66",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/e9a972e3c0f8bc932ac72317509983bff9d17f66"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/eb4dd7ee5408855f079e78b00810e09149081e04",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoGeroACgkQchHR+ZdE\n+7dA4A//a+7IUkgkgCWbqfEVkq20huw/pjrr/S8QORu+81S2SiplBt2B8yYiqWSP\nlk3FImUT6+zU8SdK+Su0cOXcqBbHPtWWto18ZpBtD08P9yxLORcLUeV7WKohbK05\nQKW7+6oq8pedFtvz4N3ExxW/hsEHcOiUCa2W9mwcO+fz2+V95hN2DHjYPxJpYP8E\nvu5jRA2NOC8uBIcpLIDfsWNrVGXoaHeIS2L6mL6qWa3uOfDQ/dj7ifLx7kaLTmWU\nCc5lPkjMUV7g7LPW49t5ItHkP5i236X3PU+Bn+H9Ql38zm0iK9YGMEnujl8X0WG+\n+gxYA37cWEVhN2T7w1N4u0jonDoFtTLxbDJYK7pWD64L2ODlU2CTvtqRZ8Q7eYBh\naOvKl/iJNXnVvQ/V++fyw1cmBxcofuGkX52FkhGkaOwGK2CQAN4zRVROcsYusWD/\nS8C1NQRkzsBNAyvoldRXEjbq7FIqlOBVzd5UXeiE5Z5nzBoYanwOJvkdx34C7Q5n\nyiETuz0fnbsHGBbWmxZm7IkObnFiQJqlfVhlYYLHu5oLDKkBo0qRNARxJ0KJ/ms9\nOSC+EdaqEdAfjqk+iPniJQfGMTUZu6yVc/fdfk7sqNkffH03Kvfm31U8+L9mPDQe\nDGJZKVNMfUrfkI5g5V/6Jnew5mi9zoDv5xS7ovn4Ifa1jNtcoOc=\n=1YlP\n-----END PGP SIGNATURE-----",
+        "payload": "tree e9a972e3c0f8bc932ac72317509983bff9d17f66\nparent 36cd9142863d5c21c23b61e8f0e7556d870d5e11\nauthor Alex Gleason <alex@alexgleason.me> 1778809530 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778809530 -0500\n\nrelease: v2.15.1\n",
+        "verified_at": "2026-05-15T01:50:41Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/eb4dd7ee5408855f079e78b00810e09149081e04",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/eb4dd7ee5408855f079e78b00810e09149081e04",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/eb4dd7ee5408855f079e78b00810e09149081e04/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "36cd9142863d5c21c23b61e8f0e7556d870d5e11",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/36cd9142863d5c21c23b61e8f0e7556d870d5e11",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/36cd9142863d5c21c23b61e8f0e7556d870d5e11"
+      }
+    ]
+  },
+  {
+    "sha": "36cd9142863d5c21c23b61e8f0e7556d870d5e11",
+    "node_id": "C_kwDOL5Eek9oAKDM2Y2Q5MTQyODYzZDVjMjFjMjNiNjFlOGYwZTc1NTZkODcwZDVlMTE",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T01:40:51Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T01:40:51Z"
+      },
+      "message": "Group badge-definition queries by author to fix large NIP-51 badge sets\n\nThe badge grid in feed cards rendered as anonymous placeholders for any\nset with more than a handful of entries — e.g. RetroAchievements game\nsets with 100+ badges. BadgeSetContent (and the shared\nuseBadgeDefinitions hook) built one filter per badge reference, so a\n122-badge set issued one REQ with 122 filters. Many relays cap filters\nper subscription well below that, so the query returned empty or was\ndropped, badgeMap stayed empty, and every tile fell through to the\ngeneric Award icon with the slugified d-tag as its label.\n\nGroup refs by author and emit one filter per author with the full list\nof identifiers in `#d`. For a single-issuer set that collapses 122\nfilters into one round-trip; multi-issuer sets still get one filter per\ndistinct author. Also drop BadgeSetContent's duplicate query in favor of\nthe shared hook so future improvements land in both places.\n\nRegression-of: f3edd02c",
+      "tree": {
+        "sha": "6dcb5ab1555964df8b5e05bb184050c8e5241645",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/6dcb5ab1555964df8b5e05bb184050c8e5241645"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/36cd9142863d5c21c23b61e8f0e7556d870d5e11",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoGeaMACgkQchHR+ZdE\n+7elURAAoR2mMNbp7zT0gIwZhOgOG1KBJlmmQqGswnEwrHngmS7njL7U70XjlLfd\nDuPCpnJltTXQNWiW8JPpRoZ9phshPirWZHJz+vPicv7LInhJCBbm5NXGbZuaNXLv\nEc6rK7YHXhUuzeCMxEKiVuH48StSnshZ7axdjyb07wWArv/nXU9PLmXeg7wufT86\njRzgooYk+V2iXkZgx3IhIEg8YvwhFZKf3/UaQU58JQKgpAzl2V+BqRMt3Fhm3iNq\nugTFlgCmAnfBXE+1SDE1isAGxusU0+jbjv4BwH+uyEkzYsPi5WyIVvjk+l4k67UN\nnQL9yENGrQJeBTxDcWvEmbcgnUVJFmMeIebJ0kYK9cJ3Cvjim1zk1mLewdF4m3/X\nrkFluQzp60RooUJ5xLE4wy7b7Wv2niW/X474X3/GxwWQTuk6RI8yziCBkVZXRX9s\nul32QyEOzFWNehPCQDx2ZCsIt1A9EOSuSsMzstJDnnLRmi4QdN+x/As0Q1hIpybq\nShShNuxJeI6MN8fDE8AsZoh/XciWkvS/k1fEjIcThEsmkOPL97ZZv65jdyk6oHo6\nYMgqPjbxleEMtPt00GELVucKScKbvOQl9osXCfi8+tuXSs0zYqStg7EDAzVJsLOY\nFMzkKefXWM0SkWRKAKzViTlYGR6mUPSGi1gz+rR2WBP/fYwW6xc=\n=nj0r\n-----END PGP SIGNATURE-----",
+        "payload": "tree 6dcb5ab1555964df8b5e05bb184050c8e5241645\nparent 9159a015692f68b73d19f474c3c20da92fbf8c67\nauthor Alex Gleason <alex@alexgleason.me> 1778809251 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778809251 -0500\n\nGroup badge-definition queries by author to fix large NIP-51 badge sets\n\nThe badge grid in feed cards rendered as anonymous placeholders for any\nset with more than a handful of entries — e.g. RetroAchievements game\nsets with 100+ badges. BadgeSetContent (and the shared\nuseBadgeDefinitions hook) built one filter per badge reference, so a\n122-badge set issued one REQ with 122 filters. Many relays cap filters\nper subscription well below that, so the query returned empty or was\ndropped, badgeMap stayed empty, and every tile fell through to the\ngeneric Award icon with the slugified d-tag as its label.\n\nGroup refs by author and emit one filter per author with the full list\nof identifiers in `#d`. For a single-issuer set that collapses 122\nfilters into one round-trip; multi-issuer sets still get one filter per\ndistinct author. Also drop BadgeSetContent's duplicate query in favor of\nthe shared hook so future improvements land in both places.\n\nRegression-of: f3edd02c\n",
+        "verified_at": "2026-05-15T01:42:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/36cd9142863d5c21c23b61e8f0e7556d870d5e11",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/36cd9142863d5c21c23b61e8f0e7556d870d5e11",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/36cd9142863d5c21c23b61e8f0e7556d870d5e11/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9159a015692f68b73d19f474c3c20da92fbf8c67",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/9159a015692f68b73d19f474c3c20da92fbf8c67",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/9159a015692f68b73d19f474c3c20da92fbf8c67"
+      }
+    ]
+  },
+  {
+    "sha": "9159a015692f68b73d19f474c3c20da92fbf8c67",
+    "node_id": "C_kwDOL5Eek9oAKDkxNTlhMDE1NjkyZjY4YjczZDE5ZjQ3NGMzYzIwZGE5MmZiZjhjNjc",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T01:20:54Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T01:20:54Z"
+      },
+      "message": "release: v2.15.0",
+      "tree": {
+        "sha": "9929148762a0ea3e3fa020c71a16f1fc8294878a",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/9929148762a0ea3e3fa020c71a16f1fc8294878a"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/9159a015692f68b73d19f474c3c20da92fbf8c67",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoGdPYACgkQchHR+ZdE\n+7deUg/+PK1W1QXDA6X9w8CkDZxwy2lBk/1IVbypUEMmOSrK4ca334cvmLoBVayr\n5el8eNv31s5QY3iQ9Jb6L8LqDqPrH0Ndi50czoNu34MrhjqYhmHGPK4UP3dzyWi4\nC0ZG7ngF+zgZTXfJeH/WiWwhWxGiZGHBkYuWwkToGFIpG4JG2UQmt4/KL2Svicaj\nwc8qK1Z+RPPQ9W485uEatvELpZbAHfB/QlhkCKNE9f7U9kvmc4+TNs+OdeRooa4v\n+XRRFt4Htia8UzCyqyR+XBJ4toBjLD/myUN16XVPcfeBP+kQ5Xf687RJXrjErUTm\n8/hCNdxK8aABLatfymN3e8bhnsGGeFEWFnnYuock9vBtroLS2wCo2/jdM3NENn8q\nHfX4NghQ5FPvH0J88tW2muTkZuh5GBqaIqa3OPW9qx4SVqDY6xD6KJZakJIOiKab\nyrKeMlQGizda28Kb2yC2Tknu8lvxxGDKxD0RgpGX/FNSy6KSjXDbTF+vIx4JOR90\nwQj1CJuHZ8s2ASbtP6PW1V8UoLesLqmvndvx2+9gexgyZLxpURM8tn6qtB3p6OVi\nNsm2BoOwUXQ4S/MgsNwvrxLYODLldCVueAyJehJCr6P4fn3AgWierHi7mRp9FCcn\nyW+hTuPSymsiAZK86r4qRdYMBC78VucfqlBR8n/jfucLDHjxs7g=\n=Wht8\n-----END PGP SIGNATURE-----",
+        "payload": "tree 9929148762a0ea3e3fa020c71a16f1fc8294878a\nparent 7cf05e940768b76acfbf6e06c3e0a09c8b908354\nauthor Alex Gleason <alex@alexgleason.me> 1778808054 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778808054 -0500\n\nrelease: v2.15.0\n",
+        "verified_at": "2026-05-15T01:21:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/9159a015692f68b73d19f474c3c20da92fbf8c67",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/9159a015692f68b73d19f474c3c20da92fbf8c67",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/9159a015692f68b73d19f474c3c20da92fbf8c67/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7cf05e940768b76acfbf6e06c3e0a09c8b908354",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/7cf05e940768b76acfbf6e06c3e0a09c8b908354",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/7cf05e940768b76acfbf6e06c3e0a09c8b908354"
+      }
+    ]
+  },
+  {
+    "sha": "7cf05e940768b76acfbf6e06c3e0a09c8b908354",
+    "node_id": "C_kwDOL5Eek9oAKDdjZjA1ZTk0MDc2OGI3NmFjZmJmNmUwNmMzZTBhMDljOGI5MDgzNTQ",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T23:36:17Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T23:36:17Z"
+      },
+      "message": "Shrink the badge-set hero banner to a 3:1 aspect ratio\n\n16:9 was too tall for a feed card — the hero dominated the post and\npushed the badge grid below the fold. 3:1 is a leaner banner shape\nthat still gives the cover art room to read while keeping the card\nwithin reasonable feed-item height.",
+      "tree": {
+        "sha": "d5e176756f97c2f9dffe0869412922c224248783",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/d5e176756f97c2f9dffe0869412922c224248783"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/7cf05e940768b76acfbf6e06c3e0a09c8b908354",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoGXHEACgkQchHR+ZdE\n+7eOXhAAts7Gh93p2fHf/H1cqf9FHLGFGhqZZJjd9EMXtdc31c49rXwF/59wwlOA\nkTYmowOYwqj0A2GN6yTrICZRXi6sjja8yfhvib0YJjD8wTxkGWhRqhJjlUNYpouG\nPu3OI+JSFUA1ZQKs8U3Bo5MuMKd//2gj+qTXSRl5xJMdtIikY/mNi/rZt200EDgt\nDJz6eJoyBzkYxG83kcxBZnR0EWz9qj7CWDDtpboMg50XcGwFlK1SrNZaK+GVAHuY\neh5Mjmfl8IHNq03Troy9W9kQnEFWlKRd14Wr+7GwXsRen2gElot2QbK9qUiUrDM/\n74s/nXtMSdB+DU1JkkyUl3OzuSYpUB03o7PzHooBFr9VFVHRJizd58vAhAqRkeqk\njXERbu47+O3xacUqi0ZvDHd9HSukvPhb1FTBdImZGrxEqwjRXwa+aJtqLLMQ/BEM\nkk7g2+EPiLU91hDt0FwoVlQ7v2hZoHNK3LljwMofodihA2hocA2KAElQ55U8j9+m\n7K8l/0Y6w9tzbO2d3//XZ4UEW9b1gh3WTROYZu+Ldie1Aq6fbs3v2Gh7zJGXuLkl\nvbZDMhutU413TSLDiix49wS5RZN3EAl3qaM0CJ2TUgcbIjgsmFF39CEMi/rSQuIs\nBwafGpEbKeTw451tv+ImmtRADQcqw3TvnfRDbo59K4QFKqgRI9A=\n=WLLA\n-----END PGP SIGNATURE-----",
+        "payload": "tree d5e176756f97c2f9dffe0869412922c224248783\nparent c6c9aaa2b28b20811649511a0aacc235560f956e\nauthor Alex Gleason <alex@alexgleason.me> 1778801777 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778801777 -0500\n\nShrink the badge-set hero banner to a 3:1 aspect ratio\n\n16:9 was too tall for a feed card — the hero dominated the post and\npushed the badge grid below the fold. 3:1 is a leaner banner shape\nthat still gives the cover art room to read while keeping the card\nwithin reasonable feed-item height.\n",
+        "verified_at": "2026-05-14T23:36:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/7cf05e940768b76acfbf6e06c3e0a09c8b908354",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/7cf05e940768b76acfbf6e06c3e0a09c8b908354",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/7cf05e940768b76acfbf6e06c3e0a09c8b908354/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c6c9aaa2b28b20811649511a0aacc235560f956e",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/c6c9aaa2b28b20811649511a0aacc235560f956e",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/c6c9aaa2b28b20811649511a0aacc235560f956e"
+      }
+    ]
+  },
+  {
+    "sha": "c6c9aaa2b28b20811649511a0aacc235560f956e",
+    "node_id": "C_kwDOL5Eek9oAKGM2YzlhYWEyYjI4YjIwODExNjQ5NTExYTBhYWNjMjM1NTYwZjk1NmU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T23:35:10Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T23:35:10Z"
+      },
+      "message": "Make the badge-set hero a poster-style banner with the image as cover art\n\nThe previous compact thumbnail + side text layout looked generic and\nburied the artwork (which for game-based sets like Super Mario Bros.\nis the visual centerpiece). Render the image full-bleed at 16:9 with\nthe title and description overlaid on a dark bottom gradient when\npresent, and fall back to a clean centered text card with a 'Badge\nset' eyebrow when no image is provided.",
+      "tree": {
+        "sha": "b777502e96eef949c55973fa00b8fd3c2f7ac468",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/b777502e96eef949c55973fa00b8fd3c2f7ac468"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/c6c9aaa2b28b20811649511a0aacc235560f956e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoGXC4ACgkQchHR+ZdE\n+7f9sxAAqjkGsS+KTIpdlUjlt857r2f/xwIvgevQRQejezLPlzqaey9D/G0Zc0sW\ncxZUn96S6LVzW3682PnrmTnIscypx/pBGJKlYJjmW9tvl9NIiMpXyJSrpdPUVZhr\nNgj5Y6grZxc/XeCKZNY0b4Vh5J9Iom5Wtav93K0brCi0vmAUnkH1296afleZ6P32\nBbywokq12iMXAlnwQ/+lg4J7E2L8qLsyS2R4Uov8dKaRbcpBBSEAZYV5Y4g64/eb\nSpQaBUGE47/2NQBg+PDLzb59ducybJ91/E+syROelJxVW6kYQT9o/Hz8ioI/+nf7\nXKPThYLrk8ZOPoagksS4Uz6wnPkccZEhREkxLmYAdxAy04w9I5kCLFj482nrh9sp\nBNmyoCB/joG0haHB4bqj+APVxqeQSU2UE856z1IUnayD4733a8Y2vDLq17KfljfU\nKC8jo5aoZe7z/vR+2x1KxLOwGGCxRxa/dORw4jiNRPhx8+BXGZwA1n5JIg3fB7hi\nvP8uEL4I+o94nYskvoL0YX6UQf4RzOugysunQRhvpmLmtfHdqFFdJg9bQP/LSZEm\npBFuaqEnHXBX+rbPpQkHRixNbG3qUY3bHDdENvwwgwyVzxxhsFbHmZuK0uqJtf4Q\n2AdsKcOr8K2u038/XX7CNsotvD4FXt73cs70rNuiP4xQy/sBCFA=\n=6YGT\n-----END PGP SIGNATURE-----",
+        "payload": "tree b777502e96eef949c55973fa00b8fd3c2f7ac468\nparent f3edd02c94da3e7174dc861004e24ece4930f613\nauthor Alex Gleason <alex@alexgleason.me> 1778801710 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778801710 -0500\n\nMake the badge-set hero a poster-style banner with the image as cover art\n\nThe previous compact thumbnail + side text layout looked generic and\nburied the artwork (which for game-based sets like Super Mario Bros.\nis the visual centerpiece). Render the image full-bleed at 16:9 with\nthe title and description overlaid on a dark bottom gradient when\npresent, and fall back to a clean centered text card with a 'Badge\nset' eyebrow when no image is provided.\n",
+        "verified_at": "2026-05-14T23:36:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/c6c9aaa2b28b20811649511a0aacc235560f956e",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/c6c9aaa2b28b20811649511a0aacc235560f956e",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/c6c9aaa2b28b20811649511a0aacc235560f956e/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f3edd02c94da3e7174dc861004e24ece4930f613",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/f3edd02c94da3e7174dc861004e24ece4930f613",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/f3edd02c94da3e7174dc861004e24ece4930f613"
+      }
+    ]
+  },
+  {
+    "sha": "f3edd02c94da3e7174dc861004e24ece4930f613",
+    "node_id": "C_kwDOL5Eek9oAKGYzZWRkMDJjOTRkYTNlNzE3NGRjODYxMDA0ZTI0ZWNlNDkzMGY2MTM",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T23:32:53Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T23:32:53Z"
+      },
+      "message": "Render NIP-51 badge sets (kind 30008 with arbitrary d) distinctly from legacy NIP-58 profile badges\n\nKind 30008 is overloaded: NIP-58 originally defined it as profile badges\n(d=profile_badges), and NIP-51 now defines it as 'badge set' — a\ncategorized group of NIP-58 badges with optional title/description/image.\nDitto was treating every 30008 as legacy profile badges, so badge sets\nrendered blank (parseProfileBadges rejects non-profile_badges d-tags)\nand their action header read 'updated their badges' instead of using\nthe set's title.\n\nDiscriminate at the event level via isProfileBadgesEvent / isBadgeSetEvent\nin badgeUtils, add a dedicated BadgeSetContent renderer with the set's\nhero (image + title + description) plus the badge grid, and have the\nfeed action header interpolate the title — so e.g. a Super Mario Bros.\nbadge set reads 'Alice updated Super Mario Bros. badges' with 'badges'\nlinking to /badges. Updates the dispatch in NoteCard, PostDetailPage,\nEmbeddedNote, EmbeddedNaddr, and the label / icon / suffix maps in\nCommentContext, NotificationsPage, and extraKinds so the two variants\nstay separate everywhere a kind label is rendered.",
+      "tree": {
+        "sha": "5d7583349f78704dce33e64168b24ceafc41c4fd",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/5d7583349f78704dce33e64168b24ceafc41c4fd"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/f3edd02c94da3e7174dc861004e24ece4930f613",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoGW6UACgkQchHR+ZdE\n+7ddLA/+JpYk9fpG2oIojE3cMY7ETflvULTzJ06SkWsRlFN1tAk+nYdzzHCTf4+P\ncVyglYGcGSSnUotJg+acVFW8eq3ht+hC+5ze9KL8WuyFpVTy1NFdSjXtnh7lsgDw\nE/RLbJOJL5GvXoMLYTGoKcewF0zw3hW4VOmKRAZQe2nB+AJlSY1XQlTcSPiS06n6\n6RuxpO7e7vLL5OPu1+eEiPRGZiB9/o7R47aq2oRxIC3+EwcjLQxWwqhCI+KCd1pg\nws4Q3MugwM/mEaE5KVsdISt8deFJippSq5f4zkl8RkEivQ4ZNoUrpNrmcNL1fm+O\nCpDav+UU0W3IFA5kc+xfNdqH5Y6XiaTP7XHn23O8ixgzY1EB3rYiXCsipogt6EhF\nLJBiWdjgYyOPPJ6WTa87nitwJlDLKt8oi+DB6lyqgmhVT/inRHXfnV0c+59HBf0Z\ni3XzWkfRXRcy5t6vCQnDlrjoalP3f7428G14jgI6wTk6bIUCsiIq9HR47O50M2oc\nf7TNObCbX9q1IyHZ/US+sLX+F0hrchHQBXSry3Q4UyFkMAzqHk7ulRpKjvq9vNsx\neqjs4c4A9+nMOEsbXh2t7enHxKQzsub4qnPJN1lnJ+cnZr/vZAKJxTs7iJVBfC9Q\njWQFejsoDPe5jVvfI3PCM/7Ffkl+vvZHNqw8+au+GVOGCGRDBEE=\n=6YmB\n-----END PGP SIGNATURE-----",
+        "payload": "tree 5d7583349f78704dce33e64168b24ceafc41c4fd\nparent 054f1a50ed2b4f2b1bc6925dbb4f8f40b8ec7712\nauthor Alex Gleason <alex@alexgleason.me> 1778801573 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778801573 -0500\n\nRender NIP-51 badge sets (kind 30008 with arbitrary d) distinctly from legacy NIP-58 profile badges\n\nKind 30008 is overloaded: NIP-58 originally defined it as profile badges\n(d=profile_badges), and NIP-51 now defines it as 'badge set' — a\ncategorized group of NIP-58 badges with optional title/description/image.\nDitto was treating every 30008 as legacy profile badges, so badge sets\nrendered blank (parseProfileBadges rejects non-profile_badges d-tags)\nand their action header read 'updated their badges' instead of using\nthe set's title.\n\nDiscriminate at the event level via isProfileBadgesEvent / isBadgeSetEvent\nin badgeUtils, add a dedicated BadgeSetContent renderer with the set's\nhero (image + title + description) plus the badge grid, and have the\nfeed action header interpolate the title — so e.g. a Super Mario Bros.\nbadge set reads 'Alice updated Super Mario Bros. badges' with 'badges'\nlinking to /badges. Updates the dispatch in NoteCard, PostDetailPage,\nEmbeddedNote, EmbeddedNaddr, and the label / icon / suffix maps in\nCommentContext, NotificationsPage, and extraKinds so the two variants\nstay separate everywhere a kind label is rendered.\n",
+        "verified_at": "2026-05-14T23:36:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/f3edd02c94da3e7174dc861004e24ece4930f613",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/f3edd02c94da3e7174dc861004e24ece4930f613",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/f3edd02c94da3e7174dc861004e24ece4930f613/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "054f1a50ed2b4f2b1bc6925dbb4f8f40b8ec7712",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/054f1a50ed2b4f2b1bc6925dbb4f8f40b8ec7712",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/054f1a50ed2b4f2b1bc6925dbb4f8f40b8ec7712"
+      }
+    ]
+  },
+  {
+    "sha": "054f1a50ed2b4f2b1bc6925dbb4f8f40b8ec7712",
+    "node_id": "C_kwDOL5Eek9oAKDA1NGYxYTUwZWQyYjRmMmIxYmM2OTI1ZGJiNGY4ZjQwYjhlYzc3MTI",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T14:40:32Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T14:40:32Z"
+      },
+      "message": "Render reaction and zap overlays on the search feed too\n\na20d40f8 routed the home, profile, follow-page, custom-tab, and\npeople-list feeds through buildFeedItems so kind 7 reactions and\nkind 9735 / 8333 zaps render as an overlay header on the target\npost. SearchPage uses useStreamPosts (a separate streaming + paging\nhook) and was missed — its render loop only had the kind 6 / 16\nrepost branch, so reactions and zaps fell through to NoteCard's\nstandalone activity-card layout, exactly the regression a20d40f8\nwas meant to fix.\n\nRun buildFeedItems / dedupeFeedItems on the rendered slice via\nuseQuery (keyed by the post-id list so it doesn't re-run on\nunrelated re-renders), pass reactedBy / zappedBy / repostEvent\nthrough to NoteCard, and key items with feedItemKey() so the same\ntarget with multiple wrappers gets distinct stable keys.\n\nRegression-of: a20d40f8",
+      "tree": {
+        "sha": "c121cd8ab5531c69e1d7ccfc6a6646b886dc4b5f",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/c121cd8ab5531c69e1d7ccfc6a6646b886dc4b5f"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/054f1a50ed2b4f2b1bc6925dbb4f8f40b8ec7712",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoF3uAACgkQchHR+ZdE\n+7cQSA/+KwawbbDOGl5QBjDd74qIdQMAcAokhCy4cZgbQlU1CayZKRCeemPBk5Q+\n1h11YfI45yacs+2QPW5/Vvfth5aTnXX3HLRYmRil3cK6GX640L5D4MGqMA3hBtkc\nKPyg23djSFK4NCHtGoL+MLGLT2R6aj2qfVtY0U5JEnz+kUXVJK20X+/PWWCSlKlb\nTbekA/4QeiXxKRagvfbuhJabD1uY9MjQyPNBch8YF6ZB8CRHa00D6FJJ2kwPckjc\nFN33IVbmDBpkVnUu+Vthw8+Yf/umo3GYnvNFJSQrVl5PxfInd3DPKHPeMDr7Hxv7\nxMp42f1+3Z2Op40jpW+jUwohBGQfbqqmMP56Cg+Yti+Wdd2NYd5jS5c2qu6TmYKe\nLBK2LAiwsrgAZAcpcNkrLv+eO38mMMdFV7a+ZRexN9AZ/X6KWqUxNZo4I7M3aMom\n1w+U4PAILg59V/CKzmaSOTpge1PHir2hddKMNOzLBE3ZtuVOodU6uyrkWj9oQyqA\nOPlJP3GYkuOdM4QVem2ibgmET2O2pGDq519A7hX5Syze6bj3TKCqYyF7527x+rwW\nmvmf2aSSUtn5QjNfOiDl9+s3A/E0OeGc4RDAZW5NtzRxxE/fry+EDJi6QCAm6Uci\n8ftcaRSUeCgtYOuvRN8Tj6d/W2RIaZbTIhBseycE/hsKL6QFAvs=\n=m4s1\n-----END PGP SIGNATURE-----",
+        "payload": "tree c121cd8ab5531c69e1d7ccfc6a6646b886dc4b5f\nparent e914fc7f00c76539247a083f424119a950c9da11\nauthor Alex Gleason <alex@alexgleason.me> 1778769632 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778769632 -0500\n\nRender reaction and zap overlays on the search feed too\n\na20d40f8 routed the home, profile, follow-page, custom-tab, and\npeople-list feeds through buildFeedItems so kind 7 reactions and\nkind 9735 / 8333 zaps render as an overlay header on the target\npost. SearchPage uses useStreamPosts (a separate streaming + paging\nhook) and was missed — its render loop only had the kind 6 / 16\nrepost branch, so reactions and zaps fell through to NoteCard's\nstandalone activity-card layout, exactly the regression a20d40f8\nwas meant to fix.\n\nRun buildFeedItems / dedupeFeedItems on the rendered slice via\nuseQuery (keyed by the post-id list so it doesn't re-run on\nunrelated re-renders), pass reactedBy / zappedBy / repostEvent\nthrough to NoteCard, and key items with feedItemKey() so the same\ntarget with multiple wrappers gets distinct stable keys.\n\nRegression-of: a20d40f8\n",
+        "verified_at": "2026-05-14T14:46:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/054f1a50ed2b4f2b1bc6925dbb4f8f40b8ec7712",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/054f1a50ed2b4f2b1bc6925dbb4f8f40b8ec7712",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/054f1a50ed2b4f2b1bc6925dbb4f8f40b8ec7712/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e914fc7f00c76539247a083f424119a950c9da11",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/e914fc7f00c76539247a083f424119a950c9da11",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/e914fc7f00c76539247a083f424119a950c9da11"
+      }
+    ]
+  }
+]

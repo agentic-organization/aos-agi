@@ -7617,6 +7617,38 @@
     }
   },
   {
+    "id": "11015408841",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099388749,
+      "name": "divinevideo/divine-name-server",
+      "url": "https://api.github.com/repos/divinevideo/divine-name-server"
+    },
+    "payload": {
+      "ref": "fix/clear-revoked-at-on-reactivation",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/clear-revoked-at-on-reactivation",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-24T20:52:35Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
     "id": "11015408721",
     "type": "PushEvent",
     "actor": {
@@ -7641,38 +7673,6 @@
     },
     "public": true,
     "created_at": "2026-04-24T20:52:34Z",
-    "org": {
-      "id": 244841795,
-      "login": "divinevideo",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/divinevideo",
-      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
-    }
-  },
-  {
-    "id": "11015408841",
-    "type": "DeleteEvent",
-    "actor": {
-      "id": 168114,
-      "login": "mbradley",
-      "display_login": "mbradley",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/mbradley",
-      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
-    },
-    "repo": {
-      "id": 1099388749,
-      "name": "divinevideo/divine-name-server",
-      "url": "https://api.github.com/repos/divinevideo/divine-name-server"
-    },
-    "payload": {
-      "ref": "fix/clear-revoked-at-on-reactivation",
-      "ref_type": "branch",
-      "full_ref": "refs/heads/fix/clear-revoked-at-on-reactivation",
-      "pusher_type": "user"
-    },
-    "public": true,
-    "created_at": "2026-04-24T20:52:35Z",
     "org": {
       "id": 244841795,
       "login": "divinevideo",

@@ -32,6 +32,8 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 - 2026-05-11: `data/raw/github/daily/2026-05-11/divinevideo/divine-web/` captured **6 commits** in the 72h window. Themes: brand-correct Extra Bold legal headings, rich link previews for Slack/Twitter, sim-suppression hooks for divine-brain virtual-persona, revert three-state age gate, bare Nostr identifier linkification.
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
+- 2026-05-15: `data/raw/github/daily/2026-05-15/divinevideo/divine-web/` captured **6 commits** and **7 updated issues** in the 24h window. Themes: new Popular feed page (#371), search defaulting to Hot sort with sort pills above results (#365), Nostr mention linkification in video titles (#367), age-gated media 401 handling (#369), analytics route-mounting fix during auth restore (#370), acknowledgments to Miss Australiana / ArchiveTeam / Internet Archive (#366), Firefox video loading reliability fix (#51). Committer: [[people/rabble]] (all 6).
+
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?
 - Runtime deployment: where is this service hosted?

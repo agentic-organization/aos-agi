@@ -46,6 +46,8 @@ Ditto is one of AOS's **Foundry** projects, owned and operated by [[teams/soapbo
 
 - 2026-05-14: `data/raw/github/daily/2026-05-14/soapbox-pub/ditto/` captured **6 commits** in the 24h window (GitHub mirror). Themes: zap amounts displayed as USD by default with unified on-chain/Lightning icon, reaction and zap overlays consistently across all feeds, feed toggles for reactions and zaps, zap amounts in notifications linked to underlying events, Mute All dropdown next to Follow All buttons. Committers: [[people/alexgleason]].
 
+- 2026-05-15: `data/raw/github/daily/2026-05-15/soapbox-pub/ditto/` captured **8 commits** in the 24h window (GitHub mirror), including releases **v2.15.0** and **v2.15.1**. Themes: NIP-51 badge-set rendering (kind 30008) distinct from legacy NIP-58 badges, badge-set hero banner resized to 3:1 poster-style cover art, badge-definition query grouping for large sets, reaction/zap overlays extended to search feed, iOS App Store auto-release via Fastlane. Committer: [[people/alexgleason]] (all 8).
+
 ## Open questions
 - Where do Ditto contributors discuss day-to-day work — Nostr group, Discord/Matrix, GitLab issues only?
 - Who currently runs the flagship `ditto.pub` instance and what is its operational footprint?

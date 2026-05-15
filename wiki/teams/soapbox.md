@@ -63,6 +63,8 @@ Where the others have multiple maintainers and broader org membership, Soapbox c
 - 2026-05-11: Ditto (Soapbox's primary active project) shipped releases **v2.14.0** (2026-05-09) and **v2.14.1** (2026-05-11) on its GitHub mirror; 9 commits in the 72h window per `data/raw/github/daily/2026-05-11/soapbox-pub/ditto/`.
 - 2026-05-07: Team page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 
+- 2026-05-15: GitHub mirror activity per `data/raw/github/daily/2026-05-15/soapbox-pub/ditto/` shows **8 commits** and releases **v2.15.0 / v2.15.1**. Themes: NIP-51 badge-set rendering, badge hero 3:1 poster banner, search-feed reaction/zap overlays, iOS App Store auto-release. Sole committer: [[people/alexgleason]].
+
 ## Open questions
 - Is there a wider Soapbox team we don't see (private repos, contractors paid via AOS, etc.)?
 - Where do internal Soapbox discussions happen day-to-day?
