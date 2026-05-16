@@ -48,6 +48,8 @@ Ditto is one of AOS's **Foundry** projects, owned and operated by [[teams/soapbo
 
 - 2026-05-15: `data/raw/github/daily/2026-05-15/soapbox-pub/ditto/` captured **8 commits** in the 24h window (GitHub mirror), including releases **v2.15.0** and **v2.15.1**. Themes: NIP-51 badge-set rendering (kind 30008) distinct from legacy NIP-58 badges, badge-set hero banner resized to 3:1 poster-style cover art, badge-definition query grouping for large sets, reaction/zap overlays extended to search feed, iOS App Store auto-release via Fastlane. Committer: [[people/alexgleason]] (all 8).
 
+- 2026-05-16: `data/raw/github/daily/2026-05-16/soapbox-pub/ditto/` captured **10 commits** in the 24h window (GitHub mirror), including releases **v2.15.2** (2026-05-15). Themes: per-item error boundaries in feeds/embedded events to prevent one broken post from crashing the entire feed; page-level error boundary around the center column to keep sidebar/navigation interactive when content fails; `parseAddr` utility extracted and used across ~10 call sites for kind:pubkey:identifier address parsing with hex validation; MessageCircle icon for kind 1111 comment notifications; PostDetailPage error boundary for kind-dispatch so broken articles/zapstore releases don't blank the whole route. Committer: [[people/alexgleason]] (all 10).
+
 ## Open questions
 - Where do Ditto contributors discuss day-to-day work — Nostr group, Discord/Matrix, GitLab issues only?
 - Who currently runs the flagship `ditto.pub` instance and what is its operational footprint?

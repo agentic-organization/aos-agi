@@ -29,6 +29,8 @@ Observed activity across 3 repos in the [marmot-protocol](https://github.com/mar
 ## History
 - 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`).
 
+- 2026-05-16: Daily ingestion (`data/raw/github/daily/2026-05-16/marmot-protocol/whitenoise/`) captured **2 commits** by [[people/pepina-dev]] in the 24h window. Themes: leave group from chatlist for non-last admins with self-demotion logic and admin leave warnings (#638), archive option in removed-chat warning with leave-case wording changes (#657).
+
 ## Open questions
 - Full name, location, timezone?
 - Formal AOS affiliation (funded, contracted, independent)?

@@ -1,0 +1,494 @@
+[
+  {
+    "sha": "b61717ac496578fb02f9383b60a5a6cffca986ba",
+    "node_id": "C_kwDOO71yAtoAKGI2MTcxN2FjNDk2NTc4ZmIwMmY5MzgzYjYwYTVhNmNmZmNhOTg2YmE",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-16T04:32:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T04:32:44Z"
+      },
+      "message": "feat(dm): surface swallowed DAO bookkeeping failures via reporter port (#4402)\n\n* feat(dm_repository): add error reporter port for swallowed bookkeeping failures\n\n`DmRepository.recoverSelfWrap` and `_finalizeAfterRecipient{Success,Failure}`\nswallow DAO writes via `Log.error` only. With #4241 invoking\n`recoverSelfWrap` on every app-foreground transition, we need a production\nsignal for how often these doubly-degraded paths fire — without crossing\nthe `dm_repository` → app package boundary.\n\nIntroduces `DmRepositoryErrorReporter` (a typedef) as an optional\nconstructor parameter. Each of the 7 swallow sites — outer-transaction\ncatch in `sendMessage`, the rumor JSON parse path, the deleteById\nfallback, the doubly-degraded bookkeeping sink, both post-publish\nmarkSelfWrapStatus failures, and `_finalizeAfterRecipientFailure` — now\ninvokes the reporter after `Log.error`. The previously-silent inner\nswallow after JSON parse also gains a matching `Log.error` so the\nunified log stays consistent.\n\nSites are addressed via `DmRepositoryReportableSites` constants so the\nCrashlytics dashboard aggregates per site. The doc on the typedef makes\nthe contract explicit: reporters must not throw.\n\nTests extend `createRepository` with a recording-closure reporter and\nadd assertions to the existing swallow-path tests plus three new tests\ncovering the otherwise-uncovered finalizeAfterRecipientFailure swallow,\nthe sendMessage outer-transaction swallow, and the previously-silent\nmarkSelfWrapStatus-after-JSON-parse swallow.\n\nCoverage: 94.21% (above the 93% gate).\n\nRefs #4127\n\n* feat(dm): wire DM bookkeeping failure reporting to Crashlytics\n\nForwards the new `DmRepositoryErrorReporter` port to\n`CrashReportingService.recordError` inside `dmRepositoryProvider`, with\n`reason: 'DmRepository.<site>'` so the Crashlytics dashboard aggregates\nper swallow site.\n\n`OutgoingDmRetryService` gains an optional `CrashReportingService?`\nconstructor parameter (singleton-default, matching `DivineBlocObserver`)\nand reports the two existing `Log.error`-only catches — per-row\n`recoverSelfWrap` unexpected throws and the top-level sweep failure —\nvia the new `OutgoingDmRetryServiceReportableSites` constants.\n\n`ConversationBloc._onSelfWrapRecoveryRequested`'s `addError(lastError,\n…)` is upgraded to `Reportable(lastError, context:\n'_onSelfWrapRecoveryRequested')` so the bloc-level failure flows through\n`DivineBlocObserver` to Crashlytics. Single migrated site → string\nliteral per `error_handling.md` (1 site → literal, 2+ sites → constants\nclass).\n\nTests:\n- `outgoing_dm_retry_service_test.dart` adds a `_MockCrashReportingService`\n  and two tests verifying both swallow sites report to Crashlytics with\n  the correct `reason:` annotation.\n- `conversation_bloc_test.dart` updates the existing `errors:` assertion\n  from `isA<StateError>()` to the `Reportable<Object>.unwrap →\n  StateError` form per the matrix migration recipe.\n\nRefs #4127\n\n* chore(dm): regenerate app_providers.g.dart after dmRepositoryProvider change\n\nUpdates the provider hash for `dmRepositoryProvider` to reflect the new\n`errorReporter` closure in its factory. The CI `Generated Files` job\ncaught this — Riverpod codegen needed to be re-run after the factory\nbody change.\n\nRefs #4127\n\n* test(dm_repository): drop unused wireErrorReporter flag in test helper\n\nThe `wireErrorReporter` parameter on `createRepository` was added with\na `true` default but no test ever passes `false`. Removing per\ncode_style.md (\"if you are certain something is unused, delete it\ncompletely\"). All tests still get the recording reporter wired —\n`reporterCalls` resets per-test in `setUp`, and tests that don't trigger\na swallow simply observe an empty list.\n\nRefs #4127\n\n* fix(dm): stop retrying terminal self-wrap recovery races\n\n* test(ci): skip optimization for global-state upload tests\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "bc387c4086878ffacd17dae1c5aa0818acb11f49",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/bc387c4086878ffacd17dae1c5aa0818acb11f49"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/b61717ac496578fb02f9383b60a5a6cffca986ba",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqB/NsCRC1aQ7uu5UhlAAAUJYQAGTZc40bxrNAtwUHqn6FilYW\nv0fxaQutNLIXx41JiXm+X1McVUGdVAPCFqBzupRY3zLjwOYJx149sVJfAZ17iLtS\nHvJS6AK4ie8EOWSBWUwM0hv4l3f42uZ07u9FSE33sdfvOZKg7a3GGCrSMSASVDTa\nfxkiO4FVtmwbNz3R3PG+6YOL1N8i2rcmdD2Rk6C9gD9sHD5rcfhZcpTLUkosLJTi\nI0Q0K/zCfhfgDNMZZU+L2zgv3BlvESC537r40H7aqawv2UmoEEjCYxMSpFiq07zI\ngkJD9G5W1sRKKgZKctFSjZrrfwdCFTj6wtffnwqhJf8+h6LIxwz8K+aVoF1phxAl\nSN/rXWAdC0706P0DXQQMsrJqwP+vbhWY2+diLDduL6dm0ngBwpwuwvCA4Aga0MAR\nOrlusR7W2SjT2wY6yV6lu2pHN+YWeO3RiB/U86yAJpdNvfJZZpcdL6CQK0qPlHAr\nwnGVnI9zQqk3zhHyp9Ov/P9uhg2jRQAoCKsj4XB5cIsCzmVdKenTOjjL3DafIyI2\naqeaQUYXZydoJkk+BG8apEyLx9QMJEBVil29RBYAI0VYMoF8jK6KbKmFDWrF0seg\nzkqOpuVLN8jsClNAwieXAren5CMkL45BQST0WCBUxEGHiEYY7rr+xrIXYR4HvE0t\nq2bAofwucvWpQ864vpq9\n=nFy2\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bc387c4086878ffacd17dae1c5aa0818acb11f49\nparent 0eba46ee06c49b4d0614ec569c5fd35b75b46c63\nauthor Meylis <meylis@divine.video> 1778905964 +0500\ncommitter GitHub <noreply@github.com> 1778905964 -0500\n\nfeat(dm): surface swallowed DAO bookkeeping failures via reporter port (#4402)\n\n* feat(dm_repository): add error reporter port for swallowed bookkeeping failures\n\n`DmRepository.recoverSelfWrap` and `_finalizeAfterRecipient{Success,Failure}`\nswallow DAO writes via `Log.error` only. With #4241 invoking\n`recoverSelfWrap` on every app-foreground transition, we need a production\nsignal for how often these doubly-degraded paths fire — without crossing\nthe `dm_repository` → app package boundary.\n\nIntroduces `DmRepositoryErrorReporter` (a typedef) as an optional\nconstructor parameter. Each of the 7 swallow sites — outer-transaction\ncatch in `sendMessage`, the rumor JSON parse path, the deleteById\nfallback, the doubly-degraded bookkeeping sink, both post-publish\nmarkSelfWrapStatus failures, and `_finalizeAfterRecipientFailure` — now\ninvokes the reporter after `Log.error`. The previously-silent inner\nswallow after JSON parse also gains a matching `Log.error` so the\nunified log stays consistent.\n\nSites are addressed via `DmRepositoryReportableSites` constants so the\nCrashlytics dashboard aggregates per site. The doc on the typedef makes\nthe contract explicit: reporters must not throw.\n\nTests extend `createRepository` with a recording-closure reporter and\nadd assertions to the existing swallow-path tests plus three new tests\ncovering the otherwise-uncovered finalizeAfterRecipientFailure swallow,\nthe sendMessage outer-transaction swallow, and the previously-silent\nmarkSelfWrapStatus-after-JSON-parse swallow.\n\nCoverage: 94.21% (above the 93% gate).\n\nRefs #4127\n\n* feat(dm): wire DM bookkeeping failure reporting to Crashlytics\n\nForwards the new `DmRepositoryErrorReporter` port to\n`CrashReportingService.recordError` inside `dmRepositoryProvider`, with\n`reason: 'DmRepository.<site>'` so the Crashlytics dashboard aggregates\nper swallow site.\n\n`OutgoingDmRetryService` gains an optional `CrashReportingService?`\nconstructor parameter (singleton-default, matching `DivineBlocObserver`)\nand reports the two existing `Log.error`-only catches — per-row\n`recoverSelfWrap` unexpected throws and the top-level sweep failure —\nvia the new `OutgoingDmRetryServiceReportableSites` constants.\n\n`ConversationBloc._onSelfWrapRecoveryRequested`'s `addError(lastError,\n…)` is upgraded to `Reportable(lastError, context:\n'_onSelfWrapRecoveryRequested')` so the bloc-level failure flows through\n`DivineBlocObserver` to Crashlytics. Single migrated site → string\nliteral per `error_handling.md` (1 site → literal, 2+ sites → constants\nclass).\n\nTests:\n- `outgoing_dm_retry_service_test.dart` adds a `_MockCrashReportingService`\n  and two tests verifying both swallow sites report to Crashlytics with\n  the correct `reason:` annotation.\n- `conversation_bloc_test.dart` updates the existing `errors:` assertion\n  from `isA<StateError>()` to the `Reportable<Object>.unwrap →\n  StateError` form per the matrix migration recipe.\n\nRefs #4127\n\n* chore(dm): regenerate app_providers.g.dart after dmRepositoryProvider change\n\nUpdates the provider hash for `dmRepositoryProvider` to reflect the new\n`errorReporter` closure in its factory. The CI `Generated Files` job\ncaught this — Riverpod codegen needed to be re-run after the factory\nbody change.\n\nRefs #4127\n\n* test(dm_repository): drop unused wireErrorReporter flag in test helper\n\nThe `wireErrorReporter` parameter on `createRepository` was added with\na `true` default but no test ever passes `false`. Removing per\ncode_style.md (\"if you are certain something is unused, delete it\ncompletely\"). All tests still get the recording reporter wired —\n`reporterCalls` resets per-test in `setUp`, and tests that don't trigger\na swallow simply observe an empty list.\n\nRefs #4127\n\n* fix(dm): stop retrying terminal self-wrap recovery races\n\n* test(ci): skip optimization for global-state upload tests\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-16T04:32:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b61717ac496578fb02f9383b60a5a6cffca986ba",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/b61717ac496578fb02f9383b60a5a6cffca986ba",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b61717ac496578fb02f9383b60a5a6cffca986ba/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0eba46ee06c49b4d0614ec569c5fd35b75b46c63",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0eba46ee06c49b4d0614ec569c5fd35b75b46c63",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/0eba46ee06c49b4d0614ec569c5fd35b75b46c63"
+      }
+    ]
+  },
+  {
+    "sha": "0eba46ee06c49b4d0614ec569c5fd35b75b46c63",
+    "node_id": "C_kwDOO71yAtoAKDBlYmE0NmVlMDZjNDliNGQwNjE0ZWM1NjljNWZkMzViNzViNDZjNjM",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-16T04:12:47Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T04:12:47Z"
+      },
+      "message": "feat(dm): recoverFullSend primitive + auto-sweep wiring for recipient-failed DMs (#4410)\n\n* feat(dm): add recoverFullSend primitive for recipient-failed outgoing_dms rows\n\nCloses the recovery gap for `outgoing_dms` rows in\n`recipient_wrap_status: failed`. Today the retry service from #4241\nenumerates these rows but cannot act on them — only the\n`recipient: sent / self: failed` case has a recovery primitive\n(`recoverSelfWrap`, PR #4106). Without this, an app kill or relay\nreject that finalized as recipient-failed leaves the row indefinitely\nbroken even after connectivity restoration.\n\n`DmRepository.recoverFullSend(rumorId)` mirrors `recoverSelfWrap`'s\nshape: validates ownership, idempotent-defers to `recoverSelfWrap`\nwhen the row's recipient wrap is already sent (a concurrent recovery\nor the original partial-success path), rebuilds the rumor from\n`rumor_event_json` (preserving the receiver-side dedup key across\nretries), calls `sendRumor`, then finalizes via the existing\n`_finalizeAfterRecipientSuccess` / `_finalizeAfterRecipientFailure`\nhelpers. The success transaction persists `direct_messages` + upserts\nthe conversation row + deletes the queue row atomically, mirroring\n`sendMessage`'s happy path.\n\nRe-publishing a rumor whose original wire copy actually landed is\nsafe: NIP-17 receiver-side dedup keys on the rumor id, which the\nstored `rumor_event_json` preserves verbatim. Minting a fresh rumor\non retry would defeat that contract.\n\nRelates to #3909. Closes the design portion of #4240; the\nstrategy-table wiring in `OutgoingDmRetryService` ships in the\nfollowing commit.\n\nTests cover full delivery, partial delivery, recipient failure,\nidempotent recipient-sent defer, missing row, foreign owner, missing\nDAO, rumor JSON parse failure, and degraded local-persistence-after-\npublish-success.\n\n* feat(dm): wire recoverFullSend into OutgoingDmRetryService strategy table\n\nSecond commit in the #4240 stack. PR #4241 left\n`recipient_wrap_status: failed` rows in a counting-only branch with\nthe inline comment `recovery primitive lands in #4240`. With the\nprimitive now in place from the prior commit, the sweep dispatches\nthose rows to `DmRepository.recoverFullSend` instead of merely\nincrementing a log counter.\n\nStrategy table after this change:\n\n  recipient: sent / self: failed → recoverSelfWrap\n  recipient: failed              → recoverFullSend\n  pending: pending               → not in retryable filter\n                                   (interrupted-send recovery deferred)\n\nThe dispatch reuses the existing per-row backoff, `_isSweeping`\nre-entrancy guard, and the StateError/ArgumentError/unexpected-throw\nerror policy from the `recoverSelfWrap` branch.\n\nThe sweep summary log gains `full-send-recovered` and\n`full-send-failed` counters, replacing the now-acted-on\n`recipient-failed=N` log line. The obsolete `#4240` comment in the\nclass doc is removed; the doc now states both strategy entries.\n\nTests update:\n- `does NOT dispatch recipient: failed rows` becomes `dispatches\n  recipient: failed rows to recoverFullSend` since the contract\n  inverted.\n- The `contract: never republishes recipient wraps` group is renamed\n  to `dispatches the correct primitive per row state`. The strict\n  invariant now reads \"no `sendMessage`/`sendGroupMessage` for any\n  retryable row\" — `sendRumor` flows through `recoverFullSend`\n  intentionally for `recipient: failed` rows (the whole point) so it\n  can no longer be in the `verifyNever` list.\n- New tests pin: `recoverFullSend` never invoked for\n  `recipient: sent` rows; per-row backoff still applies; StateError\n  aborts pass without bumping retry; ArgumentError is terminal-skip;\n  unexpected throw bumps retry and continues.\n\nCloses #4240. Relates to #3909.",
+      "tree": {
+        "sha": "bcbad0732662bad821147691f5c685d70de68fc4",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/bcbad0732662bad821147691f5c685d70de68fc4"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/0eba46ee06c49b4d0614ec569c5fd35b75b46c63",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqB+6/CRC1aQ7uu5UhlAAAAdEQACVPZbqhepnTX/NNN2aXnQsB\nP/ohVvC2noG9rqK7rfnBqxSadTaYg/h7l/7qvKlRSwvUziNAAdvHMpopwvn52mkL\neXVctK2xP8GWDsMZtyH8M3zRV0Og9UzEJSsWSWL2DIYxtNTIp3BQU2Hl2wEtW94d\nyMhJIUM+j7HYmM45/bK2+Xb5eSuZ6MvGSc7Vb9LudDOA5dlJ7N4eGFdleSblRjM5\ngdcWIKvUPitXOqt+D/jS7Ux8usyj5COQZzYD8+V1mTO8DI1yMbnOR6b6jTHyoftq\n7pvZH0tsOY/u0fdVezGQ5MQ7KIj0b2AdVFddijXssaGqZz2KbPeAxSOfr304T/yn\nFEQvlXWI65NyTrh6F/4Zdxyo/60fZgthFJwx9V7xVopR9iQzc0xJ9w7Esnp5O2Ln\nhKcXh+b4JXeKQ69eKqTZlgAQCh+Z9s5/cdzvo8jGvBnA00JXzRgGsCJIiZ24QqUF\n59cDfusg8bys6/Viwd6YkNM9ZJX6ed2xTCLmMw0WY9e1BVgInDtEBuxaNJiwf59b\ndCBZPVtRHO0RZqIjM1EE/i1LgnIgRdsp1J5WqHvs1DaCLPGwjOoyEfie2S9La4Px\neMyiv/oXiYzr2IuYHj1xIYsQ4UBXenYKyqsoEwivAw5dXVuKhUOdSodBVaS86b68\nTiG50ylDbsK/folagzy8\n=hgYv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bcbad0732662bad821147691f5c685d70de68fc4\nparent 8857119cbb3abb9f7f17ac1e70ede5430a7e21ed\nauthor Meylis <meylis@divine.video> 1778904767 +0500\ncommitter GitHub <noreply@github.com> 1778904767 +0500\n\nfeat(dm): recoverFullSend primitive + auto-sweep wiring for recipient-failed DMs (#4410)\n\n* feat(dm): add recoverFullSend primitive for recipient-failed outgoing_dms rows\n\nCloses the recovery gap for `outgoing_dms` rows in\n`recipient_wrap_status: failed`. Today the retry service from #4241\nenumerates these rows but cannot act on them — only the\n`recipient: sent / self: failed` case has a recovery primitive\n(`recoverSelfWrap`, PR #4106). Without this, an app kill or relay\nreject that finalized as recipient-failed leaves the row indefinitely\nbroken even after connectivity restoration.\n\n`DmRepository.recoverFullSend(rumorId)` mirrors `recoverSelfWrap`'s\nshape: validates ownership, idempotent-defers to `recoverSelfWrap`\nwhen the row's recipient wrap is already sent (a concurrent recovery\nor the original partial-success path), rebuilds the rumor from\n`rumor_event_json` (preserving the receiver-side dedup key across\nretries), calls `sendRumor`, then finalizes via the existing\n`_finalizeAfterRecipientSuccess` / `_finalizeAfterRecipientFailure`\nhelpers. The success transaction persists `direct_messages` + upserts\nthe conversation row + deletes the queue row atomically, mirroring\n`sendMessage`'s happy path.\n\nRe-publishing a rumor whose original wire copy actually landed is\nsafe: NIP-17 receiver-side dedup keys on the rumor id, which the\nstored `rumor_event_json` preserves verbatim. Minting a fresh rumor\non retry would defeat that contract.\n\nRelates to #3909. Closes the design portion of #4240; the\nstrategy-table wiring in `OutgoingDmRetryService` ships in the\nfollowing commit.\n\nTests cover full delivery, partial delivery, recipient failure,\nidempotent recipient-sent defer, missing row, foreign owner, missing\nDAO, rumor JSON parse failure, and degraded local-persistence-after-\npublish-success.\n\n* feat(dm): wire recoverFullSend into OutgoingDmRetryService strategy table\n\nSecond commit in the #4240 stack. PR #4241 left\n`recipient_wrap_status: failed` rows in a counting-only branch with\nthe inline comment `recovery primitive lands in #4240`. With the\nprimitive now in place from the prior commit, the sweep dispatches\nthose rows to `DmRepository.recoverFullSend` instead of merely\nincrementing a log counter.\n\nStrategy table after this change:\n\n  recipient: sent / self: failed → recoverSelfWrap\n  recipient: failed              → recoverFullSend\n  pending: pending               → not in retryable filter\n                                   (interrupted-send recovery deferred)\n\nThe dispatch reuses the existing per-row backoff, `_isSweeping`\nre-entrancy guard, and the StateError/ArgumentError/unexpected-throw\nerror policy from the `recoverSelfWrap` branch.\n\nThe sweep summary log gains `full-send-recovered` and\n`full-send-failed` counters, replacing the now-acted-on\n`recipient-failed=N` log line. The obsolete `#4240` comment in the\nclass doc is removed; the doc now states both strategy entries.\n\nTests update:\n- `does NOT dispatch recipient: failed rows` becomes `dispatches\n  recipient: failed rows to recoverFullSend` since the contract\n  inverted.\n- The `contract: never republishes recipient wraps` group is renamed\n  to `dispatches the correct primitive per row state`. The strict\n  invariant now reads \"no `sendMessage`/`sendGroupMessage` for any\n  retryable row\" — `sendRumor` flows through `recoverFullSend`\n  intentionally for `recipient: failed` rows (the whole point) so it\n  can no longer be in the `verifyNever` list.\n- New tests pin: `recoverFullSend` never invoked for\n  `recipient: sent` rows; per-row backoff still applies; StateError\n  aborts pass without bumping retry; ArgumentError is terminal-skip;\n  unexpected throw bumps retry and continues.\n\nCloses #4240. Relates to #3909.",
+        "verified_at": "2026-05-16T04:12:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0eba46ee06c49b4d0614ec569c5fd35b75b46c63",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/0eba46ee06c49b4d0614ec569c5fd35b75b46c63",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0eba46ee06c49b4d0614ec569c5fd35b75b46c63/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8857119cbb3abb9f7f17ac1e70ede5430a7e21ed",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/8857119cbb3abb9f7f17ac1e70ede5430a7e21ed",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/8857119cbb3abb9f7f17ac1e70ede5430a7e21ed"
+      }
+    ]
+  },
+  {
+    "sha": "8857119cbb3abb9f7f17ac1e70ede5430a7e21ed",
+    "node_id": "C_kwDOO71yAtoAKDg4NTcxMTljYmIzYWJiOWY3ZjE3YWMxZTcwZWRlNTQzMGE3ZTIxZWQ",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-16T00:47:16Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T00:47:16Z"
+      },
+      "message": "fix(inbox): backfill stale conversation previews (#4415)",
+      "tree": {
+        "sha": "9afac8d1d94d1d8cb6b7efdcd5f699e8a3b0d13a",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/9afac8d1d94d1d8cb6b7efdcd5f699e8a3b0d13a"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/8857119cbb3abb9f7f17ac1e70ede5430a7e21ed",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqB76UCRC1aQ7uu5UhlAAAovMQAHNdZ/dDdgzeUwIHIkDSpJIU\n6go9oK6Qi1ZYatu66hvAozGuAuY9JzLcUY43b8J3U3E7y09Ve+geMG2uNYP+Tphk\nTcdB/lPcgmk+AtfJILv3cjicFy2CPDgrbzPu4SGkjzp9NAELtkPQEs33d2EE6wFB\nKhd11Dbgr1vsYDTb0wOCcLyJ2nrHDBYcclbmUOYu6OjqpMBC0E0PaHYneBfO3mYy\nF89sM4fUH5rmj+CO9Bwrb7fxT73zv3itiZTUxu03ePKIIubcsPyNqZGiCQMryP1w\nU7SJEm81OVzPrXdFdvpKrA3PvI2g+ZzsVAMLsZzKGAAe5DlggBZUih5JgROTzzBr\n59sLV5CReBOysSZXiLVokPKKiCrj6tHkYmxLYX2Dwj0BfGt0jHqyd59GX3Yt317+\nkFfhy7y+zUlZriYct9ImwZQHi3eDiirELz8LHoiky1OhxSdljY6VoIBAEqq7L9Gt\nnUFCleu+iubp2osfbA7zb+dyHp+kzu+ypatWb+mP8ZdvtmdTl6u+pi8kBhphwUXp\n/NJPEH4OcYBlp5gnektrvG2L32gAw+NPtjrmYmBk8aCGHtEaZPdj/0Ejtk+jkkL8\n4/Z3XWLD/khGv0ZjqVVRM4ZKx6Ifu0gsl/Nz7srlRl8I4zz+QEJYvX6dpNv70WO+\nSzAGcZD0TgNqopeJ/bvP\n=/18k\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9afac8d1d94d1d8cb6b7efdcd5f699e8a3b0d13a\nparent 534db2778ff61891e1ac613907c1f080340b2c00\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778892436 -0500\ncommitter GitHub <noreply@github.com> 1778892436 -0500\n\nfix(inbox): backfill stale conversation previews (#4415)",
+        "verified_at": "2026-05-16T00:47:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/8857119cbb3abb9f7f17ac1e70ede5430a7e21ed",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/8857119cbb3abb9f7f17ac1e70ede5430a7e21ed",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/8857119cbb3abb9f7f17ac1e70ede5430a7e21ed/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "534db2778ff61891e1ac613907c1f080340b2c00",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/534db2778ff61891e1ac613907c1f080340b2c00",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/534db2778ff61891e1ac613907c1f080340b2c00"
+      }
+    ]
+  },
+  {
+    "sha": "534db2778ff61891e1ac613907c1f080340b2c00",
+    "node_id": "C_kwDOO71yAtoAKDUzNGRiMjc3OGZmNjE4OTFlMWFjNjEzOTA3YzFmMDgwMzQwYjJjMDA",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-16T00:46:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T00:46:55Z"
+      },
+      "message": "fix(search): define explore search focus contract (#4413)",
+      "tree": {
+        "sha": "4c390ae678a16d219871887055d28d22dca127e1",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/4c390ae678a16d219871887055d28d22dca127e1"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/534db2778ff61891e1ac613907c1f080340b2c00",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqB75/CRC1aQ7uu5UhlAAAAXsQABcpQqlzG8Gny/3Vr7txGTND\nlg2caRdX2inSgtewlD9wDhpQ0PI9mYakOvpE0F981hUXY6VehcvGR3hlxyGJBlPC\ndsSPrWE1ncHPRVR2WAAriQpOayAHb8yO7HyBhAdI6Zzs3G59gCA83sd/pf+jmIAm\nXDjtqHn/8Jmbsbv4aR6jGXehyXtrwDachhFsXKYcpT63EkBO8GbbfzkObEvwzlBH\nQ2qrB+p1a5UO2nzQvbLzb9jRJklDdrKlKrk4avYCKdaXnEDCuPSrj0CMBbpGKDu5\ntaL+g9HuWl/TeVqOPK/JfGaQxvKNjO1vD4KVp6L/7UiJ5YMyEXzNplrkzacIOYO+\nvGWZMoR0nnWTARwdoJcTgaDggKgo4kuhfYUbcp+0o6fdo35QRcD6T4TvkiQ9VgFB\ntM+L0kcOSfWVuo1TE3PQAPk/75GaWLlPr7Y9UovD3aZrSAL89fmrYx24YgXS1pKI\nfanv0+NZ5DoCG3AvPmZpCeaPzTPgBoTPYhePw9A8HoqVrHmmuJZ/gy1N1aTX6BUl\n/of0Hi1FZLSAiigAVq7eqKhJyTivq+HBLRdmPN0DVohHcjk9slE5rLL+MYVnIYEM\nqdJxMHg8F/MG/qqFlCFP3NsFULbe3gnzWg/2NRwogxwgq4JWEVavElKh7N/rUaEu\nyTdT5Y0+hE0S12poH7SJ\n=2y+C\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4c390ae678a16d219871887055d28d22dca127e1\nparent 382b3b3bc8125a2060e2fbf31d188fbfbfad95b0\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778892415 -0500\ncommitter GitHub <noreply@github.com> 1778892415 -0500\n\nfix(search): define explore search focus contract (#4413)",
+        "verified_at": "2026-05-16T00:46:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/534db2778ff61891e1ac613907c1f080340b2c00",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/534db2778ff61891e1ac613907c1f080340b2c00",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/534db2778ff61891e1ac613907c1f080340b2c00/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "382b3b3bc8125a2060e2fbf31d188fbfbfad95b0",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/382b3b3bc8125a2060e2fbf31d188fbfbfad95b0",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/382b3b3bc8125a2060e2fbf31d188fbfbfad95b0"
+      }
+    ]
+  },
+  {
+    "sha": "382b3b3bc8125a2060e2fbf31d188fbfbfad95b0",
+    "node_id": "C_kwDOO71yAtoAKDM4MmIzYjNiYzgxMjVhMjA2MGUyZmJmMzFkMTg4ZmJmYmZhZDk1YjA",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-16T00:46:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T00:46:29Z"
+      },
+      "message": "fix(search): audit list search filtering consistency (#4414)",
+      "tree": {
+        "sha": "d2ac632008993de7448312a98315b024656c8326",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/d2ac632008993de7448312a98315b024656c8326"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/382b3b3bc8125a2060e2fbf31d188fbfbfad95b0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqB75lCRC1aQ7uu5UhlAAAydUQACcsNlonnvNeWM/L8k/9Fbkx\nOXasQvRycQzBotHLYzUZUIX2ssRhgoI/i+7B9+Tu9UPp62psVkhAX50p9/x7NSKL\nhL4BHdmhNV0NQk6nqK1JryZnvYSsg9eQImoYgO+6FenNd0B+RtZgQniq+TG6oMig\nmLueglSbDMjlvraeYPvTOPIYT3+729evHhOaHmuPJYBDaIpdn6zlSYvtOgj06wiO\nFv+sCD20l68+bES+PGeqU1mmhHKbkQRsom8MFjHd3hlqYj7Hj203+tz2g0NNbGeS\nhgP6gIrxzXsACD/3276QFmrNPB/YX9jbw90V0em/WqtdVuKZLjDEjnv64o4S6PDy\n3GpuvtA6jgLyHMQnLH3r5AycU35WY1miIPzYxNyy1z2ug/PqA71yhlE1aSQued+v\nm58nYHwML/llIP56lhKXs8RgBCKWvYCDj+bpqlSJ5lSDl5cxq6QT8j00bZYTbhLO\nrHUQZwVHPWdCLshAAR1fjcCM4iTcaxGWw7EgkduvNA3J0kozbXW1mUTl/fTurydV\nJ3X1KixYzUlied4HhRX+DqMXQo58D+bhQJM8rHkvZC/4Zbv4p6K/Sr14cgk+DPuu\nvqIYDOerksWbUZaAHEhlGXWEmgFUz9G7SgF9czQnnXjbMNOiFTCoJzOEGZ4Vwd1r\n2Wtvr5MmMMDaUQaJJELm\n=I60q\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d2ac632008993de7448312a98315b024656c8326\nparent e11716105bc960c1c9b6a562a2f727cefcfc7104\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778892389 -0500\ncommitter GitHub <noreply@github.com> 1778892389 -0500\n\nfix(search): audit list search filtering consistency (#4414)",
+        "verified_at": "2026-05-16T00:46:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/382b3b3bc8125a2060e2fbf31d188fbfbfad95b0",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/382b3b3bc8125a2060e2fbf31d188fbfbfad95b0",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/382b3b3bc8125a2060e2fbf31d188fbfbfad95b0/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e11716105bc960c1c9b6a562a2f727cefcfc7104",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/e11716105bc960c1c9b6a562a2f727cefcfc7104",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/e11716105bc960c1c9b6a562a2f727cefcfc7104"
+      }
+    ]
+  },
+  {
+    "sha": "e11716105bc960c1c9b6a562a2f727cefcfc7104",
+    "node_id": "C_kwDOO71yAtoAKGUxMTcxNjEwNWJjOTYwYzFjOWI2YTU2MmEyZjcyN2NlZmNmYzcxMDQ",
+    "commit": {
+      "author": {
+        "name": "emir yorulmaz",
+        "email": "emiryorulmaz@ikmail.com",
+        "date": "2026-05-15T21:59:11Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T21:59:11Z"
+      },
+      "message": "perf(inbox): remove N+1 latest-message overlay queries in DmRepository (#4408)\n\n* perf(inbox): remove N+1 overlay queries; fix write-path drift (#4296)\n\n- Replace per-conversation getMessagesForConversation(limit:1) fan-out\n  in _overlayLatestMessages with a single batched\n  getLatestMessagesForConversations query (Option A). Inbox emit cost\n  drops from O(n) DAO reads to 1 regardless of conversation count.\n\n- Fix write-path drift in ConversationsDao.upsertConversation: the\n  last_message_* columns are now only updated on conflict when the\n  incoming timestamp is strictly newer than the stored one (Option B).\n  This prevents out-of-order gift-wrap arrivals during backfill from\n  overwriting a fresher denormalized preview. A forceUpdateLastMessage\n  escape hatch is used by _refreshConversationPreview (post-deletion)\n  where the replacement message is by definition the newest remaining.\n  currentUserHasSent is also now a write-once ratchet at the SQL level.\n\n- Keep _overlayLatestMessages as a transitional read-path safety net\n  for existing user databases that may have stale rows from before the\n  write-path fix. Removal tracked in #4407.\n\n- Add 4 new ConversationsDao unit tests covering: out-of-order upsert\n  does not overwrite a newer preview; in-order upsert does update;\n  forceUpdateLastMessage bypasses the timestamp guard; currentUserHasSent\n  is never flipped back to false.\n\n- Update dm_repository_test stubs and verify calls to include the new\n  forceUpdateLastMessage parameter where _refreshConversationPreview\n  is exercised.\n\n* refactor(inbox): unify upsertConversation via DoUpdate.withExcluded\n\nReplace the two-branch (forceUpdateLastMessage) implementation with a\nsingle unified DoUpdate.withExcluded path that applies the same metadata\nsemantics regardless of the force flag:\n\n- participantPubkeys, isGroup, isRead: always overwritten\n- subject, ownerPubkey, dmProtocol: coalesce (keep existing if incoming null)\n- currentUserHasSent: one-way ratchet (OR of old and excluded)\n- lastMessage*: iif(previewCondition, excl.col, old.col) where\n  previewCondition is either 'incomingIsNewer' (default) or true (force)\n\nThis removes the raw hand-written INSERT...ON CONFLICT SQL that\nduplicated the schema column list and eliminates the latent bug surface\nfrom having two incompatible update contracts behind the same method.\n\n* test(inbox): cover upsert conflict contract\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "5c1aa099028b5a22c88bd1695fb9ce0edaf1014d",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/5c1aa099028b5a22c88bd1695fb9ce0edaf1014d"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/e11716105bc960c1c9b6a562a2f727cefcfc7104",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqB5cvCRC1aQ7uu5UhlAAAh0MQAFXKOYEhKe4ti+4t8kLRICKj\n41VOrj6PW4lLpFm7qbO0lrita/UkvPsnOaU64kkZTQ5D/kAk0kGX1sYQ/OfwICOR\nU7v25qhioX9k/KuBssfoNpcTSRCcG1phXkz855sCmTIvlMtc+Xixs4RJjzFWQ1tL\noVUSvABbNs+nBtT9MXKYzbrppEPjRbJ7Wa2aeZKQVczOv1Q5JR6li3zCotX6tXX4\nejeUxgQ6eHEYpQpuS9n7bYbzBdbyesRl1w08gGhJKdAHPwZe++dwKU7zh260v+b5\nlT4ew8bOR9en8cbwMgGXBSYJ35tNZxH7uMnN/mVLR/Jt+yxALk0EVKsX4ol/ML41\nXC+rBfRguO3KGMTS0oCYaUTcGpkPCUr/HQrp509k3zOz4SzXIYYxxOb5U1AsgRlE\nLBEmNcB+QCA9auWS3pNSav/DJ4orFKUMuCg11QSZ8oi3J17DgDj1A964OD2xbpfJ\nFguCAlGlrBJQ0z0QMycX7FQlHGne/YI0j69evjxaKDBp9Bw4+MRbeBJ7EGY3kAd3\nyPURCN//QaMCFNuV6uKuaQaLjxOonmWZxKLsAfceFhWDK0+UkrwvKet9Trk8ttMJ\nD+U+u0Jpm8e6hfZXOnveJNFl8Beeubb29x0Fa8XLZbbmBWGr4R8oALsbPUOU/Bkf\n5vuYaCJSygeWAYe/GvRY\n=01vD\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5c1aa099028b5a22c88bd1695fb9ce0edaf1014d\nparent d9738a6fe81026eb1c0c74996f3a18f33ba453c1\nauthor emir yorulmaz <emiryorulmaz@ikmail.com> 1778882351 +0300\ncommitter GitHub <noreply@github.com> 1778882351 +0300\n\nperf(inbox): remove N+1 latest-message overlay queries in DmRepository (#4408)\n\n* perf(inbox): remove N+1 overlay queries; fix write-path drift (#4296)\n\n- Replace per-conversation getMessagesForConversation(limit:1) fan-out\n  in _overlayLatestMessages with a single batched\n  getLatestMessagesForConversations query (Option A). Inbox emit cost\n  drops from O(n) DAO reads to 1 regardless of conversation count.\n\n- Fix write-path drift in ConversationsDao.upsertConversation: the\n  last_message_* columns are now only updated on conflict when the\n  incoming timestamp is strictly newer than the stored one (Option B).\n  This prevents out-of-order gift-wrap arrivals during backfill from\n  overwriting a fresher denormalized preview. A forceUpdateLastMessage\n  escape hatch is used by _refreshConversationPreview (post-deletion)\n  where the replacement message is by definition the newest remaining.\n  currentUserHasSent is also now a write-once ratchet at the SQL level.\n\n- Keep _overlayLatestMessages as a transitional read-path safety net\n  for existing user databases that may have stale rows from before the\n  write-path fix. Removal tracked in #4407.\n\n- Add 4 new ConversationsDao unit tests covering: out-of-order upsert\n  does not overwrite a newer preview; in-order upsert does update;\n  forceUpdateLastMessage bypasses the timestamp guard; currentUserHasSent\n  is never flipped back to false.\n\n- Update dm_repository_test stubs and verify calls to include the new\n  forceUpdateLastMessage parameter where _refreshConversationPreview\n  is exercised.\n\n* refactor(inbox): unify upsertConversation via DoUpdate.withExcluded\n\nReplace the two-branch (forceUpdateLastMessage) implementation with a\nsingle unified DoUpdate.withExcluded path that applies the same metadata\nsemantics regardless of the force flag:\n\n- participantPubkeys, isGroup, isRead: always overwritten\n- subject, ownerPubkey, dmProtocol: coalesce (keep existing if incoming null)\n- currentUserHasSent: one-way ratchet (OR of old and excluded)\n- lastMessage*: iif(previewCondition, excl.col, old.col) where\n  previewCondition is either 'incomingIsNewer' (default) or true (force)\n\nThis removes the raw hand-written INSERT...ON CONFLICT SQL that\nduplicated the schema column list and eliminates the latent bug surface\nfrom having two incompatible update contracts behind the same method.\n\n* test(inbox): cover upsert conflict contract\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-15T21:59:12Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/e11716105bc960c1c9b6a562a2f727cefcfc7104",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/e11716105bc960c1c9b6a562a2f727cefcfc7104",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/e11716105bc960c1c9b6a562a2f727cefcfc7104/comments",
+    "author": {
+      "login": "untreu2",
+      "id": 110045638,
+      "node_id": "U_kgDOBo8pxg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110045638?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/untreu2",
+      "html_url": "https://github.com/untreu2",
+      "followers_url": "https://api.github.com/users/untreu2/followers",
+      "following_url": "https://api.github.com/users/untreu2/following{/other_user}",
+      "gists_url": "https://api.github.com/users/untreu2/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/untreu2/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/untreu2/subscriptions",
+      "organizations_url": "https://api.github.com/users/untreu2/orgs",
+      "repos_url": "https://api.github.com/users/untreu2/repos",
+      "events_url": "https://api.github.com/users/untreu2/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/untreu2/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d9738a6fe81026eb1c0c74996f3a18f33ba453c1",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/d9738a6fe81026eb1c0c74996f3a18f33ba453c1",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/d9738a6fe81026eb1c0c74996f3a18f33ba453c1"
+      }
+    ]
+  }
+]

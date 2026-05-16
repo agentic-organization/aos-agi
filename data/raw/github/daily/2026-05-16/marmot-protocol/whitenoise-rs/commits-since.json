@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "f1b2a545479348c30de85b5388a2323292130113",
+    "node_id": "C_kwDOMvLjydoAKGYxYjJhNTQ1NDc5MzQ4YzMwZGU4NWI1Mzg4YTIzMjMyOTIxMzAxMTM",
+    "commit": {
+      "author": {
+        "name": "Mubarak Auwal",
+        "email": "mubarakcoded@gmail.com",
+        "date": "2026-05-15T15:09:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T15:09:22Z"
+      },
+      "message": "Recover some coverage on account DB wrappers and membership ops (#830)\n\n* recover some coverage on account DB wrappers and membership ops\n\n* cover a few more side effects the existing tests missed\n\n* add an integration scenario for the mute list flow\n\n* bump scenario count for the new mute-list one\n\n* exclude rust_migrations and whitenoise-cli from coverage\n\n* address jeff's feedback on recover-coverage",
+      "tree": {
+        "sha": "19550debc437a4caa937699eb2d13fd112270280",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/19550debc437a4caa937699eb2d13fd112270280"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/f1b2a545479348c30de85b5388a2323292130113",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBzciCRC1aQ7uu5UhlAAA0lgQAF/F7VpY3MN0a2vzGZC0gFuY\nnNzqB1QinCX6wlBdazpDA417t+72K7J/FQQxbqN+mHGYyZWSrYAz/qc0LDtbhljm\nm6cp2oXzDNUGOFUKUwDXQBxWNJ/I5xQb0/NSQo47T9emsnNpNsBdYuwZpV1tHfUY\n27Ee0D5hROSo17e1OrjOHbS2ZUZgRZm6QwnBb6pX6PTUBbVcQ+rWNPGoRH2sLqfC\n4tzXKBIFwG3TC8pPgazN5sYqGGH5xc/bVgyE7fTnjnM9VZ1s4NhA/7XLcBp8q+CD\ncUI7uFW3Dah7h6jAEGDuCuqcWGQMKlUyih6SfnrlMsCTda+3uyUXSExNPtkPg8xo\n1nWZNWC6jooK7vZGqRhaRvP7Ssc4A83BYMU2NAKbDh7beuFzcpcakIwhRzC8cv4t\nWA95v9++EzapVF6NQMxT8raiR/JiO2ZGxxK4PWrNMxee+/E4eXP6ftJ41/5cq+aD\n2O68SlN3MNX/g0tOdSF/zCvHIBPSqo7u9iBP8/WanTeE2Ey7jNBS/ctAoIVXAEs2\n3SQrcCui9xEh6FpjpSMGrg8ynA1myBODUpykB/B71YHbhcdJ0QcUZQlFy2JiNAE/\nUaMeIXoEZG9ccbCosllr7UnO42jYfkdXarPZYJrPYoZ3v6IOpDOi66ofqZMo8Iqm\nWUfr5tiLQJvkl6yhVmUG\n=gKUH\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 19550debc437a4caa937699eb2d13fd112270280\nparent 132b7554510d244d430e99d1505d8e3f05be5d97\nauthor Mubarak Auwal <mubarakcoded@gmail.com> 1778857762 +0100\ncommitter GitHub <noreply@github.com> 1778857762 +0100\n\nRecover some coverage on account DB wrappers and membership ops (#830)\n\n* recover some coverage on account DB wrappers and membership ops\n\n* cover a few more side effects the existing tests missed\n\n* add an integration scenario for the mute list flow\n\n* bump scenario count for the new mute-list one\n\n* exclude rust_migrations and whitenoise-cli from coverage\n\n* address jeff's feedback on recover-coverage",
+        "verified_at": "2026-05-15T15:09:22Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/f1b2a545479348c30de85b5388a2323292130113",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/f1b2a545479348c30de85b5388a2323292130113",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/f1b2a545479348c30de85b5388a2323292130113/comments",
+    "author": {
+      "login": "mubarakcoded",
+      "id": 8781742,
+      "node_id": "MDQ6VXNlcjg3ODE3NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8781742?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mubarakcoded",
+      "html_url": "https://github.com/mubarakcoded",
+      "followers_url": "https://api.github.com/users/mubarakcoded/followers",
+      "following_url": "https://api.github.com/users/mubarakcoded/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mubarakcoded/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mubarakcoded/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mubarakcoded/subscriptions",
+      "organizations_url": "https://api.github.com/users/mubarakcoded/orgs",
+      "repos_url": "https://api.github.com/users/mubarakcoded/repos",
+      "events_url": "https://api.github.com/users/mubarakcoded/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mubarakcoded/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "132b7554510d244d430e99d1505d8e3f05be5d97",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/132b7554510d244d430e99d1505d8e3f05be5d97",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/132b7554510d244d430e99d1505d8e3f05be5d97"
+      }
+    ]
+  },
+  {
+    "sha": "132b7554510d244d430e99d1505d8e3f05be5d97",
+    "node_id": "C_kwDOMvLjydoAKDEzMmI3NTU0NTEwZDI0NGQ0MzBlOTlkMTUwNWQ4ZTNmMDViZTVkOTc",
+    "commit": {
+      "author": {
+        "name": "Javier G. Montoya S.",
+        "email": "jgmontoya@pm.me",
+        "date": "2026-05-15T15:01:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T15:01:54Z"
+      },
+      "message": "Perf/whitenoise init (#834)\n\n* fix(benchmark): flush tracing on exit and repair seeded-startup script so init failures stop being silent\n\n* feat(config): add WhitenoiseConfig::with_default_account_relays so new accounts publish to configured relays instead of hardcoded defaults\n\n* feat(benchmark): add optional WAN-latency simulation to benchmark recipes via toxiproxy sidecar\n\n* refactor(whitenoise/mod): setup subscriptions in a background task instead of blocking initialization\n\n* feat(whitenoise): defer discovery-plane start and subscription setup to background tasks so Whitenoise::new no longer blocks on relays",
+      "tree": {
+        "sha": "a01a26aa2a585013b681028a4e0e7a16a0f1fec3",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/a01a26aa2a585013b681028a4e0e7a16a0f1fec3"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/132b7554510d244d430e99d1505d8e3f05be5d97",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBzViCRC1aQ7uu5UhlAAAOIYQACbc6H84yjA4SeDTuuv1iTOA\nyvUwknythz+Z2TTSCuLJeVElfcAHPCmPSOiZNICMIyS55jjDaYToWlT5J3S+76Y4\nsah9DFC7t7Jfvt1g61KTzMVWebeOT6UxfisIHeNyozgJ7g/IEb9Ft/AyD1t5O4Jr\nQeYwt57YAkFmW02NQtnlMSiVGxjWG7J9W9YI4JbZ0SvAdyUpvJm+lAJ8I4AQ3PsA\nbhCfCogon7D2JrkeKaXzzSUYGDMn4ZHGO06+0zOg1vYPlO6mPJcvwb8wAUix2v30\nANcP+Jw7ugsVCtWzjd+HjatUyXnLrvIsLZrxX+hWKeFRWGXaPHpx0vX7Rchs+b4X\naRaqj7F9dRNDjAE/Zhv+3rVglpNt8sCCU9EzPVGJIQ54NjfZKUVWOKsL2GMtNVlP\nUs/aZsp9/ezog6wFq88ETFKzuPP5rI0/sig5Rc83aO8u3GhhKAM34i6rMSmMa4yv\nkLf/8MsARlDxaf1QonZAJV7Js1cp6aaN5fYJnXUulInYR4pdWuaMGrS9Me9aXBp0\nTLIWBXXR1GT2fJNe6jtoYdZJsukck65iQNwgcbOkdlcXqMP6qoa3jlRoPQFjILj0\nesW4fXUq0bciUDzJ9xT2LIksPrpobgldqHZE7vr4IzqmYw8k/WYdsyimhfzRPXnw\nlYhwJ6F+YnoXX4f8ADx4\n=/tpf\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a01a26aa2a585013b681028a4e0e7a16a0f1fec3\nparent 917ad14f8eed5fe0df623e7621a709e07f77d785\nauthor Javier G. Montoya S. <jgmontoya@pm.me> 1778857314 -0400\ncommitter GitHub <noreply@github.com> 1778857314 -0400\n\nPerf/whitenoise init (#834)\n\n* fix(benchmark): flush tracing on exit and repair seeded-startup script so init failures stop being silent\n\n* feat(config): add WhitenoiseConfig::with_default_account_relays so new accounts publish to configured relays instead of hardcoded defaults\n\n* feat(benchmark): add optional WAN-latency simulation to benchmark recipes via toxiproxy sidecar\n\n* refactor(whitenoise/mod): setup subscriptions in a background task instead of blocking initialization\n\n* feat(whitenoise): defer discovery-plane start and subscription setup to background tasks so Whitenoise::new no longer blocks on relays",
+        "verified_at": "2026-05-15T15:01:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/132b7554510d244d430e99d1505d8e3f05be5d97",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/132b7554510d244d430e99d1505d8e3f05be5d97",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/132b7554510d244d430e99d1505d8e3f05be5d97/comments",
+    "author": {
+      "login": "jgmontoya",
+      "id": 11434422,
+      "node_id": "MDQ6VXNlcjExNDM0NDIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11434422?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jgmontoya",
+      "html_url": "https://github.com/jgmontoya",
+      "followers_url": "https://api.github.com/users/jgmontoya/followers",
+      "following_url": "https://api.github.com/users/jgmontoya/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jgmontoya/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jgmontoya/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jgmontoya/subscriptions",
+      "organizations_url": "https://api.github.com/users/jgmontoya/orgs",
+      "repos_url": "https://api.github.com/users/jgmontoya/repos",
+      "events_url": "https://api.github.com/users/jgmontoya/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jgmontoya/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "917ad14f8eed5fe0df623e7621a709e07f77d785",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/917ad14f8eed5fe0df623e7621a709e07f77d785",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/917ad14f8eed5fe0df623e7621a709e07f77d785"
+      }
+    ]
+  }
+]

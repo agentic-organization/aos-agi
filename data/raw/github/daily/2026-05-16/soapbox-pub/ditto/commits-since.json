@@ -1,0 +1,658 @@
+[
+  {
+    "sha": "047c9f0ea33c2b65e7b1e53e9cd816217162cf15",
+    "node_id": "C_kwDOL5Eek9oAKDA0N2M5ZjBlYTMzYzJiNjVlN2IxZTUzZTljZDgxNjIxNzE2MmNmMTU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:45:09Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:45:09Z"
+      },
+      "message": "release: v2.15.2",
+      "tree": {
+        "sha": "b49f831b4a0d6d887f5317e3daf778f0f3a9353d",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/b49f831b4a0d6d887f5317e3daf778f0f3a9353d"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/047c9f0ea33c2b65e7b1e53e9cd816217162cf15",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoHd8UACgkQchHR+ZdE\n+7cDTg/9GbL/3job3IWuMF6XZlghebK1yAD3qelQtOp0jBsW586+JX9nySWrn3tp\nflO91RT2f0SytxJDe1OAdIGtDPuNpqhYDMZpN+giI1pZJeIUuZLUVzc2hKa53HMW\nbnDT78pOIYVstT8eNkO3548bGXhGpgjuB13vRXJxjCwYn7sJOQ7GZIbvOFKgd/21\nRJDv0e6v/H7kbrOrMiCEctibviP5CCj4UdkaPXni7Xkkh/9IvgAsrFNwR8bFcfKj\n0OqWgMrn9zEbbHBtmQ63qD3mQpON5tPKJD2NsyHZzgGZSmOgEunzsRcDp8ifAyCR\nEUoRrwBTODIBNoVQqBmdduR4/HiQ6lkzvmplgvbZLQS6GwWL6siuq0irOITMsdCd\n4dbuok2XwDVvdq3WvWLWdy/0VNhICyFXuMCRXalddJS/cVel7Coe+Ut3l6Qm5uBo\nca4JYqa9XVYHL8Cpy1NpCaNJ7/xouXJJ8MwA2tbXm7rdqfr4cjuqx7pGBOex7+GA\ngnMEn25mZIAwYeYWSnK3GxgRbo1CpABaXZfVNPEpnc5aaUwI3l77oG8VyHrPBsIw\nS1ygNQKpn/tRfMCYoyXEnj5JG1I6lB6Obi031dM6HpLkWQlVihWTn98IiliM9riK\njUrwDHrxi+ABY+9EMPMrMAPl+0CbnbMH306BiWGyPJY8VODMzwk=\n=yd0n\n-----END PGP SIGNATURE-----",
+        "payload": "tree b49f831b4a0d6d887f5317e3daf778f0f3a9353d\nparent 44e886b2197bc7e1006046a71602493e91dbf9eb\nauthor Alex Gleason <alex@alexgleason.me> 1778874309 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778874309 -0500\n\nrelease: v2.15.2\n",
+        "verified_at": "2026-05-15T19:45:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/047c9f0ea33c2b65e7b1e53e9cd816217162cf15",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/047c9f0ea33c2b65e7b1e53e9cd816217162cf15",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/047c9f0ea33c2b65e7b1e53e9cd816217162cf15/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "44e886b2197bc7e1006046a71602493e91dbf9eb",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/44e886b2197bc7e1006046a71602493e91dbf9eb",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/44e886b2197bc7e1006046a71602493e91dbf9eb"
+      }
+    ]
+  },
+  {
+    "sha": "44e886b2197bc7e1006046a71602493e91dbf9eb",
+    "node_id": "C_kwDOL5Eek9oAKDQ0ZTg4NmIyMTk3YmM3ZTEwMDYwNDZhNzE2MDI0OTNlOTFkYmY5ZWI",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:43:20Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:43:20Z"
+      },
+      "message": "Use MessageCircle for kind 1111 comment notifications",
+      "tree": {
+        "sha": "2bcb91046ecd32c96284199a624cfaad649335fc",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/2bcb91046ecd32c96284199a624cfaad649335fc"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/44e886b2197bc7e1006046a71602493e91dbf9eb",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoHd1gACgkQchHR+ZdE\n+7exiw//dUdWomoPZ3/KLT+iCvytdtRc9rmypyXjkf8yfehxvl2cjhW4YBd/bGt4\nbP53jBJKwtIyIK+CblpOy5SL+blFIn8kdkKgVt8ZjRCXD7gXScW0RAvQ3yn+ca7R\nER43/mQ/ihjJVdF94L8plqCkIAXvrc+Cdba8ytjC6U4IjL9IqRvpE8LV9S8U5ULb\n4T2uqJLnFaCadOY/mNiEB5GhOc0HyYsfREq/v81EiF/bmW3NPMWvBZLB0i1NnHYN\nLEjDSz1SHwuj+9bLViaSLSoHOw1UE8eURPNv0aGKATyICVvjZue7U2FwnDup9P72\nw5Thefks1VTRCbBAjhrvDepdOYxW1JQ1ih+1SfvDXuf7v++g7BWh87Z8VM8DZ6FV\nEFu1iWrFoy9TOGEL+1M65kqizTvpSZ4EFVPQBMM4Uw2tA5CuQV1XzCUztw2QFZCG\nH0fUPY8ZGEc/lBAOPU+7vmnJCQ8uvjLor5+wMVHbe4k/ZCS+rIt9gk+cZdGcn77S\n+UtZHZi1C3SQ228eBtS08dbXqtFZMx2ON7DWurjHArMoElXXSvn++03fSLGPAO11\nIZZTzkgPVRMP2BDkPaR5GQLgIl1nd0WHf9ZfEzBOSSGB5t9ebfq8BSVz8nFLdyMp\nyIcte1I4LpH+pOWrb9MYv2uilthKclEZ6/aOOID2RwRZOMsYRJg=\n=WmBS\n-----END PGP SIGNATURE-----",
+        "payload": "tree 2bcb91046ecd32c96284199a624cfaad649335fc\nparent ed154b9ff50832a04be624f796e44778cc101c7c\nauthor Alex Gleason <alex@alexgleason.me> 1778874200 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778874200 -0500\n\nUse MessageCircle for kind 1111 comment notifications\n",
+        "verified_at": "2026-05-15T19:45:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/44e886b2197bc7e1006046a71602493e91dbf9eb",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/44e886b2197bc7e1006046a71602493e91dbf9eb",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/44e886b2197bc7e1006046a71602493e91dbf9eb/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ed154b9ff50832a04be624f796e44778cc101c7c",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ed154b9ff50832a04be624f796e44778cc101c7c",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/ed154b9ff50832a04be624f796e44778cc101c7c"
+      }
+    ]
+  },
+  {
+    "sha": "ed154b9ff50832a04be624f796e44778cc101c7c",
+    "node_id": "C_kwDOL5Eek9oAKGVkMTU0YjlmZjUwODMyYTA0YmU2MjRmNzk2ZTQ0Nzc4Y2MxMDFjN2M",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:32:49Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:32:49Z"
+      },
+      "message": "Add error boundary around the PostDetailPage kind dispatch\n\nThe detail page reached by /naddr1... has its own kind-based content\nswitch (PostDetailPage.tsx:2238-2353) that mirrors the one in NoteCard.\nA renderer that throws inside it (e.g. a broken article, a malformed\nZapstore release, a custom-NIP card from a lazy chunk) used to bubble\nup to the new center-column boundary and blank out the entire route.\n\nWrapping just the ContentWarningGuard kind-dispatch in an inline\nErrorBoundary mirrors the NoteCard treatment: the author header,\ncomment context, stats row, and PostActionBar (reply / repost / zap)\nstay interactive, and the broken body is replaced with the same\nBrokenEventFallback tombstone used in feeds. resetKeys=[event.id]\nmeans navigating to a different event recovers without a reload.",
+      "tree": {
+        "sha": "152b0476f6162e6bfb23ff3fd54238718e8207bf",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/152b0476f6162e6bfb23ff3fd54238718e8207bf"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/ed154b9ff50832a04be624f796e44778cc101c7c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoHdOEACgkQchHR+ZdE\n+7fPNxAA2sD5kYMzECGdXAtNf38AeBoG8IsHxHECx3f/B3kCkN/TNhRzBi8vFfcE\nvrvFAcVZWKsM27aM0vVKeCq5VNaVaclhK2vsB/8QXAFgFR3vYEDKmlmC5qP6q7Sa\nqoqTMJrpNp9k2j9FxHnmqZ6SbXLR3GJoKUQlliJ9DmPAS8L1rUdZTNu4tLBRp+QR\nSNd/b+st+Kedy6UBWOrlhXjhaiQdxhvbEaoguLpLJPzPEFKgAvtEEhd6eI0A37PR\nGvdl+Ai9P0r+nYF5oDLJpdbFWPaZOAAlFcCgg4ycY10xdOaazwd2od0IndZAu9Lt\nV1DdA8jPEl+uTSjIz9ab7+Pg+6vKJNgakhvyl4nH7eiDOhIUomkINtzfZlFuDcEb\nIjhITueaAfgjYwZ+o6gj5GQ9nGWq5RCYFuGsgfO6fof1pSQ3t+hbtXInCSR9JzPF\n+h65VoTiHtwfiy9S9QdfxBFo8RCw9uyEA5h8kG9UetVVJkbTgZjeBftwR5b0pfPj\nSEQH9Vg8rGs1eEd0BdBDWERSYtQV7DVNsQYrvL5poNd+Y/84MnEH+rH9LMITSidu\n+U3UlE8isYfbFvw+zJKjyvJBOmXrPjtfcKMgNdC1wyOmvDZ17Py8PQRjeZ+cElmN\n3+hETKFPS8cIqRd9zUPj5OXAThDFNpfyAzklMcai5Mle9ZZSgOk=\n=mWDJ\n-----END PGP SIGNATURE-----",
+        "payload": "tree 152b0476f6162e6bfb23ff3fd54238718e8207bf\nparent d92ed77cb399c2f63b24b607dd5113981e07bd0b\nauthor Alex Gleason <alex@alexgleason.me> 1778873569 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778873569 -0500\n\nAdd error boundary around the PostDetailPage kind dispatch\n\nThe detail page reached by /naddr1... has its own kind-based content\nswitch (PostDetailPage.tsx:2238-2353) that mirrors the one in NoteCard.\nA renderer that throws inside it (e.g. a broken article, a malformed\nZapstore release, a custom-NIP card from a lazy chunk) used to bubble\nup to the new center-column boundary and blank out the entire route.\n\nWrapping just the ContentWarningGuard kind-dispatch in an inline\nErrorBoundary mirrors the NoteCard treatment: the author header,\ncomment context, stats row, and PostActionBar (reply / repost / zap)\nstay interactive, and the broken body is replaced with the same\nBrokenEventFallback tombstone used in feeds. resetKeys=[event.id]\nmeans navigating to a different event recovers without a reload.\n",
+        "verified_at": "2026-05-15T19:45:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ed154b9ff50832a04be624f796e44778cc101c7c",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/ed154b9ff50832a04be624f796e44778cc101c7c",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/ed154b9ff50832a04be624f796e44778cc101c7c/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d92ed77cb399c2f63b24b607dd5113981e07bd0b",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/d92ed77cb399c2f63b24b607dd5113981e07bd0b",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/d92ed77cb399c2f63b24b607dd5113981e07bd0b"
+      }
+    ]
+  },
+  {
+    "sha": "d92ed77cb399c2f63b24b607dd5113981e07bd0b",
+    "node_id": "C_kwDOL5Eek9oAKGQ5MmVkNzdjYjM5OWMyZjYzYjI0YjYwN2RkNTExMzk4MWUwN2JkMGI",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:30:29Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:30:29Z"
+      },
+      "message": "Add error boundary around the center column\n\nA page-level render error (e.g. a route handler that throws while\nprocessing a malformed naddr) used to bubble all the way to the\ntop-level boundary in main.tsx, blanking out the sidebar, mobile top\nbar, and mobile bottom nav along with the broken content. Wrapping\njust the <Outlet /> in an ErrorBoundary keeps the rest of the shell\ninteractive so the user can navigate elsewhere via the sidebar.\n\nresetKeys=[location.pathname] re-mounts the boundary on every route\nchange, so navigating away from a broken URL recovers without a page\nreload.",
+      "tree": {
+        "sha": "ec3619738eea50b9e46b1e27cbac0f59644fb32a",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/ec3619738eea50b9e46b1e27cbac0f59644fb32a"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/d92ed77cb399c2f63b24b607dd5113981e07bd0b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoHdFUACgkQchHR+ZdE\n+7cLwxAAudSsUzYStnsyqGLgc9YFyA9a0rxVAo4r8dm3Jjik0pDW2B7nTkGI6wHn\nPdaXdrVTz6xzy9yWtTVIuepsopmb9XomoY7grgs9ffu1VzOUibEZO4WGBN5vMASU\nMvhOwfCtEyFnmIdRyv/pipTe+CZp0Ws2fXO5krNAGX2gznYe3AeoHxwA3pAggaNg\nDhNywYYJ5DqQC0GSAZywftbpqtjhIGc2gh+beUScgCP3Vupsg6Q3xfvN3O9K/y3O\n12IdilCAfN8FvEJTaXOs1jsGSFxVN8Iz3WFq7THMLRKMhmqGv4VkJo/oVccAwO7H\nW5cDxzXAOie+xI72jakObINZrJ5zFGey1dCJMGX4sxtY5amDAautJdaxlufnUt6f\nbD5MpQbh1+Ep2DRM2zDTuRET9tZ4TqBfH3dvw1TJEN5fvreuHXWsrLmXcKzryg5v\nsPwFwnAcZZ0nop7UZUqmJF9Z6HDoLOxm8SRfCW6aG1qNuc2cIFZwjKeJaC2oJKhW\nNHLSheT4ReaIYTOqS+eOAId/RfF4JFETp+sDS7Ij6eSnbOQYzwZFGQXNfIy/IwSE\nzuQ7dNx6dbYFku01qwUUOFi4RWlcPGGxPKESOLk+RYK2j0s31iPqzNv6/43A4YWd\nAARvicsDJ4G2WbqJtP7a4KKAF1R7zLjDdMROlG44gePQcIjPPoo=\n=SIxt\n-----END PGP SIGNATURE-----",
+        "payload": "tree ec3619738eea50b9e46b1e27cbac0f59644fb32a\nparent 1719a78565eeaf6f6f2debd2305de76aea8c81fb\nauthor Alex Gleason <alex@alexgleason.me> 1778873429 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778873429 -0500\n\nAdd error boundary around the center column\n\nA page-level render error (e.g. a route handler that throws while\nprocessing a malformed naddr) used to bubble all the way to the\ntop-level boundary in main.tsx, blanking out the sidebar, mobile top\nbar, and mobile bottom nav along with the broken content. Wrapping\njust the <Outlet /> in an ErrorBoundary keeps the rest of the shell\ninteractive so the user can navigate elsewhere via the sidebar.\n\nresetKeys=[location.pathname] re-mounts the boundary on every route\nchange, so navigating away from a broken URL recovers without a page\nreload.\n",
+        "verified_at": "2026-05-15T19:45:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/d92ed77cb399c2f63b24b607dd5113981e07bd0b",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/d92ed77cb399c2f63b24b607dd5113981e07bd0b",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/d92ed77cb399c2f63b24b607dd5113981e07bd0b/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1719a78565eeaf6f6f2debd2305de76aea8c81fb",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/1719a78565eeaf6f6f2debd2305de76aea8c81fb",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/1719a78565eeaf6f6f2debd2305de76aea8c81fb"
+      }
+    ]
+  },
+  {
+    "sha": "1719a78565eeaf6f6f2debd2305de76aea8c81fb",
+    "node_id": "C_kwDOL5Eek9oAKDE3MTlhNzg1NjVlZWFmNmY2ZjJkZWJkMjMwNWRlNzZhZWE4YzgxZmI",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:14:42Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T19:14:42Z"
+      },
+      "message": "Add per-item error boundaries to feeds and embedded events\n\nA malformed event whose renderer throws (e.g. an unguarded nip19 encode\non attacker-controlled tag data) used to take down the entire feed,\ndetail page, or profile pinned-posts list, leaving the user with only\nthe top-level full-page fallback. Now each NoteCard's kind-dispatched\ncontent block and each EmbeddedNote / EmbeddedNaddr render in their own\nerror boundary, so one broken event is replaced with a small tombstone\n('This post could not be displayed') and the surrounding feed/card keeps\nworking.\n\nMigrates the existing in-house ErrorBoundary onto react-error-boundary\nto gain a render-prop fallback and resetKeys without losing the existing\npublic API or Sentry reporting. Per-item boundaries report at level\n'error' (vs. 'fatal' for the top-level boundary) with a tag identifying\nthe placement (note-card / embedded-note / embedded-naddr) so they can\nbe triaged separately from app-wide crashes.",
+      "tree": {
+        "sha": "37d0d8aa5de9759d9995c07eee626f4dabe50068",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/37d0d8aa5de9759d9995c07eee626f4dabe50068"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/1719a78565eeaf6f6f2debd2305de76aea8c81fb",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoHcKIACgkQchHR+ZdE\n+7eb7w//e99vrVdrvErjUuNxGts4GHdLizJoOt0Rc+fcvk/DyQLmnz2aTFJSSCZq\npqMg54izv2KjIglC/8UStetrpn4CaefAn4Tmh96+d8z/CTCnipBux4DzEx49m1F5\nnDjOJ6i68ltoj793nc6dOechgFvonRI7HHgWW+sizyuy18OnW3QqmlDiRqrWOBm6\n3MoJxz/lxcsQbpscarL/HA5Po95E/gwo3sDDiPB3DJYbkTOE7YMTJfuD6RLCclhU\neZEjvdkHdy2hrt2z5Vq43FHyXRrGTbchFOU8YvRU5M7zpNtdnsAVdVjOex4J7YD6\nu39IQqU3U7QwkB/4vmNdK8OPtwTlbuirYolOVZH8f7PtSWSfrD1NRu+NbZ6PbwIb\n0eDLxISza1kbWXrrDbXwdZGchizbuiiGFSBB8dEmF0ux3E60UEAcCCqHbm6kYWbj\nqOYIWDAW5Kw+KwzZTJ+a9pEpcMWM0uP9faOwU8kxb71OH30wnRdmX7SCN17cTYKq\nS+lPn+wAtHxaZN/tEQcVH1YEjaTFWnqyfxMtD+X35etGxd59eJweNnIyzpDOJSlh\n66N2HHTpMb66g6u98jRR6xSWszOaw9AZ3t5wHiCDRSiS06PPt5cuB69lK1dRSv5/\noA7Rx8Rx4rfBJ/OS/B3sB1tDqbA2tZdoY29vXfVV7fLLGGapy3s=\n=G7G2\n-----END PGP SIGNATURE-----",
+        "payload": "tree 37d0d8aa5de9759d9995c07eee626f4dabe50068\nparent 71c6b303ef249e0c95fea0545edb1399c8b65612\nauthor Alex Gleason <alex@alexgleason.me> 1778872482 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778872482 -0500\n\nAdd per-item error boundaries to feeds and embedded events\n\nA malformed event whose renderer throws (e.g. an unguarded nip19 encode\non attacker-controlled tag data) used to take down the entire feed,\ndetail page, or profile pinned-posts list, leaving the user with only\nthe top-level full-page fallback. Now each NoteCard's kind-dispatched\ncontent block and each EmbeddedNote / EmbeddedNaddr render in their own\nerror boundary, so one broken event is replaced with a small tombstone\n('This post could not be displayed') and the surrounding feed/card keeps\nworking.\n\nMigrates the existing in-house ErrorBoundary onto react-error-boundary\nto gain a render-prop fallback and resetKeys without losing the existing\npublic API or Sentry reporting. Per-item boundaries report at level\n'error' (vs. 'fatal' for the top-level boundary) with a tag identifying\nthe placement (note-card / embedded-note / embedded-naddr) so they can\nbe triaged separately from app-wide crashes.\n",
+        "verified_at": "2026-05-15T19:45:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/1719a78565eeaf6f6f2debd2305de76aea8c81fb",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/1719a78565eeaf6f6f2debd2305de76aea8c81fb",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/1719a78565eeaf6f6f2debd2305de76aea8c81fb/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "71c6b303ef249e0c95fea0545edb1399c8b65612",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/71c6b303ef249e0c95fea0545edb1399c8b65612",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/71c6b303ef249e0c95fea0545edb1399c8b65612"
+      }
+    ]
+  },
+  {
+    "sha": "71c6b303ef249e0c95fea0545edb1399c8b65612",
+    "node_id": "C_kwDOL5Eek9oAKDcxYzZiMzAzZWYyNDllMGM5NWZlYTA1NDVlZGIxMzk5YzhiNjU2MTI",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T18:33:46Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T18:33:46Z"
+      },
+      "message": "Extract parseAddr utility for kind:pubkey:identifier coordinates\n\nThe previous commit added a private parseAddr helper inside HighlightContent\nbut didn't use it for the ~10 other sites that split A-tag values the same\nway — most notably parseCommentRoot, which open-coded the exact same logic.\n\nHoist parseAddr (with the validated-pubkey postcondition) to\nsrc/lib/parseAddr.ts and route every kind:pubkey:identifier split through\nit: parseCommentRoot, parseProfileBadges, parseBadgeSet, parseBadgeATag,\nusePendingBadges, ProfilePage's badge ref extraction, PostDetailPage's\nprofile/community/generic addr roots and root-event reconstruction,\nComposeBox's root-event reconstruction, AppHandlerContent's\nShakespeare/nsite ref extraction, useCustomEmojis' emoji-pack refs, and\nthe local parseATagRef in usePlaylistTracks/usePlaylistCoverArt. The\nplaylist hooks and ProfilePage previously had no hex validation at all —\nthey now reject malformed pubkeys at parse time like every other site.\n\nTests cover the well-formed case, empty d-tag, d-tags containing colons,\nshort/non-numeric/malformed inputs, and the length-9 hex crash repro.",
+      "tree": {
+        "sha": "c2a04f60d0aa4c20305e0bd1211dbc2cdc9ece65",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/c2a04f60d0aa4c20305e0bd1211dbc2cdc9ece65"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/71c6b303ef249e0c95fea0545edb1399c8b65612",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoHZwoACgkQchHR+ZdE\n+7fVmw/+OiogsLVuiaIsEbUIYF6dP+WfukF8Lsd9WUW0+NdrvLeEHDtSdFob6YP1\n3UTIGRRuGBayHWJ5C4Ak4bE+IPnTq4kSE2BD3tFZVqlI8gVSgwg+xkDxYAVFsrHh\ne/ElETI+QaGGNjo0GxlZitGBlenIofdRrbq0E+0wqLQrlcX5IFFa3UjOJPOIvp1i\nCZUafA7n32tagHwhylfr7pabnKwspXYV/85kcvNFGc9MGV6WopwsieEANq5y5EPF\nyP/suNpOjO4gpl3jFG7Cz7vsElgYW4OpYbdFg2HbNNJaGXV6yNnzPCzHEIZ1PDt6\nPzK6StiL35o/LdLXkHDVyjzOx/MKO6wtu14PW6rGYtPs8yjZuu/2ye+tddwbzaDb\n2dCO3fyRrI551hLnb9SMP4wfJjfehY/AlUUrZDReSLNaneTuT7zKFdOupmlkiEJ9\n+u4U/iBO/P3o3dxER/iTAaoJC3vCDo3m9rCqdLqEAGz34EGAmD9uyGA9kCMVmpkC\nmuppzPyVxw4fIQxCo/ZNYXkdBsUTupVG3NyXmnLk54hYHe7v9VNwfhfLeX0ytvah\nfUWTWtgDF3er6FsvHwcLC4RJlUR3ZgFGhE4CmzI+R9FpDEDPHThLCq5OnThfZsuc\n4Gay5sIw8sx8WagLaexB88iyO/5vDEElgurra3iLBlvXR6DlqM8=\n=f9sU\n-----END PGP SIGNATURE-----",
+        "payload": "tree c2a04f60d0aa4c20305e0bd1211dbc2cdc9ece65\nparent e44056c70c2de5f7d909c5b9b2c1e2198a27c8a3\nauthor Alex Gleason <alex@alexgleason.me> 1778870026 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778870026 -0500\n\nExtract parseAddr utility for kind:pubkey:identifier coordinates\n\nThe previous commit added a private parseAddr helper inside HighlightContent\nbut didn't use it for the ~10 other sites that split A-tag values the same\nway — most notably parseCommentRoot, which open-coded the exact same logic.\n\nHoist parseAddr (with the validated-pubkey postcondition) to\nsrc/lib/parseAddr.ts and route every kind:pubkey:identifier split through\nit: parseCommentRoot, parseProfileBadges, parseBadgeSet, parseBadgeATag,\nusePendingBadges, ProfilePage's badge ref extraction, PostDetailPage's\nprofile/community/generic addr roots and root-event reconstruction,\nComposeBox's root-event reconstruction, AppHandlerContent's\nShakespeare/nsite ref extraction, useCustomEmojis' emoji-pack refs, and\nthe local parseATagRef in usePlaylistTracks/usePlaylistCoverArt. The\nplaylist hooks and ProfilePage previously had no hex validation at all —\nthey now reject malformed pubkeys at parse time like every other site.\n\nTests cover the well-formed case, empty d-tag, d-tags containing colons,\nshort/non-numeric/malformed inputs, and the length-9 hex crash repro.\n",
+        "verified_at": "2026-05-15T19:45:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/71c6b303ef249e0c95fea0545edb1399c8b65612",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/71c6b303ef249e0c95fea0545edb1399c8b65612",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/71c6b303ef249e0c95fea0545edb1399c8b65612/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e44056c70c2de5f7d909c5b9b2c1e2198a27c8a3",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/e44056c70c2de5f7d909c5b9b2c1e2198a27c8a3",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/e44056c70c2de5f7d909c5b9b2c1e2198a27c8a3"
+      }
+    ]
+  },
+  {
+    "sha": "e44056c70c2de5f7d909c5b9b2c1e2198a27c8a3",
+    "node_id": "C_kwDOL5Eek9oAKGU0NDA1NmM3MGMyZGU1ZjdkOTA5YzViOWIyYzFlMjE5OGEyN2M4YTM",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T18:17:50Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T18:20:37Z"
+      },
+      "message": "Harden nip19 encode call sites against malformed hex inputs\n\nA kind 10008/30008 profile-badges event with a malformed pubkey in one of its\n`a` tag references would crash the entire NoteCard tree with 'padded hex\nstring expected, got unpadded hex of length N' from @noble/hashes deep\ninside nip19.naddrEncode. The same bug class affected PeopleAvatarStack,\nReplyContext, ParticipantRow, zap sender rows, comment context, and ~10\nother components — anywhere a pubkey or event id was extracted from event\ntag content and passed to a nip19 encoder without hex validation.\n\nEstablish validity of pubkeys/event-ids as a parse-layer precondition, not\na render-time concern, and make it hard to reintroduce the bug class.\n\n- Add isNostrId() in src/lib/nostrId.ts backed by Nostrify's NSchema.id(),\n  branded as a HexId type guard so TypeScript narrows callers in the true\n  branch while leaving the false branch untouched. HexId is assignable to\n  string everywhere; no runtime cost.\n- Add non-throwing tryNpubEncode / tryNeventEncode / tryNaddrEncode /\n  tryNoteEncode / tryNprofileEncode wrappers in src/lib/safeNip19.ts.\n- encodeEvent.ts returns the precise nostr-tools template-literal types\n  (NPub, NEvent, NAddr) instead of plain `string`, so leaf components\n  that take an encoded identifier as a prop can declare it as NPub/NEvent/\n  NAddr and the compiler rejects a raw hex string at the call site instead\n  of failing at runtime inside @noble/hashes. Add encodeEventNpub(event)\n  so the very common `nip19.npubEncode(event.pubkey)` pattern has a\n  typed wrapper.\n- nostrIdentifier.ts's tryDecodeNip19 and detectIdentifier carry\n  NPub/NProfile/Note/NEvent/NAddr on their `raw` fields per variant, so\n  downstream consumers (search, NIP-19 router) can pass those values\n  straight through without re-typing or re-encoding.\n- Filter at every parse layer: parseProfileBadges, parsePeopleList,\n  parseCommentRoot, parseLetterEvent, parseParticipants, parseGeocacheAddr,\n  parseAddr (highlights), usePendingBadges, follow/curator/user-list hooks,\n  getBadgeRecipients, extractZapSender, PostDetailPage A-tag splits, and\n  useMuteList's normalisers (which now return undefined on failure instead\n  of silently passing garbage through).\n- Sweep inline /^[0-9a-f]{64}$/i checks at parse layers (useStreamPosts,\n  useNip05Resolve, usePostComment, useMuteList, weatherStation,\n  parseBadgeSet, parseProfileBadges, schemas) and replace with isNostrId.\n  The /i flag was a long-standing bug — uppercase hex is never valid in\n  Nostr and NSchema.id() rejects it. The pre-existing mute-list normaliser\n  depended on the /i tolerance to lowercase SHOUTING input; that codepath\n  was already untested and is now removed along with the regex.\n- Renderers operate on already-validated data and use plain nip19 encoders.\n- Tests for isNostrId, safeNip19 wrappers, and parsePeopleList's\n  drop-malformed-p-tag behaviour (regression for the PeopleAvatarStack\n  crash).",
+      "tree": {
+        "sha": "5466663e509e9947aa9f80fec755dca0c0085e48",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/5466663e509e9947aa9f80fec755dca0c0085e48"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/e44056c70c2de5f7d909c5b9b2c1e2198a27c8a3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoHY/UACgkQchHR+ZdE\n+7dnSBAA1VDCXdVOR4HOvGEEVWPTtvS50ghKxUTmEUz9/Z2oH466jWuP+vu+L2f/\n0bPEQ/J5t0nk8RgjiAVB6A6pdNEIpV6NOXnjr+fjSx9qDXkXijlhj/mP5PMEa9rx\nOMeYDIgsot62eRmXWs4hrx/HCbMTrbQjapLztZ7N5eyBkkYpvodHY8E0A38Zz5I8\nCrsfTB+4V96SMtIOkFJuS/TM1CJvIBxC4GhIT/mhtrrYeIVjz65e2tFToJ9cPPrx\nywIP+nkh7CN9ivFw7X+f4SZ+Lh33F14hAOojyG9eT+YNAogUJ9JdZKSVXMMDtHHx\nsSHp8Taoow/1uWG6YObrObtbJvNH71zsFTj7F+US2rtmXelif9JP3RcL94qXjV3A\ntKL5EkV2QKOTQ5L3FDrsbHxoW0z4yqQX1aM7bxGNJjHajS4bNCVYXxlZVlg2raNa\nW4EJFsene3GlvlvmWqgF25luPTWP5/XCvOG0UGINrEyTx29D0Fegf0j0RRM+3A8X\nKIoW6jNoxylbsOT4/rBOtJ32bteyddia62BeY8ctsFSY8ngOG4deEClMoRADwOmI\ne5qyioCSOqzNRLARur/Q33ogJfQJWa2EJrK/Rs/kfiwatF9vM1NUkNRQ3RlRXY9K\nYL+bBA1Ak9NGjhRMzV69Gt6taLfPaQlS0T52QEDHKTnYYcKvTE4=\n=Py5U\n-----END PGP SIGNATURE-----",
+        "payload": "tree 5466663e509e9947aa9f80fec755dca0c0085e48\nparent 0263e2ea15a18e627417582ef0ba81b108445b84\nauthor Alex Gleason <alex@alexgleason.me> 1778869070 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778869237 -0500\n\nHarden nip19 encode call sites against malformed hex inputs\n\nA kind 10008/30008 profile-badges event with a malformed pubkey in one of its\n`a` tag references would crash the entire NoteCard tree with 'padded hex\nstring expected, got unpadded hex of length N' from @noble/hashes deep\ninside nip19.naddrEncode. The same bug class affected PeopleAvatarStack,\nReplyContext, ParticipantRow, zap sender rows, comment context, and ~10\nother components — anywhere a pubkey or event id was extracted from event\ntag content and passed to a nip19 encoder without hex validation.\n\nEstablish validity of pubkeys/event-ids as a parse-layer precondition, not\na render-time concern, and make it hard to reintroduce the bug class.\n\n- Add isNostrId() in src/lib/nostrId.ts backed by Nostrify's NSchema.id(),\n  branded as a HexId type guard so TypeScript narrows callers in the true\n  branch while leaving the false branch untouched. HexId is assignable to\n  string everywhere; no runtime cost.\n- Add non-throwing tryNpubEncode / tryNeventEncode / tryNaddrEncode /\n  tryNoteEncode / tryNprofileEncode wrappers in src/lib/safeNip19.ts.\n- encodeEvent.ts returns the precise nostr-tools template-literal types\n  (NPub, NEvent, NAddr) instead of plain `string`, so leaf components\n  that take an encoded identifier as a prop can declare it as NPub/NEvent/\n  NAddr and the compiler rejects a raw hex string at the call site instead\n  of failing at runtime inside @noble/hashes. Add encodeEventNpub(event)\n  so the very common `nip19.npubEncode(event.pubkey)` pattern has a\n  typed wrapper.\n- nostrIdentifier.ts's tryDecodeNip19 and detectIdentifier carry\n  NPub/NProfile/Note/NEvent/NAddr on their `raw` fields per variant, so\n  downstream consumers (search, NIP-19 router) can pass those values\n  straight through without re-typing or re-encoding.\n- Filter at every parse layer: parseProfileBadges, parsePeopleList,\n  parseCommentRoot, parseLetterEvent, parseParticipants, parseGeocacheAddr,\n  parseAddr (highlights), usePendingBadges, follow/curator/user-list hooks,\n  getBadgeRecipients, extractZapSender, PostDetailPage A-tag splits, and\n  useMuteList's normalisers (which now return undefined on failure instead\n  of silently passing garbage through).\n- Sweep inline /^[0-9a-f]{64}$/i checks at parse layers (useStreamPosts,\n  useNip05Resolve, usePostComment, useMuteList, weatherStation,\n  parseBadgeSet, parseProfileBadges, schemas) and replace with isNostrId.\n  The /i flag was a long-standing bug — uppercase hex is never valid in\n  Nostr and NSchema.id() rejects it. The pre-existing mute-list normaliser\n  depended on the /i tolerance to lowercase SHOUTING input; that codepath\n  was already untested and is now removed along with the regex.\n- Renderers operate on already-validated data and use plain nip19 encoders.\n- Tests for isNostrId, safeNip19 wrappers, and parsePeopleList's\n  drop-malformed-p-tag behaviour (regression for the PeopleAvatarStack\n  crash).\n",
+        "verified_at": "2026-05-15T19:45:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/e44056c70c2de5f7d909c5b9b2c1e2198a27c8a3",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/e44056c70c2de5f7d909c5b9b2c1e2198a27c8a3",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/e44056c70c2de5f7d909c5b9b2c1e2198a27c8a3/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0263e2ea15a18e627417582ef0ba81b108445b84",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0263e2ea15a18e627417582ef0ba81b108445b84",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/0263e2ea15a18e627417582ef0ba81b108445b84"
+      }
+    ]
+  },
+  {
+    "sha": "0263e2ea15a18e627417582ef0ba81b108445b84",
+    "node_id": "C_kwDOL5Eek9oAKDAyNjNlMmVhMTVhMThlNjI3NDE3NTgyZWYwYmE4MWIxMDg0NDViODQ",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T16:35:27Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-15T16:35:27Z"
+      },
+      "message": "Enable reactions and zaps in the home feed by default",
+      "tree": {
+        "sha": "e23b91efe1d1a4bb2030ced84cba96caae6c0f30",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/e23b91efe1d1a4bb2030ced84cba96caae6c0f30"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/0263e2ea15a18e627417582ef0ba81b108445b84",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoHS08ACgkQchHR+ZdE\n+7dGyw//az/pPsRqFT+aJV1nSlekt4H59OWWcR5JuUDsZLNW/Y+3ZE0uRHMOU1vs\nTJnFa73fVTTJ8sOdJ7xMJyIf/lBgHjM+me2N3RYrwmEnPJtFWscE+paZjnPRx0d4\nlmaAqZSNWpNCnExP/RoxzXKKbHve4qYlUn+/ofyiBodZ1Wbo+zczjwGkuya9Y96e\n9dGl+VMr0DS7OGnmo3oXvjv/ttAgDpno2VzYR728fGrIJEroc1DM0EEvixSZJ0sr\nkoxKfZ0PG3QutJdcTflm9OP3DtiZr6zwNnsL7M2+shhiKU+JqG0aLrIixAijHzZY\n1pF72rvVxvYV5IRNiJXr322DkznFaYJ7mVj8a7K/Vhoh96K+zXipc6Xf8M4sLgyy\nEemwV+n0a5fDjFR8tkj2sZ8rEysxDmXd4H7TPwp85pPqHx8/4Ld8rVNe1Fb/kfXA\nbWgQhW0RBNz68uRI/gHbl71g0mE22LSmse4A35/xQ9YvlanU7LyDP8tqsGgwQh3I\nrNSW1Iw03J4QpSM0k9K21MhS4S6DUfHqRCdFGpct7FfaqQ9i5gkpdpcgexA7djRU\n4Lid3RZxTHONh7UmwlcYBy3PA/XVfOC2oI+KAwpV1l9/l+iA2M/qjxDGa+MG0ChW\nOYwsHmODKPd7/S4oT8skqtSlmlXI2n3r3tHdaX9tm3UC1h3nZWs=\n=zimD\n-----END PGP SIGNATURE-----",
+        "payload": "tree e23b91efe1d1a4bb2030ced84cba96caae6c0f30\nparent 243c493ad26ebd7b9e8bc0e3a3f4caa76adff5ea\nauthor Alex Gleason <alex@alexgleason.me> 1778862927 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778862927 -0500\n\nEnable reactions and zaps in the home feed by default\n",
+        "verified_at": "2026-05-15T16:44:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0263e2ea15a18e627417582ef0ba81b108445b84",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/0263e2ea15a18e627417582ef0ba81b108445b84",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0263e2ea15a18e627417582ef0ba81b108445b84/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "243c493ad26ebd7b9e8bc0e3a3f4caa76adff5ea",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/243c493ad26ebd7b9e8bc0e3a3f4caa76adff5ea",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/243c493ad26ebd7b9e8bc0e3a3f4caa76adff5ea"
+      }
+    ]
+  }
+]
