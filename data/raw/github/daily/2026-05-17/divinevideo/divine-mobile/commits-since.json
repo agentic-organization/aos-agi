@@ -1,0 +1,1150 @@
+[
+  {
+    "sha": "f06c9215535b36ae609408ecc1226a9b7432f89a",
+    "node_id": "C_kwDOO71yAtoAKGYwNmM5MjE1NTM1YjM2YWU2MDk0MDhlY2MxMjI2YTliNzQzMmY4OWE",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-17T05:47:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T05:47:27Z"
+      },
+      "message": "fix(notifications): refresh auth and stable cursors (#4451)\n\n* fix(notifications): refresh auth and stable cursors\n\n* fix(notifications): prevent stale cursor id override leak\n\n* fix(notifications): speed comment notification taps\n\n* chore(notifications): log fetch failure diagnostics\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "bc3b2997b25ff3fb092e4c1ccea9a5d91ba9b05a",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/bc3b2997b25ff3fb092e4c1ccea9a5d91ba9b05a"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/f06c9215535b36ae609408ecc1226a9b7432f89a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCVZvCRC1aQ7uu5UhlAAArAIQABrsnV9H7jBQz96MAdHgx7FS\n3QcuxIBqNvGD3Zopg2kBIYlQQRoBTRjNPJKVFEILrN3bdT/E1pntCFndkQf1BLIh\nRDN+YA2cqRKNXOBr9RO27WmOUkppjVX+Y0uMzMF9bYhPaRcHkmIZYQA9JoqKjLel\nFJZs5HUiwffpUde02aBw6is2cMIxxeU+E5cEK87y2dBvlWsfIovWGv2/BytN0ccu\nNMmxXDS3+qwNb9vaxgJVQBNckDDqfBgDUvcaLd1JG7t8zbY4XEqw7p/r2fN2ceRS\nhpbJiY6A/cZPFAsXfBvQHwVLoL1SVoqPP6idvCTp9n4ZDLJ0KnIGq/3+93BG9qiM\nBJYeSzF0oQOM4CA9PE0k3eYTET4R2G8seq9zb+6lX+HNDe5ahgysyjdiXzocznxg\n6VVjbwXX7sIsnc/820diaitdzDm3sW1zt3qOE31QtpPKg0EGYOFyLYTHY0hj05th\nAIHBzYeORy+TuhgjW675yzKtz4Ow3xA9bPLNpZ3ylvHRr2HcH70hS8pUNwpX9Hgf\n4jFstHGWF+KyjzxD+cT3PWUKbFevDI6SlwVW4AOgHhgOj8mPfLurMRyprAAnMMfq\nlJ/pqlZFdiVZjv0GrfcDoCm/7iflHSEowTztY1nJc1V5g/5LaF2HzgHCGiLQrOXi\nvt+xBt0gcBp76cSapUfe\n=UNfS\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bc3b2997b25ff3fb092e4c1ccea9a5d91ba9b05a\nparent 80578bb09f243e08bcea1c8dcfd9fe4d08ed7e75\nauthor rabble <evan@protest.net> 1778996847 +1200\ncommitter GitHub <noreply@github.com> 1778996847 +1200\n\nfix(notifications): refresh auth and stable cursors (#4451)\n\n* fix(notifications): refresh auth and stable cursors\n\n* fix(notifications): prevent stale cursor id override leak\n\n* fix(notifications): speed comment notification taps\n\n* chore(notifications): log fetch failure diagnostics\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-17T05:47:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/f06c9215535b36ae609408ecc1226a9b7432f89a",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/f06c9215535b36ae609408ecc1226a9b7432f89a",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/f06c9215535b36ae609408ecc1226a9b7432f89a/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "80578bb09f243e08bcea1c8dcfd9fe4d08ed7e75",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/80578bb09f243e08bcea1c8dcfd9fe4d08ed7e75",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/80578bb09f243e08bcea1c8dcfd9fe4d08ed7e75"
+      }
+    ]
+  },
+  {
+    "sha": "80578bb09f243e08bcea1c8dcfd9fe4d08ed7e75",
+    "node_id": "C_kwDOO71yAtoAKDgwNTc4YmIwOWYyNDNlMDhiY2VhMWM4ZGNmZDlmZTRkMDhlZDdlNzU",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-17T05:29:53Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T05:29:53Z"
+      },
+      "message": "fix(web): use optimized video playback URLs (#4461)",
+      "tree": {
+        "sha": "201f9bc8862894e7a4022821907aa8a009fc5e6e",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/201f9bc8862894e7a4022821907aa8a009fc5e6e"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/80578bb09f243e08bcea1c8dcfd9fe4d08ed7e75",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCVJRCRC1aQ7uu5UhlAAATA8QAEC71WD3+9DG0vnZ15A3hk1o\nDK7RbLlI/dmVLCNyNNugEtr5fb0itJIuLDjadW3Eo/VMWbydO2Kvi11BykRyfO6q\nGxLoIC0RrVW1SxR1UVxDsexOnuPmphKM8PSewkQppYOaTq93ZXRZKxmMGE28Z0b7\nmOTWCVvpRZuvf2vGDyWsx+gIetuwPCijkKIS4qTXkIe+WNPtZtn4DZ7JtdCYE7Vg\nncV2r69VzBiC7BkW3b1ZbOO6vD8SB4h2EyrFXeCcApPBHB0zUZVZHsdATFXt1lRP\nqifmAbMpTjx+7351s7XljC5c3vzMgNFnpIZNEOUXzCDiasb9F/7BaAF/PTL73U13\nNxBFsqozsYK4W9C/BkYAUlFsy+gnO3cg+BGIa173qSfd07/uKAlNS7RZllHkiiMX\neA8b1HyOUHSBQ2PUOhsM3i9CHbDbrsan7gq7JxnC/+inbBNQ//aKVrSX0Fk5/sA+\n0gRuNciB2e/IM9MNDI71Cr7uy2bjqRIe/mU1936+ypsUYck0j5L3penNIkf6C6Bh\n3Vje3JJEWlX3SGZ7BNQmSawMma06xf4QtpGNmun6xOydDlliSsXFC7JEBxDA/0Fy\nqbbTNmv0PK2+uBCW/OQVAMujBSl6ZurYNJF+s6M9+2TNW7eLeOFWyVijXT7V0Tc7\nwf2VRtaspPSoqWgvrfVs\n=C7dT\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 201f9bc8862894e7a4022821907aa8a009fc5e6e\nparent ea473ff05f4c7301392d99da350b92f0d5f237f5\nauthor rabble <evan@protest.net> 1778995793 +1200\ncommitter GitHub <noreply@github.com> 1778995793 +1200\n\nfix(web): use optimized video playback URLs (#4461)",
+        "verified_at": "2026-05-17T05:29:54Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/80578bb09f243e08bcea1c8dcfd9fe4d08ed7e75",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/80578bb09f243e08bcea1c8dcfd9fe4d08ed7e75",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/80578bb09f243e08bcea1c8dcfd9fe4d08ed7e75/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ea473ff05f4c7301392d99da350b92f0d5f237f5",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ea473ff05f4c7301392d99da350b92f0d5f237f5",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/ea473ff05f4c7301392d99da350b92f0d5f237f5"
+      }
+    ]
+  },
+  {
+    "sha": "ea473ff05f4c7301392d99da350b92f0d5f237f5",
+    "node_id": "C_kwDOO71yAtoAKGVhNDczZmYwNWY0YzczMDEzOTJkOTlkYTM1MGI5MmYwZDVmMjM3ZjU",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-17T04:48:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T04:48:33Z"
+      },
+      "message": "fix(feed): arm auto-advance on active loop (#4454)\n\n* fix(feed): arm auto-advance on active loop\n\n* test: pin widget surfaces for CI\n\n* test: pin share sheet debug surface",
+      "tree": {
+        "sha": "bb5195feb60f071db5d71dee65f4fc92513ce314",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/bb5195feb60f071db5d71dee65f4fc92513ce314"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/ea473ff05f4c7301392d99da350b92f0d5f237f5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCUihCRC1aQ7uu5UhlAAAiNgQADiLYOkkJl0QpYXETyRvOlKb\nexMLaLaFd1bQeDjjXjtinwne+POhksKZ49UKeBY7wfJYVOJZ48OnfbdnzrHxlR8L\n00AON/Ggsd6MiYS64yqN20/B3y9+Kw4C4YjJPFPyjQ8nvn1NdZSwV6yF74j6tnYr\n3JFRfwrj97wUR8Xt/w1dFGaBqa2Mz0jvEUUOfswZbyyC6A5L7jMxpaQDgq6rxs7n\nUpIsDdoL5NH9leDy2xf9FIjea2X9D853ippwGO8iVtxA3PccHp258cL2ZQQccyrd\n4AYKJWuQ6eNPd4jlG1ILYCPfP1ml3fDhzfrY2OqxCoez28y0k5XgdatjqbbyPGiQ\nXqH7is1Pva6emTv+JK1rV5FBW+YUwoIbhpsuvxisg7MvtWkPYryvOMi/4o/yA7nQ\nHVctrnMnRqQ1fIGRb9kkdbDctilzevcprzQnVYqHZcl+lcmEGfrPG0KTFHgYnbG4\nepZ7d9T6pbkQx77A/hTAV7K6M3MTHIM3tKb8VEZQJVujpfBP8NWQFOcfFZDggCMF\naAfrbInW8Cl4Ylz1Y2pJsz9gz23wasA5kbvaeMZytMwLoGp8yANwA+3OH/p20FWg\nKr9c+ZOMSiRDPhKwAsh7cQ4fDKqEQc/+llvNNWbM7iQcncoW2MzPqvJYCaOY/Ylt\nMQPlvk30Ems/hVCYTtRZ\n=/gGV\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bb5195feb60f071db5d71dee65f4fc92513ce314\nparent 981c06fa197b8952908c74471dd8f057944c2263\nauthor rabble <evan@protest.net> 1778993313 +1200\ncommitter GitHub <noreply@github.com> 1778993313 +1200\n\nfix(feed): arm auto-advance on active loop (#4454)\n\n* fix(feed): arm auto-advance on active loop\n\n* test: pin widget surfaces for CI\n\n* test: pin share sheet debug surface",
+        "verified_at": "2026-05-17T04:48:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ea473ff05f4c7301392d99da350b92f0d5f237f5",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/ea473ff05f4c7301392d99da350b92f0d5f237f5",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ea473ff05f4c7301392d99da350b92f0d5f237f5/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "981c06fa197b8952908c74471dd8f057944c2263",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/981c06fa197b8952908c74471dd8f057944c2263",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/981c06fa197b8952908c74471dd8f057944c2263"
+      }
+    ]
+  },
+  {
+    "sha": "981c06fa197b8952908c74471dd8f057944c2263",
+    "node_id": "C_kwDOO71yAtoAKDk4MWMwNmZhMTk3Yjg5NTI5MDhjNzQ0NzFkZDhmMDU3OTQ0YzIyNjM",
+    "commit": {
+      "author": {
+        "name": "Daniel Cadenas",
+        "email": "dcadenas@gmail.com",
+        "date": "2026-05-17T03:48:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T03:48:33Z"
+      },
+      "message": "fix(push): send push control events to Divine relay with relay OK handling (#4417)\n\n* fix(nostr-client): honor explicit target relay OK publishes\n\n* fix(push): await divine relay OK for push control events\n\n* chore(nostr-sdk): log push control relay OK diagnostics\n\n* test(push): update sync coverage for OK publishes\n\n* fix(push): bound targeted OK publish timeout\n\n* fix(nostr-sdk): fall back after failed target send\n\n* fix(nostr-sdk): prevent stale sends after publish deadline\n\n* fix(nostr-sdk): make push diagnostics caller supplied\n\n* test(push): align sync mocks with diagnostic tag\n\n* fix(nostr): recreate stale temp relays before fallback sends\n\n* fix(nostr-sdk): suppress same-url temp fallback after timeout\n\n* chore(feed): drop redundant legacy surface argument\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "893ead3f2ff83db874a10e5839c65d910d97e842",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/893ead3f2ff83db874a10e5839c65d910d97e842"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/981c06fa197b8952908c74471dd8f057944c2263",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCTqRCRC1aQ7uu5UhlAAA5HkQAAgnH0s4ZHcHuUBJHnAJQavW\nRDNjfmxr+2fTiY0uTzy+RzF94y4nYM0AQruFkPO7MTvAdEN4+euqz8R6G2h2CKj4\nFc4j7JnG95zgIQl9PsMjSnUDriOeEQPCLIQcGpBFJUHK0uHwOdCkOjyCB570kpyJ\nOTGXvxdg9+takSbHs8JuqVis6GPZ0UvRzn8rPLJFjOEtM86EdGFtzT4jOkBHWnLJ\ndl7NT3yET06M9eBbyA44xvBtXw+Og4J2On/LZsJSjTCCz8xwf9Ep/i0FKo7KuGwa\ncPyHnbfDuY2bw0tyxd7OfwKvi1N5GzRasmaQRnuk7YEGAcsrMbXzlT6p8T4PdHjn\nN1unQ9jNi5t1AEhkaAU0vNsV3CRGDi9W0Stt6uQtyM1KxmwT27IduAwMgP3b3Fwe\n3mgmhw5nUIAyAF95Ez1++fmL9P7+xBMbYq1CrI5DBrTbDgiJM0QXUZ3TqB3WDb1y\nZl5VTGijFKb7JQYHa32QNjnzuAA7WY2F/mgDXpYfz8lLticUOSOH8Nve56qIBdTy\nbCdCD6EYFOos+cKOnqb/82R5xejs+n9lVc35wNqcFFD81+SwOECWXiZISD8YAyrv\nYe17b4jnP0hvq0YFR6oPnDLQ23mb9NLodqUfzPpq8pZDJxZ+iawUTUlOpy4hr/c6\nn7bpGKm+F0UdpzQ1l+VE\n=hIBM\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 893ead3f2ff83db874a10e5839c65d910d97e842\nparent ce008d9825c2a838492688f087c8071d1e32c588\nauthor Daniel Cadenas <dcadenas@gmail.com> 1778989713 -0300\ncommitter GitHub <noreply@github.com> 1778989713 -0500\n\nfix(push): send push control events to Divine relay with relay OK handling (#4417)\n\n* fix(nostr-client): honor explicit target relay OK publishes\n\n* fix(push): await divine relay OK for push control events\n\n* chore(nostr-sdk): log push control relay OK diagnostics\n\n* test(push): update sync coverage for OK publishes\n\n* fix(push): bound targeted OK publish timeout\n\n* fix(nostr-sdk): fall back after failed target send\n\n* fix(nostr-sdk): prevent stale sends after publish deadline\n\n* fix(nostr-sdk): make push diagnostics caller supplied\n\n* test(push): align sync mocks with diagnostic tag\n\n* fix(nostr): recreate stale temp relays before fallback sends\n\n* fix(nostr-sdk): suppress same-url temp fallback after timeout\n\n* chore(feed): drop redundant legacy surface argument\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-17T03:48:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/981c06fa197b8952908c74471dd8f057944c2263",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/981c06fa197b8952908c74471dd8f057944c2263",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/981c06fa197b8952908c74471dd8f057944c2263/comments",
+    "author": {
+      "login": "dcadenas",
+      "id": 18184,
+      "node_id": "MDQ6VXNlcjE4MTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "html_url": "https://github.com/dcadenas",
+      "followers_url": "https://api.github.com/users/dcadenas/followers",
+      "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+      "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+      "repos_url": "https://api.github.com/users/dcadenas/repos",
+      "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ce008d9825c2a838492688f087c8071d1e32c588",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ce008d9825c2a838492688f087c8071d1e32c588",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/ce008d9825c2a838492688f087c8071d1e32c588"
+      }
+    ]
+  },
+  {
+    "sha": "ce008d9825c2a838492688f087c8071d1e32c588",
+    "node_id": "C_kwDOO71yAtoAKGNlMDA4ZDk4MjVjMmE4Mzg0OTI2ODhmMDg3YzgwNzFkMWUzMmM1ODg",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-17T03:45:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T03:45:39Z"
+      },
+      "message": "fix(notifications): prefer named actors in grouped rows (#4448)\n\n* fix(notifications): prefer named actors in grouped rows\n\n* fix(notifications): preserve named group actors\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "51f568dec081acf2b2319fae402b65572887ef95",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/51f568dec081acf2b2319fae402b65572887ef95"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/ce008d9825c2a838492688f087c8071d1e32c588",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCTnjCRC1aQ7uu5UhlAAAhQcQADfMOlwnM1bt9ixk/yAVv4qV\nj0me3qzPDOo5J02X+N30PIZ70SQ6cFHea4X3+xtJXwbTL9mOWoOqg5jjmnYFChG1\nb3nhWN5YL0ohyIT++v51wyMPs4l2cRxzGINzs3r8nT/3p/qLpB/iLEFfI4ibmrfR\n5elx7tKciOy0VRjRs7LMCpyEgyBfhvOjJnwZZUbAmqTaH2QACshcfF4e3Awo8kfP\nfliluTxzcE2hi3Ji56koA22ZO9UG4YbPXHuNaMjm0lOypGOEd6O4lu7FFa/g/xEZ\nH1QnX33pt+t9WQQf+EQMsKPFe4f/v3iBdK2HXgn0+BxhFiNPl1zpw+YD0tNb9gn7\nSttSafcTOH5tNXL0uwZcSMOnyrsX8t6Ki+TLlOP2raE8nZNX+8yjMLIUCCc68Uh4\nWun7dZTmfRnJjcrJSi/Z1qjatm7I+yQM22NxCMPySWR5egBVIEybdq7b4ATmehNB\nK2a7Xrzp1pDAF7ZfoLDIpS76or/E5Z9+83MlPENVSlNCuefeH2OMtGIXqI904cdS\nIxJwang2vfU2bOqfnPXVYcgKNBz/gvGF8c+OstpFtXgMs7ZVSZwZ4sKekZY7bOi3\nVjMWyk50lEPQpfc6ulgQe9G8JJDPg5qI8vtzp1DurJdtUOt4WtwSzpaYS1F6TQyn\nu3WKY5fTC5k1fLSZ12VN\n=XiYd\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 51f568dec081acf2b2319fae402b65572887ef95\nparent aaf54b52da77666ed71f77e15cedae494ad68c48\nauthor rabble <evan@protest.net> 1778989539 +1200\ncommitter GitHub <noreply@github.com> 1778989539 -0500\n\nfix(notifications): prefer named actors in grouped rows (#4448)\n\n* fix(notifications): prefer named actors in grouped rows\n\n* fix(notifications): preserve named group actors\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-17T03:45:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ce008d9825c2a838492688f087c8071d1e32c588",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/ce008d9825c2a838492688f087c8071d1e32c588",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ce008d9825c2a838492688f087c8071d1e32c588/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "aaf54b52da77666ed71f77e15cedae494ad68c48",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/aaf54b52da77666ed71f77e15cedae494ad68c48",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/aaf54b52da77666ed71f77e15cedae494ad68c48"
+      }
+    ]
+  },
+  {
+    "sha": "aaf54b52da77666ed71f77e15cedae494ad68c48",
+    "node_id": "C_kwDOO71yAtoAKGFhZjU0YjUyZGE3NzY2NmVkNzFmNzdlMTVjZWRhZTQ5NGFkNjhjNDg",
+    "commit": {
+      "author": {
+        "name": "Sebastian Heit",
+        "email": "sebastian@divine.video",
+        "date": "2026-05-17T02:01:30Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T02:01:30Z"
+      },
+      "message": "feat(fullscreen): inline comment composer + layout polish (#4424)\n\n* feat(fullscreen): add inline comment bar to fullscreen video feed\n\nAdds a TikTok-style \"Add comment...\" pill at the bottom of\nPooledFullscreenVideoFeedScreen (Explore/Search/Profile/deep-links).\nTapping focuses the field; sending dismisses the keyboard and shows\na snackbar without ever opening the full comments sheet.\n\nThe bar lives inside the Scaffold body (Column with Expanded + bar)\nrather than `Scaffold.bottomNavigationBar` so it rides above the\nkeyboard via the default `resizeToAvoidBottomInset`. Tapping outside\nthe field unfocuses it, matching the DM conversation pattern.\n\nDrive-by layout fixes the comment bar exposed on the same screen:\n- Always `extendBodyBehindAppBar: true` so the video is edge-to-edge\n  under the transparent app bar, matching the home feed. Removes the\n  obsolete `fullscreenContainedVideoTopInset` workaround.\n- Missing-dimension videos (older Vine reposts) now use `BoxFit.cover`,\n  aligning with the home feed's `_FittedVideoPlayer` policy.\n- Author info and action column are siblings in the same outer Stack,\n  both at `bottom: 20`, so they cannot drift apart vertically and the\n  gap above the bar matches the home feed.\n\n* feat(fullscreen): fade action column top when keyboard is up\n\nWhen the inline comment composer pulls the keyboard up, Scaffold\nshrinks the body and the action column slides toward the transparent\nAppBar — the Like and Reply icons land underneath the back / title /\nMore buttons. KeyboardAwareTopFade wraps the column in a ShaderMask\n(BlendMode.dstIn, transparent through the top 20 %, linear fade to\nopaque at the bottom) so the overlap is invisible. Pass-through when\nno keyboard is visible to avoid the save-layer cost on the steady\nfeed.\n\nListening for the inset has to go through WidgetsBindingObserver:\nScaffold's resizeToAvoidBottomInset strips viewInsets.bottom from\nthe body's MediaQuery, and View.of(context) is not reactive to\ninset changes. Also drops the stale MediaQueryData.fromView wrap\nin the fullscreen item builder — it was a snapshot that broke live\nviewInsets propagation to anything below it.\n\n* feat(fullscreen): animate the action-column fade in parallel with the keyboard\n\nTriggering the fade off `viewInsets.bottom == 0` ran it sequentially\nafter the keyboard had finished sliding away. Drive it off the\ndirection of viewInsets.bottom instead: on iOS and Android the\nplatform animates the inset over the OS keyboard curve and Flutter\nfires didChangeMetrics each frame, so the first decrease after a\nnon-zero value is the start of the hide animation. Snap the\nShaderMask on as soon as the inset starts rising from 0; reverse\nthe 100 ms fade as soon as it starts dropping again. The column\nfade now runs in parallel with the platform keyboard slide rather\nthan chasing its tail.\n\nThis also keeps the right semantics on macOS / desktop where a\nTextField can take focus by click without the platform keyboard\never appearing — viewInsets.bottom stays at 0 throughout, so the\nmask never activates.\n\n* feat(fullscreen): round the feed bottom and tint the scaffold to match the bar\n\nWrap the feed in NavRoundedShell when the inline comment bar is on\nscreen, mirroring the home feed composition at video_feed_page.dart.\nThe shell's outer ColoredBox paints VineTheme.navGreen, which is the\nsame Color(0xFF00150D) token the bar uses as VineTheme.surfaceBackground\n— so the 30 px rounded-corner cutouts at the bottom of the video\nseam continuously into the bar instead of revealing black.\n\nAlso flip the Scaffold backgroundColor from VineTheme.backgroundColor\n(black) to VineTheme.surfaceBackground so any sliver of Scaffold\npeeking through (device curved-corner cutouts at the bar's bottom\nedges, the safe-area strip below the keyboard) is the same green as\nthe bar, not black.\n\n* feat(fullscreen): restyle the inline comment send button to match Figma\n\nMatch Figma node 2018:29838 (\"primary\"). The button is a 48 × 48\ncomponent with 20 radius / 32 icon / 8 padding at native scale, and\nthe composition at 14368:75902 scales it into a 40 px slot at\n40 / 48 = 0.833× — radius becomes 16.667, icon becomes 26.667. The\n20 / 48 = 41.7 % radius ratio is a heavily rounded rectangle, not a\ncircle (a circle would need 50 %). The icon is the Phosphor `ArrowUp`\nbold-fill shape, swapped from Material `Icons.arrow_upward` to the\ndivine_ui `DivineIcon` so the geometry matches. Two stacked sub-pixel\ndrop shadows (`shadow-10` = #0000001A) give a faint elevation cue.\n\nIcon color flipped from white to `VineTheme.onPrimaryButton`\n(`#003824`) — the Figma vector's `fill=\"var(--fill-0, #003824)\"`\nmakes it explicit, and the rendered Figma asset confirms dark\ngreen-on-green, the M3 contrast convention for `primary/on-primary`.\n\n* feat(fullscreen): match Figma app bar title size and leading gap\n\nThe fullscreen feed's app bar was rendering the title at\n[VineTheme.titleLargeFont] (22 / 28 / 0) and leaving the default\n80 px leading slot, which put 24 px between the back button's\nright edge and the title text. Figma node 17352:104146 uses the\n`title/medium` token (Bricolage Grotesque 800 16 / 24 / 0.15) and\na tighter gap. Switch the title style to `titleMediumFont` and\nshrink `leadingWidth` to 68 so the gap becomes 12 px (68 − 8 − 48).\n\n* feat(divine_ui): let DiVineAppBar expand the leading hit area to the full slot\n\nAdds an opt-in `expandLeadingHitArea: bool = false` on\n[DiVineAppBar] (forwarded to [DiVineAppBarLeading] as\n`expandHitArea`). When set, the back / menu / leading button still\nrenders at its configured size and position, but the tap target\nstretches to the full leading slot. Inside `_LeadingIconButton` the\nvisible button gets wrapped in `GestureDetector(behavior: opaque) →\nAbsorbPointer(child: visibleButton)` — the inner\n[DiVineAppBarIconButton] keeps its semantics for screen readers\nwhile [AbsorbPointer] stops it from receiving pointer events, so\ntaps don't double-fire and the outer [GestureDetector] is the\nsingle hit-test surface.\n\nOpt the fullscreen feed in: the back button sits over playing\nvideo where the smaller 48 × 48 icon button is easy to miss, so a\n72 × 72 (leading-slot-sized) tap target is a meaningful UX win.\n\nAlso drop the inner `Padding(end: 4)` wrapper around the\ntrailing [FeedSettingsMenu] so the trailing inset matches the\nleading: both buttons now sit 12 px from their respective screen\nedges (visible-icon edges at 20 px and 20 / 24 px depending on icon\nsize). New tests at `divine_app_bar_test.dart` cover both the\nopted-in expansion and the unchanged default behavior.\n\n* feat(fullscreen): scrim the top of the video so the transparent app bar reads\n\nThe transparent app bar over the fullscreen feed was hard to read\nover light video frames — the bottom of the screen already had a\ndarkening LinearGradient inside [VideoOverlayActions], but the top\nhad none.\n\nAdd a symmetric `showTopGradient: bool = false` flag to\n[VideoOverlayActions]. When true, a [Positioned] at `top: 0`\nrenders a `LinearGradient` from `VineTheme.backgroundColor` at 35 %\nalpha down to fully transparent, sized to the top 20 % of the\nscreen, wrapped in [IgnorePointer] so it doesn't claim any gestures.\nThe gradient lives inside the Scaffold body's Stack so Scaffold's\nown slot ordering paints the app bar above it — meaning the app\nbar's back / title / More tap targets remain on top in both paint\nand hit-test order.\n\nOpt the two fullscreen `VideoOverlayActions` instances in\n[_PooledFullscreenItem] and [_PooledFullscreenItemContent] into\nthe new scrim. Home feed and editor / preview surfaces keep the\ndefault `false`.\n\n* feat(fullscreen): grow the inline comment composer 1–5 lines like the bottom sheet\n\nThe inline composer bar's TextField was fixed to a single line —\nlong comments got clipped horizontally. Mirror the comments-sheet\n`CommentInput` so the inline variant behaves identically:\n\n- `keyboardType: TextInputType.multiline`, `minLines: 1`,\n  `maxLines: 5` on the field — long comments wrap up to five lines\n  and scroll past that.\n- Drop the fixed `SizedBox(height: 72)` wrapper and the\n  `InlineCommentComposerBar.contentHeight` constant (only used\n  internally). The pill now has `ConstrainedBox(minHeight: 48)` so\n  it grows with the text field and the surrounding Column resizes\n  to match.\n- Row inside the pill uses `crossAxisAlignment: CrossAxisAlignment.end`\n  so the send button stays anchored to the pill's bottom-right\n  corner while the field grows. `_SendButton` got `bottom: 4`\n  padding so it sits 4 px above the pill's bottom edge, matching\n  the comments-sheet button geometry.\n- Outer pill spacing switched from `symmetric(horizontal: 16,\n  vertical: 12)` to `EdgeInsetsDirectional.fromSTEB(16, 16, 16, 8)`\n  — same `LTRB(16, 16, 16, 8)` the comments-sheet uses around its\n  pill — and the field's internal padding picked up the\n  `top: 14, bottom: 14` from there too, so single-line vertical\n  rhythm matches exactly.\n\nNew test locks in `minLines: 1`, `maxLines: 5`, and\n`keyboardType: multiline` so the multi-line contract is regressionproof.\n\n* feat(fullscreen): stop tap-outside-to-dismiss from toggling video playback\n\nTapping the video while the inline comment composer's keyboard is\nopen used to both (a) fire the TextField's onTapOutside (dismiss\nthe keyboard — intended) and (b) reach the video's play / pause\nrecognizer underneath (toggle playback — unintended).\n\nAdd a `VideoTapShield` that wraps the feed area and, while a text\ninput has primary focus, overlays a transparent\n`GestureDetector(behavior: opaque)`. The shield claims the tap in\nthe gesture arena so the video recognizer never sees it. Keyboard\ndismissal still happens because `TextField.onTapOutside` is wired\nthrough `TapRegion` / `TapRegionSurface`, which reads pointer\nevents at the surface level — *independent* of the gesture arena,\nso the claim above does not suppress the unfocus callback.\n\nFocus is detected the same way [KeyboardAwareTopFade] does it:\n[FocusManager.addListener] + `findAncestorWidgetOfExactType<EditableText>`\non the primary-focus node. That keeps macOS / desktop behaving\nright (a clicked TextField with no software keyboard never triggers\nthe shield).\n\nTests at video_tap_shield_test.dart lock in all three transitions:\nno-focus → child receives tap; focus → child does NOT receive tap;\nfocus-then-unfocus → child receives tap again.\n\n* feat(fullscreen): keep the keyboard up while the user interacts with the app bar\n\nTapping the More button / X button / playback toggles while the\ninline composer's keyboard was up dismissed the keyboard via\n`TextField.onTapOutside`, forcing the user to refocus and retype.\n\nTwo changes:\n\n* The fullscreen feed wraps its [DiVineAppBar] in a\n  `PreferredSize → TextFieldTapRegion` so taps anywhere on the AppBar\n  (back button, title, More trigger) count as inside the focused\n  TextField's tap-region group. [TapRegion] is independent of the\n  gesture arena, so each AppBar control still fires its own\n  `onTap` — only the unfocus side-effect is suppressed.\n* The [_FeedSettingsOverlay] in [FeedSettingsMenu] wraps its\n  *entire* overlay (backdrop catcher + pill) in\n  `TextFieldTapRegion`, not just the pill. The previous \"pill-only\"\n  scope missed the case where the popover's full-screen dismiss\n  catcher overlays the X button in the app bar — tapping there\n  closed the popover but also fired the composer's onTapOutside.\n  Wrapping the whole overlay keeps the popover and the keyboard\n  fully independent: closing the popover (via X or backdrop) no\n  longer touches the keyboard, and toggling playback controls\n  doesn't either.\n\n* fix(fullscreen): stop stretching 1 × 1 / landscape videos, center them on green\n\nThree things were going wrong for contain-fit videos on the\nfullscreen feed:\n\n* The isPortrait heuristic short-circuited on missing dimensions and\n  treated classic 1 × 1 Vine reposts as portrait, applying\n  `BoxFit.cover` and vertically stretching the square frame. Drop\n  the short-circuit so isPortrait reflects only what `VideoEvent`\n  actually claims (`height > width`); 1 × 1 / landscape / unknown\n  all fall to `BoxFit.contain`.\n* `fullscreenVideoMediaAlignment` used `Alignment.topCenter` for\n  contain-fit videos, jamming the 1 × 1 against the AppBar. Always\n  return `Alignment.center` so square and landscape sources sit in\n  the middle of the viewport with symmetric bands above and below.\n* `_MaybeRoundFeedBottom` overrode [NavRoundedShell.innerColor] to\n  [VineTheme.backgroundColor] (`#000000`), which made the letterbox\n  bands render black. Drop the override and let the shell use its\n  default [VineTheme.surfaceBackground] (`#00150D` — the same green\n  the comment bar paints), so the bands now read as a continuous\n  green canvas seaming into the bar.\n\nUpdated the alignment test to assert `Alignment.center` for the\nnon-portrait case and refreshed the related Scaffold comment that\nreferenced the now-removed \"treat missing dimensions as portrait\"\nhack.\n\n* feat(fullscreen): paint the letterbox canvas with cardBackground\n\nThe fullscreen feed's Scaffold and the inner of [_MaybeRoundFeedBottom]\nwere briefly set to [VineTheme.surfaceContainerHigh] (`#000A06`) so the\ncanvas around 1 × 1 / landscape / dimensions-less contain-fit videos\nwould read as a separate surface from the comment bar. The hex sits at\nRGB `(0, 10, 6)`, which is below the perceptual threshold on a phone\nscreen — visually identical to pure black, defeating the point.\n\nSwitch both to [VineTheme.cardBackground] (`#1A1A1A`) — the same\nneutral dark grey the Messages inbox scaffold uses at\n[inbox_view.dart:498]. That's clearly off-black and reads as a distinct\nsurface against the comment bar's `#00150D` green, matching the user's\nintent.\n\n* feat(fullscreen): blurred-thumbnail backdrop behind contain-fit videos\n\nLetterbox bands for 1 × 1 / landscape / dimensions-less videos used\nto render as a flat dark surface — even the surface colour changes\nfrom earlier commits were silently dropped because\n[_PooledFullscreenItemContent] wraps [PooledVideoPlayer] in\n`ColoredBox(color: VineTheme.backgroundColor)` (`#000000`), which\noverpaints the Scaffold and [NavRoundedShell] surfaces and is what\nactually shows through the letterbox.\n\nThree changes:\n\n* Flip that overpaint from [VineTheme.backgroundColor] to\n  [VineTheme.surfaceContainerHigh] (`#000A06`), the canvas the\n  Scaffold and [_MaybeRoundFeedBottom] are already painted with —\n  brings all three surfaces into agreement instead of fighting each\n  other.\n* Wrap the [PooledVideoPlayer] in a [Stack] and, for non-portrait\n  videos with a thumbnail, paint a [_BlurredVideoBackdrop] behind\n  it. The backdrop is the video's poster thumbnail with `BoxFit.cover`,\n  blurred via [ImageFiltered] / `ui.ImageFilter.blur(30, 30)` and\n  painted at 50 % alpha through [Image.opacity] (cheaper than an\n  [Opacity] wrapper — blends per-pixel during paint instead of\n  forcing a full-screen save-layer). Cost is one image decode + one\n  GPU blur pass, both cached. Portrait videos cover the whole\n  viewport so the backdrop is gated off for them.\n* Restore the outer Scaffold + [_MaybeRoundFeedBottom] to\n  [VineTheme.surfaceContainerHigh] after the [VineTheme.cardBackground]\n  detour, so the fallback when the thumbnail fails to load matches\n  the rest of the canvas.\n\nContain-fit videos now sit in a diffused colour cloud derived from\ntheir own first frame — the static-blurhash treatment we agreed on\nearlier — instead of a flat dark band.\n\n* fix(fullscreen): restore green-behind-keyboard and use actual video aspect\n\nTwo regressions from the recent blur-backdrop work:\n\n* The Scaffold backgroundColor briefly went to\n  [VineTheme.surfaceContainerHigh] alongside the video item, which\n  meant the strip below the soft keyboard (and the device's curved\n  corner cutouts at the bottom edges) stopped reading as green. The\n  Scaffold needs to stay [VineTheme.surfaceBackground] (`#00150D`) so\n  it continues the comment bar's surface around the keyboard; the\n  near-black canvas around the video lives on the video item's own\n  ColoredBox + the NavRoundedShell inner. Revert the Scaffold only.\n\n* Portrait videos with missing / inaccurate dimensions metadata\n  stopped filling the screen — the previous formula was\n  metadata-only (`video.isPortrait`) so a portrait whose VideoEvent\n  lacked dimensions fell to [BoxFit.contain] and letterboxed. Make\n  [_FittedVideoPlayer] reactive to [VideoController.rect] (a\n  `ValueNotifier<Rect?>` `media_kit` populates with the live\n  texture rect once the platform reports decoded dimensions): now\n  the BoxFit decision tracks the *actual* video aspect — 1 × 1\n  contain, portrait cover, landscape contain — and the metadata\n  hint is only used as a fallback while `rect` is still null.\n\n* fix(fullscreen): pin the inline comment pill to Figma's 48 px single-line height\n\nThe TextField inside the composer pill had `top: 14, bottom: 14`\nvertical padding (inherited verbatim from the comments-sheet\ncomposer), so single-line height worked out to `14 + 24 + 14 = 52`\npx — 4 px taller than Figma node 15222:192139 specifies. Drop the\npadding to `top: 12, bottom: 12` so single-line is exactly\n`12 + 24 + 12 = 48` px. Multi-line growth via `minLines: 1,\nmaxLines: 5` still works (2 lines → 72, 3 lines → 96, …) and the\nsend button stays anchored to the bottom of the pill via\n`CrossAxisAlignment.end`.\n\n* chore(l10n): allow-list the inline comment composer keys as untranslated debt\n\nFive keys added on this branch for the new fullscreen inline comment\ncomposer ship in English but haven't been translated yet. Following\nthe convention established by the surrounding entries (see DM\nhints, badges, people-lists, etc. in `_knownUntranslatedDebt`),\nadd them to the debt set with a comment naming the feature so a\nfuture translation pass can pick them up. Non-English locales fall\nback to the English source until then.\n\n* docs(feed): refresh FeedSettingsMenu docstring to cover both call sites\n\nThe class docstring described FeedSettingsMenu as living only on the\nhome feed's top bar — accurate when the widget was introduced, stale\nnow that the fullscreen video screen also embeds it as a\n`customActions` entry on its DiVineAppBar. Reword to name both\nsurfaces so future readers don't assume the home feed is the only\ncaller.\n\n* docs(fullscreen): refresh InlineCommentComposerBar docstring after layout pivot\n\nThe class docstring still described the bar as living in\n`Scaffold.bottomNavigationBar` with a fixed 72 px content height —\nboth stale. The bar now lives inside the Scaffold body so the\nkeyboard can push it up rather than stranding it below the keyboard,\nand its height grows with the TextField's 1–5-line range instead of\nbeing pinned to 72 px. Reword to match.\n\n* fix(fullscreen): restore the inline composer's draft on publish failure\n\n`_handleSubmit` cleared the field optimistically before knowing the\npublish result. On the cubit's `failure` path that left the user\nstaring at an empty pill and a \"couldn't post\" snackbar — their\ntyped comment was gone for good. Regression vs the comments-sheet\nflow, where [CommentsBloc] rolls `mainInputText` back to\n`previousMain` on rollback at [comments_bloc.dart:414].\n\nMirror that behavior locally: snapshot the field's text into a new\n`_pendingDraft` at submit-time, then restore it from the\n[BlocListener] when the cubit emits `failure`. Guard the restore on\n`controller.text.isEmpty` so we don't clobber any text the user has\nalready started typing after the optimistic clear. Keep the cubit\nitself minimal (status-only) per its docstring's stated design —\nthe draft is widget-local, just like the controller.\n\nTwo new widget tests pin the contract: failure after an optimistic\nclear restores the draft + re-shows the send button; failure that\nlands after the user has started a new draft preserves the new\ntext and drops the stale one.\n\nAddresses PR #4424 review comment 3253170130.\n\n* docs(fullscreen): correct two token-naming errors in screen-file comments\n\nTwo inline comments referenced the wrong tokens for the colors they\nwere describing:\n\n* [fullscreenVideoMediaAlignment] claimed contain-fit bands were\n  filled with [VineTheme.surfaceBackground]. The canvas around\n  contain-fit videos in this file is [VineTheme.surfaceContainerHigh]\n  (set by both [_MaybeRoundFeedBottom]'s [NavRoundedShell] and\n  [_PooledFullscreenItemContent]'s `ColoredBox`). Tightened the\n  docstring to explain only the alignment decision rather than\n  trying to document the painting stack across two other widgets.\n\n* The body comment introducing [_MaybeRoundFeedBottom] claimed the\n  rounded corner reveal and the comment bar paint the same token.\n  Actually the corners reveal [VineTheme.navGreen] (the outer of\n  [NavRoundedShell]) and the bar paints\n  [VineTheme.surfaceBackground]. They happen to share the hex\n  `#00150D`, which is why the seam reads as continuous — but\n  \"same hex\" is not \"same token\", and the comment now says so\n  explicitly so a future retune of one token doesn't silently\n  invalidate the rationale.\n\nAddresses PR #4424 review comments 3253170132 and 3253170133.\n\n* docs(fullscreen): correct surfaceContainerHigh hex and outer-color token in _MaybeRoundFeedBottom\n\nThe body comment introducing the [NavRoundedShell] in\n[_MaybeRoundFeedBottom] had three drift items:\n\n* Claimed [VineTheme.surfaceContainerHigh] is `#1A1A1A`. The token\n  is `#000A06` (see vine_theme.dart). `#1A1A1A` is\n  [VineTheme.cardBackground] — a different token.\n* Claimed surfaceContainerHigh is \"the same neutral dark grey the\n  Messages inbox uses.\" The Messages inbox uses cardBackground,\n  not surfaceContainerHigh. The Messages-inbox association is\n  residue from an earlier iteration where this code briefly used\n  cardBackground; the comment was never updated when the token\n  changed.\n* Attributed the shell's outer color to [VineTheme.surfaceBackground]\n  — same conflation as the line-870 comment fixed in a8071dd63.\n  [NavRoundedShell]'s outer is [VineTheme.navGreen]; it shares its\n  hex with surfaceBackground, which is what actually makes the\n  seam continuous.\n\nCorrected all three and tightened the seam claim so it depends on\nthe shared hex (an observable fact today) rather than on the two\ntokens being the same (which they aren't).\n\nAddresses PR #4424 review comment 3253170135.",
+      "tree": {
+        "sha": "b282901a8f780a95b0c69603f915974f8757276c",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/b282901a8f780a95b0c69603f915974f8757276c"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/aaf54b52da77666ed71f77e15cedae494ad68c48",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCSF6CRC1aQ7uu5UhlAAAzmwQAGgffPjyYlz82fZLlaa2ourE\nw1PLDZJlDJQ3FBmiHQ3SSAfVvXeHk3mNB58Qomz8Lj6lGtbyaXlFN8eA6uRDZCqT\nA9xWnvpNCzH+dsu47ugefesBHvysu8LvAhIaDGQgdlajB9QOsoDc8GP+hjUteLPe\nGwwqTZjnsTanuBB6VLUr/9D1hM91VIEriXpTFAHoDlxLIiTBro/+ZSuaMcMnaL5l\nw3KXXuolQ0syT8sgjJVSqfqXWGleek06It1ny85961JBs53HIIhZX/ISmOQtZHMz\nIpvePfas5v/mphfmdziXvbhDwA7trJuBYTsXWqshPuTjA6esBkld4bBMe9ptkOqU\nAS4Cmv0jMaRHsYPQimtjizXDx+ePC+ZanJiDRPv10TdI8WPaTDV/tgi+6HWVIxNH\nb1ta7fhwJVuN56UZZ4eKPDOocN4r1YfJl1aSl/wDvpkmzZY4MOEX7oYWgb7KttUF\nuMkZg3H3XfP07VsUHVx6uIAwLcG7j6PVbw++BwJ5Mg49xHoNjIps5gUAIIxY/Bpl\nPrdGTLU5DM9RZYcdys3lFDfVLYkhAkfy1sv6Rlh2JsX0F6ti6IEK5YhUVjbUbd+q\nbNXWp9+/9flr8eTMt04qJzMiA9LRnno+FswnrAQTnGH+RDDmIa2i5q2310W0ORr8\nXmsi/nYVWEtXgZQQhetj\n=gkXV\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b282901a8f780a95b0c69603f915974f8757276c\nparent f017d2f7d69c3754f455d64b9dae56ecb297924a\nauthor Sebastian Heit <sebastian@divine.video> 1778983290 +0200\ncommitter GitHub <noreply@github.com> 1778983290 +1200\n\nfeat(fullscreen): inline comment composer + layout polish (#4424)\n\n* feat(fullscreen): add inline comment bar to fullscreen video feed\n\nAdds a TikTok-style \"Add comment...\" pill at the bottom of\nPooledFullscreenVideoFeedScreen (Explore/Search/Profile/deep-links).\nTapping focuses the field; sending dismisses the keyboard and shows\na snackbar without ever opening the full comments sheet.\n\nThe bar lives inside the Scaffold body (Column with Expanded + bar)\nrather than `Scaffold.bottomNavigationBar` so it rides above the\nkeyboard via the default `resizeToAvoidBottomInset`. Tapping outside\nthe field unfocuses it, matching the DM conversation pattern.\n\nDrive-by layout fixes the comment bar exposed on the same screen:\n- Always `extendBodyBehindAppBar: true` so the video is edge-to-edge\n  under the transparent app bar, matching the home feed. Removes the\n  obsolete `fullscreenContainedVideoTopInset` workaround.\n- Missing-dimension videos (older Vine reposts) now use `BoxFit.cover`,\n  aligning with the home feed's `_FittedVideoPlayer` policy.\n- Author info and action column are siblings in the same outer Stack,\n  both at `bottom: 20`, so they cannot drift apart vertically and the\n  gap above the bar matches the home feed.\n\n* feat(fullscreen): fade action column top when keyboard is up\n\nWhen the inline comment composer pulls the keyboard up, Scaffold\nshrinks the body and the action column slides toward the transparent\nAppBar — the Like and Reply icons land underneath the back / title /\nMore buttons. KeyboardAwareTopFade wraps the column in a ShaderMask\n(BlendMode.dstIn, transparent through the top 20 %, linear fade to\nopaque at the bottom) so the overlap is invisible. Pass-through when\nno keyboard is visible to avoid the save-layer cost on the steady\nfeed.\n\nListening for the inset has to go through WidgetsBindingObserver:\nScaffold's resizeToAvoidBottomInset strips viewInsets.bottom from\nthe body's MediaQuery, and View.of(context) is not reactive to\ninset changes. Also drops the stale MediaQueryData.fromView wrap\nin the fullscreen item builder — it was a snapshot that broke live\nviewInsets propagation to anything below it.\n\n* feat(fullscreen): animate the action-column fade in parallel with the keyboard\n\nTriggering the fade off `viewInsets.bottom == 0` ran it sequentially\nafter the keyboard had finished sliding away. Drive it off the\ndirection of viewInsets.bottom instead: on iOS and Android the\nplatform animates the inset over the OS keyboard curve and Flutter\nfires didChangeMetrics each frame, so the first decrease after a\nnon-zero value is the start of the hide animation. Snap the\nShaderMask on as soon as the inset starts rising from 0; reverse\nthe 100 ms fade as soon as it starts dropping again. The column\nfade now runs in parallel with the platform keyboard slide rather\nthan chasing its tail.\n\nThis also keeps the right semantics on macOS / desktop where a\nTextField can take focus by click without the platform keyboard\never appearing — viewInsets.bottom stays at 0 throughout, so the\nmask never activates.\n\n* feat(fullscreen): round the feed bottom and tint the scaffold to match the bar\n\nWrap the feed in NavRoundedShell when the inline comment bar is on\nscreen, mirroring the home feed composition at video_feed_page.dart.\nThe shell's outer ColoredBox paints VineTheme.navGreen, which is the\nsame Color(0xFF00150D) token the bar uses as VineTheme.surfaceBackground\n— so the 30 px rounded-corner cutouts at the bottom of the video\nseam continuously into the bar instead of revealing black.\n\nAlso flip the Scaffold backgroundColor from VineTheme.backgroundColor\n(black) to VineTheme.surfaceBackground so any sliver of Scaffold\npeeking through (device curved-corner cutouts at the bar's bottom\nedges, the safe-area strip below the keyboard) is the same green as\nthe bar, not black.\n\n* feat(fullscreen): restyle the inline comment send button to match Figma\n\nMatch Figma node 2018:29838 (\"primary\"). The button is a 48 × 48\ncomponent with 20 radius / 32 icon / 8 padding at native scale, and\nthe composition at 14368:75902 scales it into a 40 px slot at\n40 / 48 = 0.833× — radius becomes 16.667, icon becomes 26.667. The\n20 / 48 = 41.7 % radius ratio is a heavily rounded rectangle, not a\ncircle (a circle would need 50 %). The icon is the Phosphor `ArrowUp`\nbold-fill shape, swapped from Material `Icons.arrow_upward` to the\ndivine_ui `DivineIcon` so the geometry matches. Two stacked sub-pixel\ndrop shadows (`shadow-10` = #0000001A) give a faint elevation cue.\n\nIcon color flipped from white to `VineTheme.onPrimaryButton`\n(`#003824`) — the Figma vector's `fill=\"var(--fill-0, #003824)\"`\nmakes it explicit, and the rendered Figma asset confirms dark\ngreen-on-green, the M3 contrast convention for `primary/on-primary`.\n\n* feat(fullscreen): match Figma app bar title size and leading gap\n\nThe fullscreen feed's app bar was rendering the title at\n[VineTheme.titleLargeFont] (22 / 28 / 0) and leaving the default\n80 px leading slot, which put 24 px between the back button's\nright edge and the title text. Figma node 17352:104146 uses the\n`title/medium` token (Bricolage Grotesque 800 16 / 24 / 0.15) and\na tighter gap. Switch the title style to `titleMediumFont` and\nshrink `leadingWidth` to 68 so the gap becomes 12 px (68 − 8 − 48).\n\n* feat(divine_ui): let DiVineAppBar expand the leading hit area to the full slot\n\nAdds an opt-in `expandLeadingHitArea: bool = false` on\n[DiVineAppBar] (forwarded to [DiVineAppBarLeading] as\n`expandHitArea`). When set, the back / menu / leading button still\nrenders at its configured size and position, but the tap target\nstretches to the full leading slot. Inside `_LeadingIconButton` the\nvisible button gets wrapped in `GestureDetector(behavior: opaque) →\nAbsorbPointer(child: visibleButton)` — the inner\n[DiVineAppBarIconButton] keeps its semantics for screen readers\nwhile [AbsorbPointer] stops it from receiving pointer events, so\ntaps don't double-fire and the outer [GestureDetector] is the\nsingle hit-test surface.\n\nOpt the fullscreen feed in: the back button sits over playing\nvideo where the smaller 48 × 48 icon button is easy to miss, so a\n72 × 72 (leading-slot-sized) tap target is a meaningful UX win.\n\nAlso drop the inner `Padding(end: 4)` wrapper around the\ntrailing [FeedSettingsMenu] so the trailing inset matches the\nleading: both buttons now sit 12 px from their respective screen\nedges (visible-icon edges at 20 px and 20 / 24 px depending on icon\nsize). New tests at `divine_app_bar_test.dart` cover both the\nopted-in expansion and the unchanged default behavior.\n\n* feat(fullscreen): scrim the top of the video so the transparent app bar reads\n\nThe transparent app bar over the fullscreen feed was hard to read\nover light video frames — the bottom of the screen already had a\ndarkening LinearGradient inside [VideoOverlayActions], but the top\nhad none.\n\nAdd a symmetric `showTopGradient: bool = false` flag to\n[VideoOverlayActions]. When true, a [Positioned] at `top: 0`\nrenders a `LinearGradient` from `VineTheme.backgroundColor` at 35 %\nalpha down to fully transparent, sized to the top 20 % of the\nscreen, wrapped in [IgnorePointer] so it doesn't claim any gestures.\nThe gradient lives inside the Scaffold body's Stack so Scaffold's\nown slot ordering paints the app bar above it — meaning the app\nbar's back / title / More tap targets remain on top in both paint\nand hit-test order.\n\nOpt the two fullscreen `VideoOverlayActions` instances in\n[_PooledFullscreenItem] and [_PooledFullscreenItemContent] into\nthe new scrim. Home feed and editor / preview surfaces keep the\ndefault `false`.\n\n* feat(fullscreen): grow the inline comment composer 1–5 lines like the bottom sheet\n\nThe inline composer bar's TextField was fixed to a single line —\nlong comments got clipped horizontally. Mirror the comments-sheet\n`CommentInput` so the inline variant behaves identically:\n\n- `keyboardType: TextInputType.multiline`, `minLines: 1`,\n  `maxLines: 5` on the field — long comments wrap up to five lines\n  and scroll past that.\n- Drop the fixed `SizedBox(height: 72)` wrapper and the\n  `InlineCommentComposerBar.contentHeight` constant (only used\n  internally). The pill now has `ConstrainedBox(minHeight: 48)` so\n  it grows with the text field and the surrounding Column resizes\n  to match.\n- Row inside the pill uses `crossAxisAlignment: CrossAxisAlignment.end`\n  so the send button stays anchored to the pill's bottom-right\n  corner while the field grows. `_SendButton` got `bottom: 4`\n  padding so it sits 4 px above the pill's bottom edge, matching\n  the comments-sheet button geometry.\n- Outer pill spacing switched from `symmetric(horizontal: 16,\n  vertical: 12)` to `EdgeInsetsDirectional.fromSTEB(16, 16, 16, 8)`\n  — same `LTRB(16, 16, 16, 8)` the comments-sheet uses around its\n  pill — and the field's internal padding picked up the\n  `top: 14, bottom: 14` from there too, so single-line vertical\n  rhythm matches exactly.\n\nNew test locks in `minLines: 1`, `maxLines: 5`, and\n`keyboardType: multiline` so the multi-line contract is regressionproof.\n\n* feat(fullscreen): stop tap-outside-to-dismiss from toggling video playback\n\nTapping the video while the inline comment composer's keyboard is\nopen used to both (a) fire the TextField's onTapOutside (dismiss\nthe keyboard — intended) and (b) reach the video's play / pause\nrecognizer underneath (toggle playback — unintended).\n\nAdd a `VideoTapShield` that wraps the feed area and, while a text\ninput has primary focus, overlays a transparent\n`GestureDetector(behavior: opaque)`. The shield claims the tap in\nthe gesture arena so the video recognizer never sees it. Keyboard\ndismissal still happens because `TextField.onTapOutside` is wired\nthrough `TapRegion` / `TapRegionSurface`, which reads pointer\nevents at the surface level — *independent* of the gesture arena,\nso the claim above does not suppress the unfocus callback.\n\nFocus is detected the same way [KeyboardAwareTopFade] does it:\n[FocusManager.addListener] + `findAncestorWidgetOfExactType<EditableText>`\non the primary-focus node. That keeps macOS / desktop behaving\nright (a clicked TextField with no software keyboard never triggers\nthe shield).\n\nTests at video_tap_shield_test.dart lock in all three transitions:\nno-focus → child receives tap; focus → child does NOT receive tap;\nfocus-then-unfocus → child receives tap again.\n\n* feat(fullscreen): keep the keyboard up while the user interacts with the app bar\n\nTapping the More button / X button / playback toggles while the\ninline composer's keyboard was up dismissed the keyboard via\n`TextField.onTapOutside`, forcing the user to refocus and retype.\n\nTwo changes:\n\n* The fullscreen feed wraps its [DiVineAppBar] in a\n  `PreferredSize → TextFieldTapRegion` so taps anywhere on the AppBar\n  (back button, title, More trigger) count as inside the focused\n  TextField's tap-region group. [TapRegion] is independent of the\n  gesture arena, so each AppBar control still fires its own\n  `onTap` — only the unfocus side-effect is suppressed.\n* The [_FeedSettingsOverlay] in [FeedSettingsMenu] wraps its\n  *entire* overlay (backdrop catcher + pill) in\n  `TextFieldTapRegion`, not just the pill. The previous \"pill-only\"\n  scope missed the case where the popover's full-screen dismiss\n  catcher overlays the X button in the app bar — tapping there\n  closed the popover but also fired the composer's onTapOutside.\n  Wrapping the whole overlay keeps the popover and the keyboard\n  fully independent: closing the popover (via X or backdrop) no\n  longer touches the keyboard, and toggling playback controls\n  doesn't either.\n\n* fix(fullscreen): stop stretching 1 × 1 / landscape videos, center them on green\n\nThree things were going wrong for contain-fit videos on the\nfullscreen feed:\n\n* The isPortrait heuristic short-circuited on missing dimensions and\n  treated classic 1 × 1 Vine reposts as portrait, applying\n  `BoxFit.cover` and vertically stretching the square frame. Drop\n  the short-circuit so isPortrait reflects only what `VideoEvent`\n  actually claims (`height > width`); 1 × 1 / landscape / unknown\n  all fall to `BoxFit.contain`.\n* `fullscreenVideoMediaAlignment` used `Alignment.topCenter` for\n  contain-fit videos, jamming the 1 × 1 against the AppBar. Always\n  return `Alignment.center` so square and landscape sources sit in\n  the middle of the viewport with symmetric bands above and below.\n* `_MaybeRoundFeedBottom` overrode [NavRoundedShell.innerColor] to\n  [VineTheme.backgroundColor] (`#000000`), which made the letterbox\n  bands render black. Drop the override and let the shell use its\n  default [VineTheme.surfaceBackground] (`#00150D` — the same green\n  the comment bar paints), so the bands now read as a continuous\n  green canvas seaming into the bar.\n\nUpdated the alignment test to assert `Alignment.center` for the\nnon-portrait case and refreshed the related Scaffold comment that\nreferenced the now-removed \"treat missing dimensions as portrait\"\nhack.\n\n* feat(fullscreen): paint the letterbox canvas with cardBackground\n\nThe fullscreen feed's Scaffold and the inner of [_MaybeRoundFeedBottom]\nwere briefly set to [VineTheme.surfaceContainerHigh] (`#000A06`) so the\ncanvas around 1 × 1 / landscape / dimensions-less contain-fit videos\nwould read as a separate surface from the comment bar. The hex sits at\nRGB `(0, 10, 6)`, which is below the perceptual threshold on a phone\nscreen — visually identical to pure black, defeating the point.\n\nSwitch both to [VineTheme.cardBackground] (`#1A1A1A`) — the same\nneutral dark grey the Messages inbox scaffold uses at\n[inbox_view.dart:498]. That's clearly off-black and reads as a distinct\nsurface against the comment bar's `#00150D` green, matching the user's\nintent.\n\n* feat(fullscreen): blurred-thumbnail backdrop behind contain-fit videos\n\nLetterbox bands for 1 × 1 / landscape / dimensions-less videos used\nto render as a flat dark surface — even the surface colour changes\nfrom earlier commits were silently dropped because\n[_PooledFullscreenItemContent] wraps [PooledVideoPlayer] in\n`ColoredBox(color: VineTheme.backgroundColor)` (`#000000`), which\noverpaints the Scaffold and [NavRoundedShell] surfaces and is what\nactually shows through the letterbox.\n\nThree changes:\n\n* Flip that overpaint from [VineTheme.backgroundColor] to\n  [VineTheme.surfaceContainerHigh] (`#000A06`), the canvas the\n  Scaffold and [_MaybeRoundFeedBottom] are already painted with —\n  brings all three surfaces into agreement instead of fighting each\n  other.\n* Wrap the [PooledVideoPlayer] in a [Stack] and, for non-portrait\n  videos with a thumbnail, paint a [_BlurredVideoBackdrop] behind\n  it. The backdrop is the video's poster thumbnail with `BoxFit.cover`,\n  blurred via [ImageFiltered] / `ui.ImageFilter.blur(30, 30)` and\n  painted at 50 % alpha through [Image.opacity] (cheaper than an\n  [Opacity] wrapper — blends per-pixel during paint instead of\n  forcing a full-screen save-layer). Cost is one image decode + one\n  GPU blur pass, both cached. Portrait videos cover the whole\n  viewport so the backdrop is gated off for them.\n* Restore the outer Scaffold + [_MaybeRoundFeedBottom] to\n  [VineTheme.surfaceContainerHigh] after the [VineTheme.cardBackground]\n  detour, so the fallback when the thumbnail fails to load matches\n  the rest of the canvas.\n\nContain-fit videos now sit in a diffused colour cloud derived from\ntheir own first frame — the static-blurhash treatment we agreed on\nearlier — instead of a flat dark band.\n\n* fix(fullscreen): restore green-behind-keyboard and use actual video aspect\n\nTwo regressions from the recent blur-backdrop work:\n\n* The Scaffold backgroundColor briefly went to\n  [VineTheme.surfaceContainerHigh] alongside the video item, which\n  meant the strip below the soft keyboard (and the device's curved\n  corner cutouts at the bottom edges) stopped reading as green. The\n  Scaffold needs to stay [VineTheme.surfaceBackground] (`#00150D`) so\n  it continues the comment bar's surface around the keyboard; the\n  near-black canvas around the video lives on the video item's own\n  ColoredBox + the NavRoundedShell inner. Revert the Scaffold only.\n\n* Portrait videos with missing / inaccurate dimensions metadata\n  stopped filling the screen — the previous formula was\n  metadata-only (`video.isPortrait`) so a portrait whose VideoEvent\n  lacked dimensions fell to [BoxFit.contain] and letterboxed. Make\n  [_FittedVideoPlayer] reactive to [VideoController.rect] (a\n  `ValueNotifier<Rect?>` `media_kit` populates with the live\n  texture rect once the platform reports decoded dimensions): now\n  the BoxFit decision tracks the *actual* video aspect — 1 × 1\n  contain, portrait cover, landscape contain — and the metadata\n  hint is only used as a fallback while `rect` is still null.\n\n* fix(fullscreen): pin the inline comment pill to Figma's 48 px single-line height\n\nThe TextField inside the composer pill had `top: 14, bottom: 14`\nvertical padding (inherited verbatim from the comments-sheet\ncomposer), so single-line height worked out to `14 + 24 + 14 = 52`\npx — 4 px taller than Figma node 15222:192139 specifies. Drop the\npadding to `top: 12, bottom: 12` so single-line is exactly\n`12 + 24 + 12 = 48` px. Multi-line growth via `minLines: 1,\nmaxLines: 5` still works (2 lines → 72, 3 lines → 96, …) and the\nsend button stays anchored to the bottom of the pill via\n`CrossAxisAlignment.end`.\n\n* chore(l10n): allow-list the inline comment composer keys as untranslated debt\n\nFive keys added on this branch for the new fullscreen inline comment\ncomposer ship in English but haven't been translated yet. Following\nthe convention established by the surrounding entries (see DM\nhints, badges, people-lists, etc. in `_knownUntranslatedDebt`),\nadd them to the debt set with a comment naming the feature so a\nfuture translation pass can pick them up. Non-English locales fall\nback to the English source until then.\n\n* docs(feed): refresh FeedSettingsMenu docstring to cover both call sites\n\nThe class docstring described FeedSettingsMenu as living only on the\nhome feed's top bar — accurate when the widget was introduced, stale\nnow that the fullscreen video screen also embeds it as a\n`customActions` entry on its DiVineAppBar. Reword to name both\nsurfaces so future readers don't assume the home feed is the only\ncaller.\n\n* docs(fullscreen): refresh InlineCommentComposerBar docstring after layout pivot\n\nThe class docstring still described the bar as living in\n`Scaffold.bottomNavigationBar` with a fixed 72 px content height —\nboth stale. The bar now lives inside the Scaffold body so the\nkeyboard can push it up rather than stranding it below the keyboard,\nand its height grows with the TextField's 1–5-line range instead of\nbeing pinned to 72 px. Reword to match.\n\n* fix(fullscreen): restore the inline composer's draft on publish failure\n\n`_handleSubmit` cleared the field optimistically before knowing the\npublish result. On the cubit's `failure` path that left the user\nstaring at an empty pill and a \"couldn't post\" snackbar — their\ntyped comment was gone for good. Regression vs the comments-sheet\nflow, where [CommentsBloc] rolls `mainInputText` back to\n`previousMain` on rollback at [comments_bloc.dart:414].\n\nMirror that behavior locally: snapshot the field's text into a new\n`_pendingDraft` at submit-time, then restore it from the\n[BlocListener] when the cubit emits `failure`. Guard the restore on\n`controller.text.isEmpty` so we don't clobber any text the user has\nalready started typing after the optimistic clear. Keep the cubit\nitself minimal (status-only) per its docstring's stated design —\nthe draft is widget-local, just like the controller.\n\nTwo new widget tests pin the contract: failure after an optimistic\nclear restores the draft + re-shows the send button; failure that\nlands after the user has started a new draft preserves the new\ntext and drops the stale one.\n\nAddresses PR #4424 review comment 3253170130.\n\n* docs(fullscreen): correct two token-naming errors in screen-file comments\n\nTwo inline comments referenced the wrong tokens for the colors they\nwere describing:\n\n* [fullscreenVideoMediaAlignment] claimed contain-fit bands were\n  filled with [VineTheme.surfaceBackground]. The canvas around\n  contain-fit videos in this file is [VineTheme.surfaceContainerHigh]\n  (set by both [_MaybeRoundFeedBottom]'s [NavRoundedShell] and\n  [_PooledFullscreenItemContent]'s `ColoredBox`). Tightened the\n  docstring to explain only the alignment decision rather than\n  trying to document the painting stack across two other widgets.\n\n* The body comment introducing [_MaybeRoundFeedBottom] claimed the\n  rounded corner reveal and the comment bar paint the same token.\n  Actually the corners reveal [VineTheme.navGreen] (the outer of\n  [NavRoundedShell]) and the bar paints\n  [VineTheme.surfaceBackground]. They happen to share the hex\n  `#00150D`, which is why the seam reads as continuous — but\n  \"same hex\" is not \"same token\", and the comment now says so\n  explicitly so a future retune of one token doesn't silently\n  invalidate the rationale.\n\nAddresses PR #4424 review comments 3253170132 and 3253170133.\n\n* docs(fullscreen): correct surfaceContainerHigh hex and outer-color token in _MaybeRoundFeedBottom\n\nThe body comment introducing the [NavRoundedShell] in\n[_MaybeRoundFeedBottom] had three drift items:\n\n* Claimed [VineTheme.surfaceContainerHigh] is `#1A1A1A`. The token\n  is `#000A06` (see vine_theme.dart). `#1A1A1A` is\n  [VineTheme.cardBackground] — a different token.\n* Claimed surfaceContainerHigh is \"the same neutral dark grey the\n  Messages inbox uses.\" The Messages inbox uses cardBackground,\n  not surfaceContainerHigh. The Messages-inbox association is\n  residue from an earlier iteration where this code briefly used\n  cardBackground; the comment was never updated when the token\n  changed.\n* Attributed the shell's outer color to [VineTheme.surfaceBackground]\n  — same conflation as the line-870 comment fixed in a8071dd63.\n  [NavRoundedShell]'s outer is [VineTheme.navGreen]; it shares its\n  hex with surfaceBackground, which is what actually makes the\n  seam continuous.\n\nCorrected all three and tightened the seam claim so it depends on\nthe shared hex (an observable fact today) rather than on the two\ntokens being the same (which they aren't).\n\nAddresses PR #4424 review comment 3253170135.",
+        "verified_at": "2026-05-17T02:01:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/aaf54b52da77666ed71f77e15cedae494ad68c48",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/aaf54b52da77666ed71f77e15cedae494ad68c48",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/aaf54b52da77666ed71f77e15cedae494ad68c48/comments",
+    "author": {
+      "login": "Chardot",
+      "id": 477835,
+      "node_id": "MDQ6VXNlcjQ3NzgzNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/477835?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chardot",
+      "html_url": "https://github.com/Chardot",
+      "followers_url": "https://api.github.com/users/Chardot/followers",
+      "following_url": "https://api.github.com/users/Chardot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Chardot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Chardot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Chardot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Chardot/orgs",
+      "repos_url": "https://api.github.com/users/Chardot/repos",
+      "events_url": "https://api.github.com/users/Chardot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Chardot/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f017d2f7d69c3754f455d64b9dae56ecb297924a",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/f017d2f7d69c3754f455d64b9dae56ecb297924a",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/f017d2f7d69c3754f455d64b9dae56ecb297924a"
+      }
+    ]
+  },
+  {
+    "sha": "f017d2f7d69c3754f455d64b9dae56ecb297924a",
+    "node_id": "C_kwDOO71yAtoAKGYwMTdkMmY3ZDY5YzM3NTRmNDU1ZDY0YjlkYWU1NmVjYjI5NzkyNGE",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-17T02:00:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T02:00:36Z"
+      },
+      "message": "feat: redesign video metadata editing functionality (#4322)\n\n* feat: redesign video metadata editing functionality\n\n- Add VideoMetadataEditBottomBar for updating and deleting video metadata.\n- Create VideoMetadataEditStack for full-screen editing of published videos.\n- Enhance VineBottomSheetPrompt to support customizable primary button types.\n- Update tests for VineBottomSheetPrompt to verify button type functionality.\n\n* fix(router): handle null video event in VideoMetadataEditScreen route\n\n* fix(video): pass video path to start strip generation in VideoMetadataCoverScreen\n\n* feat(video): update video cover upload process and handle pending thumbnail path\n\n* chore: fix blocking review comments\n\n* fix: address should-fix items from PR review\n\n- Expand _suppressAutosave doc comment to clarify it stays true for\n  the notifier's lifetime (no reset needed in the edit flow)\n- Add explanatory comment to addPostFrameCallback in edit stack —\n  documents why synchronous ref.read() in initState causes a\n  ProviderNotFoundException when the widget is a direct ProviderScope child\n- Remove redundant label/button semantics from _DeleteButton and\n  _UpdateButton (DivineButton provides these via InkWell + Text merge)\n- Add @-metadata for shareMenuChangeCover and\n  shareMenuCoverUploadingBackground ARB keys\n\n* fix: address nitpick items from PR review\n\n- Remove redundant createRectTween (Flutter default) from Hero widget\n- Replace EditorImage dependency with anonymous Record type in cover screen,\n  removing the pro_image_editor import from that file\n- Prefer show VideoEvent over hide in models.dart import\n- Remove over-comment that restated what the next line already says\n\n* chore: fix claude review\n\n* fix: update tests for VideoMetadataEditBottomBar and GoRouter navigation refactor\n\n- Fix _SlotImage.build null guard in video_metadata_cover_screen\n- Add missing _FakeVideoEvent fallback value in publish failure test\n- Add VideoEditorProviderState import to collaborator tags test\n\n* fix(tests): add getMetadata mock to VideoMetadataCoverScreen tests\n\n* fix(tests): format initialCollaboratorPubkeys argument in updateVideo mock calls\n\n* feat(tests): add unit tests for VideoMetadataUpdateService and engagement tag preservation\n\n* chore: dart format\n\n* test(video_metadata_update_service): add publish-failure and invite-failure coverage\n\nAdds the branches Rabble called out:\n- publish failure: PublishNoRelays returns VideoUpdateFailure;\n  createAndSignEvent throwing returns VideoUpdateFailure\n- invite failure: NIP17SendFailure on a newly added collaborator\n  surfaces as VideoUpdateSuccess.inviteFailureCount = 1\n- baseline: no new collaborators -> no DM sent, inviteFailureCount = 0\n\nTotal: 12/12 tests pass locally.\n\n* chore: dart format\n\n* fix(router): close out video edit route follow-ups\n\n* test(video): harden cover screen pro editor setup\n\n* fix(video): prevent concurrent edit actions\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "5194d6c88c53b7a0619cc1302061208f2b593dd9",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/5194d6c88c53b7a0619cc1302061208f2b593dd9"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/f017d2f7d69c3754f455d64b9dae56ecb297924a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCSFECRC1aQ7uu5UhlAAAwpwQAEX7NmNPci8NsJHXNvbwvGfw\nLwRZ6ettd9cj/1tAdw292o7lG0XeBH0pN0uQwUAoGtSY+suoeuumr2Izby02RLl8\nw+Ka4H078EUvmBeKFUXFlhVTnpVzfs3fhjctXZGXW0SljlaJgaHIwq2D/fQ3mZb9\nZHUFCsCM67TvAWsb7xLJ+nGmuLcnZ9wipxEdIYMT9LqM/JMW4TXsG7TRyvUUbf/c\ntESZKWdyY1Jauj44N0cfkCSAj60u140Mfm0O5ya9YSyHGSJEExXWWt8SYkO4b6F5\n2KVW0pOs4FkCaQwfo22FmwpMloQPv6ev+Rxx6jP/CtwG8SCdhm8EXUrI5XkY0XNL\nrcVjr8+eY9tSgS1qfZ1rUW+JRMUKxDz7Ll2LgABnLmqO8gTOdsmm70WlhWGRjiw4\nU2EATZ5zJU2D/RuJzOsTZyYhwrdjjbbodFerRPnUIeSmxwXlWqvYaOeqJr/3aPBZ\nVWHACKQVd2oj8DFShUYOfG3C5i292E210WRee4Fhlt/L6+hkAJCKnZ4G0LR5wtQd\nyXLdsjxekof/5cqVB+KzQVCnGl/499GfDH6fLjpp2kXOmh4tiWvaA4jWyXRJIfd9\nTau/AP6yydZ5SDHnsCJQiqPUCXaN/3v7W1IrdenNXV8cCX4ZQYt9t6e9FLzVQHa/\nHHg/M1IanIGST/1BbQHU\n=2Org\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5194d6c88c53b7a0619cc1302061208f2b593dd9\nparent 6764560967dc8eea17e313596f85567fd85093af\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1778983236 +0200\ncommitter GitHub <noreply@github.com> 1778983236 +1200\n\nfeat: redesign video metadata editing functionality (#4322)\n\n* feat: redesign video metadata editing functionality\n\n- Add VideoMetadataEditBottomBar for updating and deleting video metadata.\n- Create VideoMetadataEditStack for full-screen editing of published videos.\n- Enhance VineBottomSheetPrompt to support customizable primary button types.\n- Update tests for VineBottomSheetPrompt to verify button type functionality.\n\n* fix(router): handle null video event in VideoMetadataEditScreen route\n\n* fix(video): pass video path to start strip generation in VideoMetadataCoverScreen\n\n* feat(video): update video cover upload process and handle pending thumbnail path\n\n* chore: fix blocking review comments\n\n* fix: address should-fix items from PR review\n\n- Expand _suppressAutosave doc comment to clarify it stays true for\n  the notifier's lifetime (no reset needed in the edit flow)\n- Add explanatory comment to addPostFrameCallback in edit stack —\n  documents why synchronous ref.read() in initState causes a\n  ProviderNotFoundException when the widget is a direct ProviderScope child\n- Remove redundant label/button semantics from _DeleteButton and\n  _UpdateButton (DivineButton provides these via InkWell + Text merge)\n- Add @-metadata for shareMenuChangeCover and\n  shareMenuCoverUploadingBackground ARB keys\n\n* fix: address nitpick items from PR review\n\n- Remove redundant createRectTween (Flutter default) from Hero widget\n- Replace EditorImage dependency with anonymous Record type in cover screen,\n  removing the pro_image_editor import from that file\n- Prefer show VideoEvent over hide in models.dart import\n- Remove over-comment that restated what the next line already says\n\n* chore: fix claude review\n\n* fix: update tests for VideoMetadataEditBottomBar and GoRouter navigation refactor\n\n- Fix _SlotImage.build null guard in video_metadata_cover_screen\n- Add missing _FakeVideoEvent fallback value in publish failure test\n- Add VideoEditorProviderState import to collaborator tags test\n\n* fix(tests): add getMetadata mock to VideoMetadataCoverScreen tests\n\n* fix(tests): format initialCollaboratorPubkeys argument in updateVideo mock calls\n\n* feat(tests): add unit tests for VideoMetadataUpdateService and engagement tag preservation\n\n* chore: dart format\n\n* test(video_metadata_update_service): add publish-failure and invite-failure coverage\n\nAdds the branches Rabble called out:\n- publish failure: PublishNoRelays returns VideoUpdateFailure;\n  createAndSignEvent throwing returns VideoUpdateFailure\n- invite failure: NIP17SendFailure on a newly added collaborator\n  surfaces as VideoUpdateSuccess.inviteFailureCount = 1\n- baseline: no new collaborators -> no DM sent, inviteFailureCount = 0\n\nTotal: 12/12 tests pass locally.\n\n* chore: dart format\n\n* fix(router): close out video edit route follow-ups\n\n* test(video): harden cover screen pro editor setup\n\n* fix(video): prevent concurrent edit actions\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-17T02:00:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/f017d2f7d69c3754f455d64b9dae56ecb297924a",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/f017d2f7d69c3754f455d64b9dae56ecb297924a",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/f017d2f7d69c3754f455d64b9dae56ecb297924a/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6764560967dc8eea17e313596f85567fd85093af",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/6764560967dc8eea17e313596f85567fd85093af",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/6764560967dc8eea17e313596f85567fd85093af"
+      }
+    ]
+  },
+  {
+    "sha": "6764560967dc8eea17e313596f85567fd85093af",
+    "node_id": "C_kwDOO71yAtoAKDY3NjQ1NjA5NjdkYzhlZWExN2UzMTM1OTZmODU1NjdmZDg1MDkzYWY",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-17T01:59:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T01:59:58Z"
+      },
+      "message": "fix(video-editor): timeline resets after clip adjustment or duplication (#4351)\n\n* fix(timeline): ensure seekto works correctly\n\n* fix(video-editor): make pinch zoom gap-aware to keep playhead anchored\n\nAddress review feedback on PR #4351:\n\n- _updatePinchZoom now re-anchors through the gap-aware geometry\n  helpers (timelineScrollOffsetToPosition + timelinePositionToScrollOffset)\n  instead of multiplying the raw scroll offset by the pps ratio. The old\n  formula over-shoots by clipsPassed * clipGap * (ratio - 1) px once the\n  playhead is past clip 0, because the 1 px clip gaps don't scale with pps.\n- Add _scrollOffsetToPosition wrapper symmetric to the existing\n  _positionToScrollOffset helper, and route _updatePlayheadTime and\n  _syncPositionFromScroll through it so all callers share one mapping.\n- Add regression group in video_editor_timeline_geometry_test.dart that\n  exercises the pinch path with the playhead in clip 1 and clip 2 and\n  asserts the composite position stays centered after the pps change,\n  plus a sanity assertion that the naive offset*ratio path drifts.\n\n* fix(video-editor): remove trailing timeline gap at eof\n\n* fix(video-editor): normalize timeline gap offsets\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "ede065d36d81f7dbe986691391697e36683d089f",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/ede065d36d81f7dbe986691391697e36683d089f"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/6764560967dc8eea17e313596f85567fd85093af",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCSEeCRC1aQ7uu5UhlAAAfDkQAH54EwxIoma+7gycqLeBg/KI\nkAEwzAeFmGkRNR7RNZFr1+yavw+aMJgpuXY783XerToAF/EGOtJx/7jBVX6A7bsh\nybAnoDCIlONllSH7lPH+cchtlOM11U1RJ2Um+rhkKYaXnEfkbvKKoVSpc/E1ukeP\nDsO9xxMIUtXy9VrbwBgaR1a7QRxxOSkHi5lM2WhtR+PfgoTSkgfM54YCYIGyAQbm\nmj2wuwpxRdtrBwgciUM535+XI3n7pPARI6rpzFn37gx/0U3cIeRq0rJdk4M6bwCL\nP4riUc/cjjrVUqH7olLC2q6bbqA+QNbryYwR62Y+cb1KQ3Bi2e7ncydH2xYfr2aB\nOEx7NST23SBHripIRGRnyXnVCJbc0uhGEWVGgxzBdyYZVW5FVFvKcBhcqhY4c4CX\nn5xmXJpoYM3YewvDp9ogq2nl4DmtCitQsQHE9CK/1WM72XlyJIduphId81QJIkI0\n9D924B+BbkBGeYn0uEyLD1EfWV9V88356d9AOPWyP2xBVaqwlT8Rjxxyd3xLnv11\nBV/TOTmKKwyU1ncrwF8yabIiJc7E0dheEPFlbFTBJbJ5d2M+64efrR5jffoaE5lO\noUJEIEBmDBPjHGxCp6t7WoSbDd5uZNFK2mrDO8NJHwKF+PwxoDtXxXRIUE8IPhz+\n6dY8EZR+d9RM9w8l1zqM\n=Mb0Y\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ede065d36d81f7dbe986691391697e36683d089f\nparent 4e01b3b55c7f884c3cc66c6f91f58cf463759939\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1778983198 +0200\ncommitter GitHub <noreply@github.com> 1778983198 +1200\n\nfix(video-editor): timeline resets after clip adjustment or duplication (#4351)\n\n* fix(timeline): ensure seekto works correctly\n\n* fix(video-editor): make pinch zoom gap-aware to keep playhead anchored\n\nAddress review feedback on PR #4351:\n\n- _updatePinchZoom now re-anchors through the gap-aware geometry\n  helpers (timelineScrollOffsetToPosition + timelinePositionToScrollOffset)\n  instead of multiplying the raw scroll offset by the pps ratio. The old\n  formula over-shoots by clipsPassed * clipGap * (ratio - 1) px once the\n  playhead is past clip 0, because the 1 px clip gaps don't scale with pps.\n- Add _scrollOffsetToPosition wrapper symmetric to the existing\n  _positionToScrollOffset helper, and route _updatePlayheadTime and\n  _syncPositionFromScroll through it so all callers share one mapping.\n- Add regression group in video_editor_timeline_geometry_test.dart that\n  exercises the pinch path with the playhead in clip 1 and clip 2 and\n  asserts the composite position stays centered after the pps change,\n  plus a sanity assertion that the naive offset*ratio path drifts.\n\n* fix(video-editor): remove trailing timeline gap at eof\n\n* fix(video-editor): normalize timeline gap offsets\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-17T01:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/6764560967dc8eea17e313596f85567fd85093af",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/6764560967dc8eea17e313596f85567fd85093af",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/6764560967dc8eea17e313596f85567fd85093af/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4e01b3b55c7f884c3cc66c6f91f58cf463759939",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4e01b3b55c7f884c3cc66c6f91f58cf463759939",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/4e01b3b55c7f884c3cc66c6f91f58cf463759939"
+      }
+    ]
+  },
+  {
+    "sha": "4e01b3b55c7f884c3cc66c6f91f58cf463759939",
+    "node_id": "C_kwDOO71yAtoAKDRlMDFiM2I1NWM3Zjg4NGMzY2M2NmM2ZjkxZjU4Y2Y0NjM3NTk5Mzk",
+    "commit": {
+      "author": {
+        "name": "Daniel Cadenas",
+        "email": "dcadenas@gmail.com",
+        "date": "2026-05-17T01:59:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T01:59:31Z"
+      },
+      "message": "chore: Fix local nsec export for Keycast-backed accounts (#4444)\n\n* fix(auth): allow local nsec export for Keycast accounts with device keys\n\n* fix(auth): explain remote-only Keycast key export state\n\n* test(auth): cover RPC-only Keycast key export UI\n\n* fix(l10n): add Keycast remote signing copy to locale sources\n\n* fix(l10n): add Filipino Keycast remote signing copy\n\n* test(auth): stabilize key management screen mocks\n\n* fix(l10n): localize Keycast remote signing copy\n\n* fix(key-management): address PR review cleanups\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "529cff475eb26889553afadb3f2e81222976c1f9",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/529cff475eb26889553afadb3f2e81222976c1f9"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/4e01b3b55c7f884c3cc66c6f91f58cf463759939",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCSEDCRC1aQ7uu5UhlAAAHLYQADWIjB7h2H7dtNgjPk3Z8Ets\ndHXf+PP9gBt4kn7AtIehbUr9y16bjHPe+gyNsyQJqNoL03xbeJ2/kMVlMeEBb5D1\nqWCGo6x5thJO+x9lAYmcv61pvjZ+3HmnLBOj+TElBECZYoBm5oQm2PoaDX5seUcG\nK/F6HAEPW/rZo3eS1GFuNKfA8PRKBw3PHduvJpawflJe1objHq3UZMjAC6qgLh5g\nYni9Ly5AbduPbGGBFmf0Z2GmiIhGzQRB4KXVBXYv5cNM1ED40MUg1dPocsOxZ+az\nGceR3YXFB/JCp7dYHfv//duknmjIEfjd56Wucu7KhkUu5ok1v9011zPw4+uzqTDv\nvuIHe0yeSmjn2PhoRH43yA9QS6PuiYsD6/+6lLP6aAWYGCraVRSjlkZjID7ikzcC\nmFvlXKac+S7SWSnqrgOJczua4lLr5zFz0AfQVqE3iKuVC7lAwEvjvFi4aONtppSQ\nO5ja/V+PzBo6HrFDJeUtKfatur4P/TBr59RULdf4yVbNKjBzOKFilChHH/zxDSko\nBt631gYIIzrhoFG4qpSJHjplZ1zWA1lwi9KhtyQfFX9HIC15JJnKNV7TKhrV//xF\nVHqiQzYY8Bzk4i23QWAbD7td40tZ0mAC3WhiycmVPSIbFjI/Y7RjUyDQhbGDxVGL\nGqI3KlVYzBvA6XnhOFQi\n=YodE\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 529cff475eb26889553afadb3f2e81222976c1f9\nparent fd99eaf77cdb07013e532142b61fe0e99eff83e1\nauthor Daniel Cadenas <dcadenas@gmail.com> 1778983171 -0300\ncommitter GitHub <noreply@github.com> 1778983171 +1200\n\nchore: Fix local nsec export for Keycast-backed accounts (#4444)\n\n* fix(auth): allow local nsec export for Keycast accounts with device keys\n\n* fix(auth): explain remote-only Keycast key export state\n\n* test(auth): cover RPC-only Keycast key export UI\n\n* fix(l10n): add Keycast remote signing copy to locale sources\n\n* fix(l10n): add Filipino Keycast remote signing copy\n\n* test(auth): stabilize key management screen mocks\n\n* fix(l10n): localize Keycast remote signing copy\n\n* fix(key-management): address PR review cleanups\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-17T01:59:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4e01b3b55c7f884c3cc66c6f91f58cf463759939",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/4e01b3b55c7f884c3cc66c6f91f58cf463759939",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4e01b3b55c7f884c3cc66c6f91f58cf463759939/comments",
+    "author": {
+      "login": "dcadenas",
+      "id": 18184,
+      "node_id": "MDQ6VXNlcjE4MTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "html_url": "https://github.com/dcadenas",
+      "followers_url": "https://api.github.com/users/dcadenas/followers",
+      "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+      "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+      "repos_url": "https://api.github.com/users/dcadenas/repos",
+      "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fd99eaf77cdb07013e532142b61fe0e99eff83e1",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/fd99eaf77cdb07013e532142b61fe0e99eff83e1",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/fd99eaf77cdb07013e532142b61fe0e99eff83e1"
+      }
+    ]
+  },
+  {
+    "sha": "fd99eaf77cdb07013e532142b61fe0e99eff83e1",
+    "node_id": "C_kwDOO71yAtoAKGZkOTllYWY3N2NkYjA3MDEzZTUzMjE0MmI2MWZlMGU5OWVmZjgzZTE",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-17T01:39:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T01:39:29Z"
+      },
+      "message": "fix(notifications): keep staging API on staging relay (#4441)\n\n* fix(notifications): keep staging API on staging relay\n\n* docs(notifications): document staging relay host selection\n\n* test(apps): stabilize app detail section assertions\n\n* fix(notifications): do not mark all read on open",
+      "tree": {
+        "sha": "25c2e9aed3d0fe7b74337272a24ff61763acd6d9",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/25c2e9aed3d0fe7b74337272a24ff61763acd6d9"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/fd99eaf77cdb07013e532142b61fe0e99eff83e1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCRxRCRC1aQ7uu5UhlAAAR+QQAEuoAYPh+q2VoNX/C2LNKB2a\nDZLwW0IehpI2yoeWK6puj9s2PGQNCyIduQe98mujjPb1LMpRE3GVhoFUw2QEuc/A\nvXrh/uvU3vxyOc/0wcFbWd8ECxqQLk/227TRDv/r9XWfAEcgNvIMnTdPJr0F/Zum\nimwUJilpNxT4E31OkAQbw82EA8AZQzac1CnAcbuy6HxjpcV0d++caKxk1bWzGug7\nMyjKDAP3CFT/aUoT8xiRUe9XIojjNQAQBwoMXOQKA3BlOP/pIt4G5zNwW8J2y2bf\nItmL8u2qfkQamgGCCzgk0jlc6mZj5jQ2rHzbru3PUy65cy4aKDKxVp9KogxmcU4C\nxmTqGAMJh1HRORY+sHJ4a3pQiwogk8MoQZxgLrFfiEq96sAecu7AElbCgDg6d57J\n3yrftyqnPqjHin6RmFfPS/18t3oy2fLPmUPLW2eLp2gFYGWv6GDI0nl39siaLr+B\n/klFiM6uS29LL4R9JmfQ4Ne1uc7J9K7oRNx4Rs283l19sfP4+r9yZ3nfYNK4/CLM\nFTWHWvQjrMWVHMW28qX7IMHvcymGOQEF5pBLbgkPvcQ8lmajwcYRUaPNw08D4+N6\nUzWzzsXDL60RWhduQJ44ZtEBjJp0CB7KP5gtcyRZpq80jtv1UcbN3tIXQwO8MGOa\nA1UIj6OqkcAFFSIrPBZy\n=eCdL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 25c2e9aed3d0fe7b74337272a24ff61763acd6d9\nparent 0a8fdcfd5b6c8630fe3aff5a887825f077c7dfc1\nauthor rabble <evan@protest.net> 1778981969 +1200\ncommitter GitHub <noreply@github.com> 1778981969 +1200\n\nfix(notifications): keep staging API on staging relay (#4441)\n\n* fix(notifications): keep staging API on staging relay\n\n* docs(notifications): document staging relay host selection\n\n* test(apps): stabilize app detail section assertions\n\n* fix(notifications): do not mark all read on open",
+        "verified_at": "2026-05-17T01:39:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/fd99eaf77cdb07013e532142b61fe0e99eff83e1",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/fd99eaf77cdb07013e532142b61fe0e99eff83e1",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/fd99eaf77cdb07013e532142b61fe0e99eff83e1/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0a8fdcfd5b6c8630fe3aff5a887825f077c7dfc1",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0a8fdcfd5b6c8630fe3aff5a887825f077c7dfc1",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/0a8fdcfd5b6c8630fe3aff5a887825f077c7dfc1"
+      }
+    ]
+  },
+  {
+    "sha": "0a8fdcfd5b6c8630fe3aff5a887825f077c7dfc1",
+    "node_id": "C_kwDOO71yAtoAKDBhOGZkY2ZkNWI2Yzg2MzBmZTNhZmY1YTg4NzgyNWYwNzdjN2RmYzE",
+    "commit": {
+      "author": {
+        "name": "Sebastian Heit",
+        "email": "sebastian@divine.video",
+        "date": "2026-05-17T00:57:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T00:57:42Z"
+      },
+      "message": "feat(metadata-sheet): redesign video info sheet to match Figma (#4422)",
+      "tree": {
+        "sha": "546c404ac356815a7821d6a01b323898b98f9ed7",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/546c404ac356815a7821d6a01b323898b98f9ed7"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/0a8fdcfd5b6c8630fe3aff5a887825f077c7dfc1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCRKGCRC1aQ7uu5UhlAAARJoQAFwCPBDX9mVRa3L2XrjbfbC7\n5H1hk5aaRzinOuaL5l/uZqd7EIhqClK4B4+oVwiHf7kKMIsG6jEGPAxB7c6Y51XM\n9Bl7iTNGm68vuScEK43DKQJzgFgI5RIdnGxt6AKtFsuzLXA8mDoH4Zrf+s5yYNeK\nkZI7KUz3QkG10ImxuwZ/NxKNA/ZUVqjDCx5l6fZBeh3l1C3FVixBpPi79thIybPT\nZ1p0/UcBVyXDkHX3QoKkqn4viCAoYLgDpJKjYd5rLZolB+8A+rhbu0TPPbwsiMDU\nuHlgyywGBxdIz4eObXI55hPlE/8acyWgz77jtJOS3jqGLGS7Hh7RsHAqkeZVhQYa\nSb+4zDBGkY7nihdoATOhb5jc7ygizzv8c8LkROPMkEcIZpCFpSTBsVJgxQYG3F80\nPCyyf5prgPHLS4CdQNXztd8rRVmPuZJD2Ga7QVJ3MXoz8H+SzvPzzrrIiT6kNePN\nYs7c6uT+OH2AFj625nmUmeeqrOepeNbYBVu1XWvQhtc1FTB4iDveFPsAznQ5cBrk\n5bXss+tIkcznzr/mo+ycaE/gwudKcShlf641/awknURA4cyEfB7mG1TMuPqfyAes\nZZIr42QGdWcFtukK1WdjxndPoi8VanI93zuZlO3GedxFnJJCVuG1KcuQPx00ulQn\nUSEGPB6I7/x2EAevbUh2\n=TGvK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 546c404ac356815a7821d6a01b323898b98f9ed7\nparent b3b6f845ef47f78e5efd6d021a58b3187d8e42ab\nauthor Sebastian Heit <sebastian@divine.video> 1778979462 +0200\ncommitter GitHub <noreply@github.com> 1778979462 +0200\n\nfeat(metadata-sheet): redesign video info sheet to match Figma (#4422)",
+        "verified_at": "2026-05-17T00:57:42Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0a8fdcfd5b6c8630fe3aff5a887825f077c7dfc1",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/0a8fdcfd5b6c8630fe3aff5a887825f077c7dfc1",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0a8fdcfd5b6c8630fe3aff5a887825f077c7dfc1/comments",
+    "author": {
+      "login": "Chardot",
+      "id": 477835,
+      "node_id": "MDQ6VXNlcjQ3NzgzNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/477835?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chardot",
+      "html_url": "https://github.com/Chardot",
+      "followers_url": "https://api.github.com/users/Chardot/followers",
+      "following_url": "https://api.github.com/users/Chardot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Chardot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Chardot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Chardot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Chardot/orgs",
+      "repos_url": "https://api.github.com/users/Chardot/repos",
+      "events_url": "https://api.github.com/users/Chardot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Chardot/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b3b6f845ef47f78e5efd6d021a58b3187d8e42ab",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b3b6f845ef47f78e5efd6d021a58b3187d8e42ab",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/b3b6f845ef47f78e5efd6d021a58b3187d8e42ab"
+      }
+    ]
+  },
+  {
+    "sha": "b3b6f845ef47f78e5efd6d021a58b3187d8e42ab",
+    "node_id": "C_kwDOO71yAtoAKGIzYjZmODQ1ZWY0N2Y3OGU1ZWZkNmQwMjFhNThiMzE4N2Q4ZTQyYWI",
+    "commit": {
+      "author": {
+        "name": "Daniel Cadenas",
+        "email": "dcadenas@gmail.com",
+        "date": "2026-05-16T20:26:05Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T20:26:05Z"
+      },
+      "message": "chore: Fix user reports emitting invalid NIP-56 e tags (#4421)\n\n* Fix user report NIP-56 e-tag targets. User-only reports now preserve local synthetic history while omitting invalid e tags, and reportUser tests cover no-related-event and mixed related-event inputs.\n\n* fix(reporting): harden NIP-56 e-tag validation\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "dc396be90ff3e7659d064da74f3b3bca107c4ff2",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/dc396be90ff3e7659d064da74f3b3bca107c4ff2"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/b3b6f845ef47f78e5efd6d021a58b3187d8e42ab",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCNLdCRC1aQ7uu5UhlAAA6oUQAIQdqokU6sa092h9pnQ8sF50\n9iFTg+7wZj3G6jL3DYQhjyHv6ED4vn95P9hzK9+liHcBHjxqt9RN69U+oKq0XPml\nOQUBfZv2Gp0uQbPILskxEwbw3Yx1kewvvqWCjF1F2p0E5lWnFqGKENb3Cw1AbJ/Y\nC8lHJq0BEejfwWbk7+qvEl9UanL1k7V296YXRzTvKLCNhlc86TV+6aMWJ1f9H3uK\n08yNTiKW3Y6W5OgjM+5tR4nPNgj5JysdCwLQ0WVpZrit9nH3wTIeXjxDWlKyFqlV\nucCr77I2p8fSrb8e9MZBTWkAhOKJqU4qG1pZqGt2AI6HUsfc4CyExpb+fMRULE8T\nFGVbvGtqctybJkS/zOs7q0mHp/ls19mZeSKQCQQ7qS9nVtT4B06qCZI/rX/Jvkhs\nckOFtLSbmcspC7wpDlMcy6SkQz8qbs8Rn1tEz0bDKUJibGNv7cVsDrHUzM1+qO0s\nJdj+aieMpLT6xV/xF0sAUxtWkDM9mXbg1oV7qF3VyeXXcK0EOCtEG9x8etUYyTr0\nsIAm155FMV+bw3MAKM0OmVYM2gmJ5VEF+Qxf8gi/HVKoWOMxeenaKT30yJCkTcL7\nxoGSnzIz1jbLgwg/8Ln+4HJwU4wkskuULXCoGgN5AEDf1TluBBA2tnV3wvERu08J\nETbtcklgby6cJ9HBvmYP\n=Imz7\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dc396be90ff3e7659d064da74f3b3bca107c4ff2\nparent 814597340d22d24d55fb2bb1163bce9c88e9f468\nauthor Daniel Cadenas <dcadenas@gmail.com> 1778963165 -0300\ncommitter GitHub <noreply@github.com> 1778963165 -0500\n\nchore: Fix user reports emitting invalid NIP-56 e tags (#4421)\n\n* Fix user report NIP-56 e-tag targets. User-only reports now preserve local synthetic history while omitting invalid e tags, and reportUser tests cover no-related-event and mixed related-event inputs.\n\n* fix(reporting): harden NIP-56 e-tag validation\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-16T20:26:05Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b3b6f845ef47f78e5efd6d021a58b3187d8e42ab",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/b3b6f845ef47f78e5efd6d021a58b3187d8e42ab",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b3b6f845ef47f78e5efd6d021a58b3187d8e42ab/comments",
+    "author": {
+      "login": "dcadenas",
+      "id": 18184,
+      "node_id": "MDQ6VXNlcjE4MTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "html_url": "https://github.com/dcadenas",
+      "followers_url": "https://api.github.com/users/dcadenas/followers",
+      "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+      "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+      "repos_url": "https://api.github.com/users/dcadenas/repos",
+      "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "814597340d22d24d55fb2bb1163bce9c88e9f468",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/814597340d22d24d55fb2bb1163bce9c88e9f468",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/814597340d22d24d55fb2bb1163bce9c88e9f468"
+      }
+    ]
+  },
+  {
+    "sha": "814597340d22d24d55fb2bb1163bce9c88e9f468",
+    "node_id": "C_kwDOO71yAtoAKDgxNDU5NzM0MGQyMmQyNGQ1NWZiMmJiMTE2M2JjZTljODhlOWY0Njg",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-16T20:25:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T20:25:36Z"
+      },
+      "message": "fix(notifications): harden row localization and large-font layout (#4412)\n\n* fix(notifications): harden row localization and large-font layout\n\n* test(notifications): stabilize row goldens\n\n* test(ci): harden widget suite stability\n\n* test(ci): stabilize remaining layout checks\n\n* test(ci): freeze localized time formatter clock\n\n* test(notifications): enforce notification row goldens\n\n* test(notifications): normalize notification golden surface\n\n* test(ci): stabilize notification and layout checks\n\n* test(goldens): tolerate notification row font drift\n\n* test(goldens): reset leaked surface size after notification goldens\n\ngolden_toolkit's pumpWidgetBuilder sets the binding surface size but\nnever restores it. Under `very_good test --optimization` every test\nfile shares one isolate, so the 420x560 surface from these goldens\nleaked into web_video_player_test and clamped its 600px cover-box\nassertion to 560px (CI-only; plain `flutter test` isolates per file).\nReset via addTearDown, matching the pattern already applied to the\nscreen tests this PR hardened.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* test(goldens): reset leaked surface size in skipped goldens\n\n* fix(notifications): remove row localization debt\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "a6bc43a2a497f589d90922668893a131b3f5a8dd",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/a6bc43a2a497f589d90922668893a131b3f5a8dd"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/814597340d22d24d55fb2bb1163bce9c88e9f468",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCNLACRC1aQ7uu5UhlAAAGE8QAAj1b1rKgmnhy2Cw4duNfgSL\nUFmhtV8CvNkHSNh7S2DW1/rhJ301pkuMNHBeEK+xLsT6rew4QCAF71yq7HcrqQsD\nrwutagdXGXKpikcJPCQAEYuNmwSyUKqcPIoy/lizrYbn+Rcxruzfmi1H5QBzFnsW\nCeN+qpSX7EMjO4+jTr0BM0JZzuryoEXtH0Y2x8cfm2SaaQrj/EeFYss8u+ZYolgu\n9EngNhpcy9EoJLaCdzNI+76HE2uGNPSQk33daFHvV1ZjmbmEDuTa3PR0oxvADD7B\nv3ftR7K+mYThE13oTkLYndV9zQ1hDGeDGpPisq27BnOdnWRkDVzwI3rjVC96rfOh\nry96NROF+PN6/67xKcELvD4X6ClUGYh7KezQbN1PJFKh2LFDvDr9ZTP6YIMFX0ze\nqLBPp45E0TiUWKNNNb1AONWkvmWoKiig8RQ/PMm90qBUN37CNMtDh3q8knLYj1bG\n2Yg6IRfJG1aAT5lpQIfe3lA/P8cWX7ZFY1dXij/7r0eDXqXuqt06thpmWRNeJlxc\nn+k9xGK3fyCyvNOctW6e5DOjdNjmQY3UG+DleWX++CMiDqQE95JT5QXppe0UaNMF\nzyncom6TLtSTrOU0VZJXlyKYo7NyfaMsjLu7ksJI060aZ7NNzxfDYkvTcxMmxBKt\nQZKm6SZ1OQoRlPTspyQw\n=j9jM\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a6bc43a2a497f589d90922668893a131b3f5a8dd\nparent 459415bb8935bdbd840e7f144a067e3030f8af86\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778963136 -0500\ncommitter GitHub <noreply@github.com> 1778963136 -0500\n\nfix(notifications): harden row localization and large-font layout (#4412)\n\n* fix(notifications): harden row localization and large-font layout\n\n* test(notifications): stabilize row goldens\n\n* test(ci): harden widget suite stability\n\n* test(ci): stabilize remaining layout checks\n\n* test(ci): freeze localized time formatter clock\n\n* test(notifications): enforce notification row goldens\n\n* test(notifications): normalize notification golden surface\n\n* test(ci): stabilize notification and layout checks\n\n* test(goldens): tolerate notification row font drift\n\n* test(goldens): reset leaked surface size after notification goldens\n\ngolden_toolkit's pumpWidgetBuilder sets the binding surface size but\nnever restores it. Under `very_good test --optimization` every test\nfile shares one isolate, so the 420x560 surface from these goldens\nleaked into web_video_player_test and clamped its 600px cover-box\nassertion to 560px (CI-only; plain `flutter test` isolates per file).\nReset via addTearDown, matching the pattern already applied to the\nscreen tests this PR hardened.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* test(goldens): reset leaked surface size in skipped goldens\n\n* fix(notifications): remove row localization debt\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-16T20:25:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/814597340d22d24d55fb2bb1163bce9c88e9f468",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/814597340d22d24d55fb2bb1163bce9c88e9f468",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/814597340d22d24d55fb2bb1163bce9c88e9f468/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "459415bb8935bdbd840e7f144a067e3030f8af86",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/459415bb8935bdbd840e7f144a067e3030f8af86",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/459415bb8935bdbd840e7f144a067e3030f8af86"
+      }
+    ]
+  },
+  {
+    "sha": "459415bb8935bdbd840e7f144a067e3030f8af86",
+    "node_id": "C_kwDOO71yAtoAKDQ1OTQxNWJiODkzNWJkYmQ4NDBlN2YxNDRhMDY3ZTMwMzBmOGFmODY",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-16T17:09:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T17:09:31Z"
+      },
+      "message": "fix(android): default useLegacySurface to true to close FlutterJNI renderer race (#3416) (#4404)\n\n* fix(android): default useLegacySurface to true to close FlutterJNI renderer race (#3416)\n\nPR #3762 narrowed the ImageReaderSurfaceProducer / FlutterJNI detach\nrace window from \"indefinite\" to \"1-2 in-flight frames\" and explicitly\nacknowledged the residual could not be closed within the SurfaceProducer\ndisposal path. Crashlytics issue d0cacc633461283e8d04c9463445b58a\nregressed on 1.0.13 build 502 (Samsung SM-S918W, 1 fatal) — the residual\nfiring.\n\nInstead of attempting an invasive synchronous MediaCodec drain, flip the\nDart-side default of useLegacySurface from false to true. The legacy\nSurfaceTextureEntry backend has no ImageReader and therefore no\nSDK-internal onImage callback that can run after FlutterJNI is\ndetached. All five accidentally-vulnerable callsites in the app\n(video_editor_canvas, video_metadata_preview_screen,\nvideo_metadata_cover_screen, video_clip_preview,\nvideo_metadata_classic_preview_thumbnail) inherit the new default and\nstop hitting the race in one change. The feed's explicit\nuseLegacySurface: true is unchanged; no other callsite explicitly opts\ninto SurfaceProducer.\n\nThe KDoc on DivineVideoPlayerInstance.enableTextureOutput is rewritten\nto reflect the new default; the Kotlin function's parameter default\nstays at false because Dart always passes the value over MethodChannel\n(the native default is unreachable in production).\n\nTrade-off: the five callsites lose Android 14+ SurfaceProducer\nsurface-recreate callbacks (Vivo/Android 16 compositor events,\npermission dialogs). These flows are short-lived and don't trigger\nmid-playback permission dialogs in practice; the visible failure mode\non the SurfaceProducer-recreate-needed path is a black surface until\nthe user navigates, which is strictly better than a fatal crash.\nSurfaceProducer remains available via explicit useLegacySurface: false\nwhen a future callsite genuinely needs it.\n\nOut of scope (separate issues):\n- media_kit_video Android backend hardening\n- iOS sibling #4400 (FVP / ProVideo callback-after-teardown)\n- Reflection-based MediaCodec.flush synchronous fence (rejected by\n  PR #3762 as overkill; not needed once this change takes volume to zero)\n\n* fix(android): plugin fallback uses legacy surface; document default asymmetry\n\nAddresses review feedback on the Kotlin/Dart default mismatch in #3416.\n\n* `DivineVideoPlayerPlugin.kt`: MethodChannel `useLegacySurface`\n  fallback now `?: true` so a missing argument from Dart picks the\n  safe legacy backend. Unreachable today (the controller always\n  sends the value) but documents the safe-by-default intent at the\n  boundary.\n* `DivineVideoPlayerInstance.kt`: KDoc adds a paragraph explaining\n  why the Kotlin function default stays `false` — the existing\n  unit tests in `DivineVideoPlayerInstanceTest` exercise the\n  `SurfaceProducer.Callback` contract via that default and would\n  break if it flipped without also mocking `createSurfaceTexture()`.\n\nVerified:\n- flutter analyze (divine_video_player): clean\n- flutter test (divine_video_player): 154/154 pass\n- :divine_video_player:testDebugUnitTest: 22/22 pass\n\n* fix(android): align enableTextureOutput Kotlin default with Dart and cover legacy branch (#3416)\n\nRemoves the Kotlin/Dart default asymmetry the prior commit documented.\n`enableTextureOutput(..., useLegacySurface = true)` now matches the Dart\ncontroller default and the MethodChannel fallback in\n`DivineVideoPlayerPlugin`. Existing SurfaceProducer tests opt in\nexplicitly with `useLegacySurface = false`.\n\nAdds two unit tests covering the now-production legacy\n`SurfaceTextureEntry` branch — one asserting `createSurfaceTexture()`\nis called and `createSurfaceProducer()` is not, the other pinning the\neager-attach contract on materialized players. Both use\n`mockkConstructor(Surface::class)` to intercept the Android `Surface`\nconstructor scoped to the test that needs it.\n\n* fix(android): align legacy texture defaults and tests\n\n# Conflicts:\n#\tmobile/packages/divine_video_player/android/src/test/kotlin/com/divinevideo/divine_video_player/DivineVideoPlayerInstanceTest.kt\n#\tmobile/packages/divine_video_player/lib/src/divine_video_player_controller.dart\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "2936d1b81e947bfe52545b79d25a17e7e7487949",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/2936d1b81e947bfe52545b79d25a17e7e7487949"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/459415bb8935bdbd840e7f144a067e3030f8af86",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCKTLCRC1aQ7uu5UhlAAAc0EQAGtltufT8oCXnIrm+vtDoCjj\nM5ltdaVKPObYgAp7qPkw4HuG7ILJ4ZETu/J0a1vDjEHh+bN2QQ4dXu8RbGJFDCxc\n4S3Sqdz+R4fBuRoLvWbqg4+vOM0Tf2y4hAW/j9PN7fSkaKoeeMAQZmocCPHSSGxf\n6Kwip/uI5bB1QsWMSE1lpRo3ydXg5K+CmIqxpSPFpyxltt7ZKa8kcKI++aLAPba+\nlqY4tZ3BtzFH90idyk7zBTlxvZ+umiDj0GfnhGTBaFVxQQLolZ7JyHdpYBTM1P3J\nUsGL3vKwVaDalIpO3U6V6Ync+ui9WVXKLGOApK3mKeBqc+x3JN657whZpPy9Z5qS\n5HHdot0624eM1elDfBNBS0QGd4qZ7Cky2xNnJ0MRjFITQFpCmTNOS4iWG2QxbgVc\nZ+w1nkKzIg5U8cxC51EJvk5o2D0hgoctyjcQ56E7nDrQl9pruRd7pKJZ3fYCFBCa\nzQT5iGbjlBVcfnBe2R3d7/T4br77ADl+2cR3cvaB1O5Zg4bEOqlowdGqtuWiFOOx\nB5vD6AqJJf+R41mTuLVPc6NLCPYS6GKDvt1XihlPYFH9wc7nXoWbjyAbjochvQgt\nlaJbfx1noiZ0YdjsGvuJhxMUwL8kCbnGpQtBgAHW1WajUlOAbg6D/ak2e/n9GP8Z\nRCOxkc2mN4ZAqz83ph2Y\n=n9zs\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2936d1b81e947bfe52545b79d25a17e7e7487949\nparent b61717ac496578fb02f9383b60a5a6cffca986ba\nauthor Meylis <meylis@divine.video> 1778951371 +0500\ncommitter GitHub <noreply@github.com> 1778951371 -0500\n\nfix(android): default useLegacySurface to true to close FlutterJNI renderer race (#3416) (#4404)\n\n* fix(android): default useLegacySurface to true to close FlutterJNI renderer race (#3416)\n\nPR #3762 narrowed the ImageReaderSurfaceProducer / FlutterJNI detach\nrace window from \"indefinite\" to \"1-2 in-flight frames\" and explicitly\nacknowledged the residual could not be closed within the SurfaceProducer\ndisposal path. Crashlytics issue d0cacc633461283e8d04c9463445b58a\nregressed on 1.0.13 build 502 (Samsung SM-S918W, 1 fatal) — the residual\nfiring.\n\nInstead of attempting an invasive synchronous MediaCodec drain, flip the\nDart-side default of useLegacySurface from false to true. The legacy\nSurfaceTextureEntry backend has no ImageReader and therefore no\nSDK-internal onImage callback that can run after FlutterJNI is\ndetached. All five accidentally-vulnerable callsites in the app\n(video_editor_canvas, video_metadata_preview_screen,\nvideo_metadata_cover_screen, video_clip_preview,\nvideo_metadata_classic_preview_thumbnail) inherit the new default and\nstop hitting the race in one change. The feed's explicit\nuseLegacySurface: true is unchanged; no other callsite explicitly opts\ninto SurfaceProducer.\n\nThe KDoc on DivineVideoPlayerInstance.enableTextureOutput is rewritten\nto reflect the new default; the Kotlin function's parameter default\nstays at false because Dart always passes the value over MethodChannel\n(the native default is unreachable in production).\n\nTrade-off: the five callsites lose Android 14+ SurfaceProducer\nsurface-recreate callbacks (Vivo/Android 16 compositor events,\npermission dialogs). These flows are short-lived and don't trigger\nmid-playback permission dialogs in practice; the visible failure mode\non the SurfaceProducer-recreate-needed path is a black surface until\nthe user navigates, which is strictly better than a fatal crash.\nSurfaceProducer remains available via explicit useLegacySurface: false\nwhen a future callsite genuinely needs it.\n\nOut of scope (separate issues):\n- media_kit_video Android backend hardening\n- iOS sibling #4400 (FVP / ProVideo callback-after-teardown)\n- Reflection-based MediaCodec.flush synchronous fence (rejected by\n  PR #3762 as overkill; not needed once this change takes volume to zero)\n\n* fix(android): plugin fallback uses legacy surface; document default asymmetry\n\nAddresses review feedback on the Kotlin/Dart default mismatch in #3416.\n\n* `DivineVideoPlayerPlugin.kt`: MethodChannel `useLegacySurface`\n  fallback now `?: true` so a missing argument from Dart picks the\n  safe legacy backend. Unreachable today (the controller always\n  sends the value) but documents the safe-by-default intent at the\n  boundary.\n* `DivineVideoPlayerInstance.kt`: KDoc adds a paragraph explaining\n  why the Kotlin function default stays `false` — the existing\n  unit tests in `DivineVideoPlayerInstanceTest` exercise the\n  `SurfaceProducer.Callback` contract via that default and would\n  break if it flipped without also mocking `createSurfaceTexture()`.\n\nVerified:\n- flutter analyze (divine_video_player): clean\n- flutter test (divine_video_player): 154/154 pass\n- :divine_video_player:testDebugUnitTest: 22/22 pass\n\n* fix(android): align enableTextureOutput Kotlin default with Dart and cover legacy branch (#3416)\n\nRemoves the Kotlin/Dart default asymmetry the prior commit documented.\n`enableTextureOutput(..., useLegacySurface = true)` now matches the Dart\ncontroller default and the MethodChannel fallback in\n`DivineVideoPlayerPlugin`. Existing SurfaceProducer tests opt in\nexplicitly with `useLegacySurface = false`.\n\nAdds two unit tests covering the now-production legacy\n`SurfaceTextureEntry` branch — one asserting `createSurfaceTexture()`\nis called and `createSurfaceProducer()` is not, the other pinning the\neager-attach contract on materialized players. Both use\n`mockkConstructor(Surface::class)` to intercept the Android `Surface`\nconstructor scoped to the test that needs it.\n\n* fix(android): align legacy texture defaults and tests\n\n# Conflicts:\n#\tmobile/packages/divine_video_player/android/src/test/kotlin/com/divinevideo/divine_video_player/DivineVideoPlayerInstanceTest.kt\n#\tmobile/packages/divine_video_player/lib/src/divine_video_player_controller.dart\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-16T17:09:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/459415bb8935bdbd840e7f144a067e3030f8af86",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/459415bb8935bdbd840e7f144a067e3030f8af86",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/459415bb8935bdbd840e7f144a067e3030f8af86/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b61717ac496578fb02f9383b60a5a6cffca986ba",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b61717ac496578fb02f9383b60a5a6cffca986ba",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/b61717ac496578fb02f9383b60a5a6cffca986ba"
+      }
+    ]
+  }
+]

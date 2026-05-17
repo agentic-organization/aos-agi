@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "70b8d2fa615620c1ef33861d0d015398595643d6",
+    "node_id": "C_kwDOQYdZgdoAKDcwYjhkMmZhNjE1NjIwYzFlZjMzODYxZDBkMDE1Mzk4NTk1NjQzZDY",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-17T02:05:20Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T02:05:20Z"
+      },
+      "message": "feat: ingest relay reports for moderation review (#144)\n\n* feat: preserve report timestamps\n\n* refactor: share report review recording\n\n* fix: preserve report review nonfatal writes\n\n* feat: parse inbound nip56 reports\n\n* feat: process inbound nip56 reports\n\n* feat: poll relay for nip56 reports\n\n* fix: harden nip56 report polling\n\n* feat: run inbound report polling on cron\n\n* fix: use safe report polling checkpoints\n\n* fix: hold report checkpoint on saturated pages\n\n* fix: drain saturated report polling pages\n\n* fix: avoid unsafe report pagination boundaries\n\n* fix: page report polling with inclusive overlap\n\n* fix: retry relay reports when review write fails\n\n* feat: expose report polling status\n\n* fix: restrict report polling status to get\n\n* fix: return method error for report polling status\n\n* docs: document inbound report polling\n\n* fix: harden inbound report polling",
+      "tree": {
+        "sha": "3094d0b5359f6ca6e0f0b748685cd148f2240e45",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/3094d0b5359f6ca6e0f0b748685cd148f2240e45"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/70b8d2fa615620c1ef33861d0d015398595643d6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCSJgCRC1aQ7uu5UhlAAAbYcQAJFf2UBHSevEiOuNeoAnUVhi\nbcWBU+83WFErLYmRxZmSOdDTdbXkEdCvbfgOmATzfVzTsH0deeJfL0rRJ5nhTbIu\nCP08+SWqCVYjWqRWO5c1VK0X/aCqIPMxjK1/+odqf41XMU2FAHU4a0pxe3EcPPUy\nT5tBj4LDyK2y3wQoS4tBbplRFCZo6o0Vn20rGVY+BljTW/hfj0ynAMyichHUHGxW\n9huJ2hOHCuwttWzQqjhJyjTNwe5Q87zFjErQPOgApb/5XDuCDohU1lmbHs5crex3\nBrqXseDn88gfC+uI99KP3r3Nn9n58QQkGhYTmWVkKe2qBZiF2Z/tbPKTcYqAtnzr\nukyv4d+ztmYJ2MxQ6UOQwz/eE8xcNeOzzhH3lVSYYZff8shybITCW2cfOaWWcguQ\n4rzjgfbB/Opq8zLIBAqJaI2Kz+t8XFtyBEDTWj28XUi+c21vpS2lOphxXUXDlAjl\n+/fMdKBq+q2ca+4oyMPAKLPzxxO6/SW1WKi5skaX+ki+r2CgbMYoeahm7pqSOQgD\n3D1R1zZhghUQsfikdjOSQuc0WcuCIfM3CzdUBa6y9z7TyNg4HATvSArCRkfPvn7x\nlpOjIDG18NrudM4eQ+RA31WW21LXqgjmeNxlEtzZWA86cvUK+6C5zhiDmPyD7zme\n9APq2VReDE4M6ileDhMh\n=MbVt\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3094d0b5359f6ca6e0f0b748685cd148f2240e45\nparent 40d93be0d9f70bb0c51ea17ba5699852e12dad28\nauthor rabble <evan@protest.net> 1778983520 +1200\ncommitter GitHub <noreply@github.com> 1778983520 +1200\n\nfeat: ingest relay reports for moderation review (#144)\n\n* feat: preserve report timestamps\n\n* refactor: share report review recording\n\n* fix: preserve report review nonfatal writes\n\n* feat: parse inbound nip56 reports\n\n* feat: process inbound nip56 reports\n\n* feat: poll relay for nip56 reports\n\n* fix: harden nip56 report polling\n\n* feat: run inbound report polling on cron\n\n* fix: use safe report polling checkpoints\n\n* fix: hold report checkpoint on saturated pages\n\n* fix: drain saturated report polling pages\n\n* fix: avoid unsafe report pagination boundaries\n\n* fix: page report polling with inclusive overlap\n\n* fix: retry relay reports when review write fails\n\n* feat: expose report polling status\n\n* fix: restrict report polling status to get\n\n* fix: return method error for report polling status\n\n* docs: document inbound report polling\n\n* fix: harden inbound report polling",
+        "verified_at": "2026-05-17T02:05:21Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/70b8d2fa615620c1ef33861d0d015398595643d6",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/70b8d2fa615620c1ef33861d0d015398595643d6",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/70b8d2fa615620c1ef33861d0d015398595643d6/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "40d93be0d9f70bb0c51ea17ba5699852e12dad28",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/40d93be0d9f70bb0c51ea17ba5699852e12dad28",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/40d93be0d9f70bb0c51ea17ba5699852e12dad28"
+      }
+    ]
+  },
+  {
+    "sha": "40d93be0d9f70bb0c51ea17ba5699852e12dad28",
+    "node_id": "C_kwDOQYdZgdoAKDQwZDkzYmUwZDlmNzBiYjBjNTFlYTE3YmE1Njk5ODUyZTEyZGFkMjg",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-17T02:05:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-17T02:05:07Z"
+      },
+      "message": "fix(admin): show video thumbnails before playback (#143)",
+      "tree": {
+        "sha": "3e549623ca47f6ada1d0af58f6fb15243f9839b7",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/3e549623ca47f6ada1d0af58f6fb15243f9839b7"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/40d93be0d9f70bb0c51ea17ba5699852e12dad28",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCSJTCRC1aQ7uu5UhlAAA/GYQAHcbDqGTo2g8gtRMRGP3mn3W\nTLu0E6yol4g1i3vrIvqxyazOuKywSB1xmtE/n924hPnyqkXM9WR7l9NFVxzW2F/6\ndtHXJrPPfs4edon10YJZci48gjiMFAL1oRbzYXNnz1iwhUT7sst1XzlAZgL3Mc1s\n/LcUAaeADYuhmmHYcIB0wF6NxsuIgu1VqoQ9aPY9uiR+2ij/71FPLbvCSVyLJMXy\nhmAgmdvZs/Cb/Apu6ZS/b6eghzYD3BbvCIjcdRKROFx/aK9r66c5KLlLaN9OlTls\n8EbL/oY7th4ivOXSsjNx00SOLNj5SfihiMQailX34UfMMSLsAaR7KI6J1JiXLM1e\nvt4fLDZrCLbbekT2/TXot65swdG9tdXOb9Aetu8kVcYp0UREgxx6bA0xdrvqPyY2\nBq1pXmnS6ODbAoofH0rkjIW9kpSDHbwVZXnqnLWB6/UlsekH65guPVj4/clciHgQ\n8HwSEBxqIBUrUQ5JDziBIh+y6mhUxehuYMuBMvARy9KpeyV+Kpkegeoj5HH8kPMn\nltqGAfk9niMe3RN1e0dTG9rd6kn9y1SizpsDcPIbhg73eAZGOJtNESCLa/P1t97Z\nRm1jnn7ByoWy1P9mpXZnfr9VPbMiR6b6TRS1C7IMD1r2AVpalDVhNw5rIrYVyj80\nxPrDJ0ZSfV9XY6d4H9Hp\n=Jd2L\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3e549623ca47f6ada1d0af58f6fb15243f9839b7\nparent c2a5a7bb26e0ee7aeeade78ba52ac1f188670311\nauthor rabble <evan@protest.net> 1778983507 +1200\ncommitter GitHub <noreply@github.com> 1778983507 +1200\n\nfix(admin): show video thumbnails before playback (#143)",
+        "verified_at": "2026-05-17T02:05:07Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/40d93be0d9f70bb0c51ea17ba5699852e12dad28",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/40d93be0d9f70bb0c51ea17ba5699852e12dad28",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/40d93be0d9f70bb0c51ea17ba5699852e12dad28/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/c2a5a7bb26e0ee7aeeade78ba52ac1f188670311"
+      }
+    ]
+  }
+]
