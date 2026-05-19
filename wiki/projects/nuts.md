@@ -20,6 +20,7 @@ Key NUTs include the mandatory primitives (minting, melting via Lightning, BDHKE
 - [[projects/cashu-ts]] — TypeScript reference
 
 ## History
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/nuts/`) shows **1 issue updated**: onchain payment method specification.
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
 
 ## Open questions

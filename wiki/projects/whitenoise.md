@@ -28,6 +28,7 @@ Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and i
 
 ## History
 - 2026-05-10: 2026-05-07 → 2026-05-10 daily ingestion (`data/raw/github/daily/2026-05-10/marmot-protocol/whitenoise/`) recorded 5 commits, 13 updated PRs, 22 updated issues, and release **v2026.5.7+24** (published 2026-05-07): finishes block functionality (blocked users hidden from invites/previews/timeline/search/notifications), end-to-end video attachments, app-wide offline notice, **on-disk DB encryption**, and three security fixes pushed into [[projects/mdk]]. Commit-window contributors: [[people/erskingardner]], [[people/pepina-dev]].
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/marmot-protocol/whitenoise/`) shows **2 commits** by [[people/jgmontoya]] and [[people/pepina-dev]]: integration-test support with Docker Compose relay fixtures, and fix for showing author names in last messages of pending invites. **15 issues updated** including basic inline Markdown rendering, White Noise chat deep links, lifecycle reset after data deletion, completed block/unblock UX, and editable group messages.
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
 ## Related

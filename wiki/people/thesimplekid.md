@@ -36,6 +36,7 @@ Primary contributor to the Cashu Development Kit (CDK) Rust library. Works on An
 
 ## History
 - 2026-05-07: Page created from an internal Q4-2025 cashubtc organization analysis (scope and responsibilities only; no performance details ingested).
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/cdk/`) shows **1 commit** by thesimplekid on [[projects/cdk]]: "fix: rust version job".
 
 ## Open questions
 - Full name, location, timezone?

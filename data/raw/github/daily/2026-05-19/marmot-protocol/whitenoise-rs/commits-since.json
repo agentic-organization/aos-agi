@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "a2d71d0a706c882b268e4569771f84574b638ae7",
+    "node_id": "C_kwDOMvLjydoAKGEyZDcxZDBhNzA2Yzg4MmIyNjhlNDU2OTc3MWY4NDU3NGI2MzhhZTc",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-18T12:46:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-18T12:46:42Z"
+      },
+      "message": "Harden notification collection for NSE wakeups (#837)\n\n* Harden notification collection for NSE wakeups\n\n* Harden notification catch-up coverage\n\n* Fix background notification cold-start race",
+      "tree": {
+        "sha": "ca69c37938200e07068786d7532af6b80a7ee4a0",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/ca69c37938200e07068786d7532af6b80a7ee4a0"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/a2d71d0a706c882b268e4569771f84574b638ae7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCwoyCRC1aQ7uu5UhlAAAlvYQAAhH5fAhgtL8Fz0FKUoLFy0t\nyVwXt+QSuEM56W7Hwr+ofbt5+tsNgKRZbdnO95q//2QtPWAqCEcgnyxEnlhHW+DS\n3eH2AsNgFD4jmclhDmeDRIfhHve2urT0s72G9okU88xmlKZMPGCfXxc/nH/EPQ/K\nZ9Vkk2tAclcJwK6ndymSJNAUKYf+qxncyPXjgzqLOM2pZYLZonVZ+VDxcQLnRmhA\ngAhI4iVRHC7aRfTIqz7qGkyt88FHSIsKeP2ZDVGZTanghJoQbFwU1MzzKII3mrlZ\nUuHM7nKcZYZ7xL5iXAMDcKE/xK3qh6H0FnrncfiicCmTXt5p2vymVOfyQKyEPLg9\no5KWkqCEPJKO0I5UVblLZTfbsIUDL+oeITZ/dWxhsa57RmBKIJajF8xH9uVos9Vu\nRqyDXYp+53X2jvDTN63eoOBHPMyFegTc5rtNzMVq8cgdKlqls5KJsPei2rdvNxxe\nJa97lX7SNinswT2vea/41UljtCxyzY5JbHjzmmvESAL9W2BJxYdu0SLc8cBkDvDm\nCohgUOOFR4ZZBC6WGwBWpCRS6o3DrNpgEC+30OinlMMZTfoxIpadW1R4hsqpLyb4\ndbeMk2pTUWjrOk5DJ6xpS/0B7nP3bOwAfP6PGhzKTzhjqwqtujTYNMlAgAmb4E5B\n9mtm12AR/iBIyWIXGDvc\n=V92X\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ca69c37938200e07068786d7532af6b80a7ee4a0\nparent 99c3fed85bd4d6219f0a4ff5acd53be2574ac327\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1779108402 +0200\ncommitter GitHub <noreply@github.com> 1779108402 +0200\n\nHarden notification collection for NSE wakeups (#837)\n\n* Harden notification collection for NSE wakeups\n\n* Harden notification catch-up coverage\n\n* Fix background notification cold-start race",
+        "verified_at": "2026-05-18T12:46:43Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/a2d71d0a706c882b268e4569771f84574b638ae7",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/a2d71d0a706c882b268e4569771f84574b638ae7",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/a2d71d0a706c882b268e4569771f84574b638ae7/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "99c3fed85bd4d6219f0a4ff5acd53be2574ac327",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/99c3fed85bd4d6219f0a4ff5acd53be2574ac327",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/99c3fed85bd4d6219f0a4ff5acd53be2574ac327"
+      }
+    ]
+  },
+  {
+    "sha": "99c3fed85bd4d6219f0a4ff5acd53be2574ac327",
+    "node_id": "C_kwDOMvLjydoAKDk5YzNmZWQ4NWJkNGQ2MjE5ZjBhNGZmNWFjZDUzYmUyNTc0YWMzMjc",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-18T10:34:06Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-18T10:34:06Z"
+      },
+      "message": "Reuse d_tag slot for kind:30443 publishes to enable NIP-33 replacement (#835)\n\n* fix(key_packages): reuse the kind:30443 d-tag across publishes\n\nMDK's `create_key_package_for_event` generates a fresh random 32-byte hex\n`d` tag every call (\"Callers SHOULD store and reuse this value when\nrotating the KeyPackage\"). The whitenoise publish path was using\nwhatever MDK handed back each time, so consecutive publishes for the\nsame account landed in different NIP-33 addressable slots — relays\naccumulated stale kind:30443 events instead of replacing them.\n\nPersist the chosen d-tag in `published_key_packages` (the column already\nexisted) and look it up before each canonical publish. When a stored\nd-tag is found, swap MDK's freshly-generated `Tag::identifier` in\n`tags_30443` so the publish lands in the same slot and relays apply the\nNIP-33 replacement. First publish for an account falls through and\nrecords MDK's d-tag, which becomes the slot for all future publishes.\n\n* fix(key_packages): fail the publish when loading the canonical d-tag errors\n\nPer CodeRabbit feedback: silently falling back to MDK's fresh d-tag on a\nDB read failure partially re-introduces the bug this PR fixes — one\ntransient failure would publish kind:30443 to a new NIP-33 slot and\nleave the existing canonical event stale on relays. DB reads on the\nper-account SQLite file are local and rare to fail; aborting lets the\nscheduler retry on its next tick with consistent state.\n\n* fix(key_packages): route scheduler republishes through canonical d-tag slot\n\nTwo follow-ups on the d-tag reuse fix:\n\nP1: Scheduler-driven rotations bypassed the new canonical-slot logic.\n`session.key_packages().publish()` only published kind:443 (legacy), so\nthe maintenance task's \"no usable local key package\" and\n\"all expired\" rotations never refreshed the canonical kind:30443 event\nat all — the d-tag slot would stay frozen on whatever the initial\naccount-setup publish wrote.\n\nRefactor `KeyPackageOps::publish` and `create_and_publish` to publish\nboth kinds through a shared `publish_pair` helper that reuses the\npersisted `d` tag and tracks every publish (canonical and legacy) in\nthe per-account DB. The global `Whitenoise::publish_key_package_pair_to_relays`\npath stays for external-signer login flows, which still hand the signer\nin explicitly.\n\nP2: NIP-01 keeps the lowest-id event when two replaceable events share\na `created_at`, so reusing the d-tag alone does not guarantee\nreplacement under same-second rapid republishes — the new event might\nlose the tiebreaker. Compute a strictly-monotonic `created_at` via\n`monotonic_canonical_created_at`: read the prior maximum from\n`published_key_packages.created_at` (the row insert timestamp, which is\nalways ≥ the previous event's `created_at`) and bump past it. This\nrelies on the existing column — no migration needed.\n\nPlumb an optional `custom_created_at` through\n`publish_key_package_with_signer` → `publish_event_builder_with_signer`\nso the canonical leg can set its own timestamp. Legacy (kind:443) is\nregular per NIP-01 and keeps `None` (default wall clock) since each\npublish is independently addressable.\n\nTest changes:\n- New DB unit tests for `find_max_created_at`.\n- New pure unit tests for `monotonic_canonical_created_at` covering\n  empty / future-prior / past-prior / negative-prior cases.\n- The integration-style replacement test now also asserts the relay\n  surfaces exactly one canonical event for the slot after a second\n  publish in the same second, and that the event id has changed —\n  proving NIP-33 replacement, not just local DB tracking.\n\n* fix(key_packages): propagate canonical tracking failures\n\nPer CodeRabbit review on PR #835: the canonical (kind:30443) tracking\nwrite was being silently swallowed with a tracing::warn!, but the\nd-tag reuse and monotonic-created_at invariants both read from this\nrow on the next publish. If a canonical publish lands but tracking\nfails, the next publish thinks no slot exists and starts a fresh\nrandom d-tag — the exact bug this PR fixes.\n\nSplit track_published into two helpers in both publish paths:\n- track_published_canonical: returns Result, propagated via `?`.\n- track_published_legacy: stays best-effort with warn-and-continue,\n  since kind:443 is regular per NIP-01 (not addressable) and only\n  affects audit-trail completeness, not future canonical replacement.\n\nThe accompanying CodeRabbit suggestion to soft-fail the d-tag /\nmax-created_at lookups is rejected: it explicitly contradicts the\nearlier review on this same PR (\"Fail the publish when loading the\ncanonical d tag fails. Falling back to a fresh MDK-generated d here\nbreaks the exact invariant this PR is adding\"). Keeping the `?`\npreserves the invariant — DB read failures on the per-account file\nare rare, and the scheduler retries on its next tick.\n\n* deps(mdk): bump to 65d02043 and switch to KeyPackageOptions.existing_d_tag\n\nMDK now exposes `KeyPackageOptions { protected, existing_d_tag }` and\n`create_key_package_for_event_with_options`. Hand the persisted d-tag\nto MDK at key-package-creation time so the returned `tags_30443` and\n`KeyPackageEventData::d_tag` are already authoritative — no post-edit\ntag rewriting needed.\n\n- Both publish paths (`Whitenoise::publish_key_package_pair_to_relays`\n  and `KeyPackageOps::publish_pair`) now consume those inputs directly\n  via a new `prepare_canonical_publish_inputs` helper that does the\n  slot lookups, generates the key package with the stored d-tag, and\n  computes the monotonic canonical `created_at`. The publish functions\n  trust the resulting `KeyPackageEventData` and just publish + track.\n- Drops the `apply_d_tag_override` helper and its three unit tests:\n  the post-edit workaround for MDK's old no-option API is no longer\n  needed. The DB tests and the monotonic-timestamp tests stay.\n- Test helpers and the maintenance fixture's outdated-key-package\n  publisher pass `None` for the new `existing_d_tag` parameter — they\n  build one-off KPs that should not slot into the persisted lifecycle.\n\n* fix(key_packages): serialize concurrent rotations per account\n\nPer CodeRabbit review on PR #835: the read-d_tag → read-max →\nencode → publish → track sequence is racy. Two concurrent triggers on\nthe same account (e.g. scheduler tick coinciding with a giftwrap\narrival) could both read the same `find_latest_d_tag` /\n`find_max_created_at` values, generate two different MLS key packages\nsharing the same `d` tag and the same `canonical_created_at`, and let\nthe relay's NIP-01 lowest-event-id tiebreaker pick the winner —\ndefeating the d-tag-reuse + monotonic-timestamp invariants this PR\nestablishes, and orphaning the loser's local MLS key material.\n\nAdd `AccountSession::key_package_publish_lock: Mutex<()>` and acquire\nit for the full prepare→publish→track sequence in the three paths\nwhere concurrent triggers are plausible:\n\n- `KeyPackageOps::publish` (scheduler maintenance, giftwrap-consumed\n  republish).\n- `KeyPackageOps::create_and_publish` (test seeding via the session\n  view).\n- `Whitenoise::publish_key_package_for_account_with_signer` (external\n  signer login).\n\n`create_key_package_and_background_publish` is intentionally left\nunlocked: it runs during fresh-account creation, before any other\ntrigger can fire for the same account, and locking through its\nproduction tokio::spawn would force MLS key material generation off\nthe synchronous account-creation path that callers rely on.\n\nAlso add the empty-relays early return to\n`KeyPackageOps::create_and_publish` so it matches `publish()` and\ndoesn't generate orphan MLS key material when there's nowhere to\npublish it.\n\n* fix(key_packages): address review feedback on PR #835\n\nFour follow-ups from jgmontoya:\n\n- **Single DB query for canonical-slot state.** Replace\n  `find_latest_d_tag` + `find_max_created_at` with a single\n  `find_latest_by_kind` that returns the most recent row. The d-tag and\n  the insert timestamp come from the *same* prior publish — splitting\n  the lookup into two queries implied they could disagree. Saves a DB\n  roundtrip and makes the call site cleaner.\n\n- **Simplify `monotonic_canonical_created_at`.** Use\n  `floor.max(now.as_secs())` instead of a branched `if/else`, and rely\n  on the `prev >= 0` guard to make `prev as u64` value-preserving.\n  Semantically identical, two fewer lines.\n\n- **Race in `create_key_package_and_background_publish`.** My prior\n  justification (\"nothing else can fire during account creation\") was\n  wrong: `setup_subscriptions` runs before `setup_key_package`, so the\n  giftwrap handler is live by the time the spawn starts. A welcome\n  arriving in the race window would let `KeyPackageOps::publish` read\n  the same empty state, MDK would generate a different d-tag, and both\n  publishes would land in different NIP-33 slots — the very bug this\n  PR is fixing. Move the `lock → prepare → publish → track` sequence\n  inside the spawn (and the inline-await fallback) so the per-account\n  publish lock covers the full atomic unit. Pulls MLS key generation\n  into the spawn in production, but no caller relies on local key\n  material existing immediately after this function returns.\n\n- **Doc clarity on row vs. event `created_at`.** Update the rustdoc on\n  `find_latest_by_kind` and `monotonic_canonical_created_at` to spell\n  out that `published_key_packages.created_at` is the SQLite\n  `unixepoch()` row-insert timestamp (not the Nostr event's\n  `created_at`), and why that still gives a sound monotonic-floor\n  guarantee: the INSERT runs after the relay round-trip, so\n  `row.created_at ≥ event.created_at` always.\n\n* docs(key_packages): explain why Whitenoise + session publish paths coexist\n\nPer PR #835 review thread on `publish_key_package_pair_to_relays`: the\nexternal-signer login flow inserts the signer into\n`Whitenoise.shared.external_signers` *before* `AccountSession::from_account`\nruns. `from_account` only loads a session signer for accounts with a\nlocal key, so external accounts get `session.signer = None`. Routing the\ninitial external-signer publish through `KeyPackageOps::publish_pair`\nwould then trip `require_signer() → SignerUnavailable`.\n\nFolding the two publish paths into one means rewiring `from_account` (or\n`insert_account_session`) to also consult the `external_signers` map —\na session-signer-lifecycle refactor that's out of scope for the\nd-tag-stability fix. Document the constraint on the Whitenoise side of\nthe path so the next reader doesn't have to rediscover it.\n\n* docs(key_packages): trim refactor-history prose from find_latest_by_kind\n\nPer jgmontoya review on PR #835: drop the \"Folding both lookups into\none query...\" meta-commentary from both the repo wrapper and the\nunderlying query method. It described the refactor rather than the\nbehavior and would rot. The behavioral docs on the underlying\n`PublishedKeyPackage::find_latest_by_kind` (what d_tag/created_at are\nfor, the row-insert vs event-time caveat) stay; the thin\n`PublishedKeyPackagesRepo` wrapper now matches its sibling one-liner\ndoc style.\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+      "tree": {
+        "sha": "a1294b373513869e60b9476288b6cefd8258ed91",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/a1294b373513869e60b9476288b6cefd8258ed91"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/99c3fed85bd4d6219f0a4ff5acd53be2574ac327",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCuseCRC1aQ7uu5UhlAAAVpgQADOnrePQNATZd91DLdUnt6SH\nkfr3uWiYfTz1kXVfZ9DsnvR2ZCoc8klLn65W74Xutb3l2IWGM4F5aMiiAXBZdWcd\nmUywiVHlpn2xcgJcrdDXlLGwBj/LvT19lrH/MGh5snD0opNlCPLWaeVqunVIZK69\nA+vd8AxyXw+o7zw1ainnKfe/3NZ1K5uoXcvip3eM8Z1uNTJ1vfoBbm7mF2MFegCt\n7Eak+0NLcKKlA7Yvf7D+S15TSx+1mWgf9fAtzeSvrKFVz8bSpXlTeMbHkmC2yxXo\nvAJRR1qiR270iQrkHF1nCGv9+EiSwK8koOe9nj18oSbmXBXz2GfSK0PL4pVpdx4d\n4eGE6kbk99eEGwiV9lItWtN3qeUpXBvepIJ5P/02YXx3K2wWl21Tfwn2EWo1LTGv\nor/mAeMdp0zbcCMQ5uW5oEVTKcnYKeC/RcUQE1anN1A2fiYnwJ8+c+Ixpczqrux0\nyRFWsJhWNNt/N03MNS6RTCmfikdAOQI+11wUbiu6RkNh+m4V6DvpWRCtyc5fcf3v\nN9VDaeu24Sb2liWuXY3ya8D12G3r+F128IX/WtwsP0niUEeeBJ674RE/LMInmPkQ\n23oEZYS01oODfNkA4Qn9QgqxHB654arNReOOIEthOQU4kv4o6aA0KGbJiLVEqPLw\nKi0Cd909pCxU8uD9ki4m\n=YsRq\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a1294b373513869e60b9476288b6cefd8258ed91\nparent e8ef8903e745fa64dc5f6779a62696537ea19411\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1779100446 +0200\ncommitter GitHub <noreply@github.com> 1779100446 +0200\n\nReuse d_tag slot for kind:30443 publishes to enable NIP-33 replacement (#835)\n\n* fix(key_packages): reuse the kind:30443 d-tag across publishes\n\nMDK's `create_key_package_for_event` generates a fresh random 32-byte hex\n`d` tag every call (\"Callers SHOULD store and reuse this value when\nrotating the KeyPackage\"). The whitenoise publish path was using\nwhatever MDK handed back each time, so consecutive publishes for the\nsame account landed in different NIP-33 addressable slots — relays\naccumulated stale kind:30443 events instead of replacing them.\n\nPersist the chosen d-tag in `published_key_packages` (the column already\nexisted) and look it up before each canonical publish. When a stored\nd-tag is found, swap MDK's freshly-generated `Tag::identifier` in\n`tags_30443` so the publish lands in the same slot and relays apply the\nNIP-33 replacement. First publish for an account falls through and\nrecords MDK's d-tag, which becomes the slot for all future publishes.\n\n* fix(key_packages): fail the publish when loading the canonical d-tag errors\n\nPer CodeRabbit feedback: silently falling back to MDK's fresh d-tag on a\nDB read failure partially re-introduces the bug this PR fixes — one\ntransient failure would publish kind:30443 to a new NIP-33 slot and\nleave the existing canonical event stale on relays. DB reads on the\nper-account SQLite file are local and rare to fail; aborting lets the\nscheduler retry on its next tick with consistent state.\n\n* fix(key_packages): route scheduler republishes through canonical d-tag slot\n\nTwo follow-ups on the d-tag reuse fix:\n\nP1: Scheduler-driven rotations bypassed the new canonical-slot logic.\n`session.key_packages().publish()` only published kind:443 (legacy), so\nthe maintenance task's \"no usable local key package\" and\n\"all expired\" rotations never refreshed the canonical kind:30443 event\nat all — the d-tag slot would stay frozen on whatever the initial\naccount-setup publish wrote.\n\nRefactor `KeyPackageOps::publish` and `create_and_publish` to publish\nboth kinds through a shared `publish_pair` helper that reuses the\npersisted `d` tag and tracks every publish (canonical and legacy) in\nthe per-account DB. The global `Whitenoise::publish_key_package_pair_to_relays`\npath stays for external-signer login flows, which still hand the signer\nin explicitly.\n\nP2: NIP-01 keeps the lowest-id event when two replaceable events share\na `created_at`, so reusing the d-tag alone does not guarantee\nreplacement under same-second rapid republishes — the new event might\nlose the tiebreaker. Compute a strictly-monotonic `created_at` via\n`monotonic_canonical_created_at`: read the prior maximum from\n`published_key_packages.created_at` (the row insert timestamp, which is\nalways ≥ the previous event's `created_at`) and bump past it. This\nrelies on the existing column — no migration needed.\n\nPlumb an optional `custom_created_at` through\n`publish_key_package_with_signer` → `publish_event_builder_with_signer`\nso the canonical leg can set its own timestamp. Legacy (kind:443) is\nregular per NIP-01 and keeps `None` (default wall clock) since each\npublish is independently addressable.\n\nTest changes:\n- New DB unit tests for `find_max_created_at`.\n- New pure unit tests for `monotonic_canonical_created_at` covering\n  empty / future-prior / past-prior / negative-prior cases.\n- The integration-style replacement test now also asserts the relay\n  surfaces exactly one canonical event for the slot after a second\n  publish in the same second, and that the event id has changed —\n  proving NIP-33 replacement, not just local DB tracking.\n\n* fix(key_packages): propagate canonical tracking failures\n\nPer CodeRabbit review on PR #835: the canonical (kind:30443) tracking\nwrite was being silently swallowed with a tracing::warn!, but the\nd-tag reuse and monotonic-created_at invariants both read from this\nrow on the next publish. If a canonical publish lands but tracking\nfails, the next publish thinks no slot exists and starts a fresh\nrandom d-tag — the exact bug this PR fixes.\n\nSplit track_published into two helpers in both publish paths:\n- track_published_canonical: returns Result, propagated via `?`.\n- track_published_legacy: stays best-effort with warn-and-continue,\n  since kind:443 is regular per NIP-01 (not addressable) and only\n  affects audit-trail completeness, not future canonical replacement.\n\nThe accompanying CodeRabbit suggestion to soft-fail the d-tag /\nmax-created_at lookups is rejected: it explicitly contradicts the\nearlier review on this same PR (\"Fail the publish when loading the\ncanonical d tag fails. Falling back to a fresh MDK-generated d here\nbreaks the exact invariant this PR is adding\"). Keeping the `?`\npreserves the invariant — DB read failures on the per-account file\nare rare, and the scheduler retries on its next tick.\n\n* deps(mdk): bump to 65d02043 and switch to KeyPackageOptions.existing_d_tag\n\nMDK now exposes `KeyPackageOptions { protected, existing_d_tag }` and\n`create_key_package_for_event_with_options`. Hand the persisted d-tag\nto MDK at key-package-creation time so the returned `tags_30443` and\n`KeyPackageEventData::d_tag` are already authoritative — no post-edit\ntag rewriting needed.\n\n- Both publish paths (`Whitenoise::publish_key_package_pair_to_relays`\n  and `KeyPackageOps::publish_pair`) now consume those inputs directly\n  via a new `prepare_canonical_publish_inputs` helper that does the\n  slot lookups, generates the key package with the stored d-tag, and\n  computes the monotonic canonical `created_at`. The publish functions\n  trust the resulting `KeyPackageEventData` and just publish + track.\n- Drops the `apply_d_tag_override` helper and its three unit tests:\n  the post-edit workaround for MDK's old no-option API is no longer\n  needed. The DB tests and the monotonic-timestamp tests stay.\n- Test helpers and the maintenance fixture's outdated-key-package\n  publisher pass `None` for the new `existing_d_tag` parameter — they\n  build one-off KPs that should not slot into the persisted lifecycle.\n\n* fix(key_packages): serialize concurrent rotations per account\n\nPer CodeRabbit review on PR #835: the read-d_tag → read-max →\nencode → publish → track sequence is racy. Two concurrent triggers on\nthe same account (e.g. scheduler tick coinciding with a giftwrap\narrival) could both read the same `find_latest_d_tag` /\n`find_max_created_at` values, generate two different MLS key packages\nsharing the same `d` tag and the same `canonical_created_at`, and let\nthe relay's NIP-01 lowest-event-id tiebreaker pick the winner —\ndefeating the d-tag-reuse + monotonic-timestamp invariants this PR\nestablishes, and orphaning the loser's local MLS key material.\n\nAdd `AccountSession::key_package_publish_lock: Mutex<()>` and acquire\nit for the full prepare→publish→track sequence in the three paths\nwhere concurrent triggers are plausible:\n\n- `KeyPackageOps::publish` (scheduler maintenance, giftwrap-consumed\n  republish).\n- `KeyPackageOps::create_and_publish` (test seeding via the session\n  view).\n- `Whitenoise::publish_key_package_for_account_with_signer` (external\n  signer login).\n\n`create_key_package_and_background_publish` is intentionally left\nunlocked: it runs during fresh-account creation, before any other\ntrigger can fire for the same account, and locking through its\nproduction tokio::spawn would force MLS key material generation off\nthe synchronous account-creation path that callers rely on.\n\nAlso add the empty-relays early return to\n`KeyPackageOps::create_and_publish` so it matches `publish()` and\ndoesn't generate orphan MLS key material when there's nowhere to\npublish it.\n\n* fix(key_packages): address review feedback on PR #835\n\nFour follow-ups from jgmontoya:\n\n- **Single DB query for canonical-slot state.** Replace\n  `find_latest_d_tag` + `find_max_created_at` with a single\n  `find_latest_by_kind` that returns the most recent row. The d-tag and\n  the insert timestamp come from the *same* prior publish — splitting\n  the lookup into two queries implied they could disagree. Saves a DB\n  roundtrip and makes the call site cleaner.\n\n- **Simplify `monotonic_canonical_created_at`.** Use\n  `floor.max(now.as_secs())` instead of a branched `if/else`, and rely\n  on the `prev >= 0` guard to make `prev as u64` value-preserving.\n  Semantically identical, two fewer lines.\n\n- **Race in `create_key_package_and_background_publish`.** My prior\n  justification (\"nothing else can fire during account creation\") was\n  wrong: `setup_subscriptions` runs before `setup_key_package`, so the\n  giftwrap handler is live by the time the spawn starts. A welcome\n  arriving in the race window would let `KeyPackageOps::publish` read\n  the same empty state, MDK would generate a different d-tag, and both\n  publishes would land in different NIP-33 slots — the very bug this\n  PR is fixing. Move the `lock → prepare → publish → track` sequence\n  inside the spawn (and the inline-await fallback) so the per-account\n  publish lock covers the full atomic unit. Pulls MLS key generation\n  into the spawn in production, but no caller relies on local key\n  material existing immediately after this function returns.\n\n- **Doc clarity on row vs. event `created_at`.** Update the rustdoc on\n  `find_latest_by_kind` and `monotonic_canonical_created_at` to spell\n  out that `published_key_packages.created_at` is the SQLite\n  `unixepoch()` row-insert timestamp (not the Nostr event's\n  `created_at`), and why that still gives a sound monotonic-floor\n  guarantee: the INSERT runs after the relay round-trip, so\n  `row.created_at ≥ event.created_at` always.\n\n* docs(key_packages): explain why Whitenoise + session publish paths coexist\n\nPer PR #835 review thread on `publish_key_package_pair_to_relays`: the\nexternal-signer login flow inserts the signer into\n`Whitenoise.shared.external_signers` *before* `AccountSession::from_account`\nruns. `from_account` only loads a session signer for accounts with a\nlocal key, so external accounts get `session.signer = None`. Routing the\ninitial external-signer publish through `KeyPackageOps::publish_pair`\nwould then trip `require_signer() → SignerUnavailable`.\n\nFolding the two publish paths into one means rewiring `from_account` (or\n`insert_account_session`) to also consult the `external_signers` map —\na session-signer-lifecycle refactor that's out of scope for the\nd-tag-stability fix. Document the constraint on the Whitenoise side of\nthe path so the next reader doesn't have to rediscover it.\n\n* docs(key_packages): trim refactor-history prose from find_latest_by_kind\n\nPer jgmontoya review on PR #835: drop the \"Folding both lookups into\none query...\" meta-commentary from both the repo wrapper and the\nunderlying query method. It described the refactor rather than the\nbehavior and would rot. The behavioral docs on the underlying\n`PublishedKeyPackage::find_latest_by_kind` (what d_tag/created_at are\nfor, the row-insert vs event-time caveat) stay; the thin\n`PublishedKeyPackagesRepo` wrapper now matches its sibling one-liner\ndoc style.\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+        "verified_at": "2026-05-18T10:34:07Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/99c3fed85bd4d6219f0a4ff5acd53be2574ac327",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/99c3fed85bd4d6219f0a4ff5acd53be2574ac327",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/99c3fed85bd4d6219f0a4ff5acd53be2574ac327/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e8ef8903e745fa64dc5f6779a62696537ea19411",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/e8ef8903e745fa64dc5f6779a62696537ea19411",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/e8ef8903e745fa64dc5f6779a62696537ea19411"
+      }
+    ]
+  },
+  {
+    "sha": "e8ef8903e745fa64dc5f6779a62696537ea19411",
+    "node_id": "C_kwDOMvLjydoAKGU4ZWY4OTAzZTc0NWZhNjRkYzVmNjc3OWE2MjY5NjUzN2VhMTk0MTE",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-18T09:11:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-18T09:11:44Z"
+      },
+      "message": "feat: add whitenoise-markdown crate and retire nostr-sdk token parser (#836)",
+      "tree": {
+        "sha": "b3a15139283b6dd2946b44be78878ee370b4461b",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/b3a15139283b6dd2946b44be78878ee370b4461b"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/e8ef8903e745fa64dc5f6779a62696537ea19411",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCtfQCRC1aQ7uu5UhlAAAHfYQAEhUyskL8yE5mWs81LstK2NN\nMHJVVqcBi+Oqqz2yp+UsHt6FHsWIx3hMUQbimHKpKKKukBMHiU0I0KO3Iz+or7sh\n2V6+ppXZB6NN0mLdLy5LkyaWZus4xD4nqAOWQEecb9GzsFw+XrdXGAk6ZvuY6Arx\n9G7yakWM2YD1Dcr5UHoLTohYUdY2o8PAcV7QZRFnPaBq82y+XJduY/3QsmAvxJmd\nXuCHUKzc4s7eF9Ivltq8swC+VpA3g4S1ZPgEY/fHiF8mTZrkfOvqFuIJdP89C3os\n3F1AT6jFbfT94uddb/EKKK400qGANHqP8ABaGIswuWhePtFA5O8Wb8whVvpiw9XD\npqLd2qdahY7MqGUzN3DKurqsqgd09MH2tcPstTH8M6241JXhaekHMPsNJefUKEJg\nSn/LSeQKfh66ByEiuLM4FO4T7R7PQG25fBbG92Jd8Gf61nguXzp3/Skcy8nsZs13\nNTVN9hcvc1CzKdn9dgRiXVO9S/cbRF2h0+UrscWId1B+Dty/Jg1Ao0dL7fbQapQZ\nGB7HNDYD6YwSfA4Rb0V/A6+gNAo1z/5M7qy95/cYGzKPHNsnOZOt+snMDLRhRehQ\nteWkOsxxjRQnFue803RJNAkKoHHJXTt8uSY7xWE3teTVQie+iXpwkJRY4++5Rw7G\nKeSnQn5i/ijNMi3yvv0P\n=zo4N\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b3a15139283b6dd2946b44be78878ee370b4461b\nparent 18fa3ab50cf1223b0064b42df69745c434b3d5c2\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779095504 +0200\ncommitter GitHub <noreply@github.com> 1779095504 +0200\n\nfeat: add whitenoise-markdown crate and retire nostr-sdk token parser (#836)",
+        "verified_at": "2026-05-18T09:11:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/e8ef8903e745fa64dc5f6779a62696537ea19411",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/e8ef8903e745fa64dc5f6779a62696537ea19411",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/e8ef8903e745fa64dc5f6779a62696537ea19411/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "18fa3ab50cf1223b0064b42df69745c434b3d5c2",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/18fa3ab50cf1223b0064b42df69745c434b3d5c2",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/18fa3ab50cf1223b0064b42df69745c434b3d5c2"
+      }
+    ]
+  },
+  {
+    "sha": "18fa3ab50cf1223b0064b42df69745c434b3d5c2",
+    "node_id": "C_kwDOMvLjydoAKDE4ZmEzYWI1MGNmMTIyM2IwMDY0YjQyZGY2OTc0NWM0MzRiM2Q1YzI",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-18T09:02:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-18T09:02:22Z"
+      },
+      "message": "Add weekly Rust toolchain staleness issue check (#839)\n\n* Add weekly Rust toolchain staleness check\n\n* Simplify toolchain staleness workflow",
+      "tree": {
+        "sha": "51015432d05f43f14fe07ff0aa2e5da9658f5991",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/51015432d05f43f14fe07ff0aa2e5da9658f5991"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/18fa3ab50cf1223b0064b42df69745c434b3d5c2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCtWeCRC1aQ7uu5UhlAAADgsQAJD5VHEwQNWJhkdGb4jrY/R8\nb+3bszvuHDjIgS9zmtZDn2458KMq1L7jTs53PCIaR+tQiwoSqQpOVqxsE5rmHxUq\nAXPwZjucBzkTliwoDp4JwaSJHph8UOnLWIl4skbTor14PnGBH7VPNV7JxGvcwUuW\nQa65aFE9d4VHsgmYjObuefEktYaj+79+GE3l/GRcS3sYptVW8wdVXcIx4ZZ7Wpvu\nEYLLGG4bZcYxvcB597g2jOVmciezz0NiujU0GXyh7/W+UFcaKj8op3YF2KYvaKvR\nr8WTG3sZQ3EnO9AbGRXNE3bscWwi8m7aNZ0czj05HXkni8xRlyrwm4epZp1N1E8Y\n4MM9mrq8ExCrg2PKyFR8GiBBGw/09tn5fohQl0P3y68b25Vop3r6NbxEA6hRtRuB\njwS7cVqSR4B2ddwbHNX615wiAFHAwK1j0/0Ag0RWQI+erCrjU5wnum3z9uApcvwU\nDrLdVD/6ZbidIpxkWoVuwPD9p+ewxQ3PQmdnmTZfRyFLP1kAo0/9N3yaQtzNieiK\nMQoL1t6Hb8g5QplbSydh1gA7f+3gMIHrXe8ATFG8guz3+3Ow/aFDMeWHsNDIwySW\nxHIOZAPvLI+UFQjMvDp5A6DYob9s67b3rkPuasVAXbbQwv8NKhPaLgoSuJQ6YmLT\nez/z15yVaKCC2fRO5MS5\n=uukZ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 51015432d05f43f14fe07ff0aa2e5da9658f5991\nparent 383e811d57dc805c2477a7450ab76e35a43e4c56\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1779094942 +0200\ncommitter GitHub <noreply@github.com> 1779094942 +0200\n\nAdd weekly Rust toolchain staleness issue check (#839)\n\n* Add weekly Rust toolchain staleness check\n\n* Simplify toolchain staleness workflow",
+        "verified_at": "2026-05-18T09:02:23Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/18fa3ab50cf1223b0064b42df69745c434b3d5c2",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/18fa3ab50cf1223b0064b42df69745c434b3d5c2",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/18fa3ab50cf1223b0064b42df69745c434b3d5c2/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "383e811d57dc805c2477a7450ab76e35a43e4c56",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/383e811d57dc805c2477a7450ab76e35a43e4c56",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/383e811d57dc805c2477a7450ab76e35a43e4c56"
+      }
+    ]
+  }
+]

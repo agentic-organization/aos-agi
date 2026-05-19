@@ -1,0 +1,1597 @@
+[
+  {
+    "id": "9250584768",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 104165358,
+      "login": "edgarmuyomba",
+      "display_login": "edgarmuyomba",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/edgarmuyomba",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104165358?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-08T19:31:47Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8771312541",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 14,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/14",
+        "id": 3579636579,
+        "number": 14,
+        "head": {
+          "ref": "fix-cdk-0.16-build",
+          "sha": "7781fd82bd79587459ecbfee3234c240e7e286cb",
+          "repo": {
+            "id": 1220075158,
+            "url": "https://api.github.com/repos/realmeylisdev/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "3cd68602e33e2046744682de811ae5ead87bb172",
+          "repo": {
+            "id": 1099096625,
+            "url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T20:29:24Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11014679835",
+    "type": "PushEvent",
+    "actor": {
+      "id": 8606367,
+      "login": "thesimplekid",
+      "display_login": "thesimplekid",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "repository_id": 1099096625,
+      "push_id": 33306346281,
+      "ref": "refs/heads/master",
+      "head": "922799c17f1b8d8d8d73f1908ab863b05ce801ca",
+      "before": "3cd68602e33e2046744682de811ae5ead87bb172"
+    },
+    "public": true,
+    "created_at": "2026-04-24T20:29:25Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8771300957",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 8606367,
+      "login": "thesimplekid",
+      "display_login": "thesimplekid",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14",
+        "repository_url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+        "labels_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/events",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/pull/14",
+        "id": 4323524808,
+        "node_id": "PR_kwDOQYLiMc7VXOtj",
+        "number": 14,
+        "title": "fix: update for cdk 0.16 API changes",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-24T14:16:48Z",
+        "updated_at": "2026-04-24T20:29:24Z",
+        "closed_at": "2026-04-24T20:29:24Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/14",
+          "html_url": "https://github.com/cashubtc/cdk-flutter/pull/14",
+          "diff_url": "https://github.com/cashubtc/cdk-flutter/pull/14.diff",
+          "patch_url": "https://github.com/cashubtc/cdk-flutter/pull/14.patch",
+          "merged_at": "2026-04-24T20:29:24Z"
+        },
+        "body": "## What\n\n`master` does not currently build with `cdk 0.16.0`. After `3cd6860 chore: bump cdk 0.16.0`, `cargo build` / `just setup` fails with 10 errors:\n\n- `wallet::get_mint_keysets` now requires a `KeysetFilter` argument (3 call sites)\n- `PaymentRequest.mints` changed from `Option<Vec<MintUrl>>` to `Vec<MintUrl>`\n- `Transport.tags` changed from `Option<Vec<Vec<String>>>` to `Vec<Vec<String>>`\n- `SpendingConditions::new_htlc` returns `Result<_, nut14::Error>`, which has no `From` impl on the plugin's `Error` enum\n\n## Why\n\nUnblocks `cargo build` on master so new contributors can get a green local build, and keeps the plugin aligned with cdk 0.16.\n\n## How\n\n- `rust/src/api/error.rs` — add `impl From<cdk_common::nut14::Error> for Error` routed to `Error::Protocol(...)` (matches the existing `nut11` / `nut18` handling).\n- `rust/src/api/wallet.rs` — import `KeysetFilter`, pass `KeysetFilter::Active` at the three call sites (`is_token_spent`, the payment-request send flow, `reclaim_send`). These are all \"current wallet operation\" contexts, so `Active` is correct; restore paths — which would want `All` — aren't touched.\n- `rust/src/api/payment_request.rs` — adapt `From<CdkPaymentRequest>` and both `TryInto<CdkPaymentRequest>` impls, plus the `Transport` <-> `CdkTransport` conversions, to the new `Vec` field shapes.\n\n**The Dart-facing API is intentionally preserved** (`PaymentRequest.mints: List<String>?`, `Transport.tags: List<List<String>>?`). No downstream breakage for existing consumers of `cdk_flutter`.\n\nGenerated files (`rust/src/frb_generated.rs`, `lib/src/rust/**`) are intentionally untouched to keep this diff reviewable. Running `just generate` on merge produces a format-only delta (no public-API change).\n\n## Tested\n\nLocally on macOS 26.4 (arm64), Rust 1.95.0, Flutter 3.x, `flutter_rust_bridge_codegen 2.11.1`:\n\n- `cargo build` ✅\n- `cargo check` ✅\n- `cargo clippy` ✅ (no new warnings)\n- `flutter analyze lib` ✅\n- `just test macos` against `fake.thesimplekid.dev` — **39 passed, 8 failed**. All 8 failures share the same transient HTTP error (`Error.cdk(field0: Http transport error None: Connection error: error sending request for url (https://fake.thesimplekid.dev/v1/info))`) clustered in the mid-run Multi-Mint and Restore groups; the mint responded `HTTP 200` before and after the run. Most importantly, the test that directly exercises this PR's code path — `Input Parsing › Parse payment request input` — passes.\n\n## Not included\n\n- No `CHANGELOG.md` bump (maintainer owns versioning).\n- Pre-existing `cargo fmt` drift in parts of `wallet.rs` not touched by this PR is out of scope.\n- Pre-existing `flutter analyze` findings in `cargokit/` and `example/integration_test/simple_test.dart` are out of scope.\n\nHappy to split or reshape however you prefer.",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4316138466",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/pull/14#issuecomment-4316138466",
+        "issue_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14",
+        "id": 4316138466,
+        "node_id": "IC_kwDOQYLiMc8AAAABAUML4g",
+        "user": {
+          "login": "thesimplekid",
+          "id": 8606367,
+          "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thesimplekid",
+          "html_url": "https://github.com/thesimplekid",
+          "followers_url": "https://api.github.com/users/thesimplekid/followers",
+          "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+          "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+          "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+          "repos_url": "https://api.github.com/users/thesimplekid/repos",
+          "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-24T20:29:02Z",
+        "updated_at": "2026-04-24T20:29:02Z",
+        "body": "Yes thanks",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4316138466/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 1,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T20:29:02Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8771278428",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 8606367,
+      "login": "thesimplekid",
+      "display_login": "thesimplekid",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "review": {
+        "id": 4173225061,
+        "node_id": "PRR_kwDOQYLiMc74vlxl",
+        "user": {
+          "login": "thesimplekid",
+          "id": 8606367,
+          "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thesimplekid",
+          "html_url": "https://github.com/thesimplekid",
+          "followers_url": "https://api.github.com/users/thesimplekid/followers",
+          "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+          "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+          "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+          "repos_url": "https://api.github.com/users/thesimplekid/repos",
+          "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "7781fd82bd79587459ecbfee3234c240e7e286cb",
+        "state": "approved",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/pull/14#pullrequestreview-4173225061",
+        "pull_request_url": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/14",
+        "_links": {
+          "html": {
+            "href": "https://github.com/cashubtc/cdk-flutter/pull/14#pullrequestreview-4173225061"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/14"
+          }
+        },
+        "submitted_at": "2026-04-24T20:28:17Z",
+        "updated_at": "2026-04-24T20:28:17Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/14",
+        "id": 3579636579,
+        "number": 14,
+        "head": {
+          "ref": "fix-cdk-0.16-build",
+          "sha": "7781fd82bd79587459ecbfee3234c240e7e286cb",
+          "repo": {
+            "id": 1220075158,
+            "url": "https://api.github.com/repos/realmeylisdev/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "3cd68602e33e2046744682de811ae5ead87bb172",
+          "repo": {
+            "id": 1099096625,
+            "url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-04-24T20:28:18Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8763984854",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14",
+        "repository_url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+        "labels_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/events",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/pull/14",
+        "id": 4323524808,
+        "node_id": "PR_kwDOQYLiMc7VXOtj",
+        "number": 14,
+        "title": "fix: update for cdk 0.16 API changes",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-24T14:16:48Z",
+        "updated_at": "2026-04-24T20:29:24Z",
+        "closed_at": "2026-04-24T20:29:24Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/14",
+          "html_url": "https://github.com/cashubtc/cdk-flutter/pull/14",
+          "diff_url": "https://github.com/cashubtc/cdk-flutter/pull/14.diff",
+          "patch_url": "https://github.com/cashubtc/cdk-flutter/pull/14.patch",
+          "merged_at": "2026-04-24T20:29:24Z"
+        },
+        "body": "## What\n\n`master` does not currently build with `cdk 0.16.0`. After `3cd6860 chore: bump cdk 0.16.0`, `cargo build` / `just setup` fails with 10 errors:\n\n- `wallet::get_mint_keysets` now requires a `KeysetFilter` argument (3 call sites)\n- `PaymentRequest.mints` changed from `Option<Vec<MintUrl>>` to `Vec<MintUrl>`\n- `Transport.tags` changed from `Option<Vec<Vec<String>>>` to `Vec<Vec<String>>`\n- `SpendingConditions::new_htlc` returns `Result<_, nut14::Error>`, which has no `From` impl on the plugin's `Error` enum\n\n## Why\n\nUnblocks `cargo build` on master so new contributors can get a green local build, and keeps the plugin aligned with cdk 0.16.\n\n## How\n\n- `rust/src/api/error.rs` — add `impl From<cdk_common::nut14::Error> for Error` routed to `Error::Protocol(...)` (matches the existing `nut11` / `nut18` handling).\n- `rust/src/api/wallet.rs` — import `KeysetFilter`, pass `KeysetFilter::Active` at the three call sites (`is_token_spent`, the payment-request send flow, `reclaim_send`). These are all \"current wallet operation\" contexts, so `Active` is correct; restore paths — which would want `All` — aren't touched.\n- `rust/src/api/payment_request.rs` — adapt `From<CdkPaymentRequest>` and both `TryInto<CdkPaymentRequest>` impls, plus the `Transport` <-> `CdkTransport` conversions, to the new `Vec` field shapes.\n\n**The Dart-facing API is intentionally preserved** (`PaymentRequest.mints: List<String>?`, `Transport.tags: List<List<String>>?`). No downstream breakage for existing consumers of `cdk_flutter`.\n\nGenerated files (`rust/src/frb_generated.rs`, `lib/src/rust/**`) are intentionally untouched to keep this diff reviewable. Running `just generate` on merge produces a format-only delta (no public-API change).\n\n## Tested\n\nLocally on macOS 26.4 (arm64), Rust 1.95.0, Flutter 3.x, `flutter_rust_bridge_codegen 2.11.1`:\n\n- `cargo build` ✅\n- `cargo check` ✅\n- `cargo clippy` ✅ (no new warnings)\n- `flutter analyze lib` ✅\n- `just test macos` against `fake.thesimplekid.dev` — **39 passed, 8 failed**. All 8 failures share the same transient HTTP error (`Error.cdk(field0: Http transport error None: Connection error: error sending request for url (https://fake.thesimplekid.dev/v1/info))`) clustered in the mid-run Multi-Mint and Restore groups; the mint responded `HTTP 200` before and after the run. Most importantly, the test that directly exercises this PR's code path — `Input Parsing › Parse payment request input` — passes.\n\n## Not included\n\n- No `CHANGELOG.md` bump (maintainer owns versioning).\n- Pre-existing `cargo fmt` drift in parts of `wallet.rs` not touched by this PR is out of scope.\n- Pre-existing `flutter analyze` findings in `cargokit/` and `example/integration_test/simple_test.dart` are out of scope.\n\nHappy to split or reshape however you prefer.",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4314688277",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/pull/14#issuecomment-4314688277",
+        "issue_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/14",
+        "id": 4314688277,
+        "node_id": "IC_kwDOQYLiMc8AAAABASzrFQ",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-24T16:23:24Z",
+        "updated_at": "2026-04-24T16:23:24Z",
+        "body": "@thesimplekid — given the move to `cdk-dart` noted in #16, would you be open to merging this small fix anyway to unblock downstream users still on `cdk-flutter` during the transition window? Only touches `rust/src/api/error.rs` to add the `nut14::Error` routing that `cdk 0.16` requires (matches the existing `nut11` / `nut18` handling). If it's not worth your review time, happy to carry the patch locally and close — just looking for a one-line signal either way.",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4314688277/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T16:23:24Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8763979445",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 15,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/15",
+        "id": 3579690605,
+        "number": 15,
+        "head": {
+          "ref": "add-agents-md",
+          "sha": "9dbb40b5bf061ac3b4caaad37fe1514485e37156",
+          "repo": {
+            "id": 1220075158,
+            "url": "https://api.github.com/repos/realmeylisdev/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "3cd68602e33e2046744682de811ae5ead87bb172",
+          "repo": {
+            "id": 1099096625,
+            "url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T14:28:01Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8763978616",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/15",
+        "repository_url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+        "labels_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/15/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/15/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/15/events",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/pull/15",
+        "id": 4323587497,
+        "node_id": "PR_kwDOQYLiMc7VXb5t",
+        "number": 15,
+        "title": "docs: add AGENTS.md",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-04-24T14:28:01Z",
+        "updated_at": "2026-04-24T16:23:22Z",
+        "closed_at": "2026-04-24T16:23:22Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/15",
+          "html_url": "https://github.com/cashubtc/cdk-flutter/pull/15",
+          "diff_url": "https://github.com/cashubtc/cdk-flutter/pull/15.diff",
+          "patch_url": "https://github.com/cashubtc/cdk-flutter/pull/15.patch",
+          "merged_at": null
+        },
+        "body": "## What\n\nAdds an `AGENTS.md` to `cdk-flutter` — agent-oriented contribution guidance following the pattern already in [`nutshell`](https://github.com/cashubtc/nutshell/blob/main/AGENTS.md), [`cashu-ts`](https://github.com/cashubtc/cashu-ts/blob/main/AGENTS.md), and [`cdk`](https://github.com/cashubtc/cdk/blob/main/AGENTS.md), and being proposed for [`nuts`](https://github.com/cashubtc/nuts/pull/357).\n\n## Why\n\n- Ecosystem alignment — the other Cashu repos already have one.\n- `cdk-flutter` has a non-obvious build pipeline: hand-written Rust under `rust/src/api/` generates Dart bindings in `lib/src/rust/`. Without explicit guidance an agent is likely to hand-edit the generated tree, which gets overwritten on the next `just generate`.\n- Codifies the autonomous-vs-human-review boundary (e.g. `rust/src/api/` signature changes and `cdk` version bumps should flag for a human; doc/formatting/test work is safe for an agent to ship directly).\n\n## Structure\n\n- **Overview / common commands** — lifts the command table directly from `justfile` so the two stay in sync.\n- **Environment setup** — pins `flutter_rust_bridge_codegen 2.11.1` (must match the runtime pin in `pubspec.yaml` / `rust/Cargo.toml`); this is a real gotcha I hit locally (`cargo install flutter_rust_bridge_codegen` without `--version` grabs 2.12.0, which then fails codegen).\n- **Code Generation Boundaries** — the Flutter-Rust-bridge specific section: enumerates exactly which paths are hand-written and which are generated.\n- **Autonomous vs. Human-Required Changes** — modeled on `cashubtc/nutshell/AGENTS.md`.\n- **Architecture Overview** — file tree with purpose annotations.\n\n## Scope\n\n- Docs only. No code changes.\n- No `CHANGELOG.md` bump.\n- Does not depend on #14. Ordering between the two is maintainer's call.\n\nHappy to adjust tone, structure, or sections to match what you'd prefer — the nutshell format was my best guess at the house style.",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/15/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/15/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4314688041",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/pull/15#issuecomment-4314688041",
+        "issue_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/15",
+        "id": 4314688041,
+        "node_id": "IC_kwDOQYLiMc8AAAABASzqKQ",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-24T16:23:21Z",
+        "updated_at": "2026-04-24T16:23:21Z",
+        "body": "Closing for the same reason as #16 — AGENTS.md for a repo that's being replaced by `cdk-dart` isn't worth the review cycle. If a future Flutter wrapper on top of `cdk-dart` ends up wanting agent-oriented docs, happy to port this there.",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4314688041/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 1,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T16:23:21Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8763978197",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16",
+        "repository_url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+        "labels_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/events",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/issues/16",
+        "id": 4323630313,
+        "node_id": "I_kwDOQYLiMc8AAAABAbVc6Q",
+        "number": 16,
+        "title": "proposal: add CI workflow to run just check on push/PR",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-24T14:35:49Z",
+        "updated_at": "2026-04-24T16:23:20Z",
+        "closed_at": "2026-04-24T16:23:20Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Motivation\n\n`master` was broken for several weeks between the `chore: bump cdk 0.16.0` commit and #14 — `cargo build` / `just setup` failed out of the box due to CDK 0.16 API changes that the bump didn't follow through on. The problem wasn't noticed sooner because there's no CI in the repo: no workflow runs `cargo check` or `flutter analyze` on push or PR, so a version bump that compiles on the author's machine but breaks on a fresh clone goes unnoticed.\n\nA minimal GitHub Actions workflow running `just check` would have caught this regression automatically and saved the debug cycle.\n\n## Proposed scope\n\nOne workflow file — say `.github/workflows/check.yml` — that:\n\n- Triggers on `push` to `master` and on every `pull_request`\n- Runs on `ubuntu-latest` (Linux runner is cheapest; cross-platform matrix can be a future addition)\n- Installs:\n  - Rust stable (via `dtolnay/rust-toolchain@stable`) with `clippy` and `rustfmt`\n  - Flutter stable (via `subosito/flutter-action@v2`)\n  - `flutter_rust_bridge_codegen` pinned to the version in `pubspec.yaml` / `rust/Cargo.toml` (`2.11.1` today) via `cargo install --locked`\n  - `just` (via `taiki-e/install-action@just` or `cargo install`)\n- Runs `just check` (which already chains `flutter analyze` + `cargo check` + `cargo clippy` per the justfile)\n\n`just test` is **intentionally not included** in the first pass — it needs a reachable mint and is slower. Can be added as a separate workflow later if useful.\n\n## Why issue, not PR\n\nCI workflows touch runner-time budget, secret/token scopes, and interact with branch protection rules — all of which are maintainer-owned. Filing this as an issue first so @thesimplekid can weigh in on:\n\n- Whether CI belongs in this repo at all, or is better in the parent [`cdk`](https://github.com/cashubtc/cdk) pipeline\n- Preferred workflow style (matrix, caching, nix-based via the existing `flake.nix`, etc.)\n- Whether to start narrow (`just check` only) or pull in platform-specific build matrix immediately\n\nHappy to open a PR once there's agreement on shape, or leave it entirely to you if you'd prefer to own the CI setup directly.\n\nCross-links: #14 (the regression this would have caught), #15 (AGENTS.md — complementary: CI enforces what AGENTS.md documents).",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T16:23:21Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8763977517",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16",
+        "repository_url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+        "labels_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/events",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/issues/16",
+        "id": 4323630313,
+        "node_id": "I_kwDOQYLiMc8AAAABAbVc6Q",
+        "number": 16,
+        "title": "proposal: add CI workflow to run just check on push/PR",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-24T14:35:49Z",
+        "updated_at": "2026-04-24T16:23:20Z",
+        "closed_at": "2026-04-24T16:23:20Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Motivation\n\n`master` was broken for several weeks between the `chore: bump cdk 0.16.0` commit and #14 — `cargo build` / `just setup` failed out of the box due to CDK 0.16 API changes that the bump didn't follow through on. The problem wasn't noticed sooner because there's no CI in the repo: no workflow runs `cargo check` or `flutter analyze` on push or PR, so a version bump that compiles on the author's machine but breaks on a fresh clone goes unnoticed.\n\nA minimal GitHub Actions workflow running `just check` would have caught this regression automatically and saved the debug cycle.\n\n## Proposed scope\n\nOne workflow file — say `.github/workflows/check.yml` — that:\n\n- Triggers on `push` to `master` and on every `pull_request`\n- Runs on `ubuntu-latest` (Linux runner is cheapest; cross-platform matrix can be a future addition)\n- Installs:\n  - Rust stable (via `dtolnay/rust-toolchain@stable`) with `clippy` and `rustfmt`\n  - Flutter stable (via `subosito/flutter-action@v2`)\n  - `flutter_rust_bridge_codegen` pinned to the version in `pubspec.yaml` / `rust/Cargo.toml` (`2.11.1` today) via `cargo install --locked`\n  - `just` (via `taiki-e/install-action@just` or `cargo install`)\n- Runs `just check` (which already chains `flutter analyze` + `cargo check` + `cargo clippy` per the justfile)\n\n`just test` is **intentionally not included** in the first pass — it needs a reachable mint and is slower. Can be added as a separate workflow later if useful.\n\n## Why issue, not PR\n\nCI workflows touch runner-time budget, secret/token scopes, and interact with branch protection rules — all of which are maintainer-owned. Filing this as an issue first so @thesimplekid can weigh in on:\n\n- Whether CI belongs in this repo at all, or is better in the parent [`cdk`](https://github.com/cashubtc/cdk) pipeline\n- Preferred workflow style (matrix, caching, nix-based via the existing `flake.nix`, etc.)\n- Whether to start narrow (`just check` only) or pull in platform-specific build matrix immediately\n\nHappy to open a PR once there's agreement on shape, or leave it entirely to you if you'd prefer to own the CI setup directly.\n\nCross-links: #14 (the regression this would have caught), #15 (AGENTS.md — complementary: CI enforces what AGENTS.md documents).",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4314687793",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/issues/16#issuecomment-4314687793",
+        "issue_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16",
+        "id": 4314687793,
+        "node_id": "IC_kwDOQYLiMc8AAAABASzpMQ",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-24T16:23:19Z",
+        "updated_at": "2026-04-24T16:23:19Z",
+        "body": "Closing — per your note, CI for `cdk-flutter` doesn't make sense if the repo is being superseded by `cdk-dart`. Will follow cashubtc/cdk#1886 instead. Thanks for the heads-up.",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4314687793/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 1,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T16:23:19Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8761910675",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 8606367,
+      "login": "thesimplekid",
+      "display_login": "thesimplekid",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16",
+        "repository_url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+        "labels_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/events",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/issues/16",
+        "id": 4323630313,
+        "node_id": "I_kwDOQYLiMc8AAAABAbVc6Q",
+        "number": 16,
+        "title": "proposal: add CI workflow to run just check on push/PR",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-24T14:35:49Z",
+        "updated_at": "2026-04-24T16:23:20Z",
+        "closed_at": "2026-04-24T16:23:20Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Motivation\n\n`master` was broken for several weeks between the `chore: bump cdk 0.16.0` commit and #14 — `cargo build` / `just setup` failed out of the box due to CDK 0.16 API changes that the bump didn't follow through on. The problem wasn't noticed sooner because there's no CI in the repo: no workflow runs `cargo check` or `flutter analyze` on push or PR, so a version bump that compiles on the author's machine but breaks on a fresh clone goes unnoticed.\n\nA minimal GitHub Actions workflow running `just check` would have caught this regression automatically and saved the debug cycle.\n\n## Proposed scope\n\nOne workflow file — say `.github/workflows/check.yml` — that:\n\n- Triggers on `push` to `master` and on every `pull_request`\n- Runs on `ubuntu-latest` (Linux runner is cheapest; cross-platform matrix can be a future addition)\n- Installs:\n  - Rust stable (via `dtolnay/rust-toolchain@stable`) with `clippy` and `rustfmt`\n  - Flutter stable (via `subosito/flutter-action@v2`)\n  - `flutter_rust_bridge_codegen` pinned to the version in `pubspec.yaml` / `rust/Cargo.toml` (`2.11.1` today) via `cargo install --locked`\n  - `just` (via `taiki-e/install-action@just` or `cargo install`)\n- Runs `just check` (which already chains `flutter analyze` + `cargo check` + `cargo clippy` per the justfile)\n\n`just test` is **intentionally not included** in the first pass — it needs a reachable mint and is slower. Can be added as a separate workflow later if useful.\n\n## Why issue, not PR\n\nCI workflows touch runner-time budget, secret/token scopes, and interact with branch protection rules — all of which are maintainer-owned. Filing this as an issue first so @thesimplekid can weigh in on:\n\n- Whether CI belongs in this repo at all, or is better in the parent [`cdk`](https://github.com/cashubtc/cdk) pipeline\n- Preferred workflow style (matrix, caching, nix-based via the existing `flake.nix`, etc.)\n- Whether to start narrow (`just check` only) or pull in platform-specific build matrix immediately\n\nHappy to open a PR once there's agreement on shape, or leave it entirely to you if you'd prefer to own the CI setup directly.\n\nCross-links: #14 (the regression this would have caught), #15 (AGENTS.md — complementary: CI enforces what AGENTS.md documents).",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4314294236",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/issues/16#issuecomment-4314294236",
+        "issue_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16",
+        "id": 4314294236,
+        "node_id": "IC_kwDOQYLiMc8AAAABASbn3A",
+        "user": {
+          "login": "thesimplekid",
+          "id": 8606367,
+          "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thesimplekid",
+          "html_url": "https://github.com/thesimplekid",
+          "followers_url": "https://api.github.com/users/thesimplekid/followers",
+          "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+          "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+          "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+          "repos_url": "https://api.github.com/users/thesimplekid/repos",
+          "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-24T15:25:09Z",
+        "updated_at": "2026-04-24T15:25:09Z",
+        "body": "We're moving away from this cdk-flutter flow to cdk-dart that will get check in ci. https://github.com/cashubtc/cdk/pull/1886",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/comments/4314294236/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 1,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T15:25:09Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8760160742",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16",
+        "repository_url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+        "labels_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/events",
+        "html_url": "https://github.com/cashubtc/cdk-flutter/issues/16",
+        "id": 4323630313,
+        "node_id": "I_kwDOQYLiMc8AAAABAbVc6Q",
+        "number": 16,
+        "title": "proposal: add CI workflow to run just check on push/PR",
+        "user": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-04-24T14:35:49Z",
+        "updated_at": "2026-04-24T16:23:20Z",
+        "closed_at": "2026-04-24T16:23:20Z",
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Motivation\n\n`master` was broken for several weeks between the `chore: bump cdk 0.16.0` commit and #14 — `cargo build` / `just setup` failed out of the box due to CDK 0.16 API changes that the bump didn't follow through on. The problem wasn't noticed sooner because there's no CI in the repo: no workflow runs `cargo check` or `flutter analyze` on push or PR, so a version bump that compiles on the author's machine but breaks on a fresh clone goes unnoticed.\n\nA minimal GitHub Actions workflow running `just check` would have caught this regression automatically and saved the debug cycle.\n\n## Proposed scope\n\nOne workflow file — say `.github/workflows/check.yml` — that:\n\n- Triggers on `push` to `master` and on every `pull_request`\n- Runs on `ubuntu-latest` (Linux runner is cheapest; cross-platform matrix can be a future addition)\n- Installs:\n  - Rust stable (via `dtolnay/rust-toolchain@stable`) with `clippy` and `rustfmt`\n  - Flutter stable (via `subosito/flutter-action@v2`)\n  - `flutter_rust_bridge_codegen` pinned to the version in `pubspec.yaml` / `rust/Cargo.toml` (`2.11.1` today) via `cargo install --locked`\n  - `just` (via `taiki-e/install-action@just` or `cargo install`)\n- Runs `just check` (which already chains `flutter analyze` + `cargo check` + `cargo clippy` per the justfile)\n\n`just test` is **intentionally not included** in the first pass — it needs a reachable mint and is slower. Can be added as a separate workflow later if useful.\n\n## Why issue, not PR\n\nCI workflows touch runner-time budget, secret/token scopes, and interact with branch protection rules — all of which are maintainer-owned. Filing this as an issue first so @thesimplekid can weigh in on:\n\n- Whether CI belongs in this repo at all, or is better in the parent [`cdk`](https://github.com/cashubtc/cdk) pipeline\n- Preferred workflow style (matrix, caching, nix-based via the existing `flake.nix`, etc.)\n- Whether to start narrow (`just check` only) or pull in platform-specific build matrix immediately\n\nHappy to open a PR once there's agreement on shape, or leave it entirely to you if you'd prefer to own the CI setup directly.\n\nCross-links: #14 (the regression this would have caught), #15 (AGENTS.md — complementary: CI enforces what AGENTS.md documents).",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/cdk-flutter/issues/16/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T14:35:50Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8759879863",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 15,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/15",
+        "id": 3579690605,
+        "number": 15,
+        "head": {
+          "ref": "add-agents-md",
+          "sha": "9dbb40b5bf061ac3b4caaad37fe1514485e37156",
+          "repo": {
+            "id": 1220075158,
+            "url": "https://api.github.com/repos/realmeylisdev/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "3cd68602e33e2046744682de811ae5ead87bb172",
+          "repo": {
+            "id": 1099096625,
+            "url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T14:28:01Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8759468858",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 14,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-flutter/pulls/14",
+        "id": 3579636579,
+        "number": 14,
+        "head": {
+          "ref": "fix-cdk-0.16-build",
+          "sha": "7781fd82bd79587459ecbfee3234c240e7e286cb",
+          "repo": {
+            "id": 1220075158,
+            "url": "https://api.github.com/repos/realmeylisdev/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "3cd68602e33e2046744682de811ae5ead87bb172",
+          "repo": {
+            "id": 1099096625,
+            "url": "https://api.github.com/repos/cashubtc/cdk-flutter",
+            "name": "cdk-flutter"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T14:16:48Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8759444119",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 53417906,
+      "login": "realmeylisdev",
+      "display_login": "realmeylisdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "forked",
+      "forkee": {
+        "id": 1220075158,
+        "node_id": "R_kgDOSLjelg",
+        "name": "cdk-flutter",
+        "full_name": "realmeylisdev/cdk-flutter",
+        "private": false,
+        "owner": {
+          "login": "realmeylisdev",
+          "id": 53417906,
+          "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/realmeylisdev",
+          "html_url": "https://github.com/realmeylisdev",
+          "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+          "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+          "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+          "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/realmeylisdev/cdk-flutter",
+        "description": "CDK Flutter Rust Bridge Library",
+        "fork": true,
+        "url": "https://api.github.com/repos/realmeylisdev/cdk-flutter",
+        "forks_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/forks",
+        "keys_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/teams",
+        "hooks_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/hooks",
+        "issue_events_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/events",
+        "assignees_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/tags",
+        "blobs_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/languages",
+        "stargazers_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/stargazers",
+        "contributors_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/contributors",
+        "subscribers_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/subscribers",
+        "subscription_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/subscription",
+        "commits_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/merges",
+        "archive_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/downloads",
+        "issues_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/labels{/name}",
+        "releases_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/realmeylisdev/cdk-flutter/deployments",
+        "created_at": "2026-04-24T14:16:05Z",
+        "updated_at": "2026-04-24T14:16:06Z",
+        "pushed_at": "2026-04-24T14:27:42Z",
+        "git_url": "git://github.com/realmeylisdev/cdk-flutter.git",
+        "ssh_url": "git@github.com:realmeylisdev/cdk-flutter.git",
+        "clone_url": "https://github.com/realmeylisdev/cdk-flutter.git",
+        "svn_url": "https://github.com/realmeylisdev/cdk-flutter",
+        "homepage": null,
+        "size": 774,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "master"
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-24T14:16:05Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8664554631",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 29250756,
+      "login": "j-kon",
+      "display_login": "j-kon",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/j-kon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29250756?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "forked",
+      "forkee": {
+        "id": 1217749247,
+        "node_id": "R_kgDOSJVg_w",
+        "name": "cdk-flutter",
+        "full_name": "j-kon/cdk-flutter",
+        "private": false,
+        "owner": {
+          "login": "j-kon",
+          "id": 29250756,
+          "node_id": "MDQ6VXNlcjI5MjUwNzU2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/29250756?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/j-kon",
+          "html_url": "https://github.com/j-kon",
+          "followers_url": "https://api.github.com/users/j-kon/followers",
+          "following_url": "https://api.github.com/users/j-kon/following{/other_user}",
+          "gists_url": "https://api.github.com/users/j-kon/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/j-kon/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/j-kon/subscriptions",
+          "organizations_url": "https://api.github.com/users/j-kon/orgs",
+          "repos_url": "https://api.github.com/users/j-kon/repos",
+          "events_url": "https://api.github.com/users/j-kon/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/j-kon/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/j-kon/cdk-flutter",
+        "description": "CDK Flutter Rust Bridge Library",
+        "fork": true,
+        "url": "https://api.github.com/repos/j-kon/cdk-flutter",
+        "forks_url": "https://api.github.com/repos/j-kon/cdk-flutter/forks",
+        "keys_url": "https://api.github.com/repos/j-kon/cdk-flutter/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/j-kon/cdk-flutter/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/j-kon/cdk-flutter/teams",
+        "hooks_url": "https://api.github.com/repos/j-kon/cdk-flutter/hooks",
+        "issue_events_url": "https://api.github.com/repos/j-kon/cdk-flutter/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/j-kon/cdk-flutter/events",
+        "assignees_url": "https://api.github.com/repos/j-kon/cdk-flutter/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/j-kon/cdk-flutter/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/j-kon/cdk-flutter/tags",
+        "blobs_url": "https://api.github.com/repos/j-kon/cdk-flutter/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/j-kon/cdk-flutter/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/j-kon/cdk-flutter/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/j-kon/cdk-flutter/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/j-kon/cdk-flutter/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/j-kon/cdk-flutter/languages",
+        "stargazers_url": "https://api.github.com/repos/j-kon/cdk-flutter/stargazers",
+        "contributors_url": "https://api.github.com/repos/j-kon/cdk-flutter/contributors",
+        "subscribers_url": "https://api.github.com/repos/j-kon/cdk-flutter/subscribers",
+        "subscription_url": "https://api.github.com/repos/j-kon/cdk-flutter/subscription",
+        "commits_url": "https://api.github.com/repos/j-kon/cdk-flutter/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/j-kon/cdk-flutter/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/j-kon/cdk-flutter/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/j-kon/cdk-flutter/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/j-kon/cdk-flutter/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/j-kon/cdk-flutter/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/j-kon/cdk-flutter/merges",
+        "archive_url": "https://api.github.com/repos/j-kon/cdk-flutter/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/j-kon/cdk-flutter/downloads",
+        "issues_url": "https://api.github.com/repos/j-kon/cdk-flutter/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/j-kon/cdk-flutter/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/j-kon/cdk-flutter/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/j-kon/cdk-flutter/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/j-kon/cdk-flutter/labels{/name}",
+        "releases_url": "https://api.github.com/repos/j-kon/cdk-flutter/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/j-kon/cdk-flutter/deployments",
+        "created_at": "2026-04-22T07:19:29Z",
+        "updated_at": "2026-04-22T07:19:29Z",
+        "pushed_at": "2026-03-31T09:10:53Z",
+        "git_url": "git://github.com/j-kon/cdk-flutter.git",
+        "ssh_url": "git@github.com:j-kon/cdk-flutter.git",
+        "clone_url": "https://github.com/j-kon/cdk-flutter.git",
+        "svn_url": "https://github.com/j-kon/cdk-flutter",
+        "homepage": null,
+        "size": 768,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "master"
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-22T07:19:29Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8664550230",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 29250756,
+      "login": "j-kon",
+      "display_login": "j-kon",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/j-kon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29250756?"
+    },
+    "repo": {
+      "id": 1099096625,
+      "name": "cashubtc/cdk-flutter",
+      "url": "https://api.github.com/repos/cashubtc/cdk-flutter"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-04-22T07:19:21Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  }
+]
