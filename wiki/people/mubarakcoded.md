@@ -31,6 +31,7 @@ Observed activity across 4 repos in the [marmot-protocol](https://github.com/mar
 
 ## History
 - 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/marmot-protocol/whitenoise/`) shows **1 commit** by mubarakcoded on [[projects/whitenoise]] (reset lifecycle after deleting data, #662). Daily ingestion (`data/raw/github/daily/2026-05-20/marmot-protocol/whitenoise-rs/`) shows **1 commit** by mubarakcoded on [[projects/whitenoise-rs]] (bound delete-all-data shutdown, #840) and opened issue #841 (per-account gift-wrap decrypt throttle).
 
 ## Open questions
 - Full name, location, timezone?

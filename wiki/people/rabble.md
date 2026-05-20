@@ -74,6 +74,7 @@ Observed activity across 23 repos in the [divinevideo](https://github.com/divine
 
 ## History
 - 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/divinevideo/divine-mobile/`) shows **1 commit** by rabble on [[projects/divine-mobile]]: macOS data-protection keychain fix (#4574). Also active on divine-name-server commits in the same window.
 
 ## Open questions
 - Full name, location, timezone?

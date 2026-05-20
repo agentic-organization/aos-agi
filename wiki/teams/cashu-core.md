@@ -96,6 +96,7 @@ Noting this on the team page (not as a judgement) so identity/skill ingestion ca
 ## History
 - Page created from an internal Q4-2025 cashubtc organization analysis.
 - 2026-05-07: Observational surface expanded from the 8-repo report to org-wide raw GitHub ingestion (`data/raw/github/daily/2026-05-07/`).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/`) shows concentrated activity on [[projects/cdk]] (3 commits by [[people/thesimplekid]]), [[projects/coco]] (3 commits by [[people/egge21m]]), [[projects/nutshell]] (1 commit by [[people/a1denvalu3]]), and issue triage across [[projects/cashu-ts]], [[projects/cashu-me]], and [[projects/nuts]] led by [[people/robwoodgate]].
 
 ## Open questions
 - Which members are funded by [[teams/and-other-stuff]] and which are independent or funded elsewhere?

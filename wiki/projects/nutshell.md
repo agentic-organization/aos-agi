@@ -40,6 +40,8 @@ One of the two canonical mint stacks alongside [[projects/mintd]] (CDK/Rust).
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
 - 2026-05-11: Added contributors section from `gh api repos/cashubtc/nutshell/contributors` and `data/raw/github/daily/2026-05-11/cashubtc/nutshell/commits-since.json`.
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/nutshell/`) shows **3 issues updated** (no new commits in the 24h window). Issues cover: fixes for SIG_ALL interaction with P2PK and HTLC (draft PR), a variety of NUT-10 P2PK/HTLC problems, and NUT-29 batched minting.
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/nutshell/`) shows **1 commit** by [[people/a1denvalu3]]: merge PR #904 for bech32m encoded payments.
 
 ## Open questions
 - Funding model and activity cadence.

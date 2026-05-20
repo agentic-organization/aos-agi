@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "a44d213694e81a51148a15b3acebf706596fd40f",
+    "node_id": "C_kwDOMvLjydoAKGE0NGQyMTM2OTRlODFhNTExNDhhMTViM2FjZWJmNzA2NTk2ZmQ0MGY",
+    "commit": {
+      "author": {
+        "name": "Mubarak Auwal",
+        "email": "mubarakcoded@gmail.com",
+        "date": "2026-05-19T14:18:00Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T14:18:00Z"
+      },
+      "message": "fix: bound delete all data shutdown (#840)\n\n* fix: bound delete all data shutdown\n\n* chore: address delete shutdown review\n\n* fix: propagate delete shutdown errors\n\n* chore: instrument delete scheduler shutdown",
+      "tree": {
+        "sha": "8b1c691246804aa4101b41d0690d569f3548013a",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/8b1c691246804aa4101b41d0690d569f3548013a"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/a44d213694e81a51148a15b3acebf706596fd40f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDHEYCRC1aQ7uu5UhlAAACKgQAE2noZB4s4avMhCpNp4RvT3j\nM5heenTVFiUoWIAMxKvEofWjfhO7fcVrRLZzcWf+6Pz1S7F5NgAXhnhpyLn5Gu9v\nJfd3sy3z6FZF/1xKBJuXIr1zVoTqnrl8lUFJR5RllIlWqS4jWssKPTRbQc7a9avt\n9ma9KXs0nOMzUqOAveKO9qmcj/o1+crvbL4MZXvwQHWGXFel1o87lFbKjg6Ist4k\nqy91MXEkTWK0xzU/v3a49eMXDT2KRXXYhyXCJKBR5fPzdUbDVfyNaOTrQR8jJ4ZV\nSZbxoGbYQr8AoaBoNCL8Luz0aL7oT1gApo713fkWl5C8gANXZiIFhHITHZsUU9/r\nTBukl8aOVJJKUYYK02Ck9wCBKoSAx+lXRD5sDpxg/bqwdcQW/WHHIuM3QJUSxgsZ\n8iIWLP+CCETiJz8eF5+PMLkWqlzMUpSmG1Z/Elkvg278SBPHb/DsIewkIkqXzQzl\nGa6ux403EG0P6oO8DpDKNMaHmWyzLDWohUlWBrVPrOd0bR5M1bwdX/VskT1Xe/jZ\ngLro1C+slLWSmMnCR3rfXZAkSBzG06HpfzfFTqAiqQUV5+DFaoVK2MlTt/Vg2ZfC\nvzzIwto9TqXoeITbG0KiqBWhM3fXs2orMCAz0TkOGKtJcSv3ayshKP6hqbCMTEha\nH7q6XrbAfAYxLgY86cEH\n=6OVs\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8b1c691246804aa4101b41d0690d569f3548013a\nparent 90c76ee89e437cee5f114ba418fe32245ee97c33\nauthor Mubarak Auwal <mubarakcoded@gmail.com> 1779200280 +0100\ncommitter GitHub <noreply@github.com> 1779200280 +0100\n\nfix: bound delete all data shutdown (#840)\n\n* fix: bound delete all data shutdown\n\n* chore: address delete shutdown review\n\n* fix: propagate delete shutdown errors\n\n* chore: instrument delete scheduler shutdown",
+        "verified_at": "2026-05-19T14:18:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/a44d213694e81a51148a15b3acebf706596fd40f",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/a44d213694e81a51148a15b3acebf706596fd40f",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/a44d213694e81a51148a15b3acebf706596fd40f/comments",
+    "author": {
+      "login": "mubarakcoded",
+      "id": 8781742,
+      "node_id": "MDQ6VXNlcjg3ODE3NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8781742?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mubarakcoded",
+      "html_url": "https://github.com/mubarakcoded",
+      "followers_url": "https://api.github.com/users/mubarakcoded/followers",
+      "following_url": "https://api.github.com/users/mubarakcoded/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mubarakcoded/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mubarakcoded/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mubarakcoded/subscriptions",
+      "organizations_url": "https://api.github.com/users/mubarakcoded/orgs",
+      "repos_url": "https://api.github.com/users/mubarakcoded/repos",
+      "events_url": "https://api.github.com/users/mubarakcoded/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mubarakcoded/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "90c76ee89e437cee5f114ba418fe32245ee97c33",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/90c76ee89e437cee5f114ba418fe32245ee97c33",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/90c76ee89e437cee5f114ba418fe32245ee97c33"
+      }
+    ]
+  },
+  {
+    "sha": "90c76ee89e437cee5f114ba418fe32245ee97c33",
+    "node_id": "C_kwDOMvLjydoAKDkwYzc2ZWU4OWU0MzdjZWU1ZjExNGJhNDE4ZmUzMjI0NWVlOTdjMzM",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-19T10:10:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T10:10:52Z"
+      },
+      "message": "Add opt-in product analytics infrastructure (#832)\n\n* Harden deletion authorization checks\n\n* Improve analytics coverage and fix macOS cache\n\n* Address analytics review feedback\n\n* Address analytics review feedback\n\n* Address analytics review follow-ups",
+      "tree": {
+        "sha": "ada257105cd8c68721b8d388d4c68eb45827e647",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/ada257105cd8c68721b8d388d4c68eb45827e647"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/90c76ee89e437cee5f114ba418fe32245ee97c33",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDDcsCRC1aQ7uu5UhlAAAKvQQADUgjseMZ532yStSGjGMcNIa\nqvCMgl8qdfTBLY4wGTR4wYzB3lmWF/dYu4E9lCk1hRq2xfJxQr/JPvMDr7+rBn62\nqCn4JiaoXbMSCxU/E6E7Udbflrj0La7xqaz4kz/e0HfiwNeBDwz8uHggCjrB6n1C\nImuIYssklrwUBCmPzlDDhZLjcJFye7d4S7BVWt3ekG1pke8ROP2Wj+/e2ccTj6ID\nmYUMV8GAPybCPR9/55x8S851BdfydWLCeNYRyc435uc+ubAkr/seh7TLcTHiFzBt\nKAd8HKrXNEH8CnQsvrlhKT016c8Dp5xC6AChB1zG/MFFZugjwygGaCzh1SG3XzyQ\n30RsWa0bqT7g/QrQVKAYmMBBp1bvIbQxSrq1ErW0Th/bI4MuEJiJVxY5kHcYxK0c\n4U+OuLlrhH9YdCUK5FyHf6TMW2jASKZG4yFqdmno+NiNXNetPuN2CfdwCWnz7LQ3\nJFGcOYBY34rVmLZ5d4wDkNJarZTALdKUq4ilRCvYbSrIo6HiXQEx1AhFDlNXjWWK\nt0j8RQlXQlQIjHjtq1G/J1ByzfLba5mkGTxyTQCiXqM5CO+pAWbXBofCsrB8+neS\nKcCmrsKscc3xB68AmS5U3SPbYXnGJ0Zq/+ZddDkmprtS45tY9KFn8u3l7Ilj8q55\nf9g9aNy9II4EhjWGjakw\n=1HrP\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ada257105cd8c68721b8d388d4c68eb45827e647\nparent 37d48338cb07b0c7540c86854e855911d4cf6e0e\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1779185452 +0200\ncommitter GitHub <noreply@github.com> 1779185452 +0200\n\nAdd opt-in product analytics infrastructure (#832)\n\n* Harden deletion authorization checks\n\n* Improve analytics coverage and fix macOS cache\n\n* Address analytics review feedback\n\n* Address analytics review feedback\n\n* Address analytics review follow-ups",
+        "verified_at": "2026-05-19T10:10:52Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/90c76ee89e437cee5f114ba418fe32245ee97c33",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/90c76ee89e437cee5f114ba418fe32245ee97c33",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/90c76ee89e437cee5f114ba418fe32245ee97c33/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "37d48338cb07b0c7540c86854e855911d4cf6e0e",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/37d48338cb07b0c7540c86854e855911d4cf6e0e",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/37d48338cb07b0c7540c86854e855911d4cf6e0e"
+      }
+    ]
+  },
+  {
+    "sha": "37d48338cb07b0c7540c86854e855911d4cf6e0e",
+    "node_id": "C_kwDOMvLjydoAKDM3ZDQ4MzM4Y2IwN2IwYzc1NDBjODY4NTRlODU1OTExZDRjZjZlMGU",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-19T07:29:53Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T07:29:53Z"
+      },
+      "message": "Add audio metadata to chat media records and imeta helpers (#833)\n\n* Add audio metadata to chat media records\n\n* Update changelog for audio metadata\n\n* Add changelog PR reference for audio metadata\n\n* Use MDK audio media metadata helpers\n\n* Preserve equal-timestamp message order",
+      "tree": {
+        "sha": "34eb4f4969b00e790253a44cec883e623977a33f",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/34eb4f4969b00e790253a44cec883e623977a33f"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/37d48338cb07b0c7540c86854e855911d4cf6e0e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDBFxCRC1aQ7uu5UhlAAA8bAQAHlibHiqb1NKqvYpyg0/XQzm\nAMOn68Aee4LQHUjy5sybRipPxBEMe3HFhxdN28KJUpwLDeuNRaWfvQJXoZoMz3hr\n4D2sS8vUteCeP/H8greFIWbVWFh9xTPvnkW23tgt7gbf6lrz/omBmR2dfRHixgK8\nHb1nB9+sSaQIQqW5PEfN1dx1kljOL3j84e0XhVlIjbO8OOBVjH+cCcBhfFqQfMjo\nJrMuARugsPnKanOHbag7Bq9cgI+LUz4X8FrDHKerIcEypBsBZoEBzW/PnDoVF2Ip\nHioprfkXl4AmfneUoefRVTxYnYsdvWyBZvhoB28nSEZ0qvBdl+yt2HKktdm50CNT\nBexHLSV+LikEvoVKnorogOpHL3ydR1osnnoBROSVfIQw5QikQIyF4bIple/srYhc\nUdykuGqtSDBAOk0Sc9aHwVJhOJ8aR3BcHXFsNGR4GGUM9YXDq8I8zNCOoNrubHfb\n8SH9wu0EdtU2Bj5DPrXCfBD3CxhNZdliaUMlglKqlbWb4YRwJchj33cPgpa6aWW8\n1jIllgZ1+mQg781q2+GzVqzlctCHOjDGNX25+vYZhEU5RkUtpIkMJ4Ltd68PRHzH\nBn0uY19NwRGnVVdYXi0ohSSDTUge2BsLGeeSwcq2rkxA37V4dwAMZe1hT+uY94uB\nMmkujyYNfr+gsbHrH/Gp\n=WeKG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 34eb4f4969b00e790253a44cec883e623977a33f\nparent a2d71d0a706c882b268e4569771f84574b638ae7\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1779175793 +0200\ncommitter GitHub <noreply@github.com> 1779175793 +0200\n\nAdd audio metadata to chat media records and imeta helpers (#833)\n\n* Add audio metadata to chat media records\n\n* Update changelog for audio metadata\n\n* Add changelog PR reference for audio metadata\n\n* Use MDK audio media metadata helpers\n\n* Preserve equal-timestamp message order",
+        "verified_at": "2026-05-19T07:29:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/37d48338cb07b0c7540c86854e855911d4cf6e0e",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/37d48338cb07b0c7540c86854e855911d4cf6e0e",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/37d48338cb07b0c7540c86854e855911d4cf6e0e/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a2d71d0a706c882b268e4569771f84574b638ae7",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/a2d71d0a706c882b268e4569771f84574b638ae7",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/a2d71d0a706c882b268e4569771f84574b638ae7"
+      }
+    ]
+  }
+]

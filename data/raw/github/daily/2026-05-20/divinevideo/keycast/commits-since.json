@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "f88365dd85762ea27e5df1881850b941e806176c",
+    "node_id": "C_kwDOQdzyrtoAKGY4ODM2NWRkODU3NjJlYTI3ZTVkZjE4ODE4NTBiOTQxZTgwNjE3NmM",
+    "commit": {
+      "author": {
+        "name": "Daniel Cadenas",
+        "email": "dcadenas@gmail.com",
+        "date": "2026-05-19T16:53:15Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T16:53:15Z"
+      },
+      "message": "fix(cluster-hashring): heartbeat/full-sync never reconnect after Redis endpoint change (#237)\n\n* fix(cluster-hashring): reconnect registry Redis commands after socket loss\n\n* fix(api): reconnect prefixed Redis commands after socket loss\n\n* fix(cluster-hashring): document redis reconnect caveats\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "d90fc37088f13034de042f8e46e56b4d28419277",
+        "url": "https://api.github.com/repos/divinevideo/keycast/git/trees/d90fc37088f13034de042f8e46e56b4d28419277"
+      },
+      "url": "https://api.github.com/repos/divinevideo/keycast/git/commits/f88365dd85762ea27e5df1881850b941e806176c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDJV7CRC1aQ7uu5UhlAAA2VgQAIcnaC/Er+R/Gdp4PAfvQxyc\nRX+YILn82sdiD6lxbCy+sPNFCIGTfUm4T6JXF7uYfx19XYtdQgF+CrFj2jKIZIQU\n25HxQP58Osewm/rs0hUEVPpdGPiySNbWBRGUtfxml7afp74evZA/sPfcSE/+3SqW\ndsqN9hRnxGVQHVJbWJ2l7gn21PAt8izA8kO2xVvBnz5SRM0O9mpuA+ae6fv290ZS\nnrKqCzwxSjVQUIAzpz8fYswGPYvcC9EZ5SFVgkbqC/Eag3KUHxIDeyXhiFVca0B7\nVRHxszgzKJQkwzTjfDpR0ZrbXPLiK6A1sOuGNKY9N34pmRVTaav4lCuT7gh6GAWx\nh/iHmGJLcqePv4iR7FuVhZGS0Z5twsAhyNx56xpwpT2xJsaBeyIVFuMMXWKbGHtx\niswqlFlw5f0n1k3CG0nzSaCc7RcOnNPPDPPVoSsKGDzzzujvkiUyHejXX2//gCEC\nGXS7SAc9n01997qB3dd2siVK5Sizkg0r+SmPYfAWOn4yKiq9RCS0XmkRtLqsyJYi\nEOUDiZZZP+rGIDVgOsWuZrZY2ZgaIPG/p5bVMKySlZKD8s7L8mOxQY+KrA7HXXVs\n8ZeHb5EUzNx/DHpovV39z6eaZk5yCC2RlKhfbzpXnD0p0L1wgdtQG+Op8dbZN1v+\nbK2pYXJeOO3PF7KgX+VS\n=lT3m\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d90fc37088f13034de042f8e46e56b4d28419277\nparent 72746acdf8b6115c66d91e6b0468f56bdc8d21f7\nauthor Daniel Cadenas <dcadenas@gmail.com> 1779209595 -0300\ncommitter GitHub <noreply@github.com> 1779209595 -0300\n\nfix(cluster-hashring): heartbeat/full-sync never reconnect after Redis endpoint change (#237)\n\n* fix(cluster-hashring): reconnect registry Redis commands after socket loss\n\n* fix(api): reconnect prefixed Redis commands after socket loss\n\n* fix(cluster-hashring): document redis reconnect caveats\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-19T16:53:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/keycast/commits/f88365dd85762ea27e5df1881850b941e806176c",
+    "html_url": "https://github.com/divinevideo/keycast/commit/f88365dd85762ea27e5df1881850b941e806176c",
+    "comments_url": "https://api.github.com/repos/divinevideo/keycast/commits/f88365dd85762ea27e5df1881850b941e806176c/comments",
+    "author": {
+      "login": "dcadenas",
+      "id": 18184,
+      "node_id": "MDQ6VXNlcjE4MTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "html_url": "https://github.com/dcadenas",
+      "followers_url": "https://api.github.com/users/dcadenas/followers",
+      "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+      "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+      "repos_url": "https://api.github.com/users/dcadenas/repos",
+      "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "72746acdf8b6115c66d91e6b0468f56bdc8d21f7",
+        "url": "https://api.github.com/repos/divinevideo/keycast/commits/72746acdf8b6115c66d91e6b0468f56bdc8d21f7",
+        "html_url": "https://github.com/divinevideo/keycast/commit/72746acdf8b6115c66d91e6b0468f56bdc8d21f7"
+      }
+    ]
+  }
+]

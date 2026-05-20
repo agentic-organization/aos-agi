@@ -33,6 +33,7 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
 - 2026-05-11: `data/raw/github/daily/2026-05-11/divinevideo/divine-mobile/` captured **54 commits** in the 72h window and release **1.0.13** (published 2026-05-10). Commit themes: video-editor audio extraction, DM auto-sweep of failed outgoing states, profile memCacheWidth fix, notification row styling, IdentitySkeletonizer component, pro_video_editor bump to 1.16.1, liker/reposter list in video. Committers: [[people/rabble]], [[people/realmeylisdev]], [[people/notthatkindofdrliz]], [[people/hm21]], [[people/mbradley]], [[people/untreu2]], `evgenibir`, `Chardot`.
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/divinevideo/divine-mobile/`) shows **10 commits** by [[people/hm21]], [[people/rabble]], [[people/notthatkindofdrliz]], and github-actions[bot]. Themes: fix tags search input reset when suggestion tapped (#4569), macOS data-protection keychain fix (#4574), audio extraction routing to AudioSourceConfig.file (#4395/#4549), prevent audio session interference during recording (#4548), restore popular feed pagination (#4492). **46 issues updated** including server-backed video sort (#4572).
 
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?

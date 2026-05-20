@@ -22,6 +22,7 @@ The reference Cashu web wallet and the most widely deployed consumer entry point
 
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/cashu.me/`) shows **2 issues updated** (no new commits): #354 check for partially spent token if redeem fails by [[people/robwoodgate]], and #525 feat: subscribe to all proofs for token state updates by [[people/a1denvalu3]].
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

@@ -116,6 +116,10 @@ Stated descriptively; not a verdict.
 - Discovery run: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`.
 - Tool: [[tools/github-org-discover]].
 
+## History
+- 2026-05-07: Page created from divinevideo GitHub discovery run.
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/`) shows concentrated mobile-app activity on [[projects/divine-mobile]] (10 commits by [[people/hm21]], [[people/rabble]], [[people/notthatkindofdrliz]]), auth/name-server work by [[people/dcadenas]] on [[projects/keycast]] and [[projects/divine-name-server]], and web-front-end issue #361 (family/age-review pages) by [[people/notthatkindofdrliz]].
+
 ## Open questions
 - What is the actual maintainer structure — is rabble the sole decision-maker, or is there a steering group with dcadenas / mbradley / NotThatKindOfDrLiz?
 - Funding and employment model per contributor.

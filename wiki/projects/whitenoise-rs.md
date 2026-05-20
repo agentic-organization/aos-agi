@@ -25,6 +25,7 @@ Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and i
 
 ## History
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/marmot-protocol/whitenoise-rs/`) shows **3 commits** by [[people/mubarakcoded]] and [[people/erskingardner]]: bound delete-all-data shutdown (#840), add opt-in product analytics infrastructure (#832), and add audio metadata to chat media records with imeta helpers (#833). **4 issues updated** including per-account gift-wrap decrypt throttle (#841).
 
 ## Related
 - [[projects/whitenoise]] — the Flutter app consuming this crate.

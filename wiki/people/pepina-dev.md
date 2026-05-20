@@ -28,6 +28,7 @@ Observed activity across 3 repos in the [marmot-protocol](https://github.com/mar
 
 ## History
 - 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/marmot-protocol/whitenoise/`) shows **1 commit** by pepina-dev on [[projects/whitenoise]]: enable leave group (#675).
 
 ## Open questions
 - Full name, location, timezone?

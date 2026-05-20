@@ -34,6 +34,7 @@ Native iOS presence via the Macadamia wallet and foundational Swift Cashu librar
 
 ## History
 - 2026-05-07: Page created from an internal Q4-2025 cashubtc organization analysis (scope and responsibilities only; no performance details ingested).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/zeugmaster/macadamia/`) shows **1 commit** by zeugmaster on [[projects/macadamia]]: merge PR #57 fixing hardcoded absolute path for macadamiaMessages entitlements.
 
 ## Open questions
 - Full name, location, timezone?

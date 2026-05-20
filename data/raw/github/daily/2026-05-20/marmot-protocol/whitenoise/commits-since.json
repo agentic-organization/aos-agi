@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "bc32a14ed98f8b9c25d8cb8bb86942a5fa48d839",
+    "node_id": "C_kwDOQg6sZ9oAKGJjMzJhMTRlZDk4ZjhiOWMyNWQ4Y2I4YmI4Njk0MmE1ZmE0OGQ4Mzk",
+    "commit": {
+      "author": {
+        "name": "Mubarak Auwal",
+        "email": "mubarakcoded@gmail.com",
+        "date": "2026-05-19T16:29:15Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T16:29:15Z"
+      },
+      "message": "fix: reset Whitenoise lifecycle after deleting data (#662)\n\n* fix: reset Whitenoise lifecycle after deleting data\n\n* fix: preserve global instance on failed delete\n\n* docs: clarify delete reset recovery\n\n* fix: await delete all data completion\n\n* fix: ignore stale dm group ids\n\n* fix: repair delete data test assertion\n\n* fix: serialize whitenoise initialization\n\n* fix: reset Whitenoise lifecycle after deleting data\n\n* fix: satisfy delete reset CI checks\n\n* test(reset_marker): cover default FlutterSecureStorage.deleteAll fallback\n\n* fix: keep start dm errors visible",
+      "tree": {
+        "sha": "b12fdfe4a6da3ff82a889d265ba7b50e0ef949db",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/b12fdfe4a6da3ff82a889d265ba7b50e0ef949db"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/bc32a14ed98f8b9c25d8cb8bb86942a5fa48d839",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDI/bCRC1aQ7uu5UhlAAA0c8QAJe3zHE4cwrqNkKQ9f3Bg+bn\nOmZN1S/4fkzKI1Ccwc1SvaTiDOM2MQdp11OwaJ+uz/KE/gvcCIx0ii52zw9N0YZM\nzezNl0RNDpHS3kDLake1P7p3S3YS2TGBuf5pVhEp8zFs5qhGOD7I592hp+HNjgJB\n45KNxC9q9uihsm7IvWBrGfF4YYUvbhZeu1v6N32EFABxC/KmSih4gwYnTdPTUak6\nZbNBSExW1vE4GBZQKOjBxli2DOkNHVpzn22tvbhIiSOED/1sL0i8mk+MaXTDnb7S\n/xPyCDN6yKYUG/HAX7Tdl+gHy/KXE93/aWpVrbyIzo7wqjvsQb+gHbda5xm0T/My\nduj7gj8MjaYOuehz1cBBAQGQjcqFnj2rxV4v63E84Rp5zn9/iGlUuctEo/OjLSQb\n9VWOopgNKME+aVawgqZdL+SMSF5lBiY6jauySVal4JmVxIljew0x7qfFnRNASchQ\noQWwroJHiuG9yWGc/ZHm0BkAYEa4XtkFnHuS9M+yTn36tZ/e1jlzBlW3BnPmQFm0\nZE/QCK39dYerCF9lVNRsUs8Y12+uwTGjJczr99xZtvshU1uFG+Lmsyl/Y6pppokV\n+JOWhbHYIqdCnnxV2sE3inw3NnGHdUVB83YWEaO8Navpgz7fjcQfB6hDOdvTnV2Z\nQ2DHDaxr9p83OA0cfZ05\n=N+8x\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b12fdfe4a6da3ff82a889d265ba7b50e0ef949db\nparent 9b2d034d2f3c62d4a98e4bb5068312f9a1dbfc45\nauthor Mubarak Auwal <mubarakcoded@gmail.com> 1779208155 +0100\ncommitter GitHub <noreply@github.com> 1779208155 +0100\n\nfix: reset Whitenoise lifecycle after deleting data (#662)\n\n* fix: reset Whitenoise lifecycle after deleting data\n\n* fix: preserve global instance on failed delete\n\n* docs: clarify delete reset recovery\n\n* fix: await delete all data completion\n\n* fix: ignore stale dm group ids\n\n* fix: repair delete data test assertion\n\n* fix: serialize whitenoise initialization\n\n* fix: reset Whitenoise lifecycle after deleting data\n\n* fix: satisfy delete reset CI checks\n\n* test(reset_marker): cover default FlutterSecureStorage.deleteAll fallback\n\n* fix: keep start dm errors visible",
+        "verified_at": "2026-05-19T16:29:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/bc32a14ed98f8b9c25d8cb8bb86942a5fa48d839",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/bc32a14ed98f8b9c25d8cb8bb86942a5fa48d839",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/bc32a14ed98f8b9c25d8cb8bb86942a5fa48d839/comments",
+    "author": {
+      "login": "mubarakcoded",
+      "id": 8781742,
+      "node_id": "MDQ6VXNlcjg3ODE3NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8781742?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mubarakcoded",
+      "html_url": "https://github.com/mubarakcoded",
+      "followers_url": "https://api.github.com/users/mubarakcoded/followers",
+      "following_url": "https://api.github.com/users/mubarakcoded/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mubarakcoded/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mubarakcoded/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mubarakcoded/subscriptions",
+      "organizations_url": "https://api.github.com/users/mubarakcoded/orgs",
+      "repos_url": "https://api.github.com/users/mubarakcoded/repos",
+      "events_url": "https://api.github.com/users/mubarakcoded/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mubarakcoded/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9b2d034d2f3c62d4a98e4bb5068312f9a1dbfc45",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/9b2d034d2f3c62d4a98e4bb5068312f9a1dbfc45",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/9b2d034d2f3c62d4a98e4bb5068312f9a1dbfc45"
+      }
+    ]
+  },
+  {
+    "sha": "9b2d034d2f3c62d4a98e4bb5068312f9a1dbfc45",
+    "node_id": "C_kwDOQg6sZ9oAKDliMmQwMzRkMmYzYzYyZDRhOThlNGJiNTA2ODMxMmY5YTFkYmZjNDU",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-19T15:40:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T15:40:59Z"
+      },
+      "message": "Add markdown rendering for chat messages (#665)\n\n* Bridge whitenoise-markdown AST through flutter-rust-bridge\n\nBumps the whitenoise dep to 53fbbdd, which replaces the\n`Vec<SerializableToken>` content representation with a\n`whitenoise_markdown::Document` (CommonMark + GFM + nostr-extension\nAST). Field names `tokens` / `content_tokens` are retained for FFI\ncontinuity as the upstream author signaled.\n\n- rust/src/api/markdown.rs: new module mirroring every AST node\n  (Document, Block, Inline, ListItem, ListKind, Alignment,\n  CodeBlockKind, AutolinkKind, NostrEntity, NostrHrp, TableCell) as\n  FRB-friendly types, with From impls and 24 unit tests.\n- rust/src/api/messages.rs: SerializableToken removed; tokens and\n  content_tokens retyped to MarkdownDocument.\n- rust/src/api/groups.rs: add disappearing_message_secs: None to\n  NostrGroupConfigData / NostrGroupDataUpdate (incidental upstream\n  change pulled in by the rev bump).\n- Regenerated FRB bindings — recursive AST bridged cleanly as Dart\n  sealed classes.\n- lib/screens/chat_raw_debug_screen.dart: rewrote the token-dump\n  section as a recursive AST pretty-printer.\n- 12 test fixtures: tokens/contentTokens fixtures retyped.\n\nNo new rendering yet — content is still rendered as plain text by\nWnMessageBubble; the parsed AST sits unused on ChatMessage until the\nrenderer lands in the next commit.\n\n* Render markdown in chat message bubbles\n\nWires the parsed whitenoise_markdown::Document AST through to a new\nWnMarkdownText widget that renders inside ChatMessageBubble.\n\nRenderer (lib/widgets/wn_markdown_text.dart, 480 lines):\n- Faithful AST walk: every Block (Paragraph, Heading, ThematicBreak,\n  CodeBlock, BlockQuote, List, Table, MathBlock) and every Inline\n  (Text, SoftBreak, HardBreak, Code, Emph, Strong, Strikethrough,\n  Link, Image, Autolink, Math, NostrMention, NostrUri) renders.\n- Task-list checkboxes for ListItem.checked = Some(...).\n- Table with per-column alignment, scrolls horizontally on overflow.\n- Inline images render as tappable '[image: alt]' text — no\n  in-bubble network image loads.\n- Math: source rendered as italic monospace (no LaTeX engine).\n- URL scheme allow-list: http, https, mailto, nostr, tel. Anything\n  else (javascript:, data:, file:, ...) gets no tap recognizer.\n- Highlight-query support: per-inline substring matching merged with\n  AST rendering, so search results show both markdown formatting and\n  highlight backgrounds in the same view.\n- HookWidget manages TapGestureRecognizer lifetimes via useRef +\n  useEffect cleanup (no StatefulWidget).\n\nIntegration (lib/widgets/wn_message_bubble.dart, chat_message_bubble.dart):\n- New `document` parameter on WnMessageBubble; `onLinkTap` /\n  `onNostrTap` callbacks.\n- Plain-text fast path: when the document is empty, or is a single\n  Paragraph whose inlines are only Text/SoftBreak/HardBreak, the\n  existing Text widget is used — plain messages render byte-identically\n  to before, preserving the inline-timestamp layout in _TextWithTimestamp.\n- Formatted messages route through WnMarkdownText; timestamp moves to\n  its own row below the content.\n- Deleted messages ignore the document.\n- ChatMessageBubble provides default tap handlers using url_launcher\n  (LaunchMode.externalApplication), guarded by isSafeMarkdownUrl.\n\nTests:\n- test/widgets/wn_markdown_text_test.dart (51 widget tests) covers\n  every Block and Inline variant, URL safety, highlight merging,\n  maxLines truncation, empty / edge cases.\n- test/widgets/wn_message_bubble_test.dart: 8 new tests for the\n  plain-text / markdown routing and callback wiring.\n- test/widgets/chat_message_bubble_test.dart: 3 new tests verifying\n  url_launcher integration (safe URL launches externally, javascript:\n  is silently dropped, nostr: URIs launch).\n- All 4487 tests pass. Coverage: 99.04%.\n\nKnown limitations (worth surfacing in QA):\n- Chat-list previews, reply quotes, and notifications still render\n  the raw message string — markdown syntax characters will appear\n  as literal text in those surfaces. This matches what most chat\n  apps do and Whitenoise gives us plain content there anyway.\n- Multi-block markdown messages move the timestamp to its own row;\n  plain-text and single-formatted-paragraph messages keep the inline\n  timestamp behavior.\n\n* Render SoftBreak as newline so user-typed line breaks survive\n\nThe CommonMark default for SoftBreak is a space, which is fine on the\nweb where authors hard-wrap source for readability and expect rendering\nto reflow. In a chat composer every Enter press produces an in-paragraph\nnewline, which the parser emits as SoftBreak — so the default would\ncollapse multi-line messages into one long visual line.\n\nThis matches what every chat app does (Slack, Telegram, Discord,\niMessage all map SoftBreak → newline). HardBreak already mapped to\nnewline; the two now share an arm.\n\nThe image-alt flattening helper (_flattenInlines) still emits a space\nfor SoftBreak — alt text shouldn't carry hard line breaks.\n\n* Render @npub mentions as underlined display name\n\nPer Vlad's design call: Nostr npub mentions should appear as the\nmentioned user's display name with an underline, not as a chip and not\nin link-blue. Other Nostr HRPs (note/nevent/nprofile/naddr/nrelay)\nstill render with the link-style fallback since they point to events,\nnot people.\n\n- WnMarkdownText: new `mentionDisplayName: String? Function(String hexPubkey)?`\n  callback. For each npub mention/URI the renderer decodes the bech32\n  to a hex pubkey via hexFromNpub() and asks the caller for a display\n  name. If resolved → '@DisplayName'. If unresolved or callback absent\n  → '@npub1abcdefgh…wxyz' truncated fallback. Style is the surrounding\n  text's color with TextDecoration.underline — mentions inherit the\n  bubble text color rather than the link color.\n- Plumbed through WnMessageBubble and ChatMessageBubble as a single\n  optional param at each layer; ChatScreen wires it to its existing\n  `presentName(getAuthorMetadata(hex))` cache. Mentions of message\n  authors resolve immediately; mentions of users not yet in the\n  metadata cache fall back to truncation until metadata loads (a\n  later follow-up can subscribe to mentioned pubkeys).\n- 3 new widget tests: resolved name, empty-name fallback, no-callback\n  fallback. 55 markdown tests pass. Coverage 99.03%.\n\n* Plumb mentionDisplayName into the long-press action menu\n\nWhen a user long-presses a message, the action menu re-renders the\nbubble inside MessageActionsModal — a separate widget tree from the\nchat list. The mentionDisplayName callback was not being forwarded to\nthat re-render, so @mentions fell back to truncated npubs in the\npreview while showing resolved names in the main chat. Wire it through\nMessageActionsScreen \\u2192 MessageActionsModal \\u2192 ChatMessageBubble.\n\n* Bump whitenoise-rs to 7577289f (bare-npub parsing)\n\nPicks up two commits on the markdown PR since 53fbbdd:\n\n  c4ef3d99  address review feedback\n              \\u2014 cosmetic-only: drops `#[cfg(feature = \"serde\")]`\n              gating (serde derives now unconditional), removes doc\n              references to deleted PLAN.md, internal scanner refactor.\n              Database path switches from re-deriving the AST on read\n              to reading from a persisted `content_tokens` column \\u2014\n              same observable behavior at the FFI boundary.\n\n  7577289f  bare npubs should also parse\n              \\u2014 the parser now recognizes bare `npub1\\u2026` strings as\n              `Inline::NostrMention` (previously only `@npub1\\u2026` and\n              `nostr:npub1\\u2026` worked). Restricted to the `npub` HRP\n              to avoid false positives on prose starting with\n              `note1\\u2026` / `nevent1\\u2026`. No AST shape change.\n\nNo bridge or renderer changes needed: our existing NostrMention/Npub\npath with the mentionDisplayName callback handles the new shape\nidentically.\n\n* Bump whitenoise-rs to f421a8ad (fix nested-blockquote misparse)\n\nSingle fast-forward commit on the markdown PR:\n\n  f421a8ad  fix bug with inner quotes inside quotes\n              \\u2014 trailing paragraphs after a blank \\`> >\\` line inside\n              a nested blockquote were escaping to the document root.\n              Verified by re-running the local AST dump on the user's\n              repro input: 'Trailing paragraph in inner quote.' now\n              sits as the third child of the inner BlockQuote, not as\n              document.blocks[0].\n\nNo FFI shape changes; bridge regen is format-noise only (handled by\ndart format).\n\n* Tapping an @npub mention opens the user's profile in a shade\n\nPer Vlad's design call. Previously, tapping a mention launched a\nnostr:<bech32> URI externally; that bounced users out to the OS and\nfelt out of place inside a chat.\n\nNew flow:\n- chat_message_bubble: when the renderer reports an Npub tap, decode\n  bech32 to hex and open UserProfileShade in-app. Non-npub Nostr URIs\n  (note/nevent/nprofile/naddr/nrelay) keep the external launchUrl\n  behavior \\u2014 those point to events, not people.\n- lib/screens/user_profile_shade.dart: new HookConsumerWidget pushed\n  via PageRouteBuilder with an opaque:false barrier. Wraps\n  WnUserProfileCard inside a WnSlate. Header navigates back with\n  Navigator.pop. For non-self users, a 'Start chat' button pops the\n  shade and routes to StartChatScreen. Copy actions surface as\n  SnackBars.\n- The shade drops input focus before opening (mirrors what chat_screen\n  does before MessageActionsScreen.show). Without this the chat list\n  snaps to the bottom on dismiss because the keyboard reappears and\n  resizes the viewport.\n- 7 new shade tests cover: card rendered, button shown/hidden by\n  isSelf, copy and copy-error snackbars, header dismiss, and the\n  start-chat button popping then routing via a stub GoRouter.\n- Updated chat_message_bubble tests: the npub tap test now asserts\n  launchUrl is NOT called; a new test exercises the non-npub\n  external-launch fallback.\n\n4498 tests pass. Coverage 99.03%.\n\n* Bump whitenoise-rs to 935683af (bare-URL autolinks + longer bech32)\n\nTwo fast-forward commits from f421a8ad:\n\n  dbd595b3  nostr bech32 are not limited to 90ch\n              \\u2014 lifts the bech32 length cap from BIP-173's 90 to 1024\n              per NIP-19, which explicitly waives 90 for TLV-encoded\n              nevent / naddr / nprofile entities with multiple relay hints.\n              Pure parser change.\n\n  935683af  add better bare-url parsing for whitenoise, http, https, tel, mailto\n              \\u2014 bare URLs now parse as Inline::Autolink for the schemes\n              http://, https://, mailto:, tel:, whitenoise://, and\n              whitenoise-staging://. Trailing punctuation excluded.\n              The opaque form 'whitenoise:foo' (no //) stays literal.\n\nNo AST shape change. Bare URLs flow through our existing autolink path.\nBridge regen is format-noise only.\n\nNote: my URL allow-list in wn_markdown_text.dart includes http, https,\nmailto, nostr, tel but not whitenoise(-staging). Bare whitenoise://\nlinks will render styled but tap is a no-op until that's extended.\n\n* Restyle @npub mentions: user color, bold, no @ prefix\n\nPer the latest design call (Vlad). Mentions now render with three\nproperties:\n\n- No '@' prefix.\n- Bold (FontWeight.w700).\n- Color seeded from the pubkey via AvatarColor.fromPubkey() \\u2014 same\n  palette the bubble already uses for sender names, so a mention of\n  someone reads in the same hue as their own messages in a group.\n\nUnderline is dropped \\u2014 color + bold is the new mention affordance.\n\nWhen hexFromNpub fails to decode (malformed bech32), the mention falls\nback to its surrounding text color so it stays bold but doesn't pretend\nto identify someone.\n\nTests updated: drop '@' from expected strings, replace underline\nassertions with FontWeight.w700 + per-pubkey color.\n\n* Bump whitenoise-rs to bb717d1c (content_tokens backfill migration)\n\nTwo fast-forward commits from 935683af:\n\n  6fae0178  fix stale comment\n  bb717d1c  backfill migration to reparse content_tokens with markdown parser\n\nThe migration adds m0044_reparse_content_tokens.rs in the whitenoise\ncrate. It runs once at app init and reparses any persisted\ncontent_tokens rows whose stored AST is older than the current parser\n(necessary now that the AST is persisted instead of re-derived on each\nread). All internal to whitenoise; no FFI surface change.\n\nThe only types.rs touch is a doc-comment update on\nChatMessage::content_tokens, removing the now-stale 'never persisted'\nsentence.\n\n* bump + just regenerate\n\n* Address review: rename MarkdownText, honor list 'tight' flag, stable test keys\n\nThree findings from PR review:\n\n1. Drop the 'Wn' prefix on MarkdownText.\n   Per CLAUDE.md, the 'Wn'/'wn_' prefix is for design-system widgets\n   that are presentational only and make no Rust API calls. This\n   widget calls hexFromNpub (Rust) for mention decoding, so it doesn't\n   belong in the design-system namespace.\n   - Renamed class WnMarkdownText -> MarkdownText.\n   - Renamed file lib/widgets/wn_markdown_text.dart -> markdown_text.dart.\n   - Renamed test file accordingly.\n   - Updated imports in chat_message_bubble, wn_message_bubble, and\n     both test files (66 references in total).\n\n2. Honor MarkdownBlock_List.tight.\n   The renderer previously destructured only kind and items and used a\n   fixed 4.h gap between list items, ignoring the tight flag the\n   parser emits. Now forwards tight to _buildList and picks a smaller\n   inter-item gap (2.h) for tight lists vs a larger one (8.h) for\n   loose lists, matching CommonMark semantics.\n\n3. Stable keys on task-list checkbox icons.\n   The two task-list rendering tests were keying off Icons.check_box\n   and Icons.check_box_outline_blank via find.byIcon, which is fragile\n   if the underlying Icon ever changes. Added Key('check_box') and\n   Key('check_box_outline_blank') to the renderer's checkbox Icon and\n   switched the tests to find.byKey.\n\nAll 4536 Flutter + 75 Rust tests pass. Coverage 99.05%.\n\n* Tap-to-open whitenoise:// links; unify mention/profile UI under Start Chat shade\n\n- Allow whitenoise:// and whitenoise-staging:// in markdown_text safe schemes\n  so taps on the Rust-emitted autolinks dispatch to the bubble handler.\n- whitenoise://chat/<id> routes through GoRouter; whitenoise://user/<npub>\n  and bare @npub mentions now open the Start New Chat menu as a shade.\n- Show a localized error dialog when a whitenoise:// URL fails to parse.\n- Make StartChatScreen shade-capable (transparent scaffold, scrollable\n  content) and remove the now-redundant UserProfileShade.\n\nCo-authored-by: nvk <797193+nvk@users.noreply.github.com>\n\n* Add @mention picker with rich input and npub display resolution\n\n- Typing `@` in a group chat opens a member picker driven by useGroupMembers;\n  selecting an entry inserts a styled `@DisplayName` token in the input.\n- MentionTextEditingController tracks mention spans, renders them in the\n  primary color via buildTextSpan, and exposes `messageText` so the wire\n  representation is the bare `@npub1...` form regardless of how it's\n  displayed.\n- Bare `@npub1...` strings typed or pasted into the input are auto-tracked:\n  if a name resolver is wired, they show as `@DisplayName`; otherwise they\n  truncate to `@npub1abcdefgh…wxyz` matching the receiver bubble.\n- chat_screen wires the resolver from getAuthorMetadata so mentions of users\n  outside the current group still display by name when we know them, while\n  the picker stays group-only.\n- useChatInput now uses MentionTextEditingController and saves\n  controller.messageText to drafts.\n\nAdapted from PR #659 (rich message rendering / mentions); the receiver-side\nmarkdown path on this branch already handles NostrMention inlines so no\nbubble changes were needed.\n\nCo-authored-by: erskingardner <202880+erskingardner@users.noreply.github.com>\n\n* fix jumpy cursor bug\n\n* coderabbit\n\n* strikethrough\n\n* render in reply content block thing\n\n* fmt\n\n* carrots for our rabbit, including THE GOLDEN CARROT\n\n* tests: cover mention-controller branches and bubble truncation path\n\nRestores coverage above the 99% gate after the markdown/mention/timestamp\nfixes. New cases:\n\n- insertMention shifts a later tracked mention via _TrackedMention.shift\n- buildTextSpan emits a leading text segment before a mention span\n- setMentionTargets snaps the cursor when it sat mid-URI\n- setMentionTargets handles a known URI that sits past existing text\n- _shiftMentions shifts a mention past a prefix insertion\n- _replaceBareNpubs preserves and remaps a later mention via\n  _shiftPastReplacements when a bare npub is inserted before it\n- IME composing-at-mention-boundary preservation + the non-composing\n  drop control case\n- A tight finite-height truncation path for _TextWithTimestamp\n\n* fix: synchronous recognizer disposal + permissive mention boundaries\n\nMarkdown link/nostr recognizers were being torn down via\naddPostFrameCallback. If the widget was removed before the next frame\n(Navigator.pop during scroll, hot reload, fast list rebuild), the\ncallback still ran but no longer had a clean owner. Switch to disposing\nthe previous frame's recognizers synchronously at the start of build,\nbefore assigning the new list. Unmount cleanup via useEffect stays.\n\nAdd a testWidgets that mounts a MarkdownText with a link, tears the\nsubtree down, pumps a follow-up frame, and asserts no exception is\nthrown. Use Flutter's experimentalLeakTesting + leak_tracker so any\nleaked TapGestureRecognizer surfaces a test failure.\n\nAlso:\n- _isMentionBoundary now accepts sentence punctuation (. , ; : ! ? ) ])\n  so '@npub1...!' / '@npub1...,' auto-truncate the way the Rust parser\n  already permits.\n- markdown_text's display-name resolver trims the returned name before\n  the empty-check, matching the controller's behavior and dropping\n  whitespace-only resolutions back to the truncated fallback.\n\n* fix: use theme color for markdown highlight fallback; move mention picker below images\n\nAddresses two review notes:\n\n1. r3261917942 (\"Use colors set in theme\") — markdown_text.dart:145.\n   The default highlightColor was Colors.yellow, a raw Material color\n   inconsistent with the rest of the codebase. Fall back to\n   context.colors.intentionInfoContent, which matches how\n   wn_message_bubble.dart already builds its highlight color when the\n   caller doesn't specify one.\n\n2. Mention picker UX — chat_screen.dart. When media attachments are\n   present the @-picker was being rendered above the entire input box,\n   pushing the image preview down. It now rides along inside the\n   attachment area, sitting below the image previews but still above\n   the text field. Without media it still appears above the input as\n   before. Two new chat-screen tests pin both branches in place,\n   asserting the picker's position relative to the media preview and\n   the input via getTopLeft / getBottomLeft.\n\n---------\n\nCo-authored-by: nvk <797193+nvk@users.noreply.github.com>\nCo-authored-by: erskingardner <202880+erskingardner@users.noreply.github.com>",
+      "tree": {
+        "sha": "5bd71c58e6a42f04c5defcc4e2cdb68df6e10450",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/5bd71c58e6a42f04c5defcc4e2cdb68df6e10450"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/9b2d034d2f3c62d4a98e4bb5068312f9a1dbfc45",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDISLCRC1aQ7uu5UhlAAAA18QACa114U6Ry6AMov6yJ/qGiv0\ng5xvQ9K6/GmP7UNP46VSCSPLEwFEYiCa/R7uorCOVMBpiA0hLiGGaYtaSJNoNAt5\nrr5WcRX4ualMjptubAWcOYFtav2BhDE031AqSoiCsMhbXByFIBcIaBXL+lXxgeh0\nHtQfg23oqt3bHaqAGnz8uXxlVmZouMcocVQuCBw1lPnZeBSWIT5XZJKBF2kVOAAo\ngAr6TKaO33MAzuQCMd4Dnnw5RUW762692EtTXyNvvaXa1mavEWj24QwedYwZng4n\nte3SXdd85nGAiyvX5ozPXKyBtdqDk/XG+IgEOrW4AT9q+gEWTf0Xkz9HOhyjwCHo\nt6oxYQ2SNdQbNFX0EF4bb5ByA4yNdsCEMfpjL5Lg/FmEKWssWuKqZ0gagaHMZq9m\nodQsbAf3kYYpgshmOEVa3ZYpqk0rFcD3vbEXre6qa1yfql8WQMT5vXaJOLH2wVHh\nuNQbx/HsVdX4J7Re3/Gw14pBKaa7fbuMFXkUpS7Ci/BjtWBwcP2odyhmPc7eFjye\nplFTEt++s43Iprf26ZB5H5ObI/latwp6lnHPBw+LWfaVFJkThtV7UHNfjXzxt4Ah\ndgixew10VLSqzJ8ZRoYmaZrGTxWYzLAgHq/w/D8pVd80BB4UMn/o4T0o09OI+8Cl\nFRDG/zZ/AFzMIhw2D0IP\n=8pXm\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5bd71c58e6a42f04c5defcc4e2cdb68df6e10450\nparent dba52c10dccfdefa36c375422df4ca2a9e5af917\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779205259 +0200\ncommitter GitHub <noreply@github.com> 1779205259 +0200\n\nAdd markdown rendering for chat messages (#665)\n\n* Bridge whitenoise-markdown AST through flutter-rust-bridge\n\nBumps the whitenoise dep to 53fbbdd, which replaces the\n`Vec<SerializableToken>` content representation with a\n`whitenoise_markdown::Document` (CommonMark + GFM + nostr-extension\nAST). Field names `tokens` / `content_tokens` are retained for FFI\ncontinuity as the upstream author signaled.\n\n- rust/src/api/markdown.rs: new module mirroring every AST node\n  (Document, Block, Inline, ListItem, ListKind, Alignment,\n  CodeBlockKind, AutolinkKind, NostrEntity, NostrHrp, TableCell) as\n  FRB-friendly types, with From impls and 24 unit tests.\n- rust/src/api/messages.rs: SerializableToken removed; tokens and\n  content_tokens retyped to MarkdownDocument.\n- rust/src/api/groups.rs: add disappearing_message_secs: None to\n  NostrGroupConfigData / NostrGroupDataUpdate (incidental upstream\n  change pulled in by the rev bump).\n- Regenerated FRB bindings — recursive AST bridged cleanly as Dart\n  sealed classes.\n- lib/screens/chat_raw_debug_screen.dart: rewrote the token-dump\n  section as a recursive AST pretty-printer.\n- 12 test fixtures: tokens/contentTokens fixtures retyped.\n\nNo new rendering yet — content is still rendered as plain text by\nWnMessageBubble; the parsed AST sits unused on ChatMessage until the\nrenderer lands in the next commit.\n\n* Render markdown in chat message bubbles\n\nWires the parsed whitenoise_markdown::Document AST through to a new\nWnMarkdownText widget that renders inside ChatMessageBubble.\n\nRenderer (lib/widgets/wn_markdown_text.dart, 480 lines):\n- Faithful AST walk: every Block (Paragraph, Heading, ThematicBreak,\n  CodeBlock, BlockQuote, List, Table, MathBlock) and every Inline\n  (Text, SoftBreak, HardBreak, Code, Emph, Strong, Strikethrough,\n  Link, Image, Autolink, Math, NostrMention, NostrUri) renders.\n- Task-list checkboxes for ListItem.checked = Some(...).\n- Table with per-column alignment, scrolls horizontally on overflow.\n- Inline images render as tappable '[image: alt]' text — no\n  in-bubble network image loads.\n- Math: source rendered as italic monospace (no LaTeX engine).\n- URL scheme allow-list: http, https, mailto, nostr, tel. Anything\n  else (javascript:, data:, file:, ...) gets no tap recognizer.\n- Highlight-query support: per-inline substring matching merged with\n  AST rendering, so search results show both markdown formatting and\n  highlight backgrounds in the same view.\n- HookWidget manages TapGestureRecognizer lifetimes via useRef +\n  useEffect cleanup (no StatefulWidget).\n\nIntegration (lib/widgets/wn_message_bubble.dart, chat_message_bubble.dart):\n- New `document` parameter on WnMessageBubble; `onLinkTap` /\n  `onNostrTap` callbacks.\n- Plain-text fast path: when the document is empty, or is a single\n  Paragraph whose inlines are only Text/SoftBreak/HardBreak, the\n  existing Text widget is used — plain messages render byte-identically\n  to before, preserving the inline-timestamp layout in _TextWithTimestamp.\n- Formatted messages route through WnMarkdownText; timestamp moves to\n  its own row below the content.\n- Deleted messages ignore the document.\n- ChatMessageBubble provides default tap handlers using url_launcher\n  (LaunchMode.externalApplication), guarded by isSafeMarkdownUrl.\n\nTests:\n- test/widgets/wn_markdown_text_test.dart (51 widget tests) covers\n  every Block and Inline variant, URL safety, highlight merging,\n  maxLines truncation, empty / edge cases.\n- test/widgets/wn_message_bubble_test.dart: 8 new tests for the\n  plain-text / markdown routing and callback wiring.\n- test/widgets/chat_message_bubble_test.dart: 3 new tests verifying\n  url_launcher integration (safe URL launches externally, javascript:\n  is silently dropped, nostr: URIs launch).\n- All 4487 tests pass. Coverage: 99.04%.\n\nKnown limitations (worth surfacing in QA):\n- Chat-list previews, reply quotes, and notifications still render\n  the raw message string — markdown syntax characters will appear\n  as literal text in those surfaces. This matches what most chat\n  apps do and Whitenoise gives us plain content there anyway.\n- Multi-block markdown messages move the timestamp to its own row;\n  plain-text and single-formatted-paragraph messages keep the inline\n  timestamp behavior.\n\n* Render SoftBreak as newline so user-typed line breaks survive\n\nThe CommonMark default for SoftBreak is a space, which is fine on the\nweb where authors hard-wrap source for readability and expect rendering\nto reflow. In a chat composer every Enter press produces an in-paragraph\nnewline, which the parser emits as SoftBreak — so the default would\ncollapse multi-line messages into one long visual line.\n\nThis matches what every chat app does (Slack, Telegram, Discord,\niMessage all map SoftBreak → newline). HardBreak already mapped to\nnewline; the two now share an arm.\n\nThe image-alt flattening helper (_flattenInlines) still emits a space\nfor SoftBreak — alt text shouldn't carry hard line breaks.\n\n* Render @npub mentions as underlined display name\n\nPer Vlad's design call: Nostr npub mentions should appear as the\nmentioned user's display name with an underline, not as a chip and not\nin link-blue. Other Nostr HRPs (note/nevent/nprofile/naddr/nrelay)\nstill render with the link-style fallback since they point to events,\nnot people.\n\n- WnMarkdownText: new `mentionDisplayName: String? Function(String hexPubkey)?`\n  callback. For each npub mention/URI the renderer decodes the bech32\n  to a hex pubkey via hexFromNpub() and asks the caller for a display\n  name. If resolved → '@DisplayName'. If unresolved or callback absent\n  → '@npub1abcdefgh…wxyz' truncated fallback. Style is the surrounding\n  text's color with TextDecoration.underline — mentions inherit the\n  bubble text color rather than the link color.\n- Plumbed through WnMessageBubble and ChatMessageBubble as a single\n  optional param at each layer; ChatScreen wires it to its existing\n  `presentName(getAuthorMetadata(hex))` cache. Mentions of message\n  authors resolve immediately; mentions of users not yet in the\n  metadata cache fall back to truncation until metadata loads (a\n  later follow-up can subscribe to mentioned pubkeys).\n- 3 new widget tests: resolved name, empty-name fallback, no-callback\n  fallback. 55 markdown tests pass. Coverage 99.03%.\n\n* Plumb mentionDisplayName into the long-press action menu\n\nWhen a user long-presses a message, the action menu re-renders the\nbubble inside MessageActionsModal — a separate widget tree from the\nchat list. The mentionDisplayName callback was not being forwarded to\nthat re-render, so @mentions fell back to truncated npubs in the\npreview while showing resolved names in the main chat. Wire it through\nMessageActionsScreen \\u2192 MessageActionsModal \\u2192 ChatMessageBubble.\n\n* Bump whitenoise-rs to 7577289f (bare-npub parsing)\n\nPicks up two commits on the markdown PR since 53fbbdd:\n\n  c4ef3d99  address review feedback\n              \\u2014 cosmetic-only: drops `#[cfg(feature = \"serde\")]`\n              gating (serde derives now unconditional), removes doc\n              references to deleted PLAN.md, internal scanner refactor.\n              Database path switches from re-deriving the AST on read\n              to reading from a persisted `content_tokens` column \\u2014\n              same observable behavior at the FFI boundary.\n\n  7577289f  bare npubs should also parse\n              \\u2014 the parser now recognizes bare `npub1\\u2026` strings as\n              `Inline::NostrMention` (previously only `@npub1\\u2026` and\n              `nostr:npub1\\u2026` worked). Restricted to the `npub` HRP\n              to avoid false positives on prose starting with\n              `note1\\u2026` / `nevent1\\u2026`. No AST shape change.\n\nNo bridge or renderer changes needed: our existing NostrMention/Npub\npath with the mentionDisplayName callback handles the new shape\nidentically.\n\n* Bump whitenoise-rs to f421a8ad (fix nested-blockquote misparse)\n\nSingle fast-forward commit on the markdown PR:\n\n  f421a8ad  fix bug with inner quotes inside quotes\n              \\u2014 trailing paragraphs after a blank \\`> >\\` line inside\n              a nested blockquote were escaping to the document root.\n              Verified by re-running the local AST dump on the user's\n              repro input: 'Trailing paragraph in inner quote.' now\n              sits as the third child of the inner BlockQuote, not as\n              document.blocks[0].\n\nNo FFI shape changes; bridge regen is format-noise only (handled by\ndart format).\n\n* Tapping an @npub mention opens the user's profile in a shade\n\nPer Vlad's design call. Previously, tapping a mention launched a\nnostr:<bech32> URI externally; that bounced users out to the OS and\nfelt out of place inside a chat.\n\nNew flow:\n- chat_message_bubble: when the renderer reports an Npub tap, decode\n  bech32 to hex and open UserProfileShade in-app. Non-npub Nostr URIs\n  (note/nevent/nprofile/naddr/nrelay) keep the external launchUrl\n  behavior \\u2014 those point to events, not people.\n- lib/screens/user_profile_shade.dart: new HookConsumerWidget pushed\n  via PageRouteBuilder with an opaque:false barrier. Wraps\n  WnUserProfileCard inside a WnSlate. Header navigates back with\n  Navigator.pop. For non-self users, a 'Start chat' button pops the\n  shade and routes to StartChatScreen. Copy actions surface as\n  SnackBars.\n- The shade drops input focus before opening (mirrors what chat_screen\n  does before MessageActionsScreen.show). Without this the chat list\n  snaps to the bottom on dismiss because the keyboard reappears and\n  resizes the viewport.\n- 7 new shade tests cover: card rendered, button shown/hidden by\n  isSelf, copy and copy-error snackbars, header dismiss, and the\n  start-chat button popping then routing via a stub GoRouter.\n- Updated chat_message_bubble tests: the npub tap test now asserts\n  launchUrl is NOT called; a new test exercises the non-npub\n  external-launch fallback.\n\n4498 tests pass. Coverage 99.03%.\n\n* Bump whitenoise-rs to 935683af (bare-URL autolinks + longer bech32)\n\nTwo fast-forward commits from f421a8ad:\n\n  dbd595b3  nostr bech32 are not limited to 90ch\n              \\u2014 lifts the bech32 length cap from BIP-173's 90 to 1024\n              per NIP-19, which explicitly waives 90 for TLV-encoded\n              nevent / naddr / nprofile entities with multiple relay hints.\n              Pure parser change.\n\n  935683af  add better bare-url parsing for whitenoise, http, https, tel, mailto\n              \\u2014 bare URLs now parse as Inline::Autolink for the schemes\n              http://, https://, mailto:, tel:, whitenoise://, and\n              whitenoise-staging://. Trailing punctuation excluded.\n              The opaque form 'whitenoise:foo' (no //) stays literal.\n\nNo AST shape change. Bare URLs flow through our existing autolink path.\nBridge regen is format-noise only.\n\nNote: my URL allow-list in wn_markdown_text.dart includes http, https,\nmailto, nostr, tel but not whitenoise(-staging). Bare whitenoise://\nlinks will render styled but tap is a no-op until that's extended.\n\n* Restyle @npub mentions: user color, bold, no @ prefix\n\nPer the latest design call (Vlad). Mentions now render with three\nproperties:\n\n- No '@' prefix.\n- Bold (FontWeight.w700).\n- Color seeded from the pubkey via AvatarColor.fromPubkey() \\u2014 same\n  palette the bubble already uses for sender names, so a mention of\n  someone reads in the same hue as their own messages in a group.\n\nUnderline is dropped \\u2014 color + bold is the new mention affordance.\n\nWhen hexFromNpub fails to decode (malformed bech32), the mention falls\nback to its surrounding text color so it stays bold but doesn't pretend\nto identify someone.\n\nTests updated: drop '@' from expected strings, replace underline\nassertions with FontWeight.w700 + per-pubkey color.\n\n* Bump whitenoise-rs to bb717d1c (content_tokens backfill migration)\n\nTwo fast-forward commits from 935683af:\n\n  6fae0178  fix stale comment\n  bb717d1c  backfill migration to reparse content_tokens with markdown parser\n\nThe migration adds m0044_reparse_content_tokens.rs in the whitenoise\ncrate. It runs once at app init and reparses any persisted\ncontent_tokens rows whose stored AST is older than the current parser\n(necessary now that the AST is persisted instead of re-derived on each\nread). All internal to whitenoise; no FFI surface change.\n\nThe only types.rs touch is a doc-comment update on\nChatMessage::content_tokens, removing the now-stale 'never persisted'\nsentence.\n\n* bump + just regenerate\n\n* Address review: rename MarkdownText, honor list 'tight' flag, stable test keys\n\nThree findings from PR review:\n\n1. Drop the 'Wn' prefix on MarkdownText.\n   Per CLAUDE.md, the 'Wn'/'wn_' prefix is for design-system widgets\n   that are presentational only and make no Rust API calls. This\n   widget calls hexFromNpub (Rust) for mention decoding, so it doesn't\n   belong in the design-system namespace.\n   - Renamed class WnMarkdownText -> MarkdownText.\n   - Renamed file lib/widgets/wn_markdown_text.dart -> markdown_text.dart.\n   - Renamed test file accordingly.\n   - Updated imports in chat_message_bubble, wn_message_bubble, and\n     both test files (66 references in total).\n\n2. Honor MarkdownBlock_List.tight.\n   The renderer previously destructured only kind and items and used a\n   fixed 4.h gap between list items, ignoring the tight flag the\n   parser emits. Now forwards tight to _buildList and picks a smaller\n   inter-item gap (2.h) for tight lists vs a larger one (8.h) for\n   loose lists, matching CommonMark semantics.\n\n3. Stable keys on task-list checkbox icons.\n   The two task-list rendering tests were keying off Icons.check_box\n   and Icons.check_box_outline_blank via find.byIcon, which is fragile\n   if the underlying Icon ever changes. Added Key('check_box') and\n   Key('check_box_outline_blank') to the renderer's checkbox Icon and\n   switched the tests to find.byKey.\n\nAll 4536 Flutter + 75 Rust tests pass. Coverage 99.05%.\n\n* Tap-to-open whitenoise:// links; unify mention/profile UI under Start Chat shade\n\n- Allow whitenoise:// and whitenoise-staging:// in markdown_text safe schemes\n  so taps on the Rust-emitted autolinks dispatch to the bubble handler.\n- whitenoise://chat/<id> routes through GoRouter; whitenoise://user/<npub>\n  and bare @npub mentions now open the Start New Chat menu as a shade.\n- Show a localized error dialog when a whitenoise:// URL fails to parse.\n- Make StartChatScreen shade-capable (transparent scaffold, scrollable\n  content) and remove the now-redundant UserProfileShade.\n\nCo-authored-by: nvk <797193+nvk@users.noreply.github.com>\n\n* Add @mention picker with rich input and npub display resolution\n\n- Typing `@` in a group chat opens a member picker driven by useGroupMembers;\n  selecting an entry inserts a styled `@DisplayName` token in the input.\n- MentionTextEditingController tracks mention spans, renders them in the\n  primary color via buildTextSpan, and exposes `messageText` so the wire\n  representation is the bare `@npub1...` form regardless of how it's\n  displayed.\n- Bare `@npub1...` strings typed or pasted into the input are auto-tracked:\n  if a name resolver is wired, they show as `@DisplayName`; otherwise they\n  truncate to `@npub1abcdefgh…wxyz` matching the receiver bubble.\n- chat_screen wires the resolver from getAuthorMetadata so mentions of users\n  outside the current group still display by name when we know them, while\n  the picker stays group-only.\n- useChatInput now uses MentionTextEditingController and saves\n  controller.messageText to drafts.\n\nAdapted from PR #659 (rich message rendering / mentions); the receiver-side\nmarkdown path on this branch already handles NostrMention inlines so no\nbubble changes were needed.\n\nCo-authored-by: erskingardner <202880+erskingardner@users.noreply.github.com>\n\n* fix jumpy cursor bug\n\n* coderabbit\n\n* strikethrough\n\n* render in reply content block thing\n\n* fmt\n\n* carrots for our rabbit, including THE GOLDEN CARROT\n\n* tests: cover mention-controller branches and bubble truncation path\n\nRestores coverage above the 99% gate after the markdown/mention/timestamp\nfixes. New cases:\n\n- insertMention shifts a later tracked mention via _TrackedMention.shift\n- buildTextSpan emits a leading text segment before a mention span\n- setMentionTargets snaps the cursor when it sat mid-URI\n- setMentionTargets handles a known URI that sits past existing text\n- _shiftMentions shifts a mention past a prefix insertion\n- _replaceBareNpubs preserves and remaps a later mention via\n  _shiftPastReplacements when a bare npub is inserted before it\n- IME composing-at-mention-boundary preservation + the non-composing\n  drop control case\n- A tight finite-height truncation path for _TextWithTimestamp\n\n* fix: synchronous recognizer disposal + permissive mention boundaries\n\nMarkdown link/nostr recognizers were being torn down via\naddPostFrameCallback. If the widget was removed before the next frame\n(Navigator.pop during scroll, hot reload, fast list rebuild), the\ncallback still ran but no longer had a clean owner. Switch to disposing\nthe previous frame's recognizers synchronously at the start of build,\nbefore assigning the new list. Unmount cleanup via useEffect stays.\n\nAdd a testWidgets that mounts a MarkdownText with a link, tears the\nsubtree down, pumps a follow-up frame, and asserts no exception is\nthrown. Use Flutter's experimentalLeakTesting + leak_tracker so any\nleaked TapGestureRecognizer surfaces a test failure.\n\nAlso:\n- _isMentionBoundary now accepts sentence punctuation (. , ; : ! ? ) ])\n  so '@npub1...!' / '@npub1...,' auto-truncate the way the Rust parser\n  already permits.\n- markdown_text's display-name resolver trims the returned name before\n  the empty-check, matching the controller's behavior and dropping\n  whitespace-only resolutions back to the truncated fallback.\n\n* fix: use theme color for markdown highlight fallback; move mention picker below images\n\nAddresses two review notes:\n\n1. r3261917942 (\"Use colors set in theme\") — markdown_text.dart:145.\n   The default highlightColor was Colors.yellow, a raw Material color\n   inconsistent with the rest of the codebase. Fall back to\n   context.colors.intentionInfoContent, which matches how\n   wn_message_bubble.dart already builds its highlight color when the\n   caller doesn't specify one.\n\n2. Mention picker UX — chat_screen.dart. When media attachments are\n   present the @-picker was being rendered above the entire input box,\n   pushing the image preview down. It now rides along inside the\n   attachment area, sitting below the image previews but still above\n   the text field. Without media it still appears above the input as\n   before. Two new chat-screen tests pin both branches in place,\n   asserting the picker's position relative to the media preview and\n   the input via getTopLeft / getBottomLeft.\n\n---------\n\nCo-authored-by: nvk <797193+nvk@users.noreply.github.com>\nCo-authored-by: erskingardner <202880+erskingardner@users.noreply.github.com>",
+        "verified_at": "2026-05-19T15:41:04Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/9b2d034d2f3c62d4a98e4bb5068312f9a1dbfc45",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/9b2d034d2f3c62d4a98e4bb5068312f9a1dbfc45",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/9b2d034d2f3c62d4a98e4bb5068312f9a1dbfc45/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dba52c10dccfdefa36c375422df4ca2a9e5af917",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/dba52c10dccfdefa36c375422df4ca2a9e5af917",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/dba52c10dccfdefa36c375422df4ca2a9e5af917"
+      }
+    ]
+  },
+  {
+    "sha": "dba52c10dccfdefa36c375422df4ca2a9e5af917",
+    "node_id": "C_kwDOQg6sZ9oAKGRiYTUyYzEwZGNjZmRlZmEzNmMzNzU0MjJkZjRjYTJhOWU1YWY5MTc",
+    "commit": {
+      "author": {
+        "name": "Pepi",
+        "email": "mariajosefinaalliende@gmail.com",
+        "date": "2026-05-19T14:17:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T14:17:33Z"
+      },
+      "message": "Enable leave group (#675)\n\n* chore: remove feature flag from use leave group hook\n\n* chore: remove feature flag from chat list tile\n\n* chore: remove feature flag provider\n\n* docs: update changelog",
+      "tree": {
+        "sha": "457aa9bcf5342a2b50c13e6971fb9dc52db2e769",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/457aa9bcf5342a2b50c13e6971fb9dc52db2e769"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/dba52c10dccfdefa36c375422df4ca2a9e5af917",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDHD9CRC1aQ7uu5UhlAAAEvEQAHWPmMgIKII+zAQ9NsTernSa\n3bTOF5IxNytiGOnKkMffdnBBnoxymoCSSqAST5XXSzThZrRTge85uW2pReZOKLfC\nprQEJRzb3Pug5pjPM8sJVBbuEsFJS1Ag4a8rZNlQRGUNMGyqE/M7wxTWZnRIaJhn\nu1o1om2TC5rhB5tRxDUgUPaGbjM6f7JAOYARLpK5rid5u+czo23fG4r2vOpfHxPL\nd0m0DnsL8BElFd/jHg0zmHPTnoaTFtf9KhGKXh/DkwdTTxsCk2XSPW52+yjA3BrO\nTsKy0reNMHmRK4hddzv0BCkFIsi/dex7A84sUWtCMHxnlJ62MsNkNoFl7ek00V/o\nCnfdzGFiWqT2Lg+oDf9tekoonV8MFJbAs57qiT6z1Ksj+WTeN3rkjsnJJVcQfqMZ\nzzj5/lsYfcgpyn3D2yKO3s7iT4eb70up3gK3fKnlCFmneNZ9s3oTiTwiW80SC06t\nWcpjSbFhxN07YYTDeJPG0558Lwyt1SjlYBIpa29yz0S+sYm0I5VSOzVLLbF+CIy5\ne1FHrbfO8sswb74Jh2cdzHwlykWhdgAhpjxYZWh/4UUL09r/IYS3dm1kevYvzGys\nHd2y4iAQoX285Sd6BcaWDBuIAX22laeOVuBDOFn2Wq+mgogiHg1tX5HQ2FH/5OQS\noDjpt/copHskCcRI71xG\n=UtUS\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 457aa9bcf5342a2b50c13e6971fb9dc52db2e769\nparent 6c96e42837399c1c36cfbc678a654a96e5e082e7\nauthor Pepi <mariajosefinaalliende@gmail.com> 1779200253 -0400\ncommitter GitHub <noreply@github.com> 1779200253 -0400\n\nEnable leave group (#675)\n\n* chore: remove feature flag from use leave group hook\n\n* chore: remove feature flag from chat list tile\n\n* chore: remove feature flag provider\n\n* docs: update changelog",
+        "verified_at": "2026-05-19T14:17:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/dba52c10dccfdefa36c375422df4ca2a9e5af917",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/dba52c10dccfdefa36c375422df4ca2a9e5af917",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/dba52c10dccfdefa36c375422df4ca2a9e5af917/comments",
+    "author": {
+      "login": "pepina-dev",
+      "id": 30674444,
+      "node_id": "MDQ6VXNlcjMwNjc0NDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30674444?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pepina-dev",
+      "html_url": "https://github.com/pepina-dev",
+      "followers_url": "https://api.github.com/users/pepina-dev/followers",
+      "following_url": "https://api.github.com/users/pepina-dev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pepina-dev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pepina-dev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pepina-dev/subscriptions",
+      "organizations_url": "https://api.github.com/users/pepina-dev/orgs",
+      "repos_url": "https://api.github.com/users/pepina-dev/repos",
+      "events_url": "https://api.github.com/users/pepina-dev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pepina-dev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6c96e42837399c1c36cfbc678a654a96e5e082e7",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/6c96e42837399c1c36cfbc678a654a96e5e082e7",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/6c96e42837399c1c36cfbc678a654a96e5e082e7"
+      }
+    ]
+  },
+  {
+    "sha": "6c96e42837399c1c36cfbc678a654a96e5e082e7",
+    "node_id": "C_kwDOQg6sZ9oAKDZjOTZlNDI4MzczOTljMWMzNmNmYmM2NzhhNjU0YTk2ZTVlMDgyZTc",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-05-19T08:43:23Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T08:43:23Z"
+      },
+      "message": "chore(deps): bump flutter_secure_storage (#674)\n\nBumps the flutter-dependencies group with 1 update: [flutter_secure_storage](https://github.com/mogol/flutter_secure_storage).\n\n\nUpdates `flutter_secure_storage` from 10.1.0 to 10.2.0\n- [Release notes](https://github.com/mogol/flutter_secure_storage/releases)\n- [Commits](https://github.com/mogol/flutter_secure_storage/compare/v10.1.0...v10.2.0)\n\n---\nupdated-dependencies:\n- dependency-name: flutter_secure_storage\n  dependency-version: 10.2.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "6616bdf4bb0c944a6ba06add88e9b31758f8618f",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/6616bdf4bb0c944a6ba06add88e9b31758f8618f"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/6c96e42837399c1c36cfbc678a654a96e5e082e7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDCKrCRC1aQ7uu5UhlAAAPS0QAEme4F0K//YF1ZQdxaDtx6NH\nxrdBByzl+45WoqZI52L1vSYoUt4Gbpm2sS8tQp1Zfm0PYTfh7ZX3o4AswJ7hHHW8\nOAJviyYj2207CdUyumwNM1FqFZVifCLxp32DZAx3PLtDp7BXke9pQjaHHfFBuUjV\nllXhawXPD44cm5kJcVQJrjCN0lMFXvdWywjk8S7xerev9BD9v5SpLqxrAKwrIFhZ\nWgcjI/nKaytfrh0lOY1NDXpQBfp9ruz/Wh3pswzMMV5vnj0C+rMI88Jx2Ph6Vlce\nWCIhoz9BTx8a1WmYw9L73CaTL+m683XUoUIWK5SEy7t7lHShMXaNisCrR3axTUkG\nvoHt4DjXCDpbqMPh0qHLX66U01Bp70D99l/MWLBabStF0Y1HsGv4A8R3Jrhd5Ldw\nR88zIRngCPi1RXld5wmAvIxhfAfGoj3moBscCJj2Au0jo61FJ/56fZ4Mtgv5wSij\nIXP3P0/7riguJsfo71Q5aUIBhA2Jg3J8RiBk/+FFbM+kr1JJSqB4LtwEwT+eutHN\nGKqHhMK58L28LfDB4T0TTG94xp0Yn6Du8jz678GiOdlW1uR5BRKMR2KyYtCWBWD4\n2Yxi7Vzd6bgshXB2vB5SXX8hL2RA+hc9eciuUp1RBSQLxPPuwZcqib4VCa/hJe8C\nFz1bhe7v+7j0mUsHHuHw\n=YH2K\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6616bdf4bb0c944a6ba06add88e9b31758f8618f\nparent 418fca8beb3ac1d2e8c630fc696d55c5a0544bde\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1779180203 +0200\ncommitter GitHub <noreply@github.com> 1779180203 +0200\n\nchore(deps): bump flutter_secure_storage (#674)\n\nBumps the flutter-dependencies group with 1 update: [flutter_secure_storage](https://github.com/mogol/flutter_secure_storage).\n\n\nUpdates `flutter_secure_storage` from 10.1.0 to 10.2.0\n- [Release notes](https://github.com/mogol/flutter_secure_storage/releases)\n- [Commits](https://github.com/mogol/flutter_secure_storage/compare/v10.1.0...v10.2.0)\n\n---\nupdated-dependencies:\n- dependency-name: flutter_secure_storage\n  dependency-version: 10.2.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "verified_at": "2026-05-19T08:43:23Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/6c96e42837399c1c36cfbc678a654a96e5e082e7",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/6c96e42837399c1c36cfbc678a654a96e5e082e7",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/6c96e42837399c1c36cfbc678a654a96e5e082e7/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "418fca8beb3ac1d2e8c630fc696d55c5a0544bde",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/418fca8beb3ac1d2e8c630fc696d55c5a0544bde",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/418fca8beb3ac1d2e8c630fc696d55c5a0544bde"
+      }
+    ]
+  }
+]
