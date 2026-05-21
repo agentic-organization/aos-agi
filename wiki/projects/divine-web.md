@@ -33,6 +33,8 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/divinevideo/divine-web/`) shows **2 issues updated** (no new commits): #361 family + age-review + kids pages by [[people/notthatkindofdrliz]], and #362 moderation e/p tag report type mapping to NIP-56 by jalcine.
 
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/divinevideo/divine-web/`) shows **2 commits** by [[people/dsanich]] and [[people/jalcine]]: kind 0 metadata merge extraction with tests (#293), and NIP-56 compliance for kind:1984 moderation report types with regression tests (#362). **8 issues updated**.
+
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?
 - Runtime deployment: where is this service hosted?

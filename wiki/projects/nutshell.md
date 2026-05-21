@@ -42,6 +42,7 @@ One of the two canonical mint stacks alongside [[projects/mintd]] (CDK/Rust).
 - 2026-05-11: Added contributors section from `gh api repos/cashubtc/nutshell/contributors` and `data/raw/github/daily/2026-05-11/cashubtc/nutshell/commits-since.json`.
 - 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/nutshell/`) shows **3 issues updated** (no new commits in the 24h window). Issues cover: fixes for SIG_ALL interaction with P2PK and HTLC (draft PR), a variety of NUT-10 P2PK/HTLC problems, and NUT-29 batched minting.
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/nutshell/`) shows **1 commit** by [[people/a1denvalu3]]: merge PR #904 for bech32m encoded payments.
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/cashubtc/nutshell/`) shows **3 commits** by KvngMikey, Codepocketdev, and [[people/a1denvalu3]]: remove stale TODO and confirm HTLC pubkey signing already wired up (#979), update .env.example for rate limiting (#996), and add Redis caching server to docker-compose (#990). **11 issues updated**.
 
 ## Open questions
 - Funding model and activity cadence.

@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+    "node_id": "C_kwDOQYdZgdoAKDk0OGU4ZGEzYjAwYzQ4ZTllMzI1Y2YzYWNiMjI1NGMzMzRlNGJiODQ",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-20T23:56:51Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T23:56:51Z"
+      },
+      "message": "feat: add DELETE to validActions on /api/v1/moderate (#147)\n\n* feat: add DELETE to validActions on /api/v1/moderate\n\nBLOSSOM_ACTION_MAP already maps DELETE -> DELETE. The only thing\nblocking DELETE requests was this validation array.\n\n* fix(api): normalize delete moderation action\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "c039507fc3556f9f5c3585f00332e704270368f4",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/c039507fc3556f9f5c3585f00332e704270368f4"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDkpDCRC1aQ7uu5UhlAAA/7oQADJ0QxiDt11D/Gn9ERKiLi1i\nWppSoO4xuD9CCggxSAn6J0Sq4cBKAqK8RjVRzovsY9enY5lWy9cRjMo8sSyE0ihI\nVE63c9qFokfGugocY1F2nrx3Cs8++Y3s3DQFdZiUss4vSX6Cx9qQm0tMvDmipS6U\n7Wb4Md9rfiUp0kheh79nab/TzYZmO394+YnSD5SQloM7Go6xEv+DA6YY8lpXrthn\nQLSWto8KvtHv/L4MVUk4Ln9/dOTxEN+xZalQBIYAJ1g0xLXcwLogCuzHwB7v/Frf\nT8c/rWMUdjQ08VHZB6ZXvdR0s1RGnxty9WbVi4WylBF3XPDZ5XUQpp4m1iJzggAN\neKpOCQkLtgVgFxaWsnb2F13z+3nZwfqfiZnVl2z0VmQetf29q0mg3/Y1IgPkYyRt\n2X8t6fkzlOYFCvGG43MyP9qSukM9fpOuGARTlCa9UhNNnSYWdKtTIqEZibpyOPks\nEFhsYB3tr1AF/VEpw83Aiji5xv9FPhtUWfVvtESn1FnZHCwT1e5zKUDfhy9ZmwOt\nFZ365wIkBDe0rayduQSF7xGfOBnnmupv3AZSpV0NSLdgyO5alYxGjKdMsVVW8DM8\nUUNZwaP1/1wWrmRfJjchVsZA90R5fa9sx4CszW8nf8vjONMMMN5bH2IZucDcwxW0\n23wCIrJHy/EzccPw45VO\n=UEaD\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c039507fc3556f9f5c3585f00332e704270368f4\nparent 70b8d2fa615620c1ef33861d0d015398595643d6\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779321411 -0400\ncommitter GitHub <noreply@github.com> 1779321411 -0400\n\nfeat: add DELETE to validActions on /api/v1/moderate (#147)\n\n* feat: add DELETE to validActions on /api/v1/moderate\n\nBLOSSOM_ACTION_MAP already maps DELETE -> DELETE. The only thing\nblocking DELETE requests was this validation array.\n\n* fix(api): normalize delete moderation action\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-20T23:56:51Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/948e8da3b00c48e9e325cf3acb2254c334e4bb84/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "70b8d2fa615620c1ef33861d0d015398595643d6",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/70b8d2fa615620c1ef33861d0d015398595643d6",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/70b8d2fa615620c1ef33861d0d015398595643d6"
+      }
+    ]
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "f0e933e5dd0da535c82afdc7c29804860e13c12c",
+    "node_id": "C_kwDOQjhVC9oAKGYwZTkzM2U1ZGQwZGE1MzVjODJhZmRjN2MyOTgwNDg2MGUxM2MxMmM",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-21T00:18:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T00:18:08Z"
+      },
+      "message": "feat: realign moderation actions with explicit delete and age review workflows (#78)\n\n* feat: add DELETE action type and NIP-09 kind 5 publishing helper\n\n- Add publishKind5Deletion to nip86.ts: constructs and publishes a\n  kind 5 deletion request event from the admin key\n- Add DELETE to handleModerateMedia action union type\n- 3 new tests for kind 5 publishing (success, relay error, network error)\n\n* feat: add /api/bulk-moderate endpoint and age review config routes\n\n- bulk-moderate.ts: server-side iteration for age-restrict-all,\n  un-age-restrict-all, and delete-all operations on a pubkey\n- Routes /api/age-review/config GET/PUT for auto-delete toggle\n- WebSocket relay query for event enumeration, imeta tag parsing\n  for media hash extraction from video events (kind 34235/34236)\n- 9 tests for validation, hash extraction, and deduplication\n\n* feat: wire age review transitions to bulk content actions with auto-delete config\n\n- Add age_review_config D1 table (key-value, auto_delete_on_deny default true)\n- getAgeReviewConfig / updateAgeReviewConfig exported from age-review.ts\n- State transitions fire bulk actions: restrict -> age-restrict-all,\n  clear -> un-age-restrict-all, deny -> delete-all (if auto-delete enabled)\n- Cron auto-close fires bulk delete on expired cases (if configured)\n- Bulk actions are non-critical side effects (try/catch, logged on failure)\n- 3 new config tests, existing 44 age-review tests still pass\n\n* feat: add DeleteConfirmDialog with two-click confirmation flow\n\nAlertDialog-based confirmation for destructive actions. Shows summary\non first click, executes on confirm. Supports pending state and\ncustom labels. 4 tests.\n\n* feat: add DELETE action, bulkModerate, and age review config to adminApi\n\n- Add DELETE to ModerationAction type\n- bulkModerate(), deleteMedia(), publishDeletionRequest() API methods\n- getAgeReviewConfig / updateAgeReviewConfig API methods\n- /api/publish-deletion worker route for NIP-09 kind 5 publishing\n- All new methods bound in useAdminApi hook\n\n* feat: composable EventActions component with media + event actions\n\nExtracts event-level and media-level action buttons into a reusable\ncomponent. Covers ban/restore, delete (banevent + NIP-09), block/unblock\nmedia, age restrict/remove restriction, delete media, and combined\ndelete event & media. Reversible actions use outline buttons, irreversible\nuse destructive with DeleteConfirmDialog confirmation.\n\n* feat: composable UserActions component with bulk operations\n\nUser-level actions: ban/unban user, bulk age-restrict all media, bulk\ndelete all content. Bulk actions hidden in age-review context (handled\nby case transitions instead). DeleteConfirmDialog for irreversible bulk\ndelete.\n\n* refactor: replace inline action buttons with EventActions and UserActions\n\nReportDetail drops from 2190 to 1123 lines by extracting event/media/user\nactions into composable components. Removes 8 mutations, 5 confirmation\ndialogs, verification state, and the reasonSelector. Keeps resolution\nactions (Reopen/Dismiss), BulkDeleteByKind, and Create Label inline.\n\n* feat: add EventActions to banned events list in Events tab\n\nReplaces standalone Unban button with full EventActions component on\nbanned events (restore + delete). Removes dead unbanEventMutation and\nits confirmation dialog.\n\n* feat: add UserActions with bulk operations to Users tab\n\nSelected user card now shows bulk age-restrict and bulk delete actions\nvia the UserActions component alongside existing ban/allow buttons.\n\n* feat: wire AgeReviewDetail with auto-delete confirmation and manual fallback\n\nDeny & Close shows DeleteConfirmDialog when auto_delete_on_deny is\nenabled. Terminal denied cases show UserActions for manual deletion\nwhen auto-delete is disabled.\n\n* feat: add AgeReviewSettings toggle for auto-delete on deny/expire\n\n* fix: resolve strict type errors for CI (tsconfig.app.json)\n\n* fix: replace `as any` with typed casts for eslint no-explicit-any\n\n* fix: address code review findings\n\n- Add short-form video kinds 21/22 to VIDEO_KINDS for bulk operations\n- Make AgeReviewEnv extend BulkModerateEnv, removing unsafe type cast\n- Add AgeReviewDetail tests for Deny & Delete vs Deny & Close paths\n- Remove duplicate ban button from UserManagement (UserActions handles it)\n- Use outline variant for reversible ban button to match convention\n\n* fix: audit log for unblock/unrestrict, delete summary text, apiRequest consistency\n\n- Add logDecision to unblockMediaMutation for audit trail on reversals\n- Update \"Delete All Content\" summary to mention events, not just media\n- Use apiRequest helper for updateAgeReviewConfig (add PUT to method union)\n\n* fix(worker): harden bulk moderation flows\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "1567c696e79c1ede3edf28b955498a7d946784ce",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/1567c696e79c1ede3edf28b955498a7d946784ce"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/f0e933e5dd0da535c82afdc7c29804860e13c12c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDk9ACRC1aQ7uu5UhlAAAyYUQAG6qei87z3PszzA9Na4nte8+\nQL5zpEV3k1E31Fz200mo8QGINNr7WvgWxFhQWsf/642APr9KdlT0Ucw15zN13U9v\nvAzMpccXRMy98W95xS1oQlTAm/hnQJMBMJ2vN2QxL+O+i0dcLBwxo1bN3kSi6Wpp\np70wL0+UAy5F7y/G87m1W1eVa67wDcUdFtvIr33/u4WHhEjFumguT5GtTeUO2gFz\n/lXHjcpV86+JdXv3OE1gR478/HkPjs+Fl4WegUaVwalFI1evalhVKiZgNa+VUCu1\ngiMG6KtWNj17jkK5XTww7Ysdpa+qsHH1RR2/TCJeRmFLsNluBCYq2CCZYx5+6e2s\nmNsYvwjBNuxOPUx2JsE+jgFgkmnwAYs3Ncj1Xua3knCP9wdI+prIdIs8IhgmgDvV\nRusEQrHe39hSG9mSyh46xTDFUx0Av3dvphY9Lk0300VJDGyoxC1F5J6VEZtswUhX\nDr0CRvwUEHK/Zm1LjX4P6N+/7+APWEljxMIHFVyqwq2gHnGKLV39rQe9aY6maj/E\nK69o6WGkk3WwYZwFswyBc71Clilsx5EyXCC5LmGI+K+dcvw/4y+tosNCVc+d6fRH\n4+qlmtkLq/VDUzoLAq8A674vNnS1yktMxs/7fjt6KpHTqMMuwXlRXFlf+usJPAQW\niNyA2lA7KkeJPZ8eSVaP\n=c6wP\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1567c696e79c1ede3edf28b955498a7d946784ce\nparent d80872600d4ce6f99ce9a947cce99c0c3c7fb02f\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779322688 -0400\ncommitter GitHub <noreply@github.com> 1779322688 -0400\n\nfeat: realign moderation actions with explicit delete and age review workflows (#78)\n\n* feat: add DELETE action type and NIP-09 kind 5 publishing helper\n\n- Add publishKind5Deletion to nip86.ts: constructs and publishes a\n  kind 5 deletion request event from the admin key\n- Add DELETE to handleModerateMedia action union type\n- 3 new tests for kind 5 publishing (success, relay error, network error)\n\n* feat: add /api/bulk-moderate endpoint and age review config routes\n\n- bulk-moderate.ts: server-side iteration for age-restrict-all,\n  un-age-restrict-all, and delete-all operations on a pubkey\n- Routes /api/age-review/config GET/PUT for auto-delete toggle\n- WebSocket relay query for event enumeration, imeta tag parsing\n  for media hash extraction from video events (kind 34235/34236)\n- 9 tests for validation, hash extraction, and deduplication\n\n* feat: wire age review transitions to bulk content actions with auto-delete config\n\n- Add age_review_config D1 table (key-value, auto_delete_on_deny default true)\n- getAgeReviewConfig / updateAgeReviewConfig exported from age-review.ts\n- State transitions fire bulk actions: restrict -> age-restrict-all,\n  clear -> un-age-restrict-all, deny -> delete-all (if auto-delete enabled)\n- Cron auto-close fires bulk delete on expired cases (if configured)\n- Bulk actions are non-critical side effects (try/catch, logged on failure)\n- 3 new config tests, existing 44 age-review tests still pass\n\n* feat: add DeleteConfirmDialog with two-click confirmation flow\n\nAlertDialog-based confirmation for destructive actions. Shows summary\non first click, executes on confirm. Supports pending state and\ncustom labels. 4 tests.\n\n* feat: add DELETE action, bulkModerate, and age review config to adminApi\n\n- Add DELETE to ModerationAction type\n- bulkModerate(), deleteMedia(), publishDeletionRequest() API methods\n- getAgeReviewConfig / updateAgeReviewConfig API methods\n- /api/publish-deletion worker route for NIP-09 kind 5 publishing\n- All new methods bound in useAdminApi hook\n\n* feat: composable EventActions component with media + event actions\n\nExtracts event-level and media-level action buttons into a reusable\ncomponent. Covers ban/restore, delete (banevent + NIP-09), block/unblock\nmedia, age restrict/remove restriction, delete media, and combined\ndelete event & media. Reversible actions use outline buttons, irreversible\nuse destructive with DeleteConfirmDialog confirmation.\n\n* feat: composable UserActions component with bulk operations\n\nUser-level actions: ban/unban user, bulk age-restrict all media, bulk\ndelete all content. Bulk actions hidden in age-review context (handled\nby case transitions instead). DeleteConfirmDialog for irreversible bulk\ndelete.\n\n* refactor: replace inline action buttons with EventActions and UserActions\n\nReportDetail drops from 2190 to 1123 lines by extracting event/media/user\nactions into composable components. Removes 8 mutations, 5 confirmation\ndialogs, verification state, and the reasonSelector. Keeps resolution\nactions (Reopen/Dismiss), BulkDeleteByKind, and Create Label inline.\n\n* feat: add EventActions to banned events list in Events tab\n\nReplaces standalone Unban button with full EventActions component on\nbanned events (restore + delete). Removes dead unbanEventMutation and\nits confirmation dialog.\n\n* feat: add UserActions with bulk operations to Users tab\n\nSelected user card now shows bulk age-restrict and bulk delete actions\nvia the UserActions component alongside existing ban/allow buttons.\n\n* feat: wire AgeReviewDetail with auto-delete confirmation and manual fallback\n\nDeny & Close shows DeleteConfirmDialog when auto_delete_on_deny is\nenabled. Terminal denied cases show UserActions for manual deletion\nwhen auto-delete is disabled.\n\n* feat: add AgeReviewSettings toggle for auto-delete on deny/expire\n\n* fix: resolve strict type errors for CI (tsconfig.app.json)\n\n* fix: replace `as any` with typed casts for eslint no-explicit-any\n\n* fix: address code review findings\n\n- Add short-form video kinds 21/22 to VIDEO_KINDS for bulk operations\n- Make AgeReviewEnv extend BulkModerateEnv, removing unsafe type cast\n- Add AgeReviewDetail tests for Deny & Delete vs Deny & Close paths\n- Remove duplicate ban button from UserManagement (UserActions handles it)\n- Use outline variant for reversible ban button to match convention\n\n* fix: audit log for unblock/unrestrict, delete summary text, apiRequest consistency\n\n- Add logDecision to unblockMediaMutation for audit trail on reversals\n- Update \"Delete All Content\" summary to mention events, not just media\n- Use apiRequest helper for updateAgeReviewConfig (add PUT to method union)\n\n* fix(worker): harden bulk moderation flows\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-21T00:18:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/f0e933e5dd0da535c82afdc7c29804860e13c12c",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/f0e933e5dd0da535c82afdc7c29804860e13c12c",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/f0e933e5dd0da535c82afdc7c29804860e13c12c/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d80872600d4ce6f99ce9a947cce99c0c3c7fb02f",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/d80872600d4ce6f99ce9a947cce99c0c3c7fb02f",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/d80872600d4ce6f99ce9a947cce99c0c3c7fb02f"
+      }
+    ]
+  },
+  {
+    "sha": "d80872600d4ce6f99ce9a947cce99c0c3c7fb02f",
+    "node_id": "C_kwDOQjhVC9oAKGQ4MDg3MjYwMGQ0Y2U2Zjk5Y2U5YTk0N2NjZTk5YzBjM2M3ZmIwMmY",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-20T15:04:18Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T15:04:18Z"
+      },
+      "message": "feat: create Zendesk ticket on age review restriction (#76)\n\n* feat: create Zendesk ticket on age review restriction, sync deadline field\n\nWhen a moderator restricts an account, create an internal Zendesk ticket\nso T&S has visibility before any parent email arrives. When the parent\nemail comes in later, update that ticket with the parent as requester\nand send the outreach email, avoiding duplicates.\n\nBoth ticket types set category/issue and a deadline custom field\n(ZENDESK_FIELD_AGE_REVIEW_DEADLINE, dormant until configured in\nZendesk admin). All Zendesk ops are non-critical side effects.\n\n* fix(age-review): clean up zendesk restriction flow\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "58b5502b9ae174c1589a811f529d49abea4b0431",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/58b5502b9ae174c1589a811f529d49abea4b0431"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/d80872600d4ce6f99ce9a947cce99c0c3c7fb02f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDc1yCRC1aQ7uu5UhlAAARSEQAHHPeTemgPvLx7QthYl2DLDG\nM8xyBYURtcFJhBbIomqF+/0EgY+omYgnLrfe1kF/A5tDhMRhooCQ9mRcrxqKd3hy\n9u5uneJxXsAsK3u0+b9+UVnSldy/BvdJcpPQJ0HdD5j4RLkf48O/ab1YKIxVMU1x\ne8M70rkJDnCfK8jYHR+NCmz9uktBVwDmeIz2EmxjKzWovbDHuo3+jHipRDFUk+t1\nIndOE08KcobIhoEyr/Xh/XUtUhfE/8Dgj/9AKxnrygQNB46CLtw44+6c643t5XLX\npwn/A+INNf32DkdWXhPRi9RNYqOUccbuYphbS5BjYMO9DVDOHnJrWC7NNNsWdKPS\nB4gAEjTL6AtGa78UWVmgygrYJwXz+UxJYJOj/IL1/i6yuQNlUzhhQSDMmiCb9Z0w\nIz1JfZcbojICcBomg0Fy8X19lnw7tIGcoxy+ihXygfv7pYWm7gTUw1WqCXofFJ5i\nHs/GOZa7uAVDfBwDcvRGICTvq4ksnx0OvCVEuQGyQ3kJTXAugKYV4nf/1x2Y9jiY\n1/wIGlW84eNsAaUAJAoDmDabObtFzkfg8MUFQXJQh+phMlxIohtPDhh4Y6mqZtXX\nOmB26cq2UV2MnV7Lat6PKVimz0D4wy7Vh1KYF5GLu/1J0dQbogaKDnsZVmPY4wZC\nqBbyOXgAlUWLKgASjRcL\n=3KBY\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 58b5502b9ae174c1589a811f529d49abea4b0431\nparent 344791604c9df98ccdf0c092447983b4a2a1ff39\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779289458 -0400\ncommitter GitHub <noreply@github.com> 1779289458 -0400\n\nfeat: create Zendesk ticket on age review restriction (#76)\n\n* feat: create Zendesk ticket on age review restriction, sync deadline field\n\nWhen a moderator restricts an account, create an internal Zendesk ticket\nso T&S has visibility before any parent email arrives. When the parent\nemail comes in later, update that ticket with the parent as requester\nand send the outreach email, avoiding duplicates.\n\nBoth ticket types set category/issue and a deadline custom field\n(ZENDESK_FIELD_AGE_REVIEW_DEADLINE, dormant until configured in\nZendesk admin). All Zendesk ops are non-critical side effects.\n\n* fix(age-review): clean up zendesk restriction flow\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-20T15:04:19Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/d80872600d4ce6f99ce9a947cce99c0c3c7fb02f",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/d80872600d4ce6f99ce9a947cce99c0c3c7fb02f",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/d80872600d4ce6f99ce9a947cce99c0c3c7fb02f/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "344791604c9df98ccdf0c092447983b4a2a1ff39",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/344791604c9df98ccdf0c092447983b4a2a1ff39",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/344791604c9df98ccdf0c092447983b4a2a1ff39"
+      }
+    ]
+  },
+  {
+    "sha": "344791604c9df98ccdf0c092447983b4a2a1ff39",
+    "node_id": "C_kwDOQjhVC9oAKDM0NDc5MTYwNGM5ZGY5OGNjZGYwYzA5MjQ0Nzk4M2I0YTJhMWZmMzk",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-20T15:03:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T15:03:39Z"
+      },
+      "message": "feat: enrich age review UI with profile data (#75)\n\n* feat: enrich age review UI with profile data\n\nReplace raw hex pubkeys with UserIdentifier/UserDisplayName components\nin the Age Review tab. Moderators now see display names, NIP-05, and\navatars instead of opaque hex strings. Adds useAuthor mock to tests.\n\n* fix(age-review): preserve hex copy workflow\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "008b7cde5c371e2380cc5034f8d830869a255aeb",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/008b7cde5c371e2380cc5034f8d830869a255aeb"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/344791604c9df98ccdf0c092447983b4a2a1ff39",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDc1LCRC1aQ7uu5UhlAAAel0QAByzXAqe+yMmM5xF7D3AN2DH\n7YBFAPa8qb2W4vFyYgvzwEIr851CScCNgLrwvs0cHY1ec4Vj2jycjmE78hS6d7hU\nJUrl96ebq3WOQuUvNlcxLCZOiLLnCbyZuOQs627FDm86a7z2ApqFe1c3njV9ZuI8\n04Zn1bv9yQk0Ep/HR6arWhVY1VqVsyjr/jy7mA2q7i0191m70TkV80I1VLiprXQp\nj3RZocLyr+RjxlXplzBT4KzO9x0Yjny3UMLThWKnkCj9+7ksbQwYphAQz42fr2+q\nm167/pjjERnT0MpfiumfVR6HmgVps3i1KDOca0KZXIE6Bik4TaHoidt25pVRtWdX\negy+Hb1dHJWmr6WH1bcWWolPmgd+ETH4uqtzlltTQGNTQZ+EWHZSgM0NWl+WuA8Q\nFoOSPab8ZnxBpjGLjYWeG7foVaBaKZf0tf/7TD1oV5DLnzjfnviR10AX8VbL6ms5\nUF9RdBZYjk7vHtWVkl4ukkqq9H+JeTPs8qq8D7Q0vv5WWFTT3LGtlGXADoZKBq/D\nEO2+8P9DcsVniLqPyu4E9sTXkn78OE0Q0QKzSRQtZJf3RjOcYdxOwr6h+ApWBzzE\nIHRgCiP9N0zyQw88dUa520qFRZMZLb2MlV9jY5zuR/5SdBp4XhXA5e6Y+5zLnmVJ\nQAxpXdiorrKBl3NVjBMC\n=QBgm\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 008b7cde5c371e2380cc5034f8d830869a255aeb\nparent 17fd0dfe6c699a02fe537435d60e80c5c4121547\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779289419 -0400\ncommitter GitHub <noreply@github.com> 1779289419 -0400\n\nfeat: enrich age review UI with profile data (#75)\n\n* feat: enrich age review UI with profile data\n\nReplace raw hex pubkeys with UserIdentifier/UserDisplayName components\nin the Age Review tab. Moderators now see display names, NIP-05, and\navatars instead of opaque hex strings. Adds useAuthor mock to tests.\n\n* fix(age-review): preserve hex copy workflow\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-20T15:03:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/344791604c9df98ccdf0c092447983b4a2a1ff39",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/344791604c9df98ccdf0c092447983b4a2a1ff39",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/344791604c9df98ccdf0c092447983b4a2a1ff39/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "17fd0dfe6c699a02fe537435d60e80c5c4121547",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/17fd0dfe6c699a02fe537435d60e80c5c4121547",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/17fd0dfe6c699a02fe537435d60e80c5c4121547"
+      }
+    ]
+  }
+]

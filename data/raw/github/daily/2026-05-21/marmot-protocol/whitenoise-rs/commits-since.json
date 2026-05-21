@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "062a6b4b7b0bf2a9d7f81c6154b49667643ad516",
+    "node_id": "C_kwDOMvLjydoAKDA2MmE2YjRiN2IwYmYyYTlkN2Y4MWM2MTU0YjQ5NjY3NjQzYWQ1MTY",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-20T10:31:35Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T10:31:35Z"
+      },
+      "message": "Add foreground resume catch-up and snapshot refresh handling (#843)\n\n* Add foreground resume catch-up primitive\n\n* Address foreground catch-up review feedback\n\n* Address foreground catch-up follow-up review",
+      "tree": {
+        "sha": "ce7e6a88911446089de3bb30d1a6c48b4a523f93",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/ce7e6a88911446089de3bb30d1a6c48b4a523f93"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/062a6b4b7b0bf2a9d7f81c6154b49667643ad516",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDY2HCRC1aQ7uu5UhlAAAS6gQAAdN2dUQZohB2tEu3zeme7r9\nIocsaZ3ZzGmBFcBStnIZ9/2h4QJwFj/OWxrqDblU6qLkqa7VnK+3CPuaAtVIWNAn\nq02WMWFS10hp5E86M7f5a5A0zrs/lXTjvrvDVk5/VDXWkQyeZTqGnQm21o5Ax35d\nyJVDxumHkFAnHqep1w9YEakF0ASeFogtXw4WXIkLV5BSos1jH4ZmJWU6fXK4sBlj\n6v5ijrWjmyy5ISuR5uT0zH1gdGrkCklJowzDlWor7UHG2zkpkACW51ro7kxO7Gkz\nczkMlELToDnGks51hEeSXdkiiC1OTLhxHGrY9NE4c3EfLMzIVSY2xyhsCywGdp8Z\nRZ8VsjJIx1cCIFdlr7zXEFgQfw7hylHc7qUrczISRaw7/rt4oK9iRqTWWW7sMEsr\n3InU2jMXLqI3WIorBAVKKgEgCVn3kmYthnVvAROUJwhcPjdHqt5mrW41yXxTn3PI\nDuKUy9VtefMpKXPAewDc22+b1ew+J3IyHrkAaVmOwbXH4XukAr8TeFsPym8D1xQK\n3kBAry0686WKYdMykc0eLuxesUBFOelIW/S9vvGMOeyF/ZuQntdrQnVaJcWspX+y\nownxo5aVcCaVLNrtuzVQodvfJfu171HjcAbM+1HaQCm5OwTS7HEoddTBC8vtdJVW\ndGdJiArQwiTRuEtrXa7M\n=0YB5\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ce7e6a88911446089de3bb30d1a6c48b4a523f93\nparent fdbbf25a5bc32d39890417b65bb194226e0b0564\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1779273095 +0200\ncommitter GitHub <noreply@github.com> 1779273095 +0200\n\nAdd foreground resume catch-up and snapshot refresh handling (#843)\n\n* Add foreground resume catch-up primitive\n\n* Address foreground catch-up review feedback\n\n* Address foreground catch-up follow-up review",
+        "verified_at": "2026-05-20T10:31:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/062a6b4b7b0bf2a9d7f81c6154b49667643ad516",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/062a6b4b7b0bf2a9d7f81c6154b49667643ad516",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/062a6b4b7b0bf2a9d7f81c6154b49667643ad516/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fdbbf25a5bc32d39890417b65bb194226e0b0564",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/fdbbf25a5bc32d39890417b65bb194226e0b0564",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/fdbbf25a5bc32d39890417b65bb194226e0b0564"
+      }
+    ]
+  },
+  {
+    "sha": "fdbbf25a5bc32d39890417b65bb194226e0b0564",
+    "node_id": "C_kwDOMvLjydoAKGZkYmJmMjVhNWJjMzJkMzk4OTA0MTdiNjViYjE5NDIyNmUwYjA1NjQ",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-20T08:44:21Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T08:44:21Z"
+      },
+      "message": "[codex] Backfill canonical key packages during maintenance (#842)\n\n* Backfill canonical key packages during maintenance\n\n* Wait for key package twins in scheduler test\n\n* Use single pass key package pair check\n\n* Use match for key package pair check\n\n* Cover key package maintenance helpers",
+      "tree": {
+        "sha": "9a7daa8148b3c5b93d33e8f26a8706391f2c95e4",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/trees/9a7daa8148b3c5b93d33e8f26a8706391f2c95e4"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/git/commits/fdbbf25a5bc32d39890417b65bb194226e0b0564",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDXRlCRC1aQ7uu5UhlAAA00kQAEeHV03Iau9fOVLmr7iRcVjx\nLzpwxSL8hr7bZQxugXFTEAn4vdSnka26A4p+uwkHDCq9BNrtHmOQ1yBYbwvafUcI\nUsWglWQoCctIF5x+TMMhn95YIlYQLNoLsWmo8DTRlhg+NQsxJoxdF44ZhUs/Dw7C\nRH5ogz8CFsCad6Fy3Tz7aYlsudaKNCHyjA+4nBYNjMSN8ZptnnoqaXBu4SAYmsd5\nxxy2qng179695WQTwbHwiSZl9XwzFNHlmWtxezMVPbb0kkzxZF57TEwLkTMNv1Al\nbQYsQ8btxiVwFnPYEZHc8v9GEWBQJLyQrYppLyv6oJY9fcCQLQxGanMjGqal+XHM\nA46B1DaRclmJfrm3tILGbKfXB/xiGoUvqDypWxebhN7MtF5WPz0EGVQbLy5IgAPA\nfMFp3CXnUcxYj0Cjmoa7AMdXh/lxx9bc5eP0qZOlsONtVZZKrXOklELFViA1mNL6\nO1lON1Rnb05MpKMBte9Wj54WUkTwMriW5+dswLN7OCf4QEFAkXAqFRLN4hOF9tNP\nCiTGDDBSdfIjtNJ1f/1iD7iqStzEJqzcRQLwAuBq5QLhHz5oaUZoD9+Wplpa+rvE\nYnJmf5oOKuZyXjVzW2f24hqNrN/c37qBPkGlKpQ/Qv3L4GweuAELnmewaUehrPvI\nkEzLfDZ+5gRgSn2oEPWN\n=GqHD\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9a7daa8148b3c5b93d33e8f26a8706391f2c95e4\nparent a44d213694e81a51148a15b3acebf706596fd40f\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1779266661 +0200\ncommitter GitHub <noreply@github.com> 1779266661 +0200\n\n[codex] Backfill canonical key packages during maintenance (#842)\n\n* Backfill canonical key packages during maintenance\n\n* Wait for key package twins in scheduler test\n\n* Use single pass key package pair check\n\n* Use match for key package pair check\n\n* Cover key package maintenance helpers",
+        "verified_at": "2026-05-20T08:44:22Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/fdbbf25a5bc32d39890417b65bb194226e0b0564",
+    "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/fdbbf25a5bc32d39890417b65bb194226e0b0564",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/fdbbf25a5bc32d39890417b65bb194226e0b0564/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a44d213694e81a51148a15b3acebf706596fd40f",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/commits/a44d213694e81a51148a15b3acebf706596fd40f",
+        "html_url": "https://github.com/marmot-protocol/whitenoise-rs/commit/a44d213694e81a51148a15b3acebf706596fd40f"
+      }
+    ]
+  }
+]

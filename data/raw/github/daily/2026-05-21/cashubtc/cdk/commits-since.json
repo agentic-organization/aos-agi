@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "bc7e441ef2fc4cb0d57b84c4757ee023704c922f",
+    "node_id": "C_kwDOJbajnNoAKGJjN2U0NDFlZjJmYzRjYjBkNTdiODRjNDc1N2VlMDIzNzA0YzkyMmY",
+    "commit": {
+      "author": {
+        "name": "Dario",
+        "email": "zeugmaster@protonmail.com",
+        "date": "2026-05-18T09:08:53Z"
+      },
+      "committer": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-20T20:58:31Z"
+      },
+      "message": "feat(payment-processor): propagate mint quote_id to backend\n\nAdds the mint's QuoteId to the three OutgoingPaymentOptions struct variants\nso custom payment-method backends can deterministically correlate their\n`get_payment_quote` and `make_payment` calls for the same melt.\n\nToday, the gRPC payment-processor proto carries no link between those two\ncalls for the same melt: a backend's `get_payment_quote` returns a\nPaymentQuoteResponse whose `request_lookup_id` the mint stores on the quote,\nbut the eventual `make_payment` receives an OutgoingPaymentOptions with\nneither the stored lookup_id nor the mint's quote_id (`from_melt_quote_with_fee`\nin cdk-common drops `extra_json` and has no quote_id field). bolt11/bolt12\nbackends are insulated by the payment_hash / offer being intrinsically\nderivable from the invoice in both calls. Custom backends have no such\nanchor, and have to fabricate a derivation — typically hashing `request` —\nwhich forces the wallet to make `request` unique per melt. That's awkward\nfor any custom rail whose \"request\" doesn't naturally carry uniqueness\n(branch tickets, account IDs, free-text references). With `quote_id`\nplumbed through, the backend has the same stable key the mint uses\neverywhere else, so correlation is trivial.\n\nChanges:\n- cdk-common::payment: add `quote_id: QuoteId` to Bolt11/Bolt12/Custom\n  OutgoingPaymentOptions structs. Propagate it in `from_melt_quote_with_fee`\n  from `melt_quote.id`.\n- cdk::mint::melt: pre-generate the quote_id before each `get_payment_quote`\n  call (bolt11, bolt12, custom paths) and pass it both to the backend and to\n  `MeltQuote::new`, replacing the previous implicit auto-generation.\n- payment_processor.proto: add required `string quote_id` to\n  Bolt11/Bolt12/CustomOutgoingPaymentOptions and PaymentQuoteRequest.\n  Field-numbers appended (5/6/7/6) to preserve wire compatibility with the\n  existing fields.\n- cdk-payment-processor server/client: serialize/deserialize quote_id\n  directly (no Option wrapping). Empty/invalid values surface as\n  `Status::invalid_argument(\"Invalid quote_id: ...\")` from QuoteId::from_str.\n- cdk-common: bump PAYMENT_PROCESSOR_PROTOCOL_VERSION 2.0.0 -> 3.0.0. The\n  VersionInterceptor's strict equality check means any old mint/backend\n  pair will see a clear \"Protocol version mismatch\" at connection time\n  instead of misbehaving silently, which already covers the case where one\n  side doesn't know about quote_id.\n- cdk-integration-tests: extend the existing custom-payment-processor\n  fixture to capture the received quote_id, and add a regression test\n  asserting it matches the quote_id surfaced to the wallet.\n\nExisting bolt11/bolt12 backends (cln, lnd, lnbits, ldk-node, fake-wallet)\nneed no code changes — they continue to correlate via payment_hash / offer\nand simply ignore the new field on the OutgoingPaymentOptions struct they\nalready receive. The struct gains one field; consumers using non-exhaustive\nfield access (`opts.bolt11`, `opts.melt_options`, etc.) are unaffected.\nOnly consumers that exhaustively destructure the struct would need to add\nthe new field to their pattern.",
+      "tree": {
+        "sha": "fe1e135a7bfec52c87aa687e70a6f4bc21f0afa5",
+        "url": "https://api.github.com/repos/cashubtc/cdk/git/trees/fe1e135a7bfec52c87aa687e70a6f4bc21f0afa5"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk/git/commits/bc7e441ef2fc4cb0d57b84c4757ee023704c922f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQT7FBefWxISmS43iYljrW0Ju/53gwUCag4gdwAKCRBjrW0Ju/53\ng6NIAP4i5tXbQ+PG2xSZVEzNfhAauLD5TPCEwwGRe9CL6P5r4gEA7P+21oY6Rc/k\nlGdtRkY4HcHWaCUeoWmYkkYYBdmAqgI=\n=KiJ2\n-----END PGP SIGNATURE-----",
+        "payload": "tree fe1e135a7bfec52c87aa687e70a6f4bc21f0afa5\nparent 1abcb28e23f3fdf7d78872bda4b3f640aee8dcfd\nauthor Dario <zeugmaster@protonmail.com> 1779095333 +0200\ncommitter thesimplekid <tsk@thesimplekid.com> 1779310711 +0200\nchange-id yspklwksuouyplktqkkukwzqokvvoqzk\n\nfeat(payment-processor): propagate mint quote_id to backend\n\nAdds the mint's QuoteId to the three OutgoingPaymentOptions struct variants\nso custom payment-method backends can deterministically correlate their\n`get_payment_quote` and `make_payment` calls for the same melt.\n\nToday, the gRPC payment-processor proto carries no link between those two\ncalls for the same melt: a backend's `get_payment_quote` returns a\nPaymentQuoteResponse whose `request_lookup_id` the mint stores on the quote,\nbut the eventual `make_payment` receives an OutgoingPaymentOptions with\nneither the stored lookup_id nor the mint's quote_id (`from_melt_quote_with_fee`\nin cdk-common drops `extra_json` and has no quote_id field). bolt11/bolt12\nbackends are insulated by the payment_hash / offer being intrinsically\nderivable from the invoice in both calls. Custom backends have no such\nanchor, and have to fabricate a derivation — typically hashing `request` —\nwhich forces the wallet to make `request` unique per melt. That's awkward\nfor any custom rail whose \"request\" doesn't naturally carry uniqueness\n(branch tickets, account IDs, free-text references). With `quote_id`\nplumbed through, the backend has the same stable key the mint uses\neverywhere else, so correlation is trivial.\n\nChanges:\n- cdk-common::payment: add `quote_id: QuoteId` to Bolt11/Bolt12/Custom\n  OutgoingPaymentOptions structs. Propagate it in `from_melt_quote_with_fee`\n  from `melt_quote.id`.\n- cdk::mint::melt: pre-generate the quote_id before each `get_payment_quote`\n  call (bolt11, bolt12, custom paths) and pass it both to the backend and to\n  `MeltQuote::new`, replacing the previous implicit auto-generation.\n- payment_processor.proto: add required `string quote_id` to\n  Bolt11/Bolt12/CustomOutgoingPaymentOptions and PaymentQuoteRequest.\n  Field-numbers appended (5/6/7/6) to preserve wire compatibility with the\n  existing fields.\n- cdk-payment-processor server/client: serialize/deserialize quote_id\n  directly (no Option wrapping). Empty/invalid values surface as\n  `Status::invalid_argument(\"Invalid quote_id: ...\")` from QuoteId::from_str.\n- cdk-common: bump PAYMENT_PROCESSOR_PROTOCOL_VERSION 2.0.0 -> 3.0.0. The\n  VersionInterceptor's strict equality check means any old mint/backend\n  pair will see a clear \"Protocol version mismatch\" at connection time\n  instead of misbehaving silently, which already covers the case where one\n  side doesn't know about quote_id.\n- cdk-integration-tests: extend the existing custom-payment-processor\n  fixture to capture the received quote_id, and add a regression test\n  asserting it matches the quote_id surfaced to the wallet.\n\nExisting bolt11/bolt12 backends (cln, lnd, lnbits, ldk-node, fake-wallet)\nneed no code changes — they continue to correlate via payment_hash / offer\nand simply ignore the new field on the OutgoingPaymentOptions struct they\nalready receive. The struct gains one field; consumers using non-exhaustive\nfield access (`opts.bolt11`, `opts.melt_options`, etc.) are unaffected.\nOnly consumers that exhaustively destructure the struct would need to add\nthe new field to their pattern.\n",
+        "verified_at": "2026-05-20T20:58:48Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk/commits/bc7e441ef2fc4cb0d57b84c4757ee023704c922f",
+    "html_url": "https://github.com/cashubtc/cdk/commit/bc7e441ef2fc4cb0d57b84c4757ee023704c922f",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk/commits/bc7e441ef2fc4cb0d57b84c4757ee023704c922f/comments",
+    "author": {
+      "login": "zeugmaster",
+      "id": 3989336,
+      "node_id": "MDQ6VXNlcjM5ODkzMzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "html_url": "https://github.com/zeugmaster",
+      "followers_url": "https://api.github.com/users/zeugmaster/followers",
+      "following_url": "https://api.github.com/users/zeugmaster/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zeugmaster/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zeugmaster/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zeugmaster/subscriptions",
+      "organizations_url": "https://api.github.com/users/zeugmaster/orgs",
+      "repos_url": "https://api.github.com/users/zeugmaster/repos",
+      "events_url": "https://api.github.com/users/zeugmaster/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zeugmaster/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1abcb28e23f3fdf7d78872bda4b3f640aee8dcfd",
+        "url": "https://api.github.com/repos/cashubtc/cdk/commits/1abcb28e23f3fdf7d78872bda4b3f640aee8dcfd",
+        "html_url": "https://github.com/cashubtc/cdk/commit/1abcb28e23f3fdf7d78872bda4b3f640aee8dcfd"
+      }
+    ]
+  }
+]

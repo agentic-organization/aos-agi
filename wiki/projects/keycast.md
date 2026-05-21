@@ -31,6 +31,7 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 ## History
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/divinevideo/keycast/`) shows **1 commit** and **2 issues updated**. Commit by [[people/dcadenas]]; issues include keycast-related auth work.
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/divinevideo/keycast/`) shows **1 commit** by [[people/mbradley]]: account-level suspension for under-16 age review (#235), gating signing and UCAN issuance on account status. **1 issue updated**.
 
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?

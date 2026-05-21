@@ -21,7 +21,8 @@ Key NUTs include the mandatory primitives (minting, melting via Lightning, BDHKE
 
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
-- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/nuts/`) shows **3 issues updated** (no new commits): #368 deterministic DLEQ nonce derivation (NUT-12) by [[people/robwoodgate]], #365 onchain payment method by [[people/thesimplekid]], #278 NUT10/NUT11 canonical serialization of secret by Toporin.
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/nuts/`) shows **3 issues updated** (no new commits in the 24h window): #368 deterministic DLEQ nonce derivation (NUT-12) by [[people/robwoodgate]], #365 onchain payment method by [[people/thesimplekid]], #278 NUT10/NUT11 canonical serialization of secret by Toporin.
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/cashubtc/nuts/`) shows **2 commits** by [[people/thesimplekid]] and [[people/callebtc]]: onchain payment method specification (#365) and reword fee_index block (#370). **4 issues updated**.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

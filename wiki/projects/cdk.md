@@ -31,6 +31,7 @@ The **Rust Cashu Development Kit** — wallet *and* mint logic in one library, w
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
 - 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/cdk/`) shows **1 commit** by [[people/thesimplekid]] ("fix: rust version job"). **13 issues updated** including Swift publication pipeline workflow, onchain BDK integration, `p2pk_signing_keys` in `SendOptions`, payment-processor mint `quote_id` propagation to backend.
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/cdk/`) shows **3 commits** by [[people/thesimplekid]]: "feat: ws connection limit", "fix: normalize payment method case for auth", and "feat: ensure auth keyset". **16 issues updated** including closing #1792 (multi-language bindings CI checks) and #1788 (Dart release process); open issue #1799 removes `clone` from Mint struct.
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/cashubtc/cdk/`) shows **1 commit** by [[people/zeugmaster]]: propagate mint `quote_id` through payment-processor backend so custom backends can correlate `get_payment_quote` and `make_payment` calls for the same melt (#1799). **14 issues updated**.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
