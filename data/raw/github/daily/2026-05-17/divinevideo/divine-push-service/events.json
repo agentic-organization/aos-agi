@@ -1,0 +1,1064 @@
+[
+  {
+    "id": "9549626332",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 19,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/19",
+        "id": 3696375929,
+        "number": 19,
+        "head": {
+          "ref": "codex/use-16core-runners-20260517164530",
+          "sha": "aae504ad92710ed00b86209638ceee5bcf0ea6d1",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1aa205ab76e617c8b334193a4b4d1387170f8126",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-17T04:48:21Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11961944854",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "ref": "codex/use-16core-runners-20260517164530",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/use-16core-runners-20260517164530",
+      "master_branch": "main",
+      "description": "Push notification service for diVine mobile app",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-17T04:48:19Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9487609429",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-push-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/events",
+        "html_url": "https://github.com/divinevideo/divine-push-service/issues/7",
+        "id": 4195929926,
+        "node_id": "I_kwDOQ1aOAs76GM9G",
+        "number": 7,
+        "title": "chore(deploy): roll out divine-push-service to GKE environments",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [
+          {
+            "login": "dcadenas",
+            "id": 18184,
+            "node_id": "MDQ6VXNlcjE4MTg0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/dcadenas",
+            "html_url": "https://github.com/dcadenas",
+            "followers_url": "https://api.github.com/users/dcadenas/followers",
+            "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+            "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+            "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+            "repos_url": "https://api.github.com/users/dcadenas/repos",
+            "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          }
+        ],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-04-02T17:19:33Z",
+        "updated_at": "2026-05-15T02:35:02Z",
+        "closed_at": null,
+        "assignee": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Goal\n\nGet divine-push-service running in GKE, starting with poc/staging, then production.\n\n## Prerequisites\n\n- divinevideo/divine-iac-coreconfig#364 must be merged first (Firebase env vars + namespace fix)\n\n## Tasks\n\n### 1. Verify Terraform has been applied\n\nConfirm that `terragrunt apply` has been run for all environments (poc, staging, production):\n- GCP service accounts exist (`divine-push-{env}@{project}.iam.gserviceaccount.com`)\n- Secret Manager secrets exist (`divine-push-service-nostr-key-{env}`)\n- Cross-project FCM IAM binding is active on `openvine-co`\n\n### 2. Deploy to poc and verify\n\n- Trigger CI to build and push image to poc Artifact Registry\n- Verify the service starts, connects to relay, and can send test notifications\n- Check health endpoint responds\n\n### 3. Deploy to staging and verify\n\nSame verification as poc.\n\n### 4. Deploy to production\n\n- Merge production image deploy PR in IAC repo\n- Monitor logs and health\n\n## Already done\n\n- ~~Upload APNs auth key in Firebase console~~ — APNs certificates already configured in openvine-co (valid until March 2027)\n- CI rewrite + ADC support (PR #2 merged)\n- IAC CI/CD workflow support (divine-iac-coreconfig#313 merged)",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/comments/4456382473",
+        "html_url": "https://github.com/divinevideo/divine-push-service/issues/7#issuecomment-4456382473",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7",
+        "id": 4456382473,
+        "node_id": "IC_kwDOQ1aOAs8AAAABCZ8ACQ",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-15T02:35:02Z",
+        "updated_at": "2026-05-15T02:35:02Z",
+        "body": "`divine-iac-coreconfig#364` is now closed, so this rollout issue appears unblocked on the infra prerequisite.\n\nSince `@dcadenas` is driving backend notification work, assigning this to him as the backend push DRI.\n\nSuggested closeout path from here:\n- confirm Terraform / GKE prereqs are applied in `poc`, `staging`, and `production`\n- deploy to `poc` and verify health, relay connectivity, and test push delivery\n- deploy to `staging` and repeat verification\n- deploy to `production` and monitor logs / health after rollout\n\nPlease use this issue thread to check off environment-by-environment rollout status so we have one place to track backend push readiness.\n\nRelated mobile-side work that depends on this landing cleanly:\n- divinevideo/divine-mobile#4207\n- divinevideo/divine-mobile#4387",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/comments/4456382473/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T02:35:02Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9487609023",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "assigned",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-push-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/events",
+        "html_url": "https://github.com/divinevideo/divine-push-service/issues/7",
+        "id": 4195929926,
+        "node_id": "I_kwDOQ1aOAs76GM9G",
+        "number": 7,
+        "title": "chore(deploy): roll out divine-push-service to GKE environments",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [
+          {
+            "login": "dcadenas",
+            "id": 18184,
+            "node_id": "MDQ6VXNlcjE4MTg0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/dcadenas",
+            "html_url": "https://github.com/dcadenas",
+            "followers_url": "https://api.github.com/users/dcadenas/followers",
+            "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+            "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+            "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+            "repos_url": "https://api.github.com/users/dcadenas/repos",
+            "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          }
+        ],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-04-02T17:19:33Z",
+        "updated_at": "2026-05-15T02:35:02Z",
+        "closed_at": null,
+        "assignee": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Goal\n\nGet divine-push-service running in GKE, starting with poc/staging, then production.\n\n## Prerequisites\n\n- divinevideo/divine-iac-coreconfig#364 must be merged first (Firebase env vars + namespace fix)\n\n## Tasks\n\n### 1. Verify Terraform has been applied\n\nConfirm that `terragrunt apply` has been run for all environments (poc, staging, production):\n- GCP service accounts exist (`divine-push-{env}@{project}.iam.gserviceaccount.com`)\n- Secret Manager secrets exist (`divine-push-service-nostr-key-{env}`)\n- Cross-project FCM IAM binding is active on `openvine-co`\n\n### 2. Deploy to poc and verify\n\n- Trigger CI to build and push image to poc Artifact Registry\n- Verify the service starts, connects to relay, and can send test notifications\n- Check health endpoint responds\n\n### 3. Deploy to staging and verify\n\nSame verification as poc.\n\n### 4. Deploy to production\n\n- Merge production image deploy PR in IAC repo\n- Monitor logs and health\n\n## Already done\n\n- ~~Upload APNs auth key in Firebase console~~ — APNs certificates already configured in openvine-co (valid until March 2027)\n- CI rewrite + ADC support (PR #2 merged)\n- IAC CI/CD workflow support (divine-iac-coreconfig#313 merged)",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/7/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "assignee": {
+        "login": "dcadenas",
+        "id": 18184,
+        "node_id": "MDQ6VXNlcjE4MTg0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dcadenas",
+        "html_url": "https://github.com/dcadenas",
+        "followers_url": "https://api.github.com/users/dcadenas/followers",
+        "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+        "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+        "repos_url": "https://api.github.com/users/dcadenas/repos",
+        "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2026-05-15T02:35:01Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9487566443",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-push-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/events",
+        "html_url": "https://github.com/divinevideo/divine-push-service/issues/4",
+        "id": 4178999326,
+        "node_id": "I_kwDOQ1aOAs75Fnge",
+        "number": 4,
+        "title": "fix(dedup): make notification deduplication safe across replicas",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [
+          {
+            "login": "dcadenas",
+            "id": 18184,
+            "node_id": "MDQ6VXNlcjE4MTg0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/dcadenas",
+            "html_url": "https://github.com/dcadenas",
+            "followers_url": "https://api.github.com/users/dcadenas/followers",
+            "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+            "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+            "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+            "repos_url": "https://api.github.com/users/dcadenas/repos",
+            "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          }
+        ],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-03-31T12:59:23Z",
+        "updated_at": "2026-05-15T02:33:02Z",
+        "closed_at": "2026-05-15T02:33:02Z",
+        "assignee": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Problem\n\nThe current dedup logic uses a two-step check-then-mark pattern (`SISMEMBER` then `SADD`) in `redis_store.rs`. With multiple replicas subscribing to the same relay, both can check before either marks, causing duplicate push notifications.\n\n## Fix\n\n### 1. Atomic check-and-mark\n\nUse `SADD` atomically as both check and mark — it returns `1` if newly added, `0` if existed:\n\n```rust\n// Instead of:\nlet exists = redis.sismember(\"PROCESSED_EVENTS_SET\", event_id).await?;\nif exists { return; }\nredis.sadd(\"PROCESSED_EVENTS_SET\", event_id).await?;\n\n// Use:\nlet added = redis.sadd(\"PROCESSED_EVENTS_SET\", event_id).await?;\nif added == 0 { return; } // already processed\n```\n\n### 2. Per-event TTL\n\n`EXPIRE` is currently set on the entire `PROCESSED_EVENTS_SET`, not per-event. Every new event resets the TTL for all events.\n\nConsider using per-event keys with individual TTLs instead:\n\n```rust\n// Instead of a set with global TTL:\nlet added = redis.set_nx(format!(\"dedup:{}\", event_id), \"1\").await?;\nredis.expire(format!(\"dedup:{}\", event_id), DEDUP_TTL).await?;\n```",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T02:33:04Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9487566086",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-push-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/events",
+        "html_url": "https://github.com/divinevideo/divine-push-service/issues/4",
+        "id": 4178999326,
+        "node_id": "I_kwDOQ1aOAs75Fnge",
+        "number": 4,
+        "title": "fix(dedup): make notification deduplication safe across replicas",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [
+          {
+            "login": "dcadenas",
+            "id": 18184,
+            "node_id": "MDQ6VXNlcjE4MTg0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/dcadenas",
+            "html_url": "https://github.com/dcadenas",
+            "followers_url": "https://api.github.com/users/dcadenas/followers",
+            "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+            "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+            "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+            "repos_url": "https://api.github.com/users/dcadenas/repos",
+            "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          }
+        ],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-03-31T12:59:23Z",
+        "updated_at": "2026-05-15T02:33:02Z",
+        "closed_at": "2026-05-15T02:33:02Z",
+        "assignee": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Problem\n\nThe current dedup logic uses a two-step check-then-mark pattern (`SISMEMBER` then `SADD`) in `redis_store.rs`. With multiple replicas subscribing to the same relay, both can check before either marks, causing duplicate push notifications.\n\n## Fix\n\n### 1. Atomic check-and-mark\n\nUse `SADD` atomically as both check and mark — it returns `1` if newly added, `0` if existed:\n\n```rust\n// Instead of:\nlet exists = redis.sismember(\"PROCESSED_EVENTS_SET\", event_id).await?;\nif exists { return; }\nredis.sadd(\"PROCESSED_EVENTS_SET\", event_id).await?;\n\n// Use:\nlet added = redis.sadd(\"PROCESSED_EVENTS_SET\", event_id).await?;\nif added == 0 { return; } // already processed\n```\n\n### 2. Per-event TTL\n\n`EXPIRE` is currently set on the entire `PROCESSED_EVENTS_SET`, not per-event. Every new event resets the TTL for all events.\n\nConsider using per-event keys with individual TTLs instead:\n\n```rust\n// Instead of a set with global TTL:\nlet added = redis.set_nx(format!(\"dedup:{}\", event_id), \"1\").await?;\nredis.expire(format!(\"dedup:{}\", event_id), DEDUP_TTL).await?;\n```",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/comments/4456374279",
+        "html_url": "https://github.com/divinevideo/divine-push-service/issues/4#issuecomment-4456374279",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/4",
+        "id": 4456374279,
+        "node_id": "IC_kwDOQ1aOAs8AAAABCZ7gBw",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-15T02:33:01Z",
+        "updated_at": "2026-05-15T02:33:01Z",
+        "body": "Closing this as resolved by PR #6, which implemented the atomic per-event dedup claim () and removed the shared-set TTL behavior described here. The follow-up integration-test work was tracked separately in #5, which is also closed.",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-push-service/issues/comments/4456374279/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T02:33:01Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981518228",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 18,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18",
+        "id": 3604884944,
+        "number": 18,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "1306270632056f7a1a38d29f82902cbf954a07a4",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "dfc4359def77d91dcc81108e3a37468d973ff749",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:47Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11274944187",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "repository_id": 1129745922,
+      "push_id": 33566342513,
+      "ref": "refs/heads/main",
+      "head": "1aa205ab76e617c8b334193a4b4d1387170f8126",
+      "before": "dfc4359def77d91dcc81108e3a37468d973ff749"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:48Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981396387",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4209266956,
+        "node_id": "PRR_kwDOQ1aOAs765FEM",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. Contribution standards check complete. Approved.",
+        "commit_id": "1306270632056f7a1a38d29f82902cbf954a07a4",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-push-service/pull/18#pullrequestreview-4209266956",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-push-service/pull/18#pullrequestreview-4209266956"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18"
+          }
+        },
+        "submitted_at": "2026-05-01T00:12:17Z",
+        "updated_at": "2026-05-01T00:12:17Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18",
+        "id": 3604884944,
+        "number": 18,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "1306270632056f7a1a38d29f82902cbf954a07a4",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "dfc4359def77d91dcc81108e3a37468d973ff749",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:12:19Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8931867546",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 18,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-push-service/pulls/18",
+        "id": 3604884944,
+        "number": 18,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "1306270632056f7a1a38d29f82902cbf954a07a4",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "dfc4359def77d91dcc81108e3a37468d973ff749",
+          "repo": {
+            "id": 1129745922,
+            "url": "https://api.github.com/repos/divinevideo/divine-push-service",
+            "name": "divine-push-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-29T20:42:49Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11218876480",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1129745922,
+      "name": "divinevideo/divine-push-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-push-service"
+    },
+    "payload": {
+      "ref": "codex/repo-contribution-guardrails",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/repo-contribution-guardrails",
+      "master_branch": "main",
+      "description": "Push notification service for diVine mobile app",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-29T20:42:34Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]

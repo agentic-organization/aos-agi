@@ -34,6 +34,8 @@ Part of AOS's **Foundry** hub — projects the Foundry supports and stewards as 
 ## History
 - 2026-05-07: Page created from andotherstuff.org Foundry project listing.
 
+- 2026-05-17: `data/raw/github/daily/2026-05-17/DanConwayDev/ngit-cli/` captured **7 commits** in the 24h window, including release **v2.4.4** (2026-05-17). Themes: trust-server flag and trusted-domains config for sync, nostr.trust-server-domains git config setting, preserve original merge-base on fast-forward push to PR branch, force PR mode when commits contain submodule entries, bail on submodule entries in `create_commit_from_patch`, fix fast-forward push to `pr/` branch backed by PR event. Committer: [[people/danconwaydev]] (all 7).
+
 ## Open questions
 - Who are the primary maintainers and active contributors?
 - Which AOS hub(s) beyond the Foundry engage with this project (Lab? Studio?)?

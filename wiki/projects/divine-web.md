@@ -36,6 +36,7 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 
 - 2026-05-15: `data/raw/github/daily/2026-05-15/divinevideo/divine-web/` captured **6 commits** and **7 updated issues** in the 24h window. Themes: new Popular feed page (#371), search defaulting to Hot sort with sort pills above results (#365), Nostr mention linkification in video titles (#367), age-gated media 401 handling (#369), analytics route-mounting fix during auth restore (#370), acknowledgments to Miss Australiana / ArchiveTeam / Internet Archive (#366), Firefox video loading reliability fix (#51). Committer: [[people/rabble]] (all 6).
 
+- 2026-05-17: `data/raw/github/daily/2026-05-17/divinevideo/divine-web/` captured **1 commit** in the 24h window. Theme: use 16-core GitHub runners (#374). Committer: [[people/rabble]].
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?
 - Runtime deployment: where is this service hosted?

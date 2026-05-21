@@ -1,0 +1,581 @@
+[
+  {
+    "sha": "05b0edbff1659689ecc3efbfe36420d64486e2f7",
+    "node_id": "C_kwDOJlsjrNoAKDA1YjBlZGJmZjE2NTk2ODllY2MzZWZiZmUzNjQyMGQ2NDQ4NmUyZjc",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T11:29:39Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T11:29:39Z"
+      },
+      "message": "chore: release v2.4.4\n\ntrust-server flag and trusted-domains config for sync, submodule\nsafety in patch application, pr/ branch ff-push fixes, and doc\nimprovements to the ngit skill.",
+      "tree": {
+        "sha": "762e0f96499979a978d4a02985cf361c79ba494f",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/762e0f96499979a978d4a02985cf361c79ba494f"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/05b0edbff1659689ecc3efbfe36420d64486e2f7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoIVSMACgkQaOFUhtc/\ndeE/Hw/+OSKH3I+wzi32Ttus0IP675OLv3LGuCAMgNvJqGDRIU2ytYpxC+xxNRnq\n2hV3O1XZyAjNl9x7MkoFRk7gDEiPXLUyd9m04Ev8fARDtzfFW2fC8PMBld+cZWwt\n7pgNq8KoxqJiK0AwrjEPACVfXSaMsLdDVCi8BvhM5naW7N79l1AYawtXRCD9Buld\n7A8imJUJAJhKeIECzrMXn0kpOH/qbb1FixTvtyIR+rkLDRcIjjBwI9/okcQUL1VB\nUyrtnUVKEmfqNNsRSC6F3pqmyQ1pgyLFEKO3I9Yua1lqJ79ExgCg9sxvwNIjZ760\neoTOjRaRUYzPB6DS9LIvc3f81Vd2XeKGA4kT00uLLN6W52QYbEhbxLexto5UvHgM\nA+QI0dPRg6PsWBX8Vt8R2QuvcJjP+rkWvekmsf2jVUh+30TLfvBB8Z/wOjVBg1Gw\nIS0rkiAcg6VZw1YtrB3e+sxukjdBiFGjC+1afrPTufenUaqc4eUdxJUhZ+VlibS4\n42T5ZPDG60uZNY+EVYBVQvm4HXNKf0t7KPxXPxEZt6GB7Faj7WS0kSwBzW45hFdU\nGHnhmbpKPW8Ty0dLBAcoQe0CxEULEI6pIoVbeqYQew/nG24ejJ+jDJw87ATEFZAJ\nmfu10Oo85GymowxM2xbIh+SygSUmC5QPNBcMKkZ0O2/GRyut3YA=\n=vo7a\n-----END PGP SIGNATURE-----",
+        "payload": "tree 762e0f96499979a978d4a02985cf361c79ba494f\nparent de33f08b49373cdc0fcf562b70240000554188a6\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1778930979 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1778930979 +0000\n\nchore: release v2.4.4\n\ntrust-server flag and trusted-domains config for sync, submodule\nsafety in patch application, pr/ branch ff-push fixes, and doc\nimprovements to the ngit skill.\n",
+        "verified_at": "2026-05-16T11:31:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/05b0edbff1659689ecc3efbfe36420d64486e2f7",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/05b0edbff1659689ecc3efbfe36420d64486e2f7",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/05b0edbff1659689ecc3efbfe36420d64486e2f7/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "de33f08b49373cdc0fcf562b70240000554188a6",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/de33f08b49373cdc0fcf562b70240000554188a6",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/de33f08b49373cdc0fcf562b70240000554188a6"
+      }
+    ]
+  },
+  {
+    "sha": "de33f08b49373cdc0fcf562b70240000554188a6",
+    "node_id": "C_kwDOJlsjrNoAKGRlMzNmMDhiNDkzNzNjZGMwZmNmNTYyYjcwMjQwMDAwNTU0MTg4YTY",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T11:23:40Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T11:23:40Z"
+      },
+      "message": "feat(sync): trust-server flag and trusted-domains config\n\nMerges pr/sync-trust-server-flag\n\n- detect git servers that are fast-forward ahead of nostr state\n- `ngit sync --trust-server` (-t) to adopt those commits and update nostr state\n- `nostr.trust-server-domains` git config to auto-trust servers by domain\n- diverged-branch detection with recovery instructions\n- skip pushing back to servers that are already ahead\n\ncloses nostr:nevent1qvzqqqqx2ypzpgqgmmc409hm4xsdd74sf68a2uyf9pwel4g9mfdg8l5244t6x4jdqy88wumn8ghj7mn0wvhxcmmv9uq3xamnwvaz7tm8d96xummnw3ezucm0d5hsqgyrag0kt9hsgaclkc583jyh6xnr7u77rg06mrsacy4zdvgzk2vqegpvfapw\n\n# Conflicts:\n#\tCHANGELOG.md",
+      "tree": {
+        "sha": "9ea1cb3cea90a03c4907082f25733cd775881d74",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/9ea1cb3cea90a03c4907082f25733cd775881d74"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/de33f08b49373cdc0fcf562b70240000554188a6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoIU7wACgkQaOFUhtc/\ndeHnSA/+OrDqrq62F15Jx/J4Kwe8hXh99vWtorB1g6KCJhtvTd+VeYDYNSTKZkic\nUWR37iCju+/8ob1uc0jURYHzx5TOedghOEC9rTDc4LZE9QAxW2z8VH3R+jHBzUEk\nuHLg60GjP1XZ1g45fYLr4ZgWu8gYCBBHrR4ttf+u0PaTV8pMH1CxAdN4OjIgkGEn\n7y9JdQ8yFskH1b7/z1k8pVcWWzcQ74C9Qp6KeppP2uyWX3ofo/kj85XAxxvl5kv5\nIcF531s0WbNuxfJPjp1O44a2uRaqzo52S5R344Q/F0J3N60sd3/R99Q2lPgcPJNy\n2q0nCpI4ybpPK4X4rKOLPNBUdJVMgYjrWkQTAhAPo7DnQM2O5AH4sMEDvylbw7ds\ngGYYfRrVaw7YPH3k0f1mVGvG6BWD+CtBfpDjJlEVN2WhGk4ZJifnFGg2p1arziCl\nLXh+jwXkwaNKoigtvYbRN4xDFkqLtRCJQjLXGjfVvcYfrB/+nqT7UlcOfoCUQ9bI\nAUynWJkP4gqxCQ9FRXp9fp5DT+QxYfooF+CVOz66reTDiDH3fm+oDaj1J2YAUASG\nNlnX54sGfsPhgMspDSg9N4HFMP1Aziki3cCRCn4Z9+gwod360Mfzyhyjcd9wW5hD\noGpYTZzqSQGQOxS5sBrui6Or9ih27hUXgUvYRNFirHrbfxV86hs=\n=z5iq\n-----END PGP SIGNATURE-----",
+        "payload": "tree 9ea1cb3cea90a03c4907082f25733cd775881d74\nparent 840c5810009b77d7c68c901e4cbad5ea57a89abb\nparent 35631139c6c1cf111556a8801b61857cde151e2e\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1778930620 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1778930620 +0000\n\nfeat(sync): trust-server flag and trusted-domains config\n\nMerges pr/sync-trust-server-flag\n\n- detect git servers that are fast-forward ahead of nostr state\n- `ngit sync --trust-server` (-t) to adopt those commits and update nostr state\n- `nostr.trust-server-domains` git config to auto-trust servers by domain\n- diverged-branch detection with recovery instructions\n- skip pushing back to servers that are already ahead\n\ncloses nostr:nevent1qvzqqqqx2ypzpgqgmmc409hm4xsdd74sf68a2uyf9pwel4g9mfdg8l5244t6x4jdqy88wumn8ghj7mn0wvhxcmmv9uq3xamnwvaz7tm8d96xummnw3ezucm0d5hsqgyrag0kt9hsgaclkc583jyh6xnr7u77rg06mrsacy4zdvgzk2vqegpvfapw\n\n# Conflicts:\n#\tCHANGELOG.md\n",
+        "verified_at": "2026-05-16T11:31:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/de33f08b49373cdc0fcf562b70240000554188a6",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/de33f08b49373cdc0fcf562b70240000554188a6",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/de33f08b49373cdc0fcf562b70240000554188a6/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "840c5810009b77d7c68c901e4cbad5ea57a89abb",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/840c5810009b77d7c68c901e4cbad5ea57a89abb",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/840c5810009b77d7c68c901e4cbad5ea57a89abb"
+      },
+      {
+        "sha": "35631139c6c1cf111556a8801b61857cde151e2e",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/35631139c6c1cf111556a8801b61857cde151e2e",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/35631139c6c1cf111556a8801b61857cde151e2e"
+      }
+    ]
+  },
+  {
+    "sha": "35631139c6c1cf111556a8801b61857cde151e2e",
+    "node_id": "C_kwDOJlsjrNoAKDM1NjMxMTM5YzZjMWNmMTExNTU2YTg4MDFiNjE4NTdjZGUxNTFlMmU",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T11:12:35Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T11:20:46Z"
+      },
+      "message": "feat(sync): add nostr.trust-server-domains git config setting\n\nServers whose hostname appears in the semicolon-separated\nnostr.trust-server-domains list are automatically trusted during\nngit sync without requiring --trust-server.  Can be set globally\nor per-repository:\n\n  git config --global nostr.trust-server-domains 'github.com;codeberg.org'\n\nWhen untrusted-ahead refs remain after auto-trust processing, the\nexisting --trust-server hint is shown; a secondary tip pointing to\nthe new config key is added when the list is currently empty.",
+      "tree": {
+        "sha": "9eb80c77e9cb0b6e9fe687bd142e00e59102e2fd",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/9eb80c77e9cb0b6e9fe687bd142e00e59102e2fd"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/35631139c6c1cf111556a8801b61857cde151e2e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoIUw4ACgkQaOFUhtc/\ndeGciBAAlo7IV2tGGJVIeZnc1fHcdccvV2coRqDlzcTjdC3fe8yJd3ucCOY690+R\nzm5/kRW6W2K35NrlKCBOaNVUqcPWT3nhrVGw7dDKgppUWPyeZ98A2Yezs1KGvr3z\nO3Ovvqbc6IXV1ipbpDOpBnjboGFOA/8ZMahQy+qzOe2Pizy0h+NX08ly76Ttt22L\nfsIKHm3ZARE2gsO3Mv/L7C+odbBK33ugnA7MQaseQ0mKXrEKAEiSY4XazYdrcvsa\n+ARoA/OaGtE346LB9HREd7pYMuPPMTuUPwUp6gub1TkCJGxmE9hWdkim/pMGEW1Z\nqWuFMzMJe4fwd4cuAZU5/FdDz2pz1jWvgFrmMsGq/Y+2mr6H+RXoR8IJyWEXbDs6\nBhNTYArcQRXrgaevQW+HRn9R3e9Bx6vt5Es5EtqOqExpC6Kxf7SahX39yUZFtd4F\ngLyWfU5IjXmNSJdYS1gkJ93ifctJ/rPc5aoJoGI812pl/18o5T7q9Erbr0NcreTJ\nJ5x89zusdZ3K1FE67kFfo6YT09IVU8Zkhb8Mh6Am+9uPjELW/xUnwXHqIeE/Io07\nmaJZpBbY1kAVuwi/e7EJV0ux3t2dxaCzokYBbfF02XbPq2eBtkOe+/MuUc/RyWVh\nhMHFHHhcto6FjTe46D71xmsqNHRtE7P+1kjwQb+JiRtffh0ZXHc=\n=fRET\n-----END PGP SIGNATURE-----",
+        "payload": "tree 9eb80c77e9cb0b6e9fe687bd142e00e59102e2fd\nparent 74b932244ef5acaed0ef222d74b9f50eb791d83f\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1778929955 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1778930446 +0000\n\nfeat(sync): add nostr.trust-server-domains git config setting\n\nServers whose hostname appears in the semicolon-separated\nnostr.trust-server-domains list are automatically trusted during\nngit sync without requiring --trust-server.  Can be set globally\nor per-repository:\n\n  git config --global nostr.trust-server-domains 'github.com;codeberg.org'\n\nWhen untrusted-ahead refs remain after auto-trust processing, the\nexisting --trust-server hint is shown; a secondary tip pointing to\nthe new config key is added when the list is currently empty.\n",
+        "verified_at": "2026-05-16T11:31:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/35631139c6c1cf111556a8801b61857cde151e2e",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/35631139c6c1cf111556a8801b61857cde151e2e",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/35631139c6c1cf111556a8801b61857cde151e2e/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "74b932244ef5acaed0ef222d74b9f50eb791d83f",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/74b932244ef5acaed0ef222d74b9f50eb791d83f",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/74b932244ef5acaed0ef222d74b9f50eb791d83f"
+      }
+    ]
+  },
+  {
+    "sha": "840c5810009b77d7c68c901e4cbad5ea57a89abb",
+    "node_id": "C_kwDOJlsjrNoAKDg0MGM1ODEwMDA5Yjc3ZDdjNjhjOTAxZTRjYmFkNWVhNTdhODlhYmI",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T10:51:21Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T10:51:21Z"
+      },
+      "message": "fix: preserve original merge-base on ff push to PR branch\n\nWhen fast-forward pushing new commits onto a pr/ branch that is backed\nby an existing PR event (kind 1618), the generated PR update event\nincorrectly set the merge-base tag to the parent of the first *new*\ncommit — i.e. the previous PR tip — rather than the original branch\ndivergence point.\n\nThe fix reads the merge-base tag from the root PR event and forwards it\nunchanged into the PR update event, falling back to\nget_commit_parent(first_commit) only when no merge-base tag is present\n(e.g. older PR events that predate the tag).",
+      "tree": {
+        "sha": "d8367b6cf4792062f9124970b950ae555f3486f1",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/d8367b6cf4792062f9124970b950ae555f3486f1"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/840c5810009b77d7c68c901e4cbad5ea57a89abb",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoITCkACgkQaOFUhtc/\ndeGC1g//W/2ZYn/4j0sjF9YD6pQDxCchm7k+K1mMfLg28DUEAMC4EZM8yR7U9+dD\nfnEe0FcK9UeR7B/48jtWNJJ+E9TxbAOiCFWN3cCYgcx/eXiNVJHoD0anRP6Al66a\nZbetywsPTCN5a7ieTVHKrHE1cuShkE8XnX/OtyPnJvEXzeLveyOnrcZpBB79hhLG\nJa2NcuEDJeWWLRm1esK/2vx9eZVG+bL/WZY7bWFEv6g5zo5/6HgboFmKXZCQEtp7\nPP+ATUcV0l3NftTWojnyuWwfLaUezdtx+yC7M9LUtb/ffgAqASQ6Aet5hmhI4Kfe\nigLelL/LMhi7TJmBAFaXhZd/8jErFq7O9wMBBVnoR2+HSyBcLmgnnV5x6a3XDivT\nvSvFVc6xXcwwll9AcCCh9EcWsoaYqRGZN8SahaJ3xuv4UxrkqM3bu+sLJXUaHlgE\nvYb9ycwtDj8D8eYLIPv88B9OdSOmJhgogYN7XgyhQ1OabWQRh+LUIaBTadw8jhgg\nSf+Aj+iCalAd10DAgo1Ze/W2oTVG5R5yCduUt41bCeGe6oA+eMIygxwJm9FH1j00\n4aVC+52aDmeayeHVoFSU0Fco85OKCBkwZF93JeHX0pg913zAj0mZPDMS+XrXdAVf\nOKrJHpHuRMe+u/GUprWAlmMRomMz3qShbiwU86WBffd7tQTLNRU=\n=NP5Y\n-----END PGP SIGNATURE-----",
+        "payload": "tree d8367b6cf4792062f9124970b950ae555f3486f1\nparent d747d9c054a6fc9c77f3bb84a82e021475041e2b\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1778928681 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1778928681 +0000\n\nfix: preserve original merge-base on ff push to PR branch\n\nWhen fast-forward pushing new commits onto a pr/ branch that is backed\nby an existing PR event (kind 1618), the generated PR update event\nincorrectly set the merge-base tag to the parent of the first *new*\ncommit — i.e. the previous PR tip — rather than the original branch\ndivergence point.\n\nThe fix reads the merge-base tag from the root PR event and forwards it\nunchanged into the PR update event, falling back to\nget_commit_parent(first_commit) only when no merge-base tag is present\n(e.g. older PR events that predate the tag).\n",
+        "verified_at": "2026-05-16T11:31:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/840c5810009b77d7c68c901e4cbad5ea57a89abb",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/840c5810009b77d7c68c901e4cbad5ea57a89abb",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/840c5810009b77d7c68c901e4cbad5ea57a89abb/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d747d9c054a6fc9c77f3bb84a82e021475041e2b",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d747d9c054a6fc9c77f3bb84a82e021475041e2b",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/d747d9c054a6fc9c77f3bb84a82e021475041e2b"
+      }
+    ]
+  },
+  {
+    "sha": "d747d9c054a6fc9c77f3bb84a82e021475041e2b",
+    "node_id": "C_kwDOJlsjrNoAKGQ3NDdkOWMwNTRhNmZjOWM3N2YzYmI4NGE4MmUwMjE0NzUwNDFlMmI",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-14T16:15:38Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T10:05:20Z"
+      },
+      "message": "feat: force PR mode when commits contain submodule entries\n\nPatches touching submodule entries (mode 160000) crash libgit2 on the\nreceiving end (SIGSEGV in apply_to_tree).  Rather than waiting for the\ncrash to happen during apply, detect the condition up-front in `ngit send`\nand route the proposal as a PR so the commits are pushed directly instead\nof being sent as patch events.\n\nAdds `do_commits_contain_submodules` to the `RepoActions` trait (reusing\n`make_patch_from_commit` + the same mode-160000 heuristic already used in\n`create_commit_from_patch`) and ORs it into the `should_be_pr` decision\nalongside the existing size check.",
+      "tree": {
+        "sha": "008d41f9655f6cc28d3c25c2270e2ceb913e162c",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/008d41f9655f6cc28d3c25c2270e2ceb913e162c"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/d747d9c054a6fc9c77f3bb84a82e021475041e2b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoIQWEACgkQaOFUhtc/\ndeERPQ/+MUGotjjNJENwo7VPVza8gpEpqP/B3E2JjMiTgURslvhdRNwQYv9WlYMM\nchPMqv0cgn9J/W5Nm1St4OiSFbZxI8NKtEeGnNjSJGwz49ykEnosN3cQ2QnH/jxy\nzn9Vm7+tLUDMQZLE9q8kZibj+lhuz3jwyvtM/36oJStnI4d9I6Eiyin3Zu2qPhch\nAV62sEUstQgpc9bGGDUTUQyMP9aOKxszJnN6QFEAi8xmO69Rr3mwbz9pKHWzqM4/\n7QxsLMb5AOF+HZ7PGhoB2FckgPWQFtDDWRoTSGvMpCJ2B6fwiGFndMMklRguDs3r\nV8U5ytSNUnC15nq5K6tnP0Gibhg51bPjVpoa13iibr2oSwsnI4YfkzTD5R3oWFWG\nYMvAqBcyrtU31k3DsQZe1iUZ99Gedw38qMCs7g6XjCQZ7Ivs2StXmvPZDQ2YJGYe\nXp8slwlnvRKa/CxAhBibywB3rfDB8tJpqTN8qIhisXnicjNNfNNqlUs9EO7QbQm7\nqcPR79onOnQ5+eKmyYo8sy6bGgt/yGrx5dHc847rDRyNyV9AlmIltkjNMW7XODL6\nOo2qky063HOjCcr49gf8tgthBO5MQD+EHrDETi8buGEpN+rGFdGYqhXSiYCxT7oH\npOZqsPfYmKfoKGoGFE+zAJsZqW9/S5UVOBVemdA1ZB805x4XJSk=\n=xIAb\n-----END PGP SIGNATURE-----",
+        "payload": "tree 008d41f9655f6cc28d3c25c2270e2ceb913e162c\nparent 7a42ea6a053d2e462f8a1f4b681a36ba25f7e417\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1778775338 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1778925920 +0000\n\nfeat: force PR mode when commits contain submodule entries\n\nPatches touching submodule entries (mode 160000) crash libgit2 on the\nreceiving end (SIGSEGV in apply_to_tree).  Rather than waiting for the\ncrash to happen during apply, detect the condition up-front in `ngit send`\nand route the proposal as a PR so the commits are pushed directly instead\nof being sent as patch events.\n\nAdds `do_commits_contain_submodules` to the `RepoActions` trait (reusing\n`make_patch_from_commit` + the same mode-160000 heuristic already used in\n`create_commit_from_patch`) and ORs it into the `should_be_pr` decision\nalongside the existing size check.\n",
+        "verified_at": "2026-05-16T11:31:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d747d9c054a6fc9c77f3bb84a82e021475041e2b",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/d747d9c054a6fc9c77f3bb84a82e021475041e2b",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d747d9c054a6fc9c77f3bb84a82e021475041e2b/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7a42ea6a053d2e462f8a1f4b681a36ba25f7e417",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/7a42ea6a053d2e462f8a1f4b681a36ba25f7e417",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/7a42ea6a053d2e462f8a1f4b681a36ba25f7e417"
+      }
+    ]
+  },
+  {
+    "sha": "7a42ea6a053d2e462f8a1f4b681a36ba25f7e417",
+    "node_id": "C_kwDOJlsjrNoAKDdhNDJlYTZhMDUzZDJlNDYyZjhhMWY0YjY4MWEzNmJhMjVmN2U0MTc",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-14T16:01:06Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T10:05:03Z"
+      },
+      "message": "fix: bail on submodule entries in create_commit_from_patch\n\nlibgit2's apply_to_tree does not handle submodule entries (mode 160000)\ngracefully — instead of returning an error it dereferences a null pointer\nand kills the git-remote-nostr process with signal 11 (SIGSEGV).\n\nDetect submodule entries in the normalised diff content before calling into\nlibgit2 and return an Err so make_commits_for_proposal can skip the\nproposal cleanly rather than crashing the remote helper.",
+      "tree": {
+        "sha": "6eb08e3b60f752a1dabfd9b126dd7e7d385dca55",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/6eb08e3b60f752a1dabfd9b126dd7e7d385dca55"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/7a42ea6a053d2e462f8a1f4b681a36ba25f7e417",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoIQVAACgkQaOFUhtc/\ndeFAjBAAyg3qRs0u6cM+F1gvdAxDZS4l4w1YGu8Ke6xzbRGcn4zyF/r89na9iNIH\nDUf4R1+AuAI7PQsX7MgpSMUGyZ3a7M1eTYgNL6YwvjHtLu8VrLGBxRICw8nLkoB2\nl4S/xehyHQdnQc3Uk/3tr3v5cAMLTkHnnlKDqgcz/u7uAjlYkoGgdBpwsJvveCYU\nrRcvEY6FiqprG+qh3zPrpdtoFwrwJuPP+X2pKM6zJNVf63Li6QdMUnVH8kvNhhSP\naeWWwIiqviV6TivKjNkNpU76eu1xb+vo8HNrDXk2FwjzEwVOcLDvuLspxFNtnnip\nQulSnvoviI5Qok+EOawLY6Gcdo5a37K9b5osjjprhxlzkwHFVV7v3JaKkoyLbe8c\nwl0CoJXBX6q0dCRhTB/P9PuUGzkOTTwtc1kPoZkxbb6XYMFzEU3u7xLnZqY4JwYo\nOtr1DhcsUhKhJTbsociRiQ8ONdW/wki8mMBoKhQbsXVkZ010ofLgBlG6ArcPWCTM\nDg8IyHLoCk30rSeKQbVjmheYlu31gg4iy4ej3dL2JaB5kX/+Sbb+jSshB80vdhg+\nXXpL7Z4aR2ysIG9CK9Dh49DknEoxjWewRzQD45mNT9U5Xvd5k1Z+pvgw01yc7O4q\nDlUq/+MJwkiRYqZYpzgeaSPuLZQMuHV720Hs4QkY4e+AsU6jxUQ=\n=hdu4\n-----END PGP SIGNATURE-----",
+        "payload": "tree 6eb08e3b60f752a1dabfd9b126dd7e7d385dca55\nparent dfd1a11568ae2b8a8d0b6b113900611cd3436f5f\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1778774466 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1778925903 +0000\n\nfix: bail on submodule entries in create_commit_from_patch\n\nlibgit2's apply_to_tree does not handle submodule entries (mode 160000)\ngracefully — instead of returning an error it dereferences a null pointer\nand kills the git-remote-nostr process with signal 11 (SIGSEGV).\n\nDetect submodule entries in the normalised diff content before calling into\nlibgit2 and return an Err so make_commits_for_proposal can skip the\nproposal cleanly rather than crashing the remote helper.\n",
+        "verified_at": "2026-05-16T11:31:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/7a42ea6a053d2e462f8a1f4b681a36ba25f7e417",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/7a42ea6a053d2e462f8a1f4b681a36ba25f7e417",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/7a42ea6a053d2e462f8a1f4b681a36ba25f7e417/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dfd1a11568ae2b8a8d0b6b113900611cd3436f5f",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/dfd1a11568ae2b8a8d0b6b113900611cd3436f5f",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/dfd1a11568ae2b8a8d0b6b113900611cd3436f5f"
+      }
+    ]
+  },
+  {
+    "sha": "dfd1a11568ae2b8a8d0b6b113900611cd3436f5f",
+    "node_id": "C_kwDOJlsjrNoAKGRmZDFhMTE1NjhhZTJiOGE4ZDBiNmIxMTM5MDA2MTFjZDM0MzZmNWY",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T10:00:17Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-16T10:04:43Z"
+      },
+      "message": "fix: ff push to pr/ branch backed by PR event fails\n\nPR and PR-update events (kinds 1618/1619) store the tip commit in a\n\"c\" tag rather than a \"commit\" tag. get_commit_id_from_patch only\nchecked \"commit\" and the mbox From-line heuristic, so a non-force push\nto a pr/ branch whose latest nostr event was a PR kind would bail with\n\"event is not a patch\" even though the push was a valid fast-forward.\n\nFix by checking the \"c\" tag for PR/PR-update events. Add unit tests for\nall three cases (patch, PR, PR-update).",
+      "tree": {
+        "sha": "39d0815976e988a20b39e123c0e2261c55497edc",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/39d0815976e988a20b39e123c0e2261c55497edc"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/dfd1a11568ae2b8a8d0b6b113900611cd3436f5f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoIQTsACgkQaOFUhtc/\ndeGHmxAAgLN3BrbKwXznn+K6s7dtKAsBDUGX3nkQXrBbISL5pzAsjRQV+PO8QOp4\nFoKgemxC85W4mVNMZZZ44daLFzwDl3t/LkWzq8FgLFRkkAtTTT0Ce3K4cFVjFqjL\nf5LVps13owfnlnwTYgyKPIByPtgKxR6AqmO/Xv8wrZitHDLOHn+BoyJhGjpk7Fnw\n2QW+gfIkIQ0LcXB3u+dKkswjO5O1cd1udI7G3h5TJfspF3e/D2EX1hEK7KiaaMGm\ndkNDvxkf+LMaF8VJNi2bx6hrcVPytFEUmGh3arInwiLYKxIVhtgCIkInwt7QA1Ee\npitk69k6g0Y4abcNjKOd2HVSm2Z3LOhhnUk/p7iyfP/jLpPuwuyFjZr1LWmzdJ5C\nTKry65VpNksOR09t4kQNqKAM5sKPqoxGssXxWqrzfZXxJJkDRqLny6FBRLh+C4Ab\nqXLA1csPU3ea3xF/78udyMGQNVElF0Cd4Geka/vfZ0l5NuCKTFDDd3dtBFd4iVuA\nfsEqBk+PmRS1Da4/7FV3orHdZG0tvDqK2Mru7GpEpUAFwnIK2FwkuVTBOK5j+pOZ\nHW1zO081CANlalUKvUlzfpc4RHPQa4w7nS7MW2KrkGHIUs898YlmlB/Eq1WFTNVf\nG9yhqCyFPJjMG9PVrWMEd6kBq3e34pb0Q15rdtFy6m173ZBnN0Q=\n=+CQI\n-----END PGP SIGNATURE-----",
+        "payload": "tree 39d0815976e988a20b39e123c0e2261c55497edc\nparent 0f363b3afc536b814a5dca3aaa2f615ba7c40144\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1778925617 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1778925883 +0000\n\nfix: ff push to pr/ branch backed by PR event fails\n\nPR and PR-update events (kinds 1618/1619) store the tip commit in a\n\"c\" tag rather than a \"commit\" tag. get_commit_id_from_patch only\nchecked \"commit\" and the mbox From-line heuristic, so a non-force push\nto a pr/ branch whose latest nostr event was a PR kind would bail with\n\"event is not a patch\" even though the push was a valid fast-forward.\n\nFix by checking the \"c\" tag for PR/PR-update events. Add unit tests for\nall three cases (patch, PR, PR-update).\n",
+        "verified_at": "2026-05-16T11:31:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/dfd1a11568ae2b8a8d0b6b113900611cd3436f5f",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/dfd1a11568ae2b8a8d0b6b113900611cd3436f5f",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/dfd1a11568ae2b8a8d0b6b113900611cd3436f5f/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0f363b3afc536b814a5dca3aaa2f615ba7c40144",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/0f363b3afc536b814a5dca3aaa2f615ba7c40144",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/0f363b3afc536b814a5dca3aaa2f615ba7c40144"
+      }
+    ]
+  }
+]
