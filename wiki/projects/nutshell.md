@@ -44,6 +44,8 @@ One of the two canonical mint stacks alongside [[projects/mintd]] (CDK/Rust).
 
 - 2026-05-12: `data/raw/github/daily/2026-05-12/cashubtc/nutshell/` captured **1 commit** in the 24h window: fix promises order index (#991).
 
+- 2026-05-16: `data/raw/github/daily/2026-05-16/cashubtc/nutshell/` captured **5 commits** in the 24h window (all 2026-05-15). Themes: `models.py` refactored into modular package structure (#960), `UpdateQuoteTtl` fixed to write to quote TTL settings rather than Redis cache TTL (#983), `PostMeltResponse.from_melt_quote` fixed to use `cls` instead of `self` (#1007), `os.urandom(30)` adopted for `random_hash` generation (#1005). All PRs merged by [[people/a1denvalu3]]; code authored by [[people/KvngMikey]] (3 PRs).
+
 ## Open questions
 - Funding model and activity cadence.
 - Current deployment footprint and active user count, if any.
