@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "a256e360d860376f0e3680044a25adf5ddcfe038",
+    "node_id": "C_kwDOL5Eek9oAKGEyNTZlMzYwZDg2MDM3NmYwZTM2ODAwNDRhMjVhZGY1ZGRjZmUwMzg",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-20T21:21:09Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-20T21:21:09Z"
+      },
+      "message": "Show per-recipient share for multi-recipient on-chain zap notifications\n\nA kind 8333 batch zap's `amount` tag is the total paid across all\nrecipients (per NIP.md). The notification renderer was displaying that\ntotal to every recipient verbatim, so a $250 zap-all sent to 471\npeople showed up in each recipient's inbox as \"Alex Gleason zapped\nyou $250\".\n\nSplit the total evenly across the listed `p` recipients and label the\nzap with \"and N others\" so the source of the share is clear. The even\nsplit is exact for Ditto-produced batches (useOnchainZapMany always\npays an equal amount per recipient) and a reasonable approximation\nfor batches from other clients — verifying the per-recipient share\nagainst the on-chain tx is async and too expensive for a notification\ncard.\n\nRegression-of: 17f0055a (Add 'Zap all members' on-chain action to people-list events)",
+      "tree": {
+        "sha": "4c733a7bfc8481d66f433e200fbe5354b4eaae2b",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/4c733a7bfc8481d66f433e200fbe5354b4eaae2b"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/a256e360d860376f0e3680044a25adf5ddcfe038",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoOJcUACgkQchHR+ZdE\n+7efmw//bc7ar2RcyTDucURTBLoZbYXJtUuRadw83NfBuDOqxozQeVlXQDvm750q\nPRXTD+/kC783AGU5a5WydOXpMqee7EHYWf5q/ZJVzyhEVgnulr+Ok8qLB4LKKyQ3\nrZnGKTPRH2g1GqfVnGlX0rjhhMyYNLmRYW+HYnH3qq+k5+SrnK6z3zz5uoTha3r+\n3AjPbkBQgs4trSM/NeNtPWJPaprbnET7y4E5ij3ezt78J9YaIMs2caGLipUcfEGo\nihojWUtJ6EgSAtN6p1VrbYfvofkJ/IqLQVZ4cUpXLVkH5jUKaOngHVhmRoo1SCx/\nSBcLujnwJufffeZuix7L0rNcr5uhA1usClUK1Haqbod126vzbknUppows3mbWzR5\nHDOaTJT9CaGsBiQy6yyFCk4/sflhvTmfblsY2AhY1x08onkyH+dj26Rsz97uaeKU\nadZX4A0pfnGC+u9qSX6tXWb1CDe/G92i0te7lhQsBtVX0gTd7gvzrfo7F+cXwqs+\nkXiF8y4JwnVU6F3JaYn8CTaVbJiw+1OHSkPI8Au60s67myPIrY7uXKvvW8rnQ0NJ\nD5uYUGui4KnYgxG8xW5m0uDjSWaC7yjRH/5OX7nabgayf8Li6XeHfqRo/fxxAZH3\nco1z8bExV+TtSRjQVG+ccu6SfEt155QGSroPwcomAw0VYGx6ICY=\n=J0EU\n-----END PGP SIGNATURE-----",
+        "payload": "tree 4c733a7bfc8481d66f433e200fbe5354b4eaae2b\nparent 28a108e8c085f7364c436f985153d11c338fb3fe\nauthor Alex Gleason <alex@alexgleason.me> 1779312069 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779312069 -0500\n\nShow per-recipient share for multi-recipient on-chain zap notifications\n\nA kind 8333 batch zap's `amount` tag is the total paid across all\nrecipients (per NIP.md). The notification renderer was displaying that\ntotal to every recipient verbatim, so a $250 zap-all sent to 471\npeople showed up in each recipient's inbox as \"Alex Gleason zapped\nyou $250\".\n\nSplit the total evenly across the listed `p` recipients and label the\nzap with \"and N others\" so the source of the share is clear. The even\nsplit is exact for Ditto-produced batches (useOnchainZapMany always\npays an equal amount per recipient) and a reasonable approximation\nfor batches from other clients — verifying the per-recipient share\nagainst the on-chain tx is async and too expensive for a notification\ncard.\n\nRegression-of: 17f0055a (Add 'Zap all members' on-chain action to people-list events)\n",
+        "verified_at": "2026-05-20T23:32:48Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a256e360d860376f0e3680044a25adf5ddcfe038",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/a256e360d860376f0e3680044a25adf5ddcfe038",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a256e360d860376f0e3680044a25adf5ddcfe038/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "28a108e8c085f7364c436f985153d11c338fb3fe",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/28a108e8c085f7364c436f985153d11c338fb3fe",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/28a108e8c085f7364c436f985153d11c338fb3fe"
+      }
+    ]
+  },
+  {
+    "sha": "28a108e8c085f7364c436f985153d11c338fb3fe",
+    "node_id": "C_kwDOL5Eek9oAKDI4YTEwOGU4YzA4NWY3MzY0YzQzNmY5ODUxNTNkMTFjMzM4ZmIzZmU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-20T17:23:47Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-20T17:23:47Z"
+      },
+      "message": "Add 'View' action to post success toast",
+      "tree": {
+        "sha": "6adab34d2c345cecb766c5406ddaa1c8e562aa2d",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/6adab34d2c345cecb766c5406ddaa1c8e562aa2d"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/28a108e8c085f7364c436f985153d11c338fb3fe",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoN7iMACgkQchHR+ZdE\n+7efrA/9F2k4P81F6bracNESIaTCZWLD4ULUPXy58CpJJjULe3Z/0newcyYz4zKS\nSEAq+r2nHQQ7iaaVH1OYDbUkUEAZjvYdFLXeXWEgnCZ/G8cKavwlGL5lvhnHad0c\nD4lFVH1WUU4OC7qUO9cqssIibiRaPED10JMkf1CEYVV4SkTK6D2WRmiz2M7zLTgX\nsOhxmaApD+ZvJisFq3Jez9vEwJ5GwIFf/B5nxhxO70zWljtJzwZbJx32fvyHDOL/\nvVVLHj2yvmTYHNpkNbdWb1eFiI0ZZW0zPdlDG3Bmylb4UZMNq6xNObF9x67KDTxI\nFPK45UEoVkeqUxMLkyhQ88A/0CFA3LSu/QK6uck2mJzYgHvPpKSUeBDsjhi4UnCq\n/x7Dsca/5p5wBjG/E+/JzCMy/N9O1VkxMyZyv4fXNrK6MCE6wJeuiWDIuku/JYCl\nEn4kSEB0upxSFomc+vM0XZ3487Jnj/YjYOHHuZ6z3/vvMgm5nYS+CNT35+/M7l79\nbTrXl6gm1lvbr8PNfd/LUSwJNT8T9PbpGUsCoGCHJe0BGLXcbXx4kl9rtLT2Ctmu\ngY1J6QwJToFny0cpTRgZZqagUrFvZPCOYWOO2EQPWrf5qgZmxRJZwz2CMGgFhKPu\njCcTMnnhQz+idsrxRPZlsdnzEFL7zQwJqMCcowEsj0b2F1Eva5k=\n=Anui\n-----END PGP SIGNATURE-----",
+        "payload": "tree 6adab34d2c345cecb766c5406ddaa1c8e562aa2d\nparent 96858dbe531a3330c24e44343fa0830a04e7df02\nauthor Alex Gleason <alex@alexgleason.me> 1779297827 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779297827 -0500\n\nAdd 'View' action to post success toast\n",
+        "verified_at": "2026-05-20T18:38:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/28a108e8c085f7364c436f985153d11c338fb3fe",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/28a108e8c085f7364c436f985153d11c338fb3fe",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/28a108e8c085f7364c436f985153d11c338fb3fe/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "96858dbe531a3330c24e44343fa0830a04e7df02",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/96858dbe531a3330c24e44343fa0830a04e7df02",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/96858dbe531a3330c24e44343fa0830a04e7df02"
+      }
+    ]
+  }
+]

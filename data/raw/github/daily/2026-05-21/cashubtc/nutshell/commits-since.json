@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "85c959e745e069ede68d194facfdb938016a0552",
+    "node_id": "C_kwDOH-XoldoAKDg1Yzk1OWU3NDVlMDY5ZWRlNjhkMTk0ZmFjZmRiOTM4MDE2YTA1NTI",
+    "commit": {
+      "author": {
+        "name": "Michael",
+        "email": "74271024+KvngMikey@users.noreply.github.com",
+        "date": "2026-05-20T20:51:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T20:51:09Z"
+      },
+      "message": "chore: remove stale TODO, HTLC pubkey signing already wired up (#979)\n\n* chore: remove stale TODO in add_witnesses_sig_input\n\n* chore(test): assertion added",
+      "tree": {
+        "sha": "1179d5853fdb295261e34bb06407fc7899933036",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/1179d5853fdb295261e34bb06407fc7899933036"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/85c959e745e069ede68d194facfdb938016a0552",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDh69CRC1aQ7uu5UhlAAAiRAQAKollKH9nVZvHp0t4xe48QxG\nASShxkQB66tD6zkPk4snocAQWCeel5nJWTwit0kDk/uIQblzGByqBrZdxa8rXEPK\n6EKwkDNqToTygbiL/booBJGNWPPZ9Gb+s5Gr/UkP/2NuN12ytq3cCMRIpidgEJor\nXv6AueK1cKAjp40zgkknUN0OdeCXiz6Bp0RECetbOUmCzrwq2sPQmTJSKLWG1ZSJ\nxs3hSYvr/fzNJ7auqZXhgBHYKSj+V6l7VV2SZLt5Gw8EdTl5HsSSxFvQRJW8q7FY\n5xiBSuH4T2SAwBg+EOl2MmbiLcW/CmLP/MQ42pF+Sb7jU77wFOUS0F2ZujUeuhEX\n7J8RC2wqsaIBMtAdW2/TPLUtjehrDHn0uxHrgbtoGa3FY7tHhTUiQRcNb/XnMP8O\nUvgCKIGQvixrLEPDTFlIgNR8m3MGq94ddoQUdnpfgS9lw/8KoHljGhnjHs5aFHKJ\nMUw6XJp2NuejTXlfO1PYAR2jd72wETEt+7nXF3kpBl23H2ZYr2Zf9vIrJ6VVKJbw\nJeWXmRfX07ODWdc2axKbuipbnDq9qdbTRqPL97aMgjwB5fjXBMxjmtgWQW6swjWV\nqrhIDgvExVUg/8FBxGFdIJHiHbh2atbKXcXyH2pjbL1zE2/Z3fN+MNX810Ox4RKA\nJwM0yza1DuV2hgOUqlq1\n=B4Ar\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1179d5853fdb295261e34bb06407fc7899933036\nparent c5757eee76e820c4d79ab7f431afe60ee3c8f04b\nauthor Michael <74271024+KvngMikey@users.noreply.github.com> 1779310269 +0100\ncommitter GitHub <noreply@github.com> 1779310269 -0500\n\nchore: remove stale TODO, HTLC pubkey signing already wired up (#979)\n\n* chore: remove stale TODO in add_witnesses_sig_input\n\n* chore(test): assertion added",
+        "verified_at": "2026-05-20T20:51:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/85c959e745e069ede68d194facfdb938016a0552",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/85c959e745e069ede68d194facfdb938016a0552",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/85c959e745e069ede68d194facfdb938016a0552/comments",
+    "author": {
+      "login": "KvngMikey",
+      "id": 74271024,
+      "node_id": "MDQ6VXNlcjc0MjcxMDI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74271024?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/KvngMikey",
+      "html_url": "https://github.com/KvngMikey",
+      "followers_url": "https://api.github.com/users/KvngMikey/followers",
+      "following_url": "https://api.github.com/users/KvngMikey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/KvngMikey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/KvngMikey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/KvngMikey/subscriptions",
+      "organizations_url": "https://api.github.com/users/KvngMikey/orgs",
+      "repos_url": "https://api.github.com/users/KvngMikey/repos",
+      "events_url": "https://api.github.com/users/KvngMikey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/KvngMikey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c5757eee76e820c4d79ab7f431afe60ee3c8f04b",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/c5757eee76e820c4d79ab7f431afe60ee3c8f04b",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/c5757eee76e820c4d79ab7f431afe60ee3c8f04b"
+      }
+    ]
+  },
+  {
+    "sha": "c5757eee76e820c4d79ab7f431afe60ee3c8f04b",
+    "node_id": "C_kwDOH-XoldoAKGM1NzU3ZWVlNzZlODIwYzRkNzlhYjdmNDMxYWZlNjBlZTNjOGYwNGI",
+    "commit": {
+      "author": {
+        "name": "Satscode",
+        "email": "artsmartin44@gmail.com",
+        "date": "2026-05-20T20:50:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T20:50:14Z"
+      },
+      "message": "fix: update .env.example to reflect rate limiting enabled by default (#996)\n\nFixes #982 - rate limiting has been on by default since commit 44f0abd\nbut .env.example still showed all rate-limit vars commented out, giving\noperators the wrong impression that it was disabled by default.",
+      "tree": {
+        "sha": "ae902104f81d9c06af33af862cf49f77ed87292d",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/ae902104f81d9c06af33af862cf49f77ed87292d"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/c5757eee76e820c4d79ab7f431afe60ee3c8f04b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDh6GCRC1aQ7uu5UhlAAAM0oQACqTeslrYsSPCYVOl6783FQB\nRzbur3A7dW5wqqckP9B+koThVLDchV8h+dR8SYju7w1sP3VMDS5npy/CXOFPIX9t\n+RNCL4IMkdatO1rWeSg6+A+AZFlQaHJQ87GZI50rVi7f8LKXQNrxR9403Km+EtXi\noUmxRf5ZjT/ABkSYFKs7ZN2n3mmKErnoXT7tQnWVJoDWt5sOL1KPmTcQ6AfeWZay\nENbLjmiUD7MhyOvCtBS35na2NJXl1r4o3dgUSIgv8BztGP1mZOmtjgv/NPgu7ZAx\ncLy4PGEC5M3e1Tw+E1uBk4FpfbrMQ1kZP1mYjbnwj/6zPNiDpvLX8TC7Hr4Cns11\nliKDf63jWUfasqcCs6p0m50YjVyPZD+ksq7nDyfm0uTnerE3Fyg9ZsYpdyqoqQYL\n6x+43GR3NFNpcTSu9+jcLfFhOn7qmLQM/gvOqUhCM5Hf19xaSMX0Y1RqT/efW6FX\n2FNr2dmW5xibYxnvHw/xiiUpBvFpyE2OXC8I67rFHfNMJpDgozuGWOevQpuOuWl2\n8/Y3LLlE9i3v5qKnN1I+VUQ3e9l9c31rVaVxSeZUP6LTzsu3PmDi5Y1SfCKQINRk\nno7bzA5dHQpGZHYF9LvaJm6SMiBcYPUkjZvlBBQKcxeMufgbWr/5kZCxzYvXiXCM\nFn1QhtdvwzlKuNPtddpv\n=A2ND\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ae902104f81d9c06af33af862cf49f77ed87292d\nparent eeafbb6821cac81b98dd009284205353a46c6c05\nauthor Satscode <artsmartin44@gmail.com> 1779310214 +0300\ncommitter GitHub <noreply@github.com> 1779310214 -0500\n\nfix: update .env.example to reflect rate limiting enabled by default (#996)\n\nFixes #982 - rate limiting has been on by default since commit 44f0abd\nbut .env.example still showed all rate-limit vars commented out, giving\noperators the wrong impression that it was disabled by default.",
+        "verified_at": "2026-05-20T20:50:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/c5757eee76e820c4d79ab7f431afe60ee3c8f04b",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/c5757eee76e820c4d79ab7f431afe60ee3c8f04b",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/c5757eee76e820c4d79ab7f431afe60ee3c8f04b/comments",
+    "author": {
+      "login": "Codepocketdev",
+      "id": 185554421,
+      "node_id": "U_kgDOCw9V9Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/185554421?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Codepocketdev",
+      "html_url": "https://github.com/Codepocketdev",
+      "followers_url": "https://api.github.com/users/Codepocketdev/followers",
+      "following_url": "https://api.github.com/users/Codepocketdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Codepocketdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Codepocketdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Codepocketdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/Codepocketdev/orgs",
+      "repos_url": "https://api.github.com/users/Codepocketdev/repos",
+      "events_url": "https://api.github.com/users/Codepocketdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Codepocketdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "eeafbb6821cac81b98dd009284205353a46c6c05",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/eeafbb6821cac81b98dd009284205353a46c6c05",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/eeafbb6821cac81b98dd009284205353a46c6c05"
+      }
+    ]
+  },
+  {
+    "sha": "eeafbb6821cac81b98dd009284205353a46c6c05",
+    "node_id": "C_kwDOH-XoldoAKGVlYWZiYjY4MjFjYWM4MWI5OGRkMDA5Mjg0MjA1MzUzYTQ2YzZjMDU",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-20T20:48:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T20:48:55Z"
+      },
+      "message": "chore(docker): add redis caching server to docker-compose (#990)",
+      "tree": {
+        "sha": "3df1d82997464b1a7cb86a19ca37b8e1a209da3d",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/3df1d82997464b1a7cb86a19ca37b8e1a209da3d"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/eeafbb6821cac81b98dd009284205353a46c6c05",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDh43CRC1aQ7uu5UhlAAAKngQACiNrYp9Lu+nBYzWIFmTUB3Q\nyl7dIt3u1LpbVl8ehdhutfSDm4b4s2usastr9y4jmu0USLBu67Skgq/OsAEaTAs9\n3J0hejB62xHrYXHfInTxqrRC7jIhutdduZcHNzarahjEwVrSa4PZ2vjshVjb0if2\nGuBe6aoZzb8d9qJy3ket00c2RAb7lBRrcw4AOF4bZNzG7gHzuagxn31fa34WnyPU\nG3m99ciYhEGGix6+SmZ9Sr7fpV/23Q1A14FUvhxzLnhRT0DtRkBKi/rjTEEXqpcj\nmrqSTS01NkCPXk+8pJ+4Ky5wkf009KNor5d/nc04MPgDGWE69QoLAF+4/YEmwsHj\nwhj5gaqv2vLrAO+iq1vu7r3HxsSAWTOK8PJlnZyp7OSQJ4FMS8KyzlxCcmd7CabH\nyuoBY8/Ndn6h7B2aX+F+ahpkrLz9+u4Tjn1hy95pAhhUwHVnA0k5J3OFy8GqZ926\nrx78b3R1IyNHMF2TImsXUtR82NwNukoQgMAXeACAvaJlBv2ljwH4tW8cmkxt2ZF/\n5aKFEMwf1KSor1LivcNRLERe3iv2hWUYmuQOS4u/ZlAepI15XfNDlVIlAaMEKs4w\nhHdNlCYJWmS6cjqfyBaeCUmnLqlzRVphQ/T77uaOTqbNpAhCp9eh11r/o45kWiBe\nZYkBax/foDl4R8Y4EXBl\n=1r9u\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3df1d82997464b1a7cb86a19ca37b8e1a209da3d\nparent 8418533d58ed74ce7aecfee350eed5002bf4110e\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1779310135 +0200\ncommitter GitHub <noreply@github.com> 1779310135 -0500\n\nchore(docker): add redis caching server to docker-compose (#990)",
+        "verified_at": "2026-05-20T20:48:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/eeafbb6821cac81b98dd009284205353a46c6c05",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/eeafbb6821cac81b98dd009284205353a46c6c05",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/eeafbb6821cac81b98dd009284205353a46c6c05/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8418533d58ed74ce7aecfee350eed5002bf4110e",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/8418533d58ed74ce7aecfee350eed5002bf4110e",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/8418533d58ed74ce7aecfee350eed5002bf4110e"
+      }
+    ]
+  }
+]

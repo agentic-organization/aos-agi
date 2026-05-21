@@ -32,6 +32,7 @@ Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and i
 
 - 2026-05-14: `data/raw/github/daily/2026-05-14/marmot-protocol/whitenoise-rs/` captured **4 commits** in the 24h window. Themes: database write-lock contention fix via batching shared-user lookups and unifying retry_on_lock (#831), MDK update and push token gossip hardening (#828), deletion author checks (#803), Chinese language options (#826). Committers: [[people/jgmontoya]], JeffG.
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/marmot-protocol/whitenoise-rs/`) shows **3 commits** by [[people/mubarakcoded]] and [[people/erskingardner]]: bound delete-all-data shutdown (#840), add opt-in product analytics infrastructure (#832), and add audio metadata to chat media records with imeta helpers (#833). **4 issues updated** including per-account gift-wrap decrypt throttle (#841).
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/marmot-protocol/whitenoise-rs/`) shows **2 commits** by [[people/erskingardner]]: foreground resume catch-up and snapshot refresh handling (#843), and backfill canonical key packages during maintenance (#842). **4 issues updated**.
 
 ## Related
 - [[projects/whitenoise]] — the Flutter app consuming this crate.

@@ -42,7 +42,8 @@ Ditto is one of AOS's **Foundry** projects, owned and operated by [[teams/soapbo
 - 2026-05-07: Page expanded from Foundry stub using [`tools/ingestion/github-org-discover.js`](../tools/github-org-discover.md) snapshot of `soapbox-pub` (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
 - 2026-05-07: Original Foundry-listing stub created from andotherstuff.org.
 
-- 2026-05-11: GitHub mirror activity via `data/raw/github/daily/2026-05-11/soapbox-pub/ditto/`: **9 commits** in the 72h window, including releases **v2.14.0** (2026-05-09) and **v2.14.1** (2026-05-11). Commit themes: repost header on reposted reactions/zaps/reposts, on-chain zaps (kind 8333) as notifications, Restore button for embedded snapshot card recovery, event recovery dialog layout tightening, `e` tag in draft article deletion events, avatar-to-profile links preferring `naddr`.
+- 2026-05-11: Daily ingestion (`data/raw/github/daily/2026-05-11/soapbox-pub/ditto/`) shows **2 commits** by [[people/alexgleason]] and **1 release** v2.14.0 (and follow-up v2.14.1). Commits: "Add 'Zap all members' on-chain action to people-list events" (kind 8333 batch zaps), and "Add VIEW action on payment success".
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/soapbox-pub/ditto/`) shows **2 commits** by [[people/alexgleason]]: show per-recipient share for multi-recipient on-chain zap notifications (kind 8333 batch fix), and add 'View' action to post success toast.
 
 - 2026-05-12: `data/raw/github/daily/2026-05-12/soapbox-pub/ditto/` captured **2 commits** in the 24h window (GitHub mirror). Themes: truncate version-update toast excerpt to 60 characters, fetch BTC price from mempool.space instead of CoinGecko. Committers: [[people/alexgleason]].
 

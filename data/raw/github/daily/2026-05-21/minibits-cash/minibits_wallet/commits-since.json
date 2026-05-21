@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "5e9a48d7c2848e97eafe3ef57b9b1f491ec59b21",
+    "node_id": "C_kwDOJ4hH8NoAKDVlOWE0OGQ3YzI4NDhlOTdlYWZlM2VmNTdiOWIxZjQ5MWVjNTliMjE",
+    "commit": {
+      "author": {
+        "name": "minibits-cash",
+        "email": "mail@minibits.cash",
+        "date": "2026-05-17T05:45:11Z"
+      },
+      "committer": {
+        "name": "minibits-cash",
+        "email": "mail@minibits.cash",
+        "date": "2026-05-20T14:56:21Z"
+      },
+      "message": "Fix nwc and donation flows",
+      "tree": {
+        "sha": "ccae2e5b31e5ac95eed822f7e2687a1ca5ee99f1",
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/git/trees/ccae2e5b31e5ac95eed822f7e2687a1ca5ee99f1"
+      },
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/git/commits/5e9a48d7c2848e97eafe3ef57b9b1f491ec59b21",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/commits/5e9a48d7c2848e97eafe3ef57b9b1f491ec59b21",
+    "html_url": "https://github.com/minibits-cash/minibits_wallet/commit/5e9a48d7c2848e97eafe3ef57b9b1f491ec59b21",
+    "comments_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/commits/5e9a48d7c2848e97eafe3ef57b9b1f491ec59b21/comments",
+    "author": {
+      "login": "minibits-cash",
+      "id": 138401554,
+      "node_id": "U_kgDOCD_XEg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "html_url": "https://github.com/minibits-cash",
+      "followers_url": "https://api.github.com/users/minibits-cash/followers",
+      "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+      "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+      "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+      "repos_url": "https://api.github.com/users/minibits-cash/repos",
+      "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "minibits-cash",
+      "id": 138401554,
+      "node_id": "U_kgDOCD_XEg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "html_url": "https://github.com/minibits-cash",
+      "followers_url": "https://api.github.com/users/minibits-cash/followers",
+      "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+      "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+      "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+      "repos_url": "https://api.github.com/users/minibits-cash/repos",
+      "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a20044e4f7fadd5bf0571687934623bdb8595b79",
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/commits/a20044e4f7fadd5bf0571687934623bdb8595b79",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/commit/a20044e4f7fadd5bf0571687934623bdb8595b79"
+      }
+    ]
+  },
+  {
+    "sha": "a20044e4f7fadd5bf0571687934623bdb8595b79",
+    "node_id": "C_kwDOJ4hH8NoAKGEyMDA0NGU0ZjdmYWRkNWJmMDU3MTY4NzkzNDYyM2JkYjg1OTViNzk",
+    "commit": {
+      "author": {
+        "name": "Keshav",
+        "email": "144454324+keshav0479@users.noreply.github.com",
+        "date": "2026-05-20T14:42:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T14:42:43Z"
+      },
+      "message": "NUT-12: validate offline ecash DLEQ proofs (#198)",
+      "tree": {
+        "sha": "6cca15d437df2d2813655ad887f5cfde61223628",
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/git/trees/6cca15d437df2d2813655ad887f5cfde61223628"
+      },
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/git/commits/a20044e4f7fadd5bf0571687934623bdb8595b79",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDchjCRC1aQ7uu5UhlAAAl28QAKNNyCcjQXMRUQeu3p/9pO8v\nngn599THdTqD0L07gbXazQh6p0U2s84PCjk9q/mUctQAPvH6cYSaXtqCK8dc7aiM\nGbRnQ8nzaja5LcmF+r6mnN07k6voFSW056vYKEG+gLlbGd85QgjAaArvEyz5c6oY\n+4M35fDq2u4orLPrHiWghLrTxQ89DgUvQTUl+iKJbYWJO01k9meIGXpouV97Ce5s\npfgkgSRFTiXYMTUHhiL5hmSWtjZOhe8dKe/w4k3A+iAgcSAXQciNFSJpbzHod/V9\n1CzpqToug2GaYji7VypV54jcBkQ/4HWFK30p+M8jreSIB/Rc+5IN/5Ry37sDJKBi\nOWI/Q20TgWuHxegqweITgk4hd89kRi5jE8ZT1/Eei9C0FDZl8vXOXrD1VDP9TH2A\ngcm59KFNwAirSHOOWqHU5gQ9Z/CsEVLB8lLCAVLR9Unurl42uUTTA0bRKVcWRus9\nk0PA2hIOBcgZgyXy/wVzSI+dW8QJOF+sOt1M2yTEMkSnceO6O7El/fpjRVnwS76O\nDMMi9pq0tkJqT0J5WcypxRMdzP2DNuhuNtIdhWPQ5cQm4FypHuVoKarp9aHZvauj\nUeMQCK67ypwbRrB6vnW1G6BQBYIXVyDmVsTipOA1epp40zaSk0LkFIQf1qRxgKdT\nPP2G6CwevetrBEnfPQ3G\n=HO9u\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6cca15d437df2d2813655ad887f5cfde61223628\nparent afc1f0fbb60ba0ec2a87d3e7ea899b1935924894\nauthor Keshav <144454324+keshav0479@users.noreply.github.com> 1779288163 +0530\ncommitter GitHub <noreply@github.com> 1779288163 +0200\n\nNUT-12: validate offline ecash DLEQ proofs (#198)",
+        "verified_at": "2026-05-20T14:42:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/commits/a20044e4f7fadd5bf0571687934623bdb8595b79",
+    "html_url": "https://github.com/minibits-cash/minibits_wallet/commit/a20044e4f7fadd5bf0571687934623bdb8595b79",
+    "comments_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/commits/a20044e4f7fadd5bf0571687934623bdb8595b79/comments",
+    "author": {
+      "login": "keshav0479",
+      "id": 144454324,
+      "node_id": "U_kgDOCJwytA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/144454324?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/keshav0479",
+      "html_url": "https://github.com/keshav0479",
+      "followers_url": "https://api.github.com/users/keshav0479/followers",
+      "following_url": "https://api.github.com/users/keshav0479/following{/other_user}",
+      "gists_url": "https://api.github.com/users/keshav0479/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/keshav0479/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/keshav0479/subscriptions",
+      "organizations_url": "https://api.github.com/users/keshav0479/orgs",
+      "repos_url": "https://api.github.com/users/keshav0479/repos",
+      "events_url": "https://api.github.com/users/keshav0479/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/keshav0479/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "afc1f0fbb60ba0ec2a87d3e7ea899b1935924894",
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/commits/afc1f0fbb60ba0ec2a87d3e7ea899b1935924894",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/commit/afc1f0fbb60ba0ec2a87d3e7ea899b1935924894"
+      }
+    ]
+  }
+]

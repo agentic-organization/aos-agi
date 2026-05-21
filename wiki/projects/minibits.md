@@ -17,7 +17,8 @@ Mobile Cashu wallet focused on performance and usability. One of the earliest an
 
 ## History
 - 2026-05-11: `data/raw/github/daily/2026-05-11/minibits-cash/minibits_wallet/` captured **3 commits** in the 72h window. Themes: smooth resultModal transitions, fix melt quote change recovery and async retrieval, prefer-async mode for melting.
-- 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
+- 2026-05-11: Daily ingestion (`data/raw/github/daily/2026-05-11/minibits-cash/minibits_wallet/`) shows **1 commit** and **3 issues updated**. Commit by [[people/minibits-cash]]: donation flow fixes and NWC event metadata improvements.
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/minibits-cash/minibits_wallet/`) shows **2 commits** by [[people/minibits-cash]] and keshav0479: fix NWC and donation flows, and NUT-12 offline ecash DLEQ proof validation (#198). **2 issues updated**.
 
 - 2026-05-12: `data/raw/github/daily/2026-05-12/minibits-cash/minibits_wallet/` captured **2 commits** in the 24h window. Themes: decode `creqB` payment requests, force swap when ecash notes overshoot payment amount, bump to **v0.4.2-beta.5**. Committers: [[people/minibits-cash]].
 
