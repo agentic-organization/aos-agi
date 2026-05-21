@@ -23,6 +23,8 @@ Observed activity maintaining the native Swift Cashu library and the Macadamia i
 
 ## History
 - 2026-05-14: Page created after daily ingestion revealed [[people/zeugmaster]] was referenced from multiple wiki pages (cashuswift, macadamia, cashu-core team page) but had no standalone person page.
+- 2026-05-07: Page created from an internal Q4-2025 cashubtc organization analysis (scope and responsibilities only; no performance details ingested).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/zeugmaster/macadamia/`) shows **1 commit** by zeugmaster on [[projects/macadamia]]: merge PR #57 fixing hardcoded absolute path for macadamiaMessages entitlements.
 
 ## Open questions
 - Full name, location, timezone?

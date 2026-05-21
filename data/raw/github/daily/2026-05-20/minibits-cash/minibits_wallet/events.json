@@ -1,0 +1,1785 @@
+[
+  {
+    "id": "9644915761",
+    "type": "PullRequestReviewCommentEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "created",
+      "comment": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/comments/3266049073",
+        "pull_request_review_id": 4317557873,
+        "id": 3266049073,
+        "node_id": "PRRC_kwDOJ4hH8M7Cq_Qx",
+        "diff_hunk": "@@ -219,6 +219,57 @@ export const receiveOfflinePrepareTask = async function (\n             } as unknown as TransactionTaskResult\n         }\n \n+        const mintInstance = mintsStore.findByUrl(mintToReceive) || mintsStore.findByUrl(mintUrl)\n+\n+        if (!mintInstance) {\n+            throw new AppError(\n+                Err.VALIDATION_ERROR,\n+                'This token cannot be verified offline because the mint is not saved in your wallet. Go online to add the mint or receive it online.',\n+                {caller: 'receiveOfflinePrepareTask', mintUrl: mintToReceive}\n+            )\n+        }\n+\n+        if (!mintInstance.keysetIds || mintInstance.keysetIds.length === 0 || !mintInstance.keys || mintInstance.keys.length === 0) {\n+            throw new AppError(\n+                Err.VALIDATION_ERROR,\n+                'This token cannot be verified offline because the mint keys are not saved. Sync the mint online first.',\n+                {caller: 'receiveOfflinePrepareTask', mintUrl: mintToReceive}\n+            )\n+        }\n+\n+        let token: Token\n+\n+        try {\n+            token = getDecodedToken(encodedToken, mintInstance.keysetIds)\n+        } catch (e: any) {\n+            throw new AppError(\n+                Err.VALIDATION_ERROR,\n+                'Could not decode this ecash token for offline verification.',\n+                {caller: 'receiveOfflinePrepareTask', mintUrl: mintToReceive, reason: e?.message}\n+            )\n+        }\n+\n+        const tokenMint = token.mint.replace(/\\/$/, '')\n+        const tokenUnit = token.unit || 'sat'\n+\n+        if (tokenMint !== mintToReceive) {\n+            throw new AppError(\n+                Err.VALIDATION_ERROR,\n+                'Token mint does not match the offline receive mint.',\n+                {caller: 'receiveOfflinePrepareTask', mintUrl: mintToReceive, tokenMint}\n+            )\n+        }\n+\n+        if (tokenUnit !== unit) {",
+        "path": "src/services/wallet/receiveTask.ts",
+        "commit_id": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+        "original_commit_id": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "I find those two validations super-defensive, because both the mint and unit is set by the calling ReceiveScreen.tsx code, that decodes the token before.\r\n\r\nHowever, while inspecting `onEncodedToken` method it I've seen that we do not validate the token's unit in `ReceiveScreen.tsx` to be one of the units supported by the wallet (due to the exchange rates calculations, wallet currently does not support arbitrary units). This needs to be fixed.",
+        "created_at": "2026-05-19T11:56:16Z",
+        "updated_at": "2026-05-19T11:58:12Z",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/pull/198#discussion_r3266049073",
+        "pull_request_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/comments/3266049073"
+          },
+          "html": {
+            "href": "https://github.com/minibits-cash/minibits_wallet/pull/198#discussion_r3266049073"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198"
+          }
+        },
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/comments/3266049073/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "original_position": 54,
+        "position": 54,
+        "subject_type": "line"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+        "id": 3691472541,
+        "number": 198,
+        "head": {
+          "ref": "nut12-offline-dleq",
+          "sha": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+          "repo": {
+            "id": 1130848323,
+            "url": "https://api.github.com/repos/keshav0479/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "afc1f0fbb60ba0ec2a87d3e7ea899b1935924894",
+          "repo": {
+            "id": 663242736,
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:56:16Z"
+  },
+  {
+    "id": "9636159029",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "review": {
+        "id": 4317557873,
+        "node_id": "PRR_kwDOJ4hH8M8AAAABAVi0cQ",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Please check the submitted inline comments.",
+        "commit_id": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+        "state": "commented",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/pull/198#pullrequestreview-4317557873",
+        "pull_request_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+        "_links": {
+          "html": {
+            "href": "https://github.com/minibits-cash/minibits_wallet/pull/198#pullrequestreview-4317557873"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198"
+          }
+        },
+        "submitted_at": "2026-05-19T11:57:16Z",
+        "updated_at": "2026-05-19T11:57:16Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+        "id": 3691472541,
+        "number": 198,
+        "head": {
+          "ref": "nut12-offline-dleq",
+          "sha": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+          "repo": {
+            "id": 1130848323,
+            "url": "https://api.github.com/repos/keshav0479/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "afc1f0fbb60ba0ec2a87d3e7ea899b1935924894",
+          "repo": {
+            "id": 663242736,
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:57:18Z"
+  },
+  {
+    "id": "9636157682",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "review": {
+        "id": 4317557873,
+        "node_id": "PRR_kwDOJ4hH8M8AAAABAVi0cQ",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Please check the submitted inline comments.",
+        "commit_id": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+        "state": "commented",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/pull/198#pullrequestreview-4317557873",
+        "pull_request_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+        "_links": {
+          "html": {
+            "href": "https://github.com/minibits-cash/minibits_wallet/pull/198#pullrequestreview-4317557873"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198"
+          }
+        },
+        "submitted_at": "2026-05-19T11:57:16Z",
+        "updated_at": "2026-05-19T11:57:16Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+        "id": 3691472541,
+        "number": 198,
+        "head": {
+          "ref": "nut12-offline-dleq",
+          "sha": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+          "repo": {
+            "id": 1130848323,
+            "url": "https://api.github.com/repos/keshav0479/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "afc1f0fbb60ba0ec2a87d3e7ea899b1935924894",
+          "repo": {
+            "id": 663242736,
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        }
+      },
+      "action": "updated"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:57:16Z"
+  },
+  {
+    "id": "9629976119",
+    "type": "PullRequestReviewCommentEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "created",
+      "comment": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/comments/3265125375",
+        "pull_request_review_id": 4317557873,
+        "id": 3265125375,
+        "node_id": "PRRC_kwDOJ4hH8M7Cndv_",
+        "diff_hunk": "@@ -219,6 +219,57 @@ export const receiveOfflinePrepareTask = async function (\n             } as unknown as TransactionTaskResult\n         }\n \n+        const mintInstance = mintsStore.findByUrl(mintToReceive) || mintsStore.findByUrl(mintUrl)",
+        "path": "src/services/wallet/receiveTask.ts",
+        "commit_id": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+        "original_commit_id": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "As we normalize the token's mint url above, it should be enough to search for mintToReceive.",
+        "created_at": "2026-05-19T09:20:47Z",
+        "updated_at": "2026-05-19T11:57:16Z",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/pull/198#discussion_r3265125375",
+        "pull_request_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/comments/3265125375"
+          },
+          "html": {
+            "href": "https://github.com/minibits-cash/minibits_wallet/pull/198#discussion_r3265125375"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198"
+          }
+        },
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/comments/3265125375/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "original_position": 13,
+        "position": 13,
+        "subject_type": "line"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+        "id": 3691472541,
+        "number": 198,
+        "head": {
+          "ref": "nut12-offline-dleq",
+          "sha": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+          "repo": {
+            "id": 1130848323,
+            "url": "https://api.github.com/repos/keshav0479/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "afc1f0fbb60ba0ec2a87d3e7ea899b1935924894",
+          "repo": {
+            "id": 663242736,
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-19T09:20:47Z"
+  },
+  {
+    "id": "9576396028",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 90146109,
+      "login": "MorrisMbithi",
+      "display_login": "MorrisMbithi",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MorrisMbithi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90146109?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-18T07:34:22Z"
+  },
+  {
+    "id": "9518774176",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/198",
+        "repository_url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+        "labels_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/198/labels{/name}",
+        "comments_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/198/comments",
+        "events_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/198/events",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/pull/198",
+        "id": 4456176737,
+        "node_id": "PR_kwDOJ4hH8M7cB2ad",
+        "number": 198,
+        "title": "NUT-12: validate offline ecash DLEQ proofs",
+        "user": {
+          "login": "keshav0479",
+          "id": 144454324,
+          "node_id": "U_kgDOCJwytA",
+          "avatar_url": "https://avatars.githubusercontent.com/u/144454324?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/keshav0479",
+          "html_url": "https://github.com/keshav0479",
+          "followers_url": "https://api.github.com/users/keshav0479/followers",
+          "following_url": "https://api.github.com/users/keshav0479/following{/other_user}",
+          "gists_url": "https://api.github.com/users/keshav0479/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/keshav0479/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/keshav0479/subscriptions",
+          "organizations_url": "https://api.github.com/users/keshav0479/orgs",
+          "repos_url": "https://api.github.com/users/keshav0479/repos",
+          "events_url": "https://api.github.com/users/keshav0479/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/keshav0479/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-05-15T18:42:07Z",
+        "updated_at": "2026-05-19T11:57:16Z",
+        "closed_at": null,
+        "assignee": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+          "html_url": "https://github.com/minibits-cash/minibits_wallet/pull/198",
+          "diff_url": "https://github.com/minibits-cash/minibits_wallet/pull/198.diff",
+          "patch_url": "https://github.com/minibits-cash/minibits_wallet/pull/198.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\r\n\r\nCloses #36.\r\n\r\nThis adds a local NUT-12 DLEQ validation step before an offline ecash receive is marked as `PREPARED_OFFLINE`. The wallet now verifies incoming proofs against cached mint keys offline, and fails up-front if it cannot, instead of accepting the token and finding out later at redeem.\r\n\r\nChanges:\r\n- verify every incoming offline proof with `cashu-ts` `hasValidDleq`\r\n- require the mint to be saved locally with cached keysets/keys\r\n- require DLEQ data, including `dleq.r`, for offline receive\r\n- reject unknown-mint, missing-key, and missing-DLEQ tokens during offline receive prepare\r\n- keep online receive, offline send, payment requests, NFC, models, schema, and dependencies unchanged\r\n- drop decoded proof bodies from the receive screen metadata trace, because those bodies include DLEQ data such as the `dleq.r` blinding factor\r\n\r\n## Testing\r\n\r\nUnit:\r\n- `yarn test __tests__/cashuDleq.test.ts`\r\n- Result: 11 tests passed\r\n\r\nManual Android:\r\n- Known Minibits mint token received offline -> `PREPARED_OFFLINE` -> online redeem -> `COMPLETED`\r\n\r\n| Offline receive accepted | Prepared offline transaction | Redeemed online |\r\n|---|---|---|\r\n| <img src=\"https://github.com/user-attachments/assets/0d906fd4-dc20-4e52-9696-ae7779dce9f9\" width=\"250\" alt=\"Known mint offline receive accepted\"> | <img src=\"https://github.com/user-attachments/assets/50669def-9ce5-4289-ba00-7b741bd888c4\" width=\"250\" alt=\"Prepared offline transaction detail\"> | <img src=\"https://github.com/user-attachments/assets/e7f75860-fc0d-4ba5-9b0a-8243667a8242\" width=\"250\" alt=\"Known mint offline receive redeemed online\"> |\r\n\r\n- Unknown Coinos mint offline -> clear mint-not-saved error -> `ERROR`; after adding/syncing Coinos, the same token reached `PREPARED_OFFLINE` and redeemed online as `COMPLETED`\r\n\r\n| Unknown mint rejected offline | Same mint accepted after sync | Redeemed after sync |\r\n|---|---|---|\r\n| <img src=\"https://github.com/user-attachments/assets/8147084d-e982-4fdc-b016-376001e9bb97\" width=\"250\" alt=\"Unknown Coinos mint rejected offline\"> | <img src=\"https://github.com/user-attachments/assets/c18280ec-0677-49e9-b11d-ae227b7251dd\" width=\"250\" alt=\"Coinos accepted offline after sync\"> | <img src=\"https://github.com/user-attachments/assets/4e127cfd-b23e-4095-95db-16ddf90d6731\" width=\"250\" alt=\"Coinos offline receive redeemed after sync\"> |\r\n\r\n- Duplicate already-spent token online -> mint returned `proofs already spent` -> `ERROR`\r\n- Duplicate already-spent token offline -> prepared because DLEQ was valid, then failed during online redeem as spent\r\n- Online ecash receive still completes normally\r\n- Cashu payment request flow still goes `PENDING` -> `COMPLETED`\r\n\r\n## Notes\r\n\r\nDLEQ proves that the mint signature is valid offline. It does not prove that the token is unspent. Already-spent tokens can still only be rejected during online redeem.\r\n\r\nThis intentionally tightens offline receive behavior: tokens from unknown mints, missing cached keys, or missing DLEQ are rejected offline instead of being accepted as prepared.",
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/198/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/198/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/comments/4462459297",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/pull/198#issuecomment-4462459297",
+        "issue_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/198",
+        "id": 4462459297,
+        "node_id": "IC_kwDOJ4hH8M8AAAABCfu5oQ",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-15T18:52:10Z",
+        "updated_at": "2026-05-15T18:52:10Z",
+        "body": "A thing of beauty already based on the PR desc. Looking forward to review & test. Thank you!",
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/comments/4462459297/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 1,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T18:52:10Z"
+  },
+  {
+    "id": "9518661459",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 144454324,
+      "login": "keshav0479",
+      "display_login": "keshav0479",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/keshav0479",
+      "avatar_url": "https://avatars.githubusercontent.com/u/144454324?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36",
+        "repository_url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+        "labels_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/labels{/name}",
+        "comments_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/comments",
+        "events_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/events",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/issues/36",
+        "id": 2090320774,
+        "node_id": "I_kwDOJ4hH8M58l8OG",
+        "number": 36,
+        "title": "[Wallet] NUT-12: Offline ecash signature validation",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 5706485903,
+            "node_id": "LA_kwDOJ4hH8M8AAAABVCIQjw",
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/labels/enhancement",
+            "name": "enhancement",
+            "color": "a2eeef",
+            "default": true,
+            "description": "New feature or request"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2024-01-19T11:21:53Z",
+        "updated_at": "2026-05-15T18:49:02Z",
+        "closed_at": null,
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "Make sure that validation of mint's signature can be done by the wallet itself using DLEQ proof (mostly usable in offline scenario, where immediate split with the mint is not available).",
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/comments/4462432794",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/issues/36#issuecomment-4462432794",
+        "issue_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36",
+        "id": 4462432794,
+        "node_id": "IC_kwDOJ4hH8M8AAAABCftSGg",
+        "user": {
+          "login": "keshav0479",
+          "id": 144454324,
+          "node_id": "U_kgDOCJwytA",
+          "avatar_url": "https://avatars.githubusercontent.com/u/144454324?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/keshav0479",
+          "html_url": "https://github.com/keshav0479",
+          "followers_url": "https://api.github.com/users/keshav0479/followers",
+          "following_url": "https://api.github.com/users/keshav0479/following{/other_user}",
+          "gists_url": "https://api.github.com/users/keshav0479/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/keshav0479/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/keshav0479/subscriptions",
+          "organizations_url": "https://api.github.com/users/keshav0479/orgs",
+          "repos_url": "https://api.github.com/users/keshav0479/repos",
+          "events_url": "https://api.github.com/users/keshav0479/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/keshav0479/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-15T18:49:01Z",
+        "updated_at": "2026-05-15T18:49:01Z",
+        "body": "PR is up, kept it scoped to offline receive first: verify DLEQ before accepting, and show a clear error when it can’t be verified locally.",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/comments/4462432794/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T18:49:01Z"
+  },
+  {
+    "id": "9518430901",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 144454324,
+      "login": "keshav0479",
+      "display_login": "keshav0479",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/keshav0479",
+      "avatar_url": "https://avatars.githubusercontent.com/u/144454324?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 198,
+      "pull_request": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/198",
+        "id": 3691472541,
+        "number": 198,
+        "head": {
+          "ref": "nut12-offline-dleq",
+          "sha": "7d8b9bbae543c909e5e16d20fc1d9aca98871474",
+          "repo": {
+            "id": 1130848323,
+            "url": "https://api.github.com/repos/keshav0479/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "afc1f0fbb60ba0ec2a87d3e7ea899b1935924894",
+          "repo": {
+            "id": 663242736,
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T18:42:07Z"
+  },
+  {
+    "id": "9410093857",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 74271024,
+      "login": "KvngMikey",
+      "display_login": "KvngMikey",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/KvngMikey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74271024?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "forked",
+      "forkee": {
+        "id": 1237651060,
+        "node_id": "R_kgDOScUOdA",
+        "name": "minibits_wallet",
+        "full_name": "KvngMikey/minibits_wallet",
+        "private": false,
+        "owner": {
+          "login": "KvngMikey",
+          "id": 74271024,
+          "node_id": "MDQ6VXNlcjc0MjcxMDI0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/74271024?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/KvngMikey",
+          "html_url": "https://github.com/KvngMikey",
+          "followers_url": "https://api.github.com/users/KvngMikey/followers",
+          "following_url": "https://api.github.com/users/KvngMikey/following{/other_user}",
+          "gists_url": "https://api.github.com/users/KvngMikey/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/KvngMikey/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/KvngMikey/subscriptions",
+          "organizations_url": "https://api.github.com/users/KvngMikey/orgs",
+          "repos_url": "https://api.github.com/users/KvngMikey/repos",
+          "events_url": "https://api.github.com/users/KvngMikey/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/KvngMikey/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/KvngMikey/minibits_wallet",
+        "description": null,
+        "fork": true,
+        "url": "https://api.github.com/repos/KvngMikey/minibits_wallet",
+        "forks_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/forks",
+        "keys_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/teams",
+        "hooks_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/hooks",
+        "issue_events_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/events",
+        "assignees_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/tags",
+        "blobs_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/languages",
+        "stargazers_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/stargazers",
+        "contributors_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/contributors",
+        "subscribers_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/subscribers",
+        "subscription_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/subscription",
+        "commits_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/merges",
+        "archive_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/downloads",
+        "issues_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/labels{/name}",
+        "releases_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/KvngMikey/minibits_wallet/deployments",
+        "created_at": "2026-05-13T11:31:40Z",
+        "updated_at": "2026-05-13T11:31:40Z",
+        "pushed_at": "2026-05-12T11:35:42Z",
+        "git_url": "git://github.com/KvngMikey/minibits_wallet.git",
+        "ssh_url": "git@github.com:KvngMikey/minibits_wallet.git",
+        "clone_url": "https://github.com/KvngMikey/minibits_wallet.git",
+        "svn_url": "https://github.com/KvngMikey/minibits_wallet",
+        "homepage": null,
+        "size": 19042,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "main"
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-13T11:31:40Z"
+  },
+  {
+    "id": "9384592161",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 90551797,
+      "login": "NicolaLS",
+      "display_login": "NicolaLS",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NicolaLS",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90551797?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-12T21:44:28Z"
+  },
+  {
+    "id": "11745115195",
+    "type": "PushEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "repository_id": 663242736,
+      "push_id": 34036158970,
+      "ref": "refs/heads/main",
+      "head": "afc1f0fbb60ba0ec2a87d3e7ea899b1935924894",
+      "before": "6e09ba95a7db485b8c99b103403f90625630aa0f"
+    },
+    "public": true,
+    "created_at": "2026-05-12T11:35:43Z"
+  },
+  {
+    "id": "11734795354",
+    "type": "PushEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "repository_id": 663242736,
+      "push_id": 34025838806,
+      "ref": "refs/heads/main",
+      "head": "6e09ba95a7db485b8c99b103403f90625630aa0f",
+      "before": "2e4d9328bbc480e374e654114afea14127303fd8"
+    },
+    "public": true,
+    "created_at": "2026-05-12T07:31:54Z"
+  },
+  {
+    "id": "11715286436",
+    "type": "PushEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "repository_id": 663242736,
+      "push_id": 34006346454,
+      "ref": "refs/heads/main",
+      "head": "2e4d9328bbc480e374e654114afea14127303fd8",
+      "before": "86f4525bf49fc409b5f8e5b4cfffb190342ae37d"
+    },
+    "public": true,
+    "created_at": "2026-05-11T20:33:28Z"
+  },
+  {
+    "id": "11696347798",
+    "type": "PushEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "repository_id": 663242736,
+      "push_id": 33987454948,
+      "ref": "refs/heads/main",
+      "head": "86f4525bf49fc409b5f8e5b4cfffb190342ae37d",
+      "before": "6e63e941f343aa0e2ba4e374e9085e757a4d9e29"
+    },
+    "public": true,
+    "created_at": "2026-05-11T13:16:33Z"
+  },
+  {
+    "id": "9314877529",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 203048277,
+      "login": "tomaioo",
+      "display_login": "tomaioo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tomaioo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/203048277?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 197,
+      "pull_request": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/197",
+        "id": 3656179095,
+        "number": 197,
+        "head": {
+          "ref": "improve/quality/dead-code-entire-asyncstorage-ts-file-co",
+          "sha": "0ae2aa17d0cea340f21ad538ab14cc69760eef43",
+          "repo": {
+            "id": 1234255571,
+            "url": "https://api.github.com/repos/tomaioo/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "27734a1032cf89c7894574ee77184bc28b973202",
+          "repo": {
+            "id": 663242736,
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-11T13:16:32Z"
+  },
+  {
+    "id": "9314866977",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "review": {
+        "id": 4263951993,
+        "node_id": "PRR_kwDOJ4hH8M7-Jr55",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "0ae2aa17d0cea340f21ad538ab14cc69760eef43",
+        "state": "approved",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/pull/197#pullrequestreview-4263951993",
+        "pull_request_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/197",
+        "_links": {
+          "html": {
+            "href": "https://github.com/minibits-cash/minibits_wallet/pull/197#pullrequestreview-4263951993"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/197"
+          }
+        },
+        "submitted_at": "2026-05-11T13:16:08Z",
+        "updated_at": "2026-05-11T13:16:08Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/197",
+        "id": 3656179095,
+        "number": 197,
+        "head": {
+          "ref": "improve/quality/dead-code-entire-asyncstorage-ts-file-co",
+          "sha": "0ae2aa17d0cea340f21ad538ab14cc69760eef43",
+          "repo": {
+            "id": 1234255571,
+            "url": "https://api.github.com/repos/tomaioo/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "27734a1032cf89c7894574ee77184bc28b973202",
+          "repo": {
+            "id": 663242736,
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-11T13:16:20Z"
+  },
+  {
+    "id": "9314829361",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "review": {
+        "id": 4263945601,
+        "node_id": "PRR_kwDOJ4hH8M7-JqWB",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "0ae2aa17d0cea340f21ad538ab14cc69760eef43",
+        "state": "approved",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/pull/197#pullrequestreview-4263945601",
+        "pull_request_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/197",
+        "_links": {
+          "html": {
+            "href": "https://github.com/minibits-cash/minibits_wallet/pull/197#pullrequestreview-4263945601"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/197"
+          }
+        },
+        "submitted_at": "2026-05-11T13:15:25Z",
+        "updated_at": "2026-05-11T13:15:25Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/197",
+        "id": 3656179095,
+        "number": 197,
+        "head": {
+          "ref": "improve/quality/dead-code-entire-asyncstorage-ts-file-co",
+          "sha": "0ae2aa17d0cea340f21ad538ab14cc69760eef43",
+          "repo": {
+            "id": 1234255571,
+            "url": "https://api.github.com/repos/tomaioo/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "27734a1032cf89c7894574ee77184bc28b973202",
+          "repo": {
+            "id": 663242736,
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-11T13:15:26Z"
+  },
+  {
+    "id": "11666853281",
+    "type": "PushEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "repository_id": 663242736,
+      "push_id": 33957973067,
+      "ref": "refs/heads/main",
+      "head": "6e63e941f343aa0e2ba4e374e9085e757a4d9e29",
+      "before": "15c6fa7a43b662ee31fb99ecc1e7e9b525b7d094"
+    },
+    "public": true,
+    "created_at": "2026-05-10T21:31:35Z"
+  },
+  {
+    "id": "11666583205",
+    "type": "PushEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "repository_id": 663242736,
+      "push_id": 33957702813,
+      "ref": "refs/heads/main",
+      "head": "15c6fa7a43b662ee31fb99ecc1e7e9b525b7d094",
+      "before": "27734a1032cf89c7894574ee77184bc28b973202"
+    },
+    "public": true,
+    "created_at": "2026-05-10T21:18:03Z"
+  },
+  {
+    "id": "9275969823",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 203048277,
+      "login": "tomaioo",
+      "display_login": "tomaioo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tomaioo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/203048277?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 197,
+      "pull_request": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/pulls/197",
+        "id": 3656179095,
+        "number": 197,
+        "head": {
+          "ref": "improve/quality/dead-code-entire-asyncstorage-ts-file-co",
+          "sha": "0ae2aa17d0cea340f21ad538ab14cc69760eef43",
+          "repo": {
+            "id": 1234255571,
+            "url": "https://api.github.com/repos/tomaioo/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "27734a1032cf89c7894574ee77184bc28b973202",
+          "repo": {
+            "id": 663242736,
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+            "name": "minibits_wallet"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-10T00:13:02Z"
+  },
+  {
+    "id": "9275968759",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 203048277,
+      "login": "tomaioo",
+      "display_login": "tomaioo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tomaioo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/203048277?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "forked",
+      "forkee": {
+        "id": 1234255571,
+        "node_id": "R_kgDOSZE-0w",
+        "name": "minibits_wallet",
+        "full_name": "tomaioo/minibits_wallet",
+        "private": false,
+        "owner": {
+          "login": "tomaioo",
+          "id": 203048277,
+          "node_id": "U_kgDODBpFVQ",
+          "avatar_url": "https://avatars.githubusercontent.com/u/203048277?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tomaioo",
+          "html_url": "https://github.com/tomaioo",
+          "followers_url": "https://api.github.com/users/tomaioo/followers",
+          "following_url": "https://api.github.com/users/tomaioo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/tomaioo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/tomaioo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/tomaioo/subscriptions",
+          "organizations_url": "https://api.github.com/users/tomaioo/orgs",
+          "repos_url": "https://api.github.com/users/tomaioo/repos",
+          "events_url": "https://api.github.com/users/tomaioo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/tomaioo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/tomaioo/minibits_wallet",
+        "description": null,
+        "fork": true,
+        "url": "https://api.github.com/repos/tomaioo/minibits_wallet",
+        "forks_url": "https://api.github.com/repos/tomaioo/minibits_wallet/forks",
+        "keys_url": "https://api.github.com/repos/tomaioo/minibits_wallet/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/tomaioo/minibits_wallet/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/tomaioo/minibits_wallet/teams",
+        "hooks_url": "https://api.github.com/repos/tomaioo/minibits_wallet/hooks",
+        "issue_events_url": "https://api.github.com/repos/tomaioo/minibits_wallet/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/tomaioo/minibits_wallet/events",
+        "assignees_url": "https://api.github.com/repos/tomaioo/minibits_wallet/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/tomaioo/minibits_wallet/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/tomaioo/minibits_wallet/tags",
+        "blobs_url": "https://api.github.com/repos/tomaioo/minibits_wallet/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/tomaioo/minibits_wallet/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/tomaioo/minibits_wallet/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/tomaioo/minibits_wallet/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/tomaioo/minibits_wallet/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/tomaioo/minibits_wallet/languages",
+        "stargazers_url": "https://api.github.com/repos/tomaioo/minibits_wallet/stargazers",
+        "contributors_url": "https://api.github.com/repos/tomaioo/minibits_wallet/contributors",
+        "subscribers_url": "https://api.github.com/repos/tomaioo/minibits_wallet/subscribers",
+        "subscription_url": "https://api.github.com/repos/tomaioo/minibits_wallet/subscription",
+        "commits_url": "https://api.github.com/repos/tomaioo/minibits_wallet/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/tomaioo/minibits_wallet/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/tomaioo/minibits_wallet/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/tomaioo/minibits_wallet/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/tomaioo/minibits_wallet/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/tomaioo/minibits_wallet/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/tomaioo/minibits_wallet/merges",
+        "archive_url": "https://api.github.com/repos/tomaioo/minibits_wallet/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/tomaioo/minibits_wallet/downloads",
+        "issues_url": "https://api.github.com/repos/tomaioo/minibits_wallet/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/tomaioo/minibits_wallet/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/tomaioo/minibits_wallet/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/tomaioo/minibits_wallet/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/tomaioo/minibits_wallet/labels{/name}",
+        "releases_url": "https://api.github.com/repos/tomaioo/minibits_wallet/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/tomaioo/minibits_wallet/deployments",
+        "created_at": "2026-05-10T00:12:53Z",
+        "updated_at": "2026-05-10T00:12:53Z",
+        "pushed_at": "2026-05-10T00:13:01Z",
+        "git_url": "git://github.com/tomaioo/minibits_wallet.git",
+        "ssh_url": "git@github.com:tomaioo/minibits_wallet.git",
+        "clone_url": "https://github.com/tomaioo/minibits_wallet.git",
+        "svn_url": "https://github.com/tomaioo/minibits_wallet",
+        "homepage": null,
+        "size": 18637,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "main"
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-10T00:12:53Z"
+  },
+  {
+    "id": "11638981620",
+    "type": "PushEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "repository_id": 663242736,
+      "push_id": 33930066394,
+      "ref": "refs/heads/main",
+      "head": "27734a1032cf89c7894574ee77184bc28b973202",
+      "before": "aa682ae3ad5f76611fdd303a9f603a15ee96ef2d"
+    },
+    "public": true,
+    "created_at": "2026-05-09T21:40:35Z"
+  },
+  {
+    "id": "9262809434",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 176837840,
+      "login": "Delgado74",
+      "display_login": "Delgado74",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Delgado74",
+      "avatar_url": "https://avatars.githubusercontent.com/u/176837840?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-09T06:07:19Z"
+  },
+  {
+    "id": "8899406051",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 138401554,
+      "login": "minibits-cash",
+      "display_login": "minibits-cash",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/minibits-cash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138401554?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36",
+        "repository_url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+        "labels_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/labels{/name}",
+        "comments_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/comments",
+        "events_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/events",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/issues/36",
+        "id": 2090320774,
+        "node_id": "I_kwDOJ4hH8M58l8OG",
+        "number": 36,
+        "title": "[Wallet] NUT-12: Offline ecash signature validation",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 5706485903,
+            "node_id": "LA_kwDOJ4hH8M8AAAABVCIQjw",
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/labels/enhancement",
+            "name": "enhancement",
+            "color": "a2eeef",
+            "default": true,
+            "description": "New feature or request"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2024-01-19T11:21:53Z",
+        "updated_at": "2026-05-15T18:49:02Z",
+        "closed_at": null,
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "Make sure that validation of mint's signature can be done by the wallet itself using DLEQ proof (mostly usable in offline scenario, where immediate split with the mint is not available).",
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/comments/4341060299",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/issues/36#issuecomment-4341060299",
+        "issue_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36",
+        "id": 4341060299,
+        "node_id": "IC_kwDOJ4hH8M8AAAABAr9Syw",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-29T05:23:55Z",
+        "updated_at": "2026-04-29T05:23:55Z",
+        "body": "Great, it's yours! Thanks",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/comments/4341060299/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 1,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-29T05:23:55Z"
+  },
+  {
+    "id": "8892341788",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 144454324,
+      "login": "keshav0479",
+      "display_login": "keshav0479",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/keshav0479",
+      "avatar_url": "https://avatars.githubusercontent.com/u/144454324?"
+    },
+    "repo": {
+      "id": 663242736,
+      "name": "minibits-cash/minibits_wallet",
+      "url": "https://api.github.com/repos/minibits-cash/minibits_wallet"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36",
+        "repository_url": "https://api.github.com/repos/minibits-cash/minibits_wallet",
+        "labels_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/labels{/name}",
+        "comments_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/comments",
+        "events_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/events",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/issues/36",
+        "id": 2090320774,
+        "node_id": "I_kwDOJ4hH8M58l8OG",
+        "number": 36,
+        "title": "[Wallet] NUT-12: Offline ecash signature validation",
+        "user": {
+          "login": "minibits-cash",
+          "id": 138401554,
+          "node_id": "U_kgDOCD_XEg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/138401554?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/minibits-cash",
+          "html_url": "https://github.com/minibits-cash",
+          "followers_url": "https://api.github.com/users/minibits-cash/followers",
+          "following_url": "https://api.github.com/users/minibits-cash/following{/other_user}",
+          "gists_url": "https://api.github.com/users/minibits-cash/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/minibits-cash/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/minibits-cash/subscriptions",
+          "organizations_url": "https://api.github.com/users/minibits-cash/orgs",
+          "repos_url": "https://api.github.com/users/minibits-cash/repos",
+          "events_url": "https://api.github.com/users/minibits-cash/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/minibits-cash/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 5706485903,
+            "node_id": "LA_kwDOJ4hH8M8AAAABVCIQjw",
+            "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/labels/enhancement",
+            "name": "enhancement",
+            "color": "a2eeef",
+            "default": true,
+            "description": "New feature or request"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2024-01-19T11:21:53Z",
+        "updated_at": "2026-05-15T18:49:02Z",
+        "closed_at": null,
+        "assignee": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "Make sure that validation of mint's signature can be done by the wallet itself using DLEQ proof (mostly usable in offline scenario, where immediate split with the mint is not available).",
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/comments/4339689319",
+        "html_url": "https://github.com/minibits-cash/minibits_wallet/issues/36#issuecomment-4339689319",
+        "issue_url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/36",
+        "id": 4339689319,
+        "node_id": "IC_kwDOJ4hH8M8AAAABAqpnZw",
+        "user": {
+          "login": "keshav0479",
+          "id": 144454324,
+          "node_id": "U_kgDOCJwytA",
+          "avatar_url": "https://avatars.githubusercontent.com/u/144454324?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/keshav0479",
+          "html_url": "https://github.com/keshav0479",
+          "followers_url": "https://api.github.com/users/keshav0479/followers",
+          "following_url": "https://api.github.com/users/keshav0479/following{/other_user}",
+          "gists_url": "https://api.github.com/users/keshav0479/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/keshav0479/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/keshav0479/subscriptions",
+          "organizations_url": "https://api.github.com/users/keshav0479/orgs",
+          "repos_url": "https://api.github.com/users/keshav0479/repos",
+          "events_url": "https://api.github.com/users/keshav0479/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/keshav0479/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-04-28T22:59:15Z",
+        "updated_at": "2026-04-28T22:59:15Z",
+        "body": "Hey @minibits-cash, is anyone already working on this? if not, i can take it up.\nI’d keep it scoped to offline receive first: verify token’s DLEQ before accepting it offline, and show a clear failure when it can’t be verified without talking to the mint.\n",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/minibits-cash/minibits_wallet/issues/comments/4339689319/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-28T22:59:15Z"
+  }
+]

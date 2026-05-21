@@ -20,6 +20,7 @@ A **modular, TypeScript-first toolkit** for building Cashu wallets and applicati
 - 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/coco/`) shows **31 commits** in the 24h window, all by [[people/egge21m]]. Commit themes: project history derived from operations (`feat/history-refactor` merged), fix rebased operation projection in history, update test fixtures for history send, preserve legacy send tokens in adapters, exclude failed melts from IndexedDB history. **7 issues updated** including refactor of legacy melt quote surface, unblind restored signatures, rollback offline exact-match sends, and payment-request receive saga.
 
 - 2026-05-17: `data/raw/github/daily/2026-05-17/cashubtc/coco/` captured **2 commits** in the 24h window. Themes: merge multi-unit support (#174), adjust changeset to major-bump semver. Committer: [[people/egge21m]] (both).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/coco/`) shows **3 commits** by [[people/egge21m]]: merge PR #178 removing legacy melt quotes, merge PR #177 for blinded signature recovery, and fix validating restored proof keyset units in core.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

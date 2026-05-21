@@ -22,6 +22,7 @@ Key NUTs include the mandatory primitives (minting, melting via Lightning, BDHKE
 ## History
 - 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/nuts/`) shows **1 issue updated**: onchain payment method specification.
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/nuts/`) shows **3 issues updated** (no new commits): #368 deterministic DLEQ nonce derivation (NUT-12) by [[people/robwoodgate]], #365 onchain payment method by [[people/thesimplekid]], #278 NUT10/NUT11 canonical serialization of secret by Toporin.
 
 - 2026-05-14: `data/raw/github/daily/2026-05-14/cashubtc/nuts/` captured **2 commits** in the 24h window. Themes: new error code 12003 for expired keysets, NUT-29 error codes for duplicate quote IDs. Committers: gudnuf, kvngmikey.
 

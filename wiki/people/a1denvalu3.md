@@ -31,6 +31,7 @@ Primary contributor to the Numo point-of-sale product and mobile ecosystem withi
 
 ## History
 - 2026-05-07: Page created from an internal Q4-2025 cashubtc organization analysis (scope and responsibilities only; no performance details ingested).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/nutshell/`) shows **1 commit** by a1denvalu3 on [[projects/nutshell]]: merge PR #904 for bech32m encoded payments. Also opened issue #525 on [[projects/cashu-me]] (subscribe to all proofs for token state updates).
 
 - 2026-05-16: Daily ingestion (`data/raw/github/daily/2026-05-16/cashubtc/nutshell/`) captured **5 merged PRs** by [[people/a1denvalu3]] in the 24h window. Themes: `models.py` modular refactor (#960), `UpdateQuoteTtl` Redis/quote TTL fix (#983), `os.urandom(30)` for `random_hash` (#1005), `PostMeltResponse.from_melt_quote` `cls` fix (#1007). Also merged PR removing temporary migration scripts in [[projects/numo]] (#314).
 

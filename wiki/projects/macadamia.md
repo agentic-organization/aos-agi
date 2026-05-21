@@ -18,6 +18,7 @@ Native iOS Cashu wallet written in Swift. Developed by [[people/zeugmaster]], wh
 
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/zeugmaster/macadamia/`) shows **1 commit** by [[people/zeugmaster]]: merge PR #57 fixing hardcoded absolute path for macadamiaMessages entitlements.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

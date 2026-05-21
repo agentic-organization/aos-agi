@@ -38,6 +38,7 @@ The **Rust Cashu Development Kit** — wallet *and* mint logic in one library, w
 - 2026-05-15: `data/raw/github/daily/2026-05-15/cashubtc/cdk/` captured **1 commit** and **11 updated issues** in the 24h window. Themes: agent review documentation update. Issues: redis-cluster caching support (#1936), FFI mint-info error propagation (#1968), auth wildcard behavior (#1967), zero-signature validation (#1966), SendOptions p2pk_signing_keys (#1835), keyset expiry enforcement (#1946), on-chain BDK work (#1870), wallet RestoreOptions batching (#1923), Apache license addition (#1864). Committer: [[people/thesimplekid]].
 
 - 2026-05-17: `data/raw/github/daily/2026-05-17/cashubtc/cdk/` captured **3 commits** in the 24h window. Themes: batch mint-quote subscription snapshot fetching, FFI mint-info conversion error propagation, preserve auth wildcard endpoint matching. Committer: [[people/thesimplekid]] (all 3).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/cdk/`) shows **3 commits** by [[people/thesimplekid]]: "feat: ws connection limit", "fix: normalize payment method case for auth", and "feat: ensure auth keyset". **16 issues updated** including closing #1792 (multi-language bindings CI checks) and #1788 (Dart release process); open issue #1799 removes `clone` from Mint struct.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

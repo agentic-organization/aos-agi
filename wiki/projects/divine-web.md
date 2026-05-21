@@ -31,6 +31,7 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 ## History
 - 2026-05-11: `data/raw/github/daily/2026-05-11/divinevideo/divine-web/` captured **6 commits** in the 72h window. Themes: brand-correct Extra Bold legal headings, rich link previews for Slack/Twitter, sim-suppression hooks for divine-brain virtual-persona, revert three-state age gate, bare Nostr identifier linkification.
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/divinevideo/divine-web/`) shows **2 issues updated** (no new commits): #361 family + age-review + kids pages by [[people/notthatkindofdrliz]], and #362 moderation e/p tag report type mapping to NIP-56 by jalcine.
 
 - 2026-05-12: `data/raw/github/daily/2026-05-12/divinevideo/divine-web/` captured **4 commits** in the 24h window. Themes: open-graph/embed coverage (`/embed/:id`, @username, hashtags, search, discovery, apex), child-safety report categories split into three distinct types, newsletter consent on waitlist signup, DM bunker-decrypt failure surfacing in moderator inbox. Committers: [[people/rabble]], [[people/elphiethewitch]], [[people/dogelover911]], [[people/dcadenas]].
 

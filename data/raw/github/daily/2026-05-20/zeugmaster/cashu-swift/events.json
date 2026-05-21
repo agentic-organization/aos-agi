@@ -1,0 +1,473 @@
+[
+  {
+    "id": "12074531431",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "repository_id": 797374520,
+      "push_id": 34365093894,
+      "ref": "refs/heads/payment-methods",
+      "head": "f224fd92290f7f20c322e8f9676d8ae1171ed8c0",
+      "before": "436f03ebc7a2f7f02d79e03fa9dd190221b5ecd9"
+    },
+    "public": true,
+    "created_at": "2026-05-19T15:21:30Z"
+  },
+  {
+    "id": "11974514866",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "ref": "payment-methods",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/payment-methods",
+      "master_branch": "main",
+      "description": "CashuSwift is a native library for building Cashu Ecash wallets on all of Apple's platforms",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-17T14:42:32Z"
+  },
+  {
+    "id": "11793883706",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "repository_id": 797374520,
+      "push_id": 34084981042,
+      "ref": "refs/heads/main",
+      "head": "2730dce1c7321d882958e2f3ce2571b72aabef19",
+      "before": "618decee07ab85ba3749fb459f5e8146e6af98bf"
+    },
+    "public": true,
+    "created_at": "2026-05-13T09:44:40Z"
+  },
+  {
+    "id": "9371328635",
+    "type": "ReleaseEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "action": "published",
+      "release": {
+        "url": "https://api.github.com/repos/zeugmaster/CashuSwift/releases/321256037",
+        "assets_url": "https://api.github.com/repos/zeugmaster/CashuSwift/releases/321256037/assets",
+        "upload_url": "https://uploads.github.com/repos/zeugmaster/CashuSwift/releases/321256037/assets{?name,label}",
+        "html_url": "https://github.com/zeugmaster/CashuSwift/releases/tag/v0.3.2",
+        "id": 321256037,
+        "author": {
+          "login": "zeugmaster",
+          "id": 3989336,
+          "node_id": "MDQ6VXNlcjM5ODkzMzY=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/3989336?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zeugmaster",
+          "html_url": "https://github.com/zeugmaster",
+          "followers_url": "https://api.github.com/users/zeugmaster/followers",
+          "following_url": "https://api.github.com/users/zeugmaster/following{/other_user}",
+          "gists_url": "https://api.github.com/users/zeugmaster/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/zeugmaster/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/zeugmaster/subscriptions",
+          "organizations_url": "https://api.github.com/users/zeugmaster/orgs",
+          "repos_url": "https://api.github.com/users/zeugmaster/repos",
+          "events_url": "https://api.github.com/users/zeugmaster/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/zeugmaster/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOL4b4OM4TJfpl",
+        "tag_name": "v0.3.2",
+        "target_commitish": "main",
+        "name": "v0.3.2",
+        "draft": false,
+        "immutable": false,
+        "prerelease": false,
+        "created_at": "2026-05-12T14:01:33Z",
+        "updated_at": "2026-05-12T15:51:00Z",
+        "published_at": "2026-05-12T15:51:00Z",
+        "assets": [],
+        "tarball_url": "https://api.github.com/repos/zeugmaster/CashuSwift/tarball/v0.3.2",
+        "zipball_url": "https://api.github.com/repos/zeugmaster/CashuSwift/zipball/v0.3.2",
+        "body": "## What's Changed\r\n* add LocalizedError conformance to CashuError by @zeugmaster in https://github.com/zeugmaster/CashuSwift/pull/21\r\n* Multi unit reliability by @zeugmaster in https://github.com/zeugmaster/CashuSwift/pull/22\r\n\r\n\r\n**Full Changelog**: https://github.com/zeugmaster/CashuSwift/compare/v0.3.1...v0.3.2",
+        "mentions_count": 1,
+        "mentions": [
+          {
+            "avatar_url": "https://avatars.githubusercontent.com/u/3989336?v=4",
+            "login": "zeugmaster",
+            "profile_name": "Dario",
+            "profile_url": "https://github.com/zeugmaster",
+            "avatar_user_actor": true
+          }
+        ],
+        "short_description_html": "<h2>What's Changed</h2>\n<ul>\n<li>add LocalizedError conformance to CashuError by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zeugmaster/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zeugmaster\">@zeugmaster</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4342258653\" data-permission-text=\"Title is private\" data-url=\"https://github.com/zeugmaster/CashuSwift/issues/21\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/zeugmaster/CashuSwift/pull/21/hovercard\" href=\"https://github.com/zeugmaster/CashuSwift/pull/21\">#21</a>\n</li>\n<li>Multi unit reliability by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zeugmaster/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zeugmaster\">@zeugmaster</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4429554455\" data-permission-text=\"Title is private\" data-url=\"https://github.com/zeugmaster/CashuSwift/issues/22\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/zeugmaster/CashuSwift/pull/22/hovercard\" href=\"https://github.com/zeugmaster/CashuSwift/pull/22\">#22</a>\n</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/zeugmaster/CashuSwift/compare/v0.3.1...v0.3.2\"><tt>v0.3.1...v0.3.2</tt></a></p>",
+        "is_short_description_html_truncated": false
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-12T15:51:00Z"
+  },
+  {
+    "id": "11753032989",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "repository_id": 797374520,
+      "push_id": 34042847981,
+      "ref": "refs/heads/multi-unit",
+      "head": "618decee07ab85ba3749fb459f5e8146e6af98bf",
+      "before": "97fc91b00f911e99a9d06075e9a6d1a13a9c2efc"
+    },
+    "public": true,
+    "created_at": "2026-05-12T13:58:59Z"
+  },
+  {
+    "id": "11751850399",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "repository_id": 797374520,
+      "push_id": 34042995984,
+      "ref": "refs/heads/main",
+      "head": "618decee07ab85ba3749fb459f5e8146e6af98bf",
+      "before": "fd4c62f8e48288238ea35c49d0e3ec17498e7311"
+    },
+    "public": true,
+    "created_at": "2026-05-12T14:01:41Z"
+  },
+  {
+    "id": "9366443656",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 22,
+      "pull_request": {
+        "url": "https://api.github.com/repos/zeugmaster/CashuSwift/pulls/22",
+        "id": 3669068264,
+        "number": 22,
+        "head": {
+          "ref": "multi-unit",
+          "sha": "618decee07ab85ba3749fb459f5e8146e6af98bf",
+          "repo": {
+            "id": 797374520,
+            "url": "https://api.github.com/repos/zeugmaster/CashuSwift",
+            "name": "CashuSwift"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "fd4c62f8e48288238ea35c49d0e3ec17498e7311",
+          "repo": {
+            "id": 797374520,
+            "url": "https://api.github.com/repos/zeugmaster/CashuSwift",
+            "name": "CashuSwift"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-12T14:01:44Z"
+  },
+  {
+    "id": "9365225137",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 22,
+      "pull_request": {
+        "url": "https://api.github.com/repos/zeugmaster/CashuSwift/pulls/22",
+        "id": 3669068264,
+        "number": 22,
+        "head": {
+          "ref": "multi-unit",
+          "sha": "618decee07ab85ba3749fb459f5e8146e6af98bf",
+          "repo": {
+            "id": 797374520,
+            "url": "https://api.github.com/repos/zeugmaster/CashuSwift",
+            "name": "CashuSwift"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "fd4c62f8e48288238ea35c49d0e3ec17498e7311",
+          "repo": {
+            "id": 797374520,
+            "url": "https://api.github.com/repos/zeugmaster/CashuSwift",
+            "name": "CashuSwift"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-12T13:34:44Z"
+  },
+  {
+    "id": "11750446656",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "ref": "multi-unit",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/multi-unit",
+      "master_branch": "main",
+      "description": "CashuSwift is a native library for building Cashu Ecash wallets on all of Apple's platforms",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-12T13:33:21Z"
+  },
+  {
+    "id": "9100261882",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 21,
+      "pull_request": {
+        "url": "https://api.github.com/repos/zeugmaster/CashuSwift/pulls/21",
+        "id": 3595116854,
+        "number": 21,
+        "head": {
+          "ref": "error-localized-descriptions",
+          "sha": "fd4c62f8e48288238ea35c49d0e3ec17498e7311",
+          "repo": {
+            "id": 797374520,
+            "url": "https://api.github.com/repos/zeugmaster/CashuSwift",
+            "name": "CashuSwift"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1c5fa87caac251440b6e470ab9d484b0f7da71b9",
+          "repo": {
+            "id": 797374520,
+            "url": "https://api.github.com/repos/zeugmaster/CashuSwift",
+            "name": "CashuSwift"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-05T12:01:46Z"
+  },
+  {
+    "id": "11435429364",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "repository_id": 797374520,
+      "push_id": 33726733049,
+      "ref": "refs/heads/main",
+      "head": "fd4c62f8e48288238ea35c49d0e3ec17498e7311",
+      "before": "1c5fa87caac251440b6e470ab9d484b0f7da71b9"
+    },
+    "public": true,
+    "created_at": "2026-05-05T12:01:45Z"
+  },
+  {
+    "id": "8865348803",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 21,
+      "pull_request": {
+        "url": "https://api.github.com/repos/zeugmaster/CashuSwift/pulls/21",
+        "id": 3595116854,
+        "number": 21,
+        "head": {
+          "ref": "error-localized-descriptions",
+          "sha": "fd4c62f8e48288238ea35c49d0e3ec17498e7311",
+          "repo": {
+            "id": 797374520,
+            "url": "https://api.github.com/repos/zeugmaster/CashuSwift",
+            "name": "CashuSwift"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1c5fa87caac251440b6e470ab9d484b0f7da71b9",
+          "repo": {
+            "id": 797374520,
+            "url": "https://api.github.com/repos/zeugmaster/CashuSwift",
+            "name": "CashuSwift"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-28T10:07:16Z"
+  },
+  {
+    "id": "11142486792",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 797374520,
+      "name": "zeugmaster/CashuSwift",
+      "url": "https://api.github.com/repos/zeugmaster/CashuSwift"
+    },
+    "payload": {
+      "ref": "error-localized-descriptions",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/error-localized-descriptions",
+      "master_branch": "main",
+      "description": "CashuSwift is a native library for building Cashu Ecash wallets on all of Apple's platforms",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-28T10:06:03Z"
+  }
+]

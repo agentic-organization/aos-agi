@@ -1,0 +1,258 @@
+[
+  {
+    "sha": "b3ae3f8d22d413146240a3e3fc6432f818e24135",
+    "node_id": "C_kwDOPiQg59oAKGIzYWUzZjhkMjJkNDEzMTQ2MjQwYTNlM2ZjNjQzMmY4MThlMjQxMzU",
+    "commit": {
+      "author": {
+        "name": "Egge",
+        "email": "80262989+Egge21M@users.noreply.github.com",
+        "date": "2026-05-19T08:17:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T08:17:31Z"
+      },
+      "message": "Merge pull request #178 from cashubtc/refactor-remove-legacy-melt-quotes\n\nrefactor: remove legacy melt quote surface",
+      "tree": {
+        "sha": "ded2012ef421095a3d571ecfde0ee15c52a35c1f",
+        "url": "https://api.github.com/repos/cashubtc/coco/git/trees/ded2012ef421095a3d571ecfde0ee15c52a35c1f"
+      },
+      "url": "https://api.github.com/repos/cashubtc/coco/git/commits/b3ae3f8d22d413146240a3e3fc6432f818e24135",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDBybCRC1aQ7uu5UhlAAA52IQAErl0jkonBg1zf0RP5xko1Og\nnOA95eighWAEPDiKlwf6PjykhAFYnm5UiNDOrgXVBEDpLdVXDBa7BQ4dY2iM/kb0\nWFxo1Fj1gSb825cONHu87COIuYnI1+ln90gzjoYpaxcrd1aPaTzXPriyIkWWFZf5\nSzy/+dKDsUI7kJjg+g/Y4NyqnFpSuYlnVZGUIveqNryAgq95ZEyGc16Y8/lWGFP+\nwDNVuQTu4MTHyIXJ1q7UdMzjabw1Dams9SG/H6UxIch1ZEUoUE6aSACm++RGJFav\njTT0VwRV7cKQef/x65cLdPAgp2dcKyvqjHL74x9XO7MKZkveHQKNzhH2F5oSJjTZ\naYdjT+TFycU8gjafqh7WR8Kf1pHOLEGHIziakn8hrrv5DGFcmIUWM1NKutTfM0KP\nRk1WJOz0usm5sc75iMBNSud7oruwSANDuBC0axV0gd7YMCIkeP4XGx3VGipnO+NA\n0i8p4VfbVRbicvm/Zb0Pq+/akuqj0PmcrGpx6FyGAbw6gGJJzPPbEQPpawhLJBMK\nsCeCW+a6b6eGt4RpM8vQFTLZtZbgzUUgDHFP+MgThUIUhqlcjp5vYaU6AKKLmwGH\nSHAT2XBMnY42+G51Hns1vJPRDk6e0KopLOPIu5OAn9Quesq4ptqzC7MrI/H/cfE1\nn0T4IRLxGDQElhsgs0Ze\n=QfG4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ded2012ef421095a3d571ecfde0ee15c52a35c1f\nparent 13634dab8caf6eb6cc51b36c010a776c7559d40b\nparent e6c780a8b6167eda4c0622744a250452ca444737\nauthor Egge <80262989+Egge21M@users.noreply.github.com> 1779178651 +0200\ncommitter GitHub <noreply@github.com> 1779178651 +0200\n\nMerge pull request #178 from cashubtc/refactor-remove-legacy-melt-quotes\n\nrefactor: remove legacy melt quote surface",
+        "verified_at": "2026-05-19T08:17:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/coco/commits/b3ae3f8d22d413146240a3e3fc6432f818e24135",
+    "html_url": "https://github.com/cashubtc/coco/commit/b3ae3f8d22d413146240a3e3fc6432f818e24135",
+    "comments_url": "https://api.github.com/repos/cashubtc/coco/commits/b3ae3f8d22d413146240a3e3fc6432f818e24135/comments",
+    "author": {
+      "login": "Egge21M",
+      "id": 80262989,
+      "node_id": "MDQ6VXNlcjgwMjYyOTg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80262989?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Egge21M",
+      "html_url": "https://github.com/Egge21M",
+      "followers_url": "https://api.github.com/users/Egge21M/followers",
+      "following_url": "https://api.github.com/users/Egge21M/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Egge21M/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Egge21M/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Egge21M/subscriptions",
+      "organizations_url": "https://api.github.com/users/Egge21M/orgs",
+      "repos_url": "https://api.github.com/users/Egge21M/repos",
+      "events_url": "https://api.github.com/users/Egge21M/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Egge21M/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "13634dab8caf6eb6cc51b36c010a776c7559d40b",
+        "url": "https://api.github.com/repos/cashubtc/coco/commits/13634dab8caf6eb6cc51b36c010a776c7559d40b",
+        "html_url": "https://github.com/cashubtc/coco/commit/13634dab8caf6eb6cc51b36c010a776c7559d40b"
+      },
+      {
+        "sha": "e6c780a8b6167eda4c0622744a250452ca444737",
+        "url": "https://api.github.com/repos/cashubtc/coco/commits/e6c780a8b6167eda4c0622744a250452ca444737",
+        "html_url": "https://github.com/cashubtc/coco/commit/e6c780a8b6167eda4c0622744a250452ca444737"
+      }
+    ]
+  },
+  {
+    "sha": "13634dab8caf6eb6cc51b36c010a776c7559d40b",
+    "node_id": "C_kwDOPiQg59oAKDEzNjM0ZGFiOGNhZjZlYjZjYzUxYjM2YzAxMGE3NzZjNzU1OWQ0MGI",
+    "commit": {
+      "author": {
+        "name": "Egge",
+        "email": "80262989+Egge21M@users.noreply.github.com",
+        "date": "2026-05-19T07:20:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T07:20:22Z"
+      },
+      "message": "Merge pull request #177 from KvngMikey/blinded_sig_recovery\n\nfix(core): unblind restored signatures via toProof() in recoverProofsFromOutputData",
+      "tree": {
+        "sha": "4cdcac08749c94d407bb09d61b1b76a11e302763",
+        "url": "https://api.github.com/repos/cashubtc/coco/git/trees/4cdcac08749c94d407bb09d61b1b76a11e302763"
+      },
+      "url": "https://api.github.com/repos/cashubtc/coco/git/commits/13634dab8caf6eb6cc51b36c010a776c7559d40b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDA82CRC1aQ7uu5UhlAAAYxoQABISjNZOcsPCPXlNOwkaYWGv\nP5uk2AJR/XpYYQhBdHH1Vcszf33pPgDc2Jvrll7UDPVwulU0Uri3SyRZBsQVepkG\njeniDMZk6CpI0c1OC4vd1xJ69HpopAWSKT5kpGfzLLdUHRsQInpe6BsyBEOj2pmS\nsdzOs88VFXOaziJqBwg1UYFW5XinoFhJxqIAxt1UzvEFec7cNKmzj4ASNcqG16D+\nxsSylP+d+cSbhsNb7pJtHe2XdHI9fJAJ8bZWA0WXatOapSl5b2Blrq2BBjKX6JBO\n9WeDxYxwVH11LryDeX/oMM0Jswkw8SpDjKtQI9jhQqDDjrRPpVTFBWaqjQK2nC3w\nFUfKH/P6ll9DQUrMU37fDN6u1OJliHhC6/LolG6s/Ur89JftoHkijsdHAV8ml4D4\nYAChe1xJ/ZravlbE7/ivBiBTBkCKMLqFVyw5pGEsVMFGf39YSFmP1KElmog4v4Mw\niXmQAYjfm6K6h22Nc4s3GPJ6ljSQ2ff507OJPEvT2j3epaldmQKddlkIFbmv2wi1\nss3s989rFQvfjRigDHYCNEuF8HJ1pcm89ViSP1/sfF+YNw6tZAb4q0m6p72mZA/T\nIij36T3iuEBsiqzq6kYlwzG0NX6rduBrG/kzZoS5pEu5eJ0h/1sR+oHsmChpQZR9\nYrnftCW9zxX0/lHHNME5\n=baFj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4cdcac08749c94d407bb09d61b1b76a11e302763\nparent 71dce11fa6db3b425be5d849b0ec794c52b8476f\nparent 9dd896d432d96aae4943878347ac4c013159f1c1\nauthor Egge <80262989+Egge21M@users.noreply.github.com> 1779175222 +0200\ncommitter GitHub <noreply@github.com> 1779175222 +0200\n\nMerge pull request #177 from KvngMikey/blinded_sig_recovery\n\nfix(core): unblind restored signatures via toProof() in recoverProofsFromOutputData",
+        "verified_at": "2026-05-19T07:20:23Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/coco/commits/13634dab8caf6eb6cc51b36c010a776c7559d40b",
+    "html_url": "https://github.com/cashubtc/coco/commit/13634dab8caf6eb6cc51b36c010a776c7559d40b",
+    "comments_url": "https://api.github.com/repos/cashubtc/coco/commits/13634dab8caf6eb6cc51b36c010a776c7559d40b/comments",
+    "author": {
+      "login": "Egge21M",
+      "id": 80262989,
+      "node_id": "MDQ6VXNlcjgwMjYyOTg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80262989?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Egge21M",
+      "html_url": "https://github.com/Egge21M",
+      "followers_url": "https://api.github.com/users/Egge21M/followers",
+      "following_url": "https://api.github.com/users/Egge21M/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Egge21M/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Egge21M/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Egge21M/subscriptions",
+      "organizations_url": "https://api.github.com/users/Egge21M/orgs",
+      "repos_url": "https://api.github.com/users/Egge21M/repos",
+      "events_url": "https://api.github.com/users/Egge21M/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Egge21M/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "71dce11fa6db3b425be5d849b0ec794c52b8476f",
+        "url": "https://api.github.com/repos/cashubtc/coco/commits/71dce11fa6db3b425be5d849b0ec794c52b8476f",
+        "html_url": "https://github.com/cashubtc/coco/commit/71dce11fa6db3b425be5d849b0ec794c52b8476f"
+      },
+      {
+        "sha": "9dd896d432d96aae4943878347ac4c013159f1c1",
+        "url": "https://api.github.com/repos/cashubtc/coco/commits/9dd896d432d96aae4943878347ac4c013159f1c1",
+        "html_url": "https://github.com/cashubtc/coco/commit/9dd896d432d96aae4943878347ac4c013159f1c1"
+      }
+    ]
+  },
+  {
+    "sha": "9dd896d432d96aae4943878347ac4c013159f1c1",
+    "node_id": "C_kwDOPiQg59oAKDlkZDg5NmQ0MzJkOTZhYWU0OTQzODc4MzQ3YWM0YzAxMzE1OWYxYzE",
+    "commit": {
+      "author": {
+        "name": "Egge",
+        "email": "egge@my2sats.space",
+        "date": "2026-05-19T06:27:42Z"
+      },
+      "committer": {
+        "name": "Egge",
+        "email": "egge@my2sats.space",
+        "date": "2026-05-19T06:27:42Z"
+      },
+      "message": "fix(core): validate restored proof keyset units",
+      "tree": {
+        "sha": "4cdcac08749c94d407bb09d61b1b76a11e302763",
+        "url": "https://api.github.com/repos/cashubtc/coco/git/trees/4cdcac08749c94d407bb09d61b1b76a11e302763"
+      },
+      "url": "https://api.github.com/repos/cashubtc/coco/git/commits/9dd896d432d96aae4943878347ac4c013159f1c1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAAhcAAAAHc3NoLXJzYQAAAAMBAAEAAAIBAI9kVWmKUipMDfBzSE8Ejm\n5wCM3LrGX4Wa0zf4JzNZjH3xjE3dj+uokz3BHme4C7pjWE6ROaqTGZpIpKV5tZelJCIDkM\nxAh9GEOKk09zkQ9JqZBlPfPorCbwEbAfEcYxauxDd4K0PXJeeuJa7nj3yD8T5ATbdzSE08\ns/FuDhOvyFpOIzyAGsGb3kIKWA/aZwUuSktEseUgfYq9olDAsTGs0N4yfx0V9PL/C3fxg9\nlo6UlNbgM/uFMdlH6GuZrxPCZh1O1fhJhe8SxXERfpFjy+hbJpQr65l2FQb0hrZiWI+SS3\nAgvgfRWqxXbu/VblQISwVM14H2Toh1gj1toCiJ6HHLVFhC+Bbh3FliIi2kKdsk7nc2Z50c\nt8xd0qecXBP3l8LKCuk6trH5DN0X1gxPKGjMpp+f6y20acyHRY8l4bhFMCZma8sSjpI7Bq\nr0KnXIl7+v9Z2+SgksOo91JkUO+NAqVPyIKpitAkSSvdGC+SuvoQ4C85g2BEOov2NnnZgv\nOB0DHnPe0xaQQnQcbMlarVaPDfAL4niZlkSks6OG6KKAKJOBtYqz5bBKP2Y2JGHdFqSvSm\nyEyXKFfFDBfxxNCBWBbYaNHwoynnB2WjFJjqcA5ZCpVF2Ck75JFjb7Rc8lqafhk3oLFY+W\nOlal8BDX79Mha4oL0ee8DW5jfiZujlg7AAAAA2dpdAAAAAAAAAAGc2hhNTEyAAACFAAAAA\nxyc2Etc2hhMi01MTIAAAIAI+Ii0kUXa0IGmsN9x4I/07ElTZpyl10jj6kFvYDW+97NXzJ6\ngo6kMlpC0jT1TBcsRjQFNx3ODRM6P27L5cW9GEJbZbDO8uONlW6xjw8zzdbDOn/tJcP3Yn\nRTddLMlKE1bBtLG9fOfXV3Obsq7s+qYsy5OQflsZHyQ7pq2WeE6NXdIYtZ6RTwyeY9O/gx\nwOahCM1D2xS6y9SB7ubJW9KIn4e7BYOQL5a+Jm/JLBF8ri4JibEGAcOqMHoI1cx2FVr1nV\n+X1teMeu/Rq0jDk4aRvLlLejtcDjmtxs4wJPWrhSr8JVy+KoEMfcnJfpMjXHZ3qeNU8GBm\ncNhwop9O9jqiPij7b4VPzi65Z70Ghv1bjyp4M15j242BWv55aS+KSmmHBcKWUdIgjRsWfK\n9ZAtHxym3Bhy2c2Va2Um0Wt95nRtcogWB9Q4847m9pWxiF1TunVPAxdFTJ1vjefphRBKJm\no2fKjE2rM8e5dYlEmTdxt3hPjk39P2q6pCMHFuWnHeMvk3hSdtRdD3RLEoDOqREwGED25S\nlTsBOGS2Ak1rtJ6iKKYt6z2lojvncZXBGFyjf42dLZJNBC1iUbmOZ2hnY3wDqG69RnpV4e\ndcIz2WlVi9YnsuNdsotmwOdaN+01AEDq7cqthLQVJBhSbsHxecUHz52MR10ElDtYsAHiyJ\n/su9M=\n-----END SSH SIGNATURE-----",
+        "payload": "tree 4cdcac08749c94d407bb09d61b1b76a11e302763\nparent 1b4c69e1f2e2f9d8e51d38a13122d26601d06af2\nauthor Egge <egge@my2sats.space> 1779172062 +0200\ncommitter Egge <egge@my2sats.space> 1779172062 +0200\n\nfix(core): validate restored proof keyset units\n",
+        "verified_at": "2026-05-19T07:15:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/coco/commits/9dd896d432d96aae4943878347ac4c013159f1c1",
+    "html_url": "https://github.com/cashubtc/coco/commit/9dd896d432d96aae4943878347ac4c013159f1c1",
+    "comments_url": "https://api.github.com/repos/cashubtc/coco/commits/9dd896d432d96aae4943878347ac4c013159f1c1/comments",
+    "author": {
+      "login": "Egge21M",
+      "id": 80262989,
+      "node_id": "MDQ6VXNlcjgwMjYyOTg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80262989?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Egge21M",
+      "html_url": "https://github.com/Egge21M",
+      "followers_url": "https://api.github.com/users/Egge21M/followers",
+      "following_url": "https://api.github.com/users/Egge21M/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Egge21M/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Egge21M/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Egge21M/subscriptions",
+      "organizations_url": "https://api.github.com/users/Egge21M/orgs",
+      "repos_url": "https://api.github.com/users/Egge21M/repos",
+      "events_url": "https://api.github.com/users/Egge21M/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Egge21M/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Egge21M",
+      "id": 80262989,
+      "node_id": "MDQ6VXNlcjgwMjYyOTg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80262989?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Egge21M",
+      "html_url": "https://github.com/Egge21M",
+      "followers_url": "https://api.github.com/users/Egge21M/followers",
+      "following_url": "https://api.github.com/users/Egge21M/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Egge21M/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Egge21M/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Egge21M/subscriptions",
+      "organizations_url": "https://api.github.com/users/Egge21M/orgs",
+      "repos_url": "https://api.github.com/users/Egge21M/repos",
+      "events_url": "https://api.github.com/users/Egge21M/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Egge21M/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1b4c69e1f2e2f9d8e51d38a13122d26601d06af2",
+        "url": "https://api.github.com/repos/cashubtc/coco/commits/1b4c69e1f2e2f9d8e51d38a13122d26601d06af2",
+        "html_url": "https://github.com/cashubtc/coco/commit/1b4c69e1f2e2f9d8e51d38a13122d26601d06af2"
+      }
+    ]
+  }
+]
