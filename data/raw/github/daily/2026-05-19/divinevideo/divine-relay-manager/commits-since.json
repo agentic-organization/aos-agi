@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "17fd0dfe6c699a02fe537435d60e80c5c4121547",
+    "node_id": "C_kwDOQjhVC9oAKDE3ZmQwZGZlNmM2OTlhMDJmZTUzNzQzNWQ2MGU4MGM1YzQxMjE1NDc",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-18T23:55:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-18T23:55:42Z"
+      },
+      "message": "feat: Zendesk integration for age review parent contact (#70)\n\n* feat: Zendesk integration for age review parent contact workflow\n\nAdds Zendesk ticket lifecycle management for underage user cases:\n- Create support tickets when moderators submit parent contact email\n- Webhook handler for parent replies (auto-pauses clock, advances state)\n- Resolution sync closes tickets when cases are cleared/denied\n- Auto-close deadline expiry syncs to Zendesk\n- Duplicate ticket guard prevents re-creation\n- Graceful degradation when Zendesk credentials aren't configured\n- Dedicated webhook secret (ZENDESK_AGE_REVIEW_WEBHOOK_SECRET)\n- getDaysRemaining extracted to shared module\n- Full pubkey logging in ReportWatcher (11 log statements)\n- D1 index on zendesk_ticket_id for webhook lookup performance\n- Defensive ticket_id parsing (handles string or number from Zendesk)\n\n* fix: self-heal zendesk_ticket_id column on existing D1 tables\n\nensureSchema() now runs ALTER TABLE ADD COLUMN for zendesk_ticket_id,\nmatching the existing reporter_pubkey self-heal pattern. Prevents\ndeploy ordering issues on existing staging/prod databases.",
+      "tree": {
+        "sha": "64d5b7b91c2f4f889723b1d814c9a0c7be351bba",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/64d5b7b91c2f4f889723b1d814c9a0c7be351bba"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/17fd0dfe6c699a02fe537435d60e80c5c4121547",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqC6b+CRC1aQ7uu5UhlAAAlb0QAGR2tZQYgDbZV5TLwkPXpu/O\n9e5rBQjpZf2rH0VwjM/fZ2w6s8ZJ/e4yVSz8rAYNnKChvrUrBfwToO7v31S42Qk3\nklXeirde/OTF/vWZmRbupFVkWrbmkh+hISUzt4q8ePAROaiFcy4SVWetXiYTaXKk\nXDeL+iVnq7LWa2cFP1/nQtvI+nesVvwY/Hy+FP5rjY133cVCOsoE9QX8IJf61cFd\nrPjlk/Quxn2VCtvGK+oE26vB1ZkHm7I5pwvG6yPySOOyj+slLC872G9EiULiImIr\nM+DWh5FyuWYCSUZ1eqqqzaJuVMy8yOv8N6EKLGsv/d7Bp/LHsPQQIOTEBZgKqmro\nknOnqqlxBzAB2eCOP0nmrG9EdbMxXAPBiNE0XRU/NXqYJYEWOi22GtbKorGdC+mT\nD9nen9UEj179OAsGQrHvbk8tGkI6Dk2fP+wBrNeoAoXV7xoGY75xi/eTz3DLdgZZ\n0TL5Z/x/r/BmrPLUbo9y8J0Z+CQLqQS+QjlQCRJj9tkYwepjlDiWpkGgBxYzyjAa\n6LkjvaBdcfpDMY/RGtH094nVi/LY0ZUre3OVdjQv+L6fnNVwkUxAetkN+YYlvT6c\nLX989OKoKbR9V+YW/hI9yOj7noIDe30KFGCvkdkTmYAL/bO9wxigPjE35ngzQc1X\nxGai35WXpKq57TlbcR+G\n=iS8k\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 64d5b7b91c2f4f889723b1d814c9a0c7be351bba\nparent 54c079e674ebaacbc2df0d116b118db3497dfd00\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779148542 -0400\ncommitter GitHub <noreply@github.com> 1779148542 -0400\n\nfeat: Zendesk integration for age review parent contact (#70)\n\n* feat: Zendesk integration for age review parent contact workflow\n\nAdds Zendesk ticket lifecycle management for underage user cases:\n- Create support tickets when moderators submit parent contact email\n- Webhook handler for parent replies (auto-pauses clock, advances state)\n- Resolution sync closes tickets when cases are cleared/denied\n- Auto-close deadline expiry syncs to Zendesk\n- Duplicate ticket guard prevents re-creation\n- Graceful degradation when Zendesk credentials aren't configured\n- Dedicated webhook secret (ZENDESK_AGE_REVIEW_WEBHOOK_SECRET)\n- getDaysRemaining extracted to shared module\n- Full pubkey logging in ReportWatcher (11 log statements)\n- D1 index on zendesk_ticket_id for webhook lookup performance\n- Defensive ticket_id parsing (handles string or number from Zendesk)\n\n* fix: self-heal zendesk_ticket_id column on existing D1 tables\n\nensureSchema() now runs ALTER TABLE ADD COLUMN for zendesk_ticket_id,\nmatching the existing reporter_pubkey self-heal pattern. Prevents\ndeploy ordering issues on existing staging/prod databases.",
+        "verified_at": "2026-05-18T23:55:42Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/17fd0dfe6c699a02fe537435d60e80c5c4121547",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/17fd0dfe6c699a02fe537435d60e80c5c4121547",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/17fd0dfe6c699a02fe537435d60e80c5c4121547/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "54c079e674ebaacbc2df0d116b118db3497dfd00",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/54c079e674ebaacbc2df0d116b118db3497dfd00",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/54c079e674ebaacbc2df0d116b118db3497dfd00"
+      }
+    ]
+  },
+  {
+    "sha": "54c079e674ebaacbc2df0d116b118db3497dfd00",
+    "node_id": "C_kwDOQjhVC9oAKDU0YzA3OWU2NzRlYmFhY2JjMmRmMGQxMTZiMTE4ZGIzNDk3ZGZkMDA",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-18T23:54:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-18T23:54:01Z"
+      },
+      "message": "fix: resolve SERVICE_API_TOKEN from Secrets Store before use (#72)\n\n* fix: resolve SERVICE_API_TOKEN from Secrets Store before use\n\nSERVICE_API_TOKEN is a Secrets Store binding requiring .get(), but was\nused as a plain string, sending \"Bearer [object Object]\" to\nmoderation-service and causing 401 on all media moderation actions.\n\n- Apply typeof/.get() pattern matching other Secrets Store bindings\n- Decouple auth from transport (Bearer valid for both paths)\n- Guard against null-resolved token (misconfigured secret)\n- Add tests for string, binding, and null resolution\n\n* refactor(worker): centralize secret resolution in moderation auth paths\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "79074feb5dd5711ce90b549db17eedbfdcbb8113",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/79074feb5dd5711ce90b549db17eedbfdcbb8113"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/54c079e674ebaacbc2df0d116b118db3497dfd00",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqC6aZCRC1aQ7uu5UhlAAA+KAQAAmcdDVvL68ks6xy/sHI2HmI\n8ZFrqXmCzLSdeZelmxNHkOwUe5VOyApXmv1d1/3M+nycLgb4cCAkEXxHTh9SFJqO\nwwcvpNfMkjHT7FqFJX0ldcHvmMu9DHPBY0Tn1GJzBdPLvoNJGZvRNsDtF/8oq9aA\nFe9WZZrPm/IJed6vV1DKJF3HoNxdaN6VD6OFyQ78oV1wA/1kE42MlgqqMd8+Oxgu\ndIiFc17P20sN4+fQ+GZxipZkQBZ3hxfwvdHd9GuRrQED5IqunCtQQ9hsf+QL5Kf7\nDhlp7qitUpVg/6UGItGc2ZzLE3MgWobwGyL4jHhw0aIw4nCM9+xPnYk1yeNOE1Ue\nnDd1bLsvwe784jed15jSMIG9zw57BkgUzE4jw9N5FBTy+P/Fmp9+ADMA8jWwngDD\nmfFXLP5kByF13lFvrFBEYPXepJyzeakdRvD/dxeDyhXtdgS2E8tDsBV4XsKUamj8\n0j3SgBLC+kf25vA6kWmZ8H1+67j+aprYTDRspkVkdrcsuuvbge5CQVtXQmsBHy/T\n6xyj3UBzp0OPDrqYLnbHx5twOcF5VWGsss+e+w0kFdrh3QeYhWJowItPFM7M/2kG\nw1n5X6BrLzJtoUsYMktpRRihjqniNsJqC1NNNMN6/hgjGGqMaiFTk8nKQsIrxG8y\nQHhgUEM1dxOH/mLO8GOw\n=k99Z\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 79074feb5dd5711ce90b549db17eedbfdcbb8113\nparent 5d18901beab5f8e98810a0934ee0858338a92011\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779148441 -0400\ncommitter GitHub <noreply@github.com> 1779148441 -0400\n\nfix: resolve SERVICE_API_TOKEN from Secrets Store before use (#72)\n\n* fix: resolve SERVICE_API_TOKEN from Secrets Store before use\n\nSERVICE_API_TOKEN is a Secrets Store binding requiring .get(), but was\nused as a plain string, sending \"Bearer [object Object]\" to\nmoderation-service and causing 401 on all media moderation actions.\n\n- Apply typeof/.get() pattern matching other Secrets Store bindings\n- Decouple auth from transport (Bearer valid for both paths)\n- Guard against null-resolved token (misconfigured secret)\n- Add tests for string, binding, and null resolution\n\n* refactor(worker): centralize secret resolution in moderation auth paths\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-18T23:54:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/54c079e674ebaacbc2df0d116b118db3497dfd00",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/54c079e674ebaacbc2df0d116b118db3497dfd00",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/54c079e674ebaacbc2df0d116b118db3497dfd00/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5d18901beab5f8e98810a0934ee0858338a92011",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/5d18901beab5f8e98810a0934ee0858338a92011",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/5d18901beab5f8e98810a0934ee0858338a92011"
+      }
+    ]
+  },
+  {
+    "sha": "5d18901beab5f8e98810a0934ee0858338a92011",
+    "node_id": "C_kwDOQjhVC9oAKDVkMTg5MDFiZWFiNWY4ZTk4ODEwYTA5MzRlZTA4NTgzMzhhOTIwMTE",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-18T17:34:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-18T17:34:58Z"
+      },
+      "message": "feat: age review clock — 15-day under-16 moderation workflow (#67)\n\n* feat: support X-Admin-Key header for local dev\n\n* docs: add local dev setup script and documentation\n\n* feat: age review clock — 15-day under-16 moderation workflow\n\nD1 table, ReportWatcher hook, admin API, mobile-facing /v1/ endpoints\n(NIP-98 auth), cron deadline checker with Slack alerts, and admin UI tab.\n\n- Schema: age_review_cases table with state machine, clock pause, deadline\n- ReportWatcher: creates case on NS-underageUser report, in-memory Set\n  guards against duplicate creation race\n- Admin API: CRUD at /api/age-review/cases (behind verifyAdminAccess)\n- Mobile API: /v1/account/moderation-status and parent-contact endpoint\n  matching divine-mobile PR #3531 contract\n- Cron: auto-closes expired cases, Slack alerts for approaching deadlines\n- UI: Age Review tab with case list, detail panel, moderator actions\n- 23 test cases covering all exported handlers\n\nEnforcement (ban/restrict via Keycast) deferred to Track C.\n\n* fix: address review feedback — state transitions, note bleed, deep link, alert dedupe\n\n1. Pass hex pubkey (not npub) in Age Review → Users deep link\n2. Sync resolution note textarea when switching between cases\n3. Enforce valid state transitions server-side via VALID_TRANSITIONS map\n4. Dedupe approaching-deadline Slack alerts with last_alerted_at column\n\n* fix: enforce state transitions on parent-contact endpoint, gate mobile restriction on moderator review\n\nhandleParentContact now validates against VALID_TRANSITIONS before\nadvancing state, preventing illegal jumps from open_reported or\nneeds_follow_up.\n\nhandleGetModerationStatus only returns restrictedMinorReview for states\nwhere a moderator has acted. open_reported (pre-review) returns active,\nclosing the abuse vector where a single unsolicited report could restrict\nany user before human review.\n\n* fix: route under-13 age review restriction to support email\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "9141b85c61985800206096f4585e6d9ecf876541",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/9141b85c61985800206096f4585e6d9ecf876541"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/5d18901beab5f8e98810a0934ee0858338a92011",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqC03CCRC1aQ7uu5UhlAAACegQABPQ0VIW2MLK/OnKuEOhR1P+\npWagBmTVJYqPQbIDYGzxNDb6OpgGZksCyWxgVWlSDlso4PnPgBcBxPRM6QrqsN/r\nwdnVIbsmkcq6Y6yfoGBD0Kcdk6XjyQOy7ayHOP73Qf/STWeNmAjKDuf/XYZOLTaI\nEmc4m1C0J2bASNW2MyxHUtVblsDDcpjUABeukAD6aXJQWlBXze7npm17fsFWTpnw\nbDIJ5P4nuCzKygAqPJNdo97lCs+s6kWzzBkOQ4WwRApr+CR2VlGbeI6kggi64lUW\n7Z3VQSwBO2YtslshLqtQR4cSNvLl0zEaiETP55KlRaiQD25Rr4PpkUPxZ3Flodiv\nkefd5DHWW9qTcWtrPO/GwitZjIBGtHb1jM+T6B3EfmqIJBN3FI9+GVFrt/B922Xq\nKjT3XhWt4oZyjLdV/iN+xH/5H9NkuPge17T5DCJft2BVfskC7Of10s5alNeYrH13\nQZH0IsZPiFCNskn3dyCMw95vgmRr//DtJfkTJvoH8Jy3Q7z3pCgxwTxNdp6Rqz8o\nEId77R154HAvIf1JDvmAUEoms81jffSBD6R80Ldoa++sNHDXio9ZtHlIm6O7be0F\n9vRxYspjuEajH/gaEDB0vE/yrVyisi9ommgbS6c1Ygkwl7z0z210ls8R50vW5gxU\nD9rTt1PJGNB+kr6vR3Wv\n=R05J\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9141b85c61985800206096f4585e6d9ecf876541\nparent fe88582e4faba792af26e149a4097a34685d806a\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779125698 -0400\ncommitter GitHub <noreply@github.com> 1779125698 -0400\n\nfeat: age review clock — 15-day under-16 moderation workflow (#67)\n\n* feat: support X-Admin-Key header for local dev\n\n* docs: add local dev setup script and documentation\n\n* feat: age review clock — 15-day under-16 moderation workflow\n\nD1 table, ReportWatcher hook, admin API, mobile-facing /v1/ endpoints\n(NIP-98 auth), cron deadline checker with Slack alerts, and admin UI tab.\n\n- Schema: age_review_cases table with state machine, clock pause, deadline\n- ReportWatcher: creates case on NS-underageUser report, in-memory Set\n  guards against duplicate creation race\n- Admin API: CRUD at /api/age-review/cases (behind verifyAdminAccess)\n- Mobile API: /v1/account/moderation-status and parent-contact endpoint\n  matching divine-mobile PR #3531 contract\n- Cron: auto-closes expired cases, Slack alerts for approaching deadlines\n- UI: Age Review tab with case list, detail panel, moderator actions\n- 23 test cases covering all exported handlers\n\nEnforcement (ban/restrict via Keycast) deferred to Track C.\n\n* fix: address review feedback — state transitions, note bleed, deep link, alert dedupe\n\n1. Pass hex pubkey (not npub) in Age Review → Users deep link\n2. Sync resolution note textarea when switching between cases\n3. Enforce valid state transitions server-side via VALID_TRANSITIONS map\n4. Dedupe approaching-deadline Slack alerts with last_alerted_at column\n\n* fix: enforce state transitions on parent-contact endpoint, gate mobile restriction on moderator review\n\nhandleParentContact now validates against VALID_TRANSITIONS before\nadvancing state, preventing illegal jumps from open_reported or\nneeds_follow_up.\n\nhandleGetModerationStatus only returns restrictedMinorReview for states\nwhere a moderator has acted. open_reported (pre-review) returns active,\nclosing the abuse vector where a single unsolicited report could restrict\nany user before human review.\n\n* fix: route under-13 age review restriction to support email\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-18T17:34:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/5d18901beab5f8e98810a0934ee0858338a92011",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/5d18901beab5f8e98810a0934ee0858338a92011",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/5d18901beab5f8e98810a0934ee0858338a92011/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fe88582e4faba792af26e149a4097a34685d806a",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/fe88582e4faba792af26e149a4097a34685d806a",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/fe88582e4faba792af26e149a4097a34685d806a"
+      }
+    ]
+  }
+]

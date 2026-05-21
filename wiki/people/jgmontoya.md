@@ -39,6 +39,7 @@ Observed activity across 7 repos in the [marmot-protocol](https://github.com/mar
 
 ## History
 - 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`).
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/marmot-protocol/whitenoise/`) shows **1 commit** by jgmontoya on [[projects/whitenoise]]: integration-test support with Docker Compose relay fixtures.
 
 ## Open questions
 - Full name, location, timezone?

@@ -33,6 +33,7 @@ Effectively the public face of Soapbox: across the 9 surveyed `soapbox-pub` repo
 
 ## History
 - 2026-05-07: Page created from `soapbox-pub` GitHub discovery snapshot (`data/raw/github/org-discovery/2026-05-07/soapbox-pub/github-org-discover.json`).
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/soapbox-pub/ditto/`) shows **2 commits** by Alex Gleason on [[projects/ditto]]: "Zap all members" on-chain batch zaps on people-list events (kind 3/30000/39089), building a single Taproot PSBT paying every listed member, publishing one kind 8333 event with all recipients as `p` tags, and rendering multi-recipient zap cards with avatar stacks.
 
 ## Open questions
 - Formal AOS affiliation (funded, contracted, independent contributor)?

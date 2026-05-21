@@ -54,6 +54,7 @@ Observed activity across 13 repos in the [marmot-protocol](https://github.com/ma
 ## History
 - 2026-05-07: Page created from marmot-protocol GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json`).
 - 2026-05-07: divinevideo discovery surfaced 74 contributions to [[projects/keycast]]; secondary affiliation to [[teams/divine]] added.
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/marmot-protocol/whitenoise-rs/`) shows **4 commits** by erskingardner on [[projects/whitenoise-rs]]: key-package `d_tag` reuse for NIP-33 replacement (with monotonic `created_at`, DB tracking, serialized concurrent rotations), notification hardening for NSE wakeups, new `whitenoise-markdown` crate, and weekly Rust toolchain staleness check workflow.
 
 ## Open questions
 - Full name, location, timezone?

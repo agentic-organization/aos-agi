@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "5b2bad3e95cdd6cbc3a2d47e231365638a32c78f",
+    "node_id": "C_kwDOPrslvdoAKDViMmJhZDNlOTVjZGQ2Y2JjM2EyZDQ3ZTIzMTM2NTYzOGEzMmM3OGY",
+    "commit": {
+      "author": {
+        "name": "jalciné",
+        "email": "452100+jalcine@users.noreply.github.com",
+        "date": "2026-05-19T05:44:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T05:44:49Z"
+      },
+      "message": "feat(profile-url): normalize profile links and add dev mode skip (#372)\n\n* feat(profile-url): normalize profile links and add dev mode skip\n\n- Create useProfileUrl hook that resolves divine.video subdomain URLs\n- Hook validates NIP-05 to determine if user has divine.video account\n- Returns /profile/{npub} URL (normalized) with isSubdomain flag\n- VideoCard and FullscreenVideoItem now use the hook instead of inline npub\n- ProfilePage redirect skips in development mode (import.meta.env.DEV)\n- Remove unused nip19 imports from VideoCard and FullscreenVideoItem\n\n* fix(profile-url): remove useQuery dependency to fix test failures\n\nThe hook was calling useNip05Validation which uses useQuery from TanStack\nReact Query. Even with enabled=false, useQuery requires QueryClientProvider\nto exist in the component tree. Tests don't wrap components in QueryClientProvider\nso this caused \"No QueryClient set\" errors.\n\nThis changes the hook to use plain fetch with useState/useEffect instead of\nuseQuery, avoiding the React Query dependency entirely.\n\n* fix(urlHook): adjust from code review\n\n* fix(profile-url): remove useProfileUrl hook per review feedback\n\n* fix(profile-url): reuse profile route helper\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "ad7c1ab961ec533eedaafe1dd2cc0370e119c4a7",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/ad7c1ab961ec533eedaafe1dd2cc0370e119c4a7"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/5b2bad3e95cdd6cbc3a2d47e231365638a32c78f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqC/jRCRC1aQ7uu5UhlAAAPv0QAJmodSuDfpxt5MGmXNCjJ7MB\nYUtKSuosVTDvVRMoRZei83QZOd0KQa+160OBUYcEcTXGJQRmFGDQ8oVkc2h7IXfQ\nRWF/GItOyldamtg6fNGq2TPjxkIdaiaKYtnOdMoPxiWsEjwUR4vrNNc9xMmGoHs1\naKQgcQ8erpofDGLQ4s9gNhdAan4kRNLsK1I7w9WM0F6iSdSGkfdZNsfTly6CrDPK\nE/b+1zuHG3Blv/1/vJbu8RHXAHuCEUuTFPO+fBY1buK/sL7WxbZkyARzrE40fT7q\nE/577jtOpDfaecDo3DtsSCJV5e6jEpBaE0BFwKXINn/COFAlP26eWaTjqgqMOHE7\nde/UMOXfG5TCZ+s2+x3y2gP+5Yz9GUlCdb7G/hh380T1coVHvECDhOQi70zZ6Lw/\n90LFizZaXG0IX181eTsXfoDHXdYz6EJSmiwle3Jba1+vp/0UVZdukrkJ2ZBDEifV\nU+Uq8dUFZgX8oYCzeaYWTXtlM11km0iONkauCCmtaUSZj5ZGlgMGCsUlCQTWncWg\nEqnq2CQ8H1naWq5eCgzifhtYqaUTtuQnPB1D4K4RWqux6jZX7s37jt8un7jJi+L+\nqc9rvbfF9eriAEskY0oOcPwHpUwksOgRO1MoKHHvFGP3bEayA61v0HRkm3xDzo9j\n9CoDNI5awfWWP/+qm9Cs\n=uWim\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ad7c1ab961ec533eedaafe1dd2cc0370e119c4a7\nparent 8733db83490313bf70ef7dba694f083ae594ac3f\nauthor jalciné <452100+jalcine@users.noreply.github.com> 1779169489 -0400\ncommitter GitHub <noreply@github.com> 1779169489 +1200\n\nfeat(profile-url): normalize profile links and add dev mode skip (#372)\n\n* feat(profile-url): normalize profile links and add dev mode skip\n\n- Create useProfileUrl hook that resolves divine.video subdomain URLs\n- Hook validates NIP-05 to determine if user has divine.video account\n- Returns /profile/{npub} URL (normalized) with isSubdomain flag\n- VideoCard and FullscreenVideoItem now use the hook instead of inline npub\n- ProfilePage redirect skips in development mode (import.meta.env.DEV)\n- Remove unused nip19 imports from VideoCard and FullscreenVideoItem\n\n* fix(profile-url): remove useQuery dependency to fix test failures\n\nThe hook was calling useNip05Validation which uses useQuery from TanStack\nReact Query. Even with enabled=false, useQuery requires QueryClientProvider\nto exist in the component tree. Tests don't wrap components in QueryClientProvider\nso this caused \"No QueryClient set\" errors.\n\nThis changes the hook to use plain fetch with useState/useEffect instead of\nuseQuery, avoiding the React Query dependency entirely.\n\n* fix(urlHook): adjust from code review\n\n* fix(profile-url): remove useProfileUrl hook per review feedback\n\n* fix(profile-url): reuse profile route helper\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-19T05:44:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/5b2bad3e95cdd6cbc3a2d47e231365638a32c78f",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/5b2bad3e95cdd6cbc3a2d47e231365638a32c78f",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/5b2bad3e95cdd6cbc3a2d47e231365638a32c78f/comments",
+    "author": {
+      "login": "jalcine",
+      "id": 452100,
+      "node_id": "MDQ6VXNlcjQ1MjEwMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/452100?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jalcine",
+      "html_url": "https://github.com/jalcine",
+      "followers_url": "https://api.github.com/users/jalcine/followers",
+      "following_url": "https://api.github.com/users/jalcine/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jalcine/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jalcine/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jalcine/subscriptions",
+      "organizations_url": "https://api.github.com/users/jalcine/orgs",
+      "repos_url": "https://api.github.com/users/jalcine/repos",
+      "events_url": "https://api.github.com/users/jalcine/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jalcine/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8733db83490313bf70ef7dba694f083ae594ac3f",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/8733db83490313bf70ef7dba694f083ae594ac3f",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/8733db83490313bf70ef7dba694f083ae594ac3f"
+      }
+    ]
+  },
+  {
+    "sha": "8733db83490313bf70ef7dba694f083ae594ac3f",
+    "node_id": "C_kwDOPrslvdoAKDg3MzNkYjgzNDkwMzEzYmY3MGVmN2RiYTY5NGYwODNhZTU5NGFjM2Y",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-19T05:26:20Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T05:26:20Z"
+      },
+      "message": "fix(video): start route API lookup immediately (#373)",
+      "tree": {
+        "sha": "b974be3c59d8af3343139ff35b9548d03d5e5fb7",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/b974be3c59d8af3343139ff35b9548d03d5e5fb7"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/8733db83490313bf70ef7dba694f083ae594ac3f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqC/R8CRC1aQ7uu5UhlAAAiwsQAHvX8NnCBoXYlCe18Fn54Af8\nm0koiK44szfPhn5bfp0xpmIjBAm6aDiV4p4pFrIK5vSxtwNBbk/7DSpSDe+BfOzs\nRbuzvbXBu3maXVHlw//5lkhjSdtmWqYDR6hC/doXQjDoBOEO9mH/kP6lkNFID3EO\nspaRKUk70pjEuEJdkzavu4oLLNGUhTjxKNOgM2xqA2mqcnWxjsKDm/qKKgulTg0s\nsa1Z1/Hn5xvFKbCc3yUog/OJ/IaD7/Bm8ZtixxLxmS0lF5GE7IP38koJbttNPiT7\nERb+LL1crJnzXQe/t0LPGF/720fzYvJNgu6VTuQd1BLJoJct6yqYp4jgn9G4Zkny\njTNA4F2WJ8avIjQCQWqBtOIu/Qp7ycTpa8dJ8M9w2y+AgGXS8c57tIOuXG1FnQLB\niksP6MWDLeFZnYqvR9caraFULkPhqxAQNnmT6YbU62iu5Jouc1KVJl6zafUZiYbo\nansQZWBOvdsaJ/zLku8heBc49gUpb8YIYGfiAbc7MqnNhcqgxZmcLiW1N1AHxR0c\n+4oG6GpskF5pkMliZafH8SW476K/zgL/aE0aUOctzc68A4weDYbESTXBQUY6uvkN\n/v1IS/61LF/WUkzRReVzLir3GgEdIN1DvbKG6FGeF+iErMJgo4DfdOGSA8nzRPqL\nxZX8btYMT90NWvcH/Wy5\n=gK3j\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b974be3c59d8af3343139ff35b9548d03d5e5fb7\nparent 5e2558c39b31d797da5cbe182f6b2e738e27687e\nauthor rabble <evan@protest.net> 1779168380 +1200\ncommitter GitHub <noreply@github.com> 1779168380 +1200\n\nfix(video): start route API lookup immediately (#373)",
+        "verified_at": "2026-05-19T05:26:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/8733db83490313bf70ef7dba694f083ae594ac3f",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/8733db83490313bf70ef7dba694f083ae594ac3f",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/8733db83490313bf70ef7dba694f083ae594ac3f/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5e2558c39b31d797da5cbe182f6b2e738e27687e",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/5e2558c39b31d797da5cbe182f6b2e738e27687e",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/5e2558c39b31d797da5cbe182f6b2e738e27687e"
+      }
+    ]
+  },
+  {
+    "sha": "5e2558c39b31d797da5cbe182f6b2e738e27687e",
+    "node_id": "C_kwDOPrslvdoAKDVlMjU1OGMzOWIzMWQ3OTdkYTVjYmUxODJmNmIyZTczOGUyNzY4N2U",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-19T05:26:15Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T05:26:15Z"
+      },
+      "message": "fix: prevent HubSpot tracking script from capturing native forms (#376)\n\nThe global HubSpot tracking script (hs-scripts.com) auto-captures\nsubmissions from any <form> element as \"Non-HubSpot Forms,\" creating\nghost contacts in the CRM. All four native forms in divine-web submit\nto invite.divine.video or publish Nostr events -- none are intended\nfor HubSpot. Add data-hs-do-not-collect=\"true\" to opt them out.",
+      "tree": {
+        "sha": "05430a4ee583678fab539b4b9fb0d3462e14c121",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/05430a4ee583678fab539b4b9fb0d3462e14c121"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/5e2558c39b31d797da5cbe182f6b2e738e27687e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqC/R3CRC1aQ7uu5UhlAAAKvkQAD3exFFx2SnBkfcqpxXSp5px\nJfhdvMbRv9TxFBwvofOP+TwxfvMvUK4lN725BMB4iJ8+B/HpwzImiugenTiluT96\nKPv/SsinMZx/O7L9lcPajMItzNkSbcLo//4Tv4KjGYFufO9H7a05nxUuxrPA5Ziw\nQE/PZwvlnnzzF9P6dgUgyhs+T/RjnJH0WarFdHNaFVGYTbZXF3yCorCFtw7D/GUg\nqoIgFyApqjlJD1HLdvQZjfuW/DdPcVitsFMmkqSq1/ThaqFI08QqLZp6SIAEerlY\nL+SZvmj5AGiuTuFzLxfSnQPSmUv9ZrrehZoVMBZIRErT3b+5EvzpDPpG1GW6MNAg\n0aYZudJFx6tUfF3p3zMalwmAUIQUOpd6kjOrH6O48AFHjmKLTAZ3VrTV+toHimaR\nCPvL3nPROk9DdLkSPYmkSqT3GKImYhVHAx6pTtS4kkD9qPtEgRxwXulo7sIH8rtZ\nAVNhugeWkh2MJj+mHJyZhqSPg7u/aElwz909DiAau2Qt7p6xQiyhtu0En80m6m0Y\n2G7GgoBT+5zazuK7eLc1/sqqvQCCeVlwRE2CCk85HV+2elCC7YdddSSa17zewdSY\nhIgNj4zCW6JvmYby7cvn8vCc9qGt9A1d3dkWy+o9tYYDGpMaIbWnf33msEIK5eaA\nUAW1vNRnKP+ZG+rtfuWI\n=1+eH\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 05430a4ee583678fab539b4b9fb0d3462e14c121\nparent 7b9ef7d21091b567267c1fabce0d29387adb909d\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779168375 -0400\ncommitter GitHub <noreply@github.com> 1779168375 +1200\n\nfix: prevent HubSpot tracking script from capturing native forms (#376)\n\nThe global HubSpot tracking script (hs-scripts.com) auto-captures\nsubmissions from any <form> element as \"Non-HubSpot Forms,\" creating\nghost contacts in the CRM. All four native forms in divine-web submit\nto invite.divine.video or publish Nostr events -- none are intended\nfor HubSpot. Add data-hs-do-not-collect=\"true\" to opt them out.",
+        "verified_at": "2026-05-19T05:26:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/5e2558c39b31d797da5cbe182f6b2e738e27687e",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/5e2558c39b31d797da5cbe182f6b2e738e27687e",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/5e2558c39b31d797da5cbe182f6b2e738e27687e/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7b9ef7d21091b567267c1fabce0d29387adb909d",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/7b9ef7d21091b567267c1fabce0d29387adb909d",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/7b9ef7d21091b567267c1fabce0d29387adb909d"
+      }
+    ]
+  },
+  {
+    "sha": "7b9ef7d21091b567267c1fabce0d29387adb909d",
+    "node_id": "C_kwDOPrslvdoAKDdiOWVmN2QyMTA5MWI1NjcyNjdjMWZhYmNlMGQyOTM4N2FkYjkwOWQ",
+    "commit": {
+      "author": {
+        "name": "jalciné",
+        "email": "452100+jalcine@users.noreply.github.com",
+        "date": "2026-05-19T05:26:11Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T05:26:11Z"
+      },
+      "message": "docs: overhaul contributor documentation and agent skills (#377)\n\n* docs: add HUMAN_VS_MACHINE.md for AI agent acknowledgment\n\nAdapted from minijinja's protocol. Requires AI agents to read\nCONTRIBUTING.md and ARCHITECTURE.md, explain rules to the human\noperator, and get confirmation before creating .ai-ack.\n\n* docs: add ARCHITECTURE.md with tech stack, source layout, and patterns\n\nExtracted from AGENTS.md. Covers entry point flow, state management,\nrouting, styling, build pipeline, key dependencies, linting, testing,\nnaming conventions, and external integrations. Includes local file\nlinks for discoverability. Note at top: update when changing referenced\nfiles.\n\n* docs: rewrite CONTRIBUTING.md from divine-mobile template\n\nReplaces the 4-line placeholder with a full contributor guide adapted\nfrom divine-mobile. Covers contribution status (welcoming with\nguardrails), good first contributions, templates and agent compliance,\ntechnical debt standard, PR closure reasons, repo setup, architecture\nexpectations, product and design boundaries, testing expectations,\nscope discipline, and PR requirements. Uses anchor links instead of\nduplicating content within the document.\n\n* docs: slim AGENTS.md, move skills to .agents/, symlink .claude/skills/\n\nSlim AGENTS.md from 52 to 32 lines: removed coding style, testing,\nPR conventions, and project structure sections (moved to skills).\nAdded AI acknowledgment check pointing to HUMAN_VS_MACHINE.md and\nread-first section referencing CONTRIBUTING.md, ARCHITECTURE.md,\nHUMAN_VS_MACHINE.md, and .agents/SKILLS.md.\n\nCreated .agents/ as the tool-agnostic canonical location for skills:\n- .agents/SKILLS.md indexes all skills\n- .agents/skills/coding-conventions/SKILL.md\n- .agents/skills/testing-guidelines/SKILL.md\n- .agents/skills/pr-conventions/SKILL.md\n- .agents/skills/project-structure/SKILL.md\n- .agents/skills/spa-subdomain-root-render/SKILL.md (migrated from\n  .claude/skills/)\n\n.claude/skills/ is now a symlink to ../../.agents/skills/ so Claude\nCode finds skills at its expected path. .github/copilot-instructions.md\nupdated to point to AGENTS.md and .agents/SKILLS.md.",
+      "tree": {
+        "sha": "ae3414e7c376d06c9edf060a57b512e21e6e92bf",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/ae3414e7c376d06c9edf060a57b512e21e6e92bf"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/7b9ef7d21091b567267c1fabce0d29387adb909d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqC/RzCRC1aQ7uu5UhlAAAAF8QAFoLUdPL92LyPdTm9Vj8pdE1\nSr5QCFC81kPG802nmd2FLgcHUYyTLaxNjaWij2OsiT080yJxQu7z6GeVjIVeqHIR\nu8lA0Rs2dDlLd12ochNFL6pfJbu8Jb3WNsZZAkwWJS1FhjYbqQGVzq8ccLaCJbzd\nCo3+2m1cJD9+rxayOJjtuFJEzYNgwleqaFG42Zm+PiV6Jy9D6Dj2OP6OfdrvcfxV\n2Cb/SaevSgCobA3p+K0dR5F3gApITSHoaNJGLKIUBh7Xt21CMSjMGRS2qW0tghVN\nFXw463yVeemVqz4Itp+LTkqoz3WZ/0ILTQj0CvEiOWI6Jghbddaev9DD5W362cuS\n+xFzTvMB6Geu78rBTUVeZ6NglwdMY2gh1I1KjMYoUPK2pqBKp9fCddb4t1JWmM7h\nSnDT1JK6Ez1kagfmJIUGxxaB+fjbNvFoPCRfEnKnYiCwNAr1rNi5n366E5xSPsqY\nTjYs0WcrhPSvhYNigr2hCYMuM7BBCKcK2eAQ6qNXtZ5NZ0sJg7o7xA1LQRjwdzlu\nA0AS5Ado8ihXVgdpaxa5cZcxVVsDj2zrG6Goa+iChZivEMp+08SKgeRpFkeSUqcE\nqX4roBEK30l5a61VHt9tiqrPmeJUx/SKih8RQh42cR1ZhOj/58Y4JcPtkDCekP9B\nMBzPHt8cepB4fh2vuaSV\n=QNOv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ae3414e7c376d06c9edf060a57b512e21e6e92bf\nparent 86bdf16ce3ebe1a320bab1b8f108d8059644546d\nauthor jalciné <452100+jalcine@users.noreply.github.com> 1779168371 -0400\ncommitter GitHub <noreply@github.com> 1779168371 +1200\n\ndocs: overhaul contributor documentation and agent skills (#377)\n\n* docs: add HUMAN_VS_MACHINE.md for AI agent acknowledgment\n\nAdapted from minijinja's protocol. Requires AI agents to read\nCONTRIBUTING.md and ARCHITECTURE.md, explain rules to the human\noperator, and get confirmation before creating .ai-ack.\n\n* docs: add ARCHITECTURE.md with tech stack, source layout, and patterns\n\nExtracted from AGENTS.md. Covers entry point flow, state management,\nrouting, styling, build pipeline, key dependencies, linting, testing,\nnaming conventions, and external integrations. Includes local file\nlinks for discoverability. Note at top: update when changing referenced\nfiles.\n\n* docs: rewrite CONTRIBUTING.md from divine-mobile template\n\nReplaces the 4-line placeholder with a full contributor guide adapted\nfrom divine-mobile. Covers contribution status (welcoming with\nguardrails), good first contributions, templates and agent compliance,\ntechnical debt standard, PR closure reasons, repo setup, architecture\nexpectations, product and design boundaries, testing expectations,\nscope discipline, and PR requirements. Uses anchor links instead of\nduplicating content within the document.\n\n* docs: slim AGENTS.md, move skills to .agents/, symlink .claude/skills/\n\nSlim AGENTS.md from 52 to 32 lines: removed coding style, testing,\nPR conventions, and project structure sections (moved to skills).\nAdded AI acknowledgment check pointing to HUMAN_VS_MACHINE.md and\nread-first section referencing CONTRIBUTING.md, ARCHITECTURE.md,\nHUMAN_VS_MACHINE.md, and .agents/SKILLS.md.\n\nCreated .agents/ as the tool-agnostic canonical location for skills:\n- .agents/SKILLS.md indexes all skills\n- .agents/skills/coding-conventions/SKILL.md\n- .agents/skills/testing-guidelines/SKILL.md\n- .agents/skills/pr-conventions/SKILL.md\n- .agents/skills/project-structure/SKILL.md\n- .agents/skills/spa-subdomain-root-render/SKILL.md (migrated from\n  .claude/skills/)\n\n.claude/skills/ is now a symlink to ../../.agents/skills/ so Claude\nCode finds skills at its expected path. .github/copilot-instructions.md\nupdated to point to AGENTS.md and .agents/SKILLS.md.",
+        "verified_at": "2026-05-19T05:26:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/7b9ef7d21091b567267c1fabce0d29387adb909d",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/7b9ef7d21091b567267c1fabce0d29387adb909d",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/7b9ef7d21091b567267c1fabce0d29387adb909d/comments",
+    "author": {
+      "login": "jalcine",
+      "id": 452100,
+      "node_id": "MDQ6VXNlcjQ1MjEwMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/452100?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jalcine",
+      "html_url": "https://github.com/jalcine",
+      "followers_url": "https://api.github.com/users/jalcine/followers",
+      "following_url": "https://api.github.com/users/jalcine/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jalcine/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jalcine/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jalcine/subscriptions",
+      "organizations_url": "https://api.github.com/users/jalcine/orgs",
+      "repos_url": "https://api.github.com/users/jalcine/repos",
+      "events_url": "https://api.github.com/users/jalcine/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jalcine/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "86bdf16ce3ebe1a320bab1b8f108d8059644546d",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/86bdf16ce3ebe1a320bab1b8f108d8059644546d",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/86bdf16ce3ebe1a320bab1b8f108d8059644546d"
+      }
+    ]
+  }
+]

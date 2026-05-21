@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "0bbc24c97a1a3cd69141c8a023ac47ead470abd1",
+    "node_id": "C_kwDOPJQeE9oAKDBiYmMyNGM5N2ExYTNjZDY5MTQxYzhhMDIzYWM0N2VhZDQ3MGFiZDE",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-18T11:14:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-18T11:14:49Z"
+      },
+      "message": "Add wallet activity logging system (rebased) (#317)\n\n* fix: instrument all wallet interactions with WalletLogger\n\n* fix: resolve duplicate wallet logs in NFC payment flow\n\n* fix: add translations for lightning address validation strings",
+      "tree": {
+        "sha": "cbb43f602b92808863bf9685aba5e633d156483c",
+        "url": "https://api.github.com/repos/cashubtc/Numo/git/trees/cbb43f602b92808863bf9685aba5e633d156483c"
+      },
+      "url": "https://api.github.com/repos/cashubtc/Numo/git/commits/0bbc24c97a1a3cd69141c8a023ac47ead470abd1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCvSpCRC1aQ7uu5UhlAAABCgQAEQg/pIuAVEjW5F+tizOmLIS\noDCo8vxj2B5iURXZ91pdicxMAtUIxfrl3+EJO5SIvZ29PqVT25jt5Tc9dmF30VNk\nyj1r++WBpyyomupa+f5zV2k4qXf+bxxy7DeWAcJuYptcbwOz3euHWkgZz/8g5G/E\nG5sGuJR4hgqUWQK4vaoqs3xOlxOOYpNnfeqURBlt0FM/wAvmdcJIz4rrd7ZgrWYh\nhYcsV484x+PWFPOBuc2U7xQ6uqmXfLKZJZqOyxUUpJwJUf/DsbCjwnkNpW/k4/ES\npiWxRyDMSrXbOSc/RWwr945Kz0VsV1ANjd6foDvz1OzBYes7l42ub4J3Mb7p8JDa\nQ80r+7oI3a+944TZv5i/pirBrDOY4vO69B+dbgkK6qY/07lzLLks7NypFRfUQkDQ\ncJsqsFrZonVj4nf0G36xp/uv55EVdduWX0fk4V956k7ZHZRy7SOCAQtrKO5HXigU\nCfXtvnxBlpNdLl59ElXbJuc6tyIQDkf/WgiEuggFOZQo9JaoIcDPkJb/YXPF4QA+\n0GqkxQ8Cvd+3TchbmSh2fLElQDsUxEWVWfr/GYanJ+TboUvWpDPLymim1uasG1Cg\nN8PE8kUBADxlDfKOeRu6Ybp1XVndaegxKxpPzWqXuQV70R/jQp4UKnxLh/sknYGB\nB1mo5VjOcYY5/1/LiF2O\n=XcWv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree cbb43f602b92808863bf9685aba5e633d156483c\nparent 49eb21e7b6b19ea2309578d61b26cd83995c09c4\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1779102889 +0200\ncommitter GitHub <noreply@github.com> 1779102889 +0200\n\nAdd wallet activity logging system (rebased) (#317)\n\n* fix: instrument all wallet interactions with WalletLogger\n\n* fix: resolve duplicate wallet logs in NFC payment flow\n\n* fix: add translations for lightning address validation strings",
+        "verified_at": "2026-05-18T11:14:50Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/Numo/commits/0bbc24c97a1a3cd69141c8a023ac47ead470abd1",
+    "html_url": "https://github.com/cashubtc/Numo/commit/0bbc24c97a1a3cd69141c8a023ac47ead470abd1",
+    "comments_url": "https://api.github.com/repos/cashubtc/Numo/commits/0bbc24c97a1a3cd69141c8a023ac47ead470abd1/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "49eb21e7b6b19ea2309578d61b26cd83995c09c4",
+        "url": "https://api.github.com/repos/cashubtc/Numo/commits/49eb21e7b6b19ea2309578d61b26cd83995c09c4",
+        "html_url": "https://github.com/cashubtc/Numo/commit/49eb21e7b6b19ea2309578d61b26cd83995c09c4"
+      }
+    ]
+  },
+  {
+    "sha": "49eb21e7b6b19ea2309578d61b26cd83995c09c4",
+    "node_id": "C_kwDOPJQeE9oAKDQ5ZWIyMWU3YjZiMTllYTIzMDk1NzhkNjFiMjZjZDgzOTk1YzA5YzQ",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-18T10:41:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-18T10:41:54Z"
+      },
+      "message": "Add wallet activity logging system (#316)\n\n* feat: implement persistent wallet activity logging\n\n* fix: instrument all wallet interactions with WalletLogger\n\n* fix: resolve duplicate wallet logs in NFC payment flow\n\n* fix: sanitize payment request payload amount type\n\n* fix: recursively sanitize amount types in payment request payload",
+      "tree": {
+        "sha": "a2aba788c3d187c476746916e515fe30855d21c1",
+        "url": "https://api.github.com/repos/cashubtc/Numo/git/trees/a2aba788c3d187c476746916e515fe30855d21c1"
+      },
+      "url": "https://api.github.com/repos/cashubtc/Numo/git/commits/49eb21e7b6b19ea2309578d61b26cd83995c09c4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqCuzyCRC1aQ7uu5UhlAAANi0QAGy1KrzHNQXgHxvxtVJ9wNgi\ngVnFrmyZ847bH5vPWOhqvZ5qveQw/LxIdBGdCMl+5HYs+yKObGU+/axrzY6E04bs\nTSzDsHTdZKrLugSumh9xuxY58DgXNIy0lUu2tmULwQVXJMhGYbTXwSMwdjC95gph\nbWWc9sgW7iLLA6S7LZhAS6z7Trnv+9eMEkxC/nsb+9+IYJwxSZgYn2MpZ6BFbYPm\nYLT9D364U7yPoT7HHmnIS9PcXE5hqS2ScGQSPtaRcYKPaih/9t4OXzCHxL7EJqr8\n9sszi3DcpFuQm9D8Cab0fJLeZER7lsBM8zncpi4R2cveST99KOSNj+lMpo/80JZg\n7Ku7vEP9WYwGbB+K8WdVzSm6VMiSHTw7BnDHJMG0MxPpQn/CKy2PpXgL+4l0KijD\nZfyD/pb5DU6IfWfffocB/W+UFNRk3rI3Z7It0Ea/VQlL4r8B29kwtJ8juqKjrbXZ\nq/4Bhnda5t/0Zx1xIBzz5KLF9P/+aXeg/qv+d/IwAG3z5el9m0EhYeU6g8vHmi70\nqsph+T/ey4yGGnB59NTz6mtJ1OGtRjy5Z9fTvZgtwdhGBc+scdS5wajsN/zKH8kx\nubkLPMKyasoN5ZnGDjuZ3pAzAIO8aQmlyKHYNxJt/I4oVb2Js5SmU4dUbN6gZjnq\nGGTPZqep34q2ygiveWw5\n=+nPD\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a2aba788c3d187c476746916e515fe30855d21c1\nparent a4afafd769a743bba673d970c8b21aa063650f08\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1779100914 +0200\ncommitter GitHub <noreply@github.com> 1779100914 +0200\n\nAdd wallet activity logging system (#316)\n\n* feat: implement persistent wallet activity logging\n\n* fix: instrument all wallet interactions with WalletLogger\n\n* fix: resolve duplicate wallet logs in NFC payment flow\n\n* fix: sanitize payment request payload amount type\n\n* fix: recursively sanitize amount types in payment request payload",
+        "verified_at": "2026-05-18T10:41:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/Numo/commits/49eb21e7b6b19ea2309578d61b26cd83995c09c4",
+    "html_url": "https://github.com/cashubtc/Numo/commit/49eb21e7b6b19ea2309578d61b26cd83995c09c4",
+    "comments_url": "https://api.github.com/repos/cashubtc/Numo/commits/49eb21e7b6b19ea2309578d61b26cd83995c09c4/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a4afafd769a743bba673d970c8b21aa063650f08",
+        "url": "https://api.github.com/repos/cashubtc/Numo/commits/a4afafd769a743bba673d970c8b21aa063650f08",
+        "html_url": "https://github.com/cashubtc/Numo/commit/a4afafd769a743bba673d970c8b21aa063650f08"
+      }
+    ]
+  }
+]

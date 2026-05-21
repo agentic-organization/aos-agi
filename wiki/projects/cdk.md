@@ -29,6 +29,7 @@ The **Rust Cashu Development Kit** — wallet *and* mint logic in one library, w
 
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/cdk/`) shows **1 commit** by [[people/thesimplekid]] ("fix: rust version job"). **13 issues updated** including Swift publication pipeline workflow, onchain BDK integration, `p2pk_signing_keys` in `SendOptions`, payment-processor mint `quote_id` propagation to backend.
 
 - 2026-05-12: `data/raw/github/daily/2026-05-12/cashubtc/cdk/` captured **4 commits** in the 24h window. Themes: FFI runtime consolidation into `RuntimeGuard`, replace blocking `Condvar` pool with async `Semaphore`, agent review scaffolding, DB test expansion. No new release in this window (last release v0.16.0 on 2026-03-31).
 
