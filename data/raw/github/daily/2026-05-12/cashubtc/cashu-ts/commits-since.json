@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "7b5e403d796d82f9acf65364a99b11599fec8c3d",
+    "node_id": "C_kwDOI3GlzNoAKDdiNWU0MDNkNzk2ZDgyZjlhY2Y2NTM2NGE5OWIxMTU5OWZlYzhjM2Q",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-12T13:08:35Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-12T13:08:35Z"
+      },
+      "message": "chore(main): release 4.3.0 (#651)\n\n**cashu-ts v4.3.0** tightens spec compliance and hardens the wallet against real-world mint quirks: BOLT12 quotes, NUT-12 DLEQ verification, and nullable wire fields now behave correctly across mint implementations.\n\nSlow Lightning payments can now be fire-and-forget: wallets can save the in-flight payment, restart or hand off to another process, and still reclaim their change once the payment settles thanks to new OutputData serializers and wallet.createMeltChangeProofs method.\n\nNew developer ergonomics include a CTSError base class for cleaner error handling and a maxSpendableAfterFees primitive that makes \"send max\" flows trivial to build.",
+      "tree": {
+        "sha": "7508b4669a121e77756660db848629cb0524d28d",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/7508b4669a121e77756660db848629cb0524d28d"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/7b5e403d796d82f9acf65364a99b11599fec8c3d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAyZTCRC1aQ7uu5UhlAAAlf0QAF0YtrV/TTSSqihrWTb/MpAl\nKGM9i/EJplBC2zfPhk8ViFH0CLfyjDZVkX2/6XIfWbnv+p5IsqGospDOh0FliaLx\n0Vw0E9CghnrL8LuVn/OSXj8vGGXHeUuUdrn9T+8tBuKpTaY4KL0UU8erd/RQW5dj\nRvGuZPf+0JpLsBrLRYyqquYbVbdbycwfefjRfyk6KneTOLyO6ngO/xHFAEp9ikAs\neRfQ1TphcKyda0sg9VHuZrQRNZiv38ijlDhRUypq90GilNuFKMYxmlZyQrspduHa\nzrXzFeFYfjLXh0qicfy10z2TAzG73Di7SrmqySCuWScRG7ch49+LKtjGBr+gQE5e\n/z4yOXuXA/ZVHYBqUEzmN67UKHLx5l74UEDdZ3ec9i7LmK3UyOPFlgXKAW6wVc9k\npQB+F/I3HIRi4SoqaaU552NOFmpqnJo+ktv4/IuBEaZPwc137RDuS3QbyWhb4mhx\n8KkKMtApuyCyPGon+89xlNyr4BLA8WvSoLAjvu207TqEneo41JCLGGDxFAl8Y/1V\nAOVGaPdHpGGOn0HqIer34UYeyOL4+yRs3govJdlF5VGyrqehbTL9mna+KoezxqmP\njShUNjuEdHlj3YODt+ou+S55XCMqnEOuNsT2sv6xmPl9jZcfxUyifiux63CrQ3Tp\n5iQ7JvRRqeEPHNmJVY6W\n=pWb7\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7508b4669a121e77756660db848629cb0524d28d\nparent 0119bde2eea1d71482291c1f426c7d8469b459e4\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778591315 +0100\ncommitter GitHub <noreply@github.com> 1778591315 +0100\n\nchore(main): release 4.3.0 (#651)\n\n**cashu-ts v4.3.0** tightens spec compliance and hardens the wallet against real-world mint quirks: BOLT12 quotes, NUT-12 DLEQ verification, and nullable wire fields now behave correctly across mint implementations.\n\nSlow Lightning payments can now be fire-and-forget: wallets can save the in-flight payment, restart or hand off to another process, and still reclaim their change once the payment settles thanks to new OutputData serializers and wallet.createMeltChangeProofs method.\n\nNew developer ergonomics include a CTSError base class for cleaner error handling and a maxSpendableAfterFees primitive that makes \"send max\" flows trivial to build.",
+        "verified_at": "2026-05-12T13:08:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/7b5e403d796d82f9acf65364a99b11599fec8c3d",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/7b5e403d796d82f9acf65364a99b11599fec8c3d",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/7b5e403d796d82f9acf65364a99b11599fec8c3d/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0119bde2eea1d71482291c1f426c7d8469b459e4",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/0119bde2eea1d71482291c1f426c7d8469b459e4",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/0119bde2eea1d71482291c1f426c7d8469b459e4"
+      }
+    ]
+  },
+  {
+    "sha": "0119bde2eea1d71482291c1f426c7d8469b459e4",
+    "node_id": "C_kwDOI3GlzNoAKDAxMTliZGUyZWVhMWQ3MTQ4MjI5MWMxZjQyNmM3ZDg0NjliNDU5ZTQ",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-12T12:37:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-12T12:37:24Z"
+      },
+      "message": "feat(wallet): improve async melt change handling (#659)\n\nLets wallets persist prepared change blanks across a NUT-06 async melt and reconstruct spendable change once the mint quote is paid. Also hardens the shared mint-response validator to catch per-signature keyset mismatches.",
+      "tree": {
+        "sha": "e723ee296cec0b8a217b1723e70af27b5c865109",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/e723ee296cec0b8a217b1723e70af27b5c865109"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/0119bde2eea1d71482291c1f426c7d8469b459e4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAx8ECRC1aQ7uu5UhlAAA2dgQAAfZjmN0cU0khzsInuFYkwDV\nToROJBfN57Uha2smmNZXamhyG++pVCc42qH5BAcrynjow0/UoCI0iTUgBwsg8S57\nb31E7qXi9ucu9ffYoh85HxL71UEw98dLtOQziWBs9DDQyvi1IW2dkZqzgTPgTbty\ndVtuSul9Zf0baCXoQC45K3aULCsD0eGQVPltzU6QfiG6kCkn0SWBEj6aK3YYmPEt\nLdwt/oM6UK14hEpzxele09n6b/cG0T7pwq7gDsDRBxX+/6x30yG4w+Cgh5I1j+Wo\nF8PjlC8NEZoTABF2tXrTNzCgxRbvzRv1nctATkjsU7eZP7O9YG4kITVmOhlEB7eB\ndQIAetSuvO9sFMTwVU1Yggoo8mcFd+uU10iVrujol27h14EieWLbOYtDQrJBnd6E\nPnE3UPlEuB5a/WDRRdVuPJ/YpNPmUT/hwFLZ+x/VRGl1d/TRLRvVe++bzpjMlB2n\n3LhT1UgnZ+Zc2zX23diuJxVjgW2rENj09MX2M4UxFoRR4p38ewj3CH8g5BzTXsR7\nL7yNgg6nLAnt9IM+4oq7sDdEoIR9skLYkHO3sq0gkcLfZ4se3zzO4XIB6Hou9mgt\n1DrBWg1CR1RQPdjc8ugpGI+K46/LlXmKInlEzrK+rtms6YkQhvgfsksRu3GPessE\nnyTaHrCejTPSt+gW+oYU\n=vJnK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e723ee296cec0b8a217b1723e70af27b5c865109\nparent d4a754354708102c54c17f0e78285d47f4bc13e8\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1778589444 +0100\ncommitter GitHub <noreply@github.com> 1778589444 +0100\n\nfeat(wallet): improve async melt change handling (#659)\n\nLets wallets persist prepared change blanks across a NUT-06 async melt and reconstruct spendable change once the mint quote is paid. Also hardens the shared mint-response validator to catch per-signature keyset mismatches.",
+        "verified_at": "2026-05-12T12:37:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/0119bde2eea1d71482291c1f426c7d8469b459e4",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/0119bde2eea1d71482291c1f426c7d8469b459e4",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/0119bde2eea1d71482291c1f426c7d8469b459e4/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d4a754354708102c54c17f0e78285d47f4bc13e8",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/d4a754354708102c54c17f0e78285d47f4bc13e8",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/d4a754354708102c54c17f0e78285d47f4bc13e8"
+      }
+    ]
+  }
+]

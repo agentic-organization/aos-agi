@@ -20,6 +20,8 @@ Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and i
 ## History
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
 
+- 2026-05-12: `data/raw/github/daily/2026-05-12/marmot-protocol/transponder/` captured **4 commits** in the 24h window. Themes: sliding rate-limit windows, invalidate push-auth cache on rejection, reject invalid FCM project IDs, prevent local secrets entering Docker build context. Committers: [[people/erskingardner]].
+
 ## Open questions
 - Who is the designated maintainer beyond the top contributors?
 - Communication channels?

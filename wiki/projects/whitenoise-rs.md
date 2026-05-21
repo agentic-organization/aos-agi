@@ -25,6 +25,7 @@ Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and i
 
 ## History
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
+- 2026-05-12: `data/raw/github/daily/2026-05-12/marmot-protocol/whitenoise-rs/` captured **2 commits** in the 24h window. Themes: session + projection rearchitecture (merged via #821), benchmark tests switched to local relays (#825). Committers: [[people/erskingardner]].
 
 ## Related
 - [[projects/whitenoise]] — the Flutter app consuming this crate.
