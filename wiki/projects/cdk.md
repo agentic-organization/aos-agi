@@ -33,6 +33,8 @@ The **Rust Cashu Development Kit** — wallet *and* mint logic in one library, w
 
 - 2026-05-12: `data/raw/github/daily/2026-05-12/cashubtc/cdk/` captured **4 commits** in the 24h window. Themes: FFI runtime consolidation into `RuntimeGuard`, replace blocking `Condvar` pool with async `Semaphore`, agent review scaffolding, DB test expansion. No new release in this window (last release v0.16.0 on 2026-03-31).
 
+- 2026-05-15: `data/raw/github/daily/2026-05-15/cashubtc/cdk/` captured **1 commit** and **11 updated issues** in the 24h window. Themes: agent review documentation update. Issues: redis-cluster caching support (#1936), FFI mint-info error propagation (#1968), auth wildcard behavior (#1967), zero-signature validation (#1966), SendOptions p2pk_signing_keys (#1835), keyset expiry enforcement (#1946), on-chain BDK work (#1870), wallet RestoreOptions batching (#1923), Apache license addition (#1864). Committer: [[people/thesimplekid]].
+
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
 - Which Cashu library (cashu-ts, CDK, Nutshell, etc.) it builds on.

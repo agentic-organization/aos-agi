@@ -97,6 +97,8 @@ Noting this on the team page (not as a judgement) so identity/skill ingestion ca
 - Page created from an internal Q4-2025 cashubtc organization analysis.
 - 2026-05-07: Observational surface expanded from the 8-repo report to org-wide raw GitHub ingestion (`data/raw/github/daily/2026-05-07/`).
 
+- 2026-05-15: CDK and wallet activity per `data/raw/github/daily/2026-05-15/`: [[projects/cdk]] (1 commit, 11 updated issues — redis-cluster caching, keyset expiry, p2pk_signing_keys, RestoreOptions). Committer: [[people/thesimplekid]]. [[projects/cashu-me]] (1 commit — cashu-ts v4 migration). Committer: [[people/callebtc]].
+
 ## Open questions
 - Which members are funded by [[teams/and-other-stuff]] and which are independent or funded elsewhere?
 - Where does cashubtc coordinate asynchronously — Matrix, Telegram, Nostr, Signal, mailing list?

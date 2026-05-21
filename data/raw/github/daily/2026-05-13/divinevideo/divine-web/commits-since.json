@@ -1,0 +1,494 @@
+[
+  {
+    "sha": "19d7dbdd4f82054cf9a4f4747ff3513937677cfe",
+    "node_id": "C_kwDOPrslvdoAKDE5ZDdkYmRkNGY4MjA1NGNmOWE0ZjQ3NDdmZjM1MTM5Mzc2NzdjZmU",
+    "commit": {
+      "author": {
+        "name": "jalciné",
+        "email": "452100+jalcine@users.noreply.github.com",
+        "date": "2026-05-13T02:37:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-13T02:37:27Z"
+      },
+      "message": "feat(oembed): video previews (#288)\n\n* perf(video): adaptive bandwidth-tiered prefetch and HLS buffer tuning\n\n- Prefetch 5 upcoming videos (was 3) with dynamic preconnect to media.divine.video\n- New hlsConfigBuilder.ts with tiered buffer configs (low/medium/high)\n- VideoPlayer uses buildHlsConfig() with live bandwidthTier via useBandwidthTier()\n- getPreloadAttribute() adapts video preload based on connection speed\n- Consolidates duplicate bandwidthTracker subscription pattern (was useState+subscribe,\n  now useBandwidthTier() hook consistent with VideoCard)\n- bandwidthTracker still used for recordLoad in handleLoadedData\n\nBuilds on existing infrastructure: getOptimalVideoUrl (VideoCard quality selection),\nbandwidthTracker (recording), useBandwidthTier (subscription)\n\n* Add oEmbed discovery link to Cloudflare Pages function\n\n- Add upsertLinkTag() helper function to inject link tags in HTML head\n- Add isVideoPage() and extractVideoId() helper functions\n- Update injectMetaTags() to inject oEmbed discovery link for video pages\n- Link format: relay.divine.video/api/oembed?url={video_url}\n- Update test to verify oEmbed link injection\n\n* fix(288): href escaping in upsertLinkTag and remove dead autoplay params\n\nAddress PR #288 review feedback from mbradley:\n- Escape href in upsertLinkTag() using escapeHtml(), matching upsertMetaTag pattern\n- Remove ?autoplay=1&muted=1 from embed iframe src (not read by SPA)",
+      "tree": {
+        "sha": "56d330dd5daa41c4266681e6c4111bd574540f16",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/56d330dd5daa41c4266681e6c4111bd574540f16"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/19d7dbdd4f82054cf9a4f4747ff3513937677cfe",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqA+PnCRC1aQ7uu5UhlAAATAoQABPqOpkmR6jgB76nN0XC8oPo\nLaRwJqU//8ZYB4gMwlbbjsnDSP0JucQv5eskt1tYO0i5KZbC2S7owLHiiVZMdX/V\nT34Th+kCoyL0upE0IaQCH7+/aJFuhxUi072hIaz5aZuRjLxGu1W+SSkeIbrp4EeQ\nVIZ4/g0iZK/8wBpA2Xob07Ts9c1IafCf/j49svU219k9X0HAbLQbvVX2NlhD59G1\nmp4vQvN/vkgQQibGX/HuJ1EWFn/LgkUtCQpR8FFIfJHe/SAOePd/lV7dOTBRFRUQ\nuqS3K66166S19TfzJA3VQuHnH0JlWOyjD3IQ/QD5qLDkqRqvUEZ1FH+YHhU23EwQ\nuv3zBc5UzG8fN6K+EAM4HEalewss6zKcBtE5Dsb4SARLVGFqSCWMwfdj8CDheaDv\nWirzxtJpQGn6IlcoTMuFCZU3AkLdHheac8UJh/lkUlkMj7upnbmoosTYaZKyZalg\ndi/i/4y8RxX12mk7mfYrsoxPcr3dp7jJBlT4rGDj2OHocYm7GvVuj4Y8ZMiOCoOq\n9SQkfpB3M4jWF1dMOmWjkzp3Ofl62lKJ75Pe6sconliv8dQFtuzrBB9YDqzOjv0k\nM7LRXTD3VYqC9pJCQ/8jbrleVqn5fT22pb4WgR6gnQSbIy4OkeKAUtSocQtQW7//\nv+gL1xVqZMkaR1B0jRfo\n=Zoec\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 56d330dd5daa41c4266681e6c4111bd574540f16\nparent f25304ab4e19e31ea9fba657f71cd3a4b289969e\nauthor jalciné <452100+jalcine@users.noreply.github.com> 1778639847 -0400\ncommitter GitHub <noreply@github.com> 1778639847 +1200\n\nfeat(oembed): video previews (#288)\n\n* perf(video): adaptive bandwidth-tiered prefetch and HLS buffer tuning\n\n- Prefetch 5 upcoming videos (was 3) with dynamic preconnect to media.divine.video\n- New hlsConfigBuilder.ts with tiered buffer configs (low/medium/high)\n- VideoPlayer uses buildHlsConfig() with live bandwidthTier via useBandwidthTier()\n- getPreloadAttribute() adapts video preload based on connection speed\n- Consolidates duplicate bandwidthTracker subscription pattern (was useState+subscribe,\n  now useBandwidthTier() hook consistent with VideoCard)\n- bandwidthTracker still used for recordLoad in handleLoadedData\n\nBuilds on existing infrastructure: getOptimalVideoUrl (VideoCard quality selection),\nbandwidthTracker (recording), useBandwidthTier (subscription)\n\n* Add oEmbed discovery link to Cloudflare Pages function\n\n- Add upsertLinkTag() helper function to inject link tags in HTML head\n- Add isVideoPage() and extractVideoId() helper functions\n- Update injectMetaTags() to inject oEmbed discovery link for video pages\n- Link format: relay.divine.video/api/oembed?url={video_url}\n- Update test to verify oEmbed link injection\n\n* fix(288): href escaping in upsertLinkTag and remove dead autoplay params\n\nAddress PR #288 review feedback from mbradley:\n- Escape href in upsertLinkTag() using escapeHtml(), matching upsertMetaTag pattern\n- Remove ?autoplay=1&muted=1 from embed iframe src (not read by SPA)",
+        "verified_at": "2026-05-13T02:37:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/19d7dbdd4f82054cf9a4f4747ff3513937677cfe",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/19d7dbdd4f82054cf9a4f4747ff3513937677cfe",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/19d7dbdd4f82054cf9a4f4747ff3513937677cfe/comments",
+    "author": {
+      "login": "jalcine",
+      "id": 452100,
+      "node_id": "MDQ6VXNlcjQ1MjEwMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/452100?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jalcine",
+      "html_url": "https://github.com/jalcine",
+      "followers_url": "https://api.github.com/users/jalcine/followers",
+      "following_url": "https://api.github.com/users/jalcine/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jalcine/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jalcine/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jalcine/subscriptions",
+      "organizations_url": "https://api.github.com/users/jalcine/orgs",
+      "repos_url": "https://api.github.com/users/jalcine/repos",
+      "events_url": "https://api.github.com/users/jalcine/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jalcine/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f25304ab4e19e31ea9fba657f71cd3a4b289969e",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/f25304ab4e19e31ea9fba657f71cd3a4b289969e",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/f25304ab4e19e31ea9fba657f71cd3a4b289969e"
+      }
+    ]
+  },
+  {
+    "sha": "f25304ab4e19e31ea9fba657f71cd3a4b289969e",
+    "node_id": "C_kwDOPrslvdoAKGYyNTMwNGFiNGUxOWUzMWVhOWZiYTY1N2Y3MWNkM2E0YjI4OTk2OWU",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-13T00:48:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-13T00:48:52Z"
+      },
+      "message": "fix(dm): make NIP-17 self-wrap a non-fatal best-effort step (#313)\n\ncreateDmGiftWraps iterated [sender, ...recipients] in that order and\nthrew on the first failure. The self iteration ran first — so any\nfailure in the self-encrypt path (e.g. Keycast bunker rejecting\nnip44_encrypt with target=self) aborted the loop before any recipient\nwrap was even attempted. The recipient never received the message.\n\nMirror mobile's pattern at\nmobile/packages/dm_repository/lib/src/nip17_message_service.dart:\nrecipient delivery first, then a separate try/catch for the self copy.\nA self-wrap failure is logged and swallowed; the recipient already got\nthe message and the cross-device recovery copy is best-effort.\n\n- Split createDmGiftWraps into createRecipientGiftWraps (throws on\n  failure) and createSelfGiftWrap (returns null + warns on failure).\n- Reorder useDmSend.mutationFn: publish recipients first, then attempt\n  self-wrap inside try/catch around both creation and publish.\n- Drop the back-compat createDmGiftWraps wrapper since the only caller\n  was useDmSend itself.\n\nCloses #310\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "71d1abe311e224d0452d8287147ce4920f45394a",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/71d1abe311e224d0452d8287147ce4920f45394a"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/f25304ab4e19e31ea9fba657f71cd3a4b289969e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqA8p0CRC1aQ7uu5UhlAAA3icQAF7NkiAjIQO1FuWzmiwVbHlr\nWxHZkg2tzqQuCEzadLoHmby9SfIacH1R3vyCqX/9iwMKckHC6tAExPezDgXT6NZA\nqKkTJAh/wKq2wquchTTHUIntAflMLWQHcuIyFrJb32iqDIa3oR3oVTAt6uuhS/vs\nDZRKGQD+OaxgdP/HfnkZRyPBnPcyFJoNXG+6FPgsb2GL2j7p6mgOQ5e+7ICDHyJf\nDaIYgZ0lB2qkb0iqKbPIu6kYNTCQpSxp15d6RJ8JIvi9l+MF+KRrcGyf5mXIlXwE\nbbeVGGgRToelAV/r4AntpowFfH1B4S5nKLAFlsQrJHQcq6ok9tezh51SBT2Npsef\nf2Sc2RSqs0MBqRipxcUWnPS3vrNHIM/orGI0/kLjaLJkqQRCsXW72k97pjReELXU\nO2/h/OPGXQ6eSvmU1HL1mP74jrC8oeMdcJgMry/jUxEpNe5boojQ5MZRpRyIRhi1\nLP1uTg1KyigoOhpqmyUzMaYzzhWFzauYVi/VeUHqYRybZHW6ktlzxTjA7/E979pj\n8vhaReZ+wZvIHnzYW5/ZKzVVYdeAFBPXvTbV+uhhWgJxYLhAOsgiKkeeKqORO4z+\n4h3TZd6zxtkS4vcGoSsV6Nwg04TWTxJ+mF6l2rM87p+rzVYxkVvxYF3upG8/TSJD\nLsnXqkJ+IbboN+SdtxRQ\n=YH2f\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 71d1abe311e224d0452d8287147ce4920f45394a\nparent feca2fbd0d7bbedb7d62c1fdc98f895d789afac7\nauthor Meylis <meylis@divine.video> 1778633332 +0500\ncommitter GitHub <noreply@github.com> 1778633332 +0500\n\nfix(dm): make NIP-17 self-wrap a non-fatal best-effort step (#313)\n\ncreateDmGiftWraps iterated [sender, ...recipients] in that order and\nthrew on the first failure. The self iteration ran first — so any\nfailure in the self-encrypt path (e.g. Keycast bunker rejecting\nnip44_encrypt with target=self) aborted the loop before any recipient\nwrap was even attempted. The recipient never received the message.\n\nMirror mobile's pattern at\nmobile/packages/dm_repository/lib/src/nip17_message_service.dart:\nrecipient delivery first, then a separate try/catch for the self copy.\nA self-wrap failure is logged and swallowed; the recipient already got\nthe message and the cross-device recovery copy is best-effort.\n\n- Split createDmGiftWraps into createRecipientGiftWraps (throws on\n  failure) and createSelfGiftWrap (returns null + warns on failure).\n- Reorder useDmSend.mutationFn: publish recipients first, then attempt\n  self-wrap inside try/catch around both creation and publish.\n- Drop the back-compat createDmGiftWraps wrapper since the only caller\n  was useDmSend itself.\n\nCloses #310\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+        "verified_at": "2026-05-13T00:48:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/f25304ab4e19e31ea9fba657f71cd3a4b289969e",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/f25304ab4e19e31ea9fba657f71cd3a4b289969e",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/f25304ab4e19e31ea9fba657f71cd3a4b289969e/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "feca2fbd0d7bbedb7d62c1fdc98f895d789afac7",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/feca2fbd0d7bbedb7d62c1fdc98f895d789afac7",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/feca2fbd0d7bbedb7d62c1fdc98f895d789afac7"
+      }
+    ]
+  },
+  {
+    "sha": "feca2fbd0d7bbedb7d62c1fdc98f895d789afac7",
+    "node_id": "C_kwDOPrslvdoAKGZlY2EyZmJkMGQ3YmJlZGI3ZDYyYzFmZGM5OGY4OTVkNzg5YWZhYzc",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-13T00:35:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-13T00:35:24Z"
+      },
+      "message": "feat(dm): healthcheck NIP-44 capability at signer attach (#314)\n\n* feat(dm): healthcheck NIP-44 capability at signer attach\n\nuseDmCapability checked Boolean(signer?.nip44) — a type-presence test,\nnot a capability test. A NIP-46 bunker that exposes the nip44 surface\nbut rejects the underlying RPC produced sessions where DMs appeared\navailable, every fetch silently failed, every send may fail late.\n\nAdd a one-time round-trip probe at session attach so the system\nfails-loud-at-the-boundary instead of fail-silent-deep-in-the-stack.\n\n- New probeBunkerNip44(signer, pubkey) in lib/dm — encrypt-to-self +\n  decrypt-from-self, returns true iff the round-trip plaintext matches.\n- New useBunkerDecryptHealthcheck hook — useQuery with staleTime:\n  Infinity and one retry on transient failure.\n- useDmCapability gates canUseDirectMessages on the healthcheck and\n  exposes isCheckingDmCapability for loading-state rendering.\n- MessagesPage and ConversationPage render a neutral \"Checking signer\n  capability...\" surface during the probe instead of the negative\n  \"DMs unavailable\" copy.\n\nLocal-key signers (NSecSigner) pass instantly; bunker signers add ~1×\nround-trip latency at first inbox load. Subsequent loads use the\ncached result.\n\nCloses #311\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* fix(dm): key healthcheck cache by login.id so bunker re-pair busts stale false\n\nAddresses @DSanich review on #314: with staleTime/gcTime: Infinity, a healthcheck\nthat probed false (e.g. Keycast policy rejecting nip44_decrypt) stayed cached\nacross a bunker disconnect+re-pair on the same pubkey. Once the upstream policy\nis fixed and the moderator reconnects, React Query was handing back the stale\nfalse and DMs stayed \"unavailable\" until a hard reload.\n\nlogin.id from useNostrLogin() is a fresh UUID per addLogin() call. Including it\nin the healthcheck queryKey means a fresh pairing produces a fresh cache entry,\nnaturally bypassing the stale result. JWT signers lack nip44 so the healthcheck\nnever runs for them; falling back to '' for missing logins is safe.\n\nAdds a regression test that asserts the probe runs twice when login.id changes\nfor the same pubkey.\n\n---------\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "b61c8d6a2117e8a0c6246b75531ed2907d41d785",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/b61c8d6a2117e8a0c6246b75531ed2907d41d785"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/feca2fbd0d7bbedb7d62c1fdc98f895d789afac7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqA8dMCRC1aQ7uu5UhlAAAaqcQAEIqeR3P/y6P3y8RHNaHW4di\nr4mCl8HKDGlSAeOq3XEuvtiUcaRlt3Utqeuavab+7YTHZdFcnk9tvp2mj5NcVfPZ\ni9qS6Njc3lxpbei/k4C7vsxrB5JB3rXSIAvu0eDZiPtLGVvbu4y47Jhej0HTbU1o\ndtl8nXhkzggmPOdtHNnvsTvYz5yr4Qrfb+/xTVyHvYtm8oEwGTkW+tZjNUUQmx9z\nD2f+ZKKoj+imGJ0+T1U0vTtcS5xp3obyW5aN5lmoj7LfNA8vAkosbQ8xc4bKstXU\nR3URcnLfb71bD5bcJzkzCMfdv3spkAZtJdqTtohWp8X9gc8AmiWU5LHC8Z6dEGgA\nCyXTuTR+k6WuNyx4+auUAWGIZXgJ3JWBrfsUH4CHhB30U2ggmDAcIlmzkpIUi34s\nxllz0ZaRTXcylu+qgTINrLIq8H/ur+/3TmnPfLhDMztDRObBoVcfI9r1+BWbsNMw\nyXgMnEUnlcMwsEmuTw2TudrNv+rbcro/RLGWOKIEreEzny3sbxXsZr0kAGEM97PN\nPMP0901QUKcEFvqthQfXCsLJk7l42dOhGUy1Lio2L29HlNCJMiMllxwGzRVpwZn2\natXg/kL6Qc2zr9/qkb3jm0fejf1maY5SuP+CthTMtCzlEtDrZDhYFTtIBaCT1BMg\noZzgS82mbIqa0ME9itsY\n=710Z\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b61c8d6a2117e8a0c6246b75531ed2907d41d785\nparent c2afa8dc3cbfa3e59f1610ed0115826578906f0b\nauthor Meylis <meylis@divine.video> 1778632524 +0500\ncommitter GitHub <noreply@github.com> 1778632524 +0500\n\nfeat(dm): healthcheck NIP-44 capability at signer attach (#314)\n\n* feat(dm): healthcheck NIP-44 capability at signer attach\n\nuseDmCapability checked Boolean(signer?.nip44) — a type-presence test,\nnot a capability test. A NIP-46 bunker that exposes the nip44 surface\nbut rejects the underlying RPC produced sessions where DMs appeared\navailable, every fetch silently failed, every send may fail late.\n\nAdd a one-time round-trip probe at session attach so the system\nfails-loud-at-the-boundary instead of fail-silent-deep-in-the-stack.\n\n- New probeBunkerNip44(signer, pubkey) in lib/dm — encrypt-to-self +\n  decrypt-from-self, returns true iff the round-trip plaintext matches.\n- New useBunkerDecryptHealthcheck hook — useQuery with staleTime:\n  Infinity and one retry on transient failure.\n- useDmCapability gates canUseDirectMessages on the healthcheck and\n  exposes isCheckingDmCapability for loading-state rendering.\n- MessagesPage and ConversationPage render a neutral \"Checking signer\n  capability...\" surface during the probe instead of the negative\n  \"DMs unavailable\" copy.\n\nLocal-key signers (NSecSigner) pass instantly; bunker signers add ~1×\nround-trip latency at first inbox load. Subsequent loads use the\ncached result.\n\nCloses #311\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* fix(dm): key healthcheck cache by login.id so bunker re-pair busts stale false\n\nAddresses @DSanich review on #314: with staleTime/gcTime: Infinity, a healthcheck\nthat probed false (e.g. Keycast policy rejecting nip44_decrypt) stayed cached\nacross a bunker disconnect+re-pair on the same pubkey. Once the upstream policy\nis fixed and the moderator reconnects, React Query was handing back the stale\nfalse and DMs stayed \"unavailable\" until a hard reload.\n\nlogin.id from useNostrLogin() is a fresh UUID per addLogin() call. Including it\nin the healthcheck queryKey means a fresh pairing produces a fresh cache entry,\nnaturally bypassing the stale result. JWT signers lack nip44 so the healthcheck\nnever runs for them; falling back to '' for missing logins is safe.\n\nAdds a regression test that asserts the probe runs twice when login.id changes\nfor the same pubkey.\n\n---------\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+        "verified_at": "2026-05-13T00:35:24Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/feca2fbd0d7bbedb7d62c1fdc98f895d789afac7",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/feca2fbd0d7bbedb7d62c1fdc98f895d789afac7",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/feca2fbd0d7bbedb7d62c1fdc98f895d789afac7/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c2afa8dc3cbfa3e59f1610ed0115826578906f0b",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/c2afa8dc3cbfa3e59f1610ed0115826578906f0b",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/c2afa8dc3cbfa3e59f1610ed0115826578906f0b"
+      }
+    ]
+  },
+  {
+    "sha": "c2afa8dc3cbfa3e59f1610ed0115826578906f0b",
+    "node_id": "C_kwDOPrslvdoAKGMyYWZhOGRjM2NiZmEzZTU5ZjE2MTBlZDAxMTU4MjY1Nzg5MDZmMGI",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-12T22:38:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-12T22:38:46Z"
+      },
+      "message": "feat: add newsletter consent to waitlist signup (#316)\n\n* feat: add newsletter consent to waitlist signup\n\n* fix(auth): correct waitlist newsletter consent\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "8b494456c506f2a58de9f1b30dfee329e30289ab",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/8b494456c506f2a58de9f1b30dfee329e30289ab"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/c2afa8dc3cbfa3e59f1610ed0115826578906f0b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqA6v2CRC1aQ7uu5UhlAAAlvIQAADx5uWfm0jk1AKX4JQk3COG\npSEsuDJjyy1j5/F43Aaw20snP4WrcAmgo//QDIK2xsQYz1BPV51ngEsfBQEBTF+h\noaXBIj9hxNByWSOCjRxeVKhEMGkFTl+NqXefBsuXuv896LROTM8UIrLX6MnsoptE\nieHENa3BjFkHJBMPZH64sLdLIzwMaaqoIzSRHhYLExHRXWrK33asd6/gqOBKe75K\nSZX+jVY+J1zps/rY6YMQ7/fO1d6Y+l2o1KgprwyoxPf/iixuWtxlDI8xOalbD/Yl\n2C/UoSMJvL4YzkTETAFcxU3Vn7MGHhs2MHVdtTOXX/ZoU6/Z4TBgnWRKnbc9vUJq\ncfFKLyN14RzF0rWYAebEWLAYMquK32i7+1XuMQkA9LiouKGqzhLsgoKTxwgOi+qx\nafj9a2f18jZjlBKQ0nZvCUGHtr+1UpdvVZ9L/aJ+tp9PSbig+P4U2nEHrK6Yvq7n\n+KhomgbNK9fz+/FCX9o2+1XEP1coxqzYjvVTRRwt/rjzJWff7KeyevPRQpGXo0zw\nl15PxOxkJvlmaHZp7wiu/ctM/Bi48rvK23PUSExbZVKYJnSZxZD7bD8uaxh7Nk5x\ng55Xtn5lKviyJx0QlkE17UHerlmd7SLfqkRq8m6fT1cx00V4Ovl+g3QJUmB8/J48\nsQpEVRoIBxW4L5q1QbA7\n=fzp9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8b494456c506f2a58de9f1b30dfee329e30289ab\nparent 0778d709df0346d0c9a1486985fa63a0ab1bbbac\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778625526 -0400\ncommitter GitHub <noreply@github.com> 1778625526 -0500\n\nfeat: add newsletter consent to waitlist signup (#316)\n\n* feat: add newsletter consent to waitlist signup\n\n* fix(auth): correct waitlist newsletter consent\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-12T22:38:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/c2afa8dc3cbfa3e59f1610ed0115826578906f0b",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/c2afa8dc3cbfa3e59f1610ed0115826578906f0b",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/c2afa8dc3cbfa3e59f1610ed0115826578906f0b/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0778d709df0346d0c9a1486985fa63a0ab1bbbac",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/0778d709df0346d0c9a1486985fa63a0ab1bbbac",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/0778d709df0346d0c9a1486985fa63a0ab1bbbac"
+      }
+    ]
+  },
+  {
+    "sha": "0778d709df0346d0c9a1486985fa63a0ab1bbbac",
+    "node_id": "C_kwDOPrslvdoAKDA3NzhkNzA5ZGYwMzQ2ZDBjOWExNDg2OTg1ZmE2M2EwYWIxYmJiYWM",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-12T22:38:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-12T22:38:07Z"
+      },
+      "message": "feat(reports): split child safety into three distinct report categories (#364)\n\n* feat(reports): split child safety into three distinct report categories\n\nSplits the single \"Child safety concern\" report reason into:\n- Child Safety Violation (general catch-all)\n- Child Sexual Abuse (actual CSAM)\n- User Appears Under 16 (age concern)\n\nRefs: divinevideo/divine-mobile#3489\n\n* fix: add NIP-56/NIP-32 mapping helpers, normalize label casing\n\nAddress review feedback:\n- Add toNip56ReportType and toNip32ReportLabel mapping helpers aligned\n  with mobile's content_reporting_service.dart mappings.\n- Use helpers in useReportContent instead of leaking raw enum values\n  into protocol tags (fixes NS-sexual-content → NS-sexualContent, etc).\n- Normalize new report labels to sentence case matching existing pattern.\n- Add test coverage for every ContentFilterReason mapping.\n\n* Pin Node 20 for Pages builds\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "2964e016bdb59ea219d59ee909d427f0e767e592",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/2964e016bdb59ea219d59ee909d427f0e767e592"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/0778d709df0346d0c9a1486985fa63a0ab1bbbac",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqA6vPCRC1aQ7uu5UhlAAADEIQACpJKw59d6bgSd3NPBx69dfh\nm4TXehmLwCJCWcmfDU0zIVVmAfrsH1mDIkS53BQRwRSfupZ+0Mm39e7ZuCFN0nA6\nb2MqXlpwtwon8gIVxcIBnPmDckz9n9yA0pLth696Tzfv3jDxI9RfW0OyiXZPGUqG\noxeU4ZxH46vj8OFq080hibHVTZhchHfnQLvM1wBkRt5YiQDgUhiLQ20LeXqfKvkg\n19IZP3sk3uTCR+N2FudVHr4LjrWEAdn2Q83O8LTMDTA3J66ch/hFT2jqj53Q+xUA\nO7M59le1wTiI4wPIl5mykhM74k6RfJ1D03Gd5blUpLWNeoetMAOFpJTUW1FZJieV\nD8cduxzDfTaxIJ/SACJPhvZvxBrMxiMhp9hlkhKx4Po5oCLGnMVaAfBfu84V3H4Y\ncRgS7Sjbkxd1RZgT8iEoGGqMyoGSUumXyRmQrRcAKPFuFvSHy6tVwIerddVrSocK\njpFm8dLyfgyNBgRWZoCP4Vw9U5ND3uBT5GDttLZFJS9zE+YxTzswpWWQRgfU3E6G\nwZbzL1ewLv5XmrEKHBkkTRjJ5ExKgsfw2VkH8rytiAySJM2q8JS2VcFTq+Aeozu7\nS1s35SnG8rruX6rB8e7AnPipEkeJ/Uk55wnsM3yJnBfxlO64CHIiFz4RGDIlzApe\nV36t9D+IfFVYZP8tN9sb\n=iFEh\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2964e016bdb59ea219d59ee909d427f0e767e592\nparent 646284c752a25ea48fd8bb38ab1c6ac8e4670ecd\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778625487 -0400\ncommitter GitHub <noreply@github.com> 1778625487 -0500\n\nfeat(reports): split child safety into three distinct report categories (#364)\n\n* feat(reports): split child safety into three distinct report categories\n\nSplits the single \"Child safety concern\" report reason into:\n- Child Safety Violation (general catch-all)\n- Child Sexual Abuse (actual CSAM)\n- User Appears Under 16 (age concern)\n\nRefs: divinevideo/divine-mobile#3489\n\n* fix: add NIP-56/NIP-32 mapping helpers, normalize label casing\n\nAddress review feedback:\n- Add toNip56ReportType and toNip32ReportLabel mapping helpers aligned\n  with mobile's content_reporting_service.dart mappings.\n- Use helpers in useReportContent instead of leaking raw enum values\n  into protocol tags (fixes NS-sexual-content → NS-sexualContent, etc).\n- Normalize new report labels to sentence case matching existing pattern.\n- Add test coverage for every ContentFilterReason mapping.\n\n* Pin Node 20 for Pages builds\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-12T22:38:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/0778d709df0346d0c9a1486985fa63a0ab1bbbac",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/0778d709df0346d0c9a1486985fa63a0ab1bbbac",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/0778d709df0346d0c9a1486985fa63a0ab1bbbac/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "646284c752a25ea48fd8bb38ab1c6ac8e4670ecd",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/646284c752a25ea48fd8bb38ab1c6ac8e4670ecd",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/646284c752a25ea48fd8bb38ab1c6ac8e4670ecd"
+      }
+    ]
+  },
+  {
+    "sha": "646284c752a25ea48fd8bb38ab1c6ac8e4670ecd",
+    "node_id": "C_kwDOPrslvdoAKDY0NjI4NGM3NTJhMjVlYTQ4ZmQ4YmIzOGFiMWM2YWM4ZTQ2NzBlY2Q",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-12T20:54:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-12T20:54:38Z"
+      },
+      "message": "fix(dm): surface bunker decrypt failures in moderator inbox (#312)\n\n* fix(dm): surface bunker decrypt failures in moderator inbox\n\nunwrapDmGiftWrap collapsed every failure path (signer/RPC error,\nmalformed seal, hash mismatch, recipient mismatch) into a null return;\nfetchDmMessages dropped them without preserving any signal. A moderator\ninbox where the bunker rejected nip44_decrypt rendered as \"No other\nmessages yet\" — identical to a genuinely empty inbox.\n\nReplace null returns with a discriminated DmUnwrapResult, aggregate\noutcomes in FetchDmMessagesResult, plumb through useDmMessages, and\nexpose useDmInboxStatus so MessagesPage can render an explicit\n\"inbox temporarily unavailable\" state when every fetched wrap failed\nto decrypt.\n\nCloses #309\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* refactor(dm): apply PR review feedback\n\n- useDirectMessages.ts: replace ?? cascade in setQueryData updater with\n  explicit ternary. Same behavior, clearer intent.\n- dm.test.ts: extract createDmTestWrap and createMockSigner helpers next\n  to createTestSigner; refactor three failure-path tests.\n- MessagesPage.test.tsx: import DmInboxStatus instead of redeclaring\n  the inline union.\n- dm.ts: add TODO(#321) above attestation/hash mismatch checks for the\n  malformed sub-classification follow-up.\n- useDirectMessages.test.ts: fix test seeds to use FetchDmMessagesResult\n  shape; prior bare-array seeds were masked by the old defensive\n  ?? cascade in updateDmMessageCaches.\n- Add docs/brainstorm/ doc capturing review-response analysis and trace\n  findings (referenced from #322).\n\nRefs #312, #321, #322.\n\n* chore(dm): drop brainstorm doc from PR\n\nPer review feedback on #312: the design-rationale doc is a process\nartifact, not a feature deliverable. AGENTS.md requires PRs to stay\ntightly scoped.\n\nRefs #312.\n\n---------\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "e01edd9e2d3c92e2bb6d154f2fb5a93906744d20",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/e01edd9e2d3c92e2bb6d154f2fb5a93906744d20"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/646284c752a25ea48fd8bb38ab1c6ac8e4670ecd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqA5OOCRC1aQ7uu5UhlAAAsjsQAFL6eYGAZ/g5fFQRYfNY1+k9\nnk/3p27bwkmTyKsRdRV8iuC3bVktchYs7G37rBedqKH0FYiR04rtqH9UTmgTqHMn\nT8qXQOB5bP/KXWK93BqLEUla7Cu0fnSR+1K0v/q94jUU6RvZvKBNu6zhohefWNEX\nNefpnC508b48KmHidLmu+uyFVNgOWAPExKbfXhd6Ni4G9gQ41Rf0IAAFxaJSCJ27\nvAcHMAU0PHEKK55oWG4g6GdokxR9nEuzsQ8zwNXj2mrfeOndJWFCjcYUsnR8qVbM\n6fu548wNJQ4/E/LxOUC7TbquzLJxv5J24jh1hS9LS2vUzV3K3pQFBmSkezvTUdiA\nOMOWjqQ3VOQ5V2sckMmQAqSpA8LC5vRuXQy8YzOnPmeP0ZAgfjoNtBq/yXCD74Js\nj9JdDXkGo/fxevcwH/cY+kAnZt6WwooCvXPCHt+6eaayAHgCsZDht3Dzc3HJngek\nDwKgR2RZrt1JUSSHi1XsLs2ibnzzDQLq0+vG9QsDr1PnJVGLqsNk0OWoH605tqh+\n8VwB1F0UAGrbUT4X1pEAmR4NvjkTB06wr1Dyco93jMDJ3OxVykCVzkaSp/DDSRu+\nCydtdqMsbMILoOQ+JPGCPVskf6RCCewOXZkCCrEmtD+Ph80hdIMAcl7Z4KYM19ui\nXm4S9QKAtXsvaJG3loB6\n=fu/d\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e01edd9e2d3c92e2bb6d154f2fb5a93906744d20\nparent 0575fffb1e23a1e1bbd468031f1f41811a9f7b23\nauthor Meylis <meylis@divine.video> 1778619278 +0500\ncommitter GitHub <noreply@github.com> 1778619278 +0500\n\nfix(dm): surface bunker decrypt failures in moderator inbox (#312)\n\n* fix(dm): surface bunker decrypt failures in moderator inbox\n\nunwrapDmGiftWrap collapsed every failure path (signer/RPC error,\nmalformed seal, hash mismatch, recipient mismatch) into a null return;\nfetchDmMessages dropped them without preserving any signal. A moderator\ninbox where the bunker rejected nip44_decrypt rendered as \"No other\nmessages yet\" — identical to a genuinely empty inbox.\n\nReplace null returns with a discriminated DmUnwrapResult, aggregate\noutcomes in FetchDmMessagesResult, plumb through useDmMessages, and\nexpose useDmInboxStatus so MessagesPage can render an explicit\n\"inbox temporarily unavailable\" state when every fetched wrap failed\nto decrypt.\n\nCloses #309\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* refactor(dm): apply PR review feedback\n\n- useDirectMessages.ts: replace ?? cascade in setQueryData updater with\n  explicit ternary. Same behavior, clearer intent.\n- dm.test.ts: extract createDmTestWrap and createMockSigner helpers next\n  to createTestSigner; refactor three failure-path tests.\n- MessagesPage.test.tsx: import DmInboxStatus instead of redeclaring\n  the inline union.\n- dm.ts: add TODO(#321) above attestation/hash mismatch checks for the\n  malformed sub-classification follow-up.\n- useDirectMessages.test.ts: fix test seeds to use FetchDmMessagesResult\n  shape; prior bare-array seeds were masked by the old defensive\n  ?? cascade in updateDmMessageCaches.\n- Add docs/brainstorm/ doc capturing review-response analysis and trace\n  findings (referenced from #322).\n\nRefs #312, #321, #322.\n\n* chore(dm): drop brainstorm doc from PR\n\nPer review feedback on #312: the design-rationale doc is a process\nartifact, not a feature deliverable. AGENTS.md requires PRs to stay\ntightly scoped.\n\nRefs #312.\n\n---------\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",
+        "verified_at": "2026-05-12T20:54:38Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/646284c752a25ea48fd8bb38ab1c6ac8e4670ecd",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/646284c752a25ea48fd8bb38ab1c6ac8e4670ecd",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/646284c752a25ea48fd8bb38ab1c6ac8e4670ecd/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0575fffb1e23a1e1bbd468031f1f41811a9f7b23",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/0575fffb1e23a1e1bbd468031f1f41811a9f7b23",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/0575fffb1e23a1e1bbd468031f1f41811a9f7b23"
+      }
+    ]
+  }
+]

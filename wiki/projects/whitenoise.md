@@ -38,6 +38,8 @@ Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and i
 
 - 2026-05-14: `data/raw/github/daily/2026-05-14/marmot-protocol/whitenoise/` captured **2 commits** in the 24h window. Themes: Chinese localizations (#647), adoption of whitenoise-rs arch-refactor with per-account sessions replacing the god object (#649). Committers: stupidloud, Danny M.
 
+- 2026-05-15: `data/raw/github/daily/2026-05-15/marmot-protocol/whitenoise/` captured **1 commit** and **12 updated issues** in the 24h window. Themes: QR scanner camera-permission fix on first attempt (#654). Issues: QR scanner refactor (#655), archive option in removed-chat warning (#657), native deep links for users/chats/settings (#661), rich message content with Nostr mentions (#659), flutter_rust_bridge hosted-pub consumption (#656), lifecycle reset after data deletion (#662), group message editing (#400), iOS build-script fix after FRB move (#658). Committer: [[people/pepina-dev]] (1).
+
 ## Related
 - [[projects/whitenoise-rs]] — the shared Rust core used by this Flutter app.
 - [[projects/white-noise]] — the AOS Foundry umbrella page for the product (website, branding, user-facing).

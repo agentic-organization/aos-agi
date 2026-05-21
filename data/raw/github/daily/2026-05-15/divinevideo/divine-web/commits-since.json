@@ -1,0 +1,494 @@
+[
+  {
+    "sha": "8db580a92c4ab37428e2cca5f1b8cd9a0dfe1ee9",
+    "node_id": "C_kwDOPrslvdoAKDhkYjU4MGE5MmM0YWIzNzQyOGUyY2NhNWYxYjhjZDlhMGRmZTFlZTk",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-15T05:27:20Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T05:27:20Z"
+      },
+      "message": "feat(popular): add popular feed page (#371)\n\n* docs: add popular page design\n\n* docs: add popular page implementation plan\n\n* feat(popular): add Funnelcake popular feed plumbing\n\n* feat(popular): add popular page\n\n* fix(popular): include popular in video navigation context\n\n* feat(popular): add mobile popular navigation",
+      "tree": {
+        "sha": "0dbaae32553dff718141e370f7d18ffd9857d784",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/0dbaae32553dff718141e370f7d18ffd9857d784"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/8db580a92c4ab37428e2cca5f1b8cd9a0dfe1ee9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBq64CRC1aQ7uu5UhlAAA0qQQACg93IQ1TiL/BgCoD1L56P8R\n6Pa8krRntIqrTboZdWHRDaUxe54ht3tCKqw5QQZ7s+njgAcwZo08xFWjRuVzZO5S\nw225H0PPSy5MiO7c7ShGH1/EhnKglFCOtPQQERiXYUchLZO3UqN5hWCJz1WjC4ea\nRq0pjH7kwZhLUWbLxCCQRh8ag5D+gAKiAp91r8CUO2brnpXstae4k3oNdTKVCI8F\nV7iWm7v83J1gLkrXU7r57EDTrwcIwyTDV4fVxvOwnkixDC4lwV9+exxWgy/Y7NvG\nyvb2lf5GxM9t+hGYgNGi8DH2k3aG4XGsdCI/xehaPHa7eW1QjGRhbBN5fyPHw+W5\nvoLg7w6hmqaVVwsn0dEMYMWxfcF++JAHYw0AHAVaAK7ncWl216dTFINqokIp8Q3u\n11E4AJ8WQq07kyAqLKV6N0GQpHsvgrETy6js1DOldm+ZA2DxKbSKdeR1MbLDig38\nCusYJQT/iVdHBLNziiaEaod2Hrcdp0XarSeuXKu0Fy1t7GAteRh7IImPu8M/TM0i\n7SfmSS77aNFvM3zKJ84jPdHI9H91ENBwOpE2yNmA9Oi2FAoCsV/IFm/Yp5It60Ff\nkTHoDuvyTzfPHZUXdmP7EzAErVnkk/AUpn85FDfSkAYSp9oaVZA1X2SehCagrlYv\nX8Pe/fj340aXQKLccL7h\n=I7ng\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0dbaae32553dff718141e370f7d18ffd9857d784\nparent 9a728096aa194556a47fdf6013dbaf81c975c57c\nauthor rabble <evan@protest.net> 1778822840 +1200\ncommitter GitHub <noreply@github.com> 1778822840 +1200\n\nfeat(popular): add popular feed page (#371)\n\n* docs: add popular page design\n\n* docs: add popular page implementation plan\n\n* feat(popular): add Funnelcake popular feed plumbing\n\n* feat(popular): add popular page\n\n* fix(popular): include popular in video navigation context\n\n* feat(popular): add mobile popular navigation",
+        "verified_at": "2026-05-15T05:27:21Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/8db580a92c4ab37428e2cca5f1b8cd9a0dfe1ee9",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/8db580a92c4ab37428e2cca5f1b8cd9a0dfe1ee9",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/8db580a92c4ab37428e2cca5f1b8cd9a0dfe1ee9/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9a728096aa194556a47fdf6013dbaf81c975c57c",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/9a728096aa194556a47fdf6013dbaf81c975c57c",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/9a728096aa194556a47fdf6013dbaf81c975c57c"
+      }
+    ]
+  },
+  {
+    "sha": "9a728096aa194556a47fdf6013dbaf81c975c57c",
+    "node_id": "C_kwDOPrslvdoAKDlhNzI4MDk2YWExOTQ1NTZhNDdmZGY2MDEzZGJhZjgxYzk3NWM1N2M",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-15T05:25:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T05:25:43Z"
+      },
+      "message": "feat(search): default to Hot sort and surface sort pills above results (#365)\n\n* feat(search): default to Hot sort and surface sort pills above results\n\nThe existing sort selector was a small dropdown next to the search bar\nthat users were missing. Promote it to a prominent pill row matching\nthe Trending/Discovery feed pattern so picking a sort mode feels like a\nprimary action, not a hidden option.\n\nDefault sort changes from `relevance` to `hot` (recent + high engagement)\nso a fresh /search?q=X lands on lively videos by default. URL\ncanonicalization follows: `?sort=hot` is omitted; any other mode is\nwritten. Anyone who shared a `?sort=top` link still gets Top.\n\nTests cover: default `hot` initialization, URL param honored on load,\nand round-trip URL write/erase when user changes mode.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(search): harden sort pills\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "c669143dbf3160b810e197661cd7f89f6f32d6bc",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/c669143dbf3160b810e197661cd7f89f6f32d6bc"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/9a728096aa194556a47fdf6013dbaf81c975c57c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBq5XCRC1aQ7uu5UhlAAAmMcQAG4YpW9eBWsl5/08pBYXCJ3v\nXjFdBJGIkA3TS0XTozd9Kj1N6qFtSp0lYc4SZVw0+X4FslrfkZ22ruqlQXvA4V/r\nhz2D9QsTIKaN2TXclsLdkwnNeLEUIFekCLVLrREXEesn4HyayeT+ih0CrMSpGdsC\nubHL4YH4K1428WILPdXjyzK/8G4FXJcWv8Wk9oOihJj9JpVEjLxuXWckffY9iLmv\nv1LrQi14yHgYT0plunV42T7KO5hFSeFdBnqoIKv60fyWJTpIoZuvyYJ9PqUs8XDF\nTp6tiv8htrEreaak3wmXQzN0TeMI8eVMxkKDu52IWMKiNzLdL9lPesNfbnPXVLUb\nmW87Es7b4Qa2SQojojIecwVBL8VyMC1tMBPMOa0tRpg96/YvSnDd4iGq+m3QqKht\nyJzB5QvzeZGBBouVqAuUxT4EEqE5zqjG+hSWvV7n4B7G/T2Sk7ln7QoJLqDoz6nc\nYwt/hwJzFaHPAz19LeHkPjqiXGsU3Y6MBuLQLk8WC9KZxjS75/hvsud0AmUVkZvV\nDXqlMlfbLIdZ/w0QBHg0vM6cDevKepYFMHC/oAVHwGcldxuNasppwT+1VZSdn3Q0\nsdHeTgZs/spfL5BwdYquYyNT4/yoMJEvcqobv3Q4UHkYx1pv7LShsRwKuwrT0sJK\nXwApFE+GcaMjdIjeAqXm\n=lVwn\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c669143dbf3160b810e197661cd7f89f6f32d6bc\nparent 4bd253d74d479c620e1d43bb32e84f78b90cb981\nauthor rabble <evan@protest.net> 1778822743 +1200\ncommitter GitHub <noreply@github.com> 1778822743 +1200\n\nfeat(search): default to Hot sort and surface sort pills above results (#365)\n\n* feat(search): default to Hot sort and surface sort pills above results\n\nThe existing sort selector was a small dropdown next to the search bar\nthat users were missing. Promote it to a prominent pill row matching\nthe Trending/Discovery feed pattern so picking a sort mode feels like a\nprimary action, not a hidden option.\n\nDefault sort changes from `relevance` to `hot` (recent + high engagement)\nso a fresh /search?q=X lands on lively videos by default. URL\ncanonicalization follows: `?sort=hot` is omitted; any other mode is\nwritten. Anyone who shared a `?sort=top` link still gets Top.\n\nTests cover: default `hot` initialization, URL param honored on load,\nand round-trip URL write/erase when user changes mode.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(search): harden sort pills\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-15T05:25:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/9a728096aa194556a47fdf6013dbaf81c975c57c",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/9a728096aa194556a47fdf6013dbaf81c975c57c",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/9a728096aa194556a47fdf6013dbaf81c975c57c/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4bd253d74d479c620e1d43bb32e84f78b90cb981",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/4bd253d74d479c620e1d43bb32e84f78b90cb981",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/4bd253d74d479c620e1d43bb32e84f78b90cb981"
+      }
+    ]
+  },
+  {
+    "sha": "4bd253d74d479c620e1d43bb32e84f78b90cb981",
+    "node_id": "C_kwDOPrslvdoAKDRiZDI1M2Q3NGQ0NzljNjIwZTFkNDNiYjMyZTg0Zjc4YjkwY2I5ODE",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-15T05:25:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T05:25:33Z"
+      },
+      "message": "fix(video): link nostr mentions in titles (#367)\n\nRender nostr npub mentions as profile links while preserving video-title navigation for surrounding text.\n\nCo-authored-by: Claude Opus 4.7 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "dab618862d81bb629d8c62f23fba9487e385b204",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/dab618862d81bb629d8c62f23fba9487e385b204"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/4bd253d74d479c620e1d43bb32e84f78b90cb981",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBq5NCRC1aQ7uu5UhlAAAYTwQAD9ToJeVWRTByZJfWSU7/Ejf\njBVahozSB5XILOFxk8U790Lya8JZB+bgO2WvfaYf86YTTWoPZChK7yzwC77FEP1g\nJQpCRQzJaCL6KuuX9PIoUdijBXa0EZ1qpwor+7gzZFjKwlHQJRzobUMGYKxSExIg\noFl4IqcRKRc3Vh2GKGp6fdwImmZhk2QB65X0uGThEoV2P8sC9DeyEx5FMzmI/5Wt\nqj+tlZRUW3ZzhubnamcfUwOPiYJEwiDLMyLhfWoFO6HNt0+sp7WeQLZMqcbwu59T\npeiO5OKN9GHhK38g2ATxVw/FTM8i5nRmaJw+yDthBGomBbJEJhyU7nlAhfau1dTZ\n5sJHUdnHi2ENzW6U7MhynZuzAzfQznYb9xk3tkhvFVjGtQ9pZBG9JzVjHqaBl3Wz\njtSSQ6seKLC3dwsyr0LY1eixjBBUTq1+QnlwA1MbwHiBVGxB9m/L3riJvuML1BAb\nU6hxXUt4B0tPzntm4IoPRvYcaT00SaXvR5mFk//NtVIVlGHNmqAjCNnW2/12aHg4\nCokYt7YYuQrcDNnoDZI3g8rNbSCkx66YAjSdfqxujVIbrV7tx3ZJ06jsgrsSmWC8\nerCJAdJhfTdGhtjlaDdPwcEOoDo2X4NEFAGC5JWh2LE9LA9otRhlxKyY/lNBlWc5\nWEyQz097zaFnzkpIcVjy\n=xN6P\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dab618862d81bb629d8c62f23fba9487e385b204\nparent 83783455e5f99894a2f439af21f8e90572bd0e84\nauthor rabble <evan@protest.net> 1778822733 +1200\ncommitter GitHub <noreply@github.com> 1778822733 +1200\n\nfix(video): link nostr mentions in titles (#367)\n\nRender nostr npub mentions as profile links while preserving video-title navigation for surrounding text.\n\nCo-authored-by: Claude Opus 4.7 <noreply@anthropic.com>",
+        "verified_at": "2026-05-15T05:25:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/4bd253d74d479c620e1d43bb32e84f78b90cb981",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/4bd253d74d479c620e1d43bb32e84f78b90cb981",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/4bd253d74d479c620e1d43bb32e84f78b90cb981/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "83783455e5f99894a2f439af21f8e90572bd0e84",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/83783455e5f99894a2f439af21f8e90572bd0e84",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/83783455e5f99894a2f439af21f8e90572bd0e84"
+      }
+    ]
+  },
+  {
+    "sha": "83783455e5f99894a2f439af21f8e90572bd0e84",
+    "node_id": "C_kwDOPrslvdoAKDgzNzgzNDU1ZTVmOTk4OTRhMmY0MzlhZjIxZjhlOTA1NzJiZDBlODQ",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-15T05:25:25Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T05:25:25Z"
+      },
+      "message": "fix(media): handle age-gated media 401s (#369)",
+      "tree": {
+        "sha": "4a36d4b99017b36a4e434745738467342b4981d4",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/4a36d4b99017b36a4e434745738467342b4981d4"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/83783455e5f99894a2f439af21f8e90572bd0e84",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBq5FCRC1aQ7uu5UhlAAAos0QAChMJmqW+QizLdUv3pfbs0Js\n2h/La6jtQFaMRqa09P17BTtnQoHNwN8RoqhUN5X2gI4Z/vx+10TkkreLs3T9F9Kl\nis2SSWaOM4x4umfKmhfFpH1tR30T3EkPsu0zHGgi2LAhwYmFXjbm60ZvLDIHE8mU\nXwFpwEzCxNV6z0nB9rDF5K+aXij6HGo4G/714yBDnKk0840ZVkR8OZUjiH0y0gtg\nCjt+4HKFKE8h8ZTV1Om2vYhjPmpw/+nWzvmtVrm3eGZo3p3hTQzB9dMVWJXczZ5K\ncWL+K0W1FzrqU+LXfhnMkbpBG3Alcf7lQe9pmAUN2oRIU0E86G0gIpmePS5I197S\nOHy1JyRYz2T6rBaYsoQhZEQl/iay/mUlQNdsewd5DtRJpFP9w2cGw7NjMwG6TLC1\nk0ahWAH9hJDWaOCjeU0P/0p2OoV95oYoeDZSCjnbeRdy0sOndCuVrpPrkMcBxMYO\nBSfY7CqPNDBmsvzibZs1r+fbyq9djcPA2zWZImGr+E7HV+ijuXO6k46xXD6yHDQ7\nMH7CT3nX8CsFSfBTNezGTFAzA8NrCL/n4SpA3tVjfcEFVaFkr9F6uPmUbodk44tt\nSw0XvuauUq47qChH5n9HiME1hVwaM17HxTgLdg1cke6EsuxfFZlNEI4/I4bzlnAH\nvKLyoNI9IHpNdXLy7VF0\n=bxeL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4a36d4b99017b36a4e434745738467342b4981d4\nparent d63752e35b41db1f7c6d468321291a6844839267\nauthor rabble <evan@protest.net> 1778822725 +1200\ncommitter GitHub <noreply@github.com> 1778822725 +1200\n\nfix(media): handle age-gated media 401s (#369)",
+        "verified_at": "2026-05-15T05:25:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/83783455e5f99894a2f439af21f8e90572bd0e84",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/83783455e5f99894a2f439af21f8e90572bd0e84",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/83783455e5f99894a2f439af21f8e90572bd0e84/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d63752e35b41db1f7c6d468321291a6844839267",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/d63752e35b41db1f7c6d468321291a6844839267",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/d63752e35b41db1f7c6d468321291a6844839267"
+      }
+    ]
+  },
+  {
+    "sha": "d63752e35b41db1f7c6d468321291a6844839267",
+    "node_id": "C_kwDOPrslvdoAKGQ2Mzc1MmUzNWI0MWRiMWY3YzZkNDY4MzIxMjkxYTY4NDQ4MzkyNjc",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-15T05:25:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T05:25:17Z"
+      },
+      "message": "fix(analytics): keep route mounted while auth restores (#370)",
+      "tree": {
+        "sha": "8c7a506c1cf2ce858fc9484cf4d1dc40df50f95e",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/8c7a506c1cf2ce858fc9484cf4d1dc40df50f95e"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/d63752e35b41db1f7c6d468321291a6844839267",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBq49CRC1aQ7uu5UhlAAA//oQACtpfnOEr0vWo6u7Jng9Uo24\nxp3G6Q/AopcV6DZsJ9D7CmI42OBwQv0qcl4VFBOurxZGqfqZ9MeagpQwq0N+FU2y\n/nGshMzSO7SbxzwXsxiL4nbWIm1sOxQMOqre/4EbdLif9teCm+M967p01IKLaect\niZU89HtSkDecQea1fxddUniWHzSvbpe+rAMHShmX5becyllJ1I/oNcGVekUL2Ev4\nrzL/9PkieJ5lWYcz9GMh7QI6B78TTPk3AD69HXCfmaxqNJ/zi3CZQypFrSSPCBkp\ngzVtQgTxbmWSANCW1Ns4sCriXCmLrpKr4AxiO399RkBru0N6FTDlZX2fXOTHXrTK\nU0kB8VpSWOleQk5Vw8ofmVIU5PYD0TI4n2PXKH0SNaX2Ks6VQQMWCEV9WlX6956P\nUC0wJ0P3bEWAfvcvWXr2HwuLuahABfDljBQVPMdywBiQ9/RAhkLJCRv+z0sOqYKY\nTI3uVf+in0SdC7SNURUnbnxFEmZGL9O/mM0COqk+AcU5RIb5ykdmi/gpcjGbOvzG\nP5xM3u5xY8EDRj8tp29hdGc9mfzvhkFuMjXkxgspUCi+gY3Z2mwahJbguzj9xeJJ\nskH4CEdzAdLuHgaEWICydJfIn1gsL4D9qPpFmbv2tv+z7918laRmaF8pxTol+iND\n3vXejbra6Epuaq6PmOSY\n=Dskj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8c7a506c1cf2ce858fc9484cf4d1dc40df50f95e\nparent c3994c5141f8c955380074d5542f044dff0cf6c9\nauthor rabble <evan@protest.net> 1778822717 +1200\ncommitter GitHub <noreply@github.com> 1778822717 +1200\n\nfix(analytics): keep route mounted while auth restores (#370)",
+        "verified_at": "2026-05-15T05:25:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/d63752e35b41db1f7c6d468321291a6844839267",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/d63752e35b41db1f7c6d468321291a6844839267",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/d63752e35b41db1f7c6d468321291a6844839267/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c3994c5141f8c955380074d5542f044dff0cf6c9",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/c3994c5141f8c955380074d5542f044dff0cf6c9",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/c3994c5141f8c955380074d5542f044dff0cf6c9"
+      }
+    ]
+  },
+  {
+    "sha": "c3994c5141f8c955380074d5542f044dff0cf6c9",
+    "node_id": "C_kwDOPrslvdoAKGMzOTk0YzUxNDFmOGM5NTUzODAwNzRkNTU0MmYwNDRkZmYwY2Y2Yzk",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-15T04:42:03Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T04:42:03Z"
+      },
+      "message": "feat(about): thank Miss Australiana, ArchiveTeam, and the Internet Archive (#366)\n\nAdds a brief credits paragraph in the \"Preserving Archived Videos\" section\nof the About page, recognizing Miss Australiana for contributing more\nrecovered Vines, ArchiveTeam for the original preservation work, and the\nInternet Archive for hosting.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "516ac99b3fab6eba9e9c75c29e6ef6908caf81e0",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/git/trees/516ac99b3fab6eba9e9c75c29e6ef6908caf81e0"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-web/git/commits/c3994c5141f8c955380074d5542f044dff0cf6c9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBqQbCRC1aQ7uu5UhlAAA968QAGrWZ1ESaSO3ENvju/++m52d\nFrvas5815hcFiN9Jo3WRwKB/BdEY6G5ZO1yJFABOBdHQyeXF0Utq0RUm+cqaftal\n9wABwM+odoGoEztcDSlSnaBUovlcQAQktDBHLjmG8YLpfleiDp+g4R8oycuRz1fv\nJTxc4pqe/93YHTdlozq14rU+n90XomRZgJUXNXh2lyhR4YlZiElk0HPmT/KkZp5x\n7qPyeqPhqh9ipobZAfLfsXuUUIcJv6hfuDhWPSxEo4hEMVHuVbDOMno2dtzzRRqr\nlfT6bMC72DiMReJ6u+y+CGSc5rLoRQMtBLkEvN9sOt8QXk6yK/hcvnLn2iS3rsrz\nqtJgcZUBYHCcjIWkcHjwxiGO/TbiOEoJlFn8ffXr+PjMvXnVgFx3Vz50gBeuTic4\nG4IUuYYkbfJN2k/hSJRLYfVL93xoUPrus5tYAdvKj8Co71BPWubLMZ+aZq3JlfoQ\n5DZGePtw/DtB9F6XlvYXRl679vJhBWCxlTisDRN6sX8l8pD4zxf717TChrjOu1kC\nAzxOBpjk0ffxnLNtqnIDZw03XGA9OVazGdK5i9HAWmENzbWKQXyPEEdtEGg9Kymq\nDqDqC4pKltoAkPos9I01+/kllalCs2XAxwb8Vts4piN6UDf7oNm79BMT4h+Ea1yc\nB/8pK3mEY+QSbJA/6GU1\n=UQqM\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 516ac99b3fab6eba9e9c75c29e6ef6908caf81e0\nparent 19d7dbdd4f82054cf9a4f4747ff3513937677cfe\nauthor rabble <evan@protest.net> 1778820123 +1200\ncommitter GitHub <noreply@github.com> 1778820123 +1200\n\nfeat(about): thank Miss Australiana, ArchiveTeam, and the Internet Archive (#366)\n\nAdds a brief credits paragraph in the \"Preserving Archived Videos\" section\nof the About page, recognizing Miss Australiana for contributing more\nrecovered Vines, ArchiveTeam for the original preservation work, and the\nInternet Archive for hosting.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-15T04:42:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-web/commits/c3994c5141f8c955380074d5542f044dff0cf6c9",
+    "html_url": "https://github.com/divinevideo/divine-web/commit/c3994c5141f8c955380074d5542f044dff0cf6c9",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-web/commits/c3994c5141f8c955380074d5542f044dff0cf6c9/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19d7dbdd4f82054cf9a4f4747ff3513937677cfe",
+        "url": "https://api.github.com/repos/divinevideo/divine-web/commits/19d7dbdd4f82054cf9a4f4747ff3513937677cfe",
+        "html_url": "https://github.com/divinevideo/divine-web/commit/19d7dbdd4f82054cf9a4f4747ff3513937677cfe"
+      }
+    ]
+  }
+]

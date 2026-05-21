@@ -34,6 +34,8 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 
 - 2026-05-12: `data/raw/github/daily/2026-05-12/divinevideo/divine-web/` captured **4 commits** in the 24h window. Themes: open-graph/embed coverage (`/embed/:id`, @username, hashtags, search, discovery, apex), child-safety report categories split into three distinct types, newsletter consent on waitlist signup, DM bunker-decrypt failure surfacing in moderator inbox. Committers: [[people/rabble]], [[people/elphiethewitch]], [[people/dogelover911]], [[people/dcadenas]].
 
+- 2026-05-15: `data/raw/github/daily/2026-05-15/divinevideo/divine-web/` captured **6 commits** and **7 updated issues** in the 24h window. Themes: new Popular feed page (#371), search defaulting to Hot sort with sort pills above results (#365), Nostr mention linkification in video titles (#367), age-gated media 401 handling (#369), analytics route-mounting fix during auth restore (#370), acknowledgments to Miss Australiana / ArchiveTeam / Internet Archive (#366), Firefox video loading reliability fix (#51). Committer: [[people/rabble]] (all 6).
+
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?
 - Runtime deployment: where is this service hosted?

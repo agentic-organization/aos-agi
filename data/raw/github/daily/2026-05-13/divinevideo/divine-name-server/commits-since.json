@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "5b4efb74c751c33123a39821bf8e4f0ff12afe6d",
+    "node_id": "C_kwDOQYdXTdoAKDViNGVmYjc0Yzc1MWMzMzEyM2EzOTgyMWJmOGU0ZjBmZjEyYWZlNmQ",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-12T18:22:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-12T18:22:39Z"
+      },
+      "message": "fix(admin-ui): reduce Fastly KV sync page limit from 500 to 100 (#46)\n\nlimit=500 exceeds Worker timeout due to concurrent Fastly API calls.\nlimit=100 was validated during the full 131K backfill on 2026-05-07.\nUpdates both the callers and the function default.",
+      "tree": {
+        "sha": "da155a6fc5dd106c9b4c2e1bad1dcd734df07b6e",
+        "url": "https://api.github.com/repos/divinevideo/divine-name-server/git/trees/da155a6fc5dd106c9b4c2e1bad1dcd734df07b6e"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-name-server/git/commits/5b4efb74c751c33123a39821bf8e4f0ff12afe6d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqA2/vCRC1aQ7uu5UhlAAAy8sQAC6W/RBfzs1gHBhUaIqrKLxV\nvOM2FlbwVJlFimxWkHaj4drjkn6aoW1Dq4xQL8G2giG76SlgdrIekgKnoAnUNZnI\nET2LCNfmcBTZJKb4o+YJSW2KIUW5+QvFfl3z3Nsdu91PIHgJjRPCP5jViHI0ImuT\nNjGSsle4jXI6wz/Xwt0zMWDE2rrpQIbiOhwIjfiCcsusAU2sQg3g1nP3yFSInDuM\njsFgZBVZv+AQSSZQAGrFbCi4L4zZ3GwykUcmQQZXvD4BBmJ8JE/qpTioW+ZrfGnN\nBJIGoZ+stcOoZ0DKLZCSMQBR38DnMQHnXqhTgAa5FgWYLZGJeCP2TMkcHSydaNzV\nubfukeCviR84B04s/6fzFFooVh2jT8DILnp24Rp0pbKZXDnYngwrQX19WyX4amVJ\nl1nOOYOUVTRSSGo89PpSzx6cNPfvUs7ONQ0Q9YeVuSGN65UOe7+NdrvM45IajGlw\nNmVy9XE+tPbhZNH7V/EP9qowlzn9r1CnGto8mdoMxARlwiwUM8nF77iZ1U8tDgWX\n+OzgwI70Sa3ezaS8F1bbq14vll3b3J0pj5M5suDnTych1t/HxU0RcP12PrGDL4go\n44u5jiWRmcXZxiMzN3FMC6i2g2a+kfu4ItWcVdv1NX4mHN4D7k5QgzmOLW7dURI8\n5vY0mD72re99dxLYvq/e\n=wQLa\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree da155a6fc5dd106c9b4c2e1bad1dcd734df07b6e\nparent d57d0a27128b1a8a9adf465b20d13ef1a6ecb52e\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778610159 -0400\ncommitter GitHub <noreply@github.com> 1778610159 -0400\n\nfix(admin-ui): reduce Fastly KV sync page limit from 500 to 100 (#46)\n\nlimit=500 exceeds Worker timeout due to concurrent Fastly API calls.\nlimit=100 was validated during the full 131K backfill on 2026-05-07.\nUpdates both the callers and the function default.",
+        "verified_at": "2026-05-12T18:22:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-name-server/commits/5b4efb74c751c33123a39821bf8e4f0ff12afe6d",
+    "html_url": "https://github.com/divinevideo/divine-name-server/commit/5b4efb74c751c33123a39821bf8e4f0ff12afe6d",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-name-server/commits/5b4efb74c751c33123a39821bf8e4f0ff12afe6d/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d57d0a27128b1a8a9adf465b20d13ef1a6ecb52e",
+        "url": "https://api.github.com/repos/divinevideo/divine-name-server/commits/d57d0a27128b1a8a9adf465b20d13ef1a6ecb52e",
+        "html_url": "https://github.com/divinevideo/divine-name-server/commit/d57d0a27128b1a8a9adf465b20d13ef1a6ecb52e"
+      }
+    ]
+  }
+]

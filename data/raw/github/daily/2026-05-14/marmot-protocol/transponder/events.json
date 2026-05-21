@@ -1,5 +1,519 @@
 [
   {
+    "id": "9448804635",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 41898282,
+      "login": "github-actions[bot]",
+      "display_login": "github-actions",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41898282?"
+    },
+    "repo": {
+      "id": 1133622341,
+      "name": "marmot-protocol/transponder",
+      "url": "https://api.github.com/repos/marmot-protocol/transponder"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/transponder",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/events",
+        "html_url": "https://github.com/marmot-protocol/transponder/pull/57",
+        "id": 4443918626,
+        "node_id": "PR_kwDOQ5G0Rc7bajk6",
+        "number": 57,
+        "title": "Tune Transponder logging levels and default filters",
+        "user": {
+          "login": "erskingardner",
+          "id": 202880,
+          "node_id": "MDQ6VXNlcjIwMjg4MA==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/erskingardner",
+          "html_url": "https://github.com/erskingardner",
+          "followers_url": "https://api.github.com/users/erskingardner/followers",
+          "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+          "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+          "repos_url": "https://api.github.com/users/erskingardner/repos",
+          "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-05-14T06:59:56Z",
+        "updated_at": "2026-05-14T07:01:30Z",
+        "closed_at": null,
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": true,
+        "pull_request": {
+          "url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/57",
+          "html_url": "https://github.com/marmot-protocol/transponder/pull/57",
+          "diff_url": "https://github.com/marmot-protocol/transponder/pull/57.diff",
+          "patch_url": "https://github.com/marmot-protocol/transponder/pull/57.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\n- Promote startup, relay connection, push service readiness, and high-level Nostr event flow to `info`\n- Keep identifiers and low-level transport details out of normal logs by demoting relay URLs, event IDs, and HTTP/2 frame noise\n- Make simple config levels scope Transponder to the requested level while keeping dependencies at `info` unless `RUST_LOG` overrides it\n- Reduce provider response noise by logging APNs/FCM successes and invalid-token outcomes at a higher level and trimming raw response bodies from routine paths\n\n## Testing\n- Added unit coverage for the default log filter behavior, including `debug`, explicit directives, and `off`\n- Ran the full binary test suite and clippy with warnings denied",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/comments/4448447894",
+        "html_url": "https://github.com/marmot-protocol/transponder/pull/57#issuecomment-4448447894",
+        "issue_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57",
+        "id": 4448447894,
+        "node_id": "IC_kwDOQ5G0Rc8AAAABCSXtlg",
+        "user": {
+          "login": "github-actions[bot]",
+          "id": 41898282,
+          "node_id": "MDM6Qm90NDE4OTgyODI=",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+          "html_url": "https://github.com/apps/github-actions",
+          "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-14T07:01:30Z",
+        "updated_at": "2026-05-14T07:01:30Z",
+        "body": "<!-- transponder-coverage-report -->\n## :white_check_mark: Code Coverage Report\n\n| Metric | Value |\n|--------|-------|\n| Line Coverage | **93.31%** |\n| Lines Covered | 8419 / 9023 |\n| Change from master | **+0.03%** :white_check_mark: |\n\n<details>\n<summary>View detailed coverage</summary>\n\nDownload the `coverage-html` artifact from this workflow run to view the detailed coverage report.\n\nOr run locally:\n```bash\ncargo llvm-cov --html\nopen target/llvm-cov/html/index.html\n```\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/comments/4448447894/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": {
+          "id": 15368,
+          "client_id": "Iv1.05c79e9ad1f6bdfa",
+          "slug": "github-actions",
+          "node_id": "MDM6QXBwMTUzNjg=",
+          "owner": {
+            "login": "github",
+            "id": 9919,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjk5MTk=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/github",
+            "html_url": "https://github.com/github",
+            "followers_url": "https://api.github.com/users/github/followers",
+            "following_url": "https://api.github.com/users/github/following{/other_user}",
+            "gists_url": "https://api.github.com/users/github/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/github/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/github/subscriptions",
+            "organizations_url": "https://api.github.com/users/github/orgs",
+            "repos_url": "https://api.github.com/users/github/repos",
+            "events_url": "https://api.github.com/users/github/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/github/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "name": "GitHub Actions",
+          "description": "Automate your workflow from idea to production",
+          "external_url": "https://help.github.com/en/actions",
+          "html_url": "https://github.com/apps/github-actions",
+          "created_at": "2018-07-30T09:30:17Z",
+          "updated_at": "2026-05-05T14:51:38Z",
+          "permissions": {
+            "actions": "write",
+            "administration": "read",
+            "artifact_metadata": "write",
+            "attestations": "write",
+            "checks": "write",
+            "code_quality": "write",
+            "contents": "write",
+            "copilot_requests": "write",
+            "deployments": "write",
+            "discussions": "write",
+            "issues": "write",
+            "merge_queues": "write",
+            "metadata": "read",
+            "models": "read",
+            "packages": "write",
+            "pages": "write",
+            "pull_requests": "write",
+            "repository_hooks": "write",
+            "repository_projects": "write",
+            "security_events": "write",
+            "statuses": "write",
+            "vulnerability_alerts": "read"
+          },
+          "events": [
+            "branch_protection_rule",
+            "check_run",
+            "check_suite",
+            "create",
+            "delete",
+            "deployment",
+            "deployment_status",
+            "discussion",
+            "discussion_comment",
+            "fork",
+            "gollum",
+            "issues",
+            "issue_comment",
+            "label",
+            "merge_group",
+            "milestone",
+            "page_build",
+            "public",
+            "pull_request",
+            "pull_request_review",
+            "pull_request_review_comment",
+            "push",
+            "registry_package",
+            "release",
+            "repository",
+            "repository_dispatch",
+            "status",
+            "watch",
+            "workflow_dispatch",
+            "workflow_run"
+          ]
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-14T07:01:30Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9448753463",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 136622811,
+      "login": "coderabbitai[bot]",
+      "display_login": "coderabbitai",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
+    },
+    "repo": {
+      "id": 1133622341,
+      "name": "marmot-protocol/transponder",
+      "url": "https://api.github.com/repos/marmot-protocol/transponder"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/transponder",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/events",
+        "html_url": "https://github.com/marmot-protocol/transponder/pull/57",
+        "id": 4443918626,
+        "node_id": "PR_kwDOQ5G0Rc7bajk6",
+        "number": 57,
+        "title": "Tune Transponder logging levels and default filters",
+        "user": {
+          "login": "erskingardner",
+          "id": 202880,
+          "node_id": "MDQ6VXNlcjIwMjg4MA==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/erskingardner",
+          "html_url": "https://github.com/erskingardner",
+          "followers_url": "https://api.github.com/users/erskingardner/followers",
+          "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+          "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+          "repos_url": "https://api.github.com/users/erskingardner/repos",
+          "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-05-14T06:59:56Z",
+        "updated_at": "2026-05-14T07:01:30Z",
+        "closed_at": null,
+        "assignee": null,
+        "type": null,
+        "active_lock_reason": null,
+        "draft": true,
+        "pull_request": {
+          "url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/57",
+          "html_url": "https://github.com/marmot-protocol/transponder/pull/57",
+          "diff_url": "https://github.com/marmot-protocol/transponder/pull/57.diff",
+          "patch_url": "https://github.com/marmot-protocol/transponder/pull/57.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\n- Promote startup, relay connection, push service readiness, and high-level Nostr event flow to `info`\n- Keep identifiers and low-level transport details out of normal logs by demoting relay URLs, event IDs, and HTTP/2 frame noise\n- Make simple config levels scope Transponder to the requested level while keeping dependencies at `info` unless `RUST_LOG` overrides it\n- Reduce provider response noise by logging APNs/FCM successes and invalid-token outcomes at a higher level and trimming raw response bodies from routine paths\n\n## Testing\n- Added unit coverage for the default log filter behavior, including `debug`, explicit directives, and `off`\n- Ran the full binary test suite and clippy with warnings denied",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/comments/4448433400",
+        "html_url": "https://github.com/marmot-protocol/transponder/pull/57#issuecomment-4448433400",
+        "issue_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/57",
+        "id": 4448433400,
+        "node_id": "IC_kwDOQ5G0Rc8AAAABCSW0-A",
+        "user": {
+          "login": "coderabbitai[bot]",
+          "id": 136622811,
+          "node_id": "BOT_kgDOCCSy2w",
+          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-14T07:00:02Z",
+        "updated_at": "2026-05-14T07:00:02Z",
+        "body": "<!-- This is an auto-generated comment: summarize by coderabbit.ai -->\n<!-- This is an auto-generated comment: skip review by coderabbit.ai -->\n\n> [!IMPORTANT]\n> ## Review skipped\n> \n> Draft detected.\n> \n> Please check the settings in the CodeRabbit UI or the `.coderabbit.yaml` file in this repository. To trigger a single review, invoke the `@coderabbitai review` command.\n> \n> <details>\n> <summary>⚙️ Run configuration</summary>\n> \n> **Configuration used**: Organization UI\n> \n> **Review profile**: CHILL\n> \n> **Plan**: Pro\n> \n> **Run ID**: `5b3c39ae-aa41-47d2-9e65-006efd55b7f2`\n> \n> </details>\n> \n> You can disable this status message by setting the `reviews.review_status` to `false` in the CodeRabbit configuration file.\n> \n> Use the checkbox below for a quick retry:\n> - [ ] <!-- {\"checkboxId\": \"e9bb8d72-00e8-4f67-9cb2-caf3b22574fe\"} --> 🔍 Trigger review\n\n<!-- end of auto-generated comment: skip review by coderabbit.ai -->\n\n<!-- finishing_touch_checkbox_start -->\n\n<details>\n<summary>✨ Finishing Touches</summary>\n\n<details>\n<summary>🧪 Generate unit tests (beta)</summary>\n\n- [ ] <!-- {\"checkboxId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Create PR with unit tests\n- [ ] <!-- {\"checkboxId\": \"6ba7b810-9dad-11d1-80b4-00c04fd430c8\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Commit unit tests in branch `codex/analyze-staging-logs`\n\n</details>\n\n</details>\n\n<!-- finishing_touch_checkbox_end -->\n<!-- tips_start -->\n\n---\n\n\n\n\n<sub>Comment `@coderabbitai help` to get the list of available commands and usage tips.</sub>\n\n<!-- tips_end -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/comments/4448433400/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": {
+          "id": 347564,
+          "client_id": "Iv1.6aaafe4fe882736b",
+          "slug": "coderabbitai",
+          "node_id": "A_kwHOB96YWc4ABU2s",
+          "owner": {
+            "login": "coderabbitai",
+            "id": 132028505,
+            "node_id": "O_kgDOB96YWQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/132028505?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/coderabbitai",
+            "html_url": "https://github.com/coderabbitai",
+            "followers_url": "https://api.github.com/users/coderabbitai/followers",
+            "following_url": "https://api.github.com/users/coderabbitai/following{/other_user}",
+            "gists_url": "https://api.github.com/users/coderabbitai/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/coderabbitai/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/coderabbitai/subscriptions",
+            "organizations_url": "https://api.github.com/users/coderabbitai/orgs",
+            "repos_url": "https://api.github.com/users/coderabbitai/repos",
+            "events_url": "https://api.github.com/users/coderabbitai/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/coderabbitai/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "name": "coderabbitai",
+          "description": "# Transforming Code Reviews with AI\r\n\r\n## Features\r\n\r\n**Automated Reviews**: Continuous reviews of the pull requests including incremental commits. \r\n\r\n**Summarization**: Generates high-level summary and a technical walkthrough of the PR changes. \r\n\r\n**Line-by-line review**: Provides line-by-line suggestions committable with one click.\r\n\r\n**Codebase verification**:  Verifies the impact on the overall codebase and identifies missing changes.\r\n\r\n**Insights into your code**:  Ask any questions on your codebase within the pull request \r\n\r\n**Chat about your code** : Chat with the bot around your code. The more you chat, the smarter it gets.\r\n\r\n**Issue Validation**:  Validates the PR against the linked issues and identifies other related issues \r\n\r\n\r\n\r\n",
+          "external_url": "https://coderabbit.ai?utm_source=cr_app&utm_medium=github",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "created_at": "2023-06-14T15:47:27Z",
+          "updated_at": "2026-03-14T07:58:44Z",
+          "permissions": {
+            "actions": "read",
+            "checks": "write",
+            "contents": "write",
+            "discussions": "read",
+            "issues": "write",
+            "members": "read",
+            "metadata": "read",
+            "pull_requests": "write",
+            "statuses": "write"
+          },
+          "events": [
+            "issues",
+            "issue_comment",
+            "label",
+            "organization",
+            "pull_request",
+            "pull_request_review",
+            "pull_request_review_comment",
+            "pull_request_review_thread",
+            "release",
+            "repository"
+          ]
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-14T07:00:02Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9448749647",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 1133622341,
+      "name": "marmot-protocol/transponder",
+      "url": "https://api.github.com/repos/marmot-protocol/transponder"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 57,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/57",
+        "id": 3681171770,
+        "number": 57,
+        "head": {
+          "ref": "codex/analyze-staging-logs",
+          "sha": "afd6ae78f636be5d449788a0fa1c5483800977b8",
+          "repo": {
+            "id": 1133622341,
+            "url": "https://api.github.com/repos/marmot-protocol/transponder",
+            "name": "transponder"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "1cc75330d8a512f6bbce4fbdc10929f9b87fa3c8",
+          "repo": {
+            "id": 1133622341,
+            "url": "https://api.github.com/repos/marmot-protocol/transponder",
+            "name": "transponder"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-14T06:59:56Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11840133790",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 1133622341,
+      "name": "marmot-protocol/transponder",
+      "url": "https://api.github.com/repos/marmot-protocol/transponder"
+    },
+    "payload": {
+      "ref": "codex/analyze-staging-logs",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/analyze-staging-logs",
+      "master_branch": "master",
+      "description": "MIP-05 Marmot notifications server implementation in Rust",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-14T06:55:38Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
     "id": "11750835882",
     "type": "DeleteEvent",
     "actor": {
@@ -9179,475 +9693,6 @@
     },
     "public": true,
     "created_at": "2026-05-07T08:35:01Z",
-    "org": {
-      "id": 200956832,
-      "login": "marmot-protocol",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/marmot-protocol",
-      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
-    }
-  },
-  {
-    "id": "9181909999",
-    "type": "PullRequestReviewCommentEvent",
-    "actor": {
-      "id": 136622811,
-      "login": "coderabbitai[bot]",
-      "display_login": "coderabbitai",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/coderabbitai[bot]",
-      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
-    },
-    "repo": {
-      "id": 1133622341,
-      "name": "marmot-protocol/transponder",
-      "url": "https://api.github.com/repos/marmot-protocol/transponder"
-    },
-    "payload": {
-      "action": "created",
-      "comment": {
-        "url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/comments/3200049625",
-        "pull_request_review_id": 4242396905,
-        "id": 3200049625,
-        "node_id": "PRRC_kwDOQ5G0Rc6-vOHZ",
-        "diff_hunk": "@@ -248,20 +250,23 @@ impl RelayClient {\n \n     /// Publish a kind 10050 event to advertise inbox relays.\n     pub async fn publish_inbox_relays(&self) -> Result<()> {\n-        let relay_urls: Vec<Tag> = self\n-            .config\n-            .clearnet\n-            .iter()\n-            .chain(self.config.onion.iter())\n-            .map(|url| Tag::custom(TagKind::Relay, [url.as_str()]))\n-            .collect();\n+        let relay_urls = self.configured_inbox_relays();\n \n         if relay_urls.is_empty() {\n             warn!(\"No relays configured for kind 10050 publication\");\n             return Ok(());\n         }\n \n-        let builder = EventBuilder::new(Kind::Custom(10050), \"\").tags(relay_urls);\n+        if self.inbox_relay_event_is_current(&relay_urls).await? {\n+            info!(\"Skipping kind 10050 publish; inbox relay list unchanged\");\n+            return Ok(());\n+        }",
-        "path": "src/nostr/client.rs",
-        "commit_id": "55e94751d445f6260a1e93c462adf831b96fa719",
-        "original_commit_id": "55e94751d445f6260a1e93c462adf831b96fa719",
-        "user": {
-          "login": "coderabbitai[bot]",
-          "id": 136622811,
-          "node_id": "BOT_kgDOCCSy2w",
-          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
-          "html_url": "https://github.com/apps/coderabbitai",
-          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
-          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
-          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
-          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
-          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
-          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
-          "type": "Bot",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "body": "_⚠️ Potential issue_ | _🟠 Major_ | _⚡ Quick win_\n\n**Pre-check failures should not abort `publish_inbox_relays`**\n\nLine 260 propagates `inbox_relay_event_is_current` errors with `?`. That makes this path fail hard on transient fetch/no-relay conditions, while publish failures later are still handled as best-effort. This inconsistency can break startup behavior unexpectedly.\n\n \n\n<details>\n<summary>Suggested fix</summary>\n\n```diff\n-        if self.inbox_relay_event_is_current(&relay_urls).await? {\n-            info!(\"Skipping kind 10050 publish; inbox relay list unchanged\");\n-            return Ok(());\n-        }\n+        match self.inbox_relay_event_is_current(&relay_urls).await {\n+            Ok(true) => {\n+                info!(\"Skipping kind 10050 publish; inbox relay list unchanged\");\n+                return Ok(());\n+            }\n+            Ok(false) => {}\n+            Err(e) => {\n+                warn!(\n+                    error = %e,\n+                    \"Failed to verify existing kind 10050 event; proceeding to publish\"\n+                );\n+            }\n+        }\n```\n</details>\n\n\nAlso applies to: 292-307\n\n<details>\n<summary>🤖 Prompt for AI Agents</summary>\n\n```\nVerify each finding against current code. Fix only still-valid issues, skip the\nrest with a brief reason, keep changes minimal, and validate.\n\nIn `@src/nostr/client.rs` around lines 260 - 263, The call to\ninbox_relay_event_is_current in publish_inbox_relays (and the other pre-check at\nthe 292–307 block) should not propagate errors with ?, because transient\nfetch/no-relay errors must not abort the best-effort publish; instead catch the\nResult, log the error (info/warn/debug with context including the relay URLs and\nthat it's a pre-check), and treat an error as \"not current\" so the function\ncontinues to attempt publishing. Update the logic in publish_inbox_relays to\nmatch on the Result returned by inbox_relay_event_is_current (and the analogous\npre-check) and only early-return when the check explicitly returns Ok(true); on\nErr(_) log the error and proceed to publish.\n```\n\n</details>\n\n<!-- fingerprinting:phantom:poseidon:hawk -->\n\n<!-- 4e71b3a2 -->\n\n<!-- This is an auto-generated comment by CodeRabbit -->",
-        "created_at": "2026-05-07T08:38:30Z",
-        "updated_at": "2026-05-07T08:38:31Z",
-        "html_url": "https://github.com/marmot-protocol/transponder/pull/47#discussion_r3200049625",
-        "pull_request_url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/47",
-        "_links": {
-          "self": {
-            "href": "https://api.github.com/repos/marmot-protocol/transponder/pulls/comments/3200049625"
-          },
-          "html": {
-            "href": "https://github.com/marmot-protocol/transponder/pull/47#discussion_r3200049625"
-          },
-          "pull_request": {
-            "href": "https://api.github.com/repos/marmot-protocol/transponder/pulls/47"
-          }
-        },
-        "reactions": {
-          "url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/comments/3200049625/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "original_position": 38,
-        "position": 1,
-        "subject_type": "line"
-      },
-      "pull_request": {
-        "url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/47",
-        "id": 3641800345,
-        "number": 47,
-        "head": {
-          "ref": "codex/skip-unchanged-inbox-relays",
-          "sha": "bfacdc12ccbb7d3540286785d8b4270784097dbf",
-          "repo": {
-            "id": 1133622341,
-            "url": "https://api.github.com/repos/marmot-protocol/transponder",
-            "name": "transponder"
-          }
-        },
-        "base": {
-          "ref": "master",
-          "sha": "149f3c08de4e9666f15d35f97c3ffee24cc6254d",
-          "repo": {
-            "id": 1133622341,
-            "url": "https://api.github.com/repos/marmot-protocol/transponder",
-            "name": "transponder"
-          }
-        }
-      }
-    },
-    "public": true,
-    "created_at": "2026-05-07T08:38:30Z",
-    "org": {
-      "id": 200956832,
-      "login": "marmot-protocol",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/marmot-protocol",
-      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
-    }
-  },
-  {
-    "id": "9181523073",
-    "type": "PullRequestReviewEvent",
-    "actor": {
-      "id": 136622811,
-      "login": "coderabbitai[bot]",
-      "display_login": "coderabbitai",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/coderabbitai[bot]",
-      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
-    },
-    "repo": {
-      "id": 1133622341,
-      "name": "marmot-protocol/transponder",
-      "url": "https://api.github.com/repos/marmot-protocol/transponder"
-    },
-    "payload": {
-      "review": {
-        "id": 4242425777,
-        "node_id": "PRR_kwDOQ5G0Rc783kex",
-        "user": {
-          "login": "coderabbitai[bot]",
-          "id": 136622811,
-          "node_id": "BOT_kgDOCCSy2w",
-          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
-          "html_url": "https://github.com/apps/coderabbitai",
-          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
-          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
-          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
-          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
-          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
-          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
-          "type": "Bot",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "body": "\n\n<details>\n<summary>♻️ Duplicate comments (1)</summary><blockquote>\n\n<details>\n<summary>src/nostr/client.rs (1)</summary><blockquote>\n\n`260-268`: _⚠️ Potential issue_ | _🟠 Major_ | _⚡ Quick win_\n\n**Proceed to publish when the freshness check fails.**\n\nThis branch turns a transient fetch/signer error into a silent no-op, so a missing or stale kind `10050` event may never get repaired. The pre-check should only short-circuit on `Ok(true)`; on `Err(_)`, log and continue with publishing.\n\n  \n\n<details>\n<summary>Suggested fix</summary>\n\n```diff\n-        let event_is_current = match self.inbox_relay_event_is_current(&relay_urls).await {\n-            Ok(current) => current,\n-            Err(e) => {\n-                warn!(\n-                    error = %e,\n-                    \"Skipping kind 10050 publish; could not verify existing inbox relay list\"\n-                );\n-                return Ok(());\n-            }\n-        };\n+        let event_is_current = match self.inbox_relay_event_is_current(&relay_urls).await {\n+            Ok(current) => current,\n+            Err(e) => {\n+                warn!(\n+                    error = %e,\n+                    \"Could not verify existing inbox relay list; proceeding to publish\"\n+                );\n+                false\n+            }\n+        };\n```\n</details>\n\n<details>\n<summary>🤖 Prompt for AI Agents</summary>\n\n```\nVerify each finding against current code. Fix only still-valid issues, skip the\nrest with a brief reason, keep changes minimal, and validate.\n\nIn `@src/nostr/client.rs` around lines 260 - 268, The current branch in the call\nto inbox_relay_event_is_current(&relay_urls).await in the publish path returns\nearly on Err(e), turning transient errors into a permanent no-op; change the\nlogic so only Ok(true) short-circuits (i.e., skip publish) while Err(_) is\nlogged and the code proceeds to attempt publishing the kind 10050 event. Locate\nthe match on inbox_relay_event_is_current in the publish flow (the block that\ncurrently does warn!(error=%e, \"Skipping kind 10050 publish...\") and returns\nOk(())) and remove the early return on Err, keeping the warning but allowing the\npublish to continue; retain the existing behavior for Ok(true).\n```\n\n</details>\n\n</blockquote></details>\n\n</blockquote></details>\n\n<details>\n<summary>🤖 Prompt for all review comments with AI agents</summary>\n\n```\nVerify each finding against current code. Fix only still-valid issues, skip the\nrest with a brief reason, keep changes minimal, and validate.\n\nDuplicate comments:\nIn `@src/nostr/client.rs`:\n- Around line 260-268: The current branch in the call to\ninbox_relay_event_is_current(&relay_urls).await in the publish path returns\nearly on Err(e), turning transient errors into a permanent no-op; change the\nlogic so only Ok(true) short-circuits (i.e., skip publish) while Err(_) is\nlogged and the code proceeds to attempt publishing the kind 10050 event. Locate\nthe match on inbox_relay_event_is_current in the publish flow (the block that\ncurrently does warn!(error=%e, \"Skipping kind 10050 publish...\") and returns\nOk(())) and remove the early return on Err, keeping the warning but allowing the\npublish to continue; retain the existing behavior for Ok(true).\n```\n\n</details>\n\n---\n\n<details>\n<summary>ℹ️ Review info</summary>\n\n<details>\n<summary>⚙️ Run configuration</summary>\n\n**Configuration used**: Organization UI\n\n**Review profile**: CHILL\n\n**Plan**: Pro\n\n**Run ID**: `9788b618-6752-452f-a022-ca045968a776`\n\n</details>\n\n<details>\n<summary>📥 Commits</summary>\n\nReviewing files that changed from the base of the PR and between 55e94751d445f6260a1e93c462adf831b96fa719 and bfacdc12ccbb7d3540286785d8b4270784097dbf.\n\n</details>\n\n<details>\n<summary>📒 Files selected for processing (1)</summary>\n\n* `src/nostr/client.rs`\n\n</details>\n\n</details>\n\n<!-- This is an auto-generated comment by CodeRabbit for review status -->",
-        "commit_id": "bfacdc12ccbb7d3540286785d8b4270784097dbf",
-        "state": "commented",
-        "html_url": "https://github.com/marmot-protocol/transponder/pull/47#pullrequestreview-4242425777",
-        "pull_request_url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/47",
-        "_links": {
-          "html": {
-            "href": "https://github.com/marmot-protocol/transponder/pull/47#pullrequestreview-4242425777"
-          },
-          "pull_request": {
-            "href": "https://api.github.com/repos/marmot-protocol/transponder/pulls/47"
-          }
-        },
-        "submitted_at": "2026-05-07T08:43:12Z",
-        "updated_at": "2026-05-07T08:43:12Z"
-      },
-      "pull_request": {
-        "url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/47",
-        "id": 3641800345,
-        "number": 47,
-        "head": {
-          "ref": "codex/skip-unchanged-inbox-relays",
-          "sha": "bfacdc12ccbb7d3540286785d8b4270784097dbf",
-          "repo": {
-            "id": 1133622341,
-            "url": "https://api.github.com/repos/marmot-protocol/transponder",
-            "name": "transponder"
-          }
-        },
-        "base": {
-          "ref": "master",
-          "sha": "149f3c08de4e9666f15d35f97c3ffee24cc6254d",
-          "repo": {
-            "id": 1133622341,
-            "url": "https://api.github.com/repos/marmot-protocol/transponder",
-            "name": "transponder"
-          }
-        }
-      },
-      "action": "created"
-    },
-    "public": true,
-    "created_at": "2026-05-07T08:43:20Z",
-    "org": {
-      "id": 200956832,
-      "login": "marmot-protocol",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/marmot-protocol",
-      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
-    }
-  },
-  {
-    "id": "11528999305",
-    "type": "PushEvent",
-    "actor": {
-      "id": 202880,
-      "login": "erskingardner",
-      "display_login": "erskingardner",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/erskingardner",
-      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
-    },
-    "repo": {
-      "id": 1133622341,
-      "name": "marmot-protocol/transponder",
-      "url": "https://api.github.com/repos/marmot-protocol/transponder"
-    },
-    "payload": {
-      "repository_id": 1133622341,
-      "push_id": 33820157790,
-      "ref": "refs/heads/codex/pin-github-actions",
-      "head": "9039dfee67bcea6a7554409a60c1f56fb67613d7",
-      "before": "a704fa391cae6d8125da4d3870f7a0a06788927d"
-    },
-    "public": true,
-    "created_at": "2026-05-07T08:43:09Z",
-    "org": {
-      "id": 200956832,
-      "login": "marmot-protocol",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/marmot-protocol",
-      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
-    }
-  },
-  {
-    "id": "9181464771",
-    "type": "IssueCommentEvent",
-    "actor": {
-      "id": 41898282,
-      "login": "github-actions[bot]",
-      "display_login": "github-actions",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/github-actions[bot]",
-      "avatar_url": "https://avatars.githubusercontent.com/u/41898282?"
-    },
-    "repo": {
-      "id": 1133622341,
-      "name": "marmot-protocol/transponder",
-      "url": "https://api.github.com/repos/marmot-protocol/transponder"
-    },
-    "payload": {
-      "action": "created",
-      "issue": {
-        "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/47",
-        "repository_url": "https://api.github.com/repos/marmot-protocol/transponder",
-        "labels_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/47/labels{/name}",
-        "comments_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/47/comments",
-        "events_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/47/events",
-        "html_url": "https://github.com/marmot-protocol/transponder/pull/47",
-        "id": 4397322987,
-        "node_id": "PR_kwDOQ5G0Rc7ZEXaZ",
-        "number": 47,
-        "title": "[codex] Skip unchanged inbox relay republishes",
-        "user": {
-          "login": "erskingardner",
-          "id": 202880,
-          "node_id": "MDQ6VXNlcjIwMjg4MA==",
-          "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/erskingardner",
-          "html_url": "https://github.com/erskingardner",
-          "followers_url": "https://api.github.com/users/erskingardner/followers",
-          "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
-          "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
-          "organizations_url": "https://api.github.com/users/erskingardner/orgs",
-          "repos_url": "https://api.github.com/users/erskingardner/repos",
-          "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/erskingardner/received_events",
-          "type": "User",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignees": [],
-        "milestone": null,
-        "comments": 3,
-        "created_at": "2026-05-07T08:35:52Z",
-        "updated_at": "2026-05-07T09:10:23Z",
-        "closed_at": "2026-05-07T09:10:20Z",
-        "assignee": null,
-        "type": null,
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/marmot-protocol/transponder/pulls/47",
-          "html_url": "https://github.com/marmot-protocol/transponder/pull/47",
-          "diff_url": "https://github.com/marmot-protocol/transponder/pull/47.diff",
-          "patch_url": "https://github.com/marmot-protocol/transponder/pull/47.patch",
-          "merged_at": "2026-05-07T09:10:20Z"
-        },
-        "body": "## Summary\n\n- Skip kind 10050 publication when the existing inbox relay event already matches configured relays.\n- Keep the old event ID and `created_at` intact to avoid leaking restart timing.\n- Preserve non-fatal publish behavior when the existing relay event cannot be checked.\n- Add regression coverage using a mock relay.\n\nCloses marmot-protocol/marmot-security#93\n\n## Root Cause\n\nStartup always signed and published a fresh kind 10050 event, so public relays exposed a near-real-time restart timestamp even when the relay list had not changed.\n\n## Validation\n\n- `just ci`\n- `cargo test --features tor`\n- `cargo llvm-cov --all-features --json --output-path /tmp/transponder-pr47-coverage.json`\n- `cargo fmt --check`\n- `cargo check`\n- `cargo clippy -- -D warnings`\n- `cargo test`\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Inbox-relay publishing now detects when the configured relay set is unchanged and skips republishing, preventing redundant updates.\n\n* **Tests**\n  * Added test coverage to ensure relay publishing is skipped when configuration matches the most recently published relay list, preserving the original publication metadata.\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->\n",
-        "reactions": {
-          "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/47/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "timeline_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/47/timeline",
-        "performed_via_github_app": null,
-        "state_reason": null
-      },
-      "comment": {
-        "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/comments/4395547852",
-        "html_url": "https://github.com/marmot-protocol/transponder/pull/47#issuecomment-4395547852",
-        "issue_url": "https://api.github.com/repos/marmot-protocol/transponder/issues/47",
-        "id": 4395547852,
-        "node_id": "IC_kwDOQ5G0Rc8AAAABBf68zA",
-        "user": {
-          "login": "github-actions[bot]",
-          "id": 41898282,
-          "node_id": "MDM6Qm90NDE4OTgyODI=",
-          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/github-actions%5Bbot%5D",
-          "html_url": "https://github.com/apps/github-actions",
-          "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
-          "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
-          "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
-          "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
-          "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
-          "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
-          "type": "Bot",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "created_at": "2026-05-07T08:41:44Z",
-        "updated_at": "2026-05-07T08:41:44Z",
-        "body": "<!-- transponder-coverage-report -->\n## :white_check_mark: Code Coverage Report\n\n| Metric | Value |\n|--------|-------|\n| Line Coverage | **92.51%** |\n| Lines Covered | 7928 / 8570 |\n| Change from master | **+0.05%** :white_check_mark: |\n\n<details>\n<summary>View detailed coverage</summary>\n\nDownload the `coverage-html` artifact from this workflow run to view the detailed coverage report.\n\nOr run locally:\n```bash\ncargo llvm-cov --html\nopen target/llvm-cov/html/index.html\n```\n\n</details>",
-        "reactions": {
-          "url": "https://api.github.com/repos/marmot-protocol/transponder/issues/comments/4395547852/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": {
-          "id": 15368,
-          "client_id": "Iv1.05c79e9ad1f6bdfa",
-          "slug": "github-actions",
-          "node_id": "MDM6QXBwMTUzNjg=",
-          "owner": {
-            "login": "github",
-            "id": 9919,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjk5MTk=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/github",
-            "html_url": "https://github.com/github",
-            "followers_url": "https://api.github.com/users/github/followers",
-            "following_url": "https://api.github.com/users/github/following{/other_user}",
-            "gists_url": "https://api.github.com/users/github/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/github/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/github/subscriptions",
-            "organizations_url": "https://api.github.com/users/github/orgs",
-            "repos_url": "https://api.github.com/users/github/repos",
-            "events_url": "https://api.github.com/users/github/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/github/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "name": "GitHub Actions",
-          "description": "Automate your workflow from idea to production",
-          "external_url": "https://help.github.com/en/actions",
-          "html_url": "https://github.com/apps/github-actions",
-          "created_at": "2018-07-30T09:30:17Z",
-          "updated_at": "2026-05-05T14:51:38Z",
-          "permissions": {
-            "actions": "write",
-            "administration": "read",
-            "artifact_metadata": "write",
-            "attestations": "write",
-            "checks": "write",
-            "code_quality": "write",
-            "contents": "write",
-            "copilot_requests": "write",
-            "deployments": "write",
-            "discussions": "write",
-            "issues": "write",
-            "merge_queues": "write",
-            "metadata": "read",
-            "models": "read",
-            "packages": "write",
-            "pages": "write",
-            "pull_requests": "write",
-            "repository_hooks": "write",
-            "repository_projects": "write",
-            "security_events": "write",
-            "statuses": "write",
-            "vulnerability_alerts": "read"
-          },
-          "events": [
-            "branch_protection_rule",
-            "check_run",
-            "check_suite",
-            "create",
-            "delete",
-            "deployment",
-            "deployment_status",
-            "discussion",
-            "discussion_comment",
-            "fork",
-            "gollum",
-            "issues",
-            "issue_comment",
-            "label",
-            "merge_group",
-            "milestone",
-            "page_build",
-            "public",
-            "pull_request",
-            "pull_request_review",
-            "pull_request_review_comment",
-            "push",
-            "registry_package",
-            "release",
-            "repository",
-            "repository_dispatch",
-            "status",
-            "watch",
-            "workflow_dispatch",
-            "workflow_run"
-          ]
-        }
-      }
-    },
-    "public": true,
-    "created_at": "2026-05-07T08:41:44Z",
     "org": {
       "id": 200956832,
       "login": "marmot-protocol",

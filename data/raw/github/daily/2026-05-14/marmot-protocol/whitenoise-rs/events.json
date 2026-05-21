@@ -1,5 +1,38 @@
 [
   {
+    "id": "11840466030",
+    "type": "PushEvent",
+    "actor": {
+      "id": 8781742,
+      "login": "mubarakcoded",
+      "display_login": "mubarakcoded",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mubarakcoded",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8781742?"
+    },
+    "repo": {
+      "id": 854778825,
+      "name": "marmot-protocol/whitenoise-rs",
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs"
+    },
+    "payload": {
+      "repository_id": 854778825,
+      "push_id": 34131130620,
+      "ref": "refs/heads/recover-coverage",
+      "head": "5d4f780e2476bf36be9043b93184dfbc14bfd48b",
+      "before": "36f096237c30c5ff0965bbe30916f930f99d6fd7"
+    },
+    "public": true,
+    "created_at": "2026-05-14T07:05:14Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
     "id": "9442733773",
     "type": "IssuesEvent",
     "actor": {
@@ -2187,7 +2220,7 @@
         "milestone": null,
         "comments": 2,
         "created_at": "2026-05-13T12:32:16Z",
-        "updated_at": "2026-05-13T15:56:07Z",
+        "updated_at": "2026-05-14T07:05:20Z",
         "closed_at": null,
         "assignee": null,
         "type": null,
@@ -2245,8 +2278,8 @@
           "site_admin": false
         },
         "created_at": "2026-05-13T12:32:24Z",
-        "updated_at": "2026-05-13T15:46:18Z",
-        "body": "<!-- This is an auto-generated comment: summarize by coderabbit.ai -->\n<!-- This is an auto-generated comment: skip review by coderabbit.ai -->\n\n> [!IMPORTANT]\n> ## Review skipped\n> \n> Draft detected.\n> \n> Please check the settings in the CodeRabbit UI or the `.coderabbit.yaml` file in this repository. To trigger a single review, invoke the `@coderabbitai review` command.\n> \n> <details>\n> <summary>⚙️ Run configuration</summary>\n> \n> **Configuration used**: Organization UI\n> \n> **Review profile**: CHILL\n> \n> **Plan**: Pro\n> \n> **Run ID**: `7c63a4d7-4588-421c-9afa-6ed1a81e8ad1`\n> \n> </details>\n> \n> You can disable this status message by setting the `reviews.review_status` to `false` in the CodeRabbit configuration file.\n> \n> Use the checkbox below for a quick retry:\n> - [ ] <!-- {\"checkboxId\": \"e9bb8d72-00e8-4f67-9cb2-caf3b22574fe\"} --> 🔍 Trigger review\n\n<!-- end of auto-generated comment: skip review by coderabbit.ai -->\n\n<!-- finishing_touch_checkbox_start -->\n\n<details>\n<summary>✨ Finishing Touches</summary>\n\n<details>\n<summary>🧪 Generate unit tests (beta)</summary>\n\n- [ ] <!-- {\"checkboxId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Create PR with unit tests\n- [ ] <!-- {\"checkboxId\": \"6ba7b810-9dad-11d1-80b4-00c04fd430c8\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Commit unit tests in branch `recover-coverage`\n\n</details>\n\n</details>\n\n<!-- finishing_touch_checkbox_end -->\n<!-- announcements_start -->\n\n> [!TIP]\n> <details>\n> <summary>💬 Introducing Slack Agent: The best way for teams to turn conversations into code.</summary>\n> \n> [Slack Agent](https://www.coderabbit.ai/agent) is built on CodeRabbit's deep understanding of your code, so your team can collaborate across the entire SDLC without losing context.\n> \n> - Generate code and open pull requests\n> - Plan features and break down work\n> - Investigate incidents and troubleshoot customer tickets together\n> - Automate recurring tasks and respond to alerts with triggers\n> - Summarize progress and report instantly\n> \n> Built for teams:\n> \n> - **Shared memory** across your entire org—no repeating context\n> - **Per-thread sandboxes** to safely plan and execute work\n> - **Governance built-in**—scoped access, auditability, and budget controls\n> \n> One agent for your entire SDLC. Right inside Slack.\n> \n> 👉 [Get started](https://agent.coderabbit.ai/)\n> \n> </details>\n\n<!-- announcements_end -->\n<!-- tips_start -->\n\n---\n\n\n\n\n<sub>Comment `@coderabbitai help` to get the list of available commands and usage tips.</sub>\n\n<!-- tips_end -->",
+        "updated_at": "2026-05-14T07:05:20Z",
+        "body": "<!-- This is an auto-generated comment: summarize by coderabbit.ai -->\n<!-- This is an auto-generated comment: skip review by coderabbit.ai -->\n\n> [!IMPORTANT]\n> ## Review skipped\n> \n> Draft detected.\n> \n> Please check the settings in the CodeRabbit UI or the `.coderabbit.yaml` file in this repository. To trigger a single review, invoke the `@coderabbitai review` command.\n> \n> <details>\n> <summary>⚙️ Run configuration</summary>\n> \n> **Configuration used**: Organization UI\n> \n> **Review profile**: CHILL\n> \n> **Plan**: Pro\n> \n> **Run ID**: `81158c16-14e6-418e-8a07-a3577045f55b`\n> \n> </details>\n> \n> You can disable this status message by setting the `reviews.review_status` to `false` in the CodeRabbit configuration file.\n> \n> Use the checkbox below for a quick retry:\n> - [ ] <!-- {\"checkboxId\": \"e9bb8d72-00e8-4f67-9cb2-caf3b22574fe\"} --> 🔍 Trigger review\n\n<!-- end of auto-generated comment: skip review by coderabbit.ai -->\n\n<!-- finishing_touch_checkbox_start -->\n\n<details>\n<summary>✨ Finishing Touches</summary>\n\n<details>\n<summary>🧪 Generate unit tests (beta)</summary>\n\n- [ ] <!-- {\"checkboxId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Create PR with unit tests\n- [ ] <!-- {\"checkboxId\": \"6ba7b810-9dad-11d1-80b4-00c04fd430c8\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Commit unit tests in branch `recover-coverage`\n\n</details>\n\n</details>\n\n<!-- finishing_touch_checkbox_end -->\n<!-- announcements_start -->\n\n> [!TIP]\n> <details>\n> <summary>💬 Introducing Slack Agent: The best way for teams to turn conversations into code.</summary>\n> \n> [Slack Agent](https://www.coderabbit.ai/agent) is built on CodeRabbit's deep understanding of your code, so your team can collaborate across the entire SDLC without losing context.\n> \n> - Generate code and open pull requests\n> - Plan features and break down work\n> - Investigate incidents and troubleshoot customer tickets together\n> - Automate recurring tasks and respond to alerts with triggers\n> - Summarize progress and report instantly\n> \n> Built for teams:\n> \n> - **Shared memory** across your entire org—no repeating context\n> - **Per-thread sandboxes** to safely plan and execute work\n> - **Governance built-in**—scoped access, auditability, and budget controls\n> \n> One agent for your entire SDLC. Right inside Slack.\n> \n> 👉 [Get started](https://agent.coderabbit.ai/)\n> \n> </details>\n\n<!-- announcements_end -->\n<!-- tips_start -->\n\n---\n\n\n\n\n<sub>Comment `@coderabbitai help` to get the list of available commands and usage tips.</sub>\n\n<!-- tips_end -->",
         "reactions": {
           "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs/issues/comments/4440996799/reactions",
           "total_count": 0,
@@ -5417,7 +5450,7 @@
         "milestone": null,
         "comments": 2,
         "created_at": "2026-05-13T12:32:16Z",
-        "updated_at": "2026-05-13T15:56:07Z",
+        "updated_at": "2026-05-14T07:05:20Z",
         "closed_at": null,
         "assignee": null,
         "type": null,
@@ -5615,7 +5648,7 @@
         "number": 830,
         "head": {
           "ref": "recover-coverage",
-          "sha": "36f096237c30c5ff0965bbe30916f930f99d6fd7",
+          "sha": "5d4f780e2476bf36be9043b93184dfbc14bfd48b",
           "repo": {
             "id": 854778825,
             "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs",
@@ -9357,38 +9390,6 @@
     },
     "public": true,
     "created_at": "2026-05-13T10:11:26Z",
-    "org": {
-      "id": 200956832,
-      "login": "marmot-protocol",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/marmot-protocol",
-      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
-    }
-  },
-  {
-    "id": "11792600451",
-    "type": "DeleteEvent",
-    "actor": {
-      "id": 202880,
-      "login": "erskingardner",
-      "display_login": "erskingardner",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/erskingardner",
-      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
-    },
-    "repo": {
-      "id": 854778825,
-      "name": "marmot-protocol/whitenoise-rs",
-      "url": "https://api.github.com/repos/marmot-protocol/whitenoise-rs"
-    },
-    "payload": {
-      "ref": "codex/fix-deletion-author-check",
-      "ref_type": "branch",
-      "full_ref": "refs/heads/codex/fix-deletion-author-check",
-      "pusher_type": "user"
-    },
-    "public": true,
-    "created_at": "2026-05-13T09:13:27Z",
     "org": {
       "id": 200956832,
       "login": "marmot-protocol",
