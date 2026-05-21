@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "8932f48e2b11ce4b681556f976a7bd77a81626f1",
+    "node_id": "C_kwDOQjhVC9oAKDg5MzJmNDhlMmIxMWNlNGI2ODE1NTZmOTc2YTdiZDc3YTgxNjI2ZjE",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-13T23:27:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-13T23:27:17Z"
+      },
+      "message": "feat(auto-hide): configurable tiers, settings UI, media proxy fixes (#56)\n\n* fix: add BLOSSOM_WEBHOOK_SECRET secrets store binding to worker configs\n\nMedia proxy was returning 500 because the binding was missing — the\nhandler code existed but the secret was never wired in the wrangler\nconfigs. Already hotfixed to staging and prod.\n\n* feat(auto-hide): add config types, DO storage seeding, GET /config endpoint\n\n* feat(auto-hide): add PUT /config endpoint with validation, fix proxy body forwarding\n\n* feat(auto-hide): tier-aware processAutoHide with threshold counting in D1\n\n* feat(auto-hide): add AutoHideSettings UI component in Settings tab\n\n* fix(auto-hide): remove credentials:include from config fetch calls\n\nAuth is header-based (CF Access service tokens), not cookie-based.\ncredentials:include causes CORS failures when the worker doesn't set\nAccess-Control-Allow-Credentials: true.\n\n* fix: prevent stale onError from marking proxied media as failed\n\nVideo elements fire onError from the previous src after React updates\nthe src to a blob URL. Two fixes:\n- key={displayUrl} forces remount so stale error events don't fire\n- Guard else branch: don't mark URLs as failed if proxy already succeeded\n\n* fix: recognize QUARANTINE as blocked state, recover from bad proxy blobs\n\nuseMediaStatus treated only PERMANENT_BAN as blocked, so QUARANTINE items\n(404 on CDN, restricted on Blossom) showed wrong action buttons.\n\nMediaPreview had a dead-end in handleError: if proxy returned HTTP 200\nwith non-video content, the blob URL was set but unplayable, and the\nsecond onError did nothing because proxyUrls.has(url) was already true.\nNow clears the bad blob and falls through to the broken-media icon.\n\n* fix: add CF Access headers to AutoHideSettings, scope threshold count by category\n\nAutoHideSettings fetch calls were bare — no getApiHeaders() — so CF Access\nblocks them before the worker sees the request. Would 401 in staging/prod.\n\ncountUniqueReporters was not category-scoped, so reports from different\ncategories (e.g. NS-sexualContent + NS-violence) counted toward each\nother's thresholds. Now filters by reason prefix to isolate per-category.\n\n* fix: review follow-ups — blob cleanup, category match, pending review filters\n\nInlineMediaPreview was missing blob URL cleanup on unmount (memory leak).\n\ncountUniqueReporters LIKE pattern tightened to exact match + colon prefix\nto prevent cross-category collisions if category names share a prefix.\n\nReports: exclude auto-hide actions from resolved targets so auto-hidden\nitems appear in the pending review queue. Clear category filter when\ntoggling pending review on.\n\n* fix: remove misleading INSERT OR IGNORE on auto_hidden decisions\n\nNo UNIQUE constraint exists on moderation_decisions, so INSERT OR IGNORE\nbehaved identically to INSERT INTO. isAlreadyAutoHidden() is the real\ndeduplication gate.\n\n* fix(types): add QUARANTINE to ModerationAction union\n\nmoderation-service D1 stores QUARANTINE as an action value and returns\nit from /check-result/{sha256}. The type was missing it, causing TS2367\nin useMediaStatus where we check for quarantined media.\n\n* fix: address code review — blob cleanup, shared constants, tier model\n\n- MediaPreview: use ref for blob URL cleanup so revocation only runs on\n  unmount, not on every proxyUrls map change (use-after-revoke bug)\n- Reports: import AUTO_HIDE_ACTIONS from shared constants instead of\n  inline array. Worker has matching constant with cross-reference comment.\n- AutoHideSettings + ReportWatcher: use threshold === 1 as the canonical\n  discriminant for immediate behavior instead of name-matching \"Immediate\"\n- Peel QUARANTINE type + useMediaStatus change into separate PR\n- Peel BLOSSOM_WEBHOOK_SECRET binding into separate PR\n\n* fix(lint): remove unused AUTO_HIDE_ACTIONS constant in ReportWatcher\n\nAction strings are used as literals in SQL/decision logic. Keep the\ncross-reference comment so both sides stay in sync.\n\n* fix(auto-hide): unify tier contract and shared actions\n\n* fix(auto-hide): migrate legacy stored configs\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "63c5762715b7da0bba2f513fae49c3f8f7f67558",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/63c5762715b7da0bba2f513fae49c3f8f7f67558"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/8932f48e2b11ce4b681556f976a7bd77a81626f1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBQjVCRC1aQ7uu5UhlAAAn/AQADRzNoStDcKFhMWrjRhe+Nnj\nrgGvBzIHywPC0MKocMcNDjdi+kk/wgYxae7cFV5u8geMAtLB8iGqywecfNemfYtH\najE1ebcv0LAhq4BFCoN6AgjMtZQGBoV/IHkKQP8Mr06Y63Q+NwsLpmVWi3ZfqbeF\nSylB3F4PpxpBfKQBARNX7gRxDyzaOxO1s6zfHqHSQKLFKcCIZ0croteBKl6DT1WW\nCy//reARnDrmyS7FqH1miix7pVqXGwLgVesA5e/anZGfB0CrQayy6SgYKxe/KDdL\n15+v9O0kltIRBacVfZq2voKszGLyGC5kaJNsJZjahvA7ninjKquI9WY8yOYJGcFp\ngDg4sLVXCnklWauDUf13ZJAqUCJVKVnNqrumwflfmcEMvBuZ7hR3rcRvgCI/WCQ+\nb5xVIypzhWguGqSF6sms5upUC6TqBOT8lupR8mcZB/w/KzeKHkAbupVYDuvEzLLI\nJoVyUDLzOfdcxGx6w8vm0cCzfHlEt+wQ+U995kVk13nm3LTbZSILHJyWIfPOnNbX\nx5oGDeQv1jUS6cIJwTlDRKGSwsVVYjsuSsl6XwB3ilKppo+ZZ1tOYdecjOp6xZxr\nN5MWkJUzZA4YsSFl0BDIMVICj3IZLHhpWHWAqbeHYHN/tA34YQ9RGjI4jVqBORIN\naeQ2Q/nX9nq/mFHdwZ/k\n=ExOP\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 63c5762715b7da0bba2f513fae49c3f8f7f67558\nparent e348052e7b57abf8829f5979c5cf55d231bc4ea8\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778714837 -0400\ncommitter GitHub <noreply@github.com> 1778714837 -0400\n\nfeat(auto-hide): configurable tiers, settings UI, media proxy fixes (#56)\n\n* fix: add BLOSSOM_WEBHOOK_SECRET secrets store binding to worker configs\n\nMedia proxy was returning 500 because the binding was missing — the\nhandler code existed but the secret was never wired in the wrangler\nconfigs. Already hotfixed to staging and prod.\n\n* feat(auto-hide): add config types, DO storage seeding, GET /config endpoint\n\n* feat(auto-hide): add PUT /config endpoint with validation, fix proxy body forwarding\n\n* feat(auto-hide): tier-aware processAutoHide with threshold counting in D1\n\n* feat(auto-hide): add AutoHideSettings UI component in Settings tab\n\n* fix(auto-hide): remove credentials:include from config fetch calls\n\nAuth is header-based (CF Access service tokens), not cookie-based.\ncredentials:include causes CORS failures when the worker doesn't set\nAccess-Control-Allow-Credentials: true.\n\n* fix: prevent stale onError from marking proxied media as failed\n\nVideo elements fire onError from the previous src after React updates\nthe src to a blob URL. Two fixes:\n- key={displayUrl} forces remount so stale error events don't fire\n- Guard else branch: don't mark URLs as failed if proxy already succeeded\n\n* fix: recognize QUARANTINE as blocked state, recover from bad proxy blobs\n\nuseMediaStatus treated only PERMANENT_BAN as blocked, so QUARANTINE items\n(404 on CDN, restricted on Blossom) showed wrong action buttons.\n\nMediaPreview had a dead-end in handleError: if proxy returned HTTP 200\nwith non-video content, the blob URL was set but unplayable, and the\nsecond onError did nothing because proxyUrls.has(url) was already true.\nNow clears the bad blob and falls through to the broken-media icon.\n\n* fix: add CF Access headers to AutoHideSettings, scope threshold count by category\n\nAutoHideSettings fetch calls were bare — no getApiHeaders() — so CF Access\nblocks them before the worker sees the request. Would 401 in staging/prod.\n\ncountUniqueReporters was not category-scoped, so reports from different\ncategories (e.g. NS-sexualContent + NS-violence) counted toward each\nother's thresholds. Now filters by reason prefix to isolate per-category.\n\n* fix: review follow-ups — blob cleanup, category match, pending review filters\n\nInlineMediaPreview was missing blob URL cleanup on unmount (memory leak).\n\ncountUniqueReporters LIKE pattern tightened to exact match + colon prefix\nto prevent cross-category collisions if category names share a prefix.\n\nReports: exclude auto-hide actions from resolved targets so auto-hidden\nitems appear in the pending review queue. Clear category filter when\ntoggling pending review on.\n\n* fix: remove misleading INSERT OR IGNORE on auto_hidden decisions\n\nNo UNIQUE constraint exists on moderation_decisions, so INSERT OR IGNORE\nbehaved identically to INSERT INTO. isAlreadyAutoHidden() is the real\ndeduplication gate.\n\n* fix(types): add QUARANTINE to ModerationAction union\n\nmoderation-service D1 stores QUARANTINE as an action value and returns\nit from /check-result/{sha256}. The type was missing it, causing TS2367\nin useMediaStatus where we check for quarantined media.\n\n* fix: address code review — blob cleanup, shared constants, tier model\n\n- MediaPreview: use ref for blob URL cleanup so revocation only runs on\n  unmount, not on every proxyUrls map change (use-after-revoke bug)\n- Reports: import AUTO_HIDE_ACTIONS from shared constants instead of\n  inline array. Worker has matching constant with cross-reference comment.\n- AutoHideSettings + ReportWatcher: use threshold === 1 as the canonical\n  discriminant for immediate behavior instead of name-matching \"Immediate\"\n- Peel QUARANTINE type + useMediaStatus change into separate PR\n- Peel BLOSSOM_WEBHOOK_SECRET binding into separate PR\n\n* fix(lint): remove unused AUTO_HIDE_ACTIONS constant in ReportWatcher\n\nAction strings are used as literals in SQL/decision logic. Keep the\ncross-reference comment so both sides stay in sync.\n\n* fix(auto-hide): unify tier contract and shared actions\n\n* fix(auto-hide): migrate legacy stored configs\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-13T23:27:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/8932f48e2b11ce4b681556f976a7bd77a81626f1",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/8932f48e2b11ce4b681556f976a7bd77a81626f1",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/8932f48e2b11ce4b681556f976a7bd77a81626f1/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e348052e7b57abf8829f5979c5cf55d231bc4ea8",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/e348052e7b57abf8829f5979c5cf55d231bc4ea8",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/e348052e7b57abf8829f5979c5cf55d231bc4ea8"
+      }
+    ]
+  },
+  {
+    "sha": "e348052e7b57abf8829f5979c5cf55d231bc4ea8",
+    "node_id": "C_kwDOQjhVC9oAKGUzNDgwNTJlN2I1N2FiZjg4MjlmNTk3OWM1Y2Y1NWQyMzFiYzRlYTg",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-13T11:49:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-13T11:49:52Z"
+      },
+      "message": "fix: add BLOSSOM_WEBHOOK_SECRET secrets store binding to worker configs (#63)\n\n* fix: add BLOSSOM_WEBHOOK_SECRET secrets store binding to worker configs\n\nMedia proxy was returning 500 because the binding was missing — the\nhandler code existed but the secret was never wired in the wrangler\nconfigs. Already hotfixed to staging and prod.\n\n* docs: align Blossom proxy docs and local setup\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "6055c3c47cd68f1c58ea3038e5f39102ebdd1fde",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/6055c3c47cd68f1c58ea3038e5f39102ebdd1fde"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/e348052e7b57abf8829f5979c5cf55d231bc4ea8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBGVgCRC1aQ7uu5UhlAAARjEQAEsopI8UtnLzykmYr9uszXai\nDraQL+CqC0ugmAYi9k/bfKMBxKLfBHzkjrUJAnL4nkER79h3/Pc2tHzt9A+yW5NC\nAqLEwSM0JVPD8B4OBhcn+Y8rFBGQjiTbzaInCK+SFxaCxEYYp+FGW/YnhRF4RfFT\nNJ4bhrtWEBsR84pYfg0is5rQvuLVu5gQ+jJT1hELqFCtWBEXhVqFxhkUbHczUau8\nGnYKAHPEdrDgOWUx8+PDWsR0gUeuoTApQliThyepA6P3kl1fgGrbPqW5WUZ2o+oY\nnGHIBqzhpwK0JtqoKzadGfzbZgcYCoHcHEFbqlaBp5LBEbcm96WHxSlI7oSeqjof\nJhXDNrOtpge2QrbAoXkLL1CstjsdWXznbHvPK0uak2rFNlCne8zqlBsb9Lj7hdhv\nRRpxWdpchK+deiT+VyjCNK//kAFoWFU+ZVA2Ukx2AZiPrjzr9KKGgqFTy3tS43oh\nmImGfpqxoHeYyRhfxYDdS6Xk/gDDeB9dpFovseAKmFv4zY13MU7QFUgn482J5yY6\ny7XloZPHY+BFOqnnrqCpP0CylauHTKXzggdxgUNpRr74IjvE2znRA/D8BdZrw+GN\nrtSHKJkf7U3tWWajhfRhrbM5HDHRnud6ugkKQu4H/zgzw2i5Gxy495Iw4D8kF+iN\n1s4sTNG6JD6QAUNra8Ht\n=msFk\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6055c3c47cd68f1c58ea3038e5f39102ebdd1fde\nparent e2048e2c1e039c3b8a7d8fbcec808293acb77185\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778672992 -0400\ncommitter GitHub <noreply@github.com> 1778672992 -0400\n\nfix: add BLOSSOM_WEBHOOK_SECRET secrets store binding to worker configs (#63)\n\n* fix: add BLOSSOM_WEBHOOK_SECRET secrets store binding to worker configs\n\nMedia proxy was returning 500 because the binding was missing — the\nhandler code existed but the secret was never wired in the wrangler\nconfigs. Already hotfixed to staging and prod.\n\n* docs: align Blossom proxy docs and local setup\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-13T11:49:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/e348052e7b57abf8829f5979c5cf55d231bc4ea8",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/e348052e7b57abf8829f5979c5cf55d231bc4ea8",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/e348052e7b57abf8829f5979c5cf55d231bc4ea8/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e2048e2c1e039c3b8a7d8fbcec808293acb77185",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/e2048e2c1e039c3b8a7d8fbcec808293acb77185",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/e2048e2c1e039c3b8a7d8fbcec808293acb77185"
+      }
+    ]
+  },
+  {
+    "sha": "e2048e2c1e039c3b8a7d8fbcec808293acb77185",
+    "node_id": "C_kwDOQjhVC9oAKGUyMDQ4ZTJjMWUwMzljM2I4YTdkOGZiY2VjODA4MjkzYWNiNzcxODU",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-13T11:26:13Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-13T11:26:13Z"
+      },
+      "message": "fix: recognize QUARANTINE as blocked state in media status (#62)\n\n* fix: recognize QUARANTINE as blocked state in media status\n\nmoderation-service D1 stores QUARANTINE as an action value and returns\nit from /check-result/{sha256}. The type was missing it, causing TS2367\nin useMediaStatus where we check for quarantined media. QUARANTINE items\n(404 on CDN, restricted on Blossom) now show correct action buttons.\n\n* fix: split media status action from moderation request action\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "41bb2731d705ba1b03f7a4efe9969fd5e6df6963",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/41bb2731d705ba1b03f7a4efe9969fd5e6df6963"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/e2048e2c1e039c3b8a7d8fbcec808293acb77185",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBF/VCRC1aQ7uu5UhlAAAuP8QADlZZt3ZwWnTaGg5Hn8rYhT9\nK7s6/5dlfUVeNXP4o4WQ3N+NxQa7ACE0iORNjq17e3A/IesRfaLs1dCj7rXGnjHl\nG8TSgdH6ld0RDtFlKmTg7jwF0CILFmNtysoJxPGoY6yn2HDj6/6iNJQKCE2+2yq+\nF4QQ5RiLCpNz/CR0m3baGoMnhramspgpGJMKQBaitBbkQjn0yjpxTc3QHYl84xmk\nIzgLSzJMdiVGcQ1OWIcGYQGyOclCn45Wdi7+vQtHr/PcBTc1nXHrS1c7t6m8Iavi\nOK5jVZSgb2n6cltffceOXjrbStRQZsz3BsQwoq+7YY8NTtibmbBvgTkONnZ5pwUS\n8v5TSTe5DgoPFi6PC5Srw421KpI/nxyrBxEe5MwwzA2YQTSf5ip+0P1DFyNieBnY\nUZmGu+hYR8z831oMtTgxfk7/QTGZKJ9LWYiVC1PVGwpwT7a87XpPyoZphpqld9T3\naun9O84GODxuztGgEVOLY6d2PdYyW/vqthumdbG32L3UyTkriGkhYFt8SLEUF7Ma\njCkp2vcbETphczdsgRaIhpb/zNcDGoswyWv/T85UzRoi9V8oeywaYFvpyeMKQYdp\n5prC5UySuX9bmFLx9HFWHiqDEfq5NHUAbG/F7LhX57CoConAt9msqmkdvATsfgXj\nbek7QVyzXFkoHXPry6kS\n=sU5L\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 41bb2731d705ba1b03f7a4efe9969fd5e6df6963\nparent d820022d19ab89b0c020c2a4f5b1862c44c2b695\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1778671573 -0400\ncommitter GitHub <noreply@github.com> 1778671573 -0400\n\nfix: recognize QUARANTINE as blocked state in media status (#62)\n\n* fix: recognize QUARANTINE as blocked state in media status\n\nmoderation-service D1 stores QUARANTINE as an action value and returns\nit from /check-result/{sha256}. The type was missing it, causing TS2367\nin useMediaStatus where we check for quarantined media. QUARANTINE items\n(404 on CDN, restricted on Blossom) now show correct action buttons.\n\n* fix: split media status action from moderation request action\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-13T11:26:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/e2048e2c1e039c3b8a7d8fbcec808293acb77185",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/e2048e2c1e039c3b8a7d8fbcec808293acb77185",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/e2048e2c1e039c3b8a7d8fbcec808293acb77185/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d820022d19ab89b0c020c2a4f5b1862c44c2b695",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/d820022d19ab89b0c020c2a4f5b1862c44c2b695",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/d820022d19ab89b0c020c2a4f5b1862c44c2b695"
+      }
+    ]
+  }
+]

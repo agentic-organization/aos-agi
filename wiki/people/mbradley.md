@@ -43,6 +43,8 @@ Observed activity across 8 repos in the [divinevideo](https://github.com/divinev
 ## History
 - 2026-05-07: Page created from divinevideo GitHub discovery run (snapshot: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`).
 
+- 2026-05-14: Daily ingestion (`data/raw/github/daily/2026-05-14/divinevideo/divine-relay-manager/`) captured **3 commits** by [[people/mbradley]] in the 24h window. Themes: auto-hide configurable tiers with settings UI and media proxy fixes (#56), BLOSSOM_WEBHOOK_SECRET secrets store binding fix (#63), QUARANTINE state recognition in media status (#62) in [[projects/divine-relay-manager]].
+
 ## Open questions
 - Full name, location, timezone?
 - Formal AOS affiliation (funded, contracted, independent)?
