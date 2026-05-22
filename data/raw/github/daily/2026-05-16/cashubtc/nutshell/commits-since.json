@@ -1,0 +1,432 @@
+[
+  {
+    "sha": "ce07276dea22693506fff74f2fa487c26f6b62a3",
+    "node_id": "C_kwDOH-XoldoAKGNlMDcyNzZkZWEyMjY5MzUwNmZmZjc0ZjJmYTQ4N2MyNmY2YjYyYTM",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-15T15:33:25Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T15:33:25Z"
+      },
+      "message": "Merge pull request #1007 from KvngMikey/melt_quote_cls_fix\n\nfix(core): use cls instead of self in PostMeltResponse.from_melt_quote",
+      "tree": {
+        "sha": "145bd771655728d90f31220ebbf474ca8df82b47",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/145bd771655728d90f31220ebbf474ca8df82b47"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/ce07276dea22693506fff74f2fa487c26f6b62a3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBzzFCRC1aQ7uu5UhlAAAr+QQAHWFTumUM/16f+7DwWVgLrl7\nhjsaErbOhUde3SzjGJoV4/UArpDpOkfwqb/YZ8lTFDRnZ+1qp23RT95jdMGgt1sT\nmg8b1JDI8AIuzCIF4Zo88oUJDeykM+9EIZCpmexVWRZyuUJx7Ql946Ls9INoG5t3\nh4vWZeaVWOQaiFWYDLH7p667nwQv+OYZlEiqA12i/6sOEjQVvGnmVeeZot6p6DEZ\nx1sxvVO7o+wmZ5LA6WsNx5zkXbSQal+CuV9xx5b8tObbMHEnTxRotoO0juPsNZtb\nPHfFc+snQcuic6NOjdJQ1oft86BWu4ZZ6XVsw9lrFFOMnZxQNGU2zQ5CCpvjC8+N\nDdKBqr2YhjwypPx55dTJt+/9a2DuhiBEThGJxdQDArnP4wNNWbXN2ASPoSQpcTsa\nxUAbK3jvPYf+Wwk8ni05LPYCwyK0SZ3wS45LVnRP38G6w8IrWmlcdwMuRfTqXF7q\nDPo8whgLiJzuCEA+/5vvkaOc0tKCT57DiYfmk4TkQR3e+o3vdJY/H48ku0kIM9AS\nlZE9xRcpOLXZT5xh8jmC2T87SghoE37KB46djusWMmAr/RYcERudm6qLaCLRVtIc\n0XJpRO7igj4SqyT/3sc0tDDKXWbfuVjruQEVwQLEBUwice70ArFUKYuUh/v1chQx\nbbpIiNmxji/ju5JNs2+2\n=uz1h\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 145bd771655728d90f31220ebbf474ca8df82b47\nparent 2cf359862175e9272e60bb5b75658eb67fe542e8\nparent 3908d3318f2e61013393b2689da26037965becac\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1778859205 +0200\ncommitter GitHub <noreply@github.com> 1778859205 +0200\n\nMerge pull request #1007 from KvngMikey/melt_quote_cls_fix\n\nfix(core): use cls instead of self in PostMeltResponse.from_melt_quote",
+        "verified_at": "2026-05-15T15:33:25Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/ce07276dea22693506fff74f2fa487c26f6b62a3",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/ce07276dea22693506fff74f2fa487c26f6b62a3",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/ce07276dea22693506fff74f2fa487c26f6b62a3/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2cf359862175e9272e60bb5b75658eb67fe542e8",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/2cf359862175e9272e60bb5b75658eb67fe542e8",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/2cf359862175e9272e60bb5b75658eb67fe542e8"
+      },
+      {
+        "sha": "3908d3318f2e61013393b2689da26037965becac",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/3908d3318f2e61013393b2689da26037965becac",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/3908d3318f2e61013393b2689da26037965becac"
+      }
+    ]
+  },
+  {
+    "sha": "3908d3318f2e61013393b2689da26037965becac",
+    "node_id": "C_kwDOH-XoldoAKDM5MDhkMzMxOGYyZTYxMDEzMzkzYjI2ODlkYTI2MDM3OTY1YmVjYWM",
+    "commit": {
+      "author": {
+        "name": "kvngmikey",
+        "email": "contact.mikeariwaodo@gmail.com",
+        "date": "2026-05-15T11:36:30Z"
+      },
+      "committer": {
+        "name": "kvngmikey",
+        "email": "contact.mikeariwaodo@gmail.com",
+        "date": "2026-05-15T11:36:30Z"
+      },
+      "message": "fix(core): use cls instead of self in PostMeltResponse.from_melt_quote",
+      "tree": {
+        "sha": "145bd771655728d90f31220ebbf474ca8df82b47",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/145bd771655728d90f31220ebbf474ca8df82b47"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/3908d3318f2e61013393b2689da26037965becac",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/3908d3318f2e61013393b2689da26037965becac",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/3908d3318f2e61013393b2689da26037965becac",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/3908d3318f2e61013393b2689da26037965becac/comments",
+    "author": {
+      "login": "KvngMikey",
+      "id": 74271024,
+      "node_id": "MDQ6VXNlcjc0MjcxMDI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74271024?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/KvngMikey",
+      "html_url": "https://github.com/KvngMikey",
+      "followers_url": "https://api.github.com/users/KvngMikey/followers",
+      "following_url": "https://api.github.com/users/KvngMikey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/KvngMikey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/KvngMikey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/KvngMikey/subscriptions",
+      "organizations_url": "https://api.github.com/users/KvngMikey/orgs",
+      "repos_url": "https://api.github.com/users/KvngMikey/repos",
+      "events_url": "https://api.github.com/users/KvngMikey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/KvngMikey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "KvngMikey",
+      "id": 74271024,
+      "node_id": "MDQ6VXNlcjc0MjcxMDI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74271024?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/KvngMikey",
+      "html_url": "https://github.com/KvngMikey",
+      "followers_url": "https://api.github.com/users/KvngMikey/followers",
+      "following_url": "https://api.github.com/users/KvngMikey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/KvngMikey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/KvngMikey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/KvngMikey/subscriptions",
+      "organizations_url": "https://api.github.com/users/KvngMikey/orgs",
+      "repos_url": "https://api.github.com/users/KvngMikey/repos",
+      "events_url": "https://api.github.com/users/KvngMikey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/KvngMikey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2cf359862175e9272e60bb5b75658eb67fe542e8",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/2cf359862175e9272e60bb5b75658eb67fe542e8",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/2cf359862175e9272e60bb5b75658eb67fe542e8"
+      }
+    ]
+  },
+  {
+    "sha": "2cf359862175e9272e60bb5b75658eb67fe542e8",
+    "node_id": "C_kwDOH-XoldoAKDJjZjM1OTg2MjE3NWU5MjcyZTYwYmI1Yjc1NjU4ZWI2N2ZlNTQyZTg",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-15T10:56:03Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T10:56:03Z"
+      },
+      "message": "Merge pull request #983 from KvngMikey/update_quote_ttl\n\nfix: UpdateQuoteTtl writes to quote TTL settings, not Redis cache TTL",
+      "tree": {
+        "sha": "f19f6768178063fd4fd30c94a9efb14170c46f1b",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/f19f6768178063fd4fd30c94a9efb14170c46f1b"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/2cf359862175e9272e60bb5b75658eb67fe542e8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBvvDCRC1aQ7uu5UhlAAAp/YQALHZOWoYQ64pL8I+zjsuKQKc\ny14Ev9nPxT4e3c2OxxDzPgS+odTphWoRKub88CXXh7t56WNUjDxoEQIWDaIvfkmf\nsKSlGoNHRoAbDYGy4OgGun0GbXu66p5sO78xJGhb0825ytoAEecnKVd4A2495ZXh\njpJZt/pVTymfMxlPWbd9tW2CIVIBMdtflexYAlGAXzB5EcQOlPg+M9B8NrFZKAeb\nbTEC2tRTg+pwlsRnhWBnWBz4UMIyYtaczda0Ubp26h9YNTCpGwAXvETIHvO8J6r0\nTzVdQI0sDdLRF8b4CXH48D7AxCbuQbl/itDZ4/EmvrA7Cc94UtfYEwdgY9P9ZKcY\nEaIvsCJipdDLhQNUr7Z2st9fDeZ89axoXz6BJ1EArp2g3NHzY0ExWBuTIR1WpZ7g\nBkbCWRVoRRZ9C1rVr9bB/n6Ue1R6qGasHH3ikF0KzFKNaRnFK2IKoVnB8manSzHi\n5VCqjnJMcjji0SqEvmqF5CeDxTaaSij1nbkMnSdi9vC97/EzbOc8v48Z7Ld0dmV9\n8emR/k1+G7dkVAIb5bnzXQHNUsnjMIKO5CZBFnsaHscCU/dq9F62FNYOk9V1J6GK\n/lI3qtoIDGwflaaTiy24kXj/W89zdmxJq/Wa/6nWAWa3WiRlGQzSRFuyqOcmcHDr\nPOyAwbqbr2JNZFdr4ZJb\n=WJiG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f19f6768178063fd4fd30c94a9efb14170c46f1b\nparent f7e42f5a37c5c0b21786700d34c7df0aeb17b63f\nparent 5ad65e4b22e3b5044ae99b255345780057d3bcf4\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1778842563 +0200\ncommitter GitHub <noreply@github.com> 1778842563 +0200\n\nMerge pull request #983 from KvngMikey/update_quote_ttl\n\nfix: UpdateQuoteTtl writes to quote TTL settings, not Redis cache TTL ",
+        "verified_at": "2026-05-15T10:56:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/2cf359862175e9272e60bb5b75658eb67fe542e8",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/2cf359862175e9272e60bb5b75658eb67fe542e8",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/2cf359862175e9272e60bb5b75658eb67fe542e8/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f7e42f5a37c5c0b21786700d34c7df0aeb17b63f",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/f7e42f5a37c5c0b21786700d34c7df0aeb17b63f",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/f7e42f5a37c5c0b21786700d34c7df0aeb17b63f"
+      },
+      {
+        "sha": "5ad65e4b22e3b5044ae99b255345780057d3bcf4",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/5ad65e4b22e3b5044ae99b255345780057d3bcf4",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/5ad65e4b22e3b5044ae99b255345780057d3bcf4"
+      }
+    ]
+  },
+  {
+    "sha": "f7e42f5a37c5c0b21786700d34c7df0aeb17b63f",
+    "node_id": "C_kwDOH-XoldoAKGY3ZTQyZjVhMzdjNWMwYjIxNzg2NzAwZDM0YzdkZjBhZWIxN2I2M2Y",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-15T10:36:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T10:36:52Z"
+      },
+      "message": "Merge pull request #960 from KvngMikey/models_refactor\n\nchore: refactor models.py into modular package structure",
+      "tree": {
+        "sha": "f3767c334b641f272f06f96ea8cb19a2d8edf5a0",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/f3767c334b641f272f06f96ea8cb19a2d8edf5a0"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/f7e42f5a37c5c0b21786700d34c7df0aeb17b63f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBvdECRC1aQ7uu5UhlAAA4qEQAKelrFNgZghpD9ShOv2OFQw5\n2KoK8jdJ5qOQvDsVgqmXR1pxJtnRn9fZaBGJbDrAsSDxC0MWYAc3eAN6gAyTle1L\nYeFTbSKeku48W3eXICoktwrVtOzcuUaAADMAAEaYjMYUDbbTgNhlzDNuvMyK1VPP\nM6DQLtbH+1NT7k80BKsVRQQxiMe7Pcn5lZvHQYyHOAXFfAE2/u8dPOr69sj5JyMN\n9yoIqckbjnfgedc7fH7VI5FljonVm7vVgKdPAmYveAXcHcmwLN7GPXpryX+/2aBK\nr5fkfEk9/npoLsZOMvMRTKx3sKSKE/rVC1BVpyFpJNJLGO1Wao3xijT0ZXRxzG9z\nE48XrPHvhU4Q1Tg7ctP9rvSGEyCblgOvfk4a0cr7tKLHzKi9zxrhAl76xJI7A/J3\nFV2NxMFWg4hgT8cpuFMphs7o+DYo36XKGiQdDhXbCbRVAhN5QojtgcRW+KBmWmJd\nMbgFW/ggRk7t5rpmtAMrmLZgDPcLm8NCbLVkPXSOfQ6ekLlgb720w1MAQnphrrpu\nflx0YqiHWbTW1ArVILtWLgcwqKLzmkTMWea6LSdxfz3RGHiZk60ozoq9ku77CDFh\ng5KEING0/+Btr+G8ZmO4amqOMQ91A8Kcmif7dvyXYXHaT0KPvsN0Vb4D9tBc1nPE\nJwl219k56zhWnZjhhVuz\n=Plmg\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f3767c334b641f272f06f96ea8cb19a2d8edf5a0\nparent 55eeb2adac98b4392a4a52a8356516a4ac85a8f8\nparent 217fba7116874eb938bc52bff41f664d8daea93f\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1778841412 +0200\ncommitter GitHub <noreply@github.com> 1778841412 +0200\n\nMerge pull request #960 from KvngMikey/models_refactor\n\nchore: refactor models.py into modular package structure",
+        "verified_at": "2026-05-15T10:36:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/f7e42f5a37c5c0b21786700d34c7df0aeb17b63f",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/f7e42f5a37c5c0b21786700d34c7df0aeb17b63f",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/f7e42f5a37c5c0b21786700d34c7df0aeb17b63f/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "55eeb2adac98b4392a4a52a8356516a4ac85a8f8",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/55eeb2adac98b4392a4a52a8356516a4ac85a8f8",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/55eeb2adac98b4392a4a52a8356516a4ac85a8f8"
+      },
+      {
+        "sha": "217fba7116874eb938bc52bff41f664d8daea93f",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/217fba7116874eb938bc52bff41f664d8daea93f",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/217fba7116874eb938bc52bff41f664d8daea93f"
+      }
+    ]
+  },
+  {
+    "sha": "55eeb2adac98b4392a4a52a8356516a4ac85a8f8",
+    "node_id": "C_kwDOH-XoldoAKDU1ZWViMmFkYWM5OGI0MzkyYTRhNTJhODM1NjUxNmE0YWM4NWE4Zjg",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-15T10:31:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T10:31:10Z"
+      },
+      "message": "Merge pull request #1005 from cashubtc/chore/use-os-urandom-for-random-hash\n\nchore: use os.urandom(30) for random_hash",
+      "tree": {
+        "sha": "a3bc27ac16ce07b44482f41f0781c6cf41cf2f6c",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/a3bc27ac16ce07b44482f41f0781c6cf41cf2f6c"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/55eeb2adac98b4392a4a52a8356516a4ac85a8f8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBvXuCRC1aQ7uu5UhlAAA56IQAK3s2uPCvXI3GNCKOEA3/7vo\nm7V+W8eJA1icz2uAxgzCqT+Pj7ZGY4YsFEQfTBAui6829vV5X1YHUFnqf0G4cb91\nsj4uvK9Afe9lzeS+Z0kWuVClJp9NnW6m/+vLxfKUU93HeJ9N3MiMstMDlqLEwdBL\n6mRRxwOoP/nTRf4Vnai9O3sFKDcWTqNmkoFMdvjMUqQWj3o/oyQZ6PyMcKjlHK+W\n0XHGE7B1h+ciT+cV6u0jj7Xi6FhZyrRlAZAFJymz1AQNG2w9FVy5ImHrfSsPlyBv\nIORX+8bH9iVUdA7oT+fCSMzyA6s7ChgOyhhrtDmh0Jn4YBZpTI2ChmDOn4ro9moO\njwBjtPhmN58uhp/ONK3i9r/wwihRdfzuDwk/IYpmxLtuSgxGa7BllfHBBEQOTWxK\nFNPGJdmIlR6LTa7ACj1PzrVNKFiOFv6LnQ8bzQYzRPbXxKoVW7L54ObH3xbd0gHB\nWVUTDqmoOK1Fiajg1TB0b8jXtr92dCIw2MX85LcJmvtekQJO4KXYUbQPyIoEyf9f\ncLL7+TOpH/9rHbQdbAvLPqrwtUJ52J+cV3HwiKEcPRNOckGEpE6BgXClepR27vz+\nrAj3sfkr0n08U6/GzwSK7PpIITok17JL5DzMM3PMzxJUlSNd1NblJbZkSq5uX2uO\nfbXjn0CPiY5zm2eTbKAK\n=UDqC\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a3bc27ac16ce07b44482f41f0781c6cf41cf2f6c\nparent ff119a9a67b7dcf96f936f4a012214684529e846\nparent 3e5a0b9e24ef7e1d1a34da1a1a495adaecbfca46\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1778841070 +0200\ncommitter GitHub <noreply@github.com> 1778841070 +0200\n\nMerge pull request #1005 from cashubtc/chore/use-os-urandom-for-random-hash\n\nchore: use os.urandom(30) for random_hash",
+        "verified_at": "2026-05-15T10:31:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/55eeb2adac98b4392a4a52a8356516a4ac85a8f8",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/55eeb2adac98b4392a4a52a8356516a4ac85a8f8",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/55eeb2adac98b4392a4a52a8356516a4ac85a8f8/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ff119a9a67b7dcf96f936f4a012214684529e846",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/ff119a9a67b7dcf96f936f4a012214684529e846",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/ff119a9a67b7dcf96f936f4a012214684529e846"
+      },
+      {
+        "sha": "3e5a0b9e24ef7e1d1a34da1a1a495adaecbfca46",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/3e5a0b9e24ef7e1d1a34da1a1a495adaecbfca46",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/3e5a0b9e24ef7e1d1a34da1a1a495adaecbfca46"
+      }
+    ]
+  }
+]

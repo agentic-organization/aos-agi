@@ -1,0 +1,412 @@
+[
+  {
+    "sha": "d2fdd3101e9bfb9c57d0efe661d453ac03901b24",
+    "node_id": "C_kwDOQg6sZ9oAKGQyZmRkMzEwMWU5YmZiOWM1N2QwZWZlNjYxZDQ1M2FjMDM5MDFiMjQ",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-05-16T04:36:30Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T04:36:30Z"
+      },
+      "message": "chore(deps): bump the flutter-dependencies group with 10 updates (#652)\n\n* chore(deps): bump the flutter-dependencies group with 9 updates\n\nBumps the flutter-dependencies group with 10 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [build_runner](https://github.com/dart-lang/build) | `2.13.1` | `2.15.0` |\n| [flutter_rust_bridge](https://github.com/fzyzcjy/flutter_rust_bridge) | `2.11.1` | `2.12.0` |\n| [flutter_secure_storage](https://github.com/mogol/flutter_secure_storage) | `10.0.0` | `10.1.0` |\n| [flutter_svg](https://github.com/flutter/packages/tree/main/third_party/packages) | `2.2.4` | `2.3.0` |\n| [go_router](https://github.com/flutter/packages/tree/main/packages) | `17.2.2` | `17.2.3` |\n| [image_picker](https://github.com/flutter/packages/tree/main/packages/image_picker) | `1.2.1` | `1.2.2` |\n| [video_player_platform_interface](https://github.com/flutter/packages/tree/main/packages/video_player) | `6.6.0` | `6.7.0` |\n| [widgetbook](https://github.com/widgetbook/widgetbook/tree/main/packages) | `3.22.0` | `3.23.0` |\n| [widgetbook_generator](https://github.com/widgetbook/widgetbook/tree/main/packages) | `3.22.0` | `3.23.0` |\n\nUpdates `build_runner` from 2.13.1 to 2.15.0\n- [Release notes](https://github.com/dart-lang/build/releases)\n- [Commits](https://github.com/dart-lang/build/compare/build_runner-v2.13.1...build_runner-v2.15.0)\n\nUpdates `flutter_rust_bridge` from 2.11.1 to 2.12.0\n- [Release notes](https://github.com/fzyzcjy/flutter_rust_bridge/releases)\n- [Changelog](https://github.com/fzyzcjy/flutter_rust_bridge/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/fzyzcjy/flutter_rust_bridge/compare/v2.11.1...v2.12.0)\n\nUpdates `flutter_secure_storage` from 10.0.0 to 10.1.0\n- [Release notes](https://github.com/mogol/flutter_secure_storage/releases)\n- [Commits](https://github.com/mogol/flutter_secure_storage/compare/v10.0.0...v10.1.0)\n\nUpdates `flutter_svg` from 2.2.4 to 2.3.0\n- [Commits](https://github.com/flutter/packages/commits/flutter_svg-v2.3.0/third_party/packages)\n\nUpdates `go_router` from 17.2.2 to 17.2.3\n- [Commits](https://github.com/flutter/packages/commits/go_router-v17.2.3/packages)\n\nUpdates `image_picker` from 1.2.1 to 1.2.2\n- [Commits](https://github.com/flutter/packages/commits/image_picker-v1.2.2/packages/image_picker)\n\nUpdates `video_player_platform_interface` from 6.6.0 to 6.7.0\n- [Commits](https://github.com/flutter/packages/commits/video_player_platform_interface-v6.7.0/packages/video_player)\n\nUpdates `widgetbook` from 3.22.0 to 3.23.0\n- [Release notes](https://github.com/widgetbook/widgetbook/releases)\n- [Commits](https://github.com/widgetbook/widgetbook/commits/widgetbook-v3.23.0/packages)\n\nUpdates `widgetbook_generator` from 3.22.0 to 3.23.0\n- [Release notes](https://github.com/widgetbook/widgetbook/releases)\n- [Commits](https://github.com/widgetbook/widgetbook/commits/widgetbook_generator-v3.23.0/packages)\n\n---\nupdated-dependencies:\n- dependency-name: build_runner\n  dependency-version: 2.15.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: connectivity_plus\n  dependency-version: 7.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: flutter-dependencies\n- dependency-name: flutter_rust_bridge\n  dependency-version: 2.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: flutter_secure_storage\n  dependency-version: 10.1.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: flutter_svg\n  dependency-version: 2.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: go_router\n  dependency-version: 17.2.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: flutter-dependencies\n- dependency-name: image_picker\n  dependency-version: 1.2.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: flutter-dependencies\n- dependency-name: video_player_platform_interface\n  dependency-version: 6.7.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: widgetbook\n  dependency-version: 3.23.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: widgetbook_generator\n  dependency-version: 3.23.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore: upgrade rust bridge for rust side too\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: josefinalliende <mariajosefinaalliende@gmail.com>",
+      "tree": {
+        "sha": "b74634a65628afa46c393faf10a24d9f2d200187",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/b74634a65628afa46c393faf10a24d9f2d200187"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/d2fdd3101e9bfb9c57d0efe661d453ac03901b24",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqB/ROCRC1aQ7uu5UhlAAA/lUQAItMtfnim+bJYwEEnP70oDPs\nnywX74Y4tAmBGg7ka+44VgIQ763kWyT2kARzPT3njm6bpm2rqgS/Pvo4I7ZvI11K\nfwkqWUplT2n4l1GEUvFGfQ6MhVpjPl4vRhcjpXAg+pRatBAgghDBlTTO4+V6WYMe\nHKinRpJ2kKijU7E5QI8gejzhDLB3Ytdvam5pChKjA7Br7Dhin1+NOvVE2aRKhr+b\ndGf32o/wg7m4PrwVQ1Chg8rtZHcL3FyWQLIBIifvNJ4x+gIjYJHXwH55ixXNGjFN\niCsy2Up8Wrpp8oKnP2l4+3RvKvgcXKid86gm9Zh85xHVwVxfF6nID2em1asEpnm4\n+jn0tjlYnDKhsNKlvll83Rfwc1Yi4CMv17ANgNY3HirSoC7h8zs3DDd+EL5jRD6U\nyuJ7YC3Q0mO5jNSAGrCAYAP4FYGOKUANxzHIR3XG9nwaA1XF6g95+GXldaaLYAkx\nzMumx2QCeS2IeQXpAyERMdfDQuS7nY6v0oVTMQERbAOlCwEAL6XRUut73wTHm23n\ntlFCl1IN1WNdeBESCOWp3YCBT0BdghaRMNYQumBgWeuNhmd0U2Uvt9ARvwiobgOb\n7OBL5yADA/sw8hqwHXR2v6s5x1d5u3GZWFJRr4YW8nmlq+EFHt0q0OomnVvXmaqE\nRBk1E+gbuiu5vErriFIu\n=YjWN\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b74634a65628afa46c393faf10a24d9f2d200187\nparent 4212d83e48f387d0ffb452bbfdc2a6bfa19b2d47\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1778906190 -0400\ncommitter GitHub <noreply@github.com> 1778906190 -0400\n\nchore(deps): bump the flutter-dependencies group with 10 updates (#652)\n\n* chore(deps): bump the flutter-dependencies group with 9 updates\n\nBumps the flutter-dependencies group with 10 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [build_runner](https://github.com/dart-lang/build) | `2.13.1` | `2.15.0` |\n| [flutter_rust_bridge](https://github.com/fzyzcjy/flutter_rust_bridge) | `2.11.1` | `2.12.0` |\n| [flutter_secure_storage](https://github.com/mogol/flutter_secure_storage) | `10.0.0` | `10.1.0` |\n| [flutter_svg](https://github.com/flutter/packages/tree/main/third_party/packages) | `2.2.4` | `2.3.0` |\n| [go_router](https://github.com/flutter/packages/tree/main/packages) | `17.2.2` | `17.2.3` |\n| [image_picker](https://github.com/flutter/packages/tree/main/packages/image_picker) | `1.2.1` | `1.2.2` |\n| [video_player_platform_interface](https://github.com/flutter/packages/tree/main/packages/video_player) | `6.6.0` | `6.7.0` |\n| [widgetbook](https://github.com/widgetbook/widgetbook/tree/main/packages) | `3.22.0` | `3.23.0` |\n| [widgetbook_generator](https://github.com/widgetbook/widgetbook/tree/main/packages) | `3.22.0` | `3.23.0` |\n\nUpdates `build_runner` from 2.13.1 to 2.15.0\n- [Release notes](https://github.com/dart-lang/build/releases)\n- [Commits](https://github.com/dart-lang/build/compare/build_runner-v2.13.1...build_runner-v2.15.0)\n\nUpdates `flutter_rust_bridge` from 2.11.1 to 2.12.0\n- [Release notes](https://github.com/fzyzcjy/flutter_rust_bridge/releases)\n- [Changelog](https://github.com/fzyzcjy/flutter_rust_bridge/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/fzyzcjy/flutter_rust_bridge/compare/v2.11.1...v2.12.0)\n\nUpdates `flutter_secure_storage` from 10.0.0 to 10.1.0\n- [Release notes](https://github.com/mogol/flutter_secure_storage/releases)\n- [Commits](https://github.com/mogol/flutter_secure_storage/compare/v10.0.0...v10.1.0)\n\nUpdates `flutter_svg` from 2.2.4 to 2.3.0\n- [Commits](https://github.com/flutter/packages/commits/flutter_svg-v2.3.0/third_party/packages)\n\nUpdates `go_router` from 17.2.2 to 17.2.3\n- [Commits](https://github.com/flutter/packages/commits/go_router-v17.2.3/packages)\n\nUpdates `image_picker` from 1.2.1 to 1.2.2\n- [Commits](https://github.com/flutter/packages/commits/image_picker-v1.2.2/packages/image_picker)\n\nUpdates `video_player_platform_interface` from 6.6.0 to 6.7.0\n- [Commits](https://github.com/flutter/packages/commits/video_player_platform_interface-v6.7.0/packages/video_player)\n\nUpdates `widgetbook` from 3.22.0 to 3.23.0\n- [Release notes](https://github.com/widgetbook/widgetbook/releases)\n- [Commits](https://github.com/widgetbook/widgetbook/commits/widgetbook-v3.23.0/packages)\n\nUpdates `widgetbook_generator` from 3.22.0 to 3.23.0\n- [Release notes](https://github.com/widgetbook/widgetbook/releases)\n- [Commits](https://github.com/widgetbook/widgetbook/commits/widgetbook_generator-v3.23.0/packages)\n\n---\nupdated-dependencies:\n- dependency-name: build_runner\n  dependency-version: 2.15.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: connectivity_plus\n  dependency-version: 7.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: flutter-dependencies\n- dependency-name: flutter_rust_bridge\n  dependency-version: 2.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: flutter_secure_storage\n  dependency-version: 10.1.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: flutter_svg\n  dependency-version: 2.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: go_router\n  dependency-version: 17.2.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: flutter-dependencies\n- dependency-name: image_picker\n  dependency-version: 1.2.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: flutter-dependencies\n- dependency-name: video_player_platform_interface\n  dependency-version: 6.7.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: widgetbook\n  dependency-version: 3.23.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n- dependency-name: widgetbook_generator\n  dependency-version: 3.23.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: flutter-dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore: upgrade rust bridge for rust side too\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: josefinalliende <mariajosefinaalliende@gmail.com>",
+        "verified_at": "2026-05-16T04:36:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/d2fdd3101e9bfb9c57d0efe661d453ac03901b24",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/d2fdd3101e9bfb9c57d0efe661d453ac03901b24",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/d2fdd3101e9bfb9c57d0efe661d453ac03901b24/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4212d83e48f387d0ffb452bbfdc2a6bfa19b2d47",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/4212d83e48f387d0ffb452bbfdc2a6bfa19b2d47",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/4212d83e48f387d0ffb452bbfdc2a6bfa19b2d47"
+      }
+    ]
+  },
+  {
+    "sha": "4212d83e48f387d0ffb452bbfdc2a6bfa19b2d47",
+    "node_id": "C_kwDOQg6sZ9oAKDQyMTJkODNlNDhmMzg3ZDBmZmI0NTJiYmZkYzJhNmJmYTE5YjJkNDc",
+    "commit": {
+      "author": {
+        "name": "Datawav",
+        "email": "222291538+Datawav@users.noreply.github.com",
+        "date": "2026-05-16T03:32:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T03:32:59Z"
+      },
+      "message": "docs: rewrite README with current features and markdown content (#664)\n\nCo-authored-by: Datawav <ipf.dev@proton.me>",
+      "tree": {
+        "sha": "c701a1046c23cc6e9dd9f418d470f13e321d6426",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/c701a1046c23cc6e9dd9f418d470f13e321d6426"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/4212d83e48f387d0ffb452bbfdc2a6bfa19b2d47",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqB+VrCRC1aQ7uu5UhlAAAphQQACfBETnmxEQfthdtfVQ5UD2T\nGjj6rccRH1BmyfMtbpIr7fHmXyTG0kbpzTxbtXNvLg+RPPWf6BMWuKUy5LXN2Ldb\noDGD9kTTjbRnGy2iT1fqZc9QeyGSjtwRw9L34PQJsSGckEyzQelYt/nWILI3/y0n\n3qIXavMcpKuD2meq0aGu9M/6YPdnMgCRBEnuc6l1al7UtjOUNB/8lnEbIvghDgQR\nhqhNWdoU4OaB3nXSMCbvuphtG2wQL1xeAQoPWxst2ZYHDsLYyg/1MuCIwpE+qcfJ\nB/NAljWx6+0jC5E2qg+6US2CPIMiWA76j/WfdqI6HtmPW9IVWMbvNEaVm9Nnfpli\nRqk8fUXT5gCRogtv7GuZJ2lASGwaTmXqy0w+AMJYuMOAfIY5X/DWVpp1LoPFoAuh\nOodgorK7IkbxduqI8wJPuMPqQ0Vr1qWDDNBpbjpUSjHf59Wmp94XL6xrin+p7Oha\nIMSKT9Jehj9ivfAvXWxeep1To8ChLasB655Ee5v0sIuI8n3DyUg58EKPdN8907ga\nsO1WWIEitUMfXNWvSTe1fuwopDY6i9pX0nFxMbDGtJCh+tN4jHN38xpxWQzFvwZ/\nxsCfzujuDhkBw0NspGD5egqvaFw/m5JC4DAvTsJHr6Jm4IibctUkpVRcvWThdVzZ\nurx7EfrEgA3LOgrCqd8X\n=RuD0\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c701a1046c23cc6e9dd9f418d470f13e321d6426\nparent 672a975d3aecec5ae192f2144b62341328c3dd51\nauthor Datawav <222291538+Datawav@users.noreply.github.com> 1778902379 +0200\ncommitter GitHub <noreply@github.com> 1778902379 -0400\n\ndocs: rewrite README with current features and markdown content (#664)\n\nCo-authored-by: Datawav <ipf.dev@proton.me>",
+        "verified_at": "2026-05-16T03:33:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/4212d83e48f387d0ffb452bbfdc2a6bfa19b2d47",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/4212d83e48f387d0ffb452bbfdc2a6bfa19b2d47",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/4212d83e48f387d0ffb452bbfdc2a6bfa19b2d47/comments",
+    "author": {
+      "login": "Datawav",
+      "id": 222291538,
+      "node_id": "U_kgDODT_mUg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/222291538?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Datawav",
+      "html_url": "https://github.com/Datawav",
+      "followers_url": "https://api.github.com/users/Datawav/followers",
+      "following_url": "https://api.github.com/users/Datawav/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Datawav/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Datawav/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Datawav/subscriptions",
+      "organizations_url": "https://api.github.com/users/Datawav/orgs",
+      "repos_url": "https://api.github.com/users/Datawav/repos",
+      "events_url": "https://api.github.com/users/Datawav/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Datawav/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "672a975d3aecec5ae192f2144b62341328c3dd51",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/672a975d3aecec5ae192f2144b62341328c3dd51",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/672a975d3aecec5ae192f2144b62341328c3dd51"
+      }
+    ]
+  },
+  {
+    "sha": "672a975d3aecec5ae192f2144b62341328c3dd51",
+    "node_id": "C_kwDOQg6sZ9oAKDY3MmE5NzVkM2FlY2VjNWFlMTkyZjIxNDRiNjIzNDEzMjhjM2RkNTE",
+    "commit": {
+      "author": {
+        "name": "Pepi",
+        "email": "mariajosefinaalliende@gmail.com",
+        "date": "2026-05-16T03:29:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-16T03:29:43Z"
+      },
+      "message": "Add archive option in chat removed warning and change wording for leave case (#657)\n\n* refactor: add toggle method to use chat archive hook\n\n* feat: add archive in removed warning and change wording for leave case\n\n* docs: update changelog",
+      "tree": {
+        "sha": "2aedeac9236953e663ed0c9893aa6b366279a25f",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/2aedeac9236953e663ed0c9893aa6b366279a25f"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/672a975d3aecec5ae192f2144b62341328c3dd51",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqB+SnCRC1aQ7uu5UhlAAAMQ8QAJxv1UstJEQp3sDbmyeypNfi\nOz4AbPG8AwePKi98IE0eWNEzMEQnHcmFxRzFUbBJl7UbI7U+1mNVPjUZBGJAoCqR\n51VVUhMM7F92mKY4avVLZzBgAUef4+A45IgmHkR8DNYZtkdqMgxLUhprwihA6lop\niCBtzfnZ+hg19RbvYaOtOsTEpdjOFUlgJb2HaUCtWC57OBiVOM6PNy/uaPs1WNpS\nptdQ3fYLgZqQBL09iLHWCXeDkm0lwXE62r6sm7gBIOP01nbzn0fiH9ELXorXPMzE\nTU3QNpYBs+fFa7WQ2TpIs1P2gONfpJ2z1wQUfrsvbrH10hpLCEwtHNrUEaV3Tkx0\ns5x1y2MV9/x3BeGbNaQpJ58gshOKziRli3ZzvtXFUjJWeOUEGBN/rn/CPOW1UXI3\nDPK4jrZEd6FiwpG1X/VccJsNE8CoIc6rzno2DCGxhfxLp+04FOntmCEKRN1SL9oK\ntKzjtUbyzuoTn3kv1Z1YUGEYlT2rANP/I4NY8Ft/uca0XjW6pC9ZLahkqtw/iHE7\nd3NMqxqkhmX3Hc2SvEcR6EVk6wPZGyLMMswp1urDIBQCwbXipsjg7wgf5cASSnUt\nujU2kuAfo8alg1AJ8GJLscNpg+7Z8ukQ3ypve7r9PZewxWoyYTCSDiLwgAd4Go0g\nkWxwDZJSXGls2QjK8dE3\n=4jXf\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2aedeac9236953e663ed0c9893aa6b366279a25f\nparent 594f58aa78f009e7b71bf35fcfb97d2b5b3d2da6\nauthor Pepi <mariajosefinaalliende@gmail.com> 1778902183 -0400\ncommitter GitHub <noreply@github.com> 1778902183 -0400\n\nAdd archive option in chat removed warning and change wording for leave case (#657)\n\n* refactor: add toggle method to use chat archive hook\n\n* feat: add archive in removed warning and change wording for leave case\n\n* docs: update changelog",
+        "verified_at": "2026-05-16T03:29:43Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/672a975d3aecec5ae192f2144b62341328c3dd51",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/672a975d3aecec5ae192f2144b62341328c3dd51",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/672a975d3aecec5ae192f2144b62341328c3dd51/comments",
+    "author": {
+      "login": "pepina-dev",
+      "id": 30674444,
+      "node_id": "MDQ6VXNlcjMwNjc0NDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30674444?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pepina-dev",
+      "html_url": "https://github.com/pepina-dev",
+      "followers_url": "https://api.github.com/users/pepina-dev/followers",
+      "following_url": "https://api.github.com/users/pepina-dev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pepina-dev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pepina-dev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pepina-dev/subscriptions",
+      "organizations_url": "https://api.github.com/users/pepina-dev/orgs",
+      "repos_url": "https://api.github.com/users/pepina-dev/repos",
+      "events_url": "https://api.github.com/users/pepina-dev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pepina-dev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "594f58aa78f009e7b71bf35fcfb97d2b5b3d2da6",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/594f58aa78f009e7b71bf35fcfb97d2b5b3d2da6",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/594f58aa78f009e7b71bf35fcfb97d2b5b3d2da6"
+      }
+    ]
+  },
+  {
+    "sha": "594f58aa78f009e7b71bf35fcfb97d2b5b3d2da6",
+    "node_id": "C_kwDOQg6sZ9oAKDU5NGY1OGFhNzhmMDA5ZTdiNzFiZjM1ZmNmYjk3ZDJiNWIzZDJkYTY",
+    "commit": {
+      "author": {
+        "name": "Pepi",
+        "email": "mariajosefinaalliende@gmail.com",
+        "date": "2026-05-15T15:38:51Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T15:38:51Z"
+      },
+      "message": "Leave group from chatlist for non-last admins  (#638)\n\n* feat: add self demote to bridge\n\n* feat: add leave warnings translations\n\n* feat: add admin demote logic to leave hook\n\n* feat: handle admin leave from chat list\n\n* docs: update changelog",
+      "tree": {
+        "sha": "084a46aea6680b2c91d9e62dbee2037d9c7c6876",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/084a46aea6680b2c91d9e62dbee2037d9c7c6876"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/594f58aa78f009e7b71bf35fcfb97d2b5b3d2da6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBz4LCRC1aQ7uu5UhlAAA064QAICu8rRKudXPMBDAbd4xEVGE\nqdd87IWdeSfJhVtnsNfhbAYar9Yx9IOXnMSnuzdcbkzjgWns35qFNBcPh1ukfh8F\npbMuLH23vMkpJwUPyAIIC7/reZUOAGT+8n5rr3k1rc0FXOwZzEfFzYl68HyZKaNQ\nb2rgDG8ZYqZ6EhCefrMPKk8GU+KfkXcxjfeT9GZYrjWNvno7Ap9/d/RLDFM+iIvj\nYLgPC1AD4IcyQp8X0iCFyh58edbzgfEp0lXaUdQ/RzoaUu14m3JChRWASUnm3MSA\njkQsKm524T64p/Qfx3iWDbnyGAXTgjDKJJC9w25HWpQAVpkp8jJYIUq3dUHVbeyL\nBrZVfuSD+YIo+Ch+W3NKK7cwINFVfiNNz7fZ0RLWwC2wzO54djDEolsZDdcdkvuL\nhDSCFu/lCa8kXAI661tfnnORfac3cRUTK1FtRmQNH7M2vzKaLLYOSqYOWAUM+SnL\nxeY888XHozn6tzv3jpPVWpCfx52lUAXLQJlyMmvtaDJFeF1C8bke/H0zyJyZfy82\nrMfrdStupqGZzTuAqEnN4pXMslW/lcjmEfUVjuYS4WaZsbD6G/5D8RJX+48EpRSl\n4zT6tanfbPamPZs4wHJtq3lKdqRARFX0lrXL03d5M1MoM4iL5mkdfhuyKCGC3qMT\nMQn6fV9BdZb64ImPedaB\n=RXO7\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 084a46aea6680b2c91d9e62dbee2037d9c7c6876\nparent 7c543c32a00af600e1827091cdcfa92b23c1b371\nauthor Pepi <mariajosefinaalliende@gmail.com> 1778859531 -0400\ncommitter GitHub <noreply@github.com> 1778859531 -0400\n\nLeave group from chatlist for non-last admins  (#638)\n\n* feat: add self demote to bridge\n\n* feat: add leave warnings translations\n\n* feat: add admin demote logic to leave hook\n\n* feat: handle admin leave from chat list\n\n* docs: update changelog",
+        "verified_at": "2026-05-15T15:38:51Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/594f58aa78f009e7b71bf35fcfb97d2b5b3d2da6",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/594f58aa78f009e7b71bf35fcfb97d2b5b3d2da6",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/594f58aa78f009e7b71bf35fcfb97d2b5b3d2da6/comments",
+    "author": {
+      "login": "pepina-dev",
+      "id": 30674444,
+      "node_id": "MDQ6VXNlcjMwNjc0NDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30674444?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pepina-dev",
+      "html_url": "https://github.com/pepina-dev",
+      "followers_url": "https://api.github.com/users/pepina-dev/followers",
+      "following_url": "https://api.github.com/users/pepina-dev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pepina-dev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pepina-dev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pepina-dev/subscriptions",
+      "organizations_url": "https://api.github.com/users/pepina-dev/orgs",
+      "repos_url": "https://api.github.com/users/pepina-dev/repos",
+      "events_url": "https://api.github.com/users/pepina-dev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pepina-dev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7c543c32a00af600e1827091cdcfa92b23c1b371",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/7c543c32a00af600e1827091cdcfa92b23c1b371",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/7c543c32a00af600e1827091cdcfa92b23c1b371"
+      }
+    ]
+  },
+  {
+    "sha": "7c543c32a00af600e1827091cdcfa92b23c1b371",
+    "node_id": "C_kwDOQg6sZ9oAKDdjNTQzYzMyYTAwYWY2MDBlMTgyNzA5MWNkY2ZhOTJiMjNjMWIzNzE",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-15T10:34:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T10:34:58Z"
+      },
+      "message": "Add native deep links for users, chats, and settings (#661)\n\n* Add copy deep link action to chat debug screen\n\n* Address deep link review feedback\n\n* Address deep link PR review follow-ups\n\n* Scale profile QR code size",
+      "tree": {
+        "sha": "4c14d7f1a363b3c8a49f2771ad67669116fe58cf",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/4c14d7f1a363b3c8a49f2771ad67669116fe58cf"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/7c543c32a00af600e1827091cdcfa92b23c1b371",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBvbSCRC1aQ7uu5UhlAAA19MQAC1I7jWKGLJN5VPcIr1W/L7J\nAVczXWPlfeKsaSAghJ56rcFhH3K5gaoaI5/Mp2Sibc/bWfZ+BLLfYVaDk/1/T6QL\n88AjtpQhm5KyTnKv5ZOtCNhiyqDqFyfPcwzd0adkac7GcEcV6LOmVvsan7FM0Gzh\nK7CNMnRC4PWv1DeSZYFGaUbD9DDaUxAarvGkrVszuA9XshhD56wfKnB+piJs4N96\nh4cHt3z9oo5O3yDnfzfOx7kcIu+EP2e+Tau1eSUpVUagBjwSvQ3GuEzI3CUvJkoD\nyqAWazelQiVuUuyZXTG/6WPKO1BDoEgZ8986CaLvqEPGjTPWya5huVLsiZ1jPe7e\nSW28AkWdwBjarhHxIJPfbGEd28N6q1BARLLbJNDlmo38J97VPUzaBdYtyFskZj+c\ndebhAxEX/qgempATvdgXDnxecHBoR0bTw/a3VX8ZfZ+YVHGa3G8lyV1gt2PuSU9Y\ndMogPOFc60ZSJnFTF+BgO99egR1eH6k6cbKrIDNm4F+4Q1JvJtTCnbZ3pDZoOgzJ\np3FYtNxq/nYigpy+BPJowhu7mj8kcSl+CaMCFUyE56ApjbZly8PwReo/xV76QHHr\n+ymfmgnuSXIO1WGYXBF8OvXnGLdsZM76Lx0JEDxw0gtkYYfxvXsegjSy4DynDrlf\nTqqj3Wr8jQbvmTpXiUdR\n=YeSQ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4c14d7f1a363b3c8a49f2771ad67669116fe58cf\nparent b8b9e053458fed6bb16ea12fed2b58c22dea7c97\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1778841298 +0200\ncommitter GitHub <noreply@github.com> 1778841298 +0200\n\nAdd native deep links for users, chats, and settings (#661)\n\n* Add copy deep link action to chat debug screen\n\n* Address deep link review feedback\n\n* Address deep link PR review follow-ups\n\n* Scale profile QR code size",
+        "verified_at": "2026-05-15T10:34:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/7c543c32a00af600e1827091cdcfa92b23c1b371",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/7c543c32a00af600e1827091cdcfa92b23c1b371",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/7c543c32a00af600e1827091cdcfa92b23c1b371/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b8b9e053458fed6bb16ea12fed2b58c22dea7c97",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/b8b9e053458fed6bb16ea12fed2b58c22dea7c97",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/b8b9e053458fed6bb16ea12fed2b58c22dea7c97"
+      }
+    ]
+  }
+]

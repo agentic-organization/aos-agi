@@ -1,0 +1,3805 @@
+{
+  "schema_version": 1,
+  "run_id": "20260513T060023Z-github-daily",
+  "source": "github",
+  "stage": "raw",
+  "status": "success",
+  "source_config": "data/sources/github-watchlist.json",
+  "collector": "tools/ingestion/github-daily-ingest.js",
+  "started_at": "2026-05-13T06:00:23.954Z",
+  "finished_at": "2026-05-13T06:05:47.732Z",
+  "inputs": {
+    "date": "2026-05-13",
+    "since": "2026-05-12T06:00:23.954Z",
+    "since_hours": 24,
+    "only": null,
+    "limit": null,
+    "watchlist": "data/sources/github-watchlist.json",
+    "out_root": "data/raw/github"
+  },
+  "outputs": [
+    {
+      "path": "data/raw/github/daily/2026-05-13/run.json",
+      "kind": "legacy_run_summary",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/commands.sh",
+      "kind": "command_log",
+      "count": 650
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/andotherstuff/chorus/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/andotherstuff/chorus/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/andotherstuff/chorus/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/andotherstuff/chorus/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/andotherstuff/chorus/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/andotherstuff/chorus/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/andotherstuff/chorus/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/awesome-cashu/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/awesome-cashu/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/awesome-cashu/events.json",
+      "kind": "github_events",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/awesome-cashu/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/awesome-cashu/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 29
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/awesome-cashu/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/awesome-cashu/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/BTCNutServer/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/BTCNutServer/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/BTCNutServer/events.json",
+      "kind": "github_events",
+      "count": 32
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/BTCNutServer/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/BTCNutServer/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 30
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/BTCNutServer/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/BTCNutServer/releases.json",
+      "kind": "github_releases",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-crypto-ts/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-crypto-ts/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-crypto-ts/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-crypto-ts/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-crypto-ts/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 12
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-crypto-ts/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-crypto-ts/releases.json",
+      "kind": "github_releases",
+      "count": 19
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-feni/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-feni/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-feni/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-feni/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-feni/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 51
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-feni/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-feni/releases.json",
+      "kind": "github_releases",
+      "count": 13
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-redeem/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-redeem/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-redeem/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-redeem/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-redeem/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-redeem/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-redeem/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-skill/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-skill/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-skill/events.json",
+      "kind": "github_events",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-skill/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-skill/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-skill/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-skill/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ts/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ts/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ts/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ts/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ts/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ts/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ts/releases.json",
+      "kind": "github_releases",
+      "count": 67
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ui/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ui/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ui/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ui/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ui/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ui/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu-ui/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu.me/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu.me/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu.me/events.json",
+      "kind": "github_events",
+      "count": 36
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu.me/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu.me/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu.me/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashu.me/releases.json",
+      "kind": "github_releases",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashurpc/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashurpc/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashurpc/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashurpc/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashurpc/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashurpc/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cashurpc/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk/events.json",
+      "kind": "github_events",
+      "count": 98
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 13
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk/releases.json",
+      "kind": "github_releases",
+      "count": 48
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-dart/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-dart/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-dart/events.json",
+      "kind": "github_events",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-dart/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-dart/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-dart/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-dart/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-flutter/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-flutter/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-flutter/events.json",
+      "kind": "github_events",
+      "count": 17
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-flutter/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-flutter/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 11
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-flutter/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-flutter/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-go/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-go/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-go/events.json",
+      "kind": "github_events",
+      "count": 16
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-go/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-go/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 16
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-go/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-go/releases.json",
+      "kind": "github_releases",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-kotlin/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-kotlin/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-kotlin/events.json",
+      "kind": "github_events",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-kotlin/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-kotlin/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-kotlin/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-kotlin/releases.json",
+      "kind": "github_releases",
+      "count": 29
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-python/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-python/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-python/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-python/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-python/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-python/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-python/releases.json",
+      "kind": "github_releases",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-swift/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-swift/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-swift/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-swift/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-swift/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-swift/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/cdk-swift/releases.json",
+      "kind": "github_releases",
+      "count": 31
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/coco/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/coco/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/coco/events.json",
+      "kind": "github_events",
+      "count": 98
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/coco/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/coco/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/coco/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/coco/releases.json",
+      "kind": "github_releases",
+      "count": 22
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/dev-calls/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/dev-calls/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/dev-calls/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/dev-calls/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/dev-calls/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/dev-calls/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/dev-calls/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/docs.cashu.space/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/docs.cashu.space/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/docs.cashu.space/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/docs.cashu.space/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/docs.cashu.space/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 29
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/docs.cashu.space/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/docs.cashu.space/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/eNuts/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/eNuts/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/eNuts/events.json",
+      "kind": "github_events",
+      "count": 31
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/eNuts/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/eNuts/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/eNuts/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/eNuts/releases.json",
+      "kind": "github_releases",
+      "count": 21
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-server/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-server/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-server/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-server/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-server/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 26
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-server/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-server/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-website/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-website/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-website/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-website/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-website/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 9
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-website/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/npubcash-website/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/Numo/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/Numo/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/Numo/events.json",
+      "kind": "github_events",
+      "count": 98
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/Numo/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/Numo/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/Numo/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/Numo/releases.json",
+      "kind": "github_releases",
+      "count": 30
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nut-november/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nut-november/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nut-november/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nut-november/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nut-november/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nut-november/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nut-november/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nuts/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nuts/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nuts/events.json",
+      "kind": "github_events",
+      "count": 95
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nuts/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nuts/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nuts/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nuts/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nutshell/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nutshell/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nutshell/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nutshell/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nutshell/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nutshell/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/nutshell/releases.json",
+      "kind": "github_releases",
+      "count": 30
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/orchard/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/orchard/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/orchard/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/orchard/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/orchard/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/orchard/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/orchard/releases.json",
+      "kind": "github_releases",
+      "count": 25
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/xcashu/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/xcashu/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/xcashu/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/xcashu/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/xcashu/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/xcashu/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/cashubtc/xcashu/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/coracle-social/flotilla/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/coracle-social/flotilla/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/coracle-social/flotilla/events.json",
+      "kind": "github_events",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/coracle-social/flotilla/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/coracle-social/flotilla/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/coracle-social/flotilla/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/coracle-social/flotilla/releases.json",
+      "kind": "github_releases",
+      "count": 38
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/DanConwayDev/ngit-cli/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/DanConwayDev/ngit-cli/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/DanConwayDev/ngit-cli/events.json",
+      "kind": "github_events",
+      "count": 9
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/DanConwayDev/ngit-cli/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/DanConwayDev/ngit-cli/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 9
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/DanConwayDev/ngit-cli/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/DanConwayDev/ngit-cli/releases.json",
+      "kind": "github_releases",
+      "count": 45
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/.github/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/.github/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/.github/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/.github/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/.github/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/.github/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/.github/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/brand-guidelines/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/brand-guidelines/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/brand-guidelines/events.json",
+      "kind": "github_events",
+      "count": 9
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/brand-guidelines/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/brand-guidelines/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/brand-guidelines/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/brand-guidelines/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-badges/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-badges/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-badges/events.json",
+      "kind": "github_events",
+      "count": 35
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-badges/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-badges/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 6
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-badges/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-badges/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-blossom/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-blossom/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-blossom/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-blossom/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-blossom/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-blossom/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-blossom/releases.json",
+      "kind": "github_releases",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-clips/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-clips/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-clips/events.json",
+      "kind": "github_events",
+      "count": 6
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-clips/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-clips/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-clips/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-clips/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-github-actions/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-github-actions/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-github-actions/events.json",
+      "kind": "github_events",
+      "count": 11
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-github-actions/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-github-actions/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-github-actions/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-github-actions/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-identify-verification-service/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-identify-verification-service/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-identify-verification-service/events.json",
+      "kind": "github_events",
+      "count": 11
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-identify-verification-service/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-identify-verification-service/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 9
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-identify-verification-service/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-identify-verification-service/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-login/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-login/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-login/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-login/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-login/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-login/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-login/releases.json",
+      "kind": "github_releases",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-mobile/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-mobile/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-mobile/events.json",
+      "kind": "github_events",
+      "count": 98
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-mobile/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 57
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-mobile/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-mobile/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 15
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-mobile/releases.json",
+      "kind": "github_releases",
+      "count": 8
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-api/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-api/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-api/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-api/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-api/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-api/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-api/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-service/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-service/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-service/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-service/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-service/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-service/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-moderation-service/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-server/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-server/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-server/events.json",
+      "kind": "github_events",
+      "count": 95
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-server/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-server/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 30
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-server/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-server/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-sync/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-sync/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-sync/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-sync/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-sync/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-sync/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-name-sync/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-push-service/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-push-service/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-push-service/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-push-service/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-push-service/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 11
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-push-service/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-push-service/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-realness/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-realness/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-realness/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-realness/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-realness/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-realness/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-realness/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-manager/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-manager/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-manager/events.json",
+      "kind": "github_events",
+      "count": 89
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-manager/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-manager/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 50
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-manager/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-manager/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-sync/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-sync/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-sync/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-sync/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-sync/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-sync/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-relay-sync/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-rest-gateway/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-rest-gateway/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-rest-gateway/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-rest-gateway/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-rest-gateway/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-rest-gateway/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-rest-gateway/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-router/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-router/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-router/events.json",
+      "kind": "github_events",
+      "count": 23
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-router/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-router/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 8
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-router/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-router/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-signer/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-signer/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-signer/events.json",
+      "kind": "github_events",
+      "count": 7
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-signer/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-signer/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-signer/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-signer/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-sky/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-sky/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-sky/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-sky/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-sky/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 10
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-sky/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-sky/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-space/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-space/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-space/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-space/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-space/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-space/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-space/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-upload-server/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-upload-server/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-upload-server/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-upload-server/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-upload-server/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-upload-server/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-upload-server/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-web/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-web/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-web/events.json",
+      "kind": "github_events",
+      "count": 99
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-web/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 19
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-web/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-web/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 6
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/divine-web/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast_flutter_demo/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast_flutter_demo/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast_flutter_demo/events.json",
+      "kind": "github_events",
+      "count": 6
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast_flutter_demo/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast_flutter_demo/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast_flutter_demo/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/keycast_flutter_demo/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/social-media-age-rules-db/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/social-media-age-rules-db/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/social-media-age-rules-db/events.json",
+      "kind": "github_events",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/social-media-age-rules-db/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/social-media-age-rules-db/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/social-media-age-rules-db/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/divinevideo/social-media-age-rules-db/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/elnosh/gonuts/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/elnosh/gonuts/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/elnosh/gonuts/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/elnosh/gonuts/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/elnosh/gonuts/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 92
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/elnosh/gonuts/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/elnosh/gonuts/releases.json",
+      "kind": "github_releases",
+      "count": 6
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/hzrd149/blossom/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/hzrd149/blossom/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/hzrd149/blossom/events.json",
+      "kind": "github_events",
+      "count": 32
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/hzrd149/blossom/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/hzrd149/blossom/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 73
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/hzrd149/blossom/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/hzrd149/blossom/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/.github/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/.github/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/.github/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/.github/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/.github/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/.github/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/.github/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/agent-config/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/agent-config/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/agent-config/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/agent-config/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/agent-config/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/agent-config/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/agent-config/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/botburrow/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/botburrow/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/botburrow/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/botburrow/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/botburrow/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 16
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/botburrow/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/botburrow/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/ipf.dev/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/ipf.dev/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/ipf.dev/events.json",
+      "kind": "github_events",
+      "count": 12
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/ipf.dev/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/ipf.dev/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/ipf.dev/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/ipf.dev/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot/events.json",
+      "kind": "github_events",
+      "count": 62
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 45
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-ts/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-ts/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-ts/events.json",
+      "kind": "github_events",
+      "count": 56
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-ts/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-ts/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 68
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-ts/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-ts/releases.json",
+      "kind": "github_releases",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-web/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-web/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-web/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-web/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-web/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-web/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmot-web/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmots-web-chat/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmots-web-chat/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmots-web-chat/events.json",
+      "kind": "github_events",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmots-web-chat/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmots-web-chat/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 6
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmots-web-chat/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/marmots-web-chat/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk/events.json",
+      "kind": "github_events",
+      "count": 98
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk/releases.json",
+      "kind": "github_releases",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin/events.json",
+      "kind": "github_events",
+      "count": 29
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin-example/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin-example/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin-example/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin-example/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin-example/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin-example/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-kotlin-example/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python/events.json",
+      "kind": "github_events",
+      "count": 29
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python-example/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python-example/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python-example/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python-example/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python-example/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python-example/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-python-example/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby/events.json",
+      "kind": "github_events",
+      "count": 26
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby-example/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby-example/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby-example/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby-example/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby-example/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby-example/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-ruby-example/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-swift/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-swift/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-swift/events.json",
+      "kind": "github_events",
+      "count": 20
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-swift/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-swift/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-swift/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-swift/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-web/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-web/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-web/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-web/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-web/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-web/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/mdk-web/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/media-assets/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/media-assets/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/media-assets/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/media-assets/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/media-assets/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/media-assets/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/media-assets/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/nostr-doctor/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/nostr-doctor/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/nostr-doctor/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/nostr-doctor/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/nostr-doctor/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/nostr-doctor/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/nostr-doctor/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-lmdb-storage/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-lmdb-storage/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-lmdb-storage/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-lmdb-storage/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-lmdb-storage/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-lmdb-storage/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-lmdb-storage/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-redb-storage/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-redb-storage/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-redb-storage/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-redb-storage/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-redb-storage/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-redb-storage/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-redb-storage/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-sled-storage/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-sled-storage/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-sled-storage/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-sled-storage/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-sled-storage/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-sled-storage/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/openmls-sled-storage/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/parres.org/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/parres.org/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/parres.org/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/parres.org/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/parres.org/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/parres.org/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/parres.org/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/propose/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/propose/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/propose/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/propose/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/propose/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/propose/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/propose/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/proton-beam/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/proton-beam/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/proton-beam/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/proton-beam/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/proton-beam/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/proton-beam/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/proton-beam/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/transponder/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/transponder/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/transponder/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/transponder/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/transponder/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 44
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/transponder/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/transponder/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 38
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise/releases.json",
+      "kind": "github_releases",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-meta/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-meta/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-meta/events.json",
+      "kind": "github_events",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-meta/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-meta/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-meta/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-meta/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-podcast/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-podcast/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-podcast/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-podcast/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-podcast/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-podcast/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-podcast/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-rs/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-rs/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-rs/events.json",
+      "kind": "github_events",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-rs/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 9
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-rs/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-rs/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-rs/releases.json",
+      "kind": "github_releases",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-web/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-web/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-web/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-web/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-web/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-web/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/whitenoise-web/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/wn-tui/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/wn-tui/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/wn-tui/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/wn-tui/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/wn-tui/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/wn-tui/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/marmot-protocol/wn-tui/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/minibits-cash/minibits_wallet/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/minibits-cash/minibits_wallet/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/minibits-cash/minibits_wallet/events.json",
+      "kind": "github_events",
+      "count": 23
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/minibits-cash/minibits_wallet/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/minibits-cash/minibits_wallet/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 42
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/minibits-cash/minibits_wallet/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/minibits-cash/minibits_wallet/releases.json",
+      "kind": "github_releases",
+      "count": 24
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/permissionlesstech/bitchat/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/permissionlesstech/bitchat/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/permissionlesstech/bitchat/events.json",
+      "kind": "github_events",
+      "count": 98
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/permissionlesstech/bitchat/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/permissionlesstech/bitchat/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 100
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/permissionlesstech/bitchat/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/permissionlesstech/bitchat/releases.json",
+      "kind": "github_releases",
+      "count": 14
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/ditto/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/ditto/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/ditto/events.json",
+      "kind": "github_events",
+      "count": 99
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/ditto/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/ditto/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/ditto/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/ditto/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/mostr-uptime/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/mostr-uptime/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/mostr-uptime/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/mostr-uptime/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/mostr-uptime/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/mostr-uptime/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/mostr-uptime/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostr-skills/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostr-skills/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostr-skills/events.json",
+      "kind": "github_events",
+      "count": 4
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostr-skills/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostr-skills/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostr-skills/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostr-skills/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostrify/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostrify/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostrify/events.json",
+      "kind": "github_events",
+      "count": 3
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostrify/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostrify/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostrify/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/nostrify/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/openclaw-skills/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/openclaw-skills/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/openclaw-skills/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/openclaw-skills/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/openclaw-skills/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/openclaw-skills/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/openclaw-skills/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/rebased/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/rebased/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/rebased/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/rebased/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/rebased/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/rebased/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/rebased/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/seeded-rsa/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/seeded-rsa/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/seeded-rsa/events.json",
+      "kind": "github_events",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/seeded-rsa/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/seeded-rsa/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/seeded-rsa/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/seeded-rsa/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/shakespeare/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/shakespeare/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/shakespeare/events.json",
+      "kind": "github_events",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/shakespeare/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/shakespeare/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/shakespeare/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/shakespeare/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/soapbox/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/soapbox/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/soapbox/events.json",
+      "kind": "github_events",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/soapbox/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/soapbox/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/soapbox/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/soapbox-pub/soapbox/releases.json",
+      "kind": "github_releases",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zapstore/zapstore/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zapstore/zapstore/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zapstore/zapstore/events.json",
+      "kind": "github_events",
+      "count": 98
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zapstore/zapstore/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zapstore/zapstore/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 37
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zapstore/zapstore/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zapstore/zapstore/releases.json",
+      "kind": "github_releases",
+      "count": 24
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/cashu-swift/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/cashu-swift/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/cashu-swift/events.json",
+      "kind": "github_events",
+      "count": 10
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/cashu-swift/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/cashu-swift/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 18
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/cashu-swift/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 2
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/cashu-swift/releases.json",
+      "kind": "github_releases",
+      "count": 5
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/macadamia/meta.json",
+      "kind": "repo_meta",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/macadamia/repo.json",
+      "kind": "github_repo",
+      "count": null
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/macadamia/events.json",
+      "kind": "github_events",
+      "count": 31
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/macadamia/issues-updated.json",
+      "kind": "github_issues_updated",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/macadamia/pulls-updated.json",
+      "kind": "github_pulls_updated",
+      "count": 46
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/macadamia/commits-since.json",
+      "kind": "github_commits_since",
+      "count": 0
+    },
+    {
+      "path": "data/raw/github/daily/2026-05-13/zeugmaster/macadamia/releases.json",
+      "kind": "github_releases",
+      "count": 14
+    },
+    {
+      "path": "data/raw/github/org-discovery/2026-05-13/marmot-protocol/snapshot.json",
+      "kind": "org_snapshot",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/org-discovery/2026-05-13/divinevideo/snapshot.json",
+      "kind": "org_snapshot",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/org-discovery/2026-05-13/soapbox-pub/snapshot.json",
+      "kind": "org_snapshot",
+      "count": 1
+    },
+    {
+      "path": "data/raw/github/org-discovery/2026-05-13/cashubtc/snapshot.json",
+      "kind": "org_snapshot",
+      "count": 1
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "repos_attempted": 107,
+    "repos_succeeded": 107,
+    "repos_with_errors": 0,
+    "org_snapshots": 4,
+    "commands": 650
+  }
+}

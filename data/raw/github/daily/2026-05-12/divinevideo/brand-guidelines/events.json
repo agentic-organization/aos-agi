@@ -1,0 +1,440 @@
+[
+  {
+    "id": "11366945846",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1175835688,
+      "name": "divinevideo/brand-guidelines",
+      "url": "https://api.github.com/repos/divinevideo/brand-guidelines"
+    },
+    "payload": {
+      "repository_id": 1175835688,
+      "push_id": 33658374711,
+      "ref": "refs/heads/main",
+      "head": "f2a8e657853cf882f6ac610e6593181029a8215a",
+      "before": "1d943be939e49db42b8a6b53e35eb50e5815ec69"
+    },
+    "public": true,
+    "created_at": "2026-05-03T23:44:28Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9040400030",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1175835688,
+      "name": "divinevideo/brand-guidelines",
+      "url": "https://api.github.com/repos/divinevideo/brand-guidelines"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 2,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/brand-guidelines/pulls/2",
+        "id": 3621206177,
+        "number": 2,
+        "head": {
+          "ref": "feat/welcome-home-brand-copy",
+          "sha": "a2282627fcd2de3ff71377ed7ccc744ed266ad08",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1d943be939e49db42b8a6b53e35eb50e5815ec69",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-03T23:44:27Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9040356179",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1175835688,
+      "name": "divinevideo/brand-guidelines",
+      "url": "https://api.github.com/repos/divinevideo/brand-guidelines"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 2,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/brand-guidelines/pulls/2",
+        "id": 3621206177,
+        "number": 2,
+        "head": {
+          "ref": "feat/welcome-home-brand-copy",
+          "sha": "a2282627fcd2de3ff71377ed7ccc744ed266ad08",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1d943be939e49db42b8a6b53e35eb50e5815ec69",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-03T23:40:11Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11366290420",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1175835688,
+      "name": "divinevideo/brand-guidelines",
+      "url": "https://api.github.com/repos/divinevideo/brand-guidelines"
+    },
+    "payload": {
+      "ref": "feat/welcome-home-brand-copy",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/welcome-home-brand-copy",
+      "master_branch": "main",
+      "description": "diVine brand guidelines - Brand DNA, tone of voice, and visual identity",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-03T23:07:38Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981509117",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1175835688,
+      "name": "divinevideo/brand-guidelines",
+      "url": "https://api.github.com/repos/divinevideo/brand-guidelines"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 1,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/brand-guidelines/pulls/1",
+        "id": 3605282949,
+        "number": 1,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "38e2421713f35555d4d8ba8557758fb936e5044b",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "4285a9424402b160554b1a3a67898413b364fe9f",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:22Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11274934595",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1175835688,
+      "name": "divinevideo/brand-guidelines",
+      "url": "https://api.github.com/repos/divinevideo/brand-guidelines"
+    },
+    "payload": {
+      "repository_id": 1175835688,
+      "push_id": 33566332961,
+      "ref": "refs/heads/main",
+      "head": "1d943be939e49db42b8a6b53e35eb50e5815ec69",
+      "before": "4285a9424402b160554b1a3a67898413b364fe9f"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:23Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981385164",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1175835688,
+      "name": "divinevideo/brand-guidelines",
+      "url": "https://api.github.com/repos/divinevideo/brand-guidelines"
+    },
+    "payload": {
+      "review": {
+        "id": 4209264692,
+        "node_id": "PRR_kwDORhXUKM765Eg0",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. Contribution standards check complete. Approved.",
+        "commit_id": "38e2421713f35555d4d8ba8557758fb936e5044b",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/brand-guidelines/pull/1#pullrequestreview-4209264692",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/brand-guidelines/pulls/1",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/brand-guidelines/pull/1#pullrequestreview-4209264692"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/brand-guidelines/pulls/1"
+          }
+        },
+        "submitted_at": "2026-05-01T00:11:49Z",
+        "updated_at": "2026-05-01T00:11:49Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/brand-guidelines/pulls/1",
+        "id": 3605282949,
+        "number": 1,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "38e2421713f35555d4d8ba8557758fb936e5044b",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "4285a9424402b160554b1a3a67898413b364fe9f",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:11:50Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11222000303",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1175835688,
+      "name": "divinevideo/brand-guidelines",
+      "url": "https://api.github.com/repos/divinevideo/brand-guidelines"
+    },
+    "payload": {
+      "ref": "codex/repo-contribution-guardrails",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/repo-contribution-guardrails",
+      "master_branch": "main",
+      "description": "diVine brand guidelines - Brand DNA, tone of voice, and visual identity",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-29T22:18:49Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8934629948",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1175835688,
+      "name": "divinevideo/brand-guidelines",
+      "url": "https://api.github.com/repos/divinevideo/brand-guidelines"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 1,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/brand-guidelines/pulls/1",
+        "id": 3605282949,
+        "number": 1,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "38e2421713f35555d4d8ba8557758fb936e5044b",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "4285a9424402b160554b1a3a67898413b364fe9f",
+          "repo": {
+            "id": 1175835688,
+            "url": "https://api.github.com/repos/divinevideo/brand-guidelines",
+            "name": "brand-guidelines"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-29T22:18:48Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]

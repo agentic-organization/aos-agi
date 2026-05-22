@@ -1,0 +1,494 @@
+[
+  {
+    "sha": "e914fc7f00c76539247a083f424119a950c9da11",
+    "node_id": "C_kwDOL5Eek9oAKGU5MTRmYzdmMDBjNzY1MzkyNDdhMDgzZjQyNDExOWE5NTBjOWRhMTE",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T00:24:43Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-14T00:24:43Z"
+      },
+      "message": "Display zap amounts as USD by default and unify the on-chain/Lightning icon\n\nZap overlays, notifications, embedded zap cards, interaction modals, and\ndetail pages all rendered amounts as '6.3k sats' regardless of the user's\npreference, and on-chain (kind 8333) zaps were singled out with a Bitcoin\nicon and a 'Bitcoin-zapped' verb. The social meaning of a Lightning zap\nand an on-chain zap is identical: someone paid the author. Treating the\ntwo rails differently in the feed gave them undue visual prominence and\nforced users to do their own sats-to-dollars conversion.\n\nAdd a 'currencyDisplay' AppConfig field (default 'usd', alternative\n'sats') with a Currency section in Advanced Settings, and a\nuseFormatMoney() hook that returns the active formatter. The hook reuses\nthe existing ['btc-price', esploraBaseUrl] query so all callers share a\nsingle price fetch, and falls back to sats when the price endpoint is\nunavailable so the UI never blocks on a network round-trip. The\npreference also rides along on encrypted settings sync so it follows the\nuser across devices.\n\nWire the hook into every zap display: feed overlays, kind 9735 and 8333\nreceipt cards, embedded zap cards, the InteractionsModal Zaps tab, zap\nnotifications, music/podcast zap totals, and all action-bar zap counters.\nReplace the Bitcoin icon with the Zap icon for kind 8333 overlays and in\nthe CommentContext kind icon map, and update KIND_LABELS so 8333 is\nplain 'Zap' instead of 'Bitcoin zap'. The Bitcoin icon stays in the\nZapDialog tab strip (where users explicitly choose Lightning vs.\non-chain) and on profile-field BTC address rows.",
+      "tree": {
+        "sha": "b0419fd6c926058c0a6e2e96f6f8e16dd7d7aa25",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/b0419fd6c926058c0a6e2e96f6f8e16dd7d7aa25"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/e914fc7f00c76539247a083f424119a950c9da11",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoFFksACgkQchHR+ZdE\n+7f9JA/7BWtGsPDWgyswJyNl0jtJF5A28HElSsrv45NYeukgiQoV+ZL+hGtediXr\nOeC/bd4Wv4p62Z1QLKd6Yt88y5rwnPxWm1gZIFXlvZsPJMrGfdosLwWTqlQ3nEfi\naAObluaqaHi5wzWaLyqS854rRUy/3epDB68qdG32UqHKhD5PiE/7hc3SNzKvA+V0\nLnUYUuCzTus2vblgmNrhC6GLaR2ps5O4hAQx17nogq3XU2J/0lSklTQbZWwkEzEv\nYjuWxy9XjnJ5iwSkvB2MpcrwfdmOsfq5rJptvhokzHKP7OBwPuf+oMalf5nmtSfn\n8CsgOSiin3mroB2yg/ba730NHcWOLHgmJ9kJAV1oNLyCmiqZb8gtygSsafiTx95j\nV0EzE+cm8X431V8XDU20W+1N/IOp/PoOegIE3sUkGDyPvZB2G8xx6jv3nhOBiXKw\n3jOUfWy4TFaD2McHmCVTXN/YhbkxOHdjUgTubPnq5NlDp4IUUTgzL0EnXRXgjlA6\nfwhmPdKRAo8OrysHCDKQmSyLdXR485AKIBerSX4oROCtXtEYvrqar7p/PbEdgG17\nTVMT9lV9P2FvdzKSrSJQhgBotS4OQ0VY8ehJWL7TZwrxsSYKNTdUqdOaQx/1NJv2\n/CVCidVtOzawCjds5a3X2WnyEa7WUvCjLX3XHXhTvhMK6BYhatI=\n=PGdu\n-----END PGP SIGNATURE-----",
+        "payload": "tree b0419fd6c926058c0a6e2e96f6f8e16dd7d7aa25\nparent a20d40f8167b00ff06111bfba2b8daf490fc82a6\nauthor Alex Gleason <alex@alexgleason.me> 1778718283 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778718283 -0500\n\nDisplay zap amounts as USD by default and unify the on-chain/Lightning icon\n\nZap overlays, notifications, embedded zap cards, interaction modals, and\ndetail pages all rendered amounts as '6.3k sats' regardless of the user's\npreference, and on-chain (kind 8333) zaps were singled out with a Bitcoin\nicon and a 'Bitcoin-zapped' verb. The social meaning of a Lightning zap\nand an on-chain zap is identical: someone paid the author. Treating the\ntwo rails differently in the feed gave them undue visual prominence and\nforced users to do their own sats-to-dollars conversion.\n\nAdd a 'currencyDisplay' AppConfig field (default 'usd', alternative\n'sats') with a Currency section in Advanced Settings, and a\nuseFormatMoney() hook that returns the active formatter. The hook reuses\nthe existing ['btc-price', esploraBaseUrl] query so all callers share a\nsingle price fetch, and falls back to sats when the price endpoint is\nunavailable so the UI never blocks on a network round-trip. The\npreference also rides along on encrypted settings sync so it follows the\nuser across devices.\n\nWire the hook into every zap display: feed overlays, kind 9735 and 8333\nreceipt cards, embedded zap cards, the InteractionsModal Zaps tab, zap\nnotifications, music/podcast zap totals, and all action-bar zap counters.\nReplace the Bitcoin icon with the Zap icon for kind 8333 overlays and in\nthe CommentContext kind icon map, and update KIND_LABELS so 8333 is\nplain 'Zap' instead of 'Bitcoin zap'. The Bitcoin icon stays in the\nZapDialog tab strip (where users explicitly choose Lightning vs.\non-chain) and on profile-field BTC address rows.\n",
+        "verified_at": "2026-05-14T00:26:04Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/e914fc7f00c76539247a083f424119a950c9da11",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/e914fc7f00c76539247a083f424119a950c9da11",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/e914fc7f00c76539247a083f424119a950c9da11/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a20d40f8167b00ff06111bfba2b8daf490fc82a6",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a20d40f8167b00ff06111bfba2b8daf490fc82a6",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/a20d40f8167b00ff06111bfba2b8daf490fc82a6"
+      }
+    ]
+  },
+  {
+    "sha": "a20d40f8167b00ff06111bfba2b8daf490fc82a6",
+    "node_id": "C_kwDOL5Eek9oAKGEyMGQ0MGY4MTY3YjAwZmYwNjExMWJmYmEyYjhkYWY0OTBmYzgyYTY",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T23:52:02Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T23:52:02Z"
+      },
+      "message": "Render reaction and zap overlays consistently across all feeds\n\nThe home feed unwraps kind 7 reactions and kind 9735 / 8333 zaps so the\ntarget post renders with an \"X reacted\" / \"X zapped N sats\" header on\ntop. Profile feeds, custom tab feeds, follow-page feeds, and people-list\nfeeds all reused the same FeedItem shape and the same NoteCard renderer\nbut did the unwrap inline, with only a kind 6 / 16 repost branch — so\nwhen a user toggled reactions or zaps on, those events fell through to\nNoteCard's standalone activity-card layout instead of becoming an\noverlay header on the target post.\n\nExtract buildFeedItems / dedupeFeedItems from useFeed into feedUtils so\nevery feed hook shares the same pipeline, update useProfileFeed and\nuseTabFeed to use it, teach filterByTab's posts-tab filter to treat\nreaction / zap overlays the same way it treats reposts (always pass\nthrough, since they're activity rather than authored content), pass\nreactedBy / zappedBy into NoteCard at every render site, and replace\nthe hand-rolled repost-only React keys with feedItemKey() so the same\ntarget event with multiple wrappers (e.g. a repost AND a reaction) gets\ndistinct stable keys.\n\nRegression-of: 4138e12d80f8c0d68f2ab28e7a3bc28c4a8b34ea",
+      "tree": {
+        "sha": "5f47ce1fcea4a2e8301070e72548c1e93b325b15",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/5f47ce1fcea4a2e8301070e72548c1e93b325b15"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/a20d40f8167b00ff06111bfba2b8daf490fc82a6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoFDqIACgkQchHR+ZdE\n+7cqJA//SFeSYO0zqWajSoHnWcN/6M99k4hvc8wtoC5fSg8ohH/44yeg58IX7n98\nXR8mpfndCrkj4QjDzF419IIqhdxxfKi4SmBaaSm2xfj7xAmSMM8GpljwbaBwsDHU\nd+la04p0m7/tlMQzrFOxypNA0wpI+TUTppLvnhhqYb91m4/bfp2vtX+r5oMfu4l0\n/Mm8Ts9QycFaQ/YsD/CCPEz/12wcLuXbUGLmWcIFC6pfarRnDwjdh/LWTuzNVzME\nHeULxNQ1K7GITyxRS1wkByBHmkbKr+QYD92hRMJc9VM+Ka1sn2UqBbjw4NszmRXq\nb4aCLh5623Kj+A1wg6y/iIFlnrPpbtj3zI0N5JeW2TSLwFKDEJCTloFJlc70VPTT\nBLUH8qxN2nGumwdRYj85fMo4F4VOyV7jY+6ME8YA3kcDFE4ebud/qUJHECvVhoT7\nQVY6XSLhb5vfJAJDmbbnABT2XNZYHFw60GPWNJTIBC7zwsrQ5RfD/cLEI5l1BTAn\npPtNJrZnqNletqn76G5Tzu1TuWZ6UY8mc3LCBel68lJawzfxd/lPokMw8lN5+Wet\n1+ZuQW6bobuA4LfQl1peWmsRKEqRsbodL9EPGt0zcCDw4LT2VRlgeug0Cukc7csv\nOBAx1PkEcttoIuX6nUQjoqKB80cDnFZ9fdJdDmQODgDoeUrW43g=\n=BFiH\n-----END PGP SIGNATURE-----",
+        "payload": "tree 5f47ce1fcea4a2e8301070e72548c1e93b325b15\nparent 4138e12d5e9cc2e9efd43156b175d6ee908f01e5\nauthor Alex Gleason <alex@alexgleason.me> 1778716322 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778716322 -0500\n\nRender reaction and zap overlays consistently across all feeds\n\nThe home feed unwraps kind 7 reactions and kind 9735 / 8333 zaps so the\ntarget post renders with an \"X reacted\" / \"X zapped N sats\" header on\ntop. Profile feeds, custom tab feeds, follow-page feeds, and people-list\nfeeds all reused the same FeedItem shape and the same NoteCard renderer\nbut did the unwrap inline, with only a kind 6 / 16 repost branch — so\nwhen a user toggled reactions or zaps on, those events fell through to\nNoteCard's standalone activity-card layout instead of becoming an\noverlay header on the target post.\n\nExtract buildFeedItems / dedupeFeedItems from useFeed into feedUtils so\nevery feed hook shares the same pipeline, update useProfileFeed and\nuseTabFeed to use it, teach filterByTab's posts-tab filter to treat\nreaction / zap overlays the same way it treats reposts (always pass\nthrough, since they're activity rather than authored content), pass\nreactedBy / zappedBy into NoteCard at every render site, and replace\nthe hand-rolled repost-only React keys with feedItemKey() so the same\ntarget event with multiple wrappers (e.g. a repost AND a reaction) gets\ndistinct stable keys.\n\nRegression-of: 4138e12d80f8c0d68f2ab28e7a3bc28c4a8b34ea\n",
+        "verified_at": "2026-05-13T23:53:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a20d40f8167b00ff06111bfba2b8daf490fc82a6",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/a20d40f8167b00ff06111bfba2b8daf490fc82a6",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a20d40f8167b00ff06111bfba2b8daf490fc82a6/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4138e12d5e9cc2e9efd43156b175d6ee908f01e5",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/4138e12d5e9cc2e9efd43156b175d6ee908f01e5",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/4138e12d5e9cc2e9efd43156b175d6ee908f01e5"
+      }
+    ]
+  },
+  {
+    "sha": "4138e12d5e9cc2e9efd43156b175d6ee908f01e5",
+    "node_id": "C_kwDOL5Eek9oAKDQxMzhlMTJkNWU5Y2MyZTllZmQ0MzE1NmIxNzVkNmVlOTA4ZjAxZTU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T20:33:06Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T20:33:06Z"
+      },
+      "message": "Add feed toggles for reactions and zaps, rendered as overlays on the target post\n\nTwo new Feed-section toggles in Content Settings, both disabled by\ndefault (existing users don't suddenly get a noisy feed of every like\nand zap their follows hand out):\n\n  - Reactions (kind 7)\n  - Zaps (kind 9735 Lightning + kind 8333 on-chain — one combined\n    toggle since users don't think in terms of payment rails)\n\nWhen enabled, reactions and zaps from followed users surface in the\nFollows feed as a header above the target post — same shape as the\nexisting kind 6 / 16 repost overlay (\"X reacted to\" / \"X zapped\n1,234 sats\" / \"X reposted\"). The reaction overlay renders the kind 7\nevent's actual emoji via ReactionEmoji (handling unicode, \"+\"/\"-\"\nlikes, and NIP-30 custom emojis) rather than a generic smiley. The\ntarget event is unwrapped by useFeed and useProfileFeed in a single\nbatched ids query, then deduped so a direct post always wins over any\noverlay for the same event.\n\nThe verb in each overlay header is a Link to the underlying reaction\n/ repost / zap event's /:nip19 page, matching the new behavior in\nNotifications. Reposts now carry the wrapper event (`repostEvent`)\nthrough FeedItem so this works for them too without a separate fetch.\n\nGlobal feed continues to exclude reposts, and now also excludes\nreactions and zaps for the same reason — they need an author filter\nto be useful and would otherwise drown out direct posts.",
+      "tree": {
+        "sha": "72d19c8c6a5432275be6ca9ee14dbcb691969e05",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/72d19c8c6a5432275be6ca9ee14dbcb691969e05"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/4138e12d5e9cc2e9efd43156b175d6ee908f01e5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoE4AIACgkQchHR+ZdE\n+7czJxAAuk+9gSqoNAyaGgi7Cmgl0BYThJL3Ub/u0UrqO5Uox9hTCX+1RVtgJ0cB\naIuf9slsV+m1UHB+ZR1jE7vHvlEqK0+NKzBlNjDm6/6rYPBlMAuVzWuDC1mg99V7\n5XSWnmLHuJinSZ9SHfGtpc9KScybWUcIdq8b+tDNaC0JLDxS1bW1p/DXTxnO7Vla\ncSM/oF8sJMgEAp7nT09Q6acuOz4a837l00Frt0kxmf7aTkjGLwihtL8YZ97o4I6c\nddSa8qRUjoQmt9BczdbzFuYs5NZGk5dMlSSEtvTLfiP0TRKJ4s2KcbYAjavvq/60\nrgwybjaY5eEAJxzBH5Mrmb6F/mtFP5gI0Jfu6bPxOgj9rCoLsmPSrEfVGWH6xDXl\njPAOlCWLC+5/l52ePrMOzK/JAllI8f3SLX2a+HT2JDnFu+FcTj4g4CgCdTA87kcr\nce7lgvU/+0a16Myfoo/p8Urmbc07tBvsXJf2F41imbAeb5zWS+g3kZIk91yoiizY\nEQgqrD3Bwrls/oASN5f8nZAUef+jUFc2m8OSu/qDi3whkfGeVfKIM35Od4rnVjGW\nmFYcVpte+aZ5CULYMUyUpajRiXv5CQGn+uUr2fS9mmfd/A8dXApe70fAEIQTCzhU\ndIfAkgPwiC9tKvV0//KCP/C+hb6W+CqA9JwTvo+pYqHGYwS1yuM=\n=diiR\n-----END PGP SIGNATURE-----",
+        "payload": "tree 72d19c8c6a5432275be6ca9ee14dbcb691969e05\nparent 2ede59d2dbc8213d8b76d5b3df748657b66db886\nauthor Alex Gleason <alex@alexgleason.me> 1778704386 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778704386 -0500\n\nAdd feed toggles for reactions and zaps, rendered as overlays on the target post\n\nTwo new Feed-section toggles in Content Settings, both disabled by\ndefault (existing users don't suddenly get a noisy feed of every like\nand zap their follows hand out):\n\n  - Reactions (kind 7)\n  - Zaps (kind 9735 Lightning + kind 8333 on-chain — one combined\n    toggle since users don't think in terms of payment rails)\n\nWhen enabled, reactions and zaps from followed users surface in the\nFollows feed as a header above the target post — same shape as the\nexisting kind 6 / 16 repost overlay (\"X reacted to\" / \"X zapped\n1,234 sats\" / \"X reposted\"). The reaction overlay renders the kind 7\nevent's actual emoji via ReactionEmoji (handling unicode, \"+\"/\"-\"\nlikes, and NIP-30 custom emojis) rather than a generic smiley. The\ntarget event is unwrapped by useFeed and useProfileFeed in a single\nbatched ids query, then deduped so a direct post always wins over any\noverlay for the same event.\n\nThe verb in each overlay header is a Link to the underlying reaction\n/ repost / zap event's /:nip19 page, matching the new behavior in\nNotifications. Reposts now carry the wrapper event (`repostEvent`)\nthrough FeedItem so this works for them too without a separate fetch.\n\nGlobal feed continues to exclude reposts, and now also excludes\nreactions and zaps for the same reason — they need an author filter\nto be useful and would otherwise drown out direct posts.\n",
+        "verified_at": "2026-05-13T20:33:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/4138e12d5e9cc2e9efd43156b175d6ee908f01e5",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/4138e12d5e9cc2e9efd43156b175d6ee908f01e5",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/4138e12d5e9cc2e9efd43156b175d6ee908f01e5/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2ede59d2dbc8213d8b76d5b3df748657b66db886",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/2ede59d2dbc8213d8b76d5b3df748657b66db886",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/2ede59d2dbc8213d8b76d5b3df748657b66db886"
+      }
+    ]
+  },
+  {
+    "sha": "2ede59d2dbc8213d8b76d5b3df748657b66db886",
+    "node_id": "C_kwDOL5Eek9oAKDJlZGU1OWQyZGJjODIxM2Q4Yjc2ZDViM2RmNzQ4NjU3YjY2ZGI4ODY",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T20:22:11Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T20:22:11Z"
+      },
+      "message": "Show zap amounts in notifications and link the verbs to the underlying event\n\nSome LNURL providers omit the `amount` tag entirely and only encode\nthe value inside the bolt11 invoice. NotificationsPage's local\n`getZapAmountSats` didn't parse bolt11, so those zaps showed up as\n\"X zapped you\" with no number. Move the helper to a shared module\nand route the 9735 branch through `extractZapAmount`, which already\nfalls back amount tag → description JSON → bolt11.\n\nWhile in this code, wrap the \"reacted to\", \"reposted\", and \"zapped\"\nverbs in a Link pointing at the underlying event's nevent so readers\ncan jump straight to the reaction / repost / zap detail page.",
+      "tree": {
+        "sha": "77d9b3ceb5f7d795b69e50b19529db7aa7015888",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/77d9b3ceb5f7d795b69e50b19529db7aa7015888"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/2ede59d2dbc8213d8b76d5b3df748657b66db886",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoE3XMACgkQchHR+ZdE\n+7eSphAAhXc2pkvx7gEtGYLtpQv/dDWJPcdm5a+Pmv/TrZYu5TceoaoJb5yTitsd\nHYSWQXa/te+wYahAiPtizQVdZ9uhmnPU/eCZrELL0uedw3T09eBHnSfiNaaXQDQ+\nRebEEDdX0BTwEntI2NpMqakSOLT8cdhD+0rs21TOOWZQv8FV23rvhZSsfUTh9vHa\nOgeGXXOLSGZh00bg72xYFZE4omC94ZnwVFMG9eeZBVIIQOMevSJw7fmhIu1c0b+B\n4mkWaqXRN2VHm4sw1Tq2lWyFksFA3Kxd5DQ6H+VTKUUWyXKeMBMwo1pC/lct1Ait\nVrZyCP9emu8mtB8jmHk5Dyzn147xs2NzVx3S18lIHu4/p5+Ayrx77HYX1e1k02Bp\nOd0rJ5aRJtf/3YYJBS9VUC8Ktx6+DKWm5esMX2d1Yr4ND+wwEy1sEMbwNspon+9n\nw3qY4VbaEyHtS0eNctwa1JCllt1ePRWuyQIRFyke3mn/7kim/7vMME2MhT8Ucm7Z\nFMMaHUtCkBTB9xUZHZe9U8lFdCczGdxilsvZzNG9xAbJr+kQ0WspQjt0Wx8m+IOC\ni2+dHr0UB3BUaZFkKQ5e1Q9CX38v6NLTT0v+NcORNqdzV41ClnPixdN2+HqzEbIk\nY54PNZkLswzzm6Sp/ih2iDriIUmDLz079ZLakIyWE/OBl9tzuvg=\n=1gCo\n-----END PGP SIGNATURE-----",
+        "payload": "tree 77d9b3ceb5f7d795b69e50b19529db7aa7015888\nparent 4cceaf652d7afc483b99a8a26a8e9ba1f864a065\nauthor Alex Gleason <alex@alexgleason.me> 1778703731 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778703731 -0500\n\nShow zap amounts in notifications and link the verbs to the underlying event\n\nSome LNURL providers omit the `amount` tag entirely and only encode\nthe value inside the bolt11 invoice. NotificationsPage's local\n`getZapAmountSats` didn't parse bolt11, so those zaps showed up as\n\"X zapped you\" with no number. Move the helper to a shared module\nand route the 9735 branch through `extractZapAmount`, which already\nfalls back amount tag → description JSON → bolt11.\n\nWhile in this code, wrap the \"reacted to\", \"reposted\", and \"zapped\"\nverbs in a Link pointing at the underlying event's nevent so readers\ncan jump straight to the reaction / repost / zap detail page.\n",
+        "verified_at": "2026-05-13T20:33:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/2ede59d2dbc8213d8b76d5b3df748657b66db886",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/2ede59d2dbc8213d8b76d5b3df748657b66db886",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/2ede59d2dbc8213d8b76d5b3df748657b66db886/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4cceaf652d7afc483b99a8a26a8e9ba1f864a065",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/4cceaf652d7afc483b99a8a26a8e9ba1f864a065",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/4cceaf652d7afc483b99a8a26a8e9ba1f864a065"
+      }
+    ]
+  },
+  {
+    "sha": "4cceaf652d7afc483b99a8a26a8e9ba1f864a065",
+    "node_id": "C_kwDOL5Eek9oAKDRjY2VhZjY1MmQ3YWZjNDgzYjk5YThhMjZhOGU5YmExZjg2NGEwNjU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T19:54:51Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T19:54:51Z"
+      },
+      "message": "Add a Mute All dropdown next to every Follow All button\n\nSplits the existing Follow All button on people-list, follow-pack, follow-set, badge, and Team Soapbox detail views into a primary Follow All + a caret dropdown whose lone option is Mute All. Mute All opens an AlertDialog and, on confirm, merges every pubkey in the list into the viewer's NIP-51 kind 10000 mute list. Lets you treat any people list as a mute source as well as a follow source.\n\nTo make mute meaningful for users who already followed someone before muting, follow-scoped feed queries now subtract muted pubkeys from the authors filter at query time, via a shared useMutedAuthorFilter hook that builds the muted-pubkey Set once per mute-list change and exposes a single excludeMuted helper. The hook replaces ten inline copies of the same filter — including two that allocated a new Set per follow-list element inside a .filter() callback. Render-layer mute filtering stays in place as a second line of defense.\n\nAlso adds reusable hooks for the bulk operations (useFollowActions.followMany, useMuteList.muteManyPubkeys) and replaces four duplicated inline Follow All implementations with a single FollowAllSplitButton component.",
+      "tree": {
+        "sha": "1d87b9ee91d04feda96ea926981aeb379254a323",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/1d87b9ee91d04feda96ea926981aeb379254a323"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/4cceaf652d7afc483b99a8a26a8e9ba1f864a065",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoE1wsACgkQchHR+ZdE\n+7fXWRAAwdsdumCb4juapsPsdmN11pZxLIGLDZdpDow3+YAvF6BJmlmSbvK5KAz3\ntZNhKyTReLOmwYFsxglUj+DXzNMt4XDNgj2FTCFEO8hpBMwG76kAtjBYGPcUwi3O\n+aCPWU4hahQrmz2mxiyMpDDnXj/gCOFClGW6MN6spvuZ8F+oHV7dq0eTlL+eKMm8\n2UDCSMqNbzYlvQWqWAc0KuHkklQmKP6l35hbW5Iz0jvOr9NOJ9gvDNFmXcxpuC+Q\nyLVTDOeuccSrSOWoMdXwaYaBqT4AA9rneN+TCAlKrPgXvzKs5EErqZPAH1XD1kWX\neP2HBALLHf3pn1G2cv2l7JFe0BOSgSuDuGQ0iP6bzw4lb80jfKNoGJ5dad/IyRBp\nNzdTD4btkzG+B2uAgBXp0+xjwIqGgS5kZ0l7THlhSk5Bv6bZRBvNF4wT+iYAhgbR\n6s26yzHZBnVR18Aifuj0OqIqDHC9oP0IURQjJ2VJgalHuootJ0KETQAkcWCoVrU2\nrgo+5THMLWQNxVHlXu/jW2sKxJmd8WwIwb1MMcgmD/3gvOfAj8vzFE6viCAMag4w\nPfW4rvXdMxecsQoUhfuGQ1jLePKHW1kHih/dTzOkTvrMdddo02/jdQq6ShQF0onc\nXsNUfUWrOilZq2/QROLhUu0u5s3lM0y/ed9G5lnN9lRUgBaDFws=\n=IAEV\n-----END PGP SIGNATURE-----",
+        "payload": "tree 1d87b9ee91d04feda96ea926981aeb379254a323\nparent 474ec6cc996a4ef94d8b2c9d4c09e66e2e82dfb6\nauthor Alex Gleason <alex@alexgleason.me> 1778702091 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778702091 -0500\n\nAdd a Mute All dropdown next to every Follow All button\n\nSplits the existing Follow All button on people-list, follow-pack, follow-set, badge, and Team Soapbox detail views into a primary Follow All + a caret dropdown whose lone option is Mute All. Mute All opens an AlertDialog and, on confirm, merges every pubkey in the list into the viewer's NIP-51 kind 10000 mute list. Lets you treat any people list as a mute source as well as a follow source.\n\nTo make mute meaningful for users who already followed someone before muting, follow-scoped feed queries now subtract muted pubkeys from the authors filter at query time, via a shared useMutedAuthorFilter hook that builds the muted-pubkey Set once per mute-list change and exposes a single excludeMuted helper. The hook replaces ten inline copies of the same filter — including two that allocated a new Set per follow-list element inside a .filter() callback. Render-layer mute filtering stays in place as a second line of defense.\n\nAlso adds reusable hooks for the bulk operations (useFollowActions.followMany, useMuteList.muteManyPubkeys) and replaces four duplicated inline Follow All implementations with a single FollowAllSplitButton component.\n",
+        "verified_at": "2026-05-13T19:55:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/4cceaf652d7afc483b99a8a26a8e9ba1f864a065",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/4cceaf652d7afc483b99a8a26a8e9ba1f864a065",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/4cceaf652d7afc483b99a8a26a8e9ba1f864a065/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "474ec6cc996a4ef94d8b2c9d4c09e66e2e82dfb6",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/474ec6cc996a4ef94d8b2c9d4c09e66e2e82dfb6",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/474ec6cc996a4ef94d8b2c9d4c09e66e2e82dfb6"
+      }
+    ]
+  },
+  {
+    "sha": "474ec6cc996a4ef94d8b2c9d4c09e66e2e82dfb6",
+    "node_id": "C_kwDOL5Eek9oAKDQ3NGVjNmNjOTk2YTRlZjk0ZDhiMmM5ZDRjMDllNjZlMmU4MmRmYjY",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T16:23:36Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-13T16:23:36Z"
+      },
+      "message": "Make the Esplora API base URL configurable\n\nHardcoded MEMPOOL_API constant in src/lib/bitcoin.ts becomes a baseUrl\nparameter on every fetch helper, sourced from a new `esploraBaseUrl`\nfield on AppConfig (default `https://mempool.space/api`). The wallet,\nzap dialogs, on-chain zap verification, and NIP-73 Bitcoin tx/address\npages now read the URL from useAppContext and pass it through, so\nself-hosted Esplora deployments (or Blockstream's) work without code\nchanges. The mempool.space-specific `/v1/prices` extension is still\nappended by fetchBtcPrice.",
+      "tree": {
+        "sha": "c808ce9e4128496fd5399adcd4634ba84b2dfbd6",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/c808ce9e4128496fd5399adcd4634ba84b2dfbd6"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/474ec6cc996a4ef94d8b2c9d4c09e66e2e82dfb6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoEpYgACgkQchHR+ZdE\n+7eaxBAAiyScnlaMObBdHTTOO5slyDj+aipfoG3VCIH9MVuT9aMoTrg2FKMNPeTY\nqhbePE2uOV+yEB1GE4FjrdJqhEoh27ktNAvorXXMES+DqefjGPDXHC/ZdP4cKM5/\ne4+0MtV4j6Xp4ZVP8XS4cCdSRRDUW5c98auF0hN3iMkLkFNC3MHQGIF17zuJw1FV\n39L8tPjaajvJdq6DBRmnE48TvKZFWhNIapeo+/SouHyHnM7pyrNgaSb9BPdJ+ExE\nemumFYiModhJz/GdyOLjeJ69EL9zBpvU08e3r8PUTqp4luEGKXKFvEAEa5oMEye5\n7OCc1HFnjZdNfKkxS7yJwY15vsvTkO0KJ6/v5ZTCvVkMzRS0fu7+bhq5I6y72K5r\nAB3Ar1xh8bCHR/kW53819qLZXqnc42pd8yuF/C17PKc11Q1/n55DZs51kuQekT4w\n9C/BbrtqjQ+QZ1oWxoAMOIxVo9UW9X0fJp/1Tax+x+f2MGmGYG/shXq9z5PfROSN\nprlL2v3PyIHNybrE3XSwZkLuPYkz9hBy7sdGcklz5aqrcFZwmv6vChrlWGWQvAXF\nx+JuvLS/q6uwKk7ghuUyL9RxPSyX9LqczOLdlTYN31FYQWyldp6/N+w0NnnNTv0B\nMJtNSMxSq6JgTOBaJe8U40h6JA968nM/+THnyj927ZUezfL741c=\n=Jxa2\n-----END PGP SIGNATURE-----",
+        "payload": "tree c808ce9e4128496fd5399adcd4634ba84b2dfbd6\nparent 0022b86299bce8a4ba288dbc6beee2a85989c524\nauthor Alex Gleason <alex@alexgleason.me> 1778689416 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1778689416 -0500\n\nMake the Esplora API base URL configurable\n\nHardcoded MEMPOOL_API constant in src/lib/bitcoin.ts becomes a baseUrl\nparameter on every fetch helper, sourced from a new `esploraBaseUrl`\nfield on AppConfig (default `https://mempool.space/api`). The wallet,\nzap dialogs, on-chain zap verification, and NIP-73 Bitcoin tx/address\npages now read the URL from useAppContext and pass it through, so\nself-hosted Esplora deployments (or Blockstream's) work without code\nchanges. The mempool.space-specific `/v1/prices` extension is still\nappended by fetchBtcPrice.\n",
+        "verified_at": "2026-05-13T16:24:42Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/474ec6cc996a4ef94d8b2c9d4c09e66e2e82dfb6",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/474ec6cc996a4ef94d8b2c9d4c09e66e2e82dfb6",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/474ec6cc996a4ef94d8b2c9d4c09e66e2e82dfb6/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0022b86299bce8a4ba288dbc6beee2a85989c524",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0022b86299bce8a4ba288dbc6beee2a85989c524",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/0022b86299bce8a4ba288dbc6beee2a85989c524"
+      }
+    ]
+  }
+]

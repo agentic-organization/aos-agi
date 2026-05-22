@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "08d5c44a9bdbff3bf6d73f887ce4cc686b6246c8",
+    "node_id": "C_kwDOQg6sZ9oAKDA4ZDVjNDRhOWJkYmZmM2JmNmQ3M2Y4ODdjZTRjYzY4NmI2MjQ2Yzg",
+    "commit": {
+      "author": {
+        "name": "stupidloud",
+        "email": "56048681+stupidloud@users.noreply.github.com",
+        "date": "2026-05-13T14:14:57Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-13T14:14:57Z"
+      },
+      "message": "Add Chinese localizations (#647)\n\n* Add Chinese localizations\n\n* Fix Chinese locale selection\n\n* Revert \"Fix Chinese locale selection\"\n\nThis reverts commit fa59dc2df05e90551334622d72b600ccc8f6816e.\n\n* Use zh fallback for Simplified Chinese\n\n* Fix script-specific locale equality\n\n* fix: persist Chinese locale settings\n\nBump whitenoise-rs to the current ref with Chinese language variants and map zh/zh_Hant through the Rust language bridge.\n\nCo-authored-by: stupidloud <klever1988@protonmail.com>\n\n* fix: preserve system locale scripts\n\nPreserve supported system locale script codes when resolving language settings and rendering the system language label.\n\n---------\n\nCo-authored-by: Jeff Gardner <202880+erskingardner@users.noreply.github.com>",
+      "tree": {
+        "sha": "99b4139b115fd988c2c77570d095a19eaab3418b",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/99b4139b115fd988c2c77570d095a19eaab3418b"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/08d5c44a9bdbff3bf6d73f887ce4cc686b6246c8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBIdhCRC1aQ7uu5UhlAAA+gQQAGzykvZi26ZaNK1K5/ExP/5F\npAZap7jgK9qLKzLoLq4Crtoic1N2GhIl+b7qU1az6sit5zuDLBijRo78u9CEzBL/\nO2jshD41sDlOVYvteL9RAxck755IdsJZOIXAJiUqd+nBvT2ADkwSsDC5uaf8sMqZ\nG9NJBdYlzIu+AEExZ8rlV+AHaqZ3vSmf/L1MR0jK+Eu2Bl48qRLk86l1k9LT6UH1\n6kxGNjyWA3O2yx5a0VzkNY51WSP+pa6FOk16hwfuVClgJ+CD+RlIV+vRSvXkPVsI\nHflZjLsIP7L9clmbxAw2vaEk5HaMA63Ro+CcZ/P16fWuDPO7d88V3srW8WQkam0n\nYjvp8idaqth2KQDHTJfaBW9T84QLQiH3UidDFcaDTQKfBmtR/ZGVxWbVPaI3f6yl\nAK8bCpvhc/BW7aviUy3X+4xTOXdUfKcEb53DV/UtA1scFzdf+xkp+IRksIcSI6Oc\n/dvtT2CoRB6QV1UMnRluWWfWokSy7Wl99IXsnicxeGw/tc4cgHzkTGaxCI5wuJKG\nAjvgQsseZ4heXU2KBUYXTo4TPxsOnmWFVNy4MGuG5SDvijrAcK6eJSYnUOpvDuCU\nfUfv9lbHrJ+vxTh64lV5JaxJ6raS/fwEUJGImx/tpRX/gLtBu/46nLPcdq1BotUB\nYzQEM9GasxUS5PgxGjJ+\n=EreY\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 99b4139b115fd988c2c77570d095a19eaab3418b\nparent 7f69b3e11e7b5b0973419f1cd1d9523203e579e5\nauthor stupidloud <56048681+stupidloud@users.noreply.github.com> 1778681697 +0800\ncommitter GitHub <noreply@github.com> 1778681697 -0400\n\nAdd Chinese localizations (#647)\n\n* Add Chinese localizations\n\n* Fix Chinese locale selection\n\n* Revert \"Fix Chinese locale selection\"\n\nThis reverts commit fa59dc2df05e90551334622d72b600ccc8f6816e.\n\n* Use zh fallback for Simplified Chinese\n\n* Fix script-specific locale equality\n\n* fix: persist Chinese locale settings\n\nBump whitenoise-rs to the current ref with Chinese language variants and map zh/zh_Hant through the Rust language bridge.\n\nCo-authored-by: stupidloud <klever1988@protonmail.com>\n\n* fix: preserve system locale scripts\n\nPreserve supported system locale script codes when resolving language settings and rendering the system language label.\n\n---------\n\nCo-authored-by: Jeff Gardner <202880+erskingardner@users.noreply.github.com>",
+        "verified_at": "2026-05-13T14:15:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/08d5c44a9bdbff3bf6d73f887ce4cc686b6246c8",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/08d5c44a9bdbff3bf6d73f887ce4cc686b6246c8",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/08d5c44a9bdbff3bf6d73f887ce4cc686b6246c8/comments",
+    "author": {
+      "login": "stupidloud",
+      "id": 56048681,
+      "node_id": "MDQ6VXNlcjU2MDQ4Njgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56048681?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/stupidloud",
+      "html_url": "https://github.com/stupidloud",
+      "followers_url": "https://api.github.com/users/stupidloud/followers",
+      "following_url": "https://api.github.com/users/stupidloud/following{/other_user}",
+      "gists_url": "https://api.github.com/users/stupidloud/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/stupidloud/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/stupidloud/subscriptions",
+      "organizations_url": "https://api.github.com/users/stupidloud/orgs",
+      "repos_url": "https://api.github.com/users/stupidloud/repos",
+      "events_url": "https://api.github.com/users/stupidloud/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/stupidloud/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7f69b3e11e7b5b0973419f1cd1d9523203e579e5",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/7f69b3e11e7b5b0973419f1cd1d9523203e579e5",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/7f69b3e11e7b5b0973419f1cd1d9523203e579e5"
+      }
+    ]
+  },
+  {
+    "sha": "7f69b3e11e7b5b0973419f1cd1d9523203e579e5",
+    "node_id": "C_kwDOQg6sZ9oAKDdmNjliM2UxMWU3YjViMDk3MzQxOWYxY2QxZDk1MjMyMDNlNTc5ZTU",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-13T09:05:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-13T09:05:48Z"
+      },
+      "message": "Adopt whitenoise-rs arch-refactor: per-account sessions replace the god object (#649)",
+      "tree": {
+        "sha": "5c8f233e843fe38bd7468c9c9cb4123b8a797ac2",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/5c8f233e843fe38bd7468c9c9cb4123b8a797ac2"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/7f69b3e11e7b5b0973419f1cd1d9523203e579e5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBD7sCRC1aQ7uu5UhlAAAgtUQAHwas/B72eVqV0GeGi5Xto0L\nA5tCm8QOciN8ILBkbO9fW7LSVJkFqt1umHF1lgCjsTIHo520UB0ZccdAdEwTEdld\nym77T9/YLDVRsBDwSSmdwdIeL1GbccUoXIzTF49+xtVRcLbN3F6WTtEgQYQ6KUDR\nXaRqyEtBtUsjyU/MlklZuGWbD87vjepzE7ZNcWWCIvcyKDUJOqSVySLvJTDT7uqg\nT5yDIpmmLYev1Qr/MIb3Mzq5o/HKeXqmsU2lgRfGOV60GFQsnGkot0kXbiIvlCG8\nwJ4A/u6N41Lb+09y+bgOkpyG/PL0cBrmED6P0PQ/S5xRg8VzauYLMFX9PBhQF2CN\n/+KSN1coJVOFZJq3oVnYfTk0bVahHy/oXeXcG2Ouk7SuRSpd+mUR201/yr6UjIMo\nrr466SiXWm2XipooG0nZgxQ3Ut3vzRMn9U2/Z7Q7vlFFbZ3kEG73Kg+nimksPkTE\nvlq25kXOwrFDv1PSq1GAFTn3irmpZWn/bK2B7Tr021ih3lghtQ334w72oYzv0Hdi\nF+zxm7DLEcxQVUW8qZAbdqu7WKNqVzsMHcj0iNFg+5pG/jsC/2EzgHOdECtF67xf\ndGI1iIP3JQ+6NP3vVrn/p9XPPuNz4C/vSy0cgLpB2+Bz8H6uxXVtP5KwqDp1oKq5\noPoghQibhmHThfaEh2Ds\n=8qok\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5c8f233e843fe38bd7468c9c9cb4123b8a797ac2\nparent aa57640bd3be9f0dae7c06b6ce546dc04e4dd547\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1778663148 +0200\ncommitter GitHub <noreply@github.com> 1778663148 +0200\n\nAdopt whitenoise-rs arch-refactor: per-account sessions replace the god object (#649)",
+        "verified_at": "2026-05-13T09:05:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/7f69b3e11e7b5b0973419f1cd1d9523203e579e5",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/7f69b3e11e7b5b0973419f1cd1d9523203e579e5",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/7f69b3e11e7b5b0973419f1cd1d9523203e579e5/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "aa57640bd3be9f0dae7c06b6ce546dc04e4dd547",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/aa57640bd3be9f0dae7c06b6ce546dc04e4dd547",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/aa57640bd3be9f0dae7c06b6ce546dc04e4dd547"
+      }
+    ]
+  }
+]

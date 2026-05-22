@@ -1,0 +1,1068 @@
+[
+  {
+    "sha": "d9738a6fe81026eb1c0c74996f3a18f33ba453c1",
+    "node_id": "C_kwDOO71yAtoAKGQ5NzM4YTZmZTgxMDI2ZWIxYzBjNzQ5OTZmM2ExOGYzM2JhNDUzYzE",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-15T04:05:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T04:05:54Z"
+      },
+      "message": "refactor: logging for tag sanitization and improve log clarity (#4385)\n\n* refactor(logging): sanitize event tags and JSON for improved log clarity\n\n* refactor(logging): extract tag sanitization logic into a dedicated utility\n\n* chore: dart format\n\n* fix(logging): close remaining raw tag logs and cover sanitizer\n\n* fix(logging): stop logging raw video tag payloads\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>\nCo-authored-by: rabble <evan@protest.net>",
+      "tree": {
+        "sha": "62abbca14af568b3a7b56b4b21d1a97e9a04da1a",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/62abbca14af568b3a7b56b4b21d1a97e9a04da1a"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/d9738a6fe81026eb1c0c74996f3a18f33ba453c1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBpuiCRC1aQ7uu5UhlAAAuM0QAH1dKHBgyFitXGeeU2we7H84\n+v83Abqhf0yCSos9+vsnhnKeCFydGHIzG2UWzwZzh4FToKycmRFtgyySAxa8GJb6\nUGaslMf4WQTgJDpjP0AxhwttHga3oHmPPUiMUAtAyaSlaqCr59XPbmhv+x3ut9fA\n/kSUR20CI5hbo0J/2W7P0U/oeD0fD4t9YGfaGG5mCvMTL6vU6WLZsJvdsX+zqEEY\n6+Evx5kpNvYZTh+FPFEUumiN2xSO3NsTFGzxpGCifQfNALwBqTcWeThUzS53h9bp\necdq2EE7PsYL1iSjvpLy0M3qErRGp/IlEmzpKLcxpfRw6+yy4LLzyNHU7968dvau\nUkYNoNV5f4lvtQVqXxTaCC6cARGxMbYghgDp+iDw9FVlTUvUOWD+fiYBaEljJ/em\nQGgXzW0ddQuQ8A2QE7H1qnWkRU+Yfx104nxbfY2U3qmDoo4KWPjeayK4TgeX4ifs\nsv3mJH1JB+BjAXdLwWYiH8/VOZaqgnG4stCNNSa09EiL/4pX0EUxS0J58ODBkSo/\nQvfXiE0UJ+OKLr9Nz3HtHpab08d2u3PMo/yw5AqO9/Yr0xwXGpavxl4OVyQoeiSG\nSWjmdXEDIxNd0V9KVgGCQozHaYLKPYv/d9lYku6UhKeqr5KI7bZeasDVjW7hcvx4\nWdHJaBKbG6vJ9udTY2jQ\n=MRSc\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 62abbca14af568b3a7b56b4b21d1a97e9a04da1a\nparent 3aa32e18aea42da11daf4f7701e6f63636e8c329\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1778817954 +0200\ncommitter GitHub <noreply@github.com> 1778817954 -0500\n\nrefactor: logging for tag sanitization and improve log clarity (#4385)\n\n* refactor(logging): sanitize event tags and JSON for improved log clarity\n\n* refactor(logging): extract tag sanitization logic into a dedicated utility\n\n* chore: dart format\n\n* fix(logging): close remaining raw tag logs and cover sanitizer\n\n* fix(logging): stop logging raw video tag payloads\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>\nCo-authored-by: rabble <evan@protest.net>",
+        "verified_at": "2026-05-15T04:05:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/d9738a6fe81026eb1c0c74996f3a18f33ba453c1",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/d9738a6fe81026eb1c0c74996f3a18f33ba453c1",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/d9738a6fe81026eb1c0c74996f3a18f33ba453c1/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3aa32e18aea42da11daf4f7701e6f63636e8c329",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/3aa32e18aea42da11daf4f7701e6f63636e8c329",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/3aa32e18aea42da11daf4f7701e6f63636e8c329"
+      }
+    ]
+  },
+  {
+    "sha": "3aa32e18aea42da11daf4f7701e6f63636e8c329",
+    "node_id": "C_kwDOO71yAtoAKDNhYTMyZTE4YWVhNDJkYTExZGFmNGY3NzAxZTZmNjM2MzZlOGMzMjk",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-15T03:05:51Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T03:05:51Z"
+      },
+      "message": "refactor(text): consolidate on linkified text (#4374)",
+      "tree": {
+        "sha": "7da2b40616ea9eb894ab4dcc5ddf0cac1589c09d",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/7da2b40616ea9eb894ab4dcc5ddf0cac1589c09d"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/3aa32e18aea42da11daf4f7701e6f63636e8c329",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBo2PCRC1aQ7uu5UhlAAAL08QADG0iuu7EH2twl2/kkkOLyCb\nychCWH7VTJl4sIxDJO13cLJLs1h6MijqlGKLZUtBqk4x7Gi4g7dkxKsCl1Xpol2n\nARpfD+kRcxUyYsAFef74y4GVhDaPdSS7vz5vcY+vys72aySIGH8Es/rt9UPsaxId\n+uWs98WyaDFmdAT2k58l7nEnKygkI/anSxBiWXcYLPRbkcomr2KwBmZqvQImFgha\nu5PPF63mNG6QJ4ZY3KubXXUQuRpHNEh+DcPpw6Fxp3AN+v+OynOdlnyN03w2ReSw\n4AgCRrZafY3gOzdVjOI2Kh4EgsNWKylrMM6sOJCa0nkQwIdCbWVD5+GBFSwd9Fte\na0vptpfuSKNpviyvNzmA6KS+K1GJBGd6fPKM2/I9rpBlTBbz/urygrOg35AeiWEz\nQ4pf+wEzwdI51SP78wooBFA2uqlANZ9sWl8gbZWEVza6Yjpd7QJF5wGjZvB4flnX\nLWqIrDVgNU/jQt3bHHO7P1OKV2qAjDN0zTo2ATxybJP/gUyH0zLUwRI98nrQkGeP\nDKKG0W6zBxhHi+/Y7j0IK6oV3kH5dx+Mx4v5YqHbTZqXuQkeHgLmuDlOj096wCnG\nUs0w+lkGj7feS9bhP1IZZtmjECeABRl/NID2gxHvRjVfohc30qu9arKrsVGjSZv4\nCdscxEQhpg0KY/NyBieL\n=52eJ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7da2b40616ea9eb894ab4dcc5ddf0cac1589c09d\nparent 0db55ddd7e9368dc8b552f215ea41a7db2c8b6cc\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778814351 -0500\ncommitter GitHub <noreply@github.com> 1778814351 +1200\n\nrefactor(text): consolidate on linkified text (#4374)",
+        "verified_at": "2026-05-15T03:05:52Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/3aa32e18aea42da11daf4f7701e6f63636e8c329",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/3aa32e18aea42da11daf4f7701e6f63636e8c329",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/3aa32e18aea42da11daf4f7701e6f63636e8c329/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0db55ddd7e9368dc8b552f215ea41a7db2c8b6cc",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0db55ddd7e9368dc8b552f215ea41a7db2c8b6cc",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/0db55ddd7e9368dc8b552f215ea41a7db2c8b6cc"
+      }
+    ]
+  },
+  {
+    "sha": "0db55ddd7e9368dc8b552f215ea41a7db2c8b6cc",
+    "node_id": "C_kwDOO71yAtoAKDBkYjU1ZGRkN2U5MzY4ZGM4YjU1MmYyMTVlYTQxYTdkYjJjOGI2Y2M",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-15T02:54:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T02:54:59Z"
+      },
+      "message": "feat(collabs): preview videos in invite cards (#4378)\n\n* docs(collabs): design invite video preview\n\n* docs(collabs): plan invite video preview\n\n* feat(collabs): preview videos in invite cards\n\n* test(l10n): allow collaborator invite preview fallbacks\n\n* fix(collabs): address invite preview review\n\n* fix(collabs): include thumbnails in publish invites\n\n* fix(collabs): play invite videos inline\n\n* fix(collabs): cap inline invite video size",
+      "tree": {
+        "sha": "6e15bbbf6cb22529b55be2b8d229a32eb9931371",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/6e15bbbf6cb22529b55be2b8d229a32eb9931371"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/0db55ddd7e9368dc8b552f215ea41a7db2c8b6cc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBosDCRC1aQ7uu5UhlAAAP9IQAD6z9K376VmRPb36ykJLsjTL\nnn9L0MoK74ThrONfFObAYx18ev9gM8yc/VvqJqDKCiz/fwW0gRKkJWfS5UKW3oNZ\n/3/8P0Rf+90TFZfd+k2Fiqh957sD6fU38nDxkOW6uaclwQTizOeclhisDsYAF6As\n6yAF75V24JW6t9zGFxbdfhkxnRyAAQUgzZZq2zTrZXiEh/VSKvHODcgsK/NN1ArZ\nZHpUF/kQePr9phNqH76JjUAux6EH0SfYl0/6zvWcIUMJOd8wrLE5V+tmpp7h8/6p\nj4hknV3JtSuAFHlo60o3BPIN6MWp7x+RGSEYOHkmYD1V0ZqA27f7McieIxeqMPoO\n27CH3c+3aBYYdVJphxMh+FzsR9SjbwbF6PoveKbjR6he+fG9iuQi7rLGAtI3x5l+\nciOt+DokisnqRJplHSGJm1B53Iitg6X9Y+ZCfGcxKvaEKCffHUkRM0lg/j/Bw6g8\nPIFDdcxqYyhaZdYntZZkX4mVa+jCOSDyTfC6pLj+SBMxXQNWObgHIhyfRWb7qAGD\nqETljo+990nKlnbvKDeso/UykDB08IVnoZbmsPwRGa1leLCmuwyUA4ra/JTNiAHR\nfoIS9d9/tSsL+K9UnJjbFTaYjBuQ0Gl3M6bIEHqDRxq1Gjo5+Md9PIVid3wRwlr2\nYVzLlTk871Bkh0AG109U\n=F2xj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6e15bbbf6cb22529b55be2b8d229a32eb9931371\nparent 74bd87f2ba521e5cfc17f13403d30126c593bebc\nauthor rabble <evan@protest.net> 1778813699 +1200\ncommitter GitHub <noreply@github.com> 1778813699 +1200\n\nfeat(collabs): preview videos in invite cards (#4378)\n\n* docs(collabs): design invite video preview\n\n* docs(collabs): plan invite video preview\n\n* feat(collabs): preview videos in invite cards\n\n* test(l10n): allow collaborator invite preview fallbacks\n\n* fix(collabs): address invite preview review\n\n* fix(collabs): include thumbnails in publish invites\n\n* fix(collabs): play invite videos inline\n\n* fix(collabs): cap inline invite video size",
+        "verified_at": "2026-05-15T02:54:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0db55ddd7e9368dc8b552f215ea41a7db2c8b6cc",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/0db55ddd7e9368dc8b552f215ea41a7db2c8b6cc",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0db55ddd7e9368dc8b552f215ea41a7db2c8b6cc/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "74bd87f2ba521e5cfc17f13403d30126c593bebc",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/74bd87f2ba521e5cfc17f13403d30126c593bebc",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/74bd87f2ba521e5cfc17f13403d30126c593bebc"
+      }
+    ]
+  },
+  {
+    "sha": "74bd87f2ba521e5cfc17f13403d30126c593bebc",
+    "node_id": "C_kwDOO71yAtoAKDc0YmQ4N2YyYmE1MjFlNWNmYzE3ZjEzNDAzZDMwMTI2YzU5M2JlYmM",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-15T01:31:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T01:31:55Z"
+      },
+      "message": "refactor(preview): remove fake overlay video event (#4373)",
+      "tree": {
+        "sha": "f4f81ea43851f9d317fab3e51eaeabbffe863757",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/f4f81ea43851f9d317fab3e51eaeabbffe863757"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/74bd87f2ba521e5cfc17f13403d30126c593bebc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBneLCRC1aQ7uu5UhlAAAZt8QAFMv+MKiZ94/8AthmLrbQTFd\no7ZFgqLsKJcQJ75AuPBojO0/Kh5fiTNlAZEnuBO0DMcALQT1RQMnW3wVf+mgjbEA\nXW4yfKLDXWF0Fp11ksu8F2juRviQjRQPOTPR1FsJ/kiU1TIabkXlKXRaJuPnHA8x\ni9/gJ7TG28MQxgoz2k+6cC0BoKMGBg7sEG/tQBZyLvE+PuzBPaL43G6OrANDFFru\nXoZYUTdM5Ejptd/7qvycklLcdank3MppDxnYtITP1EMLFnUQgzHgR+WhZ3XL9l7+\nJcbSIIHCMMN8Ulj5ROK6TAs5B4j3mckkgOr4hMSBxHJT64VJIqgcoGgFfHp0fN6R\ne2xcqfF7ZFK1wmMGiX43zCOOAwKG8uVX3Yr5XMiwGU9VTfKG7+dafOweocVwn4/Z\n3hofCa8otr3RDLfHC2NaexeocraPlq4GHECZEm2E0OskeWIuAOcObz/jkuDX/ddT\nVheXyzIRnzXH9b5DLXLik/XAdB2b/OGG+EKGzI8J3BsioWnhkUudUUzPedJ90dJn\nIEfiIGHaO5/RJ9eGs8tEqy/NtZamJdcpI8WUCx4OY5mJnYXPqsu4ldXGAIEFd9JI\nQy1U4OBs+WSbNVnkNXKSv57EZTDuRIDH3XBiJejaDm6j4xbjQI22EReWUisvf3TM\nOPpBdm/jjh/CoSRS0K9v\n=T7n/\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f4f81ea43851f9d317fab3e51eaeabbffe863757\nparent e073e86bd4a2a8e88a981bb392cf9aaf76285698\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778808715 -0500\ncommitter GitHub <noreply@github.com> 1778808715 -0500\n\nrefactor(preview): remove fake overlay video event (#4373)",
+        "verified_at": "2026-05-15T01:31:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/74bd87f2ba521e5cfc17f13403d30126c593bebc",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/74bd87f2ba521e5cfc17f13403d30126c593bebc",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/74bd87f2ba521e5cfc17f13403d30126c593bebc/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e073e86bd4a2a8e88a981bb392cf9aaf76285698",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/e073e86bd4a2a8e88a981bb392cf9aaf76285698",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/e073e86bd4a2a8e88a981bb392cf9aaf76285698"
+      }
+    ]
+  },
+  {
+    "sha": "e073e86bd4a2a8e88a981bb392cf9aaf76285698",
+    "node_id": "C_kwDOO71yAtoAKGUwNzNlODZiZDRhMmE4ZTg4YTk4MWJiMzkyY2Y5YWFmNzYyODU2OTg",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-15T01:31:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T01:31:24Z"
+      },
+      "message": "feat(profile): add Report option to profile more sheet (#4379)",
+      "tree": {
+        "sha": "074b99e612a9fc1c16c811c0161eae4a9651b119",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/074b99e612a9fc1c16c811c0161eae4a9651b119"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/e073e86bd4a2a8e88a981bb392cf9aaf76285698",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBndsCRC1aQ7uu5UhlAAAUycQAHlDtcRZIPbhbU4cjBTGEzTF\ny2mG7SF2iw9ZQN16vLGnwDBEE/hRqPO5Qz5NFGWsT6jAovsNXfyHkia/cIFIHk7o\nOZxQ/MTYDzDNWOF05gvIB1rGvldL0zulRtUBXnUIn/pThuRej/V7I5wcdgu5ZqBU\n0U0UOmXml66B4ZpL2FO/9yikZxd2jgMCsccMUMsOUkZKOtZCBW1lsKzPdhllwHs4\nZaPBQsYH+PN7RgG3pSqY0305pDC4fub0clvmujEPRSD/8YiV5a4z2FpydAvmLT7C\n5pgNov/M8o9bvFMa/k4ZI8hTAv2QBNjUvlJfpgXzhvqsQCwDH7gbhhe2/NCSMQSa\nuYdOm/cxA11gKbAhcE1IVo02ql1AgGM/Mzx/dvoBWt7tsb1Ai+QbtvjobuAgoSGg\n0HxXOtzh3Rz5yT8g4XtANAosN//N2QZ4d3+2TWXiZyXcFjsxmZLQiO5CgyDQU196\nm/4KY+Vo/4dg86kaaQKK4DBQ9EgC2+y+4DGK10mqpb1cnSAtJoF0z1O74fivenEm\n9JE8LPwPGCSiNhufmA8xoxK4X6/ywxPacmEqzBrXTd/mKIPvKIAeMb1dRwXUdE0f\nF//eK6hTzDAPymh1Qc035TZBQV37TpY9FNYfitB76eNDMxi6ipt/KkxZ3g2na8/u\ne3eLHUXbkJi4Qcgfq8dD\n=ek7u\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 074b99e612a9fc1c16c811c0161eae4a9651b119\nparent deae6ce0cd1dfc5edaedb0559b4ad417dbe5848f\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778808684 -0500\ncommitter GitHub <noreply@github.com> 1778808684 -0500\n\nfeat(profile): add Report option to profile more sheet (#4379)",
+        "verified_at": "2026-05-15T01:31:24Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/e073e86bd4a2a8e88a981bb392cf9aaf76285698",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/e073e86bd4a2a8e88a981bb392cf9aaf76285698",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/e073e86bd4a2a8e88a981bb392cf9aaf76285698/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "deae6ce0cd1dfc5edaedb0559b4ad417dbe5848f",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/deae6ce0cd1dfc5edaedb0559b4ad417dbe5848f",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/deae6ce0cd1dfc5edaedb0559b4ad417dbe5848f"
+      }
+    ]
+  },
+  {
+    "sha": "deae6ce0cd1dfc5edaedb0559b4ad417dbe5848f",
+    "node_id": "C_kwDOO71yAtoAKGRlYWU2Y2UwY2QxZGZjNWVkYWVkYjA1NTliNGFkNDE3ZGJlNTg0OGY",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-15T00:49:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T00:49:01Z"
+      },
+      "message": "feat(cache_sync): account-scoped invalidation (#4361)\n\n* feat(cache_sync): account-scoped invalidation + writeIfNewer (#4360)\n\nFoundation PR for the data-foundation epic (#4335).\n\ncache_sync gains two public methods:\n  - `invalidatePrefix(prefix)` clears all entries whose key starts with\n    the given prefix. Cache keys follow the `${pubkey}:operation`\n    convention (RFC #4244) so calling with the leaving account's pubkey\n    hex wipes that account without touching others on the same device.\n  - `writeIfNewer<T>({key, value, fromJson, toJson, versionOf, ttl})`\n    writes only when the new value's version is strictly greater than\n    the cached value's (or when nothing is cached, or when the cached\n    payload is corrupted). Intended for replaceable Nostr events\n    (kinds 0, 3, 10000-19999, 30000-39999) where `created_at` ordering\n    must be preserved across writes from multiple relays.\n\nfollow_repository's four cache-key helpers move from the legacy\n`operation_${pubkey}` shape to RFC #4244's `${pubkey}:operation` so\nprefix invalidation actually matches. One-time cache miss expected on\nfirst launch post-PR (cache_sync only shipped 2026-05-11 in #4251).\n\nAuthService.signOut now owns invalidation: it captures the current\npubkey and calls `CacheSync.invalidatePrefix(currentPubkey)` on both\ndestructive and non-destructive paths (previously only destructive ran,\nvia the wholesale `invalidateAll`). The `SettingsAccountCubit`\n`invalidateAll` calls — which used to wipe every account's cache on\naccount switch / add-new — are gone. Multi-account users keep their\nother accounts' caches for fast re-switch.\n\nA small `@visibleForTesting void debugSetCurrentKeyContainer(...)` seam\nis added to AuthService so the multi-account assertion test can exercise\nthe authenticated path without driving the full sign-in pipeline.\n\nCloses #4360.\n\n* fix(cache_sync): address review findings — LIKE escape, TOCTOU mutex, Crashlytics on invalidation failure (#4360)\n\nAddresses senior-review + security-review findings on #4361:\n\n- LIKE injection (B3 / sec-#2): `CacheDaoImpl.deletePrefix` now escapes\n  `%`, `_`, `\\` and uses `LIKE ?1 || '%' ESCAPE '\\'` so the prefix is\n  matched literally. Pubkey hex is unaffected today, but future\n  non-pubkey callers (or user-controlled input) cannot accidentally\n  over-delete or under-delete via wildcards. New tests pin `_`, `%`,\n  and `\\` round-tripping as literals.\n- `invalidatePrefix('')` foot-gun (N4): asserts non-empty in debug;\n  doc points callers to `invalidateAll()` for the wipe-everything case.\n- TOCTOU race in `writeIfNewer` (B2 / sec-#3): two concurrent callers\n  on the same key could both pass the version gate, with the slower\n  writer overwriting the newer entry. The method now serializes\n  per-key via an in-process completer chain so the read-compare-write\n  triple is atomic. A new concurrency test demonstrates the race and\n  pins the fix — it fails reproducibly without the mutex.\n- Storage-failure visibility on signOut (sec-#5): `AuthService.signOut`\n  now forwards `CacheSync.invalidatePrefix` exceptions to Crashlytics\n  via the existing `_reportStorageError` path so a silent disk-residency\n  regression is observable. The `try/catch` continues to keep signOut\n  failure-tolerant. New test asserts signOut still reaches\n  `AuthState.unauthenticated` when `deletePrefix` throws.\n- `writeIfNewer` `_dao.read` throw contract (S2): pinned via test —\n  storage-layer read failures are rethrown to the caller.\n- Style + docs (S3 / S5 / N1 / N3): trimmed the 9-line comment in\n  `auth_service.dart` to 3 lines; added trust-boundary warning + empty-\n  toJson note to the `writeIfNewer` docstring; switched `on Object` to\n  bare `catch (_)` for consistency.\n\nOut of scope (deferred to follow-up sub-issues under #4335):\n- Convention enforcement that all cache keys start with a pubkey\n  (sec-#1) — belongs in M15 rules file + reviewer-enforceable lint.\n- Test-seam consolidation for `debugSetIdentity` /\n  `debugSetCurrentKeyContainer` (sec-#4 / S4) — cross-cuts existing\n  code; separate follow-up.\n- Legacy non-prefixed key migrator (sec-#6) — PR already documents\n  the one-time miss; cache_sync only shipped 3 days ago and LRU\n  bounds the residue to 100 MB.\n- First production caller for `writeIfNewer` (B1) — explicitly the\n  job of M2 / M4 / M16 in the M-series plan; the API is named\n  infrastructure, not speculative.\n\n* refactor(cache_sync): defer writeIfNewer to consumer PR (#4360)\n\nAddresses @NotThatKindOfDrLiz's CHANGES_REQUESTED review on #4361:\nland replaceable-event helpers with their first real caller instead of\nas speculative infrastructure. Same change resolves the `Cache Sync CI`\nfailure — the four failing lints (comment_references, two\navoid_catches_without_on_clauses, unawaited_futures) were all inside\nthe removed `writeIfNewer` body.\n\nRemoved:\n- `CacheSync.writeIfNewer<T>` static method\n- `CacheSync._writeIfNewerLocks` per-key serialization map\n- `cache_sync/test/cache_sync_write_if_newer_test.dart` (242 lines)\n\nNet: -328 LOC. The M0 scope is now exactly what the PR title says:\naccount-scoped invalidation (`invalidatePrefix` + `signOut`\nconsolidation + `follow_repository` cache-key migration).\n\n`writeIfNewer` is named infrastructure for M2 (OgViner) and M4\n(PersonalEvent) per the #4335 M-series plan; it will land in the PR\nthat brings up its first real consumer.\n\n* fix(cache_sync): runtime-enforce empty-prefix guard and drop unused invalidateAll (#4360)\n\nAddresses @NotThatKindOfDrLiz's CHANGES_REQUESTED review on #4361\n(commit 37a664d):\n\n1. Empty-prefix guard on `invalidatePrefix` was a debug-only `assert`.\n   In release builds the check disappears and `invalidatePrefix('')`\n   flows through to `LIKE '' || '%' ESCAPE '\\'`, full-wiping the\n   cache — the exact blast-radius footgun this PR is trying to\n   remove. Replaced the assert with a runtime-enforced\n   `ArgumentError.value` so the guard cannot regress in release. Test\n   updated to expect `ArgumentError` instead of `AssertionError`.\n\n2. `invalidateAll()` had no production caller after this PR's signOut\n   consolidation (AuthService.signOut uses\n   `invalidatePrefix(currentPubkey)`; SettingsAccountCubit no longer\n   calls it). Under the repo's no-new-tech-debt rule, removed the\n   public method along with its underlying `CacheDao.deleteAll()`\n   interface, `CacheDaoImpl.deleteAll()` implementation, and the\n   `deleteAll()` stubs in `FakeCacheDao` and the three mobile test\n   fakes (`feed_video_overlay_test`, `others_followers_screen_test`,\n   `profile_header_widget_test`). The two `invalidateAll` test cases\n   in `cache_sync_invalidate_test` and the `deleteAll` group in\n   `cache_dao_test` are gone with the API.\n\n3. `auth_service_signout_cleanup_test`: dropped the\n   `_TrackingCacheDao.deleteAllCallCount` field plus its four\n   assertions. Renamed the two \"never calls CacheSync.invalidateAll\"\n   tests to describe what they actually pin — that an unauthenticated\n   signOut skips cache invalidation entirely — using the surviving\n   `deletePrefixCalls` assertion. The headline multi-account\n   assertion (account B's cache survives an account A signOut)\n   is unchanged.\n\nVerification from mobile/:\n- `dart format` — 0 files changed\n- `flutter analyze lib test integration_test packages/cache_sync` —\n  No issues found\n- `packages/cache_sync`: 67 / 67 tests pass (71 → 67 = the 4 removed\n  `deleteAll`/`invalidateAll` cases)\n- `auth_service_signout_cleanup_test`: 14 / 14 pass\n- `packages/follow_repository`: 200 / 200 pass\n- Touched widget tests (`feed_video_overlay`,\n  `others_followers_screen`, `profile_header_widget`): all pass\n\n* chore(cache_sync): doc + test polish from self-review (#4360)\n\n- CacheDao.deletePrefix: interface doc now matches the implementation —\n  escaping LIKE metacharacters is the implementation's responsibility,\n  so callers can pass arbitrary string prefixes. Previous doc said\n  \"callers responsible for escaping\", contradicting CacheDaoImpl.\n- AuthService.debugSetCurrentKeyContainer: docstring caveat that this\n  seam only mutates _currentKeyContainer, not _authSource /\n  _currentIdentity / signer wiring / auth state. Safe for branches\n  keyed solely on the current pubkey; not a general \"pretend to be\n  signed in\" shim.\n- auth_service_signout_cleanup_test throwing-deletePrefix case: also\n  assert that A's seeded entries are still on disk. The fake throws\n  before its removeWhere, so the contract being pinned is \"failed\n  invalidation leaves the cache in its pre-call state — no partial\n  cleanup\", not just \"B's cache survives\". Pre-existing assertion\n  only checked B's entry, which would have been preserved either way.",
+      "tree": {
+        "sha": "6f1c34a85c0d443106c8ce2573657fd171a57cfe",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/6f1c34a85c0d443106c8ce2573657fd171a57cfe"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/deae6ce0cd1dfc5edaedb0559b4ad417dbe5848f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBm19CRC1aQ7uu5UhlAAA8ykQAKDi3ei4soKErSSPsVN+TWwg\n6sGSbAEYZ8HpkZdoyVlgY3MjsWjG+b75s7cb2GjEMl+C/c27XjA2zl7sELAEq2FD\njdSyRXDCfhv1Wr4923EKlzeuKyqH2ycuZKF6tqw0NNxlbzIcbxT/zWsGmvkIPhLe\n9P4LYEfP/Z3j7f33v66iMdbIH/ZLsaGJ7wxiEamCzm1hh6lbJ91PFD7MWjLvx8LN\n9ZkGPCdfmBOc02uDZN2z+VfllR18Dry2LI3CzvAV7irDHNTjqSMXWx3WoyblSzhd\nDaMRAw9/KYgnaFPTHu+rTFopH673D61LFKmaI3fxiS/yb0uO6V//ymUrGvuBIjZC\nZ2Pk+7BCYKR+I6XYAOTEs07xRxUCT4q8c9BciYM5CKviPst8UaG0F5FuN++rPzBW\nmxwmLwLQhJ1JZtMXcpYnCt+JPzun51c7FkUH8e24jHsfpG9Bn9s4twq2p8kUboPe\ncTKaEBXazwTciVTHOGSkxIF+x7vOmjDHEbzAQzQMr493PubIkJUhRdCVsWOfhyZI\nWKhk0M11JcOKxVDQjcwOTUxpUEl7MoRGQhzeIwlfPp9hF7aokNgwQVH2LLRngZEJ\nm04U//vosZ4CQHRPvkL7PyiXEWUFwO8gnpVd8VHSBV6NrfkME3AGSorKrmUd4Vvx\nxdczBzBJdCHLo4weQRSa\n=Sjul\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6f1c34a85c0d443106c8ce2573657fd171a57cfe\nparent 0abd317fd9d4f530dd16be9915afbdeced76f646\nauthor Meylis <meylis@divine.video> 1778806141 +0500\ncommitter GitHub <noreply@github.com> 1778806141 -0500\n\nfeat(cache_sync): account-scoped invalidation (#4361)\n\n* feat(cache_sync): account-scoped invalidation + writeIfNewer (#4360)\n\nFoundation PR for the data-foundation epic (#4335).\n\ncache_sync gains two public methods:\n  - `invalidatePrefix(prefix)` clears all entries whose key starts with\n    the given prefix. Cache keys follow the `${pubkey}:operation`\n    convention (RFC #4244) so calling with the leaving account's pubkey\n    hex wipes that account without touching others on the same device.\n  - `writeIfNewer<T>({key, value, fromJson, toJson, versionOf, ttl})`\n    writes only when the new value's version is strictly greater than\n    the cached value's (or when nothing is cached, or when the cached\n    payload is corrupted). Intended for replaceable Nostr events\n    (kinds 0, 3, 10000-19999, 30000-39999) where `created_at` ordering\n    must be preserved across writes from multiple relays.\n\nfollow_repository's four cache-key helpers move from the legacy\n`operation_${pubkey}` shape to RFC #4244's `${pubkey}:operation` so\nprefix invalidation actually matches. One-time cache miss expected on\nfirst launch post-PR (cache_sync only shipped 2026-05-11 in #4251).\n\nAuthService.signOut now owns invalidation: it captures the current\npubkey and calls `CacheSync.invalidatePrefix(currentPubkey)` on both\ndestructive and non-destructive paths (previously only destructive ran,\nvia the wholesale `invalidateAll`). The `SettingsAccountCubit`\n`invalidateAll` calls — which used to wipe every account's cache on\naccount switch / add-new — are gone. Multi-account users keep their\nother accounts' caches for fast re-switch.\n\nA small `@visibleForTesting void debugSetCurrentKeyContainer(...)` seam\nis added to AuthService so the multi-account assertion test can exercise\nthe authenticated path without driving the full sign-in pipeline.\n\nCloses #4360.\n\n* fix(cache_sync): address review findings — LIKE escape, TOCTOU mutex, Crashlytics on invalidation failure (#4360)\n\nAddresses senior-review + security-review findings on #4361:\n\n- LIKE injection (B3 / sec-#2): `CacheDaoImpl.deletePrefix` now escapes\n  `%`, `_`, `\\` and uses `LIKE ?1 || '%' ESCAPE '\\'` so the prefix is\n  matched literally. Pubkey hex is unaffected today, but future\n  non-pubkey callers (or user-controlled input) cannot accidentally\n  over-delete or under-delete via wildcards. New tests pin `_`, `%`,\n  and `\\` round-tripping as literals.\n- `invalidatePrefix('')` foot-gun (N4): asserts non-empty in debug;\n  doc points callers to `invalidateAll()` for the wipe-everything case.\n- TOCTOU race in `writeIfNewer` (B2 / sec-#3): two concurrent callers\n  on the same key could both pass the version gate, with the slower\n  writer overwriting the newer entry. The method now serializes\n  per-key via an in-process completer chain so the read-compare-write\n  triple is atomic. A new concurrency test demonstrates the race and\n  pins the fix — it fails reproducibly without the mutex.\n- Storage-failure visibility on signOut (sec-#5): `AuthService.signOut`\n  now forwards `CacheSync.invalidatePrefix` exceptions to Crashlytics\n  via the existing `_reportStorageError` path so a silent disk-residency\n  regression is observable. The `try/catch` continues to keep signOut\n  failure-tolerant. New test asserts signOut still reaches\n  `AuthState.unauthenticated` when `deletePrefix` throws.\n- `writeIfNewer` `_dao.read` throw contract (S2): pinned via test —\n  storage-layer read failures are rethrown to the caller.\n- Style + docs (S3 / S5 / N1 / N3): trimmed the 9-line comment in\n  `auth_service.dart` to 3 lines; added trust-boundary warning + empty-\n  toJson note to the `writeIfNewer` docstring; switched `on Object` to\n  bare `catch (_)` for consistency.\n\nOut of scope (deferred to follow-up sub-issues under #4335):\n- Convention enforcement that all cache keys start with a pubkey\n  (sec-#1) — belongs in M15 rules file + reviewer-enforceable lint.\n- Test-seam consolidation for `debugSetIdentity` /\n  `debugSetCurrentKeyContainer` (sec-#4 / S4) — cross-cuts existing\n  code; separate follow-up.\n- Legacy non-prefixed key migrator (sec-#6) — PR already documents\n  the one-time miss; cache_sync only shipped 3 days ago and LRU\n  bounds the residue to 100 MB.\n- First production caller for `writeIfNewer` (B1) — explicitly the\n  job of M2 / M4 / M16 in the M-series plan; the API is named\n  infrastructure, not speculative.\n\n* refactor(cache_sync): defer writeIfNewer to consumer PR (#4360)\n\nAddresses @NotThatKindOfDrLiz's CHANGES_REQUESTED review on #4361:\nland replaceable-event helpers with their first real caller instead of\nas speculative infrastructure. Same change resolves the `Cache Sync CI`\nfailure — the four failing lints (comment_references, two\navoid_catches_without_on_clauses, unawaited_futures) were all inside\nthe removed `writeIfNewer` body.\n\nRemoved:\n- `CacheSync.writeIfNewer<T>` static method\n- `CacheSync._writeIfNewerLocks` per-key serialization map\n- `cache_sync/test/cache_sync_write_if_newer_test.dart` (242 lines)\n\nNet: -328 LOC. The M0 scope is now exactly what the PR title says:\naccount-scoped invalidation (`invalidatePrefix` + `signOut`\nconsolidation + `follow_repository` cache-key migration).\n\n`writeIfNewer` is named infrastructure for M2 (OgViner) and M4\n(PersonalEvent) per the #4335 M-series plan; it will land in the PR\nthat brings up its first real consumer.\n\n* fix(cache_sync): runtime-enforce empty-prefix guard and drop unused invalidateAll (#4360)\n\nAddresses @NotThatKindOfDrLiz's CHANGES_REQUESTED review on #4361\n(commit 37a664d):\n\n1. Empty-prefix guard on `invalidatePrefix` was a debug-only `assert`.\n   In release builds the check disappears and `invalidatePrefix('')`\n   flows through to `LIKE '' || '%' ESCAPE '\\'`, full-wiping the\n   cache — the exact blast-radius footgun this PR is trying to\n   remove. Replaced the assert with a runtime-enforced\n   `ArgumentError.value` so the guard cannot regress in release. Test\n   updated to expect `ArgumentError` instead of `AssertionError`.\n\n2. `invalidateAll()` had no production caller after this PR's signOut\n   consolidation (AuthService.signOut uses\n   `invalidatePrefix(currentPubkey)`; SettingsAccountCubit no longer\n   calls it). Under the repo's no-new-tech-debt rule, removed the\n   public method along with its underlying `CacheDao.deleteAll()`\n   interface, `CacheDaoImpl.deleteAll()` implementation, and the\n   `deleteAll()` stubs in `FakeCacheDao` and the three mobile test\n   fakes (`feed_video_overlay_test`, `others_followers_screen_test`,\n   `profile_header_widget_test`). The two `invalidateAll` test cases\n   in `cache_sync_invalidate_test` and the `deleteAll` group in\n   `cache_dao_test` are gone with the API.\n\n3. `auth_service_signout_cleanup_test`: dropped the\n   `_TrackingCacheDao.deleteAllCallCount` field plus its four\n   assertions. Renamed the two \"never calls CacheSync.invalidateAll\"\n   tests to describe what they actually pin — that an unauthenticated\n   signOut skips cache invalidation entirely — using the surviving\n   `deletePrefixCalls` assertion. The headline multi-account\n   assertion (account B's cache survives an account A signOut)\n   is unchanged.\n\nVerification from mobile/:\n- `dart format` — 0 files changed\n- `flutter analyze lib test integration_test packages/cache_sync` —\n  No issues found\n- `packages/cache_sync`: 67 / 67 tests pass (71 → 67 = the 4 removed\n  `deleteAll`/`invalidateAll` cases)\n- `auth_service_signout_cleanup_test`: 14 / 14 pass\n- `packages/follow_repository`: 200 / 200 pass\n- Touched widget tests (`feed_video_overlay`,\n  `others_followers_screen`, `profile_header_widget`): all pass\n\n* chore(cache_sync): doc + test polish from self-review (#4360)\n\n- CacheDao.deletePrefix: interface doc now matches the implementation —\n  escaping LIKE metacharacters is the implementation's responsibility,\n  so callers can pass arbitrary string prefixes. Previous doc said\n  \"callers responsible for escaping\", contradicting CacheDaoImpl.\n- AuthService.debugSetCurrentKeyContainer: docstring caveat that this\n  seam only mutates _currentKeyContainer, not _authSource /\n  _currentIdentity / signer wiring / auth state. Safe for branches\n  keyed solely on the current pubkey; not a general \"pretend to be\n  signed in\" shim.\n- auth_service_signout_cleanup_test throwing-deletePrefix case: also\n  assert that A's seeded entries are still on disk. The fake throws\n  before its removeWhere, so the contract being pinned is \"failed\n  invalidation leaves the cache in its pre-call state — no partial\n  cleanup\", not just \"B's cache survives\". Pre-existing assertion\n  only checked B's entry, which would have been preserved either way.",
+        "verified_at": "2026-05-15T00:49:02Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/deae6ce0cd1dfc5edaedb0559b4ad417dbe5848f",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/deae6ce0cd1dfc5edaedb0559b4ad417dbe5848f",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/deae6ce0cd1dfc5edaedb0559b4ad417dbe5848f/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0abd317fd9d4f530dd16be9915afbdeced76f646",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0abd317fd9d4f530dd16be9915afbdeced76f646",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/0abd317fd9d4f530dd16be9915afbdeced76f646"
+      }
+    ]
+  },
+  {
+    "sha": "0abd317fd9d4f530dd16be9915afbdeced76f646",
+    "node_id": "C_kwDOO71yAtoAKDBhYmQzMTdmZDlkNGY1MzBkZDE2YmU5OTE1YWZiZGVjZWQ3NmY2NDY",
+    "commit": {
+      "author": {
+        "name": "Daniel Cadenas",
+        "email": "dcadenas@gmail.com",
+        "date": "2026-05-15T00:48:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T00:48:26Z"
+      },
+      "message": "chore: Gate Nostr side effects on session readiness (#4162)\n\n* Gate Nostr side effects on session readiness\n\n* Fix push preference dirty drain isolation\n\n* Guard dirty push preference clearing by snapshot\n\n* Add a standalone notification preference dirty-sync bridge mounted by app shell and push sync.\n\n* Stabilize notification preference persistence test\n\n* Refactor push readiness orchestration\n\n* Centralize push token refresh registration ownership\n\n* Retry dirty preference sync from explicit outcomes\n\n* Serialize push notification permission requests\n\n* Fix direct notification preference dirty retries",
+      "tree": {
+        "sha": "739ba45f17d95766893ffcb481a178f583a1327e",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/739ba45f17d95766893ffcb481a178f583a1327e"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/0abd317fd9d4f530dd16be9915afbdeced76f646",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBm1aCRC1aQ7uu5UhlAAAF2cQAGBT6Ifu1JeRedI0aJnV6ZnK\nQSOZmE7CUZjrtt1+HGnvzHswZbJBct4zMhE/gLfORJSyVYrqDtrRae78Zrx9AsYx\nhkS24z3NOplOuATFGMSOIUb5z2PKHdjnvKpWeko1gDhmt+JEsz11SjYko8b+fv3W\ndQWQhFoj/rjQ9VI7k7D69rBs9p/5YpqHDjCIi6Ulml/mVggBEsGDFACdGFBLTqA2\n/K2Oj0gifnAsX2RsOvb+5dyTSSS/fRFbFU0tSUr6oVEqd0QxHQnmQZGDdcRFuX70\nggRvoZtlHFyekYLJMkItlRHREH+CVJMLADjC/avqcLgF9/fvbcQEw0ODZ5Y3K8/Q\nSUSrLFowZnXTZCYEFMAjhOPAIRwKkhmNTc/U+iCc+21gD+4dGFFGfC3ih7sfW7DH\nr9aV1RquGAp41fWyoYsdf1j19/9ZheJ4W8V0OBcdg3/Oh40lMPZePtfltC1jzMOp\nAUrhENdvTvrhrAz7WgQ5hkkgdT4Q4xYbfgt7a0XscCXfT6j6sI4alZGcMhlQUKOy\nWZJ+POjTd2+5pBczTvjiPAoKHMt+3u4+DYVbSHIkCGlUHXivgR7HGwdMz87yK6wj\npzeYUc1r7TkXc/kVc29oZfOU6+UpzGcn/rJCN/EniYvjC20qVuc2CCUEdPaFT30G\nFX0QBhHj3KetpOXxrQ2K\n=D86/\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 739ba45f17d95766893ffcb481a178f583a1327e\nparent bc0f5a044eddb28ef1d3c3b327cc5e51fa3748df\nauthor Daniel Cadenas <dcadenas@gmail.com> 1778806106 -0300\ncommitter GitHub <noreply@github.com> 1778806106 -0500\n\nchore: Gate Nostr side effects on session readiness (#4162)\n\n* Gate Nostr side effects on session readiness\n\n* Fix push preference dirty drain isolation\n\n* Guard dirty push preference clearing by snapshot\n\n* Add a standalone notification preference dirty-sync bridge mounted by app shell and push sync.\n\n* Stabilize notification preference persistence test\n\n* Refactor push readiness orchestration\n\n* Centralize push token refresh registration ownership\n\n* Retry dirty preference sync from explicit outcomes\n\n* Serialize push notification permission requests\n\n* Fix direct notification preference dirty retries",
+        "verified_at": "2026-05-15T00:48:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0abd317fd9d4f530dd16be9915afbdeced76f646",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/0abd317fd9d4f530dd16be9915afbdeced76f646",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0abd317fd9d4f530dd16be9915afbdeced76f646/comments",
+    "author": {
+      "login": "dcadenas",
+      "id": 18184,
+      "node_id": "MDQ6VXNlcjE4MTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "html_url": "https://github.com/dcadenas",
+      "followers_url": "https://api.github.com/users/dcadenas/followers",
+      "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+      "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+      "repos_url": "https://api.github.com/users/dcadenas/repos",
+      "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bc0f5a044eddb28ef1d3c3b327cc5e51fa3748df",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/bc0f5a044eddb28ef1d3c3b327cc5e51fa3748df",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/bc0f5a044eddb28ef1d3c3b327cc5e51fa3748df"
+      }
+    ]
+  },
+  {
+    "sha": "bc0f5a044eddb28ef1d3c3b327cc5e51fa3748df",
+    "node_id": "C_kwDOO71yAtoAKGJjMGY1YTA0NGVkZGIyOGVmMWQzYzNiMzI3Y2M1ZTUxZmEzNzQ4ZGY",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-14T22:21:35Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-14T22:21:35Z"
+      },
+      "message": "fix(invites): retry transient invite redemption failures (#4377)",
+      "tree": {
+        "sha": "935e9350dab3184bacf329b4d771e906c14aa6c4",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/935e9350dab3184bacf329b4d771e906c14aa6c4"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/bc0f5a044eddb28ef1d3c3b327cc5e51fa3748df",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBkrvCRC1aQ7uu5UhlAAAfWEQAEHrniqLetTk+ykd0JWceC9w\nXAzq437Q6oWyQUWZYF8iMthB2M9WCAeJBDwRkMEfSzpheIuanavxqxQ9ftbKXpV/\naQXDUVKunGPIAQkEEMQoIObAHZz8n2sUZ+rL+nX1QlxeK33SlEATEX30jQI2GoFy\n507fymDK4huf2mnd39BcuO/y1uaMVRzZ+vc6unqChd5g3cVIB0wcYGhDLB3ZGt7c\nng1WY8S7owveDuPUPKm/xDN1TJkUmgpJOJDrkpZUGdlKPCL/QMv2l6RuM0ssz4Ki\nWcz6JeSilycJ7Yh5T9s9iD/tn0S7OeVfKCcUeplKymdHUADCvTGdwO9czz+cdGdy\nQAC1pTJ0uic3lW9ri8K0xVvVMmElucdNAm3GWJgQjT9omwNL3eEJ9cO8xUR7Nh5G\n5YfvwTmUOErUBc/FKO8dh5Dj0da8jhRagZxnjBbwnvgIjlfCVp8iibqysvYrDgvq\nuH09V/kYTqCuEgdmXDdas3fgJAqY4nLV2S+pIkS/+l6Xi3fKx3vxb0zdZZS5D0Eu\n0AJiSlFSUA4z76dUJoCwdeBG7oNCk4ZIm8QxbUH8n0o2HDtIvrxq1O9PFQopDDY5\nV72FtQrHJhWi9mawfohwgTNGotbdnV2q71R53IZJ9LwEH04c5bLGWy346ESJwmjM\nJvNN4nSf60LrXUHIcIU9\n=Py6L\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 935e9350dab3184bacf329b4d771e906c14aa6c4\nparent 96f7a7c0526d60d7daee27121d15dfc88f71f169\nauthor rabble <evan@protest.net> 1778797295 +1200\ncommitter GitHub <noreply@github.com> 1778797295 +1200\n\nfix(invites): retry transient invite redemption failures (#4377)",
+        "verified_at": "2026-05-14T22:21:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/bc0f5a044eddb28ef1d3c3b327cc5e51fa3748df",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/bc0f5a044eddb28ef1d3c3b327cc5e51fa3748df",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/bc0f5a044eddb28ef1d3c3b327cc5e51fa3748df/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "96f7a7c0526d60d7daee27121d15dfc88f71f169",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/96f7a7c0526d60d7daee27121d15dfc88f71f169",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/96f7a7c0526d60d7daee27121d15dfc88f71f169"
+      }
+    ]
+  },
+  {
+    "sha": "96f7a7c0526d60d7daee27121d15dfc88f71f169",
+    "node_id": "C_kwDOO71yAtoAKDk2ZjdhN2MwNTI2ZDYwZDdkYWVlMjcxMjFkMTVkZmM4OGY3MWYxNjk",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-14T17:56:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-14T17:56:37Z"
+      },
+      "message": "fix(content-filter): canonicalize sexual-content moderation labels (#4367)\n\n* fix(content-filter): canonicalize sexual-content moderation labels\n\n* test(content-filter): align sexual-content filter expectation\n\n* docs(content-filter): clarify moderation label alias source",
+      "tree": {
+        "sha": "0aee59db89896abc969416266f430c0e008ed9fc",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/0aee59db89896abc969416266f430c0e008ed9fc"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/96f7a7c0526d60d7daee27121d15dfc88f71f169",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBgzVCRC1aQ7uu5UhlAAAfEYQACbl50CHxxarLd6CBlF9aMzV\nMtHKf91VaAYdZfERgLcn2TkD7DshdXeiqaNY2mCiJnV5TgY2a1oaNhRKzgDO25Fq\nq+oxTiygop9J4yqyCEUpT+qzypDM7rPWTv27IHtSOhbcY/8wBg/BQYMMlMhSFzjb\n8+Iyuz0uaZXIuHpifwpGAUvKn/sRcqf3HqCC/DK7YcshwFN1SorFksxTmrWPwvKK\niDviRumljCR2hxHd2ZHEpi5JHhBfCbGBQsskcy7vd2uv8W9dPX9hbrpKgl8jrlu9\ntgwWDZin6akjHIp3JdZTz8+DjzyrdE8CSnpw5e5jtEncVVSfzBmoJ6L4Xx3TKAco\nCoT4dUxsgCmsrSsiQ/29NJjTELJ49KNWKhznApW70U/hQUy9z1Kk3xAU+EF2ffEj\nZ4j/T79VvWRVKI/9UDTyaRXl+u+BRVjReG4MHOhv2txb3hrWxhgrH2sqxdAPdQwi\npR6d1obOvPPHTBZfdYwvimb4hAEDpQO5p0RPH80NvVr3agtil4ptDv+6tl3ZKKAL\nMFG9zb1zDW4ZNEUQ9q7Kp6ahx5HFNFyzNcQ1vdCN7ZEVBBuQMl/br2i1jnISVGEk\nfxCSeIN6IYzghjqvdeaZsJ6MOsSfEOrAgzbyJPkWhOluv77VJ+sL8ip/GJxT+sVk\nzuQi/lCplQQOEsYETXxK\n=PE1C\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0aee59db89896abc969416266f430c0e008ed9fc\nparent 316168b3c768b1847a02e16eb575dd7d94773c21\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778781397 -0500\ncommitter GitHub <noreply@github.com> 1778781397 -0500\n\nfix(content-filter): canonicalize sexual-content moderation labels (#4367)\n\n* fix(content-filter): canonicalize sexual-content moderation labels\n\n* test(content-filter): align sexual-content filter expectation\n\n* docs(content-filter): clarify moderation label alias source",
+        "verified_at": "2026-05-14T17:56:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/96f7a7c0526d60d7daee27121d15dfc88f71f169",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/96f7a7c0526d60d7daee27121d15dfc88f71f169",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/96f7a7c0526d60d7daee27121d15dfc88f71f169/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "316168b3c768b1847a02e16eb575dd7d94773c21",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/316168b3c768b1847a02e16eb575dd7d94773c21",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/316168b3c768b1847a02e16eb575dd7d94773c21"
+      }
+    ]
+  },
+  {
+    "sha": "316168b3c768b1847a02e16eb575dd7d94773c21",
+    "node_id": "C_kwDOO71yAtoAKDMxNjE2OGIzYzc2OGIxODQ3YTAyZTE2ZWI1NzVkZDdkOTQ3NzNjMjE",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-14T17:54:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-14T17:54:52Z"
+      },
+      "message": "fix(text): linkify user content render gaps (#4358)\n\n* fix(text): linkify user content render gaps\n\n* fix(profile): remove no-debt review blockers\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "f3ad94aaded0c885a1445a4d5ae11e7b5d2fc2c8",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/f3ad94aaded0c885a1445a4d5ae11e7b5d2fc2c8"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/316168b3c768b1847a02e16eb575dd7d94773c21",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBgxsCRC1aQ7uu5UhlAAAulMQAJgo4iUthf5B3DdsD76ckerd\nGs4f3eQ7H1Qycd+6ObRE8sYEpKSfgYPQ4J3jyQTnwVVeDtwUv7o9bkcFdNVE5KGQ\nPFOxxPaKSkBglvkqKM85Cv477Aot9VukL1IQbFbn0OnegSVxKRhtAeIpa3yOlEr1\nNwsKWx8K48yD2ycgLy00e9ebQA0AdflBxKzvKVAKmK5HSEzA79I4eO/eng3tvvJz\na0oVZoWiI94AXjH8u/G7RDJgDeCim0C5xjQss/UN8AC3T8XFYHh3VLzd8jkjKsEd\nawkabXAftON8ygSpWiGVly8X+HEZJhSeRm6FDVPOaenDTIIix4sUAqSH8Pu0lNxL\nwqR/Gx/el54YaJz4bgPbJ/JXVy0ngnzfsK85j0czSkXlxkZktlIeiU1NDljNEldk\nuWarIgECYucm8Rbz6BqRW2h1K0V82iglHx00W1oe4TFIKUP6QrGwvyDRJwDeytyS\nsax5oPTxhivAlF5RBRL3YAvXPbQqx7qeHo2/7nR26L6f5KzjNEQki7t8t10vGMDU\n5ouyqvFpiWsw8ZzfKE0azgI1JLEW1qk151yprt5xJBzZNBh4TH/lDcWgXXwkMDCq\nwKO/tnYShDM92igtBk5a07tWnUAv3qO7PJE/BGjtG8sVXbHQXp24mQEgybATrM7Y\nw6tlAZwFOmOeqyC35Vvw\n=t6CR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f3ad94aaded0c885a1445a4d5ae11e7b5d2fc2c8\nparent cce1d158eee8be50c090144bfb8ff03a91f224ec\nauthor rabble <evan@protest.net> 1778781292 +1200\ncommitter GitHub <noreply@github.com> 1778781292 -0500\n\nfix(text): linkify user content render gaps (#4358)\n\n* fix(text): linkify user content render gaps\n\n* fix(profile): remove no-debt review blockers\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-14T17:54:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/316168b3c768b1847a02e16eb575dd7d94773c21",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/316168b3c768b1847a02e16eb575dd7d94773c21",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/316168b3c768b1847a02e16eb575dd7d94773c21/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cce1d158eee8be50c090144bfb8ff03a91f224ec",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/cce1d158eee8be50c090144bfb8ff03a91f224ec",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/cce1d158eee8be50c090144bfb8ff03a91f224ec"
+      }
+    ]
+  },
+  {
+    "sha": "cce1d158eee8be50c090144bfb8ff03a91f224ec",
+    "node_id": "C_kwDOO71yAtoAKGNjZTFkMTU4ZWVlOGJlNTBjMDkwMTQ0YmZiOGZmMDNhOTFmMjI0ZWM",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-14T17:13:47Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-14T17:13:47Z"
+      },
+      "message": "fix(safety): persist adult content preference migration (#4355)\n\n* fix(safety): persist adult content preference migration\n\n* test(safety): cover preserved adult filter migration\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "12c9fa8f40862836dcb1cfab517214ebd5243a77",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/12c9fa8f40862836dcb1cfab517214ebd5243a77"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/cce1d158eee8be50c090144bfb8ff03a91f224ec",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBgLLCRC1aQ7uu5UhlAAAhHAQAADiQD69Dd6fTdaHJaEkn2LR\nFyr8/9e12bWucmQ7LiICdRzvGt66BRs7Ruhxm5BEr16P8AVqk826KnYtv2pAertR\nqFUHNVS7C9DMvYt3mVrR6KBSw3FsW6bOUkPNdW6PVe2l+ITFtZXC9ehh/z6shjo1\nePXb7KzYND1NkeHtc3fG6I8+n88hvy9WULZbEC7nZS+uGyj43Guq9vWi5omRGPpL\ncV0HaP34/KgrTGiqR4h6nXjkjbvRXfstGGmE3B5GL8sHpY60vsrLcKsPi3suXmnI\n9fkCd8LF7A9869NWG1QOZFfqfz+SU6Uo1VDM5eKzXgSyj7jvSkMx0tygx2pIq5ZT\nDo8+Jx+avEmo7OM5iX70Tb7Iy9YygTEWD10tIPnn2XFSzx9zTneojGoFxGMrO59s\nHwomZGdtCkVHVl9Fec7/zqk36PlqVjSvCi5CN7BdTjRoL2rX9Ph6c9Y920PfHW7s\ncYwygtqTq6iXfYVjLgKpgH7+5n2Uyhp6db+dHq2TRPXyi6jcvXUpnWz8r27RxyS5\nISBfRNe/mjVTlU0sGFgl5fmhOirOrwPuOEWYK2Vuudogx1bJv/M80w6qtWT4BARE\nupirpOsH3uWJ6R/OjDLy0bla68M5pb4Iclv2nuPUuYbKy9/U0Oq6VAPMX1z/HnK+\nFz8j5TTOgv6zvPZf+YL3\n=lYvq\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 12c9fa8f40862836dcb1cfab517214ebd5243a77\nparent 893de4adf9ec1bf42c1225b5bffa5ce798a35618\nauthor rabble <evan@protest.net> 1778778827 +1200\ncommitter GitHub <noreply@github.com> 1778778827 -0500\n\nfix(safety): persist adult content preference migration (#4355)\n\n* fix(safety): persist adult content preference migration\n\n* test(safety): cover preserved adult filter migration\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-14T17:13:48Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/cce1d158eee8be50c090144bfb8ff03a91f224ec",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/cce1d158eee8be50c090144bfb8ff03a91f224ec",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/cce1d158eee8be50c090144bfb8ff03a91f224ec/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "893de4adf9ec1bf42c1225b5bffa5ce798a35618",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/893de4adf9ec1bf42c1225b5bffa5ce798a35618",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/893de4adf9ec1bf42c1225b5bffa5ce798a35618"
+      }
+    ]
+  },
+  {
+    "sha": "893de4adf9ec1bf42c1225b5bffa5ce798a35618",
+    "node_id": "C_kwDOO71yAtoAKDg5M2RlNGFkZjllYzFiZjQyYzEyMjViNWJmZmE1Y2U3OThhMzU2MTg",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-14T15:38:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-14T15:38:10Z"
+      },
+      "message": "fix(safety): hide unknown ML labels in profile feeds (#4365)",
+      "tree": {
+        "sha": "b1f21d7f640dc640cac45d3c06648558114a9620",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/b1f21d7f640dc640cac45d3c06648558114a9620"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/893de4adf9ec1bf42c1225b5bffa5ce798a35618",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBexiCRC1aQ7uu5UhlAAAHjMQAIsDROvLjm1M1G5/y31BiF3U\nZyxadX+7HDrjtKCozz2XLc66WQzg+IfywClhmr2SKO0QdbqHJzS9HQg8BPxZyVYY\nPeXd1Di93FN7S0jgvhGHfDsiufvmnn/TBoMnq/wR3v7Nuy1NsLkJZhjO0qvAhWYA\nxLoDDpB7Bu6oZqm0nNGqspE190ihtipZzGKz3DHkH3U0C3bWGV6kk8oE+cHOP93e\nPYzxTQFUVEonsIjuIiY81upIW/ylHzvNRodVrPSMFba6gFSDHeekymkk3gC1zTju\nqzBZSq8kzLlQqcfeFmA+2AtPU7DzF/IJahE8N0ERZCBBjKOs8W9rljwX6ENS0H5z\nFgle189R0dNUDiYu5QQw5/rdBHPUCZFblAfSPTdU5kFegY9QSTCyG3ClQ6b+Y0FZ\n3kC1I+Tcg3IadCm+jL+Ozmfvtky3Kz+TishI6rHCtkGnrsly3opcIadCTaMAJcPf\nrYisQq4l308zeV7ARJGAMdNXkAUGWIkNzVkTtrb/lND52tNNYD8QXj5F6n2hhiAc\nprcpZp7gVeLRFjLhXDG17JQMc6nmLc00eOHygJ/Y6cmb1eicKe4zw+pls8Y0osx4\nTz+/upPgWDX5trmlau+XWbh/xyFFx7AllhuIHTs0aLNIfIRUNwJYSh30T2AdXIqI\nGwNLWUVdZbtXBk4Bp2LN\n=k/0b\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b1f21d7f640dc640cac45d3c06648558114a9620\nparent 941921f3be9d86b693385b344cfc527ee3f787f6\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778773090 -0500\ncommitter GitHub <noreply@github.com> 1778773090 -0500\n\nfix(safety): hide unknown ML labels in profile feeds (#4365)",
+        "verified_at": "2026-05-14T15:38:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/893de4adf9ec1bf42c1225b5bffa5ce798a35618",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/893de4adf9ec1bf42c1225b5bffa5ce798a35618",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/893de4adf9ec1bf42c1225b5bffa5ce798a35618/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "941921f3be9d86b693385b344cfc527ee3f787f6",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/941921f3be9d86b693385b344cfc527ee3f787f6",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/941921f3be9d86b693385b344cfc527ee3f787f6"
+      }
+    ]
+  },
+  {
+    "sha": "941921f3be9d86b693385b344cfc527ee3f787f6",
+    "node_id": "C_kwDOO71yAtoAKDk0MTkyMWYzYmU5ZDg2YjY5MzM4NWIzNDRjZmM1MjdlZTNmNzg3ZjY",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-14T15:10:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-14T15:10:39Z"
+      },
+      "message": "chore(deep-links): add handoff diagnostics (#4362)",
+      "tree": {
+        "sha": "45e40ba12ff0b2a8c9e5d60de0614c4a046cdf2a",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/45e40ba12ff0b2a8c9e5d60de0614c4a046cdf2a"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/941921f3be9d86b693385b344cfc527ee3f787f6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBeXvCRC1aQ7uu5UhlAAAmKkQAG/egugbv0XY3xa1yC+D04vd\n9Y0W9A9mXsYC4O7Mswx2NKtShsi9CaCZu0oas46Sw/mw3I5Vslgazr/6/WG9zoiF\np36Xd+XGSJxN60ofZxfYryYS2YivnEO/2x4+eXKSBwweEXht6UbM4b21YdOXGL+4\nMNqH9ctdrc+66a9hUmFzx62+LMp+y4ysMWfdW1K89/LA37y1KRLelxnNu4+Mqkqz\nvW2fAXMbYrldQ18jvvQ+IekHhWKQyjjr14mJOi4CG44OjxQyKq02yImQofnUR0gT\nTCPqri9EeAFUBxImZ08qh7pxA7hSvFtcCOXK9FYUMXCfgys3Hp81iyCjQjTjKpU2\nCITIS/XO5T28KKJZQgSDgTJ+qjqyw0jit8W/dNrGjIozsFyTnB5XifReeJ1yBF6L\nHZT7ejMEO0kOZePudnDaF/2/4iNCOiRpgOc7r+Pg98NyExB4cOf1ktiPnlltn9qw\n5kShc+JRU8Nbz9qxPch/tO3hTh6F0igzsIymIo9SIQfwQx6ckUJddhkJk1zc2qfz\nZKuA+6GT4mVZWLZwSHg750zu/zRPLDpDA4nPFcUppsW+RyUJYhgP7nuy+pzk00nO\nYoOJHujLJwMxDEkTbsDkkemLIdxd6G3dnVh2yApVBGzOCd+QjRLf3qvNBjr053Ix\nVOytBiDpNe1bD8H/E7vs\n=NqD/\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 45e40ba12ff0b2a8c9e5d60de0614c4a046cdf2a\nparent c3905864a7220aa938c06544e08dc9f694f3025c\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1778771439 -0500\ncommitter GitHub <noreply@github.com> 1778771439 -0500\n\nchore(deep-links): add handoff diagnostics (#4362)",
+        "verified_at": "2026-05-14T15:10:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/941921f3be9d86b693385b344cfc527ee3f787f6",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/941921f3be9d86b693385b344cfc527ee3f787f6",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/941921f3be9d86b693385b344cfc527ee3f787f6/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c3905864a7220aa938c06544e08dc9f694f3025c",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/c3905864a7220aa938c06544e08dc9f694f3025c",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/c3905864a7220aa938c06544e08dc9f694f3025c"
+      }
+    ]
+  }
+]

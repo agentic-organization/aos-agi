@@ -1,0 +1,1076 @@
+[
+  {
+    "id": "11854249392",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 34144909731,
+      "ref": "refs/heads/feat/multi-unit",
+      "head": "53aac6e186636337e23c06e4922f7aba4ab3ea67",
+      "before": "4277f8ee19f36e5afddec7122f7a2649cb1a32a4"
+    },
+    "public": true,
+    "created_at": "2026-05-14T13:08:14Z"
+  },
+  {
+    "id": "11849791119",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 34140452415,
+      "ref": "refs/heads/feat/multi-unit",
+      "head": "4277f8ee19f36e5afddec7122f7a2649cb1a32a4",
+      "before": "945032d80cb21a09c2c5f5a42d6e9ad025b381e6"
+    },
+    "public": true,
+    "created_at": "2026-05-14T11:15:13Z"
+  },
+  {
+    "id": "11793834427",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "ref": "feat/multi-unit",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/multi-unit",
+      "master_branch": "main",
+      "description": "macadamia is a native Cashu wallet for iOS.",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-13T09:43:27Z"
+  },
+  {
+    "id": "9366157146",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 145858188,
+      "login": "ye0man",
+      "display_login": "ye0man",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ye0man",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145858188?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-12T13:55:27Z"
+  },
+  {
+    "id": "9330715546",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 90146109,
+      "login": "MorrisMbithi",
+      "display_login": "MorrisMbithi",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MorrisMbithi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90146109?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-11T19:32:53Z"
+  },
+  {
+    "id": "9264321853",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 185554421,
+      "login": "Codepocketdev",
+      "display_login": "Codepocketdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Codepocketdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/185554421?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 66,
+      "pull_request": {
+        "url": "https://api.github.com/repos/zeugmaster/macadamia/pulls/66",
+        "id": 3654255616,
+        "number": 66,
+        "head": {
+          "ref": "fix/remove-hello-world-placeholder",
+          "sha": "e617becbade2caaccbeaa8ec3f1c3f9545395166",
+          "repo": {
+            "id": 1233667303,
+            "url": "https://api.github.com/repos/Codepocketdev/macadamia",
+            "name": "macadamia"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "92bb004e4a36df513aa174a3497570db71d9dd51",
+          "repo": {
+            "id": 731658298,
+            "url": "https://api.github.com/repos/zeugmaster/macadamia",
+            "name": "macadamia"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-09T07:58:12Z"
+  },
+  {
+    "id": "9264298910",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 185554421,
+      "login": "Codepocketdev",
+      "display_login": "Codepocketdev",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Codepocketdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/185554421?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "forked",
+      "forkee": {
+        "id": 1233667303,
+        "node_id": "R_kgDOSYhE5w",
+        "name": "macadamia",
+        "full_name": "Codepocketdev/macadamia",
+        "private": false,
+        "owner": {
+          "login": "Codepocketdev",
+          "id": 185554421,
+          "node_id": "U_kgDOCw9V9Q",
+          "avatar_url": "https://avatars.githubusercontent.com/u/185554421?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Codepocketdev",
+          "html_url": "https://github.com/Codepocketdev",
+          "followers_url": "https://api.github.com/users/Codepocketdev/followers",
+          "following_url": "https://api.github.com/users/Codepocketdev/following{/other_user}",
+          "gists_url": "https://api.github.com/users/Codepocketdev/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/Codepocketdev/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/Codepocketdev/subscriptions",
+          "organizations_url": "https://api.github.com/users/Codepocketdev/orgs",
+          "repos_url": "https://api.github.com/users/Codepocketdev/repos",
+          "events_url": "https://api.github.com/users/Codepocketdev/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/Codepocketdev/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/Codepocketdev/macadamia",
+        "description": "macadamia is a native Cashu wallet for iOS.",
+        "fork": true,
+        "url": "https://api.github.com/repos/Codepocketdev/macadamia",
+        "forks_url": "https://api.github.com/repos/Codepocketdev/macadamia/forks",
+        "keys_url": "https://api.github.com/repos/Codepocketdev/macadamia/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/Codepocketdev/macadamia/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/Codepocketdev/macadamia/teams",
+        "hooks_url": "https://api.github.com/repos/Codepocketdev/macadamia/hooks",
+        "issue_events_url": "https://api.github.com/repos/Codepocketdev/macadamia/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/Codepocketdev/macadamia/events",
+        "assignees_url": "https://api.github.com/repos/Codepocketdev/macadamia/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/Codepocketdev/macadamia/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/Codepocketdev/macadamia/tags",
+        "blobs_url": "https://api.github.com/repos/Codepocketdev/macadamia/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/Codepocketdev/macadamia/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/Codepocketdev/macadamia/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/Codepocketdev/macadamia/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/Codepocketdev/macadamia/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/Codepocketdev/macadamia/languages",
+        "stargazers_url": "https://api.github.com/repos/Codepocketdev/macadamia/stargazers",
+        "contributors_url": "https://api.github.com/repos/Codepocketdev/macadamia/contributors",
+        "subscribers_url": "https://api.github.com/repos/Codepocketdev/macadamia/subscribers",
+        "subscription_url": "https://api.github.com/repos/Codepocketdev/macadamia/subscription",
+        "commits_url": "https://api.github.com/repos/Codepocketdev/macadamia/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/Codepocketdev/macadamia/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/Codepocketdev/macadamia/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/Codepocketdev/macadamia/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/Codepocketdev/macadamia/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/Codepocketdev/macadamia/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/Codepocketdev/macadamia/merges",
+        "archive_url": "https://api.github.com/repos/Codepocketdev/macadamia/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/Codepocketdev/macadamia/downloads",
+        "issues_url": "https://api.github.com/repos/Codepocketdev/macadamia/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/Codepocketdev/macadamia/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/Codepocketdev/macadamia/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/Codepocketdev/macadamia/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/Codepocketdev/macadamia/labels{/name}",
+        "releases_url": "https://api.github.com/repos/Codepocketdev/macadamia/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/Codepocketdev/macadamia/deployments",
+        "created_at": "2026-05-09T07:56:45Z",
+        "updated_at": "2026-05-09T07:56:45Z",
+        "pushed_at": "2026-05-09T07:57:19Z",
+        "git_url": "git://github.com/Codepocketdev/macadamia.git",
+        "ssh_url": "git@github.com:Codepocketdev/macadamia.git",
+        "clone_url": "https://github.com/Codepocketdev/macadamia.git",
+        "svn_url": "https://github.com/Codepocketdev/macadamia",
+        "homepage": "https://macadamia.cash",
+        "size": 43593,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "main"
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-09T07:56:45Z"
+  },
+  {
+    "id": "9119162864",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 9729864,
+      "login": "miccy",
+      "display_login": "miccy",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/miccy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9729864?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-05T20:15:26Z"
+  },
+  {
+    "id": "9096651525",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 234992292,
+      "login": "unwrappedcap",
+      "display_login": "unwrappedcap",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/unwrappedcap",
+      "avatar_url": "https://avatars.githubusercontent.com/u/234992292?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-05T10:16:52Z"
+  },
+  {
+    "id": "11428671717",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33719975587,
+      "ref": "refs/heads/release",
+      "head": "456d21c54af39bd24823655a97921399680cc5e4",
+      "before": "762ef7da8da6049c8849121b34c124b5f263ae3a"
+    },
+    "public": true,
+    "created_at": "2026-05-05T09:08:17Z"
+  },
+  {
+    "id": "11400611366",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33692042129,
+      "ref": "refs/heads/release",
+      "head": "762ef7da8da6049c8849121b34c124b5f263ae3a",
+      "before": "de670d029f2bc555cf82af20f6f9826b12e715a3"
+    },
+    "public": true,
+    "created_at": "2026-05-04T17:33:19Z"
+  },
+  {
+    "id": "9069409188",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 65,
+      "pull_request": {
+        "url": "https://api.github.com/repos/zeugmaster/macadamia/pulls/65",
+        "id": 3597060174,
+        "number": 65,
+        "head": {
+          "ref": "feat/conceal-amounts",
+          "sha": "1a1baef762cbf8c0ca74e19cdea4933bc4fc1099",
+          "repo": {
+            "id": 731658298,
+            "url": "https://api.github.com/repos/zeugmaster/macadamia",
+            "name": "macadamia"
+          }
+        },
+        "base": {
+          "ref": "release",
+          "sha": "e959a1231faa139ae463ce3bfc4501bf27548a59",
+          "repo": {
+            "id": 731658298,
+            "url": "https://api.github.com/repos/zeugmaster/macadamia",
+            "name": "macadamia"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-04T17:31:28Z"
+  },
+  {
+    "id": "11400542085",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33691972963,
+      "ref": "refs/heads/release",
+      "head": "de670d029f2bc555cf82af20f6f9826b12e715a3",
+      "before": "e959a1231faa139ae463ce3bfc4501bf27548a59"
+    },
+    "public": true,
+    "created_at": "2026-05-04T17:31:28Z"
+  },
+  {
+    "id": "11397823141",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33689254612,
+      "ref": "refs/heads/feat/conceal-amounts",
+      "head": "1a1baef762cbf8c0ca74e19cdea4933bc4fc1099",
+      "before": "6b3bcdbb68f9eb561c3929d4a6fe8db3628f8e3a"
+    },
+    "public": true,
+    "created_at": "2026-05-04T16:19:02Z"
+  },
+  {
+    "id": "11234720673",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33526223729,
+      "ref": "refs/heads/feat/conceal-amounts",
+      "head": "6b3bcdbb68f9eb561c3929d4a6fe8db3628f8e3a",
+      "before": "be44be46eabf843cf1f8240a0d7fc9738e9f72d4"
+    },
+    "public": true,
+    "created_at": "2026-04-30T06:40:01Z"
+  },
+  {
+    "id": "8879141092",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 65,
+      "pull_request": {
+        "url": "https://api.github.com/repos/zeugmaster/macadamia/pulls/65",
+        "id": 3597060174,
+        "number": 65,
+        "head": {
+          "ref": "feat/conceal-amounts",
+          "sha": "1a1baef762cbf8c0ca74e19cdea4933bc4fc1099",
+          "repo": {
+            "id": 731658298,
+            "url": "https://api.github.com/repos/zeugmaster/macadamia",
+            "name": "macadamia"
+          }
+        },
+        "base": {
+          "ref": "release",
+          "sha": "e959a1231faa139ae463ce3bfc4501bf27548a59",
+          "repo": {
+            "id": 731658298,
+            "url": "https://api.github.com/repos/zeugmaster/macadamia",
+            "name": "macadamia"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-28T15:54:20Z"
+  },
+  {
+    "id": "11157649298",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "ref": "feat/conceal-amounts",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/conceal-amounts",
+      "master_branch": "main",
+      "description": "macadamia is a native Cashu wallet for iOS.",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-28T15:51:44Z"
+  },
+  {
+    "id": "8873333102",
+    "type": "ReleaseEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "published",
+      "release": {
+        "url": "https://api.github.com/repos/zeugmaster/macadamia/releases/314615172",
+        "assets_url": "https://api.github.com/repos/zeugmaster/macadamia/releases/314615172/assets",
+        "upload_url": "https://uploads.github.com/repos/zeugmaster/macadamia/releases/314615172/assets{?name,label}",
+        "html_url": "https://github.com/zeugmaster/macadamia/releases/tag/v0.9.0",
+        "id": 314615172,
+        "author": {
+          "login": "zeugmaster",
+          "id": 3989336,
+          "node_id": "MDQ6VXNlcjM5ODkzMzY=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/3989336?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zeugmaster",
+          "html_url": "https://github.com/zeugmaster",
+          "followers_url": "https://api.github.com/users/zeugmaster/followers",
+          "following_url": "https://api.github.com/users/zeugmaster/following{/other_user}",
+          "gists_url": "https://api.github.com/users/zeugmaster/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/zeugmaster/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/zeugmaster/subscriptions",
+          "organizations_url": "https://api.github.com/users/zeugmaster/orgs",
+          "repos_url": "https://api.github.com/users/zeugmaster/repos",
+          "events_url": "https://api.github.com/users/zeugmaster/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/zeugmaster/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOK5w4Os4SwKWE",
+        "tag_name": "v0.9.0",
+        "target_commitish": "main",
+        "name": "v0.9.0",
+        "draft": false,
+        "immutable": false,
+        "prerelease": false,
+        "created_at": "2026-04-28T13:42:56Z",
+        "updated_at": "2026-04-28T13:43:53Z",
+        "published_at": "2026-04-28T13:43:53Z",
+        "assets": [],
+        "tarball_url": "https://api.github.com/repos/zeugmaster/macadamia/tarball/v0.9.0",
+        "zipball_url": "https://api.github.com/repos/zeugmaster/macadamia/zipball/v0.9.0",
+        "body": "## What's Changed\r\n* NUT-26 Support by @zeugmaster in https://github.com/zeugmaster/macadamia/pull/59\r\n* Chore: Bug Fixes by @zeugmaster in https://github.com/zeugmaster/macadamia/pull/60\r\n* Support for decoding BIP-321 by @zeugmaster in https://github.com/zeugmaster/macadamia/pull/61\r\n* MInt list backup via nostr (NUT-27) by @zeugmaster in https://github.com/zeugmaster/macadamia/pull/63\r\n* Onboarding v2 by @zeugmaster in https://github.com/zeugmaster/macadamia/pull/64\r\n\r\n\r\n**Full Changelog**: https://github.com/zeugmaster/macadamia/compare/v.0.7.1...v0.9.0",
+        "mentions_count": 1,
+        "mentions": [
+          {
+            "avatar_url": "https://avatars.githubusercontent.com/u/3989336?v=4",
+            "login": "zeugmaster",
+            "profile_name": "Dario",
+            "profile_url": "https://github.com/zeugmaster",
+            "avatar_user_actor": true
+          }
+        ],
+        "short_description_html": "<h2>What's Changed</h2>\n<ul>\n<li>NUT-26 Support by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zeugmaster/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zeugmaster\">@zeugmaster</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4076711687\" data-permission-text=\"Title is private\" data-url=\"https://github.com/zeugmaster/macadamia/issues/59\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/zeugmaster/macadamia/pull/59/hovercard\" href=\"https://github.com/zeugmaster/macadamia/pull/59\">#59</a>\n</li>\n<li>Chore: Bug Fixes by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zeugmaster/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zeugmaster\">@zeugmaster</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4076727067\" data-permission-text=\"Title is private\" data-url=\"https://github.com/zeugmaster/macadamia/issues/60\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/zeugmaster/macadamia/pull/60/hovercard\" href=\"https://github.com/zeugmaster/macadamia/pull/60\">#60</a>\n</li>\n<li>Support for decoding BIP-321 by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zeugmaster/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zeugmaster\">@zeugmaster</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4095659825\" data-permission-text=\"Title is private\" data-url=\"https://github.com/zeugmaster/macadamia/issues/61\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/zeugmaster/macadamia/pull/61/hovercard\" href=\"https://github.com/zeugmaster/macadamia/pull/61\">#61</a>\n</li>\n<li>MInt list backup via nostr (NUT-27) by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zeugmaster/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zeugmaster\">@zeugmaster</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4205356850\" data-permission-text=\"Title is private\" data-url=\"https://github.com/zeugmaster/macadamia/issues/63\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/zeugmaster/macadamia/pull/63/hovercard\" href=\"https://github.com/zeugmaster/macadamia/pull/63\">#63</a>\n</li>\n</ul>",
+        "is_short_description_html_truncated": true
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-28T13:43:53Z"
+  },
+  {
+    "id": "11151597609",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33443242296,
+      "ref": "refs/heads/main",
+      "head": "92bb004e4a36df513aa174a3497570db71d9dd51",
+      "before": "2d79d0582f5e94e8bf70d83b0a586c963e4636c0"
+    },
+    "public": true,
+    "created_at": "2026-04-28T13:43:00Z"
+  },
+  {
+    "id": "11065092025",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33356797284,
+      "ref": "refs/heads/release",
+      "head": "e959a1231faa139ae463ce3bfc4501bf27548a59",
+      "before": "bdd073702a5ca19b9b5555b8b0b18d0b9c2314f9"
+    },
+    "public": true,
+    "created_at": "2026-04-26T15:59:02Z"
+  },
+  {
+    "id": "11065059909",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33356765120,
+      "ref": "refs/heads/release",
+      "head": "bdd073702a5ca19b9b5555b8b0b18d0b9c2314f9",
+      "before": "54c9be6f619eda9941d7dcc2f782b87444e938a7"
+    },
+    "public": true,
+    "created_at": "2026-04-26T15:57:34Z"
+  },
+  {
+    "id": "11064995735",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33356700942,
+      "ref": "refs/heads/release",
+      "head": "54c9be6f619eda9941d7dcc2f782b87444e938a7",
+      "before": "f2600ca30e24c6672e7b885992fa69f2636f5a43"
+    },
+    "public": true,
+    "created_at": "2026-04-26T15:54:44Z"
+  },
+  {
+    "id": "8802010078",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 63,
+      "pull_request": {
+        "url": "https://api.github.com/repos/zeugmaster/macadamia/pulls/63",
+        "id": 3489206518,
+        "number": 63,
+        "head": {
+          "ref": "nut-27",
+          "sha": "e0b2e62f6ae0352da7d38c172b60aaf592bd3d33",
+          "repo": {
+            "id": 731658298,
+            "url": "https://api.github.com/repos/zeugmaster/macadamia",
+            "name": "macadamia"
+          }
+        },
+        "base": {
+          "ref": "release",
+          "sha": "f2600ca30e24c6672e7b885992fa69f2636f5a43",
+          "repo": {
+            "id": 731658298,
+            "url": "https://api.github.com/repos/zeugmaster/macadamia",
+            "name": "macadamia"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-26T15:54:45Z"
+  },
+  {
+    "id": "8802010061",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 64,
+      "pull_request": {
+        "url": "https://api.github.com/repos/zeugmaster/macadamia/pulls/64",
+        "id": 3489210437,
+        "number": 64,
+        "head": {
+          "ref": "onboardingV2",
+          "sha": "26e029bbf7766ffbc12bc7f487fbffa0a05b89a7",
+          "repo": {
+            "id": 731658298,
+            "url": "https://api.github.com/repos/zeugmaster/macadamia",
+            "name": "macadamia"
+          }
+        },
+        "base": {
+          "ref": "release",
+          "sha": "f2600ca30e24c6672e7b885992fa69f2636f5a43",
+          "repo": {
+            "id": 731658298,
+            "url": "https://api.github.com/repos/zeugmaster/macadamia",
+            "name": "macadamia"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-26T15:54:45Z"
+  },
+  {
+    "id": "11064862105",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33356567160,
+      "ref": "refs/heads/nut-27",
+      "head": "e0b2e62f6ae0352da7d38c172b60aaf592bd3d33",
+      "before": "845ee9dc61f15962d3c749dfb32548188255e3db"
+    },
+    "public": true,
+    "created_at": "2026-04-26T15:48:46Z"
+  },
+  {
+    "id": "11063370326",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33355073454,
+      "ref": "refs/heads/ui-fixes",
+      "head": "8ad7a6880314b9b3e5312e5c7f7ede142c9bdfe2",
+      "before": "ce9ce006b1f3dc36f40fde04430c61e3fabf6e3c"
+    },
+    "public": true,
+    "created_at": "2026-04-26T14:44:56Z"
+  },
+  {
+    "id": "11063336940",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33355039962,
+      "ref": "refs/heads/ui-fixes",
+      "head": "ce9ce006b1f3dc36f40fde04430c61e3fabf6e3c",
+      "before": "f65654083b9005a41113b8c892cf894068ad0142"
+    },
+    "public": true,
+    "created_at": "2026-04-26T14:43:24Z"
+  },
+  {
+    "id": "11063137489",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33354840327,
+      "ref": "refs/heads/ui-fixes",
+      "head": "f65654083b9005a41113b8c892cf894068ad0142",
+      "before": "a381d9b48de712370c808dd4e176dddeaee7d02b"
+    },
+    "public": true,
+    "created_at": "2026-04-26T14:34:26Z"
+  },
+  {
+    "id": "11061836750",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33353538580,
+      "ref": "refs/heads/ui-fixes",
+      "head": "a381d9b48de712370c808dd4e176dddeaee7d02b",
+      "before": "03453a0225004f40b09defb62c31392eff714832"
+    },
+    "public": true,
+    "created_at": "2026-04-26T13:36:21Z"
+  },
+  {
+    "id": "11061749617",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33353451431,
+      "ref": "refs/heads/ui-fixes",
+      "head": "03453a0225004f40b09defb62c31392eff714832",
+      "before": "36417518d744cb551a542c8ec34dc5e329198c04"
+    },
+    "public": true,
+    "created_at": "2026-04-26T13:32:13Z"
+  },
+  {
+    "id": "11060781456",
+    "type": "PushEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "repository_id": 731658298,
+      "push_id": 33352481914,
+      "ref": "refs/heads/ui-fixes",
+      "head": "36417518d744cb551a542c8ec34dc5e329198c04",
+      "before": "6a7e149d1bd9ecf507c0522dc0502613ba6629cb"
+    },
+    "public": true,
+    "created_at": "2026-04-26T12:48:21Z"
+  },
+  {
+    "id": "10872674586",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 3989336,
+      "login": "zeugmaster",
+      "display_login": "zeugmaster",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zeugmaster",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3989336?"
+    },
+    "repo": {
+      "id": 731658298,
+      "name": "zeugmaster/macadamia",
+      "url": "https://api.github.com/repos/zeugmaster/macadamia"
+    },
+    "payload": {
+      "ref": "ui-fixes",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/ui-fixes",
+      "master_branch": "main",
+      "description": "macadamia is a native Cashu wallet for iOS.",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-21T20:54:58Z"
+  }
+]

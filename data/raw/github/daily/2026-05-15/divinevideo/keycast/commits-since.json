@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "e95aa3364c92b39a09ab02fa3108866a1edc90c5",
+    "node_id": "C_kwDOQdzyrtoAKGU5NWFhMzM2NGM5MmIzOWEwOWFiMDJmYTMxMDg4NjZhMWVkYzkwYzU",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-15T03:38:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-15T03:38:31Z"
+      },
+      "message": "feat(rpc): allow admin-issued preload UCANs to sign for claimed users (#232)\n\n* feat(rpc): allow admin-issued preload UCANs to sign for claimed users\n\nDrops the is_unclaimed gate in load_preloaded_user_handler so admin-minted\npreload UCANs continue to work after a user claims their account. Needed\nto publish additional legacy Vine archives discovered after handover.\n\nMint side (`/api/admin/preload-user`) was already idempotent on vine_id and\nreturned a fresh UCAN regardless of claim status; the signing path was the\nsole remaining block. Existence check is preserved (None → 404-equivalent).\n\nAudit logging for these signs is intentionally not added in this PR; tracked\nseparately in #231 with schema and insertion-site notes.\n\n* fix(rpc): tighten preload UCAN acceptance and propagate UCAN expiry to cache\n\nAddress Daniel review feedback (#232):\n\n1. Only accept \"real\" preload UCANs in MODE 2.\n   load_preloaded_user_handler now requires redirect_origin == \"preload\";\n   server-signed UCANs from other flows (admin sessions, claim, etc.) are\n   rejected with InvalidToken. Previously, any server-signed UCAN without a\n   bunker_pubkey routed here and could decrypt + sign as any user.\n\n2. Carry UCAN expiry into the cached preload handler.\n   get_handler extracts ucan.expires_at() and threads it through to\n   HttpRpcHandler::new instead of passing expires_at: None. On cache hit,\n   handler.is_valid() now returns false once the UCAN lifetime ends, so a\n   warm cache entry can no longer keep signing past the UCAN's exp until\n   idle eviction.\n\nTests:\n- test_warm_cache_preload_handler_rejected_after_ucan_expiry: mints a\n  preload UCAN with a 2s lifetime, succeeds once (populates cache),\n  sleeps past exp, and asserts the second call (cache hit) returns\n  InvalidToken and evicts the entry.\n- test_server_signed_non_preload_redirect_origin_rejected: mints a\n  server-signed UCAN with redirect_origin: \"admin\" and asserts the\n  signing path rejects it before touching the user's key.\n\nAll 8 nostr_rpc_integration_test tests pass. Adjacent admin_preload_test,\nadmin_token_test, admin_batch_claim_test tests also pass.\n\n* style: rustfmt comment alignment in load_preloaded_user_handler",
+      "tree": {
+        "sha": "d9707daabeb2a80fb7657601c1c58a15ad530110",
+        "url": "https://api.github.com/repos/divinevideo/keycast/git/trees/d9707daabeb2a80fb7657601c1c58a15ad530110"
+      },
+      "url": "https://api.github.com/repos/divinevideo/keycast/git/commits/e95aa3364c92b39a09ab02fa3108866a1edc90c5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqBpU3CRC1aQ7uu5UhlAAAJeMQAH7biA5BqpvMcLFWDZiBTviS\npANAz+HaiHiWFskezFSh7hrI3cOGeiwFq6D6puNciAgq1i3gFygEIsnbntmRifaW\n5hbef6Q1slPuu3zewGo17/b9Mbef3zvzL7cJjg8Whua6zFJsxBIPUz0RoJD7IHte\noeC5pCwtzLm2gLUsdgEmEpCR4GPvbAprCrvZicvUDPMWUWAnZx5ra0ICcAHgWP1N\nJRuNfGKdMWbULLGVOpUQJQ1fiA03RqZfYVPdOsT4mBadi4HKImbW2Bf60Uza8QR/\n/3X6VwH2FE5Tr3wsaDprhHauclsc7o07149WkjW4KcnD7Nk7TlyYy2sx6gO/YMm6\nXumnK3c3EIinRUxBqu+f5Vb7m3DFL/J4uz4F5MoHN6iSfL6cSEF3RC+S3Ydy6FiJ\nacNd3Wk8dSTH6C4FLYdHwpYyZpiFkYYPjIo5T9UZ730DUXtcwiO/fODot0vVrm1E\nsyRUTrExkVjkRTf5JN92SK67bh0w04lFNfw/45MnObCsEzm+StBrbKksSz97Skg7\nxBHitsQ1KwC8fw7yUv7yWTEzbf2SP7rQabjpuBAiVha8i8P+v40nJjinb6mp/NAt\nECFCaRjyWzAmCKdIuqWe35hiY20Cs25vZKWRZI6a7SuHl27pkQ7Y64U8kKQ1I0NE\ne/3DMb7bG6DIHEKW1G/o\n=o53O\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d9707daabeb2a80fb7657601c1c58a15ad530110\nparent bd92361f5674fadd3b1af489deb0e3d313f80d3c\nauthor rabble <evan@protest.net> 1778816311 +1200\ncommitter GitHub <noreply@github.com> 1778816311 +1200\n\nfeat(rpc): allow admin-issued preload UCANs to sign for claimed users (#232)\n\n* feat(rpc): allow admin-issued preload UCANs to sign for claimed users\n\nDrops the is_unclaimed gate in load_preloaded_user_handler so admin-minted\npreload UCANs continue to work after a user claims their account. Needed\nto publish additional legacy Vine archives discovered after handover.\n\nMint side (`/api/admin/preload-user`) was already idempotent on vine_id and\nreturned a fresh UCAN regardless of claim status; the signing path was the\nsole remaining block. Existence check is preserved (None → 404-equivalent).\n\nAudit logging for these signs is intentionally not added in this PR; tracked\nseparately in #231 with schema and insertion-site notes.\n\n* fix(rpc): tighten preload UCAN acceptance and propagate UCAN expiry to cache\n\nAddress Daniel review feedback (#232):\n\n1. Only accept \"real\" preload UCANs in MODE 2.\n   load_preloaded_user_handler now requires redirect_origin == \"preload\";\n   server-signed UCANs from other flows (admin sessions, claim, etc.) are\n   rejected with InvalidToken. Previously, any server-signed UCAN without a\n   bunker_pubkey routed here and could decrypt + sign as any user.\n\n2. Carry UCAN expiry into the cached preload handler.\n   get_handler extracts ucan.expires_at() and threads it through to\n   HttpRpcHandler::new instead of passing expires_at: None. On cache hit,\n   handler.is_valid() now returns false once the UCAN lifetime ends, so a\n   warm cache entry can no longer keep signing past the UCAN's exp until\n   idle eviction.\n\nTests:\n- test_warm_cache_preload_handler_rejected_after_ucan_expiry: mints a\n  preload UCAN with a 2s lifetime, succeeds once (populates cache),\n  sleeps past exp, and asserts the second call (cache hit) returns\n  InvalidToken and evicts the entry.\n- test_server_signed_non_preload_redirect_origin_rejected: mints a\n  server-signed UCAN with redirect_origin: \"admin\" and asserts the\n  signing path rejects it before touching the user's key.\n\nAll 8 nostr_rpc_integration_test tests pass. Adjacent admin_preload_test,\nadmin_token_test, admin_batch_claim_test tests also pass.\n\n* style: rustfmt comment alignment in load_preloaded_user_handler",
+        "verified_at": "2026-05-15T03:38:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/keycast/commits/e95aa3364c92b39a09ab02fa3108866a1edc90c5",
+    "html_url": "https://github.com/divinevideo/keycast/commit/e95aa3364c92b39a09ab02fa3108866a1edc90c5",
+    "comments_url": "https://api.github.com/repos/divinevideo/keycast/commits/e95aa3364c92b39a09ab02fa3108866a1edc90c5/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bd92361f5674fadd3b1af489deb0e3d313f80d3c",
+        "url": "https://api.github.com/repos/divinevideo/keycast/commits/bd92361f5674fadd3b1af489deb0e3d313f80d3c",
+        "html_url": "https://github.com/divinevideo/keycast/commit/bd92361f5674fadd3b1af489deb0e3d313f80d3c"
+      }
+    ]
+  }
+]

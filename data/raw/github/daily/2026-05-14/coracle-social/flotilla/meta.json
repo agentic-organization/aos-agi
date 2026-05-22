@@ -1,0 +1,53 @@
+{
+  "owner": "coracle-social",
+  "repo": "flotilla",
+  "full_name": "coracle-social/flotilla",
+  "projects": [
+    "[[projects/flotilla]]"
+  ],
+  "sources": [
+    "foundry-single-repos"
+  ],
+  "reason": null,
+  "fetched_at": "2026-05-14T07:03:34.115Z",
+  "since": "2026-05-13T07:01:52.303Z",
+  "endpoints": [
+    {
+      "key": "repo",
+      "file": "repo.json",
+      "ok": true,
+      "count": null
+    },
+    {
+      "key": "events",
+      "file": "events.json",
+      "ok": true,
+      "count": 1
+    },
+    {
+      "key": "issues_updated",
+      "file": "issues-updated.json",
+      "ok": true,
+      "count": 0
+    },
+    {
+      "key": "pulls_updated",
+      "file": "pulls-updated.json",
+      "ok": true,
+      "count": 0,
+      "note": "gh api /repos/coracle-social/flotilla/pulls?state=all&sort=updated&direction=desc&per_page=100: gh: Not Found (HTTP 404)"
+    },
+    {
+      "key": "commits_since",
+      "file": "commits-since.json",
+      "ok": true,
+      "count": 0
+    },
+    {
+      "key": "releases",
+      "file": "releases.json",
+      "ok": true,
+      "count": 38
+    }
+  ]
+}
