@@ -31,6 +31,14 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 ## History
 - 2026-05-11: `data/raw/github/daily/2026-05-11/divinevideo/divine-web/` captured **6 commits** in the 72h window. Themes: brand-correct Extra Bold legal headings, rich link previews for Slack/Twitter, sim-suppression hooks for divine-brain virtual-persona, revert three-state age gate, bare Nostr identifier linkification.
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/divinevideo/divine-web/`) shows **2 issues updated** (no new commits): #361 family + age-review + kids pages by [[people/notthatkindofdrliz]], and #362 moderation e/p tag report type mapping to NIP-56 by jalcine.
+
+- 2026-05-12: `data/raw/github/daily/2026-05-12/divinevideo/divine-web/` captured **4 commits** in the 24h window. Themes: open-graph/embed coverage (`/embed/:id`, @username, hashtags, search, discovery, apex), child-safety report categories split into three distinct types, newsletter consent on waitlist signup, DM bunker-decrypt failure surfacing in moderator inbox. Committers: [[people/rabble]], [[people/elphiethewitch]], [[people/dogelover911]], [[people/dcadenas]].
+
+- 2026-05-15: `data/raw/github/daily/2026-05-15/divinevideo/divine-web/` captured **6 commits** and **7 updated issues** in the 24h window. Themes: new Popular feed page (#371), search defaulting to Hot sort with sort pills above results (#365), Nostr mention linkification in video titles (#367), age-gated media 401 handling (#369), analytics route-mounting fix during auth restore (#370), acknowledgments to Miss Australiana / ArchiveTeam / Internet Archive (#366), Firefox video loading reliability fix (#51). Committer: [[people/rabble]] (all 6).
+
+- 2026-05-17: `data/raw/github/daily/2026-05-17/divinevideo/divine-web/` captured **1 commit** in the 24h window. Theme: use 16-core GitHub runners (#374). Committer: [[people/rabble]].
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/divinevideo/divine-web/`) shows **2 commits** by [[people/dsanich]] and [[people/jalcine]]: kind 0 metadata merge extraction with tests (#293), and NIP-56 compliance for kind:1984 moderation report types with regression tests (#362). **8 issues updated**.
 
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?

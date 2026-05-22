@@ -34,6 +34,8 @@ TypeScript ecosystem of Cashu. Led the cashu-ts v3 migration; architected the co
 
 ## History
 - 2026-05-07: Page created from an internal Q4-2025 cashubtc organization analysis (scope and responsibilities only; no performance details ingested).
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/coco/`) shows **31 commits** by Egge21M in the 24h window on [[projects/coco]]: history refactor merged, rebased operation projection fix, legacy send token preservation, IndexedDB failed-melt exclusion.
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/coco/`) shows **3 commits** by Egge21M on [[projects/coco]]: merge PR #178 removing legacy melt quotes, merge PR #177 for blinded signature recovery, and fix validating restored proof keyset units in core.
 
 ## Open questions
 - Full name, location, timezone?

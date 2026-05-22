@@ -29,6 +29,17 @@ The **Rust Cashu Development Kit** — wallet *and* mint logic in one library, w
 
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
+- 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/cdk/`) shows **1 commit** by [[people/thesimplekid]] ("fix: rust version job"). **13 issues updated** including Swift publication pipeline workflow, onchain BDK integration, `p2pk_signing_keys` in `SendOptions`, payment-processor mint `quote_id` propagation to backend.
+
+- 2026-05-12: `data/raw/github/daily/2026-05-12/cashubtc/cdk/` captured **4 commits** in the 24h window. Themes: FFI runtime consolidation into `RuntimeGuard`, replace blocking `Condvar` pool with async `Semaphore`, agent review scaffolding, DB test expansion. No new release in this window (last release v0.16.0 on 2026-03-31).
+
+- 2026-05-15: `data/raw/github/daily/2026-05-15/cashubtc/cdk/` captured **1 commit** and **11 updated issues** in the 24h window. Themes: agent review documentation update. Issues: redis-cluster caching support (#1936), FFI mint-info error propagation (#1968), auth wildcard behavior (#1967), zero-signature validation (#1966), SendOptions p2pk_signing_keys (#1835), keyset expiry enforcement (#1946), on-chain BDK work (#1870), wallet RestoreOptions batching (#1923), Apache license addition (#1864). Committer: [[people/thesimplekid]].
+
+- 2026-05-15: `data/raw/github/daily/2026-05-15/cashubtc/cdk/` captured **1 commit** and **11 updated issues** in the 24h window. Themes: agent review documentation update. Issues: redis-cluster caching support (#1936), FFI mint-info error propagation (#1968), auth wildcard behavior (#1967), zero-signature validation (#1966), SendOptions p2pk_signing_keys (#1835), keyset expiry enforcement (#1946), on-chain BDK work (#1870), wallet RestoreOptions batching (#1923), Apache license addition (#1864). Committer: [[people/thesimplekid]].
+
+- 2026-05-17: `data/raw/github/daily/2026-05-17/cashubtc/cdk/` captured **3 commits** in the 24h window. Themes: batch mint-quote subscription snapshot fetching, FFI mint-info conversion error propagation, preserve auth wildcard endpoint matching. Committer: [[people/thesimplekid]] (all 3).
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/cdk/`) shows **3 commits** by [[people/thesimplekid]]: "feat: ws connection limit", "fix: normalize payment method case for auth", and "feat: ensure auth keyset". **16 issues updated** including closing #1792 (multi-language bindings CI checks) and #1788 (Dart release process); open issue #1799 removes `clone` from Mint struct.
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/cashubtc/cdk/`) shows **1 commit** by [[people/zeugmaster]]: propagate mint `quote_id` through payment-processor backend so custom backends can correlate `get_payment_quote` and `make_payment` calls for the same melt (#1799). **14 issues updated**.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

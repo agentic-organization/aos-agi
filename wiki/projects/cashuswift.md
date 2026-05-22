@@ -19,6 +19,9 @@ Native Swift Cashu library, independent from the CDK Swift bindings. Used by [[p
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
 
+- 2026-05-12: `data/raw/github/daily/2026-05-12/zeugmaster/cashu-swift/` captured **2 commits** in the 24h window and release **v0.3.2** (published 2026-05-12). Themes: remove pick functions and revert file renames, unit handling improvements. Committers: [[people/zeugmaster]].
+- 2026-05-14: `data/raw/github/daily/2026-05-14/zeugmaster/cashu-swift/` captured **1 commit** in the 24h window. Themes: pin BIP39 dependency. Committers: [[people/zeugmaster]].
+
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
 - Which Cashu library (cashu-ts, CDK, Nutshell, etc.) it builds on.

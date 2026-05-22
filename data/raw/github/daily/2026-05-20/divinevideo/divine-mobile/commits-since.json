@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "2025b49278fafcd5c574e6a4455644c36723f577",
+    "node_id": "C_kwDOO71yAtoAKDIwMjViNDkyNzhmYWZjZDVjNTc0ZTZhNDQ1NTY0NGMzNjcyM2Y1Nzc",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-20T04:49:50Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T04:49:50Z"
+      },
+      "message": "fix(tags): reset search input when a suggestion is tapped (#4569)\n\n* fix(tags): reset search input when a suggestion is tapped\n\n* fix(tags): simplify search input reset logic in tags picker\n\n* fix(tags): add synchronous search reset event to clear query and suggestions",
+      "tree": {
+        "sha": "5fbf23f0991776d1d0f0363d7002f3a938be3b8e",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/5fbf23f0991776d1d0f0363d7002f3a938be3b8e"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/2025b49278fafcd5c574e6a4455644c36723f577",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDT1uCRC1aQ7uu5UhlAAAek0QAJdpt2VTS5nl30RMzLyG7UGu\nPAR6vVqWG1haVO6I6chteKAo96Pms5h6e22AmnbWZuoiZgv7BW7R5jPd7gLxoh/g\nWjCzEwkCUwFueRqrt143tiH2r4rYRPEX9N7hfk2/bW8Ka41yWyT8JnryoGb6RIvs\nGKTnw57fHchU00IZZlOgrkrUqVWWyTiOVutBBKFjOJ55UvZJyx+kZv+wZJZpf/OI\nsHOU74zJVwCZHsu2usyfhbtOh4zlwEgr/gOSkO37Yt9hQvIiHIGlbKS0ZNh3tERO\nnLYvRiAuC8nN+kt9WnfeaIxzEuTw12O2uQ9Hk0DmXyKGrfgpLB18OYIlRinU3PmA\nlYxNpaAvq0eYPdfBYoki07Dcd9WL4d8lNWHo7tF/QPp+F0tLx36v1yYsbuovgKwj\nCULoklJ7bHxTNIDrhr9qawwRL9xn5VKIDyZqpe6UlJVB+AdvIXF32ZL7IECMa2mz\nenXedigat4H7M4SKzUsFbLD/6C3z5hoELUktZF1khydCICsSeIxzi25NPbxodqpZ\nE9s9vZRGmvbE2SVF/JLx4YLBVE3Owm7roio0NSU1lAjXH/QMBoMQIJ0q23+9aFBf\n7kbKP6VrRtqWquZFrpXSKER7y6cY3J/uRKpdUqBvaz63M3GJn22V8sptdYmvbXUX\na0DcN3cUwKd1I3iyIt5p\n=QQVd\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5fbf23f0991776d1d0f0363d7002f3a938be3b8e\nparent 06c63cfa8a789f6b4e8ddfa5e83b052a98b0b110\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1779252590 +0700\ncommitter GitHub <noreply@github.com> 1779252590 +0200\n\nfix(tags): reset search input when a suggestion is tapped (#4569)\n\n* fix(tags): reset search input when a suggestion is tapped\n\n* fix(tags): simplify search input reset logic in tags picker\n\n* fix(tags): add synchronous search reset event to clear query and suggestions",
+        "verified_at": "2026-05-20T04:49:50Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/2025b49278fafcd5c574e6a4455644c36723f577",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/2025b49278fafcd5c574e6a4455644c36723f577",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/2025b49278fafcd5c574e6a4455644c36723f577/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "06c63cfa8a789f6b4e8ddfa5e83b052a98b0b110",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/06c63cfa8a789f6b4e8ddfa5e83b052a98b0b110",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/06c63cfa8a789f6b4e8ddfa5e83b052a98b0b110"
+      }
+    ]
+  },
+  {
+    "sha": "06c63cfa8a789f6b4e8ddfa5e83b052a98b0b110",
+    "node_id": "C_kwDOO71yAtoAKDA2YzYzY2ZhOGE3ODlmNmI0ZThkZGZhNWU4M2IwNTJhOThiMGIxMTA",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-20T03:21:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T03:21:39Z"
+      },
+      "message": "fix(macos): use data protection keychain to stop repeated keychain prompts (#4574)\n\nRemoves the explicit `useDataProtectionKeyChain: false` override on\nMacOsOptions. The flutter_secure_storage default is now `true`, which\nuses the modern data protection keychain. Items are scoped to the\n`keychain-access-groups` entitlement (already configured) instead of\nthe binary's code signature, so rebuilds no longer trigger the \"enter\nyour login keychain password\" prompt for every stored item.\n\nTradeoff: existing macOS users have credentials in the legacy login\nkeychain; after this change the app reads the data protection keychain\nand won't see them, so they'll need to sign in again. iOS, Android,\nand Linux are unaffected.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "0bb89223a85cb04e14ecfd412b22fec7c1861277",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/0bb89223a85cb04e14ecfd412b22fec7c1861277"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/06c63cfa8a789f6b4e8ddfa5e83b052a98b0b110",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDSjDCRC1aQ7uu5UhlAAAvMAQABdH99bx2DQqgqI+QSRZ8En9\n06BIo+1a/p5VCAE0Ji+U0mfGxA1xRZiqqLHA49URpYA8jH7lXhZeDsb+s1Pb0Pl7\nIFFaXrCtdUwHSZLi1VbmzxVxOVjPeEmpxSwxT1d02dQi1+yzVDw8qiNbCxKRnVAl\ntKyTUr7fgi5R2kSNUWG8UmuegL3PFiXIO+PYuxQdvAIgkjGpAcBqMDLqBI0r02o7\nBGezDgfUFq0BI+fUTQ+x0x1C2XeFa83FhPwv1dIcowgY4BL/kMvkId9YHivpt6K1\nraLnr3n1FxAeIuuIbZNG8IMCMTjJl9fxW/MwoqBKwkuu+PG1+HWQ/zRAq2ssIcEJ\nmB0yeS8Z8/d4RgqV7nBxhqbPrr62wsPqXNZQJP3+1oga2bvFB40k3PtHFosg+jEs\nQUKqnPTEM9RmpjXrUqajXZ+Ozx1ibpn2ReaxHIztQmU8Q1Zot5aatUlpphg1Csdc\nt63OiSFVBknjt5oqPxna5uGqPJAzbxK6VTzGLpooqsNe32Eq0HObybpsjdoAYPkJ\nJnYIus6nfWa9wllAqd30hIseSw74dJMzo+QJqGwXr0pQBTZDmRwnLA9sanFGiu3O\nsCTVNFWYge5ya9pP70JF148tMHDibjyOQHnATUDgv685lTOf+y2xk6nTi/m2Et1i\n4f1k81mYnfrv4K4xhNBE\n=TKts\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0bb89223a85cb04e14ecfd412b22fec7c1861277\nparent fd3354ae232a40ab776c29007894ea1edbd7e1d6\nauthor rabble <evan@protest.net> 1779247299 +1200\ncommitter GitHub <noreply@github.com> 1779247299 +1200\n\nfix(macos): use data protection keychain to stop repeated keychain prompts (#4574)\n\nRemoves the explicit `useDataProtectionKeyChain: false` override on\nMacOsOptions. The flutter_secure_storage default is now `true`, which\nuses the modern data protection keychain. Items are scoped to the\n`keychain-access-groups` entitlement (already configured) instead of\nthe binary's code signature, so rebuilds no longer trigger the \"enter\nyour login keychain password\" prompt for every stored item.\n\nTradeoff: existing macOS users have credentials in the legacy login\nkeychain; after this change the app reads the data protection keychain\nand won't see them, so they'll need to sign in again. iOS, Android,\nand Linux are unaffected.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+        "verified_at": "2026-05-20T03:21:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/06c63cfa8a789f6b4e8ddfa5e83b052a98b0b110",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/06c63cfa8a789f6b4e8ddfa5e83b052a98b0b110",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/06c63cfa8a789f6b4e8ddfa5e83b052a98b0b110/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fd3354ae232a40ab776c29007894ea1edbd7e1d6",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/fd3354ae232a40ab776c29007894ea1edbd7e1d6",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/fd3354ae232a40ab776c29007894ea1edbd7e1d6"
+      }
+    ]
+  },
+  {
+    "sha": "fd3354ae232a40ab776c29007894ea1edbd7e1d6",
+    "node_id": "C_kwDOO71yAtoAKGZkMzM1NGFlMjMyYTQwYWI3NzZjMjkwMDc4OTRlYTFlZGJkN2UxZDY",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-20T01:19:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T01:19:09Z"
+      },
+      "message": "fix(audio): route extracted audio paths to AudioSourceConfig.file (#4395) (#4549)\n\n* fix(audio): route extracted audio paths to AudioSourceConfig.file (#4395)\n\nCrashlytics issue e81e2bc1d6713fa5d91e7b15a0950e18: extracted audio paths (bare absolute paths produced by clip_editor_bloc via extractAudio(videoPath)) were classified as .network in AudioTimingCubit and passed to HttpClient.getUrl, crashing with 'No host specified in URI'.\n\nFix:\n- AudioTimingCubit: three-way classification in _setClippedAudioSource:\n  bundled -> AudioSourceConfig.asset\n  file:// URI or bare absolute path (starts with '/') -> AudioSourceConfig.file (with Uri.toFilePath decoding)\n  otherwise -> AudioSourceConfig.network\n- AudioClipPlayer: defense-in-depth guard in _defaultRemoteAudioFileLoader throws ArgumentError for non-http(s) schemes.\n\nTests:\n- 4 new blocTests in audio_timing_cubit_test.dart (bare path, file://, https, bundled).\n- 2 new tests in audio_clip_player_test.dart (guard throws, file source skips remote loader).\n\n* refactor(audio): extract _configForUrl helper; note content:// and blob: in guard comment\n\n- Extract inline URL classification logic in AudioTimingCubit into a\n  private static _configForUrl helper (cleaner _setClippedAudioSource).\n- Add a note to the ArgumentError guard in AudioClipPlayer that\n  platform-specific schemes (Android content://, web blob:) are also\n  rejected, not just bare paths and file:// URIs.",
+      "tree": {
+        "sha": "b505866b73ee6ff221cc5edb38aa58156cd4c9d3",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/b505866b73ee6ff221cc5edb38aa58156cd4c9d3"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/fd3354ae232a40ab776c29007894ea1edbd7e1d6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDQwNCRC1aQ7uu5UhlAAAD18QADd21bGK+r6qhMN2FdxFF4S7\n5DW1itAt2wu07WvKVzudJ+m7Eavegnk4/o7uiHv2mfq7S15vbZD7k73DQ6pAtxnu\n7hFzgL7WMZb9tCk0BnpnE8tz04NbIgsLA4IwrSZqYyTCWFTeD0bD8iNJ236QY9o+\nyMtxu/cJKwETVSVDLKVvGdijT9pBVKymweLCkX0pHjRCwUGyjS1caI1I26NOLXla\nqPHf037rkuRkY6pv7ExfzELrzJrmnIjbRO9QVoMi5ArND8p4qol8WTNosqyzLdAD\nIMjytJwfFE/r5/EigAWr/nDq6eN6VjAIWdqRlE+RZzhLB95UfDAVtIugpkBpBiuq\nEBVtqPy7Up8dphIYNS69642IQD5WjfokXt1YsEKENuwcLhss/50LE3YQDLqK0VFO\nFxP2aLkJ7SC8rlj50/VFIRTbw4x895AdiSl3pjnT0tIMXUEpzXZJH85Uqed9yjqF\niKmW+/ou2F2CQ33SL4i6wfaV0kLfJEUdeZD0vuHKr4SdQo713xpTFOE5OvI/OGII\nHnxL80u4pahYM/ilF3HkZwKey8OL1dE+WE88jZF3Mq98PsURQZMFMoFOu0SmkRnl\nZ6WLey1SchSJ1uMg/ZJxxhnveJgfGlJfoOCi5NHe2Thc7h5CiE4GfysQ4QCIGz74\nm+iOAGzrYKQYDyBGEyU5\n=6sU1\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b505866b73ee6ff221cc5edb38aa58156cd4c9d3\nparent 11191f2d2b183779792f6176ff1aa3e23ddadc2f\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1779239949 +0700\ncommitter GitHub <noreply@github.com> 1779239949 +0200\n\nfix(audio): route extracted audio paths to AudioSourceConfig.file (#4395) (#4549)\n\n* fix(audio): route extracted audio paths to AudioSourceConfig.file (#4395)\n\nCrashlytics issue e81e2bc1d6713fa5d91e7b15a0950e18: extracted audio paths (bare absolute paths produced by clip_editor_bloc via extractAudio(videoPath)) were classified as .network in AudioTimingCubit and passed to HttpClient.getUrl, crashing with 'No host specified in URI'.\n\nFix:\n- AudioTimingCubit: three-way classification in _setClippedAudioSource:\n  bundled -> AudioSourceConfig.asset\n  file:// URI or bare absolute path (starts with '/') -> AudioSourceConfig.file (with Uri.toFilePath decoding)\n  otherwise -> AudioSourceConfig.network\n- AudioClipPlayer: defense-in-depth guard in _defaultRemoteAudioFileLoader throws ArgumentError for non-http(s) schemes.\n\nTests:\n- 4 new blocTests in audio_timing_cubit_test.dart (bare path, file://, https, bundled).\n- 2 new tests in audio_clip_player_test.dart (guard throws, file source skips remote loader).\n\n* refactor(audio): extract _configForUrl helper; note content:// and blob: in guard comment\n\n- Extract inline URL classification logic in AudioTimingCubit into a\n  private static _configForUrl helper (cleaner _setClippedAudioSource).\n- Add a note to the ArgumentError guard in AudioClipPlayer that\n  platform-specific schemes (Android content://, web blob:) are also\n  rejected, not just bare paths and file:// URIs.",
+        "verified_at": "2026-05-20T01:19:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/fd3354ae232a40ab776c29007894ea1edbd7e1d6",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/fd3354ae232a40ab776c29007894ea1edbd7e1d6",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/fd3354ae232a40ab776c29007894ea1edbd7e1d6/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "11191f2d2b183779792f6176ff1aa3e23ddadc2f",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/11191f2d2b183779792f6176ff1aa3e23ddadc2f",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/11191f2d2b183779792f6176ff1aa3e23ddadc2f"
+      }
+    ]
+  },
+  {
+    "sha": "11191f2d2b183779792f6176ff1aa3e23ddadc2f",
+    "node_id": "C_kwDOO71yAtoAKDExMTkxZjJkMmIxODM3Nzk3OTJmNjE3NmZmMWFhM2UyM2RkYWRjMmY",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-20T00:29:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T00:29:31Z"
+      },
+      "message": "fix(audio): prevent audio session interference during recording  (#4548)\n\n* fix(audio): prevent audio session interference during recording and playback\n\n* test(audio): cover recorder playback factory wiring\n\n* test(audio): isolate playback factory regression coverage\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "9a984abc2c2d83266d103dbb63a821e261a5a1e3",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/9a984abc2c2d83266d103dbb63a821e261a5a1e3"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/11191f2d2b183779792f6176ff1aa3e23ddadc2f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDQBrCRC1aQ7uu5UhlAAAYegQACSo7HEvSS/LeNd+wiAFXIvs\n+bITEyuIFsucnUvJm10n9a0pcblSBJTBBBVT7YFBr1JjdwHUXmz8E4fobAvW1tpu\n0h6Ef/YKe/y4sFkyDp4zvCWwAOBdYBgwIjLFpObOd1Gri8HS7bwYnYjNX6WsJpjs\nAYWk1vOCcIbAyJR8DvyUHQXRURUXxcSmQLOBSq4Fbrhk+HGBLYXfE6CzV6rohKsY\nchJxpg+Ld4KASBBTLpiBn3EC4yx04snbLXfRwgtm21n0lv/Y0gt+Vh4wwvHtJIZu\nT+h56jjxifiXI48I6d9lX6XhOC1WfJUtm+cgxhoyP7DP7O7SCk+FjXsDNzTjwSPm\nKEcvQcnGm6HNHx17cuo9JCPp80oBhP/YtOUpcADeO5bmr6Y4O3uGqdhLQrSaoTJU\nlooHIlcsKjK4+0HSKKXgdS7VR5IyBdN4W6g92EgNDgHe0zCZDMld+BaFPWPtpFaR\n6anzVs5bpU/57B276kpdPo0DUC4tojiWjpwk1sISyQHnASYrNgROIbvKbbpMRNEa\nitOo/QrNwWf181nPzYq3wyIg7Sl56m1t8JG0ECi4pA5GMY5uThu/jbvCJ8rBAhFQ\nUK+8JZ2PQbm6DqB5a+59xJQK2/KrkH345/eeBfE/yk4SveWdguIuem42ECRIucJP\nNeYF7E03wraUbfS3k1rE\n=YMke\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9a984abc2c2d83266d103dbb63a821e261a5a1e3\nparent 22abeeb2be6c9b4665311724bc6b7bcc9b9e3cca\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1779236971 +0700\ncommitter GitHub <noreply@github.com> 1779236971 +1200\n\nfix(audio): prevent audio session interference during recording  (#4548)\n\n* fix(audio): prevent audio session interference during recording and playback\n\n* test(audio): cover recorder playback factory wiring\n\n* test(audio): isolate playback factory regression coverage\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-20T00:29:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/11191f2d2b183779792f6176ff1aa3e23ddadc2f",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/11191f2d2b183779792f6176ff1aa3e23ddadc2f",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/11191f2d2b183779792f6176ff1aa3e23ddadc2f/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "22abeeb2be6c9b4665311724bc6b7bcc9b9e3cca",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/22abeeb2be6c9b4665311724bc6b7bcc9b9e3cca",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/22abeeb2be6c9b4665311724bc6b7bcc9b9e3cca"
+      }
+    ]
+  },
+  {
+    "sha": "22abeeb2be6c9b4665311724bc6b7bcc9b9e3cca",
+    "node_id": "C_kwDOO71yAtoAKDIyYWJlZWIyYmU2YzliNDY2NTMxMTcyNGJjNmI3YmNjOWI5ZTNjY2E",
+    "commit": {
+      "author": {
+        "name": "Liz Sweigart",
+        "email": "127434495+NotThatKindOfDrLiz@users.noreply.github.com",
+        "date": "2026-05-20T00:29:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T00:29:27Z"
+      },
+      "message": "fix(feed): restore popular variant pagination contracts (#4492)\n\n* fix(feed): restore popular variant pagination contracts\n\n* test(videos_repository): cover home feed pagination metadata\n\n* fix(feed): retain popular variant hydration\n\n* test(videos_repository): cover popular page empty and full caching paths\n\nThe strict-coverage gate on the videos_repository package was failing at\n98.79% because the _inMemoryFeedCache.set branches for the empty-stats\nearly return and the full-page hasMore=true exit in getPopularVideosPage\nhad no test exercising them. Add two tests that drive both caching paths\nand assert the cached page is returned without refetching.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(feed): preserve v2 popular pagination cursors\n\n* test(videos_repository): cover popular cursor edge cases\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\nCo-authored-by: rabble <evan@protest.net>",
+      "tree": {
+        "sha": "e415d8e9b0e65e39e83097b42953306dda53029b",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/e415d8e9b0e65e39e83097b42953306dda53029b"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/22abeeb2be6c9b4665311724bc6b7bcc9b9e3cca",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDQBnCRC1aQ7uu5UhlAAA9pQQACI7P9yG8QTZWvAfDANAphk9\njhrlNi244iDbOASf+1OoFKVJF2ApKIGVYWv1nuhXIikExsgXEKWHto6WNH+0asGh\nzK+y5makjFzfuJkuG66EEUntYf47IzToM5O8lg8fvvL9FSgSCu3ZTOPdiyoddhT+\nQHyeOZ80RfE3gntM4QKa3opqgB3CLQTLXdwW0M4/kzGks2AXuFM9bA5DFYV9+zEy\nr7UQ8QlJlCMiLokrygI08umuZrEfM0P5rhuytsC3nt5XNtf6haI6M3F/kQT6PZ7q\nCLOfgaQlMmQxHoq+s0yabkH/gvKI/fhvRRAZc0DqZD/o0PtuTOBEgT+qpZHLe6N7\n5I5g+w077Ej4XU3cuAwz+KJ7x0su/s7m46e+yVlR7oeyhaM18ToQImWfMMMvCxFj\nX6kF9cPrnSyI5WzVQIjRlpoUYVg35FRg514fvrgNtI28oXPZRID3XfNXke9YWnMI\nbGVM6U/MX23GnLJI0FFyIqV3lf4MVJziLDIEe5uuns/BMhhZUtLmKasdPQHBsM2g\nIUjJdOXzPsKXTxHbTHBHGQP6RplO256YOGtlghRyuxhPRiIrcMrLTjeRjxaLB1Du\nwNqAlAPdUZfvXPGdEJZwjVzaekg67jwxwkpbLa09OjgugSyOzu/a8ekZs0AqWW/W\n2A5+jTbSj5Mv0RFPiunY\n=uuPo\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e415d8e9b0e65e39e83097b42953306dda53029b\nparent cbe98f0bba2c54d55050c778a6e5a5d2cd6b48a9\nauthor Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com> 1779236967 -0500\ncommitter GitHub <noreply@github.com> 1779236967 +1200\n\nfix(feed): restore popular variant pagination contracts (#4492)\n\n* fix(feed): restore popular variant pagination contracts\n\n* test(videos_repository): cover home feed pagination metadata\n\n* fix(feed): retain popular variant hydration\n\n* test(videos_repository): cover popular page empty and full caching paths\n\nThe strict-coverage gate on the videos_repository package was failing at\n98.79% because the _inMemoryFeedCache.set branches for the empty-stats\nearly return and the full-page hasMore=true exit in getPopularVideosPage\nhad no test exercising them. Add two tests that drive both caching paths\nand assert the cached page is returned without refetching.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(feed): preserve v2 popular pagination cursors\n\n* test(videos_repository): cover popular cursor edge cases\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\nCo-authored-by: rabble <evan@protest.net>",
+        "verified_at": "2026-05-20T00:29:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/22abeeb2be6c9b4665311724bc6b7bcc9b9e3cca",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/22abeeb2be6c9b4665311724bc6b7bcc9b9e3cca",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/22abeeb2be6c9b4665311724bc6b7bcc9b9e3cca/comments",
+    "author": {
+      "login": "NotThatKindOfDrLiz",
+      "id": 127434495,
+      "node_id": "U_kgDOB5h-_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "html_url": "https://github.com/NotThatKindOfDrLiz",
+      "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+      "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+      "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+      "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+      "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cbe98f0bba2c54d55050c778a6e5a5d2cd6b48a9",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/cbe98f0bba2c54d55050c778a6e5a5d2cd6b48a9",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/cbe98f0bba2c54d55050c778a6e5a5d2cd6b48a9"
+      }
+    ]
+  },
+  {
+    "sha": "cbe98f0bba2c54d55050c778a6e5a5d2cd6b48a9",
+    "node_id": "C_kwDOO71yAtoAKGNiZTk4ZjBiYmEyYzU0ZDU1MDUwYzc3OGE2ZTVhNWQyY2Q2YjQ4YTk",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-19T18:45:06Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T18:45:06Z"
+      },
+      "message": "refactor(providers): split repository providers out of app_providers.dart (#4555)\n\n* refactor(providers): split repository providers out of app_providers.dart\n\nSecond sub-batch (9b of 3) of #4506's final wave. Refs #4339 Wave 2.\n\nMoves the 14-entity repository cluster to lib/providers/repository_providers.dart:\n\n- badgeRepositoryProvider (legacy Provider<X>)\n- cachedFollowingList + followRepository (follow cluster)\n- profileRepository, categoriesRepository, hashtagRepository\n- curatedListRepository + CuratedListsState (notifier) + curationRepository\n- peopleListsRepository (+ private _peopleListsBoxName const)\n- bookmarkService, muteService (NIP-51 services with repository shape)\n- dmRepository (NIP-17 DM persistence)\n- commentsRepository (NIP-22 comments)\n\nMigration pattern (mirrors batches 5-9a):\n\n  // app_providers.dart\n  import 'package:openvine/providers/repository_providers.dart';\n  // ...\n  export 'repository_providers.dart';\n\n- Back-import keeps createBlockedAuthorFilter + pendingActionServiceProvider\n  (both stay in app_providers.dart until 9c) resolvable from the new file.\n- Export keeps existing consumers' imports unchanged.\n\nScope cleanup:\n\n- dart fix --apply removed 23 newly-unused imports from app_providers.dart.\n- Three dead-code marker comments deleted: VideoManagerService removed,\n  Legacy ExploreVideoManager removed, \"In app_providers.dart\" stub.\n- Four workspace package dependencies surfaced as direct deps in pubspec.yaml\n  (comments_repository, curated_list_repository, profile_repository, models),\n  added bare in the workspace-deps section to match existing convention.\n\nCumulative reduction: app_providers.dart 978 -> 455 LoC (84% reduction from\nthe original 2,918). One sub-batch remains (9c: social + foundation) to\nfully exhaust #4506.\n\nTest plan:\n- dart run build_runner build --delete-conflicting-outputs (clean)\n- flutter analyze lib test integration_test (no issues)\n- flutter test test/screens/feed/pooled_video_feed_item_repo_swap_test.dart\n  test/widgets/video_feed_item/feed_videos_repo_swap_test.dart\n  test/providers/individual_video_providers_test.dart\n  test/providers/dm_repository_provider_test.dart\n  test/screens/comments/comments_header_test.dart (16 passed)\n\n* refactor(providers): mark temporary provider shims\n\n* build(providers): refresh generated hashes\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "cc98c4340628c653becd3cc3f837ffe283712ed8",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/cc98c4340628c653becd3cc3f837ffe283712ed8"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/cbe98f0bba2c54d55050c778a6e5a5d2cd6b48a9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDK+yCRC1aQ7uu5UhlAAARzsQAJew4u9IKgl/oUg2eyg5ZWpD\n4R63u4gPZS8g5SF+i9z2erwVf9TJFSQaQt5PbYwozFg5gwcwJ2fNfhb2aOAM5rqv\nSDUcf0kpnTiHnNdM7b7PHLwrwy+HGsiB/PXWQvgEOda3iqNZaARUD6urPu5M27BD\n5xZGM3JMABKNtHKWkwsGghvqrag+YOHf5jzFO9kQJJp7G7Do8y3DjP7Ae9EQnTdQ\nEk+MUAT1Ratp20gZun49Hc4vylnAuYc2LskBrwDeNnHlJMxe4qHGpjlV8ov6F9x4\nlZTFwjZf1HHL0fE4qJfPrBnMP3Oj7llfIeqZoSHDVAuNYFFzb5nQqFpCy6bHoe74\nQQFd23UF93BY/dPCT3G3Bqjh8quhbPhEUd0KHHig8H/CacQWqhiu+AqYRhUusXjf\nPxn5bAnRsCtVWHHo2vv3kTpZh494frMpnyYwtE2jEvdaeCwZJDIvIpOkIqOXgR/5\nSBiBKf3E4K+iDcqmBbkX86IA+SgJKKBscWuG0kmYBxybKZtoN6hTRF9qANId1jli\naj2MwW3AkcdGnXz9z5lgW0t8gYWds6wSKDgn2eGGiXSmXxhuIinMJTigJjKG2wZA\nFfR0+EouuqrRobGj5WK2Sj2naAuO8WsJA2VZATDPG+b0qyPVe43diBox0x+djk9j\n9nH7yae2xTETLe5B6Nxe\n=7lwh\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree cc98c4340628c653becd3cc3f837ffe283712ed8\nparent a418eaf0e1c5e61245bbda902013e032cc12856b\nauthor Meylis <meylis@divine.video> 1779216306 +0500\ncommitter GitHub <noreply@github.com> 1779216306 +0500\n\nrefactor(providers): split repository providers out of app_providers.dart (#4555)\n\n* refactor(providers): split repository providers out of app_providers.dart\n\nSecond sub-batch (9b of 3) of #4506's final wave. Refs #4339 Wave 2.\n\nMoves the 14-entity repository cluster to lib/providers/repository_providers.dart:\n\n- badgeRepositoryProvider (legacy Provider<X>)\n- cachedFollowingList + followRepository (follow cluster)\n- profileRepository, categoriesRepository, hashtagRepository\n- curatedListRepository + CuratedListsState (notifier) + curationRepository\n- peopleListsRepository (+ private _peopleListsBoxName const)\n- bookmarkService, muteService (NIP-51 services with repository shape)\n- dmRepository (NIP-17 DM persistence)\n- commentsRepository (NIP-22 comments)\n\nMigration pattern (mirrors batches 5-9a):\n\n  // app_providers.dart\n  import 'package:openvine/providers/repository_providers.dart';\n  // ...\n  export 'repository_providers.dart';\n\n- Back-import keeps createBlockedAuthorFilter + pendingActionServiceProvider\n  (both stay in app_providers.dart until 9c) resolvable from the new file.\n- Export keeps existing consumers' imports unchanged.\n\nScope cleanup:\n\n- dart fix --apply removed 23 newly-unused imports from app_providers.dart.\n- Three dead-code marker comments deleted: VideoManagerService removed,\n  Legacy ExploreVideoManager removed, \"In app_providers.dart\" stub.\n- Four workspace package dependencies surfaced as direct deps in pubspec.yaml\n  (comments_repository, curated_list_repository, profile_repository, models),\n  added bare in the workspace-deps section to match existing convention.\n\nCumulative reduction: app_providers.dart 978 -> 455 LoC (84% reduction from\nthe original 2,918). One sub-batch remains (9c: social + foundation) to\nfully exhaust #4506.\n\nTest plan:\n- dart run build_runner build --delete-conflicting-outputs (clean)\n- flutter analyze lib test integration_test (no issues)\n- flutter test test/screens/feed/pooled_video_feed_item_repo_swap_test.dart\n  test/widgets/video_feed_item/feed_videos_repo_swap_test.dart\n  test/providers/individual_video_providers_test.dart\n  test/providers/dm_repository_provider_test.dart\n  test/screens/comments/comments_header_test.dart (16 passed)\n\n* refactor(providers): mark temporary provider shims\n\n* build(providers): refresh generated hashes\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-19T18:45:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/cbe98f0bba2c54d55050c778a6e5a5d2cd6b48a9",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/cbe98f0bba2c54d55050c778a6e5a5d2cd6b48a9",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/cbe98f0bba2c54d55050c778a6e5a5d2cd6b48a9/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a418eaf0e1c5e61245bbda902013e032cc12856b",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/a418eaf0e1c5e61245bbda902013e032cc12856b",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/a418eaf0e1c5e61245bbda902013e032cc12856b"
+      }
+    ]
+  },
+  {
+    "sha": "a418eaf0e1c5e61245bbda902013e032cc12856b",
+    "node_id": "C_kwDOO71yAtoAKGE0MThlYWYwZTFjNWU2MTI0NWJiZGE5MDIwMTNlMDMyY2MxMjg1NmI",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-19T16:26:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T16:26:29Z"
+      },
+      "message": "fix(infinite-feed): correct new video feed design with blurred backdrop (#4551)\n\n* feat(feed): update video feed design with blurred backdrop and enhance video builder\n\n* fix(infinite_video_feed): use block body for videoBuilder test lambda\n\nFlutter 3.44 analyzer fails to infer the 4-parameter VideoBuilder\ntype from an arrow-body lambda with 4 wildcards (_, _, _, _),\ninferring it as a 3-parameter Text Function(...) instead. A block\nbody forces the analyzer to use the contextual VideoBuilder type.\n\n* fix(infinite_video_feed): fix second videoBuilder lambda (4 params + block body)\n\n* fix(infinite-feed): clean up backdrop caching and builder coverage\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "bb927f0befabd2bdb332a3b74efc5d359c863549",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/bb927f0befabd2bdb332a3b74efc5d359c863549"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/a418eaf0e1c5e61245bbda902013e032cc12856b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDI81CRC1aQ7uu5UhlAAAcPAQAFkZgstgeQKReKr+YCERrg6O\n/D9WSWCFlozaqLQD+4sWOp02SSxfh5d3/z3X/tbRNCKPiV2GT5r/Mzh8v8/3QAOT\nD84aKYHo2/YunBYTdr4bUZoPc/OmKYFomsyiQdD3pPBpV+UEA1v0WVrmPE4JVHvU\ngTMZALZ22CAdOcvxrS30/xVk35d04LsDkbXzsyrgveDE41SM4ygeCfxhhP4cVZRC\np90W42x1Zhl/pScQOqKxhZNpTDvcdR8bU8hFC5zilWtK/R2dyOpwx6PXYIbzHY56\nauZH+8FBEx2IYDqxfUSm4pDTUDTnF/b6zNPoGaBZvPDiDBn2gsiYiduMY6WHRjaJ\nm9NtrKF+TBaVr7tV/S+/l3szW1A+nL7fT9YOFoYGy1BvuMDjxuV1UJkQohCWIXL5\nQuTymv+rbeF54z/hZbra1eAKXunIppscR+A3eK6eWnrTMh717uMbaaKqEOhSwzPY\nzlsTQLva6e/51scYubo9bcu0YIChitTI/SRMp2/lskqJlGvyL2BYOYpO8FL9lvPl\n8I0l+e8dXwMZurS6uTZb8R0AWH+FUuLJ3HHr4AM1MrROu4j/ZnKWYNEsioptJU8k\n/B4ejoyWiymzaORVx46xpojQAUKvOYd1yV7+qSZmtiMm4eipB4l6xRsclxsTuIOO\ndScZPqiYoi+hxVlXdpyZ\n=fYUf\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bb927f0befabd2bdb332a3b74efc5d359c863549\nparent ce73bddb022f97b32a32643e5d88cbc6fb79900b\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1779207989 +0700\ncommitter GitHub <noreply@github.com> 1779207989 -0500\n\nfix(infinite-feed): correct new video feed design with blurred backdrop (#4551)\n\n* feat(feed): update video feed design with blurred backdrop and enhance video builder\n\n* fix(infinite_video_feed): use block body for videoBuilder test lambda\n\nFlutter 3.44 analyzer fails to infer the 4-parameter VideoBuilder\ntype from an arrow-body lambda with 4 wildcards (_, _, _, _),\ninferring it as a 3-parameter Text Function(...) instead. A block\nbody forces the analyzer to use the contextual VideoBuilder type.\n\n* fix(infinite_video_feed): fix second videoBuilder lambda (4 params + block body)\n\n* fix(infinite-feed): clean up backdrop caching and builder coverage\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-19T16:26:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/a418eaf0e1c5e61245bbda902013e032cc12856b",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/a418eaf0e1c5e61245bbda902013e032cc12856b",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/a418eaf0e1c5e61245bbda902013e032cc12856b/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ce73bddb022f97b32a32643e5d88cbc6fb79900b",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ce73bddb022f97b32a32643e5d88cbc6fb79900b",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/ce73bddb022f97b32a32643e5d88cbc6fb79900b"
+      }
+    ]
+  },
+  {
+    "sha": "ce73bddb022f97b32a32643e5d88cbc6fb79900b",
+    "node_id": "C_kwDOO71yAtoAKGNlNzNiZGRiMDIyZjk3YjMyYTMyNjQzZTVkODhjYmM2ZmI3OTkwMGI",
+    "commit": {
+      "author": {
+        "name": "rabble",
+        "email": "evan@protest.net",
+        "date": "2026-05-19T16:22:56Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T16:22:56Z"
+      },
+      "message": "feat(feed): remove new feed from home dropdown (#4542)\n\n* docs: design home dropdown followed lists\n\n* docs: plan home dropdown followed lists implementation\n\n* feat(feed): show followed lists in home dropdown\n\n* fix(providers): bridge subscribed curated lists\n\n* feat(feed): add following empty state\n\n* feat(video-feed): add home feed source model\n\n* fix(feed): use source context in home feed view\n\n* test(key-management): skip very good optimization\n\n* fix(feed): handle live unsubscribe of selected list, drop dead refs API\n\nAddresses three review threads on PR #4542:\n\n1. video_feed_bloc: when curated lists change and the currently selected\n   subscribed list is no longer in the subscribed set, fall back to\n   forYou (mirroring the startup _restoreSource fallback) instead of\n   reloading a now-stale list source. Persist the new mode to prefs\n   so the fallback survives restart. Adds a blocTest covering the\n   transition.\n\n2. curated_list_repository: remove getSubscribedListVideoRefs() and its\n   tests; the bloc no longer composes following with subscribed-list\n   refs, so the API is dead production surface. Also strips the stale\n   stub from the bloc test setUp.\n\n3. key_management_screen_test: remove the unrelated\n   skip_very_good_optimization tag.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(feed): remove empty-state translation debt\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "3be9521e91eecf5e2b4d35415392a210c335c2b3",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/3be9521e91eecf5e2b4d35415392a210c335c2b3"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/ce73bddb022f97b32a32643e5d88cbc6fb79900b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDI5gCRC1aQ7uu5UhlAAABOMQADH/zvpwc9CiWtVrm+Rth+6q\nc0j9BBhg3AclrP1Kk534WCQlb3UFlEqskQkzkdq4NlBmyGBo0ey2seou9NrvP9bq\ni/GJVRS/nzRAsK2aBCCgSAgyIF5OCP0mB9Ym36sVeLnwuASc1NY24iiX1jAzoYtv\nrBEUdZvBr/mAaoQ8lKc15Npl8qUPU7LPyf5UWsOtJH5R/R06Ct+8YJrgPfeGZ3xj\nmgjGix+Lj424l9Tk8l0Y1Ma9MK/0oaFxEY5grlXpBSPKmQYP/7NEl01vKSDE0tmL\nggcYg38sQWuCS6SC6mV3M6xVBDtVc8aLWPFYNHk8PVgJYXHik7Cmw6OS28QWcNPV\nSpZeVGJhY9aAXmYDEP5LRVuI04bfmW+8ESkg4Qn4CO6WZ0bRN+jA3mPSFU6vdO1v\nNndsx7DDAuGlRAHyNneJFACPgl7G9Lvzdyk9FZI6A6euPArpaWifxOeNjcPzLryk\nJSGXD5rEgU91aNACG3y+Mpvj/MOM8EEHTuD8801t8dQeWZOFVOTrIdIjDUevn2gT\nRJmnxlRDQfDcCXGa6ldvyIUNXhAOxWu+4v97UQMeoPpAeuEk9s7SytYcLBCcF4MJ\nFwqIxBywusuEritPTBMYNON64v0iyrx2+OBvUv72tLoKiM89kH8yqYsup/WcsLjs\nN9HMekAaUg641MLCPDYz\n=RbAv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3be9521e91eecf5e2b4d35415392a210c335c2b3\nparent 0851e4424d7a78fb37416bb1527487b793bab095\nauthor rabble <evan@protest.net> 1779207776 +1200\ncommitter GitHub <noreply@github.com> 1779207776 -0500\n\nfeat(feed): remove new feed from home dropdown (#4542)\n\n* docs: design home dropdown followed lists\n\n* docs: plan home dropdown followed lists implementation\n\n* feat(feed): show followed lists in home dropdown\n\n* fix(providers): bridge subscribed curated lists\n\n* feat(feed): add following empty state\n\n* feat(video-feed): add home feed source model\n\n* fix(feed): use source context in home feed view\n\n* test(key-management): skip very good optimization\n\n* fix(feed): handle live unsubscribe of selected list, drop dead refs API\n\nAddresses three review threads on PR #4542:\n\n1. video_feed_bloc: when curated lists change and the currently selected\n   subscribed list is no longer in the subscribed set, fall back to\n   forYou (mirroring the startup _restoreSource fallback) instead of\n   reloading a now-stale list source. Persist the new mode to prefs\n   so the fallback survives restart. Adds a blocTest covering the\n   transition.\n\n2. curated_list_repository: remove getSubscribedListVideoRefs() and its\n   tests; the bloc no longer composes following with subscribed-list\n   refs, so the API is dead production surface. Also strips the stale\n   stub from the bloc test setUp.\n\n3. key_management_screen_test: remove the unrelated\n   skip_very_good_optimization tag.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* fix(feed): remove empty-state translation debt\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-19T16:22:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ce73bddb022f97b32a32643e5d88cbc6fb79900b",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/ce73bddb022f97b32a32643e5d88cbc6fb79900b",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ce73bddb022f97b32a32643e5d88cbc6fb79900b/comments",
+    "author": {
+      "login": "rabble",
+      "id": 76,
+      "node_id": "MDQ6VXNlcjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "html_url": "https://github.com/rabble",
+      "followers_url": "https://api.github.com/users/rabble/followers",
+      "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+      "organizations_url": "https://api.github.com/users/rabble/orgs",
+      "repos_url": "https://api.github.com/users/rabble/repos",
+      "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rabble/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0851e4424d7a78fb37416bb1527487b793bab095",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0851e4424d7a78fb37416bb1527487b793bab095",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/0851e4424d7a78fb37416bb1527487b793bab095"
+      }
+    ]
+  },
+  {
+    "sha": "0851e4424d7a78fb37416bb1527487b793bab095",
+    "node_id": "C_kwDOO71yAtoAKDA4NTFlNDQyNGQ3YTc4ZmIzNzQxNmJiMTUyNzQ4N2I3OTNiYWIwOTU",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-19T16:11:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T16:11:49Z"
+      },
+      "message": "refactor(async): use .timeout() in BackgroundActivityManager (#4517) (#4553)\n\n* refactor(async): use .timeout() in BackgroundActivityManager (#4517)\n\nReplace the hand-rolled `Future.any([Future(fn), Future.delayed(...)])`\ntimeout in `_performImmediateBackgroundActions` with the proper\n`.timeout()` API so the grace period emits a real `TimeoutException`\nwe can log distinctly from other suspend failures, instead of racing a\nsilent `Future.delayed` and swallowing the bound.\n\nExtracts the 1s suspend window into `_suspendGracePeriod` so the\nintent is named at the field declaration rather than buried in the\nloop body.\n\nAdds a regression test that asserts the manager isolates a throwing\nservice so siblings in the same suspend pass still get notified —\nthat's the coordination this loop has always promised, and the\nexisting single-service test didn't cover the cross-service failure\nisolation path.\n\nNote on the timeout path itself: `BackgroundAwareService.onAppBackgrounded`\nreturns `void`, so `Future(voidFn)` always completes in a single\nmicrotask and `.timeout()` cannot fire today. The defense remains in\ncase the interface is ever widened to `FutureOr<void>`; explicitly\ntesting the bound is out of scope here and would require a separate\ninterface change.\n\nDrops one of the 18 production `Future.delayed` call sites tracked in\n#4517 (now 17).\n\n* review: be honest about the timeout's reach + readable duration log\n\nSelf-review of #4553 surfaced two issues:\n\n1. The inline comment claimed the timeout \"bounds *our* wait\" while the\n   service call \"continues to run in the background\" — true only if a\n   service uses `unawaited()` or returns a Future. Both current\n   in-tree implementations (AuthService, AnalyticsService) are\n   synchronous `void`, so nothing continues. The comment overstated\n   what the code does today.\n\n2. The TimeoutException log interpolated `$_suspendGracePeriod`,\n   which renders as `0:00:01.000000` (Duration.toString). Switched to\n   `${_suspendGracePeriod.inSeconds}s` for a readable warning.\n\nAlso re-anchored the `_suspendGracePeriod` doc comment so the\ndefensive-future-proofing intent is explicit at the field declaration\nrather than implied at the call site. No behavior change.\n\n* test(background): isolate singleton state in manager tests\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "df7d2fdd2b4ffb62fae38ffe54804eb0fe7cf1d7",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/df7d2fdd2b4ffb62fae38ffe54804eb0fe7cf1d7"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/0851e4424d7a78fb37416bb1527487b793bab095",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDIvFCRC1aQ7uu5UhlAAA7SAQAAf/YALt8fmuoyKoxxFldbe8\nT8GxO8RXTO4ZwJyN9pziObapwQCgeM+RNGr94+kU+YOBJMU9w4UZbjLwDD0TKgze\nXQerDR+ie6YKwOpj78b+TEU4fUn/2OHZz+APOnLM4cQ3RCmaHiH8WvwpKuvuYKD2\nIOYAlqTuPr9ChQe+DxW78RP1F7+62e1sa8+qFNaZr7n4rbBgS8XcQsylz90uh+aB\nr3xjgjDprHXIbGETUj9QFuxnCtBXmLvEjGkpMtYHorqAoghNyi6XYWskKgVkfVK0\n4es6qPJ2zrGaGCne65SxY2vYjsFW/PluOX7qgNCZQaNjH1T7guxmtdUSQyKXag+g\nM5ZqICoLUtYcBPepVS+nMwUN3XRpuaO4xVAhHIuWAAPdgNzDWWrTXgIJ5zeDfp5h\nu64ldZRNAL17KFnCoCBxm2IrUwrERFGluwssDRVTJWOoxChG/A76H+5cMZBcmk2Y\n9qOqY/8Ih14KmF4EVJ6xU+ZajtldhXUaBmhT2C5nTPFf9/Xs0/W49WwLiVfTJPRw\npFnbXI6pdmzen0FE177t1akcefOukwdWK9SHg4VWacRVfCbEAMNz1+dYhqLI67uq\n1pSNdLtjnDW0oxGD9Ayv5r+01M3DrTmHGTn4hQjuZrmwRpQDFRn9EEbjNwcYQAtd\n+oTwRSUkuyxPA9ww9Vka\n=ZfK2\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree df7d2fdd2b4ffb62fae38ffe54804eb0fe7cf1d7\nparent 072e9be1fb15351df56b2e4867b05f429ce46060\nauthor Meylis <meylis@divine.video> 1779207109 +0500\ncommitter GitHub <noreply@github.com> 1779207109 +0500\n\nrefactor(async): use .timeout() in BackgroundActivityManager (#4517) (#4553)\n\n* refactor(async): use .timeout() in BackgroundActivityManager (#4517)\n\nReplace the hand-rolled `Future.any([Future(fn), Future.delayed(...)])`\ntimeout in `_performImmediateBackgroundActions` with the proper\n`.timeout()` API so the grace period emits a real `TimeoutException`\nwe can log distinctly from other suspend failures, instead of racing a\nsilent `Future.delayed` and swallowing the bound.\n\nExtracts the 1s suspend window into `_suspendGracePeriod` so the\nintent is named at the field declaration rather than buried in the\nloop body.\n\nAdds a regression test that asserts the manager isolates a throwing\nservice so siblings in the same suspend pass still get notified —\nthat's the coordination this loop has always promised, and the\nexisting single-service test didn't cover the cross-service failure\nisolation path.\n\nNote on the timeout path itself: `BackgroundAwareService.onAppBackgrounded`\nreturns `void`, so `Future(voidFn)` always completes in a single\nmicrotask and `.timeout()` cannot fire today. The defense remains in\ncase the interface is ever widened to `FutureOr<void>`; explicitly\ntesting the bound is out of scope here and would require a separate\ninterface change.\n\nDrops one of the 18 production `Future.delayed` call sites tracked in\n#4517 (now 17).\n\n* review: be honest about the timeout's reach + readable duration log\n\nSelf-review of #4553 surfaced two issues:\n\n1. The inline comment claimed the timeout \"bounds *our* wait\" while the\n   service call \"continues to run in the background\" — true only if a\n   service uses `unawaited()` or returns a Future. Both current\n   in-tree implementations (AuthService, AnalyticsService) are\n   synchronous `void`, so nothing continues. The comment overstated\n   what the code does today.\n\n2. The TimeoutException log interpolated `$_suspendGracePeriod`,\n   which renders as `0:00:01.000000` (Duration.toString). Switched to\n   `${_suspendGracePeriod.inSeconds}s` for a readable warning.\n\nAlso re-anchored the `_suspendGracePeriod` doc comment so the\ndefensive-future-proofing intent is explicit at the field declaration\nrather than implied at the call site. No behavior change.\n\n* test(background): isolate singleton state in manager tests\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-19T16:11:50Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0851e4424d7a78fb37416bb1527487b793bab095",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/0851e4424d7a78fb37416bb1527487b793bab095",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/0851e4424d7a78fb37416bb1527487b793bab095/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "072e9be1fb15351df56b2e4867b05f429ce46060",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/072e9be1fb15351df56b2e4867b05f429ce46060",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/072e9be1fb15351df56b2e4867b05f429ce46060"
+      }
+    ]
+  },
+  {
+    "sha": "072e9be1fb15351df56b2e4867b05f429ce46060",
+    "node_id": "C_kwDOO71yAtoAKDA3MmU5YmUxZmIxNTM1MWRmNTZiMmU0ODY3YjA1ZjQyOWNlNDYwNjA",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-19T15:27:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-19T15:27:37Z"
+      },
+      "message": "refactor(providers): split upload & media providers out of app_providers.dart (#4550)\n\nFirst sub-batch of #4506's final wave (9a of 9c). Moves the 10-entity\nupload/media cluster to `lib/providers/upload_media_providers.dart`:\n\nAuth/media chain (preserved through batches 5 and 7):\n- _BlossomAuthAdapter (private adapter for BlossomAuthProvider)\n- _FirebasePerformanceAdapter (private adapter for BlossomPerformanceMonitor)\n- blossomAuthService\n- mediaViewerAuthServiceProvider (legacy `Provider<X>(...)` style)\n- mediaAuthInterceptor\n\nUpload chain:\n- blossomUploadService\n- uploadManager (top of upload chain — many UI consumers)\n\nAPI + audio:\n- apiService (nip98-backed)\n- crosspostApiClient (Bluesky-toggle settings)\n- audioPlaybackService\n\n`app_providers.dart` adds `import 'upload_media_providers.dart';`\n(back-import — `bugReportService` consumes `blossomUploadServiceProvider`)\nand `export 'upload_media_providers.dart';` (keeps 28 external consumer\nimports unchanged).\n\nNo mutual import with `app_providers.dart` from the new file — all\noutbound deps reach already-split files: `auth_providers.dart`\n(authService, oauthClient, oauthConfig, nip98AuthService),\n`moderation_providers.dart` (ageVerificationService, contentFilterService),\n`environment_provider.dart` (currentEnvironmentProvider).\n\nDiscovered + fixed during implementation:\n- AudioPlaybackService lives in the `sound_service` package, not\n  `openvine/services/audio_playback_service.dart` (path that didn't\n  exist) — corrected the import.\n\nRemoved 9 now-unused imports from `app_providers.dart` via `dart fix`:\nblossom_upload_service, api_service, auth_service (no longer needed),\ncrosspost_api_client, media_auth_interceptor, etc.\n\nCodegen moved: 6 *Provider chunks (~378 LoC) relocated from\n`app_providers.g.dart` into `upload_media_providers.g.dart`.\n\nThis is the cleanest cluster of the wave — no in-line state machines,\nno bridges, no dead providers, no log-level mismatches. Pure\ndependency injection.\n\nAfter this batch, `app_providers.dart` is 1120 → 978 LoC. Two\nsub-batches remain (9b: Repositories, 9c: Social + foundation).\n\nRefs #4506, #4339 Wave 2",
+      "tree": {
+        "sha": "7d1b233888e759e1a0eb0313924e04d5118c479c",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/7d1b233888e759e1a0eb0313924e04d5118c479c"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/072e9be1fb15351df56b2e4867b05f429ce46060",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDIFpCRC1aQ7uu5UhlAAA7+kQAHaCMXXhAmET+Ea/D27Bw458\nCtolkROAXw2+AUIqb7g7Y/QNZJJ8efTBD6mp0TnOgR7s/fmFHJQw82fmsMFdP/wC\n6ipP+ud2MWYeCKBFKFOCjqgT86upJiHJfxm5RhVzfoXuKjZTYN/oeDf60zjQ0Vfz\nS7+YRRTBzE3ema+/rc8nC9sk8/En+JVxMkPobBZQi/JnvaqIcrFbcvcxKqNtbuQh\nActdlm+O0sywaGGK85tCMfc2tk9AB9xU6zuVBfDo57PDfoTyc98c9uqVjnlRWbnH\naNZBvmRdG5pO3C+y7WpaVTzR7iSdRCPLOjJvveXe00FCSiplg7ROOlbiaJwbjAdF\n031O/SZZ9JY/W4SogES9M/jkwprDowgZP+lCPWQEnEL3XhOyZ0QGoTB6Q18l4Zi/\n1ICQl8vTRid3DjkIxGZrdVV68kjX4BVDOpTogYEcPhydBo2hmM+kxw3PrCOs4wNj\ne9uZ/+DIsgqRJBQS01AFZ1LQO0KVzoQ5D8e1ScAYTTI6vLH3N8zmHnFfSoNFqIh8\nsKykjudFgOc4wVcPm3q7TS4ZQD8d+IEorMTys7UXgMl/r65zCzkkD0TcfoS8OBSE\n5HlimxqaBIKL88AaLovIYhVbvD6j6rTHAgkVaf0wWgLEcu/+i+Ah6Fyfc8dRPqNS\n2OPmDWMaCw/3BPd27cRe\n=DaNe\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7d1b233888e759e1a0eb0313924e04d5118c479c\nparent 4c32a998a5e2b319373a01a380cd09428a8891d0\nauthor Meylis <meylis@divine.video> 1779204457 +0500\ncommitter GitHub <noreply@github.com> 1779204457 +0500\n\nrefactor(providers): split upload & media providers out of app_providers.dart (#4550)\n\nFirst sub-batch of #4506's final wave (9a of 9c). Moves the 10-entity\nupload/media cluster to `lib/providers/upload_media_providers.dart`:\n\nAuth/media chain (preserved through batches 5 and 7):\n- _BlossomAuthAdapter (private adapter for BlossomAuthProvider)\n- _FirebasePerformanceAdapter (private adapter for BlossomPerformanceMonitor)\n- blossomAuthService\n- mediaViewerAuthServiceProvider (legacy `Provider<X>(...)` style)\n- mediaAuthInterceptor\n\nUpload chain:\n- blossomUploadService\n- uploadManager (top of upload chain — many UI consumers)\n\nAPI + audio:\n- apiService (nip98-backed)\n- crosspostApiClient (Bluesky-toggle settings)\n- audioPlaybackService\n\n`app_providers.dart` adds `import 'upload_media_providers.dart';`\n(back-import — `bugReportService` consumes `blossomUploadServiceProvider`)\nand `export 'upload_media_providers.dart';` (keeps 28 external consumer\nimports unchanged).\n\nNo mutual import with `app_providers.dart` from the new file — all\noutbound deps reach already-split files: `auth_providers.dart`\n(authService, oauthClient, oauthConfig, nip98AuthService),\n`moderation_providers.dart` (ageVerificationService, contentFilterService),\n`environment_provider.dart` (currentEnvironmentProvider).\n\nDiscovered + fixed during implementation:\n- AudioPlaybackService lives in the `sound_service` package, not\n  `openvine/services/audio_playback_service.dart` (path that didn't\n  exist) — corrected the import.\n\nRemoved 9 now-unused imports from `app_providers.dart` via `dart fix`:\nblossom_upload_service, api_service, auth_service (no longer needed),\ncrosspost_api_client, media_auth_interceptor, etc.\n\nCodegen moved: 6 *Provider chunks (~378 LoC) relocated from\n`app_providers.g.dart` into `upload_media_providers.g.dart`.\n\nThis is the cleanest cluster of the wave — no in-line state machines,\nno bridges, no dead providers, no log-level mismatches. Pure\ndependency injection.\n\nAfter this batch, `app_providers.dart` is 1120 → 978 LoC. Two\nsub-batches remain (9b: Repositories, 9c: Social + foundation).\n\nRefs #4506, #4339 Wave 2",
+        "verified_at": "2026-05-19T15:27:38Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/072e9be1fb15351df56b2e4867b05f429ce46060",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/072e9be1fb15351df56b2e4867b05f429ce46060",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/072e9be1fb15351df56b2e4867b05f429ce46060/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4c32a998a5e2b319373a01a380cd09428a8891d0",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4c32a998a5e2b319373a01a380cd09428a8891d0",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/4c32a998a5e2b319373a01a380cd09428a8891d0"
+      }
+    ]
+  }
+]

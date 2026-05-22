@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "c4728fc7176348a9971f0892c2e7f952bd0a07e8",
+    "node_id": "C_kwDOQdzyrtoAKGM0NzI4ZmM3MTc2MzQ4YTk5NzFmMDg5MmMyZTdmOTUyYmQwYTA3ZTg",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-20T20:19:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T20:19:17Z"
+      },
+      "message": "feat: account-level suspension for under-16 age review (#235)\n\n* feat: add account-level suspension for under-16 age review system\n\n* fix: gate signing and UCAN issuance on account status\n\nAddress PR #235 review feedback:\n\n- Check account status before both sign_event paths (fast/slow)\n- Pass UserStatus to all UCAN issuance paths (refresh, OAuth code\n  exchange, popup login, verify_email, change_key, claim)\n- Add integration tests for suspended user signing denial\n  and get_public_key allowance",
+      "tree": {
+        "sha": "33481d8c716962c21da7566fb925f001051ddfc4",
+        "url": "https://api.github.com/repos/divinevideo/keycast/git/trees/33481d8c716962c21da7566fb925f001051ddfc4"
+      },
+      "url": "https://api.github.com/repos/divinevideo/keycast/git/commits/c4728fc7176348a9971f0892c2e7f952bd0a07e8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDhdFCRC1aQ7uu5UhlAAAIm8QAAsPyeYB2IAdzy3IEJqUbdIY\nW1PQjSz8gaCOOkVQwJ20eOjEqJbQ65qXQteA+VXyHZdCRUT/ZGi5Aw3IiEvyi4FV\nwSTzjbtB6hR2+PWGd+AMFxk0NdLghQjcL1Z+yfZEA8kTocPGntDI2OfADhz4v7dd\nNYP0Q5ONhl9155oqBUs9J1K1uVBIUyJ8cfppj2TZb+PVsf1Wv9WSQGwrbnilUAjy\nUt8IERwfScZfouPKyJl+8O97jr57aDRQIj2Gvw4dAVl+iRpJuYFsZ/U2wtidtyUv\njrHPF4DChQKJl++bPi3zN8r6ZDe3VzPlorBdL6loIkZuZD0dH61mhRxVXIo5sKl+\nb0GySeP6u7Xq4NN+Ne2b4zrcvq4//RYb95jk9vUXI0EvYcInu+DC8UDF6+/L/AWc\n2htxNeoeJXwBL68iE60uteLOSEdKle3M1iZndaz7aIEFHAGfoQYCT+JPeEBmpo2R\nTXhJOHYq7MEOKO+ltp3x56OMUnbho660qXIS7Z86rRO/oggIlnFGZokVb1n5KYSW\nzGvcBJA9KJogiSkqCovmgGg8RGwFpGqKw4NiW/idgzMA40N0haG0JRB7CyphJsLF\nJxvVX2zFe0jFCRbVmT2QbTWeFmXUK18NNQJ0WNIcsqqsr/Jg8FtKeAyQ86NQCKze\nKESgARdytdg4bDdAZfco\n=1pjG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 33481d8c716962c21da7566fb925f001051ddfc4\nparent f88365dd85762ea27e5df1881850b941e806176c\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779308357 -0400\ncommitter GitHub <noreply@github.com> 1779308357 -0300\n\nfeat: account-level suspension for under-16 age review (#235)\n\n* feat: add account-level suspension for under-16 age review system\n\n* fix: gate signing and UCAN issuance on account status\n\nAddress PR #235 review feedback:\n\n- Check account status before both sign_event paths (fast/slow)\n- Pass UserStatus to all UCAN issuance paths (refresh, OAuth code\n  exchange, popup login, verify_email, change_key, claim)\n- Add integration tests for suspended user signing denial\n  and get_public_key allowance",
+        "verified_at": "2026-05-20T20:19:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/keycast/commits/c4728fc7176348a9971f0892c2e7f952bd0a07e8",
+    "html_url": "https://github.com/divinevideo/keycast/commit/c4728fc7176348a9971f0892c2e7f952bd0a07e8",
+    "comments_url": "https://api.github.com/repos/divinevideo/keycast/commits/c4728fc7176348a9971f0892c2e7f952bd0a07e8/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f88365dd85762ea27e5df1881850b941e806176c",
+        "url": "https://api.github.com/repos/divinevideo/keycast/commits/f88365dd85762ea27e5df1881850b941e806176c",
+        "html_url": "https://github.com/divinevideo/keycast/commit/f88365dd85762ea27e5df1881850b941e806176c"
+      }
+    ]
+  }
+]

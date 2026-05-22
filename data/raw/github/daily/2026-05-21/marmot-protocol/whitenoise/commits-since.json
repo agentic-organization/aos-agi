@@ -1,0 +1,576 @@
+[
+  {
+    "sha": "82a0dc1b336a051b9cf1f620e278aa5f23f952a6",
+    "node_id": "C_kwDOQg6sZ9oAKDgyYTBkYzFiMzM2YTA1MWI5Y2YxZjYyMGUyNzhhYTVmMjNmOTUyYTY",
+    "commit": {
+      "author": {
+        "name": "Javier G. Montoya S.",
+        "email": "jgmontoya@pm.me",
+        "date": "2026-05-21T04:48:16Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T04:48:16Z"
+      },
+      "message": "test(integration): add messaging-interaction test with shared harness, single-build bundle and simulator auto-detection (#684)",
+      "tree": {
+        "sha": "7f7771dcee797fa68865794afc0e59346b2df9ac",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/7f7771dcee797fa68865794afc0e59346b2df9ac"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/82a0dc1b336a051b9cf1f620e278aa5f23f952a6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDo6QCRC1aQ7uu5UhlAAAAEoQAK+Mq9MXBIXb8ZnBmJ08dTHd\nrIeHX8Dnea4iaH3zzPn7XTB+M4YSgSWl+zZKIzpOf2SmxYfxR6lfjONvIL/Iq7xB\nchlKwZwxeMh3uUQn3h/GaEo5i88HXGUxpCv0fXXh6+cB31oEcZFWdQsEXXHIlism\nClHIw0lpDuYFRYQV9FSQCmZCwdYeIWQBmpgCpF62b3Dp6ZSw5vT+xTAX6UgjbRPX\n27ORvIocn0yDE295FfJxP9wqdBtquZ1xr2VnKgTqBdqUG7gaEsoON1oZO3SeLZIQ\nKxmlwbr/GB/WFdWrFliAezrYrhzey/un1muvxH68HOAwQ8b8s567lGw1E+UQOASl\nKjf3JDB1cfyNbSEEildGnW2hzYCT333moBktT5wZykWUOldOxrU5LE8ngTYiWzLc\nydNTeyxUYFRVr95IkMgSP11E6VyZ0hTCa6aE6x+Ci6FOnKfLxcPnU7bimMVhG9Jk\nEcmZVyOm3h7xkV0SkMRKk1S35Uvnd+x6ry5mHMY5ZSyzKek4Oq6jFlkzB/HdMQQE\n6kh1bu33AD6hqFixFv+owqDRNRJF0JkOXdrYeag/aqr8whUm2rcNH12D+1dQ7lnP\ngTvKmGrg6pk+sEWM8rM9GraNU1ztZIVRK6DDiDPMTQOCaXKsjaqN/+7ofdLfDoJw\nIK0FTBWBgzEMMq+vHrwW\n=3kx8\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7f7771dcee797fa68865794afc0e59346b2df9ac\nparent 21917327cf05267f5a22bde88f0d4ac04240d957\nauthor Javier G. Montoya S. <jgmontoya@pm.me> 1779338896 -0400\ncommitter GitHub <noreply@github.com> 1779338896 -0400\n\ntest(integration): add messaging-interaction test with shared harness, single-build bundle and simulator auto-detection (#684)",
+        "verified_at": "2026-05-21T04:48:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/82a0dc1b336a051b9cf1f620e278aa5f23f952a6",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/82a0dc1b336a051b9cf1f620e278aa5f23f952a6",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/82a0dc1b336a051b9cf1f620e278aa5f23f952a6/comments",
+    "author": {
+      "login": "jgmontoya",
+      "id": 11434422,
+      "node_id": "MDQ6VXNlcjExNDM0NDIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11434422?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jgmontoya",
+      "html_url": "https://github.com/jgmontoya",
+      "followers_url": "https://api.github.com/users/jgmontoya/followers",
+      "following_url": "https://api.github.com/users/jgmontoya/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jgmontoya/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jgmontoya/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jgmontoya/subscriptions",
+      "organizations_url": "https://api.github.com/users/jgmontoya/orgs",
+      "repos_url": "https://api.github.com/users/jgmontoya/repos",
+      "events_url": "https://api.github.com/users/jgmontoya/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jgmontoya/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "21917327cf05267f5a22bde88f0d4ac04240d957",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/21917327cf05267f5a22bde88f0d4ac04240d957",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/21917327cf05267f5a22bde88f0d4ac04240d957"
+      }
+    ]
+  },
+  {
+    "sha": "21917327cf05267f5a22bde88f0d4ac04240d957",
+    "node_id": "C_kwDOQg6sZ9oAKDIxOTE3MzI3Y2YwNTI2N2Y1YTIyYmRlODhmMGQ0YWMwNDI0MGQ5NTc",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-20T19:50:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T19:50:22Z"
+      },
+      "message": "Share media and messages via long-press chooser (#687)",
+      "tree": {
+        "sha": "2d5fcd30a4654a1a7e3b416800d0b385e83e37ef",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/2d5fcd30a4654a1a7e3b416800d0b385e83e37ef"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/21917327cf05267f5a22bde88f0d4ac04240d957",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDhB+CRC1aQ7uu5UhlAAAN/cQAI0QxUK4cs/DcpGGa7hCxvRs\niksAnOd47rm4PnZJq+fRadAZ92JgO3iudqkEtJl1ZONpf7EHHq7clIasA00Yfsy/\nOG8AIXuTwhWEloHyVbWBHv/W4/rmW+YTCYsx1l6U5i/jAk9gWECDl/q/3ngYrunC\nrPl7OWEdF5Y5jcTx6EGbValN8QmhXD6VAjKx8FH6X3YtXrIQfsKMkX68TbxmBTFB\nI/1CRblF3I80+pZpjSAmh1aew+Z+cp3tCkFklTCqTML2CjmeSPOTMalG158QoU7k\n6WTR92SDfRx/0xIjKD6a7gcH/wtrrd1NsD5NCPC9M4OGCfjn2oNEDzzkmkFl0oOJ\nHIsJyAFe2KVaMVUHcVST3wbpsdjCIbg+K6oQVeYzI4SVGIZ6bmuVJiZAJt5PCjCP\nT2LC+gVQ5DWUwAZYtIRkupPVJKUr9aT14VpYfwae6sH3Ak9dOfpTLh1pMz4wjsay\n9r3InEK3W/JMQ09s/zxDkdhzO01TiSH17Wr7HK61BkjDzaQp/+jf4basfBuSSs2k\nUfLdTz4DzLBSecH68PExWNnYR+oRsqsnMTgEWLrw70rffAIJZo1Wp3Dqonw/h9Ti\nqdAdrLNMxSHPElsX9W8WWo2L15mHxBC0qxPSz+cMpjqD8HRN3kk4YgUwTBH4hOs6\nZHfplgd7zuiH59LpmGXc\n=mb2b\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2d5fcd30a4654a1a7e3b416800d0b385e83e37ef\nparent 942521fafcef8f755fdcda8e3e5db88c1afa5520\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779306622 +0200\ncommitter GitHub <noreply@github.com> 1779306622 +0200\n\nShare media and messages via long-press chooser (#687)",
+        "verified_at": "2026-05-20T19:50:22Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/21917327cf05267f5a22bde88f0d4ac04240d957",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/21917327cf05267f5a22bde88f0d4ac04240d957",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/21917327cf05267f5a22bde88f0d4ac04240d957/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "942521fafcef8f755fdcda8e3e5db88c1afa5520",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/942521fafcef8f755fdcda8e3e5db88c1afa5520",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/942521fafcef8f755fdcda8e3e5db88c1afa5520"
+      }
+    ]
+  },
+  {
+    "sha": "942521fafcef8f755fdcda8e3e5db88c1afa5520",
+    "node_id": "C_kwDOQg6sZ9oAKDk0MjUyMWZhZmNlZjhmNzU1ZmRjZGE4ZTNlNWRiODhjMWFmYTU1MjA",
+    "commit": {
+      "author": {
+        "name": "Pepi",
+        "email": "mariajosefinaalliende@gmail.com",
+        "date": "2026-05-20T19:08:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T19:08:54Z"
+      },
+      "message": "Show notifications settings screen on ios (#688)\n\n* feat: show notifications settings on ios\n\n* docs: update changelog",
+      "tree": {
+        "sha": "4a83892ef7c951a9c63df578e55c89877c78d63c",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/4a83892ef7c951a9c63df578e55c89877c78d63c"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/942521fafcef8f755fdcda8e3e5db88c1afa5520",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDgbGCRC1aQ7uu5UhlAAAasMQAJBY0N+zS7LrqguhaBpdFUG3\nc22UGP3lylCG9LMLV6WNV/t/8XFUZWBIXgd7WqvkhyWR09fJ+UYNuvXT3fOqtmXl\nBMFmbPXvm9wKUL4kRluN6jg+oqURTaHtf26O5k8VOH8okZtggUnlPMg/VapLULeh\nNgIdawnFtXjdg4ar3iC3AZgxugV/kp37VbbFzSRILfpwtgE/TcL6MAUvbE1pgTxy\n7SMGMMQ88QeMmbx1A1Gx/eSncpUeJXKuIweUsUlfzqtIRI6nUDXoGwSyf+6M+O7n\nnJR+EtfvgJLzId9vb2kMre5a2sHTZKssM6Wewyg0+WW2BQoWCKvNkivTTCbVpZjB\n00cjuSOu6+0BBBOVMBNnnVYKsUKoQntdP+i8BJLE+7+4oedeDiJf2edIrgm/woOt\neDXByQYjttpFXwxN+2pHc8N3EMH4c/QlGvg0IsLXEgvs4DmrzYPY14Mb+4Hjgt2/\naNjSp9Culth7QjP2ZDOVzuScVfzfz6+w4VqEAQSHeAdNlX+VSGqzY9u5mQDV1Ph+\n1DlmS2srqf0i/49lBGixFvsY75JCQ5l+7wRV/l0YgUwIHbWLojN4mDTNo1xcqj+H\nPmKSLmg0nQDPZpYsC/a8Nmwaoi8PmdtKf89lzRMeL54EPK2pJBU9gy/jdwdP9Gru\naJs5bCYeWUWm5jZmhe4z\n=lWio\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4a83892ef7c951a9c63df578e55c89877c78d63c\nparent d6f405fa6f54900821414cb0d038cc9262e61b53\nauthor Pepi <mariajosefinaalliende@gmail.com> 1779304134 -0400\ncommitter GitHub <noreply@github.com> 1779304134 -0400\n\nShow notifications settings screen on ios (#688)\n\n* feat: show notifications settings on ios\n\n* docs: update changelog",
+        "verified_at": "2026-05-20T19:08:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/942521fafcef8f755fdcda8e3e5db88c1afa5520",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/942521fafcef8f755fdcda8e3e5db88c1afa5520",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/942521fafcef8f755fdcda8e3e5db88c1afa5520/comments",
+    "author": {
+      "login": "pepina-dev",
+      "id": 30674444,
+      "node_id": "MDQ6VXNlcjMwNjc0NDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30674444?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pepina-dev",
+      "html_url": "https://github.com/pepina-dev",
+      "followers_url": "https://api.github.com/users/pepina-dev/followers",
+      "following_url": "https://api.github.com/users/pepina-dev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pepina-dev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pepina-dev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pepina-dev/subscriptions",
+      "organizations_url": "https://api.github.com/users/pepina-dev/orgs",
+      "repos_url": "https://api.github.com/users/pepina-dev/repos",
+      "events_url": "https://api.github.com/users/pepina-dev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pepina-dev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d6f405fa6f54900821414cb0d038cc9262e61b53",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/d6f405fa6f54900821414cb0d038cc9262e61b53",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/d6f405fa6f54900821414cb0d038cc9262e61b53"
+      }
+    ]
+  },
+  {
+    "sha": "d6f405fa6f54900821414cb0d038cc9262e61b53",
+    "node_id": "C_kwDOQg6sZ9oAKGQ2ZjQwNWZhNmY1NDkwMDgyMTQxNGNiMGQwMzhjYzkyNjJlNjFiNTM",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-20T12:47:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T12:47:46Z"
+      },
+      "message": "Add 'Add members' button to group info (#679)\n\n* Add 'Add members' button to group info screen\n\nAdmin-only button in group info opens a user picker that filters out\nexisting members and submits via addMembersToGroup. Reuses the same\nsearch + selection hooks as the new-group flow.\n\n* Fetch group members live in add-members screen\n\nReplaces the existingMemberPubkeys constructor arg + go_router extra\nplumbing with useGroupMembers fetched inside the screen using the\ngroupId already in the route. This filter survives deep links and\nprocess restoration, where extra would have come back null and\nallowed re-adding existing members.\n\nPer Jeff's review on #679.\n\n* Extract shared UserPickerScreen widget\n\nBoth the new-group flow (UserSelectionScreen) and the new add-members\nflow (AddGroupMembersScreen) were rendering nearly identical UI: slate\nheader, search field, selected-user bubbles, candidate list with\ncheckboxes and fade overlays, footer button. Pull that shared\nstructure into a reusable UserPickerScreen widget parameterised on\ntitle, submit text/icon/callback, optional candidate filter, extra\nloading state, and an optional caller-managed system notice.\n\nNet effect: both consumers shrink to thin wrappers (~30 / ~70 lines\nvs ~180 / ~220 before), and any future visual change to the picker\nis now a single edit.\n\nPer Jeff's review on #679.\n\n* Prefer submit-error notice over caller-supplied notice\n\nIn UserPickerScreen, additionalNotice (e.g. a sticky member-fetch\nerror) was masking the submit-error notice triggered by onSubmit\nthrowing. If the user took an action and it failed, they got no\nfeedback. Flip the precedence so submit errors win; the\ncaller-supplied notice reappears once the user dismisses the submit\nerror.\n\nRegression test pins the order in add_group_members_screen_test.dart.\n\n* Address Pepi's review: use hook for add, localize error keys, move picker\n\n- Use membersState.addMembers from useGroupMembers instead of calling\n  groups_api.addMembersToGroup directly. Avoids reimplementing the\n  hook's add-and-update-local-state path.\n- Map membersState.error (a key, not a message) through a localizer\n  so add failures show 'Failed to add members.' and fetch failures\n  show 'Failed to load group members.'. Previously both were always\n  labelled as fetch failures.\n- Move UserPickerScreen from widgets/ to screens/ since it is a full\n  Scaffold-based screen used by two thin-wrapper consumers. Added a\n  doc comment naming both consumers.\n- Drop the now-unused submitErrorMessage parameter and the\n  caller-vs-internal notice precedence logic; both consumers route\n  errors through additionalNotice now.\n\nPer Pepi's review on #679.\n\n* Collapse UserSelectionScreen into UserPickerScreen\n\nThe thin UserSelectionScreen wrapper just configured UserPickerScreen\nfor the new-group flow. Pull that config into a private helper\nfunction inside routes.dart and delete the class. Now UserPickerScreen\nis the single picker screen; AddGroupMembersScreen and the new-group\nroute both compose it directly.\n\nRenames the user_selection_screen test file to\nuser_picker_screen_test.dart since it exercises UserPickerScreen via\nthe new-group route. routes_test.dart now asserts find.byType(\nUserPickerScreen) for the empty-selectedUsers fallback.\n\nPer Jeff's follow-up on #679.\n\n* Remove stale UserPickerScreen doc comment",
+      "tree": {
+        "sha": "2a2e9c48dd7eb53f999e6c54a1e47c9cca171f6e",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/2a2e9c48dd7eb53f999e6c54a1e47c9cca171f6e"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/d6f405fa6f54900821414cb0d038cc9262e61b53",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDa1yCRC1aQ7uu5UhlAAAnvAQAAD97pq6B/NKqfaaWgYaPc5I\nCPbyEXnh250X5/jvRJPnP3m+2qT/lSC1d1WvEB6fy1GKII5IZYka3W/N1ZhOmkih\n3okaMODR9enwTxFvl2HnAfJsmfCBF0ZcKSlZ7UA7hdZMtiJiC85w57Q3tEPpFYVN\nR5JCQ1lu5jOBL1wLi8qjkQrCUhKkeLktnqnh0D8W6Pqyzh2xd26PLNb3ahBUbVDe\ndTXpedV1soXdeW+HUZaGAp0+f+m+FDkEcJhB+gvE4IL7YvAFOzkixeinDUN+n0wd\nP5YaSzE8NfokEOWxer68rf4QAhMDAvUNa3lgic4RkDuURG9Z7fK7yzb3cvKzGPDS\n9MvDncrqvp6djHvuAKl5zGUY225n65AsVRIcYjpyOyjty/OBw2SKH7mofRKv/XQR\nbd3NkNVhqBcrMkWEmRBRcPl5eYS5o9YeTtFz9PDG/1KobwYZV+SiaCuvxckmDL5a\npKA4aKt/yU/TzEfAzmQBer6ErmkAobSY+cop09W0Q3ABMyCSZ6ua38IkXge2A+Xv\nXC4snMxAdHUhGfudby5nZ9rFRbeVHiEa9M7+q0cEpgGxOuzV2/pbijor3VJr2e+9\nCr28iroDudIjAnJeuyPAmGgAy14JC327M22hfIcPoGEzBEdziQEQL9si45CWlsTV\n+BCmbboGAbHuBdcU+NCu\n=1ear\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2a2e9c48dd7eb53f999e6c54a1e47c9cca171f6e\nparent d57a883e538efcf15ced837455df11d5a3073f25\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779281266 +0200\ncommitter GitHub <noreply@github.com> 1779281266 +0200\n\nAdd 'Add members' button to group info (#679)\n\n* Add 'Add members' button to group info screen\n\nAdmin-only button in group info opens a user picker that filters out\nexisting members and submits via addMembersToGroup. Reuses the same\nsearch + selection hooks as the new-group flow.\n\n* Fetch group members live in add-members screen\n\nReplaces the existingMemberPubkeys constructor arg + go_router extra\nplumbing with useGroupMembers fetched inside the screen using the\ngroupId already in the route. This filter survives deep links and\nprocess restoration, where extra would have come back null and\nallowed re-adding existing members.\n\nPer Jeff's review on #679.\n\n* Extract shared UserPickerScreen widget\n\nBoth the new-group flow (UserSelectionScreen) and the new add-members\nflow (AddGroupMembersScreen) were rendering nearly identical UI: slate\nheader, search field, selected-user bubbles, candidate list with\ncheckboxes and fade overlays, footer button. Pull that shared\nstructure into a reusable UserPickerScreen widget parameterised on\ntitle, submit text/icon/callback, optional candidate filter, extra\nloading state, and an optional caller-managed system notice.\n\nNet effect: both consumers shrink to thin wrappers (~30 / ~70 lines\nvs ~180 / ~220 before), and any future visual change to the picker\nis now a single edit.\n\nPer Jeff's review on #679.\n\n* Prefer submit-error notice over caller-supplied notice\n\nIn UserPickerScreen, additionalNotice (e.g. a sticky member-fetch\nerror) was masking the submit-error notice triggered by onSubmit\nthrowing. If the user took an action and it failed, they got no\nfeedback. Flip the precedence so submit errors win; the\ncaller-supplied notice reappears once the user dismisses the submit\nerror.\n\nRegression test pins the order in add_group_members_screen_test.dart.\n\n* Address Pepi's review: use hook for add, localize error keys, move picker\n\n- Use membersState.addMembers from useGroupMembers instead of calling\n  groups_api.addMembersToGroup directly. Avoids reimplementing the\n  hook's add-and-update-local-state path.\n- Map membersState.error (a key, not a message) through a localizer\n  so add failures show 'Failed to add members.' and fetch failures\n  show 'Failed to load group members.'. Previously both were always\n  labelled as fetch failures.\n- Move UserPickerScreen from widgets/ to screens/ since it is a full\n  Scaffold-based screen used by two thin-wrapper consumers. Added a\n  doc comment naming both consumers.\n- Drop the now-unused submitErrorMessage parameter and the\n  caller-vs-internal notice precedence logic; both consumers route\n  errors through additionalNotice now.\n\nPer Pepi's review on #679.\n\n* Collapse UserSelectionScreen into UserPickerScreen\n\nThe thin UserSelectionScreen wrapper just configured UserPickerScreen\nfor the new-group flow. Pull that config into a private helper\nfunction inside routes.dart and delete the class. Now UserPickerScreen\nis the single picker screen; AddGroupMembersScreen and the new-group\nroute both compose it directly.\n\nRenames the user_selection_screen test file to\nuser_picker_screen_test.dart since it exercises UserPickerScreen via\nthe new-group route. routes_test.dart now asserts find.byType(\nUserPickerScreen) for the empty-selectedUsers fallback.\n\nPer Jeff's follow-up on #679.\n\n* Remove stale UserPickerScreen doc comment",
+        "verified_at": "2026-05-20T12:47:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/d6f405fa6f54900821414cb0d038cc9262e61b53",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/d6f405fa6f54900821414cb0d038cc9262e61b53",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/d6f405fa6f54900821414cb0d038cc9262e61b53/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d57a883e538efcf15ced837455df11d5a3073f25",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/d57a883e538efcf15ced837455df11d5a3073f25",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/d57a883e538efcf15ced837455df11d5a3073f25"
+      }
+    ]
+  },
+  {
+    "sha": "d57a883e538efcf15ced837455df11d5a3073f25",
+    "node_id": "C_kwDOQg6sZ9oAKGQ1N2E4ODNlNTM4ZWZjZjE1Y2VkODM3NDU1ZGYxMWQ1YTMwNzNmMjU",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-20T12:47:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T12:47:09Z"
+      },
+      "message": "Implement iOS NSE notifications and Android push token plumbing (#673)\n\n* Add remote push notification plumbing\n\n* Checkpoint notification reliability cleanup\n\n* Prepare notification reliability PR\n\n* Fix notification PR review findings\n\n* Address notification review follow-ups\n\n* Clean up failed iOS data migration copies\n\n* Address app resume and migration cleanup review\n\n* Restore coverage for notification review fixes\n\n* Fix App Group migration guard\n\n* Address notification PR review feedback\n\n* Cover notification review edge cases\n\n* Address notification test review feedback\n\n* Address NSE migration and startup retry review\n\n* Use foreground catch-up for notification refresh\n\n* Update whitenoise-rs foreground catch-up dependency\n\n* Cover notification catch-up error paths\n\n* Fix notification review edge cases",
+      "tree": {
+        "sha": "3ca6e33a82a847df95c4c34b422534ef966e6a79",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/3ca6e33a82a847df95c4c34b422534ef966e6a79"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/d57a883e538efcf15ced837455df11d5a3073f25",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDa1NCRC1aQ7uu5UhlAAArUoQABfyVSc4hjpZew6/siXC8NJy\nQl5UI3+HUl3G2UjHeZj409MaTfNT1/k0VPcdVmW3MyVxUj4o0lAAtEjzG1ecHjPP\nMTM5GT9D7XgxRX2oABZ3khuMJaurkJefM/ukb6zijSqct9Zseh/QyT+jp8NT3w2z\nnBzebmWOSpxfzuxunfo1WRdlL4L5fZ5cDT15eAjmxfzaoCRd8r6d8ixLstTLVNFC\n/X2XQ6J4udT35LkrhvRh3EYsTkhHiOh/Wq8ohVKMO0ynKoPJ72UYwvNCtqJMS+Wp\nxdkf2n7986/FCLcDn55MaBxuA2SiTt1vZ8+w9NMtsf2cq+OoYx8BfixfmoRr+SSH\nJWGsNbbsqgbXPGMtE/paUbVV8qNLUGnxIBVPP6xiRb4WGdWKPjWrCJmoe6JvQVeB\n66YPXMLmczEHBkgBmPSVeZ1A2Ms5vTKCNfVSR/PuXvJTQWg0LkuH3pkmJ2d0GUlc\n7kSdXg3jYwigquDsgFCk9TCb14Ld1n/q32qny33hamYA9c/ejK+wdjn4rOZAPGoT\nYn35V500Q1xzrQW71CXRyaIzcolDOXH/1ylzjT16yb1pQDcreLt8OK6AdAq+8AUb\nXPZBuYWfYeHBbtbiZJn1anJf8iQjnsbDTeV6ZFFSgTfpvby74NGX96LsMpQUaSxW\n9iBZmurZAMxj3YcitVeK\n=3GD0\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3ca6e33a82a847df95c4c34b422534ef966e6a79\nparent 30ab65da28caafe575611a8fafec605afb6911c8\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1779281229 +0200\ncommitter GitHub <noreply@github.com> 1779281229 +0200\n\nImplement iOS NSE notifications and Android push token plumbing (#673)\n\n* Add remote push notification plumbing\n\n* Checkpoint notification reliability cleanup\n\n* Prepare notification reliability PR\n\n* Fix notification PR review findings\n\n* Address notification review follow-ups\n\n* Clean up failed iOS data migration copies\n\n* Address app resume and migration cleanup review\n\n* Restore coverage for notification review fixes\n\n* Fix App Group migration guard\n\n* Address notification PR review feedback\n\n* Cover notification review edge cases\n\n* Address notification test review feedback\n\n* Address NSE migration and startup retry review\n\n* Use foreground catch-up for notification refresh\n\n* Update whitenoise-rs foreground catch-up dependency\n\n* Cover notification catch-up error paths\n\n* Fix notification review edge cases",
+        "verified_at": "2026-05-20T12:47:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/d57a883e538efcf15ced837455df11d5a3073f25",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/d57a883e538efcf15ced837455df11d5a3073f25",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/d57a883e538efcf15ced837455df11d5a3073f25/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "30ab65da28caafe575611a8fafec605afb6911c8",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/30ab65da28caafe575611a8fafec605afb6911c8",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/30ab65da28caafe575611a8fafec605afb6911c8"
+      }
+    ]
+  },
+  {
+    "sha": "30ab65da28caafe575611a8fafec605afb6911c8",
+    "node_id": "C_kwDOQg6sZ9oAKDMwYWI2NWRhMjhjYWFmZTU3NTYxMWE4ZmFmZWM2MDVhZmI2OTExYzg",
+    "commit": {
+      "author": {
+        "name": "JeffG",
+        "email": "202880+erskingardner@users.noreply.github.com",
+        "date": "2026-05-20T10:21:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T10:21:45Z"
+      },
+      "message": "[codex] Add key package developer controls (#685)\n\n* Add key package developer controls\n\n* Refactor bulk key package deletion hook\n\n* Localize key package d-tag label\n\n* Preserve bulk delete action on refresh failure",
+      "tree": {
+        "sha": "e77356d4cbc6e2adc733cd822c27e68be62641cc",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/e77356d4cbc6e2adc733cd822c27e68be62641cc"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/30ab65da28caafe575611a8fafec605afb6911c8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDYs5CRC1aQ7uu5UhlAAAgcEQAFsjKt8Mm4bsdV50VPwQPgbz\nCjf9Xa8oMbyvpUkjY+RPzjGwbdvOVbLwwma88sQr6iOT/Cdjs5jmRaXZjB7to8WQ\nkRPRZAbK+XndyNWWynEQZDxB5JHpwvd5Xyd/8+ddkZWzA2c2XofSIwiESE3NHsGw\ny417gee85oUb80JZpj/0qgKqjIG5JdIDc/M2xCp0bDYdZcSXl0TFUVSRQPKxeNlq\nt9hwHbjLiVRCK5H9Am5UK2AYWAM5DuOPsHXC+xqyEaofkD1BWSKFBl82Zn0QeBv0\nez3rRhz/lalnC6pvUXxf+ilpuvWCnD/hSuihq0RVK+fLN0T+nT22I8aOEWUYWoWs\nnXk/a715avaUu/u9MkIr25AkvbCLVgP9GeyEL4RellFu53cyufiSEx/KgYyI5UqW\nndRMA35CaR1X+J36yXavgtJj1Z7+R/F3h7HU+4iHPFUpdKLyCuWg/EEZmW/WVLp1\nt0S1nrJBzsm/Phco1FgyiOSNSuXC3+y04gGdq4Gu7nF7On5Pj4qQpzJuoAfdE2s8\nSEevHvfdraxL81wbtCmCit9jpYHz3mYy+EGqC8OyGZbHTUGdK2AYPIKJ1zArvsYP\nBx7bKnDU/GiovUZuTSFZVGzVurW4WMUlYHtE7ZbiqwOHhOFeVoUqiRuBs7alrQNW\nGcLY6BsLS9C2mOhjFjDb\n=a/To\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e77356d4cbc6e2adc733cd822c27e68be62641cc\nparent 9e0046eb1bf3b0aeb00d082eb70268296a73eaa1\nauthor JeffG <202880+erskingardner@users.noreply.github.com> 1779272505 +0200\ncommitter GitHub <noreply@github.com> 1779272505 +0200\n\n[codex] Add key package developer controls (#685)\n\n* Add key package developer controls\n\n* Refactor bulk key package deletion hook\n\n* Localize key package d-tag label\n\n* Preserve bulk delete action on refresh failure",
+        "verified_at": "2026-05-20T10:21:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/30ab65da28caafe575611a8fafec605afb6911c8",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/30ab65da28caafe575611a8fafec605afb6911c8",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/30ab65da28caafe575611a8fafec605afb6911c8/comments",
+    "author": {
+      "login": "erskingardner",
+      "id": 202880,
+      "node_id": "MDQ6VXNlcjIwMjg4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "html_url": "https://github.com/erskingardner",
+      "followers_url": "https://api.github.com/users/erskingardner/followers",
+      "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+      "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+      "repos_url": "https://api.github.com/users/erskingardner/repos",
+      "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9e0046eb1bf3b0aeb00d082eb70268296a73eaa1",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/9e0046eb1bf3b0aeb00d082eb70268296a73eaa1",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/9e0046eb1bf3b0aeb00d082eb70268296a73eaa1"
+      }
+    ]
+  },
+  {
+    "sha": "9e0046eb1bf3b0aeb00d082eb70268296a73eaa1",
+    "node_id": "C_kwDOQg6sZ9oAKDllMDA0NmViMWJmM2IwYWViMDBkMDgyZWI3MDI2ODI5NmE3M2VhYTE",
+    "commit": {
+      "author": {
+        "name": "Pepi",
+        "email": "mariajosefinaalliende@gmail.com",
+        "date": "2026-05-20T06:18:30Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-20T06:18:30Z"
+      },
+      "message": "fix: show full qrcode in small screens (#683)",
+      "tree": {
+        "sha": "94dc2af858f8363ada414231a0430ec7cff3f5c8",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/94dc2af858f8363ada414231a0430ec7cff3f5c8"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/9e0046eb1bf3b0aeb00d082eb70268296a73eaa1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDVI2CRC1aQ7uu5UhlAAA7DwQAJLWlpRYT2D2ktbjYg36GmTD\nE00pg5Nkvz0h+8pBJZip/pySDBzjQDSwi1T/iXiMDrpP31PzdcQ/k/vzROyANQ+t\n6+hpnugA89vvNUcwzynZfNloC3U4BTQG+BdQzgsciICZOIP4D79JwUlzMvxazGVW\n7aAftyV+fVsgnnPbY6wnxpdZYrGLUaxg6qRGzS0mF5sBPNYTOKyLlDHKl5lZ0PYQ\n8tXTEJamtxQ1Kn5x0UcNxSk6XSe7Ku1np3UITOuPyQl0jnYWp/Il5FvXCU8s/K+Z\n9u9uTh/VsWBEvZjBqkpfnR/byJHC5lC87YIp2UTCGtH9pjsVjuNpNWhWBnnSCWed\nCD1vB2eseCGmBfhZNOStOsufsQX3uHHYKZF1EEyF8oQ0CvJt+NgEPndzWDwR6AS4\niGLSj5SylnIOAaTdKo6Kaw6w/Yg908A/ErOuexITDb+K0/QrvbcjSlcfrm3KZpur\nGJgohwXtrKKkZUJvSn6z92tHQ2GaPuElDQKa0eKlwn682gPyWhLRAiLhKeh/Ilt8\na9fOtzSkjaIJeAn8Hb8RQmscPLJej+NG/+3eZRK00xFWYn9e2sM7KJgphgrVgCgO\nwPHHhY45PkRjso68pdirAlvrF695kL85kOPn9shaq+0IC5y2E/iWMoApY/a4fAzT\nJ0xquxlNPQ2O8Qno9lGs\n=G95B\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 94dc2af858f8363ada414231a0430ec7cff3f5c8\nparent bc32a14ed98f8b9c25d8cb8bb86942a5fa48d839\nauthor Pepi <mariajosefinaalliende@gmail.com> 1779257910 -0400\ncommitter GitHub <noreply@github.com> 1779257910 +0200\n\nfix: show full qrcode in small screens (#683)",
+        "verified_at": "2026-05-20T06:18:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/9e0046eb1bf3b0aeb00d082eb70268296a73eaa1",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/9e0046eb1bf3b0aeb00d082eb70268296a73eaa1",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/9e0046eb1bf3b0aeb00d082eb70268296a73eaa1/comments",
+    "author": {
+      "login": "pepina-dev",
+      "id": 30674444,
+      "node_id": "MDQ6VXNlcjMwNjc0NDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30674444?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pepina-dev",
+      "html_url": "https://github.com/pepina-dev",
+      "followers_url": "https://api.github.com/users/pepina-dev/followers",
+      "following_url": "https://api.github.com/users/pepina-dev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pepina-dev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pepina-dev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pepina-dev/subscriptions",
+      "organizations_url": "https://api.github.com/users/pepina-dev/orgs",
+      "repos_url": "https://api.github.com/users/pepina-dev/repos",
+      "events_url": "https://api.github.com/users/pepina-dev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pepina-dev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bc32a14ed98f8b9c25d8cb8bb86942a5fa48d839",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/bc32a14ed98f8b9c25d8cb8bb86942a5fa48d839",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/bc32a14ed98f8b9c25d8cb8bb86942a5fa48d839"
+      }
+    ]
+  }
+]

@@ -23,6 +23,7 @@ Part of the [[teams/marmot-protocol]] organization — the Marmot protocol and i
 
 ## History
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/marmot-protocol/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/marmot-protocol/marmot-ts/`) shows **6 commits** by [[people/hzrd149]]: add next release script, remove examples and deploy docs to Pages, correct docs, add changesets to agents file, update docs imports, bump dependencies. **29 issues updated**.
 
 ## Open questions
 - Who is the designated maintainer beyond the top contributors?

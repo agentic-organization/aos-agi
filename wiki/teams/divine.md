@@ -113,8 +113,13 @@ Cross-team:
 Stated descriptively; not a verdict.
 
 ## Ingestion provenance
-- Discovery run: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`.
+- 2026-05-10: Discovery run: `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json`.
 - Tool: [[tools/github-org-discover]].
+
+- 2026-05-15: Concentrated client activity in the 24h window per `data/raw/github/daily/2026-05-15/`: [[projects/divine-mobile]] (13 commits, 74 updated issues — crashlytics hardening, content-filter canonicalization, session-readiness gating), [[projects/divine-web]] (6 commits, 7 issues — new Popular feed, search Hot-sort, Firefox video fix). Committers: [[people/rabble]] (10 total across both repos), [[people/NotThatKindOfDrLiz]] (6), [[people/realmeylisdev]], [[people/hm21]], [[people/dcadenas]].
+## History
+- 2026-05-07: Page created from divinevideo GitHub discovery run.
+- 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/`) shows concentrated mobile-app activity on [[projects/divine-mobile]] (10 commits by [[people/hm21]], [[people/rabble]], [[people/notthatkindofdrliz]]), auth/name-server work by [[people/dcadenas]] on [[projects/keycast]] and [[projects/divine-name-server]], and web-front-end issue #361 (family/age-review pages) by [[people/notthatkindofdrliz]].
 
 ## Open questions
 - What is the actual maintainer structure — is rabble the sole decision-maker, or is there a steering group with dcadenas / mbradley / NotThatKindOfDrLiz?

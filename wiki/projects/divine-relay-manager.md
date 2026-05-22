@@ -23,6 +23,9 @@ Part of the [[teams/divine]] organization — Divine's short-form video social p
 
 ## History
 - 2026-05-07: Page created from `data/raw/github/org-discovery/2026-05-07/divinevideo/github-org-discover.json` (discovery run via [[tools/github-org-discover]]).
+- 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/divinevideo/divine-relay-manager/`) shows **3 commits** by [[people/mbradley]]: realign moderation actions with explicit delete and age review workflows (#78), create Zendesk ticket on age review restriction (#76), enrich age review UI with profile data (#75). **8 issues updated**.
+
+- 2026-05-14: `data/raw/github/daily/2026-05-14/divinevideo/divine-relay-manager/` captured **3 commits** in the 24h window. Themes: auto-hide configurable tiers with settings UI and media proxy fixes (#56), BLOSSOM_WEBHOOK_SECRET secrets store binding fix (#63), QUARANTINE state recognition in media status (#62). Committers: [[people/mbradley]].
 
 ## Open questions
 - Who is the named maintainer (beyond top contributors by volume)?
