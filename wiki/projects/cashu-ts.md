@@ -29,6 +29,7 @@ The **TypeScript reference library** for Cashu. Powers most web wallets in the e
 
 - 2026-05-17: `data/raw/github/daily/2026-05-17/cashubtc/cashu-ts/` captured **4 commits** in the 24h window, including release **v4.4.0** (2026-05-17). Themes: `AmountWithUnit` value object with unit-aware sibling to `Amount`, `verifyDleqIfPresent` deprecation ahead of v5 removal, `ProofLike` accepted in `WalletEvent` proof state updates, chore/main release automation. Committer: [[people/rob-woodgate]] (all 4).
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/cashu-ts/`) shows **1 issue updated** (no new commits): #633 feat: add onchain mint/melt support by [[people/robwoodgate]].
+- 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/cashubtc/cashu-ts/`) shows **2 commits** by [[people/robwoodgate]] and release **v4.5.0** (published 2026-05-21). Themes: onchain mint/melt support (#633), release 4.5.0 (#666). **99 events**, **6 issues updated**.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

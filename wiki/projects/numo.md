@@ -19,6 +19,7 @@ Bitcoin point-of-sale (PoS) Android application that lets merchants accept Bitco
 
 ## History
 - 2026-05-07: Page created from [cashu.space](https://cashu.space/) / [docs.cashu.space](https://docs.cashu.space/) and `cashubtc/awesome-cashu` snapshot (`data/raw/cashu/awesome-cashu-2026-05-07.md`).
+- 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/cashubtc/Numo/`) shows **5 commits** by [[people/a1denvalu3]] and release **v1.6-rc1** (published 2026-05-21). Themes: BTCMap onboarding banner (#321, reverted then re-applied), build.gradle.kts update (#322), remove obsolete Java 21 override in release workflow (#323). **100 events**, **5 issues updated**.
 
 - 2026-05-17: `data/raw/github/daily/2026-05-17/cashubtc/Numo/` captured **1 commit** in the 24h window. Theme: validate auto-withdraw threshold against LNURL `minSendable` (#315). Committer: [[people/a1denvalu3]].
 

@@ -44,6 +44,7 @@ Ditto is one of AOS's **Foundry** projects, owned and operated by [[teams/soapbo
 
 - 2026-05-11: Daily ingestion (`data/raw/github/daily/2026-05-11/soapbox-pub/ditto/`) shows **2 commits** by [[people/alexgleason]] and **1 release** v2.14.0 (and follow-up v2.14.1). Commits: "Add 'Zap all members' on-chain action to people-list events" (kind 8333 batch zaps), and "Add VIEW action on payment success".
 - 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/soapbox-pub/ditto/`) shows **2 commits** by [[people/alexgleason]]: show per-recipient share for multi-recipient on-chain zap notifications (kind 8333 batch fix), and add 'View' action to post success toast.
+- 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/soapbox-pub/ditto/`) shows **10 commits** by [[people/alexgleason]]. Major Bitcoin wallet surface work: BIP-352 silent payment sends, BIP-375 ECDH share + DLEQ proof attachment to signed SP PSBTs, PSBT v2 extraction with @scure/btc-signer (replacing bitcoinjs-lib), QR code scanning for wallet Send recipient, Bitcoin APIs editor in Wallet settings, Esplora REST failover with abort signals/timeouts. **100 events** in the 24h window.
 
 - 2026-05-12: `data/raw/github/daily/2026-05-12/soapbox-pub/ditto/` captured **2 commits** in the 24h window (GitHub mirror). Themes: truncate version-update toast excerpt to 60 characters, fetch BTC price from mempool.space instead of CoinGecko. Committers: [[people/alexgleason]].
 

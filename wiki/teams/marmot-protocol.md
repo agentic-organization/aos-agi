@@ -92,6 +92,7 @@ Noting these as facts about current distribution, not verdicts.
 ## History
 - 2026-05-15: White Noise Flutter app activity per `data/raw/github/daily/2026-05-15/marmot-protocol/whitenoise/`: 1 commit (QR scanner camera fix) and 12 updated issues (deep links, rich mentions, FRB migration, group-message editing). Committer: [[people/pepina-dev]].
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/`) shows concentrated White Noise activity: [[projects/whitenoise]] (4 commits by [[people/mubarakcoded]], [[people/dannym-arx]], [[people/pepina-dev]]), [[projects/whitenoise-rs]] (3 commits by [[people/mubarakcoded]], [[people/erskingardner]]), and binding auto-bumps across `mdk-kotlin`, `mdk-python`, `mdk-ruby`.
+- 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/`) shows concentrated activity: [[projects/whitenoise]] (3 commits — block/unblock UX, mention color fix, group member routing), [[projects/mdk]] (4 commits + binding auto-bumps — Swift packaging on macOS 26 arm64, Kotlin ProGuard, CI cache fixes), [[projects/marmot-ts]] (100 events), [[projects/transponder]] (100 events), and [[projects/whitenoise-rs]] (1 commit, 1 issue).
 
 ## Open questions
 - Formal maintainer role assignments per project.
