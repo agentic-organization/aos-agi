@@ -120,6 +120,7 @@ Stated descriptively; not a verdict.
 ## History
 - 2026-05-07: Page created from divinevideo GitHub discovery run.
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/`) shows concentrated mobile-app activity on [[projects/divine-mobile]] (10 commits by [[people/hm21]], [[people/rabble]], [[people/notthatkindofdrliz]]), auth/name-server work by [[people/dcadenas]] on [[projects/keycast]] and [[projects/divine-name-server]], and web-front-end issue #361 (family/age-review pages) by [[people/notthatkindofdrliz]].
+- 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/`) shows concentrated activity: [[projects/divine-mobile]] (25 commits + release 1.0.14 — server-backed video sort, C2PA assertions, clip trash bin, notification sync, Bloc error classification), [[projects/divine-relay-manager]] (2 commits by [[people/mbradley]] — suspend/unsuspend user actions, age review wiring), [[projects/keycast]] (1 commit by [[people/dcadenas]] — lodash security override), [[projects/divine-moderation-service]] (1 commit), [[projects/divine-web]] (100 events), and [[projects/divine-name-server]] (100 events).
 
 ## Open questions
 - What is the actual maintainer structure — is rabble the sole decision-maker, or is there a steering group with dcadenas / mbradley / NotThatKindOfDrLiz?

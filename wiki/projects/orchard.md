@@ -30,6 +30,7 @@ Orchard sits inside the `cashubtc/` GitHub organization, so it inherits stewards
 - 2026-05-10: Page created from `data/raw/github/daily/2026-05-10/cashubtc/orchard/` and `data/raw/github/org-discovery/2026-05-10/cashubtc/snapshot.json` after the daily ingestion run via [[tools/github-daily-ingest]].
 
 - 2026-05-11: `data/raw/github/daily/2026-05-11/cashubtc/orchard/` captured **16 commits** in the 72h window. Themes: client `crypto.randomUUID` → `uuid` swap with specs and review follow-up, keyset analytic accuracy, e2e assert `applyAiModel` option, `listFees` LAG/fan-out invariant + `getPreRangeEnd` helper, custom-bucket date pinning in keyset aggregation. All commits by [[people/orangeshyguy21]].
+- 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/cashubtc/orchard/`) shows **0 commits** in the 24h window but **100 events** — sustained PR/issue activity.
 
 - 2026-05-12: `data/raw/github/daily/2026-05-12/cashubtc/orchard/` captured **2 commits** in the 24h window and release **v1.9.0** (published 2026-05-11). Themes: npm minimum release age policy, client `crypto.randomUUID` → `uuid` swap with specs and review follow-up, keyset analytic accuracy, e2e assert `applyAiModel` option, `listFees` LAG/fan-out invariant + `getPreRangeEnd` helper, custom-bucket date pinning in keyset aggregation. All commits by [[people/orangeshyguy21]].
 

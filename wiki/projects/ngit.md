@@ -33,6 +33,7 @@ Part of AOS's **Foundry** hub — projects the Foundry supports and stewards as 
 
 ## History
 - 2026-05-07: Page created from andotherstuff.org Foundry project listing.
+- 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/DanConwayDev/ngit-cli/`) shows **9 commits** by [[people/DanConwayDev]] and m0wer. Themes: lazy git-server fetch in PR commands with expanded scope, trust PR clone-tag URLs in `pr checkout` / `list-interactive`, fetch patch parent from git servers when missing, avoid fetching from non-nostr git remotes in PR commands, restore tracking-branch UX on `pr checkout`, fix `pr checkout` leaving working directory at previous state, test-harness timeout restoration. **13 events**, **9 updated PRs**.
 
 - 2026-05-17: `data/raw/github/daily/2026-05-17/DanConwayDev/ngit-cli/` captured **7 commits** in the 24h window, including release **v2.4.4** (2026-05-17). Themes: trust-server flag and trusted-domains config for sync, nostr.trust-server-domains git config setting, preserve original merge-base on fast-forward push to PR branch, force PR mode when commits contain submodule entries, bail on submodule entries in `create_commit_from_patch`, fix fast-forward push to `pr/` branch backed by PR event. Committer: [[people/danconwaydev]] (all 7).
 
