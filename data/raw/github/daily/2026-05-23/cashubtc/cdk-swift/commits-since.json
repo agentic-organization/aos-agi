@@ -1,0 +1,253 @@
+[
+  {
+    "sha": "d660f7707a48cd81812616ff8bb0aff555119f75",
+    "node_id": "C_kwDOPf6Nn9oAKGQ2NjBmNzcwN2E0OGNkODE4MTI2MTZmZjhiYjBhZmY1NTUxMTlmNzU",
+    "commit": {
+      "author": {
+        "name": "GitHub Actions",
+        "email": "actions@github.com",
+        "date": "2026-05-22T14:47:01Z"
+      },
+      "committer": {
+        "name": "GitHub Actions",
+        "email": "actions@github.com",
+        "date": "2026-05-22T14:47:01Z"
+      },
+      "message": "Update to version 0.17.0-rc.0",
+      "tree": {
+        "sha": "0da3ad3546ee6f4511812030e6c4e67220b8fb9b",
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/git/trees/0da3ad3546ee6f4511812030e6c4e67220b8fb9b"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk-swift/git/commits/d660f7707a48cd81812616ff8bb0aff555119f75",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/d660f7707a48cd81812616ff8bb0aff555119f75",
+    "html_url": "https://github.com/cashubtc/cdk-swift/commit/d660f7707a48cd81812616ff8bb0aff555119f75",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/d660f7707a48cd81812616ff8bb0aff555119f75/comments",
+    "author": {
+      "login": "actions-user",
+      "id": 65916846,
+      "node_id": "MDQ6VXNlcjY1OTE2ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/actions-user",
+      "html_url": "https://github.com/actions-user",
+      "followers_url": "https://api.github.com/users/actions-user/followers",
+      "following_url": "https://api.github.com/users/actions-user/following{/other_user}",
+      "gists_url": "https://api.github.com/users/actions-user/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/actions-user/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/actions-user/subscriptions",
+      "organizations_url": "https://api.github.com/users/actions-user/orgs",
+      "repos_url": "https://api.github.com/users/actions-user/repos",
+      "events_url": "https://api.github.com/users/actions-user/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/actions-user/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "actions-user",
+      "id": 65916846,
+      "node_id": "MDQ6VXNlcjY1OTE2ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/actions-user",
+      "html_url": "https://github.com/actions-user",
+      "followers_url": "https://api.github.com/users/actions-user/followers",
+      "following_url": "https://api.github.com/users/actions-user/following{/other_user}",
+      "gists_url": "https://api.github.com/users/actions-user/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/actions-user/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/actions-user/subscriptions",
+      "organizations_url": "https://api.github.com/users/actions-user/orgs",
+      "repos_url": "https://api.github.com/users/actions-user/repos",
+      "events_url": "https://api.github.com/users/actions-user/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/actions-user/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d5a761275738ec2b5c04c9f57749d22b23f3e55a",
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/d5a761275738ec2b5c04c9f57749d22b23f3e55a",
+        "html_url": "https://github.com/cashubtc/cdk-swift/commit/d5a761275738ec2b5c04c9f57749d22b23f3e55a"
+      }
+    ]
+  },
+  {
+    "sha": "d5a761275738ec2b5c04c9f57749d22b23f3e55a",
+    "node_id": "C_kwDOPf6Nn9oAKGQ1YTc2MTI3NTczOGVjMmI1YzA0YzlmNTc3NDlkMjJiMjNmM2U1NWE",
+    "commit": {
+      "author": {
+        "name": "tsk",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-22T14:11:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-22T14:11:36Z"
+      },
+      "message": "Merge pull request #1 from asmogo/fix/uniffi-config-swift-module-name\n\nfix: pass --config to uniffi-bindgen so Swift module name is CashuDevKit",
+      "tree": {
+        "sha": "014c4da739e57e63b2ac7aae48211ae7b3f0a8a1",
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/git/trees/014c4da739e57e63b2ac7aae48211ae7b3f0a8a1"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk-swift/git/commits/d5a761275738ec2b5c04c9f57749d22b23f3e55a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEGQYCRC1aQ7uu5UhlAAAJ5YQAB7V0yxPOFsEcX+iDInUfUzO\nBMeWmueD2auS0BkSsdNYIQ74KczZg5A6e3oiMIlVTWfROWB8mCqPxcBsBEGVmfdd\n6aOzhu29f4F+zYu1mfeTrXoGHVthvkgMRfCDqAbj2oimBOz742vrUo1oxDTo1E3R\nEDjJ2tT4zfyH2wVAtv+s62qYVMshu/XRRG0iu1W7tvaOWuj8pkmHAdR4btK0dIq7\n671+nC5OpJyp9c9bkqUJw4hctyavyzXoXZ20p7jspbQTY4So76Q9fGdfe6QBBr4Q\npGrHK0goHcuP25Ehm7SrnM6phBDO9a/kGHsAer2MEkHdrYwQ1/YYKnlkKM8XpWbj\n0O6Mn+CvQazsqY4XlFg2FguQ4McZz1mfskp+WPyfZIiamYljGiEVJszU0nSak8+P\njtW72xLV4vaWKMPGVzqWxfiBJJhSo9fDk9Sl8j5ynDUkIY/wEKKwU/5njC9yqWR/\nMnv8o376KkZth3E8dxz2yJtX2wwtMFmE6MWG/Hyrvfn+VythOISgQmxLh5hIGMX6\n1JA6hGW1X/tODvha+GPjBHsi5Y7H6xOfSxL4IPNUpojfxmbYv+IR1/9KSB8SuwXI\nsLypWwdaJg2SbPWDKO5/M5cTMBmoEvhe1lNp203bBOxYzAw86J3aAbFXl2cJDser\n883UXmjbvJifkXCtoPmU\n=kmhl\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 014c4da739e57e63b2ac7aae48211ae7b3f0a8a1\nparent 065f1fcc8c914073178f03cc12b9a00c6f9abd86\nparent 6019b702569cb38343ebc70dff4a6d6a883c4904\nauthor tsk <tsk@thesimplekid.com> 1779459096 +0200\ncommitter GitHub <noreply@github.com> 1779459096 +0200\n\nMerge pull request #1 from asmogo/fix/uniffi-config-swift-module-name\n\nfix: pass --config to uniffi-bindgen so Swift module name is CashuDevKit",
+        "verified_at": "2026-05-22T14:11:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/d5a761275738ec2b5c04c9f57749d22b23f3e55a",
+    "html_url": "https://github.com/cashubtc/cdk-swift/commit/d5a761275738ec2b5c04c9f57749d22b23f3e55a",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/d5a761275738ec2b5c04c9f57749d22b23f3e55a/comments",
+    "author": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "065f1fcc8c914073178f03cc12b9a00c6f9abd86",
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/065f1fcc8c914073178f03cc12b9a00c6f9abd86",
+        "html_url": "https://github.com/cashubtc/cdk-swift/commit/065f1fcc8c914073178f03cc12b9a00c6f9abd86"
+      },
+      {
+        "sha": "6019b702569cb38343ebc70dff4a6d6a883c4904",
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/6019b702569cb38343ebc70dff4a6d6a883c4904",
+        "html_url": "https://github.com/cashubtc/cdk-swift/commit/6019b702569cb38343ebc70dff4a6d6a883c4904"
+      }
+    ]
+  },
+  {
+    "sha": "6019b702569cb38343ebc70dff4a6d6a883c4904",
+    "node_id": "C_kwDOPf6Nn9oAKDYwMTliNzAyNTY5Y2IzODM0M2ViYzcwZGZmNGE2ZDZhODgzYzQ5MDQ",
+    "commit": {
+      "author": {
+        "name": "asmo",
+        "email": "asmogo@protonmail.com",
+        "date": "2026-05-22T08:35:21Z"
+      },
+      "committer": {
+        "name": "asmo",
+        "email": "asmogo@protonmail.com",
+        "date": "2026-05-22T08:35:21Z"
+      },
+      "message": "fix: pass --config to uniffi-bindgen so Swift module name is CashuDevKit\n\nThe xcframework build started failing in CI with:\n\n    mv: rename Sources/CashuDevKit/CashuDevKitFFI.h to \\\n        ../cdk/target/include/CashuDevKitFFI.h: No such file or directory\n\nRoot cause: in uniffi 0.30 library mode the per-crate uniffi.toml is not\nauto-discovered. The Swift module name comes from\ncrates/cdk-ffi/uniffi.toml (module_name = \"CashuDevKit\"). uniffi resolves\nwhich config to use by the crate's lib target name, but the cdk workspace\nnow contains two crates whose lib target is named `cdk_ffi`\n(crates/cdk-ffi and bindings/kotlin/rust, the latter renamed from\ncdk_ffi_kotlin in cdk commit 9f6cd097). That collision makes the namespace\nlookup ambiguous, so module_name is dropped and bindgen emits\ncdk_ffiFFI.h instead of CashuDevKitFFI.h — and the subsequent `mv` fails.\n\nPassing --config explicitly pins the Swift bindings config regardless of\nthe collision, restoring CashuDevKit* output. Applied to both\nbuild-xcframework.sh (cwd = cdk root) and generate-bindings.sh\n(cwd = cdk-ffi crate dir).\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "014c4da739e57e63b2ac7aae48211ae7b3f0a8a1",
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/git/trees/014c4da739e57e63b2ac7aae48211ae7b3f0a8a1"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk-swift/git/commits/6019b702569cb38343ebc70dff4a6d6a883c4904",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/6019b702569cb38343ebc70dff4a6d6a883c4904",
+    "html_url": "https://github.com/cashubtc/cdk-swift/commit/6019b702569cb38343ebc70dff4a6d6a883c4904",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/6019b702569cb38343ebc70dff4a6d6a883c4904/comments",
+    "author": {
+      "login": "asmogo",
+      "id": 175508099,
+      "node_id": "U_kgDOCnYKgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/175508099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/asmogo",
+      "html_url": "https://github.com/asmogo",
+      "followers_url": "https://api.github.com/users/asmogo/followers",
+      "following_url": "https://api.github.com/users/asmogo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/asmogo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/asmogo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/asmogo/subscriptions",
+      "organizations_url": "https://api.github.com/users/asmogo/orgs",
+      "repos_url": "https://api.github.com/users/asmogo/repos",
+      "events_url": "https://api.github.com/users/asmogo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/asmogo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "asmogo",
+      "id": 175508099,
+      "node_id": "U_kgDOCnYKgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/175508099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/asmogo",
+      "html_url": "https://github.com/asmogo",
+      "followers_url": "https://api.github.com/users/asmogo/followers",
+      "following_url": "https://api.github.com/users/asmogo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/asmogo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/asmogo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/asmogo/subscriptions",
+      "organizations_url": "https://api.github.com/users/asmogo/orgs",
+      "repos_url": "https://api.github.com/users/asmogo/repos",
+      "events_url": "https://api.github.com/users/asmogo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/asmogo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "065f1fcc8c914073178f03cc12b9a00c6f9abd86",
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/commits/065f1fcc8c914073178f03cc12b9a00c6f9abd86",
+        "html_url": "https://github.com/cashubtc/cdk-swift/commit/065f1fcc8c914073178f03cc12b9a00c6f9abd86"
+      }
+    ]
+  }
+]

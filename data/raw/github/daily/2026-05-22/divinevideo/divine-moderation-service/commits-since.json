@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "1e5532824baa47791ec93984349ed56138f9b472",
+    "node_id": "C_kwDOQYdZgdoAKDFlNTUzMjgyNGJhYTQ3NzkxZWM5Mzk4NDM0OWVkNTYxMzhmOWI0NzI",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-21T18:21:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T18:21:38Z"
+      },
+      "message": "feat: enable creator-delete pipeline in production (#148)\n\n* feat: enable creator-delete pipeline in production\n\nFlip CREATOR_DELETE_PIPELINE_ENABLED from false to true. Prerequisites\nverified: D1 creator_deletions table exists with physical_deleted_at\ncolumn (migrations 006+007), DELETE is in validActions (PR #147).\n\nBlossom ENABLE_PHYSICAL_DELETE remains false, so all deletes are\nsoft-delete only.\n\n* fix: validate delete author ownership and handle transient relay failures\n\nAddresses dcadenas review on PR #148:\n\n- Verify kind-5 author matches target event author before calling\n  Blossom DELETE (prevents cross-creator deletion)\n- Distinguish transient relay failures (5xx, 429, network) from\n  confirmed not-found (404) in fetchNostrEventById via opt-in\n  throwOnTransient option\n- Transient target fetch failures are retryable; promote to permanent\n  after MAX_RETRY_COUNT (5)",
+      "tree": {
+        "sha": "ef03c80cbcb4fcad5577ba0b6c083b2aa4f4b6b9",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/trees/ef03c80cbcb4fcad5577ba0b6c083b2aa4f4b6b9"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/git/commits/1e5532824baa47791ec93984349ed56138f9b472",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqD00zCRC1aQ7uu5UhlAAAE5MQACOC+VOmCDwWpdiVymj7X4qJ\nUYa58r/dK/FWsGTxnhtanYbUrpqbnMFM0KvkLrygsC/EcH7i4VOMwpk2FxXwr3jb\nKqB4VfxBsxC6vM1L+LOvM/nelPWV72+W72ABp0RidjX5IzCLPiSLO4BPtSuLFfjL\nvaCKbO+lp5qnDmVewHOHmpBLs43lAswNej+Gu0oKzmeOhP0CkqBOZTcRG6lhHkFi\nD0sYkT7FzlGiuxIK+krTB3hFWCqWzdCKyyzost4RbYogxgWmBWMYrJdmE6Xx0iLb\nItnfgjbUB2pREa9WAjooCrQxxOH2jxC2wpURT/Kezb0f3njDglN5V7EF9iob3qQe\nVgjOZOe9EsToU0SRZazYPfDYwLdvUPy4Niad8p6WGbQf3AUQCvTBdeg/Ws17fon0\nzwLnOwBMGvofaT6WLdoiI44IbiKMPI7CKOCpsBWaevf96hHwO0vMtmiKgh7A5DEu\n/2eJGITuO5z7DC34H6gs9o3tgsx/cTeb2EBE09Uc1fyhVPy+t1a6tPM5kMc3S8QC\nPvIcjOL/fnpEhjl9LUK7j5tgTeuyhhmKfp4wn6r2H05CIQAj03GQGMVQOonmGoHN\nKIZIPMo6TEwEj+r5MO5tCPw6eBaTHJAU+K+SgYku+Yad2CTb34Cmrq+aRWl4+vVS\n21QjJcu217NIxJ1ALhgW\n=/rBq\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ef03c80cbcb4fcad5577ba0b6c083b2aa4f4b6b9\nparent 948e8da3b00c48e9e325cf3acb2254c334e4bb84\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779387698 -0400\ncommitter GitHub <noreply@github.com> 1779387698 -0400\n\nfeat: enable creator-delete pipeline in production (#148)\n\n* feat: enable creator-delete pipeline in production\n\nFlip CREATOR_DELETE_PIPELINE_ENABLED from false to true. Prerequisites\nverified: D1 creator_deletions table exists with physical_deleted_at\ncolumn (migrations 006+007), DELETE is in validActions (PR #147).\n\nBlossom ENABLE_PHYSICAL_DELETE remains false, so all deletes are\nsoft-delete only.\n\n* fix: validate delete author ownership and handle transient relay failures\n\nAddresses dcadenas review on PR #148:\n\n- Verify kind-5 author matches target event author before calling\n  Blossom DELETE (prevents cross-creator deletion)\n- Distinguish transient relay failures (5xx, 429, network) from\n  confirmed not-found (404) in fetchNostrEventById via opt-in\n  throwOnTransient option\n- Transient target fetch failures are retryable; promote to permanent\n  after MAX_RETRY_COUNT (5)",
+        "verified_at": "2026-05-21T18:21:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/1e5532824baa47791ec93984349ed56138f9b472",
+    "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/1e5532824baa47791ec93984349ed56138f9b472",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/1e5532824baa47791ec93984349ed56138f9b472/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/commits/948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/commit/948e8da3b00c48e9e325cf3acb2254c334e4bb84"
+      }
+    ]
+  }
+]

@@ -58,6 +58,9 @@ One page per person. Pages evolve as identity resolution, skills, and affiliatio
 - [[people/JohnWeidner]]
 - [[people/ryzizub]]
 - [[people/Josh-Sanford]]
+- [[people/liz-sweigart]] — mobile engineer, Divine
+- [[people/meylis-annagurbanov]] — mobile engineer, Divine
+- [[people/alex-frei]] — mobile engineer, Divine
 - [[people/dogelover911]]
 - [[people/samthomson]]
 - [[people/sergey3bv]]

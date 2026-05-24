@@ -65,6 +65,7 @@ Where the others have multiple maintainers and broader org membership, Soapbox c
 - 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/`) shows concentrated activity on [[projects/ditto]] (10 commits by [[people/alexgleason]] — BIP-352 silent payments, BIP-375 ECDH+DLEQ, PSBT v2 with @scure/btc-signer, QR scan wallet send, Esplora failover). **100 events** on the GitHub mirror.
 
 - 2026-05-15: GitHub mirror activity per `data/raw/github/daily/2026-05-15/soapbox-pub/ditto/` shows **8 commits** and releases **v2.15.0 / v2.15.1**. Themes: NIP-51 badge-set rendering, badge hero 3:1 poster banner, search-feed reaction/zap overlays, iOS App Store auto-release. Sole committer: [[people/alexgleason]].
+- 2026-05-24: Daily ingestion (`data/raw/github/daily/2026-05-24/soapbox-pub/ditto/`) shows **11 commits** by [[people/alexgleason]], including releases **v2.17.0** and **v2.18.0**. Themes: Agora Fundraiser support (kind 33863), BIP-21 silent-payment QR scanning, Zap Fundraisers from built-in wallet. **100 events** on the GitHub mirror.
 
 ## Open questions
 - Is there a wider Soapbox team we don't see (private repos, contractors paid via AOS, etc.)?

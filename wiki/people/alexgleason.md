@@ -38,6 +38,7 @@ Effectively the public face of Soapbox: across the 9 surveyed `soapbox-pub` repo
 - 2026-05-14: Daily ingestion (`data/raw/github/daily/2026-05-14/soapbox-pub/ditto/`) captured **6 commits** by [[people/alexgleason]] in the 24h window (GitHub mirror). Themes: zap amounts displayed as USD by default with unified on-chain/Lightning icon, reaction and zap overlays consistently across all feeds, feed toggles for reactions and zaps, zap amounts in notifications linked to underlying events, Mute All dropdown next to Follow All buttons in [[projects/ditto]].
 
 - 2026-05-16: Daily ingestion (`data/raw/github/daily/2026-05-16/soapbox-pub/ditto/`) captured **10 commits** by [[people/alexgleason]] in the 24h window (GitHub mirror), including release **v2.15.2**. Themes: per-item error boundaries in feeds/embedded events, page-level error boundary around center column, `parseAddr` utility extraction across ~10 call sites, MessageCircle icon for kind 1111 comment notifications, PostDetailPage error boundary for kind-dispatch.
+- 2026-05-24: Daily ingestion (`data/raw/github/daily/2026-05-24/soapbox-pub/ditto/`) captured **11 commits** by [[people/alexgleason]], including releases **v2.17.0** and **v2.18.0**. Themes: Agora Fundraiser support (kind 33863) with donate QR and Donate-button dialog; BIP-21 `sp=` silent-payment parameter in Send QR scanner; Zap Fundraisers from Ditto's built-in wallet; pull Fundraiser "raised" total from on-chain address.
 
 ## Open questions
 - Formal AOS affiliation (funded, contracted, independent contributor)?

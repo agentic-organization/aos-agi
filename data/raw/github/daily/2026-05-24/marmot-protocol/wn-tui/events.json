@@ -1,0 +1,589 @@
+[
+  {
+    "id": "12075459957",
+    "type": "PushEvent",
+    "actor": {
+      "id": 11434422,
+      "login": "jgmontoya",
+      "display_login": "jgmontoya",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jgmontoya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11434422?"
+    },
+    "repo": {
+      "id": 1171855006,
+      "name": "marmot-protocol/wn-tui",
+      "url": "https://api.github.com/repos/marmot-protocol/wn-tui"
+    },
+    "payload": {
+      "repository_id": 1171855006,
+      "push_id": 34366010777,
+      "ref": "refs/heads/master",
+      "head": "f9d60168bae7924de5e182fd614379d6e870693d",
+      "before": "e342a7c09bda6348dafd6d03e9dc1bfb51a04f41"
+    },
+    "public": true,
+    "created_at": "2026-05-19T15:40:00Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9645954473",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 11434422,
+      "login": "jgmontoya",
+      "display_login": "jgmontoya",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jgmontoya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11434422?"
+    },
+    "repo": {
+      "id": 1171855006,
+      "name": "marmot-protocol/wn-tui",
+      "url": "https://api.github.com/repos/marmot-protocol/wn-tui"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 7,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/wn-tui/pulls/7",
+        "id": 3704905115,
+        "number": 7,
+        "head": {
+          "ref": "feat/admin-leave-flow",
+          "sha": "7511b4a721210091f25fcc5091c13db55cf63288",
+          "repo": {
+            "id": 1171855006,
+            "url": "https://api.github.com/repos/marmot-protocol/wn-tui",
+            "name": "wn-tui"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "e342a7c09bda6348dafd6d03e9dc1bfb51a04f41",
+          "repo": {
+            "id": 1171855006,
+            "url": "https://api.github.com/repos/marmot-protocol/wn-tui",
+            "name": "wn-tui"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-19T15:39:57Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12075448459",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 11434422,
+      "login": "jgmontoya",
+      "display_login": "jgmontoya",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jgmontoya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11434422?"
+    },
+    "repo": {
+      "id": 1171855006,
+      "name": "marmot-protocol/wn-tui",
+      "url": "https://api.github.com/repos/marmot-protocol/wn-tui"
+    },
+    "payload": {
+      "ref": "feat/admin-leave-flow",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/admin-leave-flow",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-19T15:40:02Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9634395917",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1171855006,
+      "name": "marmot-protocol/wn-tui",
+      "url": "https://api.github.com/repos/marmot-protocol/wn-tui"
+    },
+    "payload": {
+      "review": {
+        "id": 4318346653,
+        "node_id": "PRR_kwDORdkWns8AAAABAWS9nQ",
+        "user": {
+          "login": "dannym-arx",
+          "id": 25923265,
+          "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dannym-arx",
+          "html_url": "https://github.com/dannym-arx",
+          "followers_url": "https://api.github.com/users/dannym-arx/followers",
+          "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+          "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+          "repos_url": "https://api.github.com/users/dannym-arx/repos",
+          "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "7511b4a721210091f25fcc5091c13db55cf63288",
+        "state": "approved",
+        "html_url": "https://github.com/marmot-protocol/wn-tui/pull/7#pullrequestreview-4318346653",
+        "pull_request_url": "https://api.github.com/repos/marmot-protocol/wn-tui/pulls/7",
+        "_links": {
+          "html": {
+            "href": "https://github.com/marmot-protocol/wn-tui/pull/7#pullrequestreview-4318346653"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/marmot-protocol/wn-tui/pulls/7"
+          }
+        },
+        "submitted_at": "2026-05-19T11:10:52Z",
+        "updated_at": "2026-05-19T11:10:52Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/wn-tui/pulls/7",
+        "id": 3704905115,
+        "number": 7,
+        "head": {
+          "ref": "feat/admin-leave-flow",
+          "sha": "7511b4a721210091f25fcc5091c13db55cf63288",
+          "repo": {
+            "id": 1171855006,
+            "url": "https://api.github.com/repos/marmot-protocol/wn-tui",
+            "name": "wn-tui"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "e342a7c09bda6348dafd6d03e9dc1bfb51a04f41",
+          "repo": {
+            "id": 1171855006,
+            "url": "https://api.github.com/repos/marmot-protocol/wn-tui",
+            "name": "wn-tui"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:10:54Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9609627720",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 136622811,
+      "login": "coderabbitai[bot]",
+      "display_login": "coderabbitai",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
+    },
+    "repo": {
+      "id": 1171855006,
+      "name": "marmot-protocol/wn-tui",
+      "url": "https://api.github.com/repos/marmot-protocol/wn-tui"
+    },
+    "payload": {
+      "review": {
+        "id": 4314036295,
+        "node_id": "PRR_kwDORdkWns8AAAABASL4Rw",
+        "user": {
+          "login": "coderabbitai[bot]",
+          "id": 136622811,
+          "node_id": "BOT_kgDOCCSy2w",
+          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "\n\n<details>\n<summary>🧹 Nitpick comments (1)</summary><blockquote>\n\n<details>\n<summary>src/screen/group_detail.rs (1)</summary><blockquote>\n\n`22-31`: _💤 Low value_\n\n**The `npub` field check is not dead code; the documentation is misleading.**\n\nThe parameter `pubkey` actually receives bech32-encoded npub values (from `member_npub()` and `self.account`), not raw hex as the doc comment claims. The `npub` field check on line 30 is a live code path that matches when the admins list contains objects with `npub` fields. \n\nHowever, the doc comment saying \"hex, as returned by the daemon\" is inaccurate. Consider clarifying that the function matches bech32-encoded npub values or raw pubkey strings, not hex.\n\n<details>\n<summary>🤖 Prompt for AI Agents</summary>\n\n```\nVerify each finding against current code. Fix only still-valid issues, skip the\nrest with a brief reason, keep changes minimal, and validate.\n\nIn `@src/screen/group_detail.rs` around lines 22 - 31, The doc comment for\nis_admin is inaccurate: the pubkey parameter can be a bech32-encoded npub (from\nmember_npub() or self.account) as well as raw pubkey strings, so update the\ndocumentation to reflect that the function matches either bech32 npub values or\nraw pubkey strings (and that admins may contain bare strings or objects with\npubkey/npub fields); leave the implementation (is_admin) unchanged but change\nthe comment to something like “pubkey (bech32 npub or raw pubkey string)”.\n```\n\n</details>\n\n</blockquote></details>\n\n</blockquote></details>\n\n<details>\n<summary>🤖 Prompt for all review comments with AI agents</summary>\n\n```\nVerify each finding against current code. Fix only still-valid issues, skip the\nrest with a brief reason, keep changes minimal, and validate.\n\nNitpick comments:\nIn `@src/screen/group_detail.rs`:\n- Around line 22-31: The doc comment for is_admin is inaccurate: the pubkey\nparameter can be a bech32-encoded npub (from member_npub() or self.account) as\nwell as raw pubkey strings, so update the documentation to reflect that the\nfunction matches either bech32 npub values or raw pubkey strings (and that\nadmins may contain bare strings or objects with pubkey/npub fields); leave the\nimplementation (is_admin) unchanged but change the comment to something like\n“pubkey (bech32 npub or raw pubkey string)”.\n```\n\n</details>\n\n---\n\n<details>\n<summary>ℹ️ Review info</summary>\n\n<details>\n<summary>⚙️ Run configuration</summary>\n\n**Configuration used**: Organization UI\n\n**Review profile**: CHILL\n\n**Plan**: Pro\n\n**Run ID**: `bf76e12b-d619-4e43-9f00-d44874d26ef3`\n\n</details>\n\n<details>\n<summary>📥 Commits</summary>\n\nReviewing files that changed from the base of the PR and between e342a7c09bda6348dafd6d03e9dc1bfb51a04f41 and 7511b4a721210091f25fcc5091c13db55cf63288.\n\n</details>\n\n<details>\n<summary>📒 Files selected for processing (2)</summary>\n\n* `src/app.rs`\n* `src/screen/group_detail.rs`\n\n</details>\n\n</details>\n\n<!-- This is an auto-generated comment by CodeRabbit for review status -->",
+        "commit_id": "7511b4a721210091f25fcc5091c13db55cf63288",
+        "state": "commented",
+        "html_url": "https://github.com/marmot-protocol/wn-tui/pull/7#pullrequestreview-4314036295",
+        "pull_request_url": "https://api.github.com/repos/marmot-protocol/wn-tui/pulls/7",
+        "_links": {
+          "html": {
+            "href": "https://github.com/marmot-protocol/wn-tui/pull/7#pullrequestreview-4314036295"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/marmot-protocol/wn-tui/pulls/7"
+          }
+        },
+        "submitted_at": "2026-05-18T21:20:54Z",
+        "updated_at": "2026-05-18T21:20:54Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/wn-tui/pulls/7",
+        "id": 3704905115,
+        "number": 7,
+        "head": {
+          "ref": "feat/admin-leave-flow",
+          "sha": "7511b4a721210091f25fcc5091c13db55cf63288",
+          "repo": {
+            "id": 1171855006,
+            "url": "https://api.github.com/repos/marmot-protocol/wn-tui",
+            "name": "wn-tui"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "e342a7c09bda6348dafd6d03e9dc1bfb51a04f41",
+          "repo": {
+            "id": 1171855006,
+            "url": "https://api.github.com/repos/marmot-protocol/wn-tui",
+            "name": "wn-tui"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-18T21:20:56Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9609565763",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 136622811,
+      "login": "coderabbitai[bot]",
+      "display_login": "coderabbitai",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
+    },
+    "repo": {
+      "id": 1171855006,
+      "name": "marmot-protocol/wn-tui",
+      "url": "https://api.github.com/repos/marmot-protocol/wn-tui"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/wn-tui/issues/7",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/wn-tui",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/wn-tui/issues/7/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/wn-tui/issues/7/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/wn-tui/issues/7/events",
+        "html_url": "https://github.com/marmot-protocol/wn-tui/pull/7",
+        "id": 4472658045,
+        "node_id": "PR_kwDORdkWns7c1F2b",
+        "number": 7,
+        "title": "fix(group): block admins from leaving a group with clear in-app guidance",
+        "user": {
+          "login": "jgmontoya",
+          "id": 11434422,
+          "node_id": "MDQ6VXNlcjExNDM0NDIy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/11434422?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jgmontoya",
+          "html_url": "https://github.com/jgmontoya",
+          "followers_url": "https://api.github.com/users/jgmontoya/followers",
+          "following_url": "https://api.github.com/users/jgmontoya/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jgmontoya/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jgmontoya/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jgmontoya/subscriptions",
+          "organizations_url": "https://api.github.com/users/jgmontoya/orgs",
+          "repos_url": "https://api.github.com/users/jgmontoya/repos",
+          "events_url": "https://api.github.com/users/jgmontoya/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jgmontoya/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-05-18T21:19:00Z",
+        "updated_at": "2026-05-19T15:40:02Z",
+        "closed_at": "2026-05-19T15:39:58Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/marmot-protocol/wn-tui/pulls/7",
+          "html_url": "https://github.com/marmot-protocol/wn-tui/pull/7",
+          "diff_url": "https://github.com/marmot-protocol/wn-tui/pull/7.diff",
+          "patch_url": "https://github.com/marmot-protocol/wn-tui/pull/7.patch",
+          "merged_at": "2026-05-19T15:39:57Z"
+        },
+        "body": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **New Features**\n  * Admin users attempting to leave a group now receive an info popup explaining they must step down as admin first. A distinct message appears if the user is the only admin.\n\n<!-- review_stack_entry_start -->\n\n[![Review Change Stack](https://storage.googleapis.com/coderabbit_public_assets/review-stack-in-coderabbit-ui.svg)](https://app.coderabbit.ai/change-stack/marmot-protocol/wn-tui/pull/7?utm_source=github_walkthrough&utm_medium=github&utm_campaign=change_stack)\n\n<!-- review_stack_entry_end -->\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/wn-tui/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/wn-tui/issues/7/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/wn-tui/issues/comments/4482311560",
+        "html_url": "https://github.com/marmot-protocol/wn-tui/pull/7#issuecomment-4482311560",
+        "issue_url": "https://api.github.com/repos/marmot-protocol/wn-tui/issues/7",
+        "id": 4482311560,
+        "node_id": "IC_kwDORdkWns8AAAABCyqliA",
+        "user": {
+          "login": "coderabbitai[bot]",
+          "id": 136622811,
+          "node_id": "BOT_kgDOCCSy2w",
+          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-18T21:19:10Z",
+        "updated_at": "2026-05-18T21:20:52Z",
+        "body": "<!-- This is an auto-generated comment: summarize by coderabbit.ai -->\n<!-- walkthrough_start -->\n\n## Walkthrough\n\nThe PR prevents group admins from leaving a group without stepping down. It exposes the `is_admin` helper function as public, adds an early admin check to the group-detail \"L\" key handler, and adds test coverage for the admin-leave and non-admin-leave flows with context-appropriate popup messages.\n\n## Changes\n\n**Admin-Leave Protection**\n\n| Layer / File(s) | Summary |\n|---|---|\n| **Expose is_admin helper** <br> `src/screen/group_detail.rs` | The `is_admin` function is made public and its parameter documentation is updated from \"npub\" to \"pubkey\", enabling safe public use. |\n| **Block admin users from leaving group** <br> `src/app.rs` | The L key handler in `handle_group_detail_key` adds an early admin check; admins see an Info popup with a context-specific message (only admin or step down first), while non-admins continue to receive the leave confirmation. Three new tests verify both admin and non-admin flows. |\n\n---\n\n🎯 2 (Simple) | ⏱️ ~12 minutes\n\n<!-- walkthrough_end -->\n<!-- pre_merge_checks_walkthrough_start -->\n\n<details>\n<summary>🚥 Pre-merge checks | ✅ 5</summary>\n\n<details>\n<summary>✅ Passed checks (5 passed)</summary>\n\n|         Check name         | Status   | Explanation                                                                                                                                                                                                 |\n| :------------------------: | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n|      Description Check     | ✅ Passed | Check skipped - CodeRabbit’s high-level summary is enabled.                                                                                                                                                 |\n|         Title check        | ✅ Passed | The title clearly and specifically summarizes the main change: blocking admins from leaving groups with in-app guidance. It accurately reflects the primary functionality added across both modified files. |\n|     Docstring Coverage     | ✅ Passed | Docstring coverage is 100.00% which is sufficient. The required threshold is 80.00%.                                                                                                                        |\n|     Linked Issues check    | ✅ Passed | Check skipped because no linked issues were found for this pull request.                                                                                                                                    |\n| Out of Scope Changes check | ✅ Passed | Check skipped because no linked issues were found for this pull request.                                                                                                                                    |\n\n</details>\n\n<sub>✏️ Tip: You can configure your own custom pre-merge checks in the settings.</sub>\n\n</details>\n\n<!-- pre_merge_checks_walkthrough_end -->\n<!-- finishing_touch_checkbox_start -->\n\n<details>\n<summary>✨ Finishing Touches</summary>\n\n<details>\n<summary>📝 Generate docstrings</summary>\n\n- [ ] <!-- {\"checkboxId\": \"7962f53c-55bc-4827-bfbf-6a18da830691\"} --> Create stacked PR\n- [ ] <!-- {\"checkboxId\": \"3e1879ae-f29b-4d0d-8e06-d12b7ba33d98\"} --> Commit on current branch\n\n</details>\n<details>\n<summary>🧪 Generate unit tests (beta)</summary>\n\n- [ ] <!-- {\"checkboxId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Create PR with unit tests\n- [ ] <!-- {\"checkboxId\": \"6ba7b810-9dad-11d1-80b4-00c04fd430c8\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Commit unit tests in branch `feat/admin-leave-flow`\n\n</details>\n\n</details>\n\n<!-- finishing_touch_checkbox_end -->\n<!-- tips_start -->\n\n---\n\n\n\n\n<sub>Comment `@coderabbitai help` to get the list of available commands and usage tips.</sub>\n\n<!-- tips_end -->\n<!-- internal state start -->\n\n\n<!-- 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 -->\n\n<!-- internal state end -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/wn-tui/issues/comments/4482311560/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": {
+          "id": 347564,
+          "client_id": "Iv1.6aaafe4fe882736b",
+          "slug": "coderabbitai",
+          "node_id": "A_kwHOB96YWc4ABU2s",
+          "owner": {
+            "login": "coderabbitai",
+            "id": 132028505,
+            "node_id": "O_kgDOB96YWQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/132028505?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/coderabbitai",
+            "html_url": "https://github.com/coderabbitai",
+            "followers_url": "https://api.github.com/users/coderabbitai/followers",
+            "following_url": "https://api.github.com/users/coderabbitai/following{/other_user}",
+            "gists_url": "https://api.github.com/users/coderabbitai/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/coderabbitai/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/coderabbitai/subscriptions",
+            "organizations_url": "https://api.github.com/users/coderabbitai/orgs",
+            "repos_url": "https://api.github.com/users/coderabbitai/repos",
+            "events_url": "https://api.github.com/users/coderabbitai/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/coderabbitai/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "name": "coderabbitai",
+          "description": "# Transforming Code Reviews with AI\r\n\r\n## Features\r\n\r\n**Automated Reviews**: Continuous reviews of the pull requests including incremental commits. \r\n\r\n**Summarization**: Generates high-level summary and a technical walkthrough of the PR changes. \r\n\r\n**Line-by-line review**: Provides line-by-line suggestions committable with one click.\r\n\r\n**Codebase verification**:  Verifies the impact on the overall codebase and identifies missing changes.\r\n\r\n**Insights into your code**:  Ask any questions on your codebase within the pull request \r\n\r\n**Chat about your code** : Chat with the bot around your code. The more you chat, the smarter it gets.\r\n\r\n**Issue Validation**:  Validates the PR against the linked issues and identifies other related issues \r\n\r\n\r\n\r\n",
+          "external_url": "https://coderabbit.ai?utm_source=cr_app&utm_medium=github",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "created_at": "2023-06-14T15:47:27Z",
+          "updated_at": "2026-03-14T07:58:44Z",
+          "permissions": {
+            "actions": "read",
+            "checks": "write",
+            "contents": "write",
+            "discussions": "read",
+            "issues": "write",
+            "members": "read",
+            "metadata": "read",
+            "pull_requests": "write",
+            "statuses": "write"
+          },
+          "events": [
+            "issues",
+            "issue_comment",
+            "label",
+            "organization",
+            "pull_request",
+            "pull_request_review",
+            "pull_request_review_comment",
+            "pull_request_review_thread",
+            "release",
+            "repository"
+          ]
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T21:19:10Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9609559439",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 11434422,
+      "login": "jgmontoya",
+      "display_login": "jgmontoya",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jgmontoya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11434422?"
+    },
+    "repo": {
+      "id": 1171855006,
+      "name": "marmot-protocol/wn-tui",
+      "url": "https://api.github.com/repos/marmot-protocol/wn-tui"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 7,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/wn-tui/pulls/7",
+        "id": 3704905115,
+        "number": 7,
+        "head": {
+          "ref": "feat/admin-leave-flow",
+          "sha": "7511b4a721210091f25fcc5091c13db55cf63288",
+          "repo": {
+            "id": 1171855006,
+            "url": "https://api.github.com/repos/marmot-protocol/wn-tui",
+            "name": "wn-tui"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "e342a7c09bda6348dafd6d03e9dc1bfb51a04f41",
+          "repo": {
+            "id": 1171855006,
+            "url": "https://api.github.com/repos/marmot-protocol/wn-tui",
+            "name": "wn-tui"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T21:19:00Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12025889289",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 11434422,
+      "login": "jgmontoya",
+      "display_login": "jgmontoya",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jgmontoya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11434422?"
+    },
+    "repo": {
+      "id": 1171855006,
+      "name": "marmot-protocol/wn-tui",
+      "url": "https://api.github.com/repos/marmot-protocol/wn-tui"
+    },
+    "payload": {
+      "ref": "feat/admin-leave-flow",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/admin-leave-flow",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-18T17:26:53Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  }
+]

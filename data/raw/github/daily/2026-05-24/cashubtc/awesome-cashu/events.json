@@ -1,0 +1,233 @@
+[
+  {
+    "id": "9514244920",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 214530607,
+      "login": "connected-l",
+      "display_login": "connected-l",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/connected-l",
+      "avatar_url": "https://avatars.githubusercontent.com/u/214530607?"
+    },
+    "repo": {
+      "id": 745255700,
+      "name": "cashubtc/awesome-cashu",
+      "url": "https://api.github.com/repos/cashubtc/awesome-cashu"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 34,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/awesome-cashu/pulls/34",
+        "id": 3690867880,
+        "number": 34,
+        "head": {
+          "ref": "newnutcases",
+          "sha": "52aded063de24329f5a930a49277a7700cb7d8a0",
+          "repo": {
+            "id": 745255700,
+            "url": "https://api.github.com/repos/cashubtc/awesome-cashu",
+            "name": "awesome-cashu"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c35b81d6bc05d3ece2755b7f1b33ea5141da59e1",
+          "repo": {
+            "id": 745255700,
+            "url": "https://api.github.com/repos/cashubtc/awesome-cashu",
+            "name": "awesome-cashu"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T16:38:21Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11912745395",
+    "type": "PushEvent",
+    "actor": {
+      "id": 214530607,
+      "login": "connected-l",
+      "display_login": "connected-l",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/connected-l",
+      "avatar_url": "https://avatars.githubusercontent.com/u/214530607?"
+    },
+    "repo": {
+      "id": 745255700,
+      "name": "cashubtc/awesome-cashu",
+      "url": "https://api.github.com/repos/cashubtc/awesome-cashu"
+    },
+    "payload": {
+      "repository_id": 745255700,
+      "push_id": 34203364885,
+      "ref": "refs/heads/main",
+      "head": "d96f9394c5c3556e66ed64310ff46540b0245fcf",
+      "before": "c35b81d6bc05d3ece2755b7f1b33ea5141da59e1"
+    },
+    "public": true,
+    "created_at": "2026-05-15T16:38:22Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9514234240",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 214530607,
+      "login": "connected-l",
+      "display_login": "connected-l",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/connected-l",
+      "avatar_url": "https://avatars.githubusercontent.com/u/214530607?"
+    },
+    "repo": {
+      "id": 745255700,
+      "name": "cashubtc/awesome-cashu",
+      "url": "https://api.github.com/repos/cashubtc/awesome-cashu"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 34,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/awesome-cashu/pulls/34",
+        "id": 3690867880,
+        "number": 34,
+        "head": {
+          "ref": "newnutcases",
+          "sha": "52aded063de24329f5a930a49277a7700cb7d8a0",
+          "repo": {
+            "id": 745255700,
+            "url": "https://api.github.com/repos/cashubtc/awesome-cashu",
+            "name": "awesome-cashu"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c35b81d6bc05d3ece2755b7f1b33ea5141da59e1",
+          "repo": {
+            "id": 745255700,
+            "url": "https://api.github.com/repos/cashubtc/awesome-cashu",
+            "name": "awesome-cashu"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T16:38:03Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11912684500",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 214530607,
+      "login": "connected-l",
+      "display_login": "connected-l",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/connected-l",
+      "avatar_url": "https://avatars.githubusercontent.com/u/214530607?"
+    },
+    "repo": {
+      "id": 745255700,
+      "name": "cashubtc/awesome-cashu",
+      "url": "https://api.github.com/repos/cashubtc/awesome-cashu"
+    },
+    "payload": {
+      "ref": "newnutcases",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/newnutcases",
+      "master_branch": "main",
+      "description": "A curated, collaborative list of awesome Cashu resources",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-15T16:36:44Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9125494267",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 39166957,
+      "login": "zacharybutler",
+      "display_login": "zacharybutler",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zacharybutler",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39166957?"
+    },
+    "repo": {
+      "id": 745255700,
+      "name": "cashubtc/awesome-cashu",
+      "url": "https://api.github.com/repos/cashubtc/awesome-cashu"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-06T00:08:55Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8791935443",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 164345929,
+      "login": "Nyfoman71",
+      "display_login": "Nyfoman71",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Nyfoman71",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164345929?"
+    },
+    "repo": {
+      "id": 745255700,
+      "name": "cashubtc/awesome-cashu",
+      "url": "https://api.github.com/repos/cashubtc/awesome-cashu"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-04-25T22:40:14Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  }
+]

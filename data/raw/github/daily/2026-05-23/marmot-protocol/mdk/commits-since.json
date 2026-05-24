@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "25005ea15de0070054774a59a335a5d92c0ae899",
+    "node_id": "C_kwDOPuuc49oAKDI1MDA1ZWExNWRlMDA3MDA1NDc3NGE1OWEzMzVhNWQ5MmMwYWU4OTk",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-22T11:24:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-22T11:24:46Z"
+      },
+      "message": "feat: validation + NIP-40 expiration + UniFFI surface for disappearing messages (2/3) (#306)\n\n* feat: validation + NIP-40 expiration tag + UniFFI surface for disappearing messages (2/3)\n\nPart 2 of splitting #253. Builds on the v3 wire format + storage\ngroundwork landed in #258.\n\nAdds:\n- create_group / update_group_data reject Some(0); callers use None or\n  Some(None) to disable.\n- build_message_event auto-inserts a NIP-40 expiration tag on every\n  outer kind:445 wrapper (messages, proposals, commits) when the group\n  has a disappearing_message_secs set. If the caller also supplies an\n  expiration, the earlier of (caller, group) wins — the caller can\n  request a shorter lifetime but never extend the group's setting.\n  The wrapper's created_at and the expiration math share a single\n  Timestamp::now() snapshot so they cannot drift.\n- UniFFI: disappearing_message_secs on the Group and GroupDataUpdate\n  records, new parameter on the create_group binding.\n\nPart 3 will add MessageStorage::delete_message and friends, the\ncorresponding UniFFI exports, and PRAGMA secure_delete=ON.\n\n* chore: address review nits\n\n- Append PR #306 link to Part-2 changelog entries (mdk-core + mdk-uniffi)\n- Hoist in-function nostr imports (TagKind, TagStandard, Timestamp) to\n  module-level use blocks in groups.rs tests and messages/create.rs tests\n\n* feat(uniffi): pre-check Some(0) disappearing_message_secs as InvalidInput\n\nThe CHANGELOG for #306 claims that `create_group` and `update_group_data`\nsurface `Some(0)` (and `Some(Some(0))` on updates) as\n`MdkUniffiError::InvalidInput`, but the rejection actually happens in\n`mdk_core`, which returns `Error::Group`. The `impl From<MdkError> for\nMdkUniffiError` then maps every `MdkError` to `MdkUniffiError::Mdk(...)`,\nso mobile clients pattern-matching on the error variant get the\ncatch-all `Mdk` instead of the documented `InvalidInput`.\n\nAdd an explicit pre-check at the FFI boundary, matching how other\nparameter-format errors are reported in the uniffi crate (e.g. invalid\nrelay URLs, invalid admin keys). The CHANGELOG contract now holds.\n\nAdds binding-level tests asserting the `InvalidInput` variant for both\npaths, following the existing `test_create_group_invalid_*` /\n`test_update_group_data_invalid_*` style.",
+      "tree": {
+        "sha": "e144544fcbb0a834fbb1b802fff8f2c15670c038",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/git/trees/e144544fcbb0a834fbb1b802fff8f2c15670c038"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/mdk/git/commits/25005ea15de0070054774a59a335a5d92c0ae899",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEDz+CRC1aQ7uu5UhlAAAzQ0QAC9ZIvC7EOmvFTbGzoGB8XpK\nlPn+8CA3fJ5cWudmH9TB37kQALgvGGMPCIYUa82x1zDsTGdhbL2kJ79baEb7K2CU\n0srPYf3YtphQf9657vGYJQBQXcR8piBXisNvJFz9EYQtZLPT7UHjBZM4ApgsXHmg\n/o6K8gGq4jIoGohjJksB+QclFZck1uIT7IHPhI2b0L70XVK52DeScnAz/upM0fJr\ns2pJGGduhxF3ybFvRoYiQdp11rCpwkplWbkuS1DPXsgs7Lkqo4HOt68TTLN2IVC5\n/2BPZ2UE9orSFwGKkbgoOX/fHXn/a+1UzXDaTvm/jMKPDputkqOVXkucGVd4v69v\nPa152ekmYpJxyrsEP3mp+9NP7kM5pIcqc700ZoD6eJVOC0790rSs/SeSNffYSXiA\ntcdi6cNDN/7hAtZS6k7kY/8uHVFQQXBcoIVk8OsHL2wp481RrjKiAO+57cvwCtJD\nPuJWVx8RTflivz4CZTyAiYCJvuXUZ6fQV8Uhd3Ts8leihSoIKua3GASWn7GuJfp1\n8+JVpXMu1xOZi5sabH5JpwuO6nhrHgFSJZkufDhfw/ktbwqd5FLu7z7Q4azPblGQ\n78eh/NVlNAw1CaOMjyZGmPUeoE8YT+xZHy8tn7xSKxGrDPldauLaLajLNz9L/WeI\nrTsbcYEdHCLVJiGHflmW\n=iSFL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e144544fcbb0a834fbb1b802fff8f2c15670c038\nparent e897e6d45b64a134e92901f2c7e08ed0710d2329\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779449086 +0200\ncommitter GitHub <noreply@github.com> 1779449086 +0200\n\nfeat: validation + NIP-40 expiration + UniFFI surface for disappearing messages (2/3) (#306)\n\n* feat: validation + NIP-40 expiration tag + UniFFI surface for disappearing messages (2/3)\n\nPart 2 of splitting #253. Builds on the v3 wire format + storage\ngroundwork landed in #258.\n\nAdds:\n- create_group / update_group_data reject Some(0); callers use None or\n  Some(None) to disable.\n- build_message_event auto-inserts a NIP-40 expiration tag on every\n  outer kind:445 wrapper (messages, proposals, commits) when the group\n  has a disappearing_message_secs set. If the caller also supplies an\n  expiration, the earlier of (caller, group) wins — the caller can\n  request a shorter lifetime but never extend the group's setting.\n  The wrapper's created_at and the expiration math share a single\n  Timestamp::now() snapshot so they cannot drift.\n- UniFFI: disappearing_message_secs on the Group and GroupDataUpdate\n  records, new parameter on the create_group binding.\n\nPart 3 will add MessageStorage::delete_message and friends, the\ncorresponding UniFFI exports, and PRAGMA secure_delete=ON.\n\n* chore: address review nits\n\n- Append PR #306 link to Part-2 changelog entries (mdk-core + mdk-uniffi)\n- Hoist in-function nostr imports (TagKind, TagStandard, Timestamp) to\n  module-level use blocks in groups.rs tests and messages/create.rs tests\n\n* feat(uniffi): pre-check Some(0) disappearing_message_secs as InvalidInput\n\nThe CHANGELOG for #306 claims that `create_group` and `update_group_data`\nsurface `Some(0)` (and `Some(Some(0))` on updates) as\n`MdkUniffiError::InvalidInput`, but the rejection actually happens in\n`mdk_core`, which returns `Error::Group`. The `impl From<MdkError> for\nMdkUniffiError` then maps every `MdkError` to `MdkUniffiError::Mdk(...)`,\nso mobile clients pattern-matching on the error variant get the\ncatch-all `Mdk` instead of the documented `InvalidInput`.\n\nAdd an explicit pre-check at the FFI boundary, matching how other\nparameter-format errors are reported in the uniffi crate (e.g. invalid\nrelay URLs, invalid admin keys). The CHANGELOG contract now holds.\n\nAdds binding-level tests asserting the `InvalidInput` variant for both\npaths, following the existing `test_create_group_invalid_*` /\n`test_update_group_data_invalid_*` style.",
+        "verified_at": "2026-05-22T11:24:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/25005ea15de0070054774a59a335a5d92c0ae899",
+    "html_url": "https://github.com/marmot-protocol/mdk/commit/25005ea15de0070054774a59a335a5d92c0ae899",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/mdk/commits/25005ea15de0070054774a59a335a5d92c0ae899/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e897e6d45b64a134e92901f2c7e08ed0710d2329",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/e897e6d45b64a134e92901f2c7e08ed0710d2329",
+        "html_url": "https://github.com/marmot-protocol/mdk/commit/e897e6d45b64a134e92901f2c7e08ed0710d2329"
+      }
+    ]
+  },
+  {
+    "sha": "e897e6d45b64a134e92901f2c7e08ed0710d2329",
+    "node_id": "C_kwDOPuuc49oAKGU4OTdlNmQ0NWI2NGExMzRlOTI5MDFmMmM3ZTA4ZWQwNzEwZDIzMjk",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-05-22T11:21:19Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-22T11:21:19Z"
+      },
+      "message": "[skip-changelog]: Bump taiki-e/install-action from 2.77.7 to 2.79.3 (#310)\n\nBumps [taiki-e/install-action](https://github.com/taiki-e/install-action) from 2.77.7 to 2.79.3.\n- [Release notes](https://github.com/taiki-e/install-action/releases)\n- [Changelog](https://github.com/taiki-e/install-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/taiki-e/install-action/compare/3235f8901fd37ffed0052b276cec25a362fb82e9...65851e10cd6c377f11a60e600abc07cb08643468)\n\n---\nupdated-dependencies:\n- dependency-name: taiki-e/install-action\n  dependency-version: 2.79.3\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "54dd925b53eae7511a7daa4edf6ee1c3346c805a",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/git/trees/54dd925b53eae7511a7daa4edf6ee1c3346c805a"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/mdk/git/commits/e897e6d45b64a134e92901f2c7e08ed0710d2329",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEDwvCRC1aQ7uu5UhlAAAxlYQAEESY+bbvV3MNb0Q2VtS6iQF\nXwY5v9+hviGIwSr3+gZbx0Jq1l82wAOJ+GY4FwBgsW193MSiv9x2rpkKaBOK4XCg\nN4tM1Ar6pSvboVyd3jnHMyDDr0hSrNs1svse/1r9X+Jxx8QGyXqyerd+qjitPyJ6\nTrv5TtJ6QxQcdlLzT8lLYFlZt2Y9DCQs7gML+SAiPHFh0AzbtuZ/Q44NJDVaWlLF\nAh8WYDR9gaB7ApEbEhG4hKZODWgzYnhCjoVS4Th0x+W93EqIIpb2xwvwS6d02VuT\n+6ci05DokECsr5DkA3ByAy96DdW61oVcrQX/3uhEdjSW+KFV2gm+o1VlhOIA5Vqt\nppX0dnxUuSE6oXGOe25YRvZMY6546JBWBjioJSJ4TlCrtpMhpqZ4c44murKjLQK0\nfIoYpxjnetX2N7s2/VyrmHnQnygEupefbLFItm9EKYW75ql5t22xDxrXUu+cvKlz\n+ejtyN0D+8hgzuabV0zLOG2M+iDkyWd6Agu6OR+HMH7utthUTku3DCOpgezdAQoc\nVGN6t24jX7AL0KIS8YwFpeGjS/bVW2te0JeJLU3gHf/xBMHe+Joa3Gq4MT4FKJaA\nzWteCITr6zHZiaZIRwg9+y8O9yw4co78O87Jh4uPyFpr0OCxVmWfWfDIJBAUbSfh\nycH5uMxRE5m+K7daCF2K\n=GrEx\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 54dd925b53eae7511a7daa4edf6ee1c3346c805a\nparent d2abedbdd4e8031555fd2dbc9547eb6134ba4a13\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1779448879 +0200\ncommitter GitHub <noreply@github.com> 1779448879 +0200\n\n[skip-changelog]: Bump taiki-e/install-action from 2.77.7 to 2.79.3 (#310)\n\nBumps [taiki-e/install-action](https://github.com/taiki-e/install-action) from 2.77.7 to 2.79.3.\n- [Release notes](https://github.com/taiki-e/install-action/releases)\n- [Changelog](https://github.com/taiki-e/install-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/taiki-e/install-action/compare/3235f8901fd37ffed0052b276cec25a362fb82e9...65851e10cd6c377f11a60e600abc07cb08643468)\n\n---\nupdated-dependencies:\n- dependency-name: taiki-e/install-action\n  dependency-version: 2.79.3\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "verified_at": "2026-05-22T11:21:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/e897e6d45b64a134e92901f2c7e08ed0710d2329",
+    "html_url": "https://github.com/marmot-protocol/mdk/commit/e897e6d45b64a134e92901f2c7e08ed0710d2329",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/mdk/commits/e897e6d45b64a134e92901f2c7e08ed0710d2329/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d2abedbdd4e8031555fd2dbc9547eb6134ba4a13",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/d2abedbdd4e8031555fd2dbc9547eb6134ba4a13",
+        "html_url": "https://github.com/marmot-protocol/mdk/commit/d2abedbdd4e8031555fd2dbc9547eb6134ba4a13"
+      }
+    ]
+  },
+  {
+    "sha": "d2abedbdd4e8031555fd2dbc9547eb6134ba4a13",
+    "node_id": "C_kwDOPuuc49oAKGQyYWJlZGJkZDRlODAzMTU1NWZkMmRiYzk1NDdlYjYxMzRiYTRhMTM",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-05-22T11:17:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-22T11:17:48Z"
+      },
+      "message": "[skip-changelog]: Bump android-actions/setup-android from 3.2.2 to 4.0.1 (#311)\n\nBumps [android-actions/setup-android](https://github.com/android-actions/setup-android) from 3.2.2 to 4.0.1.\n- [Release notes](https://github.com/android-actions/setup-android/releases)\n- [Commits](https://github.com/android-actions/setup-android/compare/9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407...40fd30fb8d7440372e1316f5d1809ec01dcd3699)\n\n---\nupdated-dependencies:\n- dependency-name: android-actions/setup-android\n  dependency-version: 4.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "dbd07d67f0d3e6efa9d0bdd9b7f7c97bd8867969",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/git/trees/dbd07d67f0d3e6efa9d0bdd9b7f7c97bd8867969"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/mdk/git/commits/d2abedbdd4e8031555fd2dbc9547eb6134ba4a13",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEDtcCRC1aQ7uu5UhlAAA4QQQAEy6axwtwlqPiTOALuxzDYbx\nfQaTO3x7PZLq0k/S5OzfSSUgSzihbxL38Qf1Vzx1ND66qx9omJobHzjN4UViramv\nzMUpaJU299toRY7FjKP2iwLBG1TE17UfGZ7JfWTC04N44EEkSOPEWgx9Z4594297\nwtwOAEUmFFyCU7gNwiMhCrQ0Tm4X/Bx0EFwZt8O8a0YwWTrDrnurZrhcbbZOelHA\nInhjVooU68H4o6KAIWvjOZnF5I+mukD5aEA+zghInkqJdo4aoZHTej3DWTyO4M7D\n0l1otsjcLkX/oR5TK6VxXpKJlzoxU7duWGa/06inwA2AVf06b4THhY3aotuEOCD9\n1HIknYwsPAkxJLxM9gbPAfDzhSenx+saMVstp1wRgIzHedFso3nfOE0kLSDdMOy8\nCbEuFib9yPYMStQCt8cQ3RY61FrHX7v3VYEY6db9OuF5SB9dAUvToxFZbhOV3ojp\n34NbxI2vRmwJvPrNW1MZs/6Z5ybBNPzhvgwYqekdUjciyxnnk82iHZDVeOw8ghb6\nsAAtXfe4eJmhgkPIgGiY/XuPYK4EM1YKJXxS8AgpLNPiWzBphDuNGioXCgT0W65J\nRrcZM/LB0NYRKf5EguyheWUlp6+ouzWO3jYmwti2eFvnoOtr5tlLvQyxnfi2Qblx\nnygoOlgegFH4nq1LkMh+\n=MHPj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dbd07d67f0d3e6efa9d0bdd9b7f7c97bd8867969\nparent 25af1f5f94639f8965d1dbbb6d7c3dfdde3daf5e\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1779448668 +0200\ncommitter GitHub <noreply@github.com> 1779448668 +0200\n\n[skip-changelog]: Bump android-actions/setup-android from 3.2.2 to 4.0.1 (#311)\n\nBumps [android-actions/setup-android](https://github.com/android-actions/setup-android) from 3.2.2 to 4.0.1.\n- [Release notes](https://github.com/android-actions/setup-android/releases)\n- [Commits](https://github.com/android-actions/setup-android/compare/9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407...40fd30fb8d7440372e1316f5d1809ec01dcd3699)\n\n---\nupdated-dependencies:\n- dependency-name: android-actions/setup-android\n  dependency-version: 4.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "verified_at": "2026-05-22T11:17:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/d2abedbdd4e8031555fd2dbc9547eb6134ba4a13",
+    "html_url": "https://github.com/marmot-protocol/mdk/commit/d2abedbdd4e8031555fd2dbc9547eb6134ba4a13",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/mdk/commits/d2abedbdd4e8031555fd2dbc9547eb6134ba4a13/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "25af1f5f94639f8965d1dbbb6d7c3dfdde3daf5e",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/25af1f5f94639f8965d1dbbb6d7c3dfdde3daf5e",
+        "html_url": "https://github.com/marmot-protocol/mdk/commit/25af1f5f94639f8965d1dbbb6d7c3dfdde3daf5e"
+      }
+    ]
+  }
+]

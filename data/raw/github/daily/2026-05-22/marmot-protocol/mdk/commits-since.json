@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "25af1f5f94639f8965d1dbbb6d7c3dfdde3daf5e",
+    "node_id": "C_kwDOPuuc49oAKDI1YWYxZjVmOTQ2MzlmODk2NWQxZGJiYjZkN2MzZGZkZGUzZGFmNWU",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-21T14:58:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T14:58:52Z"
+      },
+      "message": "fix(ci): disable target/ cache for Swift packaging job (#314)",
+      "tree": {
+        "sha": "a8fa50bcc957a33b404bbf623b9922477dba47d1",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/git/trees/a8fa50bcc957a33b404bbf623b9922477dba47d1"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/mdk/git/commits/25af1f5f94639f8965d1dbbb6d7c3dfdde3daf5e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDx2sCRC1aQ7uu5UhlAAAI1AQAIZjDLM+MJw03M3b2zQxS13i\nvgLDkY3uM27JO6ljJpa2KtP0GbqUczaIJXndlvxz1DnzGXmbNBUVwCIEAosnIBKp\n2TDVCcgdPhOSEF3/K8DWpHpnclJS9uOOjPODR9JIcMqVN8RxTiAmNFB1A6FB/FvF\npgya0WepNQpzpQeClyjTqK6NNto0BOStBgPnrOW7aHEOf2+/KB9/680XP0G7VgC1\n2WMvwb+Cr2lOGRGDrA4KgtQZ0rqatZQlRUCy0pmRebirwVJkZ5pgciqCQ1I5HY1Z\nbI0VLF0yQahz3EUOgdkVEVnQQpCkIFsNUNsVkTEpMfstywmp2mq3UarUZ3Oo8/L7\nDtAwxeqZGNQOXloFyhZaWEaOYopUpjpIRLpztAW7l/SB2yPad5/w3KjkwGGuz6h4\nATX7FeeNMwtHA2RK+z7uSCWmj1KduOe+YQXDU2El7QiT03DIj1UeH3oYkoYIHQcB\nGEEO82/CWHp+je3EyqCpqjj2Ij50Nx5GppG1a/Xs2+x0xtZPQ7DVkohJa4JXyTxg\nFwRZj9GycxVJCm7/4PGtksaRnIoOXABXD0tTwdQdfBYAasZtX57AEhpYTRwmSbWt\nUtkrR+3BwjFyttYnb+7w/KCk2/vHSqJr7jON9XWMOc8dQFfthwFtJTPGcouTQfgn\ndRoPiwmRPpGq8IhXqXl2\n=3vLp\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a8fa50bcc957a33b404bbf623b9922477dba47d1\nparent 47e2ff38e369a0dda29dced6eb2a5800b9dad1b4\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779375532 +0200\ncommitter GitHub <noreply@github.com> 1779375532 +0200\n\nfix(ci): disable target/ cache for Swift packaging job (#314)",
+        "verified_at": "2026-05-21T14:58:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/25af1f5f94639f8965d1dbbb6d7c3dfdde3daf5e",
+    "html_url": "https://github.com/marmot-protocol/mdk/commit/25af1f5f94639f8965d1dbbb6d7c3dfdde3daf5e",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/mdk/commits/25af1f5f94639f8965d1dbbb6d7c3dfdde3daf5e/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "47e2ff38e369a0dda29dced6eb2a5800b9dad1b4",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/47e2ff38e369a0dda29dced6eb2a5800b9dad1b4",
+        "html_url": "https://github.com/marmot-protocol/mdk/commit/47e2ff38e369a0dda29dced6eb2a5800b9dad1b4"
+      }
+    ]
+  },
+  {
+    "sha": "47e2ff38e369a0dda29dced6eb2a5800b9dad1b4",
+    "node_id": "C_kwDOPuuc49oAKDQ3ZTJmZjM4ZTM2OWEwZGRhMjlkY2VkNmViMmE1ODAwYjlkYWQxYjQ",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-21T13:40:51Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T13:40:51Z"
+      },
+      "message": "fix(uniffi-kotlin): suppress java.awt warnings in consumer ProGuard rules (#313)",
+      "tree": {
+        "sha": "b4b3cdbb5324b411e65e23dfe296ac9e549a9c8b",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/git/trees/b4b3cdbb5324b411e65e23dfe296ac9e549a9c8b"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/mdk/git/commits/47e2ff38e369a0dda29dced6eb2a5800b9dad1b4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDwtjCRC1aQ7uu5UhlAAAjRgQAGY8/3HBC7oT8iQknVf5cb3M\n1btJYfQprny13xogZK40F91ucZ5/y2JJyY6JIh1087GRp+ezc9SGAjR1cMGQFAuU\nQ6QtYyiEKpLMIWPYoys+twrZRaPn/4AV8hqsRcyn2sjexv4yNodDgBWEHEFWOJct\nv8KVpleGg3FOitNIbXl8Gf1Eap42EGU9QlwHtVSXMlfzSK5DVU6yG9/GSD4IFfph\nTtwDMATnDKgYyi8K1kDe6/vDQ/qXIVpbFRvC9IoLXRne3rVk0rTXS1TkM8tn2UAN\nf2Klec4Lmk+D9L5P69G9Y0JQ1cJFHa8WpBgvESiVAzRG2hQN3o+qyfXWA29yFiVz\nZ7axHusQ/ux+8Ggd6/x9adCgVOfyGT/082WBJ5jqvtdr6eGSEgwqI29l+pOeRFxQ\nGKLg5jOIGaDftoEX4+049M+Hlmb8/XhHhD2k8wd6BjIUZ2BY5ka5e0xUqjICmyGV\nXSX784xgI+TExs9j5XwMs+Z0cJpGA5GA5PbcrZRkPj+hs3olqguAg1IxDrF3/rNy\ngO3xEoHthB9V3MfiXPP+rfRvf/n+iyGtSxkSVuFNR3k7HTjhT2xbc0RxWK5x1jQp\nYHNTxBWmM9NO07AFCJAq72AWfJLCLaGi+pX8ijiwfie88DuaEvdVe1t9Y8731V2c\ni5gub1w6kt94DKrgwnea\n=Tuoq\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b4b3cdbb5324b411e65e23dfe296ac9e549a9c8b\nparent d5dd913c24f8dcbc8d13b6dc1b2847083b494001\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779370851 +0200\ncommitter GitHub <noreply@github.com> 1779370851 +0200\n\nfix(uniffi-kotlin): suppress java.awt warnings in consumer ProGuard rules (#313)",
+        "verified_at": "2026-05-21T13:40:52Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/47e2ff38e369a0dda29dced6eb2a5800b9dad1b4",
+    "html_url": "https://github.com/marmot-protocol/mdk/commit/47e2ff38e369a0dda29dced6eb2a5800b9dad1b4",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/mdk/commits/47e2ff38e369a0dda29dced6eb2a5800b9dad1b4/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d5dd913c24f8dcbc8d13b6dc1b2847083b494001",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/d5dd913c24f8dcbc8d13b6dc1b2847083b494001",
+        "html_url": "https://github.com/marmot-protocol/mdk/commit/d5dd913c24f8dcbc8d13b6dc1b2847083b494001"
+      }
+    ]
+  },
+  {
+    "sha": "d5dd913c24f8dcbc8d13b6dc1b2847083b494001",
+    "node_id": "C_kwDOPuuc49oAKGQ1ZGQ5MTNjMjRmOGRjYmM4ZDEzYjZkYzFiMjg0NzA4M2I0OTQwMDE",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-21T11:38:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T11:38:29Z"
+      },
+      "message": "fix(ci): build Swift package on macos-26-arm64 for iOS 26 SDK (#312)",
+      "tree": {
+        "sha": "3cd142616e747fb2683dfdfe442c02f6b3f50bcc",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/git/trees/3cd142616e747fb2683dfdfe442c02f6b3f50bcc"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/mdk/git/commits/d5dd913c24f8dcbc8d13b6dc1b2847083b494001",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDu61CRC1aQ7uu5UhlAAAFyQQAJQTTBSiqZI47cG67b4owjrU\nExxghM6R/pi4kQ3GZ6Ma11+B8OEx57nSazxxyUlim0+83IvkHLsNNV64eDY+Jm5k\nEqNvjHfqzxiLwyG1RXLZ+j3jv+zqExL/bSUKf7FSomJWaZrLbALD4fRu+C2gPfg4\nSWBdS2ebvYCrYcLy+/7xkr5ecXlzehHWH45bU+KsbIzbffKH29EjcLQE7yquYc1N\nUF6sPFt9LrvGU9NxsIO0NQkDVkevxrw7UOmF7GU1AvPEy9tbzdC8NgC5BONLuA4p\nm1NJKNEtnuBn2u+DTONegMdKrAquEsaiJPgNgxd337K8PXhOpF02bmi2UCA4y2B6\nci6qyf3KqR4K/KzSSwicHU5DBudQElmuyK6yxPe4FgSlUngX32XCMgRaITJM9jOn\nPO94Q8+qQDC6qMGz+gdqf0a0y3CZc3gaH4J5lAtiBKX+Pygs37vAcuyTOXxJ7QZz\nDtV4LKDDTicJFJQUhIMTNwCyQGxCH1QoHU3VwL6BMcYXSsSJICrOYudA0yy+3sch\n2yIjmykrh3/bwbmX2dToxr5rRA9F+PGEDRCK4qvP32NIFUpIQKhoOB29R4O07K1R\nttjoTQWZct/ek1pE4T+5XuSgAD1lMnVfifFdCcxKkjjknX7SfFLYaqX6rOtLVy0H\nXbloe+vtiTx7xE0kR6Ui\n=hz6I\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3cd142616e747fb2683dfdfe442c02f6b3f50bcc\nparent 140c549723cf1d4b799328c6286a10004d9a8c04\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779363509 +0200\ncommitter GitHub <noreply@github.com> 1779363509 +0200\n\nfix(ci): build Swift package on macos-26-arm64 for iOS 26 SDK (#312)",
+        "verified_at": "2026-05-21T11:38:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/d5dd913c24f8dcbc8d13b6dc1b2847083b494001",
+    "html_url": "https://github.com/marmot-protocol/mdk/commit/d5dd913c24f8dcbc8d13b6dc1b2847083b494001",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/mdk/commits/d5dd913c24f8dcbc8d13b6dc1b2847083b494001/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "140c549723cf1d4b799328c6286a10004d9a8c04",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/140c549723cf1d4b799328c6286a10004d9a8c04",
+        "html_url": "https://github.com/marmot-protocol/mdk/commit/140c549723cf1d4b799328c6286a10004d9a8c04"
+      }
+    ]
+  },
+  {
+    "sha": "140c549723cf1d4b799328c6286a10004d9a8c04",
+    "node_id": "C_kwDOPuuc49oAKDE0MGM1NDk3MjNjZjFkNGI3OTkzMjhjNjI4NmExMDAwNGQ5YThjMDQ",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-05-21T08:50:00Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T08:50:00Z"
+      },
+      "message": "[skip-changelog]: Bump ruby/setup-ruby from 1.306.0 to 1.310.0 (#309)\n\nBumps [ruby/setup-ruby](https://github.com/ruby/setup-ruby) from 1.306.0 to 1.310.0.\n- [Release notes](https://github.com/ruby/setup-ruby/releases)\n- [Changelog](https://github.com/ruby/setup-ruby/blob/master/release.rb)\n- [Commits](https://github.com/ruby/setup-ruby/compare/c4e5b1316158f92e3d49443a9d58b31d25ac0f8f...afeafc3d1ab54a631816aba4c914a0081c12ff2f)\n\n---\nupdated-dependencies:\n- dependency-name: ruby/setup-ruby\n  dependency-version: 1.310.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "02a50b9339fa393170f602a11e31783b84f85d4a",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/git/trees/02a50b9339fa393170f602a11e31783b84f85d4a"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/mdk/git/commits/140c549723cf1d4b799328c6286a10004d9a8c04",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDsc4CRC1aQ7uu5UhlAAAWRsQAGoAzLtSbnj3eLi3pLUMWjbp\nSpdEXMXry2V1EmLr9KwnYdI8gHmUtp4PIelNpou2OMwy0i+GBHmg2egCdjnSP2vO\nYbfpIBLdXFXwUFQqR6vstO94CM208H/1ORb6fFetcymH2m13z3EFrohhkyt4ctS+\nFKsE+rav8rInwMjgSuXcqAW1hZYlB71e9s20TPa1S7fNPch4zp1hjDCvKQbCgyF6\nbDK9oeSjiZFj1N16Vm+H3Qd1kms3sQgBDojHHyMD3iH2RlNS4n8kHJFvHZiti3UA\nF5cgWxv6eeqtx48jGu8stsuyP20qsjNQp4uxFQvyoONzpg1UMopOo1FMtv4apFEL\nC9hN7pxY6/qJhrfkhAWoj+CT0m6Ne7vlKjt3MWYgOQNAVLa5FCVHlHDJwpW8AG1P\nE6Ea//mfGPjJ6vbKklK5QYV1aKk/v4cCa/lxZl5wpK7E2PtmjScWsfXLphzckD2f\n8B801tApxuU9+r+Ylg3jHYPW1itB2cQosIwKfSO1GlC9D8JY6JteHD5KtbtkctuX\nvrREcz9Iz8yXa03NkxIQ4QDy21lKZd5DR1060N9Y1MOnQ9q0GKv5AXIJZqLwyRvG\nKtanV7QzLzIfr8rNR2hwShWdCk0B2HsKYEPy5Rj5SB9pdrAYzYPRPBl69YeAC026\nLYZhUFvZ96278WXyBVpF\n=LaEQ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 02a50b9339fa393170f602a11e31783b84f85d4a\nparent 690b5411b8e7cf3558df16ae149f4bff5919052c\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1779353400 +0200\ncommitter GitHub <noreply@github.com> 1779353400 +0200\n\n[skip-changelog]: Bump ruby/setup-ruby from 1.306.0 to 1.310.0 (#309)\n\nBumps [ruby/setup-ruby](https://github.com/ruby/setup-ruby) from 1.306.0 to 1.310.0.\n- [Release notes](https://github.com/ruby/setup-ruby/releases)\n- [Changelog](https://github.com/ruby/setup-ruby/blob/master/release.rb)\n- [Commits](https://github.com/ruby/setup-ruby/compare/c4e5b1316158f92e3d49443a9d58b31d25ac0f8f...afeafc3d1ab54a631816aba4c914a0081c12ff2f)\n\n---\nupdated-dependencies:\n- dependency-name: ruby/setup-ruby\n  dependency-version: 1.310.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "verified_at": "2026-05-21T08:50:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/140c549723cf1d4b799328c6286a10004d9a8c04",
+    "html_url": "https://github.com/marmot-protocol/mdk/commit/140c549723cf1d4b799328c6286a10004d9a8c04",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/mdk/commits/140c549723cf1d4b799328c6286a10004d9a8c04/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "690b5411b8e7cf3558df16ae149f4bff5919052c",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/commits/690b5411b8e7cf3558df16ae149f4bff5919052c",
+        "html_url": "https://github.com/marmot-protocol/mdk/commit/690b5411b8e7cf3558df16ae149f4bff5919052c"
+      }
+    ]
+  }
+]

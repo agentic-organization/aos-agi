@@ -1,0 +1,646 @@
+[
+  {
+    "id": "9549598045",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 7,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-badges/pulls/7",
+        "id": 3696372605,
+        "number": 7,
+        "head": {
+          "ref": "codex/use-16core-runners-20260517164530",
+          "sha": "1396b25a5e9da138639147f56bbf6a66e574522f",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "8d22912163002fb1ca745cbbb4cceac137cb1daf",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-17T04:45:49Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11961904129",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "ref": "codex/use-16core-runners-20260517164530",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/use-16core-runners-20260517164530",
+      "master_branch": "main",
+      "description": "Diviner of the Day/Week/Month — automated NIP-58 creator badges for the Divine leaderboard. Cloudflare Worker + D1.",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-17T04:45:48Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11274960798",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "repository_id": 1209274450,
+      "push_id": 33566359128,
+      "ref": "refs/heads/main",
+      "head": "8d22912163002fb1ca745cbbb4cceac137cb1daf",
+      "before": "2079f19d6eb5f076f9f5f92be5474256b1372a0d"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:18:29Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981533510",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 5,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-badges/pulls/5",
+        "id": 3604573502,
+        "number": 5,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "fe704016a0c541750386b28cd7de44c3a6c2ce42",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "2079f19d6eb5f076f9f5f92be5474256b1372a0d",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:18:28Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981427038",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "review": {
+        "id": 4209273788,
+        "node_id": "PRR_kwDOSBQQUs765Gu8",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. Standards check complete. Approved.",
+        "commit_id": "fe704016a0c541750386b28cd7de44c3a6c2ce42",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-badges/pull/5#pullrequestreview-4209273788",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-badges/pulls/5",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-badges/pull/5#pullrequestreview-4209273788"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-badges/pulls/5"
+          }
+        },
+        "submitted_at": "2026-05-01T00:13:42Z",
+        "updated_at": "2026-05-01T00:13:42Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-badges/pulls/5",
+        "id": 3604573502,
+        "number": 5,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "fe704016a0c541750386b28cd7de44c3a6c2ce42",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "2079f19d6eb5f076f9f5f92be5474256b1372a0d",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:13:44Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8972799376",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 6,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-badges/pulls/6",
+        "id": 3610912970,
+        "number": 6,
+        "head": {
+          "ref": "fix/exclude-founder-diviner-awards",
+          "sha": "1661d70a420c325f56808d73a6654b6331391c73",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "2079f19d6eb5f076f9f5f92be5474256b1372a0d",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-30T18:56:10Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11264808831",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "ref": "fix/exclude-founder-diviner-awards",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/exclude-founder-diviner-awards",
+      "master_branch": "main",
+      "description": "Diviner of the Day/Week/Month — automated NIP-58 creator badges for the Divine leaderboard. Cloudflare Worker + D1.",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-30T18:53:14Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8929641430",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 5,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-badges/pulls/5",
+        "id": 3604573502,
+        "number": 5,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "fe704016a0c541750386b28cd7de44c3a6c2ce42",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "2079f19d6eb5f076f9f5f92be5474256b1372a0d",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-29T19:35:55Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11216430168",
+    "type": "PushEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "repository_id": 1209274450,
+      "push_id": 33507948467,
+      "ref": "refs/heads/codex/repo-contribution-guardrails",
+      "head": "fe704016a0c541750386b28cd7de44c3a6c2ce42",
+      "before": "2079f19d6eb5f076f9f5f92be5474256b1372a0d"
+    },
+    "public": true,
+    "created_at": "2026-04-29T19:35:48Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11216412178",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "ref": "codex/repo-contribution-guardrails",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/repo-contribution-guardrails",
+      "master_branch": "main",
+      "description": "Diviner of the Day/Week/Month — automated NIP-58 creator badges for the Divine leaderboard. Cloudflare Worker + D1.",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-04-29T19:35:19Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8686189696",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 4,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-badges/pulls/4",
+        "id": 3555961212,
+        "number": 4,
+        "head": {
+          "ref": "chore/pr-preview-deploys",
+          "sha": "a5e9f3d7ece42837d094664744a3183908795219",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "406886967cba8eb89d494c220453bcb1118667f2",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-22T19:18:43Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10917854637",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "repository_id": 1209274450,
+      "push_id": 33209620245,
+      "ref": "refs/heads/main",
+      "head": "2079f19d6eb5f076f9f5f92be5474256b1372a0d",
+      "before": "5aaff13f1a9a37f86c4085c25bbf7d745559c6f2"
+    },
+    "public": true,
+    "created_at": "2026-04-22T19:18:44Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "10917846768",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "repository_id": 1209274450,
+      "push_id": 33209612412,
+      "ref": "refs/heads/main",
+      "head": "5aaff13f1a9a37f86c4085c25bbf7d745559c6f2",
+      "before": "406886967cba8eb89d494c220453bcb1118667f2"
+    },
+    "public": true,
+    "created_at": "2026-04-22T19:18:32Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8686183567",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1209274450,
+      "name": "divinevideo/divine-badges",
+      "url": "https://api.github.com/repos/divinevideo/divine-badges"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-badges/pulls/3",
+        "id": 3555851319,
+        "number": 3,
+        "head": {
+          "ref": "feature/badges-page-parity",
+          "sha": "86029366f3e5187f0aa51577df8b7685a5a454ab",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "406886967cba8eb89d494c220453bcb1118667f2",
+          "repo": {
+            "id": 1209274450,
+            "url": "https://api.github.com/repos/divinevideo/divine-badges",
+            "name": "divine-badges"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-22T19:18:30Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]

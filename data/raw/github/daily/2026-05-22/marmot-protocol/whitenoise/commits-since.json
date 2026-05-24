@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "1ce17a275d78caa66a514555e3e704c35e3b28ff",
+    "node_id": "C_kwDOQg6sZ9oAKDFjZTE3YTI3NWQ3OGNhYTY2YTUxNDU1NWUzZTcwNGMzNWUzYjI4ZmY",
+    "commit": {
+      "author": {
+        "name": "Mubarak Auwal",
+        "email": "mubarakcoded@gmail.com",
+        "date": "2026-05-21T16:42:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T16:42:38Z"
+      },
+      "message": "feat(blocked-users): complete block/unblock UX (#676)\n\n* feat(blocked-users): complete block/unblock UX\n\n* docs(changelog): link block/unblock UX entry to PR #676\n\n* fix(l10n): reuse profile key instead of duplicate blockedUserProfileTitle\n\n* fix(blocked-user): disable unblock button while action is in flight\n\n* fix(blocked-users): address pepina review\n\n* refactor(blocked-users): morph in place on unblock and polish notice card\n\n* fix(blocked-users): restore bottom padding only when unblocked panel is shown\n\n* style(blocked-users): apply dart format\n\n* Cover unblocked action panel buttons in BlockedUserScreen tests\n\n* Consolidate blocked-user and start-chat screens into UserProfileScreen\n\n* Cover topAligned mode, blocked notice transitions, and UserProfileScreen.show in tests\n\n* Cover topAligned invite share tap and failure paths\n\n* Fall back to bech32 npub for the blocked user tile display name and drop stale start-chat route stub\n\n* Drop the WnSystemNotice elevatedCard variant and use fillSecondary on the blocked user notice\n\n* Address pepi's review on the blocked notice and open user profiles top-aligned from start-chat entries",
+      "tree": {
+        "sha": "129c5aa306fc41d1eca883ea69a10df20b72a368",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/129c5aa306fc41d1eca883ea69a10df20b72a368"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/1ce17a275d78caa66a514555e3e704c35e3b28ff",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDzX+CRC1aQ7uu5UhlAAAOt8QAJkkRdETlP6uH9vpz4kMkNf2\n45sYgHd8KfGT1n+4NB8rg7F49hThmkmbMnX97/CGdYfwC9c1xT4/SFEOd1TaDm/K\nkLp98OGXqAHhXe5GZXBkQuF7frrHuxJsezOxnOOW1ogwLXhNfBoSQchzCsv1X+sJ\nKNMto2+OjhKL76pDJyIiFeajfOEJ1shjIPreAl65pLlBNNztOKq2IZSxBFFqXzyA\nuKrzs86iCCdQc7kYSvHr5xc5UdYs+ZSoxHZa30HbbUYDzrdbyQbnAE4pFSmLKyXv\ngm9B77FUtLtm2+X3YHTnQxC4iu4/RrghKUHQOtOqr5+tdMYWsG6mHsVdChHyMU/R\nsD8VfmWhu1quaWoYE+tTVsmfh/dOBnZvuXZOvv2vqaGzDd3cF64Oz7Hp7tvytWF9\nW+N2IYNHdn2rMQqxkI3SyZl//XkKXK/M9+F3I/eMSvRfIlW+ki3dcTsSwFohB+j8\ndrhoq7jlgxmENXDn9GxzK4nfCPwVI4BWZGttFuHQSH8KNMOA7s6QEQbxCWYM9WI1\nQVtYy0UUsdzaeZrsSR7WsalKrIy5HA0xQK7uV0Vrp5SehLE/1Y/ThYnVLFjdN0Uj\nrbXoHdhI6bzxG5nPwiChRvRAnmxPna9WLDV3ren1Nvxh/MaYMn7W4ol/FWNAWvCE\nkE9w8GqX+MuXFVSm3Vi1\n=5FtG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 129c5aa306fc41d1eca883ea69a10df20b72a368\nparent a67863aaff249539a5e4c28801da4282945707e0\nauthor Mubarak Auwal <mubarakcoded@gmail.com> 1779381758 +0100\ncommitter GitHub <noreply@github.com> 1779381758 +0200\n\nfeat(blocked-users): complete block/unblock UX (#676)\n\n* feat(blocked-users): complete block/unblock UX\n\n* docs(changelog): link block/unblock UX entry to PR #676\n\n* fix(l10n): reuse profile key instead of duplicate blockedUserProfileTitle\n\n* fix(blocked-user): disable unblock button while action is in flight\n\n* fix(blocked-users): address pepina review\n\n* refactor(blocked-users): morph in place on unblock and polish notice card\n\n* fix(blocked-users): restore bottom padding only when unblocked panel is shown\n\n* style(blocked-users): apply dart format\n\n* Cover unblocked action panel buttons in BlockedUserScreen tests\n\n* Consolidate blocked-user and start-chat screens into UserProfileScreen\n\n* Cover topAligned mode, blocked notice transitions, and UserProfileScreen.show in tests\n\n* Cover topAligned invite share tap and failure paths\n\n* Fall back to bech32 npub for the blocked user tile display name and drop stale start-chat route stub\n\n* Drop the WnSystemNotice elevatedCard variant and use fillSecondary on the blocked user notice\n\n* Address pepi's review on the blocked notice and open user profiles top-aligned from start-chat entries",
+        "verified_at": "2026-05-21T16:42:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/1ce17a275d78caa66a514555e3e704c35e3b28ff",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/1ce17a275d78caa66a514555e3e704c35e3b28ff",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/1ce17a275d78caa66a514555e3e704c35e3b28ff/comments",
+    "author": {
+      "login": "mubarakcoded",
+      "id": 8781742,
+      "node_id": "MDQ6VXNlcjg3ODE3NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8781742?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mubarakcoded",
+      "html_url": "https://github.com/mubarakcoded",
+      "followers_url": "https://api.github.com/users/mubarakcoded/followers",
+      "following_url": "https://api.github.com/users/mubarakcoded/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mubarakcoded/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mubarakcoded/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mubarakcoded/subscriptions",
+      "organizations_url": "https://api.github.com/users/mubarakcoded/orgs",
+      "repos_url": "https://api.github.com/users/mubarakcoded/repos",
+      "events_url": "https://api.github.com/users/mubarakcoded/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mubarakcoded/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a67863aaff249539a5e4c28801da4282945707e0",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/a67863aaff249539a5e4c28801da4282945707e0",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/a67863aaff249539a5e4c28801da4282945707e0"
+      }
+    ]
+  },
+  {
+    "sha": "a67863aaff249539a5e4c28801da4282945707e0",
+    "node_id": "C_kwDOQg6sZ9oAKGE2Nzg2M2FhZmYyNDk1MzlhNWU0YzI4ODAxZGE0MjgyOTQ1NzA3ZTA",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-21T10:43:03Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T10:43:03Z"
+      },
+      "message": "fix(mentions): use accent contentSecondary (Color/500) so mentions stay legible on both bubble backgrounds (#692)\n\nMentions were rendered with AvatarColorSet.content, wired to accent.contentPrimary\n(Color/900 in light, Color/50 in dark). That palette is for text on the tinted\navatar fill — not text on a chat bubble. The 50 step is near-white, so on a\nwhite outgoing bubble in dark mode mentions disappeared (see #ux report).\n\nPer design guidance, mention text should use Accent/{color}/Content Secondary\n(Color/500) in both themes — a mid-saturation step legible on light and dark\nbubbles alike.\n\n- Add contentSecondary to AvatarColorSet, wired to accent.contentSecondary\n  (and fillContentTertiary for the neutral bucket).\n- Switch the npub mention text style in MarkdownText to .contentSecondary.\n- Add a widget test asserting the mention color equals contentSecondary\n  and is not contentPrimary (regression guard).\n\nSender-name and reply-author labels still use .content; they were not in\nscope for this fix.",
+      "tree": {
+        "sha": "54ab639d29ceaf4e0e5546362a794462f100b363",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/54ab639d29ceaf4e0e5546362a794462f100b363"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/a67863aaff249539a5e4c28801da4282945707e0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDuG3CRC1aQ7uu5UhlAAAjOMQAASvPTQdjJCw5SU4ro1deee6\nHGpGXeJkei4P65KF0y5pJxJuPoKOfLaxfBu0P+55hmaW7eFlbleWhWe9SWbvRo7z\nNgh2hJXHMz+/fkU0QtlOoMHVNRLb7B9zhoO2OHBeqXIZj+5dVE3QbuU7ovhApx0Z\nSJB8uHo69QK1R0nJXhDrQhOhCOaKwBpR44Ug1G/HEbozDJhR4zDPmIhFJAejmDFY\nFYpKGX9+hnvLgPRywi2FjI8yO184BAIN3hSXWjoruqj35Af9PbPv5+CzCHfSM+tO\nTFXsdZJ8sR8gpXuHd4bDrhtmzCjMYeA7CprMAjPfj8iHHwKj/2aP4e6WXYKVD7H5\nB0rQwj7ct79ad5WGCD+DnU9zViOQgra7VfFQf9c6GedGdINATp3RJkHAoOI/g/UC\nYF1lQXwjIW4ZVATeDslvZ8SboOn2LwsAKloN2baCl8gCoCwQ5dX+/UsdwMbeDCDJ\nCr+jdBo5zPXC5fuGcqQ3euq2rwJSeUrKcheU3P1A/fmFukcPL/7A02swjYwlNhub\n4Gr4vk7fCvuR+VGbzpb0YuGEs2AlTYkMRIvX8ZpElasCQndnMw2RXCY0UOZvZJjh\nZSVA7xxNuC2/N9NvLwgRcsn5WDE/LA6hf0VsiIYeLQKajbeGodKNHZEsELd9SJEE\nFbR8i95PPrqC1i7Peh5T\n=ffZK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 54ab639d29ceaf4e0e5546362a794462f100b363\nparent cebf3a1239f6cd2b90c7693f93ffc6939459f471\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779360183 +0200\ncommitter GitHub <noreply@github.com> 1779360183 +0200\n\nfix(mentions): use accent contentSecondary (Color/500) so mentions stay legible on both bubble backgrounds (#692)\n\nMentions were rendered with AvatarColorSet.content, wired to accent.contentPrimary\n(Color/900 in light, Color/50 in dark). That palette is for text on the tinted\navatar fill — not text on a chat bubble. The 50 step is near-white, so on a\nwhite outgoing bubble in dark mode mentions disappeared (see #ux report).\n\nPer design guidance, mention text should use Accent/{color}/Content Secondary\n(Color/500) in both themes — a mid-saturation step legible on light and dark\nbubbles alike.\n\n- Add contentSecondary to AvatarColorSet, wired to accent.contentSecondary\n  (and fillContentTertiary for the neutral bucket).\n- Switch the npub mention text style in MarkdownText to .contentSecondary.\n- Add a widget test asserting the mention color equals contentSecondary\n  and is not contentPrimary (regression guard).\n\nSender-name and reply-author labels still use .content; they were not in\nscope for this fix.",
+        "verified_at": "2026-05-21T10:43:04Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/a67863aaff249539a5e4c28801da4282945707e0",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/a67863aaff249539a5e4c28801da4282945707e0",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/a67863aaff249539a5e4c28801da4282945707e0/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cebf3a1239f6cd2b90c7693f93ffc6939459f471",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/cebf3a1239f6cd2b90c7693f93ffc6939459f471",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/cebf3a1239f6cd2b90c7693f93ffc6939459f471"
+      }
+    ]
+  },
+  {
+    "sha": "cebf3a1239f6cd2b90c7693f93ffc6939459f471",
+    "node_id": "C_kwDOQg6sZ9oAKGNlYmYzYTEyMzlmNmNkMmI5MGM3NjkzZjkzZmZjNjkzOTQ1OWY0NzE",
+    "commit": {
+      "author": {
+        "name": "Danny M",
+        "email": "25923265+dannym-arx@users.noreply.github.com",
+        "date": "2026-05-21T09:06:20Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T09:06:20Z"
+      },
+      "message": "fix: route user-tag taps to the group member screen for members (#686)",
+      "tree": {
+        "sha": "c9b81828441d50bb3640a327389df6b6a4effc76",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/trees/c9b81828441d50bb3640a327389df6b6a4effc76"
+      },
+      "url": "https://api.github.com/repos/marmot-protocol/whitenoise/git/commits/cebf3a1239f6cd2b90c7693f93ffc6939459f471",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDssMCRC1aQ7uu5UhlAAArnwQABJb+dxAbhZW5waED1fprImf\nTfn1SwDyfs+lwCjTG+H1IFR8/ZfKc/cXiP84xPcFkBkmJ61B4RWGk7gmlEUtvLSj\nyqB0U8fQhTi5wev6ClX1VlVrcu1uFxF4+J553dt9DevPrj8Tl3F26B+8Hp2R526N\nV4mauIegR/1UdQiFel1ocHOqnjQPUpSsx3b4RK4V8vrM4ycscGx+LsOcuMDkA3mt\nY9bSrGurfPhnjWT6AIpEqLNIr5hy3dshJgZYytSAJXePHT7feXko/I5zKsbdzqYv\nUfEYDLuS6DGcfc9SE8tZAGDHPuNXTZ/ub/X+jt9El7pSYBKlSXqB0cw87XwNNCDd\nrvuQstMbfp8DUI+Um5yfQT/sUYNCic03Z2FkBa50AvFWpLvmkArGJWoaftgY67RD\nA2shRPxJsMRLj97MfI9pS6zi8z0A2j5t+tIGbswoPzXh05sbft4gzlpNNweEszpy\nZGWJa6Ig8tgLi6mLyw6kfyBnqMIPj9yWONdsFXXS7Lg50J+mPeVM9udI4PSzoEul\nX1EN55nNktQL6YB06x2sZgpjRCGSqyVX8QLhwHenQOFdXCl84bamsT+AWecFPP/6\nCWO3Uy2O0qdgmBgFn3eRuBvBYF5V6ok0P1yw7gqTmQ1n6WI0K9KsvaIZOBlYO14z\nzCzTirWtLvw3G+v/8RAq\n=xPm0\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c9b81828441d50bb3640a327389df6b6a4effc76\nparent 82a0dc1b336a051b9cf1f620e278aa5f23f952a6\nauthor Danny M <25923265+dannym-arx@users.noreply.github.com> 1779354380 +0200\ncommitter GitHub <noreply@github.com> 1779354380 +0200\n\nfix: route user-tag taps to the group member screen for members (#686)",
+        "verified_at": "2026-05-21T09:06:21Z"
+      }
+    },
+    "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/cebf3a1239f6cd2b90c7693f93ffc6939459f471",
+    "html_url": "https://github.com/marmot-protocol/whitenoise/commit/cebf3a1239f6cd2b90c7693f93ffc6939459f471",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/cebf3a1239f6cd2b90c7693f93ffc6939459f471/comments",
+    "author": {
+      "login": "dannym-arx",
+      "id": 25923265,
+      "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "html_url": "https://github.com/dannym-arx",
+      "followers_url": "https://api.github.com/users/dannym-arx/followers",
+      "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+      "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+      "repos_url": "https://api.github.com/users/dannym-arx/repos",
+      "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "82a0dc1b336a051b9cf1f620e278aa5f23f952a6",
+        "url": "https://api.github.com/repos/marmot-protocol/whitenoise/commits/82a0dc1b336a051b9cf1f620e278aa5f23f952a6",
+        "html_url": "https://github.com/marmot-protocol/whitenoise/commit/82a0dc1b336a051b9cf1f620e278aa5f23f952a6"
+      }
+    ]
+  }
+]

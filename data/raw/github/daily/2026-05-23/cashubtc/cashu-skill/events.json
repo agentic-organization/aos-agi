@@ -1,0 +1,222 @@
+[
+  {
+    "id": "9812303801",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 105528946,
+      "login": "PlebeiusGaragicus",
+      "display_login": "PlebeiusGaragicus",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/PlebeiusGaragicus",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105528946?"
+    },
+    "repo": {
+      "id": 1146334960,
+      "name": "cashubtc/cashu-skill",
+      "url": "https://api.github.com/repos/cashubtc/cashu-skill"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-23T04:39:35Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8702884131",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 246077594,
+      "login": "yogesh-tessl",
+      "display_login": "yogesh-tessl",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yogesh-tessl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/246077594?"
+    },
+    "repo": {
+      "id": 1146334960,
+      "name": "cashubtc/cashu-skill",
+      "url": "https://api.github.com/repos/cashubtc/cashu-skill"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/cashu-skill/pulls/3",
+        "id": 3571755999,
+        "number": 3,
+        "head": {
+          "ref": "improve/skill-review-optimization",
+          "sha": "2684fe241dc8b9d613711da21d4e77376dedd620",
+          "repo": {
+            "id": 1218711566,
+            "url": "https://api.github.com/repos/yogesh-tessl/cashu-skill",
+            "name": "cashu-skill"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "0e176227db2ef975d9940c79a6d4cf3f20b9213b",
+          "repo": {
+            "id": 1146334960,
+            "url": "https://api.github.com/repos/cashubtc/cashu-skill",
+            "name": "cashu-skill"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-23T07:42:31Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "8700577893",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 246077594,
+      "login": "yogesh-tessl",
+      "display_login": "yogesh-tessl",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yogesh-tessl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/246077594?"
+    },
+    "repo": {
+      "id": 1146334960,
+      "name": "cashubtc/cashu-skill",
+      "url": "https://api.github.com/repos/cashubtc/cashu-skill"
+    },
+    "payload": {
+      "action": "forked",
+      "forkee": {
+        "id": 1218711566,
+        "node_id": "R_kgDOSKQQDg",
+        "name": "cashu-skill",
+        "full_name": "yogesh-tessl/cashu-skill",
+        "private": false,
+        "owner": {
+          "login": "yogesh-tessl",
+          "id": 246077594,
+          "node_id": "U_kgDODqrYmg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/246077594?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/yogesh-tessl",
+          "html_url": "https://github.com/yogesh-tessl",
+          "followers_url": "https://api.github.com/users/yogesh-tessl/followers",
+          "following_url": "https://api.github.com/users/yogesh-tessl/following{/other_user}",
+          "gists_url": "https://api.github.com/users/yogesh-tessl/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/yogesh-tessl/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/yogesh-tessl/subscriptions",
+          "organizations_url": "https://api.github.com/users/yogesh-tessl/orgs",
+          "repos_url": "https://api.github.com/users/yogesh-tessl/repos",
+          "events_url": "https://api.github.com/users/yogesh-tessl/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/yogesh-tessl/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/yogesh-tessl/cashu-skill",
+        "description": "A Cashu wallet skill for AI agents",
+        "fork": true,
+        "url": "https://api.github.com/repos/yogesh-tessl/cashu-skill",
+        "forks_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/forks",
+        "keys_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/teams",
+        "hooks_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/hooks",
+        "issue_events_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/events",
+        "assignees_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/tags",
+        "blobs_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/languages",
+        "stargazers_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/stargazers",
+        "contributors_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/contributors",
+        "subscribers_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/subscribers",
+        "subscription_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/subscription",
+        "commits_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/merges",
+        "archive_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/downloads",
+        "issues_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/labels{/name}",
+        "releases_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/yogesh-tessl/cashu-skill/deployments",
+        "created_at": "2026-04-23T06:25:45Z",
+        "updated_at": "2026-04-23T06:25:46Z",
+        "pushed_at": "2026-04-23T07:41:49Z",
+        "git_url": "git://github.com/yogesh-tessl/cashu-skill.git",
+        "ssh_url": "git@github.com:yogesh-tessl/cashu-skill.git",
+        "clone_url": "https://github.com/yogesh-tessl/cashu-skill.git",
+        "svn_url": "https://github.com/yogesh-tessl/cashu-skill",
+        "homepage": null,
+        "size": 17,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "main"
+      }
+    },
+    "public": true,
+    "created_at": "2026-04-23T06:25:45Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  }
+]

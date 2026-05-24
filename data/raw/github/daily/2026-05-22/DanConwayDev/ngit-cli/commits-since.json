@@ -1,0 +1,750 @@
+[
+  {
+    "sha": "6eb46c44b1019d7ba0fee82d8d4c8930553c3f17",
+    "node_id": "C_kwDOJlsjrNoAKDZlYjQ2YzQ0YjEwMTlkN2JhMGZlZTgyZDhkNGM4OTMwNTUzYzNmMTc",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T14:39:05Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T14:39:05Z"
+      },
+      "message": "merge: lazy git-server fetch in pr commands, with expanded scope\n\nOriginal contribution from m0wer\n(nostr:npub1w3vaxva0vcrx7pnvlpmede5smvafdl69xnu7ma82kaxl9us89zdsht4c5c):\n`ngit pr list` / `pr apply` / `pr checkout` were calling\n`git fetch <nostr-remote>` as a subprocess, which would also trigger\nfetches against unrelated remotes configured in `.git/config`\n(GitHub, Codeberg, …), prompting for SSH keys the user hadn't opted\ninto. The fetch is unnecessary for PR operations — these commands only\nneed fresh nostr event data — so the subprocess call is replaced with\n`fetching_with_report` against nostr relays only, matching the pattern\nalready used by `ngit sync`, `issue list`, `pr_status`, etc.\n\nExpanded scope added during review:\n\n- `checkout_patch` best-effort-fetches the patch chain's parent commit\n  from the repo's git servers before `apply_patch_chain`, restoring\n  the \"newer revision based on a commit we haven't pulled yet\" path\n  that the original commit broke for patch-kind proposals.\n\n- The three duplicated `fetch_oid_for_*_pr` helpers in apply.rs /\n  checkout.rs / list.rs are consolidated into a single\n  `ensure_commit_local` in `src/lib/fetch.rs` that short-circuits on\n  `does_commit_exist` before any network call.\n\n- `ngit pr checkout` (both the no-branch-yet case and the --force\n  diverged case) and the interactive checkout path in `ngit pr list`\n  now try the submitter-supplied `clone`-tag URLs on the PR event as a\n  fallback if the repo's declared git servers don't carry the PR tip,\n  matching what `ngit pr apply` already did. The same fallback remains\n  deliberately disabled for the passive `git clone` / `git fetch` paths\n  in the remote helper, where a malicious submitter could otherwise\n  slow down every operation against the repo.\n\n- `ngit pr checkout` now writes `refs/remotes/<nostr-remote>/<branch>`\n  to the verified locally-applied tip and sets the branch's upstream on\n  every successful checkout, so `git pull` works against the nostr\n  remote afterwards. The tracking ref is written from the deterministic\n  OID produced by `create_commit_from_patch` rather than a subprocess\n  `git fetch <nostr-remote>` (which would have re-introduced the very\n  auth-prompt regression this PR set out to fix). Applies to both\n  PR-kind and patch-kind proposals; the interactive `ngit pr list`\n  PR-kind arm is migrated and the patch-kind interactive arms are\n  deferred to a follow-up (TODO marker in list.rs).",
+      "tree": {
+        "sha": "f0be7f551d9e6a8c32aa507625151349adec257e",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/f0be7f551d9e6a8c32aa507625151349adec257e"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/6eb46c44b1019d7ba0fee82d8d4c8930553c3f17",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoPGQkACgkQaOFUhtc/\ndeGkgQ/+LoTaRQ8hK/vMDy3qI15WqMQwHTI8LGn4v11I3y9K3BaDLWkGZxiRFjGm\njRdcWKHNUWj2ZOwgz8iMSQkBC8qvDS0KXg3FxLHsK+R4sIpvN1T7W32BFGqPtWGs\nY/cgjMcVqIChNzW0XGtpRzRRwPy1RgqIWjttBByF/ebB4NT8hRsavFuKqvAUqve8\nfvdcfkNzpjvUZa3OkcGKHf9QEoVRZtu/wKBIB1dO02g21gkkrdbdLANbwoiYR4Lv\n+u/vdKdXEwzl9gPNmXzldwK4aSAfLkCNE8r4AdktU5X3swbifZhAGDc1mQEJmSNS\nOyZU38EiiDxW82gS+AyAE0uZQyoM9sP3/MUuARL9wTL0uaZ+zohxqoYx3IXDetJc\nP4bh8BNhuKaS5/TBf78wIuBVo33V4lZKHUf1/5xTxdB9LzEPabVgHpGAC/FOltVv\nZgMagk4CYpjJa1MKcWOBA2DFMQUPoPTfXvlRLfcl9a5oJnuZE4v7g1PX6LAeUjgt\nk+MgCLlA8unftXu4LYJJf7s2uH2CPfEdzX2QOKD1YtZmlqZ+2ms4FMUiunbaXxDR\nJCpdhRQKf0IxRhy8ZFvGiyIv8McYJGPyPBl9cCe/NyUOzXb1E/X963YIVxpUcy0K\n6jAXnbimRMnBFeRjmgnfPJBwh9FskM2OjEZ+53rsNfcy3veXVr4=\n=af0o\n-----END PGP SIGNATURE-----",
+        "payload": "tree f0be7f551d9e6a8c32aa507625151349adec257e\nparent a7394c62007dd48d07e9c662b73e59ebcc5e869c\nparent cf5fc96551b8a15adef69fc783f88e596f5e4f80\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779374345 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779374345 +0000\n\nmerge: lazy git-server fetch in pr commands, with expanded scope\n\nOriginal contribution from m0wer\n(nostr:npub1w3vaxva0vcrx7pnvlpmede5smvafdl69xnu7ma82kaxl9us89zdsht4c5c):\n`ngit pr list` / `pr apply` / `pr checkout` were calling\n`git fetch <nostr-remote>` as a subprocess, which would also trigger\nfetches against unrelated remotes configured in `.git/config`\n(GitHub, Codeberg, …), prompting for SSH keys the user hadn't opted\ninto. The fetch is unnecessary for PR operations — these commands only\nneed fresh nostr event data — so the subprocess call is replaced with\n`fetching_with_report` against nostr relays only, matching the pattern\nalready used by `ngit sync`, `issue list`, `pr_status`, etc.\n\nExpanded scope added during review:\n\n- `checkout_patch` best-effort-fetches the patch chain's parent commit\n  from the repo's git servers before `apply_patch_chain`, restoring\n  the \"newer revision based on a commit we haven't pulled yet\" path\n  that the original commit broke for patch-kind proposals.\n\n- The three duplicated `fetch_oid_for_*_pr` helpers in apply.rs /\n  checkout.rs / list.rs are consolidated into a single\n  `ensure_commit_local` in `src/lib/fetch.rs` that short-circuits on\n  `does_commit_exist` before any network call.\n\n- `ngit pr checkout` (both the no-branch-yet case and the --force\n  diverged case) and the interactive checkout path in `ngit pr list`\n  now try the submitter-supplied `clone`-tag URLs on the PR event as a\n  fallback if the repo's declared git servers don't carry the PR tip,\n  matching what `ngit pr apply` already did. The same fallback remains\n  deliberately disabled for the passive `git clone` / `git fetch` paths\n  in the remote helper, where a malicious submitter could otherwise\n  slow down every operation against the repo.\n\n- `ngit pr checkout` now writes `refs/remotes/<nostr-remote>/<branch>`\n  to the verified locally-applied tip and sets the branch's upstream on\n  every successful checkout, so `git pull` works against the nostr\n  remote afterwards. The tracking ref is written from the deterministic\n  OID produced by `create_commit_from_patch` rather than a subprocess\n  `git fetch <nostr-remote>` (which would have re-introduced the very\n  auth-prompt regression this PR set out to fix). Applies to both\n  PR-kind and patch-kind proposals; the interactive `ngit pr list`\n  PR-kind arm is migrated and the patch-kind interactive arms are\n  deferred to a follow-up (TODO marker in list.rs).\n",
+        "verified_at": "2026-05-21T14:40:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/6eb46c44b1019d7ba0fee82d8d4c8930553c3f17",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/6eb46c44b1019d7ba0fee82d8d4c8930553c3f17",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/6eb46c44b1019d7ba0fee82d8d4c8930553c3f17/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a7394c62007dd48d07e9c662b73e59ebcc5e869c",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/a7394c62007dd48d07e9c662b73e59ebcc5e869c",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/a7394c62007dd48d07e9c662b73e59ebcc5e869c"
+      },
+      {
+        "sha": "cf5fc96551b8a15adef69fc783f88e596f5e4f80",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/cf5fc96551b8a15adef69fc783f88e596f5e4f80",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/cf5fc96551b8a15adef69fc783f88e596f5e4f80"
+      }
+    ]
+  },
+  {
+    "sha": "cf5fc96551b8a15adef69fc783f88e596f5e4f80",
+    "node_id": "C_kwDOJlsjrNoAKGNmNWZjOTY1NTFiOGExNWFkZWY2OWZjNzgzZjg4ZTU5NmY1ZTRmODA",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T14:36:47Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T14:36:47Z"
+      },
+      "message": "docs(changelog): credit m0wer for lazy git-server fetch contribution\n\nThe 'now consult git servers lazily' entry under [Unreleased] § Changed\ncovers work originated by m0wer\n(nostr:npub1w3vaxva0vcrx7pnvlpmede5smvafdl69xnu7ma82kaxl9us89zdsht4c5c).\nAdd an explicit credit so attribution survives the changelog into the\nnext release notes.",
+      "tree": {
+        "sha": "f0be7f551d9e6a8c32aa507625151349adec257e",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/f0be7f551d9e6a8c32aa507625151349adec257e"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/cf5fc96551b8a15adef69fc783f88e596f5e4f80",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoPGIAACgkQaOFUhtc/\ndeH7kxAA15LYbd3Cw4p4Us28/lXOMflVb5yeXoXFHxEYt3+SyiGGnolVpMjwNL8o\nl1cccw0EglqjKf7r0BCUlhIpKBU1tpKAERhcUBan3but4kOcBhlZ8rLCfi6mmsmp\nWTmli0kkeDHFN2KaWurmV96pDOGWXe9wXoV0o/OpqyBggvfQZbRVteaWBDVjxXyy\nCbeigp4Z/MJ3gIgTt4kWfkIxlp3t4qTpSJCStNaccenRG2Zo5MJ73ZtkHOFgKXFZ\n9+1c/04RDbhpvhZGbpmC4pwLbRE5D6EihCeZWPlbImxNtOAl7IMr4acQI5gOxaB6\nuoP1HQq0rdVVHNhiAGYFfXctbL+Bkw3OdOYQKVxhtYCJPiRU8tkK3gDp/HQQGy4V\n4mwLc2GU7JAW/esbl6T6xlimc6z6/9CrwRE8xBZzHgGZnnS2FrvdWLZd4IpQnB4+\n41RAl4bz7UeAOW+WbJpOWnKmdaODhKaPkO7JpYpvAUkD+40Tdh62AWQgjHSIXaEB\n5avobSZ1nbFzE9JaUUTQ6B4gcLq+5CsYvkVmMtZAHumMEZ7D300xVpw8dqY8U2Ni\nXXJtJMuGsmy2ghmViEbbH+oI1kfAPElD2jAWvm2VC54jSz5f/q8gplFD7co4v14p\nMDB3zelx3XHgF42gISHrgxmqjr1bhXkp3RlelRXhPMIwQuIoEU0=\n=mOGY\n-----END PGP SIGNATURE-----",
+        "payload": "tree f0be7f551d9e6a8c32aa507625151349adec257e\nparent 1d9fc50cb386c223b3efd5e8003cf195325768b7\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779374207 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779374207 +0000\n\ndocs(changelog): credit m0wer for lazy git-server fetch contribution\n\nThe 'now consult git servers lazily' entry under [Unreleased] § Changed\ncovers work originated by m0wer\n(nostr:npub1w3vaxva0vcrx7pnvlpmede5smvafdl69xnu7ma82kaxl9us89zdsht4c5c).\nAdd an explicit credit so attribution survives the changelog into the\nnext release notes.\n",
+        "verified_at": "2026-05-21T14:40:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/cf5fc96551b8a15adef69fc783f88e596f5e4f80",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/cf5fc96551b8a15adef69fc783f88e596f5e4f80",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/cf5fc96551b8a15adef69fc783f88e596f5e4f80/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1d9fc50cb386c223b3efd5e8003cf195325768b7",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/1d9fc50cb386c223b3efd5e8003cf195325768b7",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/1d9fc50cb386c223b3efd5e8003cf195325768b7"
+      }
+    ]
+  },
+  {
+    "sha": "1d9fc50cb386c223b3efd5e8003cf195325768b7",
+    "node_id": "C_kwDOJlsjrNoAKDFkOWZjNTBjYjM4NmMyMjNiM2VmZDVlODAwM2NmMTk1MzI1NzY4Yjc",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T14:12:43Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T14:31:06Z"
+      },
+      "message": "fix(pr): restore tracking-branch UX on pr checkout\n\n`ngit pr checkout` now writes `refs/remotes/<nostr-remote>/<branch>` to\nthe verified locally-applied tip and sets the branch's upstream to that\nremote on every successful checkout, so `git pull` works against the\nnostr remote afterwards. Applies to both PR-kind and patch-kind\nproposals. The tracking ref is written from the deterministic OID\nproduced by `create_commit_from_patch` rather than a subprocess\n`git fetch <nostr-remote>` (which would otherwise prompt for auth on\nunrelated remotes). Restores the UX lost in 554a7e8.\n\nAlso drops the defer-to-`git pull` short-circuit in `checkout_pr` that\nfired whenever the branch already had an upstream set: with universal\ntracking it would fire every time and hide the behind / diverged /\nforce paths the command is meant to drive. The three FIXMEs in\n`tests/pr_checkout.rs` explicitly flagged this as a bug; those tests\nare un-ignored.\n\nThe interactive `ngit pr list` PR-kind arm is migrated; the patch-kind\ninteractive arms are deferred to a follow-up (TODO marker added in\nlist.rs).\n\nThe newer-revision PR-kind test now publishes the revision as the\nmaintainer rather than a fresh contributor — mirroring the patch-kind\nsibling — so the `PR_UPDATE` event passes the `permissioned_users`\nfilter in `get_all_proposal_patch_pr_pr_update_events_from_cache`\nand the second `ngit pr checkout` actually sees the revision in the\ncandidate set.",
+      "tree": {
+        "sha": "f02b0825ad1396883d88d412d635ee881e78397e",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/f02b0825ad1396883d88d412d635ee881e78397e"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/1d9fc50cb386c223b3efd5e8003cf195325768b7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoPFyoACgkQaOFUhtc/\ndeHKrQ/+Ky9BkPVvp27wJgey/FBdkEzutTAbDwi6HjvD7bsInlLG+wrvwRO+uNhg\nuVUZvSS0wXw36cKr92xKOf5xtPcbBk3MCl7Z7D9Sc7P7rTPzPNEqqBys8hjwN2ZP\nhj8NN7CShr8ZsR6AChLLjBYNTzmeU0owwonmU/LHuzrS9BsBOKvIhqH66F90QD3W\nuSKyLOWvpBo+v3ZDFBLp//nqas+QMo5SdFIk9ObfIiz03R0KsXku4+RMpxOjSRhP\nsSbwLUjOGE0NOQRdDWDwMi4S7C8YhiJtCPCfVtNSQYTS/vcfFwqeh4L+znP+jEz5\niZa5oW4QTqDjtvCIV9RuKIM1RqGdHhYig6NzGL35Xau549B7N4r9AsJWUlcN8k4n\nxowPAN5vvumRGhqQEx5f9xuhJAu9Jg8KvlQ3FACTgLpSKjXR/gApNQhbxiXdAk1W\nHLDUDJ0QkGGaGiR72qNPBejmOcv4si98HCZtiHMcrmMYbDic37V0u0xjqk60mWHQ\ng8LNAlxBzvQkuR1w0g8oGiNIc39bEPnn5sHS1pJ/FEVRw68lOKUhod1/b0P/aDAL\nmlnkqnYqw4+WxIAOCTrUZY3azGqOK7ifd1qVACJgHJaQ37TACf3Ie/cMtSh0IYsx\nbgrAI1kikvkT2DMeqkCdnQA3yaWSJ57iC4bT6z8/0e9ZTlfG/to=\n=Vfgx\n-----END PGP SIGNATURE-----",
+        "payload": "tree f02b0825ad1396883d88d412d635ee881e78397e\nparent e548f0ac66c3ff85959170c5cea96fd0a4dd8bd6\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779372763 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779373866 +0000\n\nfix(pr): restore tracking-branch UX on pr checkout\n\n`ngit pr checkout` now writes `refs/remotes/<nostr-remote>/<branch>` to\nthe verified locally-applied tip and sets the branch's upstream to that\nremote on every successful checkout, so `git pull` works against the\nnostr remote afterwards. Applies to both PR-kind and patch-kind\nproposals. The tracking ref is written from the deterministic OID\nproduced by `create_commit_from_patch` rather than a subprocess\n`git fetch <nostr-remote>` (which would otherwise prompt for auth on\nunrelated remotes). Restores the UX lost in 554a7e8.\n\nAlso drops the defer-to-`git pull` short-circuit in `checkout_pr` that\nfired whenever the branch already had an upstream set: with universal\ntracking it would fire every time and hide the behind / diverged /\nforce paths the command is meant to drive. The three FIXMEs in\n`tests/pr_checkout.rs` explicitly flagged this as a bug; those tests\nare un-ignored.\n\nThe interactive `ngit pr list` PR-kind arm is migrated; the patch-kind\ninteractive arms are deferred to a follow-up (TODO marker added in\nlist.rs).\n\nThe newer-revision PR-kind test now publishes the revision as the\nmaintainer rather than a fresh contributor — mirroring the patch-kind\nsibling — so the `PR_UPDATE` event passes the `permissioned_users`\nfilter in `get_all_proposal_patch_pr_pr_update_events_from_cache`\nand the second `ngit pr checkout` actually sees the revision in the\ncandidate set.\n",
+        "verified_at": "2026-05-21T14:40:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/1d9fc50cb386c223b3efd5e8003cf195325768b7",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/1d9fc50cb386c223b3efd5e8003cf195325768b7",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/1d9fc50cb386c223b3efd5e8003cf195325768b7/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e548f0ac66c3ff85959170c5cea96fd0a4dd8bd6",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/e548f0ac66c3ff85959170c5cea96fd0a4dd8bd6",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/e548f0ac66c3ff85959170c5cea96fd0a4dd8bd6"
+      }
+    ]
+  },
+  {
+    "sha": "e548f0ac66c3ff85959170c5cea96fd0a4dd8bd6",
+    "node_id": "C_kwDOJlsjrNoAKGU1NDhmMGFjNjZjM2ZmODU5NTkxNzBjNWNlYTk2ZmQwYTRkZDhiZDY",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T12:43:41Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T12:43:41Z"
+      },
+      "message": "feat(pr): trust PR clone-tag URLs in pr checkout / list-interactive\n\nngit pr apply already tried the submitter-supplied git-server URLs from\nthe PR event's `clone` tags as a fallback if the repo's declared\nservers didn't carry the PR tip. pr checkout (both the no-branch-yet\ncase and the --force diverged case) and the interactive checkout path\nin pr list did not, even though all three are explicit user-targeted\nactions on a specific PR.\n\nThe asymmetry was conservative but unnecessary: the DoS concern that\nkeeps clone-tag URLs out of the trust set in the remote helper is\nspecifically about passive fan-out — `git clone` / `git fetch`\niterating every open PR and getting blocked by one slow submitter-\ncontrolled server. When the user has typed `ngit pr checkout <id>`\nthey have already opted into that single PR; trying the submitter's\nhint as a fallback to the repo's declared servers is the same\ntrade-off pr apply already makes.\n\nExtract the URL-extraction helper to `git_events::pr_event_clone_tag_urls`\n(with a doc-comment spelling out when it is safe to use), drop the local\ncopy in apply.rs, and pass it as `extras_to_try_first` from the three\nPR-checkout sites.",
+      "tree": {
+        "sha": "e82477c00e3401f40357520e7a666f1b74496912",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/e82477c00e3401f40357520e7a666f1b74496912"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/e548f0ac66c3ff85959170c5cea96fd0a4dd8bd6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoO/f4ACgkQaOFUhtc/\ndeEVsA//bBlXPjEEyuNh2LYPC6Cn1D5FfuKXAqBKjb16WctUwppZahXLeGpEvaAk\nIJQKpdYYXFgcLek3Qkz2HMWNq8/8wM3XguOEGF6dmMNarYkcsHjJHdx//UprNRkO\nOaDTZhjgG2vQ8H0aLpXWUKirEw0wiKKMU+BMQKeWkYtlFjcRCnnzTDzj4Wy8ItlG\nDJ4FQvpMaUxcpRBAnEGIwYDtnWULJEYWlJXjqENBdlRQy8FstHLVCo/5Qef0Tso/\ney5d+1kqEnv25E6+tIX0UYmCKxfh5orToeDNNXWq7w55IkUbNSz8muhNo49ICH24\nfkDRxGmpwVbaZ5UEcmZgP9FO71z15bQVPgCIvAplZj26X5WWnAc9VlnICTjpVFlx\n1e+vvsCOtzG7JeJDdh/lpaIMJRNFjlLOxUgCr/6P+q8ikws26kjGLrsAREvNisro\ncuq+hyZ3hx3aENy+AE1XGiWghd8qDoS0GpUQ7ZAcD25XMx6GG+KnPjegyOYOlM6J\nIIY54q/7l/VD9eyWXa15J3++plhh+aqvMmkRWpUZdcGefEG53ZdsT0wFbkHewtsm\n9JDnTRawp7tbLVlUG1+2cT6moumybHaZ69+PDjpVyJit0bbbx8J/HJfjJcdRtBgZ\n3EPyHP4Zniu2XM8G+KfJatyf47m2lMlFZ+hjiDnLGeNVqye9YBI=\n=OLPV\n-----END PGP SIGNATURE-----",
+        "payload": "tree e82477c00e3401f40357520e7a666f1b74496912\nparent e6dd0095813dcae8b7c575e83853a7dd9eaa79f1\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779367421 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779367421 +0000\n\nfeat(pr): trust PR clone-tag URLs in pr checkout / list-interactive\n\nngit pr apply already tried the submitter-supplied git-server URLs from\nthe PR event's `clone` tags as a fallback if the repo's declared\nservers didn't carry the PR tip. pr checkout (both the no-branch-yet\ncase and the --force diverged case) and the interactive checkout path\nin pr list did not, even though all three are explicit user-targeted\nactions on a specific PR.\n\nThe asymmetry was conservative but unnecessary: the DoS concern that\nkeeps clone-tag URLs out of the trust set in the remote helper is\nspecifically about passive fan-out — `git clone` / `git fetch`\niterating every open PR and getting blocked by one slow submitter-\ncontrolled server. When the user has typed `ngit pr checkout <id>`\nthey have already opted into that single PR; trying the submitter's\nhint as a fallback to the repo's declared servers is the same\ntrade-off pr apply already makes.\n\nExtract the URL-extraction helper to `git_events::pr_event_clone_tag_urls`\n(with a doc-comment spelling out when it is safe to use), drop the local\ncopy in apply.rs, and pass it as `extras_to_try_first` from the three\nPR-checkout sites.\n",
+        "verified_at": "2026-05-21T14:40:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/e548f0ac66c3ff85959170c5cea96fd0a4dd8bd6",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/e548f0ac66c3ff85959170c5cea96fd0a4dd8bd6",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/e548f0ac66c3ff85959170c5cea96fd0a4dd8bd6/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e6dd0095813dcae8b7c575e83853a7dd9eaa79f1",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/e6dd0095813dcae8b7c575e83853a7dd9eaa79f1",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/e6dd0095813dcae8b7c575e83853a7dd9eaa79f1"
+      }
+    ]
+  },
+  {
+    "sha": "e6dd0095813dcae8b7c575e83853a7dd9eaa79f1",
+    "node_id": "C_kwDOJlsjrNoAKGU2ZGQwMDk1ODEzZGNhZThiN2M1NzVlODM4NTNhN2RkOWVhYTc5ZjE",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T11:49:09Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T11:49:09Z"
+      },
+      "message": "fix(pr): fetch patch parent from git servers when missing in pr checkout\n\nAfter commit 554a7e8 removed the implicit `git fetch <nostr-remote>` from\nngit pr sub-commands, `ngit pr checkout` on a patch-kind proposal whose\nparent commit was not yet present locally failed with `failed to find\nparent commit (...). run git pull and try again.` This is exactly the\n\"newer revision based on a commit we haven't pulled yet\" case, hit by\ntests/pr_checkout_patch.rs::newer_revision_force_updates_to_revised_tip.\n\ncheckout_patch now best-effort-fetches the patch chain's parent commit\n(via `get_parent_commit_from_patch` on the oldest patch in the chain)\nfrom the repo's git servers before each `apply_patch_chain` call. The\nfetch is a no-op when the commit is already local, so the common case\npays no network cost.\n\nWhile here, extract the duplicated fetch_oid_for_*_pr helpers from\napply.rs, checkout.rs and list.rs into a single `ensure_commit_local`\nin src/lib/fetch.rs. The shared helper short-circuits on\ndoes_commit_exist before any network call (previously only apply.rs\nguarded its call site; checkout.rs and list.rs entered the fetch loop\nunconditionally and only checked at the end of the loop in order to\nbail with an error). Net behaviour change for checkout/list: fewer\ngit-server roundtrips when the commit is already present.",
+      "tree": {
+        "sha": "f412c670ac356ed96ca811e21de8636c043df90d",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/f412c670ac356ed96ca811e21de8636c043df90d"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/e6dd0095813dcae8b7c575e83853a7dd9eaa79f1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoO8TYACgkQaOFUhtc/\ndeGRYBAAuI9RQcZJScZXXxRHelFKca7IrEsts7fRh8b56K6P4IZLoA5TN9Pj7mKi\n+RD/so/K0JyehCdECaZ57AOJiJkZCl8P3N7VHpDzO/bDJecZJvieRkmmj2Vf9zqe\nVCYbLBo/peZP7lPK2j7fmTHUrVXY0Ac2kfaYvAnotjYLWz75UtnDU/FQdRk5Jk68\nAYVRig02jnG6O9Ino9sPDOwOCUpD2xI2JwRmYZZkNZDkBiQ6eWJeu0uF8+Jp3t6i\n1i17L7mRQXhwrrwypcykeDQYU8CHDEXZBH2+rpbSoR+oMr+ay50w4wUbh0YUSTf7\nqifq9abbjdHfQAqQsvV8gezc2XPGWaxtCaL/SAYoYs74j/5ghNaBJ/ixi1/g1Zuu\nWL+95vItHo9EaeneuWsTyert1HOcmni7B+bEwftHz3f7crOHXiijsEjlZeWP8zwu\nsYA07vMJSDA8OiSc2jEJKubGm0yn4WMpbcBhBjTyN8Ref3Ycayy4pH6ehDh6tv4F\nI4d6HFrHJuIRh+zqECck+eK6GR8qQUbTvf2qokC6EiYmZ+i5N5weMEXD+5eW45uB\nmaqhTgSkkK15NKZwzswXJcDXOI/8iXj1Xr3SXlHlJ1FI8LBohV5ewnuUupt92RV5\nyAdh150SAUhfVukao01Whai3ZjfkB088sv5+GPH2EgV/nbZvVc4=\n=zg3W\n-----END PGP SIGNATURE-----",
+        "payload": "tree f412c670ac356ed96ca811e21de8636c043df90d\nparent 554a7e838bb3de68bd17993ec1183e900f6bb898\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779364149 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779364149 +0000\n\nfix(pr): fetch patch parent from git servers when missing in pr checkout\n\nAfter commit 554a7e8 removed the implicit `git fetch <nostr-remote>` from\nngit pr sub-commands, `ngit pr checkout` on a patch-kind proposal whose\nparent commit was not yet present locally failed with `failed to find\nparent commit (...). run git pull and try again.` This is exactly the\n\"newer revision based on a commit we haven't pulled yet\" case, hit by\ntests/pr_checkout_patch.rs::newer_revision_force_updates_to_revised_tip.\n\ncheckout_patch now best-effort-fetches the patch chain's parent commit\n(via `get_parent_commit_from_patch` on the oldest patch in the chain)\nfrom the repo's git servers before each `apply_patch_chain` call. The\nfetch is a no-op when the commit is already local, so the common case\npays no network cost.\n\nWhile here, extract the duplicated fetch_oid_for_*_pr helpers from\napply.rs, checkout.rs and list.rs into a single `ensure_commit_local`\nin src/lib/fetch.rs. The shared helper short-circuits on\ndoes_commit_exist before any network call (previously only apply.rs\nguarded its call site; checkout.rs and list.rs entered the fetch loop\nunconditionally and only checked at the end of the loop in order to\nbail with an error). Net behaviour change for checkout/list: fewer\ngit-server roundtrips when the commit is already present.\n",
+        "verified_at": "2026-05-21T14:40:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/e6dd0095813dcae8b7c575e83853a7dd9eaa79f1",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/e6dd0095813dcae8b7c575e83853a7dd9eaa79f1",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/e6dd0095813dcae8b7c575e83853a7dd9eaa79f1/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "554a7e838bb3de68bd17993ec1183e900f6bb898",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/554a7e838bb3de68bd17993ec1183e900f6bb898",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/554a7e838bb3de68bd17993ec1183e900f6bb898"
+      }
+    ]
+  },
+  {
+    "sha": "554a7e838bb3de68bd17993ec1183e900f6bb898",
+    "node_id": "C_kwDOJlsjrNoAKDU1NGE3ZTgzOGJiM2RlNjhiZDE3OTkzZWMxMTgzZTkwMGY2YmI4OTg",
+    "commit": {
+      "author": {
+        "name": "m0wer",
+        "email": "m0wer@sgn.space",
+        "date": "2026-05-06T15:00:12Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T10:10:45Z"
+      },
+      "message": "fix(pr): avoid fetching from non-nostr git remotes in pr commands\n\nngit pr list, pr apply, and pr checkout were calling `git fetch\n<nostr-remote>` as a subprocess. When git processes this fetch, it\ncan also trigger fetches from other remotes configured in .git/config\n(e.g. GitHub, Codeberg). These fetches are unnecessary for PR\noperations and inconvenient when those remotes require SSH keys.\n\nThese commands only need to refresh nostr event data (proposals,\npatches, statuses). Replace the subprocess `git fetch` call with\n`fetching_with_report` which fetches only from nostr relays, matching\nthe pattern used by ngit sync, issue list, pr_status, and other\nsub-commands.\n\nGit objects (commits) for PR checkout/apply are still fetched from\nthe nostr-registered git servers via fetch_from_git_server when\nactually needed (i.e., when the tip commit is not yet available\nlocally).",
+      "tree": {
+        "sha": "873205a0bb15610c95334676f4bc359f6f706f02",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/873205a0bb15610c95334676f4bc359f6f706f02"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/554a7e838bb3de68bd17993ec1183e900f6bb898",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoO2iUACgkQaOFUhtc/\ndeFFeA/+IOETS6orO76lvtWbsZa0/C0Y4AZLIlEWp/9K1d7/U2ki1onEGQXcXDNT\nchC/Z4dzJXJoVi/PGG1//AHJShtrS091v4IW2oxYNwT6+QQ4pfcxLUvAOgx9DwnG\nZ+24n05a9He7HY+GTEL4X3OuprBRlb/2M+En1WeTK71dgZHd0K7roARJLRIuJZPi\nescLWSJ8/ETktgWzzhaKKW0yhs3hDj+VhEpuSeCRdsKMi7/37lSw8n/RYEDTTnZO\nDkMU/hPVIOKRadUBrRCIWVe748liAy3u97xEZAKwmRAy+gVpivJe5GmmPLl3dRkO\nl254MNhDUiicnSEvElWJy9EdFjwAY/dl2z/y9kAPmcqGhILZsxGoMsQeoKJoP2KA\nou5I85SxhQ2camW/y6Sqr5tw2OUAcbNwZvlnXLncAJTMpVYZmwtaUPONLUOhsIFR\nBr+5WcOenlAnEoZjbf5PP1iCRUwhvFGVtVBizOCiVLtlMlb/twKaLu1hfyoYjuqz\nqwNgGa/xx6UHgDM1h6P2YypvsICdfjnn8BwTuWwcgiHmH7nO8MtUMqUXGEy0ZbY0\nKgBgrb8DWUHAPfS2su8eMBPYfL1sw3NTSCcLTpQLXZNPZfkx0cBLzC5O4M9cMPRe\n5MmNx1DAjhprD/NfGI1QrbLt5SWC5xsPmcc/lyvyhcSf4MvrGE8=\n=4iwK\n-----END PGP SIGNATURE-----",
+        "payload": "tree 873205a0bb15610c95334676f4bc359f6f706f02\nparent a7394c62007dd48d07e9c662b73e59ebcc5e869c\nauthor m0wer <m0wer@sgn.space> 1778079612 +0200\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779358245 +0000\n\nfix(pr): avoid fetching from non-nostr git remotes in pr commands\n\nngit pr list, pr apply, and pr checkout were calling `git fetch\n<nostr-remote>` as a subprocess. When git processes this fetch, it\ncan also trigger fetches from other remotes configured in .git/config\n(e.g. GitHub, Codeberg). These fetches are unnecessary for PR\noperations and inconvenient when those remotes require SSH keys.\n\nThese commands only need to refresh nostr event data (proposals,\npatches, statuses). Replace the subprocess `git fetch` call with\n`fetching_with_report` which fetches only from nostr relays, matching\nthe pattern used by ngit sync, issue list, pr_status, and other\nsub-commands.\n\nGit objects (commits) for PR checkout/apply are still fetched from\nthe nostr-registered git servers via fetch_from_git_server when\nactually needed (i.e., when the tip commit is not yet available\nlocally).\n",
+        "verified_at": "2026-05-21T14:40:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/554a7e838bb3de68bd17993ec1183e900f6bb898",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/554a7e838bb3de68bd17993ec1183e900f6bb898",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/554a7e838bb3de68bd17993ec1183e900f6bb898/comments",
+    "author": {
+      "login": "m0wer",
+      "id": 25278081,
+      "node_id": "MDQ6VXNlcjI1Mjc4MDgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25278081?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/m0wer",
+      "html_url": "https://github.com/m0wer",
+      "followers_url": "https://api.github.com/users/m0wer/followers",
+      "following_url": "https://api.github.com/users/m0wer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/m0wer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/m0wer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/m0wer/subscriptions",
+      "organizations_url": "https://api.github.com/users/m0wer/orgs",
+      "repos_url": "https://api.github.com/users/m0wer/repos",
+      "events_url": "https://api.github.com/users/m0wer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/m0wer/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a7394c62007dd48d07e9c662b73e59ebcc5e869c",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/a7394c62007dd48d07e9c662b73e59ebcc5e869c",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/a7394c62007dd48d07e9c662b73e59ebcc5e869c"
+      }
+    ]
+  },
+  {
+    "sha": "a7394c62007dd48d07e9c662b73e59ebcc5e869c",
+    "node_id": "C_kwDOJlsjrNoAKGE3Mzk0YzYyMDA3ZGQ0OGQwN2U5YzY2MmI3M2U1OWViY2M1ZTg2OWM",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T09:25:20Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T09:51:28Z"
+      },
+      "message": "fix(checkout): pr checkout left working directory at previous state\n\nThe previous checkout_remote_branch_with_tracking called set_head then\ncheckout_head(None). After set_head moves HEAD to the new branch,\nlibgit2's GIT_CHECKOUT_SAFE treats the workdir files (still matching\nthe old branch) as modified relative to the new baseline and refuses\nto update them, leaving the index and workdir at the old tree.\n\nFix: call checkout_tree(commit, None) first, then set_head — matching\nthe order used by Repo::checkout() in src/lib/git/mod.rs.\n\nGIT_CHECKOUT_SAFE preserves untracked files, ignored files, staged\nchanges, and workdir modifications to files that differ between the\nold and new trees, so no user work is lost.\n\nAlso removes the #[ignore] from the revision scenario in\ntests/pr_checkout_patch.rs which was blocked on this bug. The test\nis updated to use the maintainer clone for the revision (so patches\npass the permissioned_users filter) and to push the rebase-base\ncommit before ngit send so apply_patch_chain can find the parent.",
+      "tree": {
+        "sha": "82334f483fe76a5a8db2591b8a3eba841210f16c",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/82334f483fe76a5a8db2591b8a3eba841210f16c"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/a7394c62007dd48d07e9c662b73e59ebcc5e869c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoO1aAACgkQaOFUhtc/\ndeG//Q//bm0b4nqqkOpFR6ii/wcmxWzgCc5i4FR94uSPAwVM0e75P7nj9eIHmf16\nppOf5yns8bJ6x9qtFl/teqA8B8D40obqt1sZNjn58ZCS1lN1WxofDmvN+54jnWIP\ng10xlgynYGvQ04kFSExq6tX5EblT8Glja9xFIV7OS7ot2at5yCsX4evmr/+cIWtM\nwR4cvuzHsLlq7Iv7JxoOk8UinNasciL3yyUVyVZEORD4HL9jHSOF2Jwb1QwxON9W\nR/w3RyNZEQ+JYxbiZkWblAmLIZ4SV5yPACQTb88gMXq1dwvfK2qeHPcnSZn0hxgc\nfwDJS2UmAa4YlOvO1RWn1wrM0FTR8TatxClAALURDbMGUFN4L/TLi37xdSLfMd7G\nCodNuIlvSyjcZZZ6BfE9Ba6Wa+i+tSzHfBQo8xTpwvVIRxGTSS6xvigtyV6eqz0s\nr2DuVwkqH30EIWG9ieXm5OKCnoCn1RsRz5rk0j1aJRw+mqWXt1Gg9GpHIEqiPppi\nBtH34EScj9c+6TlDcnj8bI5aHKaufeo7OiOTEL+nutKJK2Dvbzee2ztbGd+o8ko4\nvKk9CZhKjP/EVWQj9ltgzVNzPo08zfBtvQcu+1Rc8avdpXkl6waOaR6tfv6DKFgn\nFXMK5dB7euII14c5zfGXe+JPnR0XenIX2d1qkoeZimtziaWX7EM=\n=wsvt\n-----END PGP SIGNATURE-----",
+        "payload": "tree 82334f483fe76a5a8db2591b8a3eba841210f16c\nparent f28939abbde2da587e179e7bd13ebd70cb31e004\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779355520 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779357088 +0000\n\nfix(checkout): pr checkout left working directory at previous state\n\nThe previous checkout_remote_branch_with_tracking called set_head then\ncheckout_head(None). After set_head moves HEAD to the new branch,\nlibgit2's GIT_CHECKOUT_SAFE treats the workdir files (still matching\nthe old branch) as modified relative to the new baseline and refuses\nto update them, leaving the index and workdir at the old tree.\n\nFix: call checkout_tree(commit, None) first, then set_head — matching\nthe order used by Repo::checkout() in src/lib/git/mod.rs.\n\nGIT_CHECKOUT_SAFE preserves untracked files, ignored files, staged\nchanges, and workdir modifications to files that differ between the\nold and new trees, so no user work is lost.\n\nAlso removes the #[ignore] from the revision scenario in\ntests/pr_checkout_patch.rs which was blocked on this bug. The test\nis updated to use the maintainer clone for the revision (so patches\npass the permissioned_users filter) and to push the rebase-base\ncommit before ngit send so apply_patch_chain can find the parent.\n",
+        "verified_at": "2026-05-21T14:40:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/a7394c62007dd48d07e9c662b73e59ebcc5e869c",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/a7394c62007dd48d07e9c662b73e59ebcc5e869c",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/a7394c62007dd48d07e9c662b73e59ebcc5e869c/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f28939abbde2da587e179e7bd13ebd70cb31e004",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/f28939abbde2da587e179e7bd13ebd70cb31e004",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/f28939abbde2da587e179e7bd13ebd70cb31e004"
+      }
+    ]
+  },
+  {
+    "sha": "f28939abbde2da587e179e7bd13ebd70cb31e004",
+    "node_id": "C_kwDOJlsjrNoAKGYyODkzOWFiYmRlMmRhNTg3ZTE3OWU3YmQxM2ViZDcwY2IzMWUwMDQ",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T08:26:29Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T08:38:28Z"
+      },
+      "message": "merge branch 'pr/test-harness-replacement'\n\nnostr:nevent1qvzqqqqx2gpzpgqgmmc409hm4xsdd74sf68a2uyf9pwel4g9mfdg8l5244t6x4jdqy88wumn8ghj7mn0wvhxcmmv9uq3camnwvaz7tmwva5hgtnyv9hxxmmwwashjer9wchxxmmd9uqzqnkzcj3je0ncs0kf7krazh0n3g4r0suk78meyz4vvpzde55p75ayp69rkt\n\nFrom PR description:\n\nCompletely replaces the integration test harness\n(`test_utils/` → `test_harness/`) and rewrites every integration test\nagainst it. Parallel-by-default, no global state, no #[serial],\nno PTY/rexpect, no exact-stdout assertions.\n\nThis is the fourth attempt. The previous three stalled because the\nrewrite was big enough that main always got ahead of the branch\nbefore it landed. Merging now — even with known gaps — is the point:\nthe old harness is a blocker for further planned improvements, and\n\"perfect\" has lost three times already.\n\nKnown follow-ups (intentionally not blocking):\n\n- git push pr/<branch> push-side auto-detection is untested.\nPre-existing gap, not a regression — captured here so it's not\nforgotten when the default flips from patches to PRs.\n\n- --password / ncryptsec storage has no coverage anywhere. Lighthouse\ntest to be written against the then-current contract if it ever breaks.\nRaw git-remote-nostr protocol layer (the old CLI-tester pattern driving\n list/fetch/push commands directly) is replaced by end-to-end git\n command testing. Deliberate scope reduction.\n\n- ~13 single-test files could be consolidated with OnceCell shared\nfixtures for a marginal CI speedup. Low priority — real per-test cost\nis grasp subprocess startup, not Cargo binary scheduling.\n\n- One incidental production fix landed alongside (NIP-21 q tag for hex\nevent ids in EventRefType::Quote; previously hex and bech32 produced\ndifferent tags for the same logical reference). Tests pin both paths.\n\nDesign: docs/architecture/test-harness.md. Rules every new test must\nfollow: AGENTS.md § \"Test harness boundary\".",
+      "tree": {
+        "sha": "554aee32e61506a163176fc2cb5e57ae0750c4cb",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/554aee32e61506a163176fc2cb5e57ae0750c4cb"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/f28939abbde2da587e179e7bd13ebd70cb31e004",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIyBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoOxIUACgkQaOFUhtc/\ndeEGoQ/2KtTJauK4WNlctu/R+I2PSAJYLbo/rufbFLP3u7/Gcddt1OuwDKplsksW\n/RDGiwqtcCwD8+CY7OBH7HJPS9hQvOqOByLlKChWlc6tsmQDbkQLUKwsLVKing6y\nnFhpiIQkZ6+LupdTgtiYZgdFb7uxZxbh7M3jn2m1j/NKI8Io3V1+Wot3UiDl+mgp\n9/ft8RpZzu2O4CeBrIBse5SYNpQTd+1glLXMY5iNh7kAVj4kTB3OKfine/iLz5u/\nequB3VPCnnH5yI49mR1jf24Xxidu5P06uZYzG0g6dNi+bS70p189ULHo65i9S+CT\n7VuR8pervlwozlE/+M3pUfz3VzMh6+Zuu41N/cDR5G5UB+tpyLaHnwDNohGk1yLS\nbC7jqs6kYzOmh73OlII8zy/0KdQ5Gpt17Tr0Z7MEY88W3losH+l+wVbors/7epIn\nlUF+JGHwI3By0AcmFj0pjiu9HYkRWaaZ5dEIsjhHJGP0ByVIv8TZSl65tnF8BzgS\nMffgJGt0mGPtLvV4WwTsmBaF4/7PrjmpygOme2YOPU41eQCsASuyCpDnG30KUXvz\nTgy0DpPcDPX726ywu4i43GfFL/gUIhGM6QBx9Wo3xQmPUUuoA9AaiojNLOvedSQP\nl2nI6ygOg0pu+f6c0v9Z8m4nErt0uteelU8egQyDy+R9yDVQYA==\n=dd38\n-----END PGP SIGNATURE-----",
+        "payload": "tree 554aee32e61506a163176fc2cb5e57ae0750c4cb\nparent 05b0edbff1659689ecc3efbfe36420d64486e2f7\nparent 8660064ed7b351810ee6af13e84577ce34811341\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779351989 +0100\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779352708 +0100\n\nmerge branch 'pr/test-harness-replacement'\n\nnostr:nevent1qvzqqqqx2gpzpgqgmmc409hm4xsdd74sf68a2uyf9pwel4g9mfdg8l5244t6x4jdqy88wumn8ghj7mn0wvhxcmmv9uq3camnwvaz7tmwva5hgtnyv9hxxmmwwashjer9wchxxmmd9uqzqnkzcj3je0ncs0kf7krazh0n3g4r0suk78meyz4vvpzde55p75ayp69rkt\n\nFrom PR description:\n\nCompletely replaces the integration test harness\n(`test_utils/` → `test_harness/`) and rewrites every integration test\nagainst it. Parallel-by-default, no global state, no #[serial],\nno PTY/rexpect, no exact-stdout assertions.\n\nThis is the fourth attempt. The previous three stalled because the\nrewrite was big enough that main always got ahead of the branch\nbefore it landed. Merging now — even with known gaps — is the point:\nthe old harness is a blocker for further planned improvements, and\n\"perfect\" has lost three times already.\n\nKnown follow-ups (intentionally not blocking):\n\n- git push pr/<branch> push-side auto-detection is untested.\nPre-existing gap, not a regression — captured here so it's not\nforgotten when the default flips from patches to PRs.\n\n- --password / ncryptsec storage has no coverage anywhere. Lighthouse\ntest to be written against the then-current contract if it ever breaks.\nRaw git-remote-nostr protocol layer (the old CLI-tester pattern driving\n list/fetch/push commands directly) is replaced by end-to-end git\n command testing. Deliberate scope reduction.\n\n- ~13 single-test files could be consolidated with OnceCell shared\nfixtures for a marginal CI speedup. Low priority — real per-test cost\nis grasp subprocess startup, not Cargo binary scheduling.\n\n- One incidental production fix landed alongside (NIP-21 q tag for hex\nevent ids in EventRefType::Quote; previously hex and bech32 produced\ndifferent tags for the same logical reference). Tests pin both paths.\n\nDesign: docs/architecture/test-harness.md. Rules every new test must\nfollow: AGENTS.md § \"Test harness boundary\".\n",
+        "verified_at": "2026-05-21T14:40:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/f28939abbde2da587e179e7bd13ebd70cb31e004",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/f28939abbde2da587e179e7bd13ebd70cb31e004",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/f28939abbde2da587e179e7bd13ebd70cb31e004/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "05b0edbff1659689ecc3efbfe36420d64486e2f7",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/05b0edbff1659689ecc3efbfe36420d64486e2f7",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/05b0edbff1659689ecc3efbfe36420d64486e2f7"
+      },
+      {
+        "sha": "8660064ed7b351810ee6af13e84577ce34811341",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/8660064ed7b351810ee6af13e84577ce34811341",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/8660064ed7b351810ee6af13e84577ce34811341"
+      }
+    ]
+  },
+  {
+    "sha": "8660064ed7b351810ee6af13e84577ce34811341",
+    "node_id": "C_kwDOJlsjrNoAKDg2NjAwNjRlZDdiMzUxODEwZWU2YWYxM2U4NDU3N2NlMzQ4MTEzNDE",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T07:46:31Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-21T07:46:31Z"
+      },
+      "message": "ci(test-harness): restore previous 15m timeout from 30m bump\n\nthe CI ran in 9m25s so resorting the 15m timeout bumped to 30m in\nc10db71bc153f75c9cc6708361580e96d0837d7c",
+      "tree": {
+        "sha": "554aee32e61506a163176fc2cb5e57ae0750c4cb",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/554aee32e61506a163176fc2cb5e57ae0750c4cb"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/8660064ed7b351810ee6af13e84577ce34811341",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoOuFgACgkQaOFUhtc/\ndeEqlBAAr/iTJHxkycY+xmDD1zkNhK/N1haESR3rz9qxQhFJ/6qDo2wY61sRKHBT\ncyRRuDbkno3NqaTFqHyXN4f20Jjp1KRyyI6j4gSmGoAH2im33USvWo/HpvGbyvLL\nJYoWT5n4s2spIqHE8MM4GPaEnRcXa2l0Oz5VK3HZ2anp5TfzZ3kh/CRImWOYFy1z\ngL9pU+rn6UnwVi6KoVCV8eB7rKh2JyMhESIJJcoWZzDS8pF9wyZFBc/Z3codCFrk\nHSKr8/6fabOyRnJiia34XetOWrlUe575wEcNOX82bp2c3gDXHvJ9IGl7dOvMovAP\nOzwt25jkxMfkaMpSNuf12oNONb212/UrVZms8kXj6xfibidcFmfyck8cNgJppAfG\noHfD6X4GKsEbEiNU6Clmp6B+AkFA1XSEbzKgmMB0+35BQ+BwXQh2eqn0yYnC6WW4\neKrdmMyDjTJ0FDw6UE2J97YtbawJfCUeoCbrRtSpPIuvbIAnsmtIWn5KNV1X4yhE\nnaQzVEGs5q5rOQD+jvgewrENFyJC4WL4+r/u16ZEy9iNBr89krK4hHV1BeRWRtXJ\nJmo9Wz40fePbKV5SsTjERSDqoPtq7nKCwXRn7aNkebvvrPKdZlclju9nM+P/1g4W\nwMIlVq/U4axtCkEn310suE0T8EjijTkN7N8OvfUt6is0qk8ZNA0=\n=iCRP\n-----END PGP SIGNATURE-----",
+        "payload": "tree 554aee32e61506a163176fc2cb5e57ae0750c4cb\nparent e460843b9f3541b22f1b698f94b283b3e07ddd8a\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779349591 +0100\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779349591 +0100\n\nci(test-harness): restore previous 15m timeout from 30m bump\n\nthe CI ran in 9m25s so resorting the 15m timeout bumped to 30m in\nc10db71bc153f75c9cc6708361580e96d0837d7c\n",
+        "verified_at": "2026-05-21T14:40:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/8660064ed7b351810ee6af13e84577ce34811341",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/8660064ed7b351810ee6af13e84577ce34811341",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/8660064ed7b351810ee6af13e84577ce34811341/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e460843b9f3541b22f1b698f94b283b3e07ddd8a",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/e460843b9f3541b22f1b698f94b283b3e07ddd8a",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/e460843b9f3541b22f1b698f94b283b3e07ddd8a"
+      }
+    ]
+  }
+]
