@@ -42,6 +42,8 @@ The **Rust Cashu Development Kit** — wallet *and* mint logic in one library, w
 - 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/cashubtc/cdk/`) shows **1 commit** by [[people/zeugmaster]]: propagate mint `quote_id` through payment-processor backend so custom backends can correlate `get_payment_quote` and `make_payment` calls for the same melt (#1799). **14 issues updated**.
 - 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/cashubtc/cdk/`) shows **8 commits** by [[people/thesimplekid]], vnprc, and GEET3001. Themes: redis-cluster caching support in `cdk-axum`, P2PK signing key support in `send`, locked-proof coin selection fix, remove direct `secp` dependency, include recover sagas in FFI, MSRV fix for tonic bump, invalid config error handling, refactor locked-proof passthrough from bool to send mode. **100 events**, **15 issues updated**.
 
+- 2026-05-25: Daily ingestion (`data/raw/github/daily/2026-05-25/cashubtc/cdk/`) shows **11 PushEvents** and **11 issues/PRs updated** including NUT-XX efficient wallet recovery (#1735), auth websocket handling (#1682), Apache license addition (#1864), golang release pipeline (#2000), XCFramework CI streamlining (#1979), and OpenAPI removal (#2004). Actors: [[people/thesimplekid]], [[people/callebtc]], [[people/asmogo]], [[people/crodas]]. No default-branch commits in the 24h window.
+
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
 - Which Cashu library (cashu-ts, CDK, Nutshell, etc.) it builds on.

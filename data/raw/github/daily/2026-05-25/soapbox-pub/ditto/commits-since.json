@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "7a5820ca93f833b56cf368fc40c91e42c63f912f",
+    "node_id": "C_kwDOL5Eek9oAKDdhNTgyMGNhOTNmODMzYjU2Y2YzNjhmYzQwYzkxZTQyYzYzZjkxMmY",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-24T22:57:20Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-24T22:57:20Z"
+      },
+      "message": "Switch to the newly added account when logging in\n\naddLogin appends to the end of the logins array, but the current user\nis logins[0]. So when an already-logged-in user opened \"Add another\naccount\" and chose any login method, the new account silently landed\nat the back of the queue while the prior account remained current.\n\nMost damaging on the signup path through SetupQuestionnaire: ProfileStep\nand FollowsStep publish via useNostrPublish, which signs as\nuseCurrentUser().user. With no auto-switch, the new account's kind 0\nmetadata overwrote the previous user's profile, and FollowsStep merged\nthe curated follow pack into the previous user's kind 3 contact list.\n\n- useLoginActions: wrap each addLogin in addAndActivate, which also\n  calls setLogin(login.id) to promote the new login to logins[0]. Fixes\n  every login path (nsec / bunker / extension / nostrconnect), not just\n  signup.\n- InitialSyncGate: defensive guards in ProfileStep.handlePublishProfile\n  and FollowsStep.handleFollowAll that verify the active signer matches\n  the just-generated nsec before publishing kind 0 / kind 3; refuse and\n  toast otherwise. Belt and suspenders against any future regression in\n  the switch logic.\n- Add a targeted regression test for the auto-switch behavior.\n\nRegression-of: 1d967b98d0c75b5bc270661712669ebce285bc42",
+      "tree": {
+        "sha": "c9d12ee034fcede743c7cf1e9558293f205015f1",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/c9d12ee034fcede743c7cf1e9558293f205015f1"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/7a5820ca93f833b56cf368fc40c91e42c63f912f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoTglAACgkQchHR+ZdE\n+7fdvRAAsnVe8cW5Klegxwd8C4B4ze2S9lTWVYW+jHPEbkIzRa9XOuKbFAxG9f04\nhCsJyUaeo66YH8eB8RThoTOl3TmZ+7KaOoa9f78nuElYF6JcwwNbsyT8/W3MxxXC\nXWrF9hIblfOXhsadloG+9LYIzLWWOlq1/t26MTPQt9ZRY4xr9iD+rDmnrAQduFdm\ntQrI6G4+aawMvcbX6MHUPC4gaJFVtnSSFzJ6tB/mCTFTkLY2d8L3eCdFqCt+RkHd\nb6INvevwdKs1yW0D8iDo4S054zuw1bT7ICL8zv0v2h4KJFojbG4MneA18KCtIpnH\nWYZgnJGhN7ZGOUS/J1yGun/qCwzlBGOQ/HPzfA62BUt/DmWbjJimIFeMj3lMyuve\nrN8If1rltS2UcDm05cEqY4h+p6CL9kEjcRoHEHmg5X60F8e+gwjhFDvTjwG8ckon\nYbgM3UgVWLqyD/2qPxtvk8HjP2gZwOGLrzbDFcdLvfcPHGMPblAXPhB/wdzVxPje\nxTxTmyQaCd/Iuu1rsb017GU3QLGgcKpsiJEqdKfTZ2oyXGU0qb/F7+TFfgUOcEml\ntAasMQa/liTJL3Gr4SaCznrV7wWGM+SF/9JPBH7b2P73jVz8YshsMmjCfqkinip0\nAE/BoRO5EzZ14iXh9Uni88W8LHkG2HOjNI4uv2Dqfz06BKpTldc=\n=ZMKQ\n-----END PGP SIGNATURE-----",
+        "payload": "tree c9d12ee034fcede743c7cf1e9558293f205015f1\nparent a537576e1722477fe437b38a430172dbf7705f8d\nauthor Alex Gleason <alex@alexgleason.me> 1779663440 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779663440 -0500\n\nSwitch to the newly added account when logging in\n\naddLogin appends to the end of the logins array, but the current user\nis logins[0]. So when an already-logged-in user opened \"Add another\naccount\" and chose any login method, the new account silently landed\nat the back of the queue while the prior account remained current.\n\nMost damaging on the signup path through SetupQuestionnaire: ProfileStep\nand FollowsStep publish via useNostrPublish, which signs as\nuseCurrentUser().user. With no auto-switch, the new account's kind 0\nmetadata overwrote the previous user's profile, and FollowsStep merged\nthe curated follow pack into the previous user's kind 3 contact list.\n\n- useLoginActions: wrap each addLogin in addAndActivate, which also\n  calls setLogin(login.id) to promote the new login to logins[0]. Fixes\n  every login path (nsec / bunker / extension / nostrconnect), not just\n  signup.\n- InitialSyncGate: defensive guards in ProfileStep.handlePublishProfile\n  and FollowsStep.handleFollowAll that verify the active signer matches\n  the just-generated nsec before publishing kind 0 / kind 3; refuse and\n  toast otherwise. Belt and suspenders against any future regression in\n  the switch logic.\n- Add a targeted regression test for the auto-switch behavior.\n\nRegression-of: 1d967b98d0c75b5bc270661712669ebce285bc42\n",
+        "verified_at": "2026-05-24T23:38:48Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/7a5820ca93f833b56cf368fc40c91e42c63f912f",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/7a5820ca93f833b56cf368fc40c91e42c63f912f",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/7a5820ca93f833b56cf368fc40c91e42c63f912f/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a537576e1722477fe437b38a430172dbf7705f8d",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a537576e1722477fe437b38a430172dbf7705f8d",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/a537576e1722477fe437b38a430172dbf7705f8d"
+      }
+    ]
+  }
+]
