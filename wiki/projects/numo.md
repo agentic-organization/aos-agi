@@ -23,6 +23,8 @@ Bitcoin point-of-sale (PoS) Android application that lets merchants accept Bitco
 
 - 2026-05-17: `data/raw/github/daily/2026-05-17/cashubtc/Numo/` captured **1 commit** in the 24h window. Theme: validate auto-withdraw threshold against LNURL `minSendable` (#315). Committer: [[people/a1denvalu3]].
 
+- 2026-05-26: Daily ingestion (`data/raw/github/daily/2026-05-26/cashubtc/Numo/`) shows **1 commit** by [[people/a1denvalu3]]: update build.gradle.kts (#326).
+
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
 - Which Cashu library (cashu-ts, CDK, Nutshell, etc.) it builds on.

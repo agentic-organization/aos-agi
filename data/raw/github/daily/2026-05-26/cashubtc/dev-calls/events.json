@@ -1,0 +1,55 @@
+[
+  {
+    "id": "9697806884",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 145858188,
+      "login": "ye0man",
+      "display_login": "ye0man",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ye0man",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145858188?"
+    },
+    "repo": {
+      "id": 671608690,
+      "name": "cashubtc/dev-calls",
+      "url": "https://api.github.com/repos/cashubtc/dev-calls"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 4,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/dev-calls/pulls/4",
+        "id": 3717770948,
+        "number": 4,
+        "head": {
+          "ref": "main",
+          "sha": "79a500eafdfa05bdacfa5521589a69c03266cf58",
+          "repo": {
+            "id": 1192306598,
+            "url": "https://api.github.com/repos/ye0man/dev-calls",
+            "name": "dev-calls"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "2ade60acab189cbc90a02d4daa399a52b23ddcb5",
+          "repo": {
+            "id": 671608690,
+            "url": "https://api.github.com/repos/cashubtc/dev-calls",
+            "name": "dev-calls"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-20T15:38:22Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  }
+]

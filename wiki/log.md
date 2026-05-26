@@ -5,6 +5,18 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-26] ingest | Daily GitHub ingestion run 2026-05-26 + wiki synthesis
+- Run: `data/raw/github/daily/2026-05-26/` (110 repos attempted, 0 errors, run_id: 20260526T060034Z-github-daily)
+- Notable activity synthesized into wiki pages:
+  - [[projects/ditto]] — 5 commits (BIP-21 wallet-send UX polish)
+  - [[projects/divine-mobile]] — 4 commits (emoji picker, provider cleanup)
+  - [[projects/nutshell]] — 2 commits (LNbits preimage fix)
+  - [[projects/zapstore]] — 3 commits (README refresh)
+  - [[projects/numo]] — 1 commit (build.gradle.kts update)
+  - [[projects/minibits]] — 1 commit (transaction lifecycle methods)
+  - High event volume but no default-branch commits: cashubtc/cashu-ts (100 events), cashubtc/cdk (100 events), cashubtc/coco (100 events), cashubtc/nuts (98 events), cashubtc/orchard (71 events), divinevideo/divine-blossom (100 events), divinevideo/divine-moderation-service (100 events), divinevideo/divine-name-server (99 events), divinevideo/divine-web (100 events), divinevideo/keycast (100 events), marmot-protocol/mdk (100 events), marmot-protocol/marmot-ts (100 events), marmot-protocol/transponder (100 events), marmot-protocol/whitenoise (99 events), marmot-protocol/whitenoise-rs (100 events), permissionlesstech/bitchat (100 events), soapbox-pub/ditto (100 events)
+- Files modified: 6 wiki pages
+
 ## [2026-05-22] ingest | Daily GitHub ingestion run 2026-05-22 + wiki synthesis
 - Run: `data/raw/github/daily/2026-05-22/` (110 repos attempted, 0 errors, run_id: 20260522T060056Z-github-daily)
 - Notable activity synthesized into wiki pages:

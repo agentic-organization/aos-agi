@@ -49,6 +49,10 @@ One of the two canonical mint stacks alongside [[projects/mintd]] (CDK/Rust).
 - 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/cashubtc/nutshell/`) shows **3 commits** by KvngMikey, Codepocketdev, and [[people/a1denvalu3]]: remove stale TODO and confirm HTLC pubkey signing already wired up (#979), update .env.example for rate limiting (#996), and add Redis caching server to docker-compose (#990). **11 issues updated**.
 - 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/cashubtc/nutshell/`) shows **0 commits** in the 24h window but **100 events** and **9 issues updated** — high PR/issue churn continuing.
 
+- 2026-05-25: Daily ingestion (`data/raw/github/daily/2026-05-25/cashubtc/nutshell/`) shows **34 PushEvents** and **1 updated issue** — continued high PR/issue churn but no default-branch commits in the 24h window. Actors: [[people/callebtc]], [[people/a1denvalu3]], [[people/codecov-bot]], KvngMikey, Codepocketdev, b-l-u-e, GEET3001.
+
+- 2026-05-26: Daily ingestion (`data/raw/github/daily/2026-05-26/cashubtc/nutshell/`) shows **2 commits** in the 24h window. Merge PR #1017 from gorrdy: tolerate missing preimage in LNbits payment status response. Committers: [[people/a1denvalu3]] (merge), gorrdy (author).
+
 ## Open questions
 - Funding model and activity cadence.
 - Current deployment footprint and active user count, if any.
