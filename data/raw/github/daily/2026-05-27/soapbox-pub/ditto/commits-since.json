@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "95f7fe880f9f7ae4568a57dc8cf62c99d428eb14",
+    "node_id": "C_kwDOL5Eek9oAKDk1ZjdmZTg4MGY5ZjdhZTQ1NjhhNTdkYzhjZjYyYzk5ZDQyOGViMTQ",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-27T02:13:21Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-27T02:13:21Z"
+      },
+      "message": "Render embedded polls, poll votes, and other known kinds without preview\n\nEmbedded events fell back to a generic 'This event kind is not supported'\ntombstone whenever the kind wasn't in EmbeddedNoteInner's dispatch list\nAND the author hadn't included a NIP-31 `alt` tag. Polls (kind 1068)\nfrom clients that don't add an alt tag — Pollerama and others — showed\nthe tombstone in quote embeds even though Ditto renders them perfectly\nin feeds and on detail pages.\n\nAdd explicit dispatch branches for:\n\n  - Kind 1068 (NIP-88 polls) — compact card with the question, type\n    badge, expiry chip, and a preview of the first four options.\n  - Kind 1018 (poll votes) — compact card resolving the option label\n    from the parent poll, same shape used on the feed/detail card.\n\nAlso tighten the generic EmbeddedNoteCard fallback so every kind Ditto\nrecognizes via EXTRA_KINDS (videos, file metadata, voice messages,\nreposts, reactions, found logs, color moments, bird detections, patches,\nPRs, nsites, Zapstore assets, etc.) gets a kind-labeled card (icon +\nlabel, centered) instead of the 'not supported' tombstone. The\ntombstone is now reserved for kinds we genuinely don't know about.",
+      "tree": {
+        "sha": "24518408c4ec40bb3b0256de1600fe9ec362a9be",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/24518408c4ec40bb3b0256de1600fe9ec362a9be"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/95f7fe880f9f7ae4568a57dc8cf62c99d428eb14",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoWU0EACgkQchHR+ZdE\n+7eRHg/7B3XQroVlDHAndnhKhCXp1CMOuuoF0lCWozzXzGXp1EiVH9i1M9bh2KGj\n6ewgQ/RfdasyPSLztsGDyxWhWf/hztgnoJjSdlt37Dim9KzGRuf7uwyn2OdCPr3d\nmzgkoD4ShpccJ2LKpfVFfWwBPy6e9Hqf3M/cHskCwf4I/4/SvxJEpvv+gt7BjnYK\nTEvPYbSzZVhKWwa3/pPRosPpimpYXFk+lB7ZVjiZH3J1TAxh2EERBG+6+vHJtcgW\nBsKD41EroKY2bXXjPXK7KS/mzs1hqGU0P8htk/GPqTzzRArFlaWgMGFZLg41g3a/\nLADmHZ8LiqEv4L1XtmKxxJPnWfgKBacICeojQrmYIS9VyTRUxICD2FEnSjA6sevn\ngSM1lSw0rYkJ9SfIU4XO43LIsfbqX0DAZXFi/stjJbRgzEhmewkDDC189uHhHzH8\nyUN0KSD/5hNUgzJCE9GlC7J9ZwsC2ro3pQqGpMatOjjjedKCgPEwY7SvAUh2ljTy\nvXX7l/0j4dAJcUb0H+T6PHGho/UVnkFoXECF67X4SeBP1aQmqEGUwtxpmn3ONRqg\n8AMpzKv9+9qzN/odq3lfuR7oMKl+4yRL26Ub7JeVOK2cBIf2C9d6llQNCKVVTrcM\nkmJtpaRpxN6a019UBzHUE+VKc9uK209dw2+4n9v6kKF64QkwMQE=\n=wPXu\n-----END PGP SIGNATURE-----",
+        "payload": "tree 24518408c4ec40bb3b0256de1600fe9ec362a9be\nparent 6b88ac28033507bba19c70673f206be197fa534e\nauthor Alex Gleason <alex@alexgleason.me> 1779848001 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779848001 -0500\n\nRender embedded polls, poll votes, and other known kinds without preview\n\nEmbedded events fell back to a generic 'This event kind is not supported'\ntombstone whenever the kind wasn't in EmbeddedNoteInner's dispatch list\nAND the author hadn't included a NIP-31 `alt` tag. Polls (kind 1068)\nfrom clients that don't add an alt tag — Pollerama and others — showed\nthe tombstone in quote embeds even though Ditto renders them perfectly\nin feeds and on detail pages.\n\nAdd explicit dispatch branches for:\n\n  - Kind 1068 (NIP-88 polls) — compact card with the question, type\n    badge, expiry chip, and a preview of the first four options.\n  - Kind 1018 (poll votes) — compact card resolving the option label\n    from the parent poll, same shape used on the feed/detail card.\n\nAlso tighten the generic EmbeddedNoteCard fallback so every kind Ditto\nrecognizes via EXTRA_KINDS (videos, file metadata, voice messages,\nreposts, reactions, found logs, color moments, bird detections, patches,\nPRs, nsites, Zapstore assets, etc.) gets a kind-labeled card (icon +\nlabel, centered) instead of the 'not supported' tombstone. The\ntombstone is now reserved for kinds we genuinely don't know about.\n",
+        "verified_at": "2026-05-27T02:15:50Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/95f7fe880f9f7ae4568a57dc8cf62c99d428eb14",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/95f7fe880f9f7ae4568a57dc8cf62c99d428eb14",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/95f7fe880f9f7ae4568a57dc8cf62c99d428eb14/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6b88ac28033507bba19c70673f206be197fa534e",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/6b88ac28033507bba19c70673f206be197fa534e",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/6b88ac28033507bba19c70673f206be197fa534e"
+      }
+    ]
+  }
+]

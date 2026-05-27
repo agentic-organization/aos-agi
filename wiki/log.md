@@ -5,6 +5,17 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-27] ingest | Daily GitHub ingestion run 2026-05-27 + wiki synthesis
+- Run: `data/raw/github/daily/2026-05-27/` (110 repos attempted, 0 errors, run_id: 20260527T060058Z-github-daily)
+- Notable activity synthesized into wiki pages:
+  - [[projects/cdk]] — 2 commits by [[people/thesimplekid]] (BDK release integration, onchain regtest helper stabilization)
+  - [[projects/coco]] — 3 commits by [[people/egge21m]] (quote-first BOLT11 mint operations PR #183, mint watcher quote key alignment, duplicate melt quote prevention)
+  - [[projects/minibits]] — 1 commit by [[people/minibits-cash]] (basic transaction search)
+  - [[projects/ditto]] — 1 commit by [[people/alexgleason]] (embedded poll/poll-vote rendering, kind-labeled fallback cards)
+  - [[projects/cashu]] umbrella page updated with ecosystem summary
+- People pages updated: [[people/thesimplekid]], [[people/egge21m]], [[people/minibits-cash]], [[people/alexgleason]]
+- Files modified: 9 wiki pages
+
 ## [2026-05-22] ingest | Daily GitHub ingestion run 2026-05-22 + wiki synthesis
 - Run: `data/raw/github/daily/2026-05-22/` (110 repos attempted, 0 errors, run_id: 20260522T060056Z-github-daily)
 - Notable activity synthesized into wiki pages:
