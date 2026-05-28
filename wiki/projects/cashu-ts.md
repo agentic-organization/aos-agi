@@ -31,6 +31,8 @@ The **TypeScript reference library** for Cashu. Powers most web wallets in the e
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/cashu-ts/`) shows **1 issue updated** (no new commits): #633 feat: add onchain mint/melt support by [[people/robwoodgate]].
 - 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/cashubtc/cashu-ts/`) shows **2 commits** by [[people/robwoodgate]] and release **v4.5.0** (published 2026-05-21). Themes: onchain mint/melt support (#633), release 4.5.0 (#666). **99 events**, **6 issues updated**.
 - 2026-05-24: Daily ingestion (`data/raw/github/daily/2026-05-24/cashubtc/cashu-ts/`) shows **5 commits** by [[people/robwoodgate]], including releases **v5.0.0-rc.1** and **v4.5.1**. Themes: add `method_name` to mint/melt method settings (NUT-04/05), scoped request `fetch` hooks, remove v4-deprecated APIs, mark RC GitHub releases as prereleases, update developer docs for LTS workflow. **10 issues updated** including conditional token primitives for NUT-CTF (#682).
+- 2026-05-28: Daily ingestion (`data/raw/github/daily/2026-05-28/cashubtc/cashu-ts/`) shows **1 commit** by [[people/robwoodgate]]: "chore: add secp-vs-bls crypto benchmark" (#684). **3 issues updated** including BLS12-381 v3 keysets and onchain mint/melt support.
+
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
