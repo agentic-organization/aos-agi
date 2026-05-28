@@ -33,6 +33,7 @@ Part of AOS's **Foundry** hub — projects the Foundry supports and stewards as 
 
 ## History
 - 2026-05-07: Page created from andotherstuff.org Foundry project listing.
+- 2026-05-28: Daily ingestion (`data/raw/github/daily/2026-05-28/zapstore/zapstore/`) shows **3 commits** by franzap and francismars. Themes: README refresh with updated screenshot (#373), docs update. **2 issues updated**. **24 releases** in catalog.
 
 ## Open questions
 - Who are the primary maintainers and active contributors?

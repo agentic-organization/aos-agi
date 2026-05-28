@@ -32,6 +32,7 @@ TypeScript ecosystem and NUT (Notation, Usage, and Terminology) protocol specifi
 ## History
 - 2026-05-07: Page created from an internal Q4-2025 cashubtc organization analysis (scope and responsibilities only; no performance details ingested).
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/`) shows robwoodgate active on issues across three Cashu repos: opened #633 on [[projects/cashu-ts]] (onchain mint/melt support), opened #354 on [[projects/cashu-me]] (check for partially spent token if redeem fails), and opened #368 on [[projects/nuts]] (deterministic DLEQ nonce derivation, NUT-12).
+- 2026-05-28: Daily ingestion (`data/raw/github/daily/2026-05-28/cashubtc/cashu-ts/`) shows **1 commit** by robwoodgate on [[projects/cashu-ts]]: "chore: add secp-vs-bls crypto benchmark" (#684). Also **3 issues updated**.
 
 ## Open questions
 - Full name, location, timezone?

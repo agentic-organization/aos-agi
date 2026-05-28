@@ -1,0 +1,93 @@
+[
+  {
+    "url": "https://api.github.com/repos/marmot-protocol/mdk/issues/318",
+    "repository_url": "https://api.github.com/repos/marmot-protocol/mdk",
+    "labels_url": "https://api.github.com/repos/marmot-protocol/mdk/issues/318/labels{/name}",
+    "comments_url": "https://api.github.com/repos/marmot-protocol/mdk/issues/318/comments",
+    "events_url": "https://api.github.com/repos/marmot-protocol/mdk/issues/318/events",
+    "html_url": "https://github.com/marmot-protocol/mdk/pull/318",
+    "id": 4534843396,
+    "node_id": "PR_kwDOPuuc487f8sjy",
+    "number": 318,
+    "title": "[skip-changelog]: bump taiki-e/install-action from 2.79.3 to 2.79.10",
+    "user": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 10886347403,
+        "node_id": "LA_kwDOPuuc488AAAACiOB6iw",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/labels/dependencies",
+        "name": "dependencies",
+        "color": "0366d6",
+        "default": false,
+        "description": "Pull requests that update a dependency file"
+      },
+      {
+        "id": 10886347413,
+        "node_id": "LA_kwDOPuuc488AAAACiOB6lQ",
+        "url": "https://api.github.com/repos/marmot-protocol/mdk/labels/github_actions",
+        "name": "github_actions",
+        "color": "000000",
+        "default": false,
+        "description": "Pull requests that update GitHub Actions code"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2026-05-27T18:41:26Z",
+    "updated_at": "2026-05-27T18:41:37Z",
+    "closed_at": null,
+    "assignee": null,
+    "author_association": "CONTRIBUTOR",
+    "issue_field_values": [],
+    "type": null,
+    "active_lock_reason": null,
+    "draft": false,
+    "pull_request": {
+      "url": "https://api.github.com/repos/marmot-protocol/mdk/pulls/318",
+      "html_url": "https://github.com/marmot-protocol/mdk/pull/318",
+      "diff_url": "https://github.com/marmot-protocol/mdk/pull/318.diff",
+      "patch_url": "https://github.com/marmot-protocol/mdk/pull/318.patch",
+      "merged_at": null
+    },
+    "body": "Bumps [taiki-e/install-action](https://github.com/taiki-e/install-action) from 2.79.3 to 2.79.10.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/taiki-e/install-action/releases\">taiki-e/install-action's releases</a>.</em></p>\n<blockquote>\n<h2>2.79.10</h2>\n<ul>\n<li>\n<p>Update <code>tombi@latest</code> to 1.1.0.</p>\n</li>\n<li>\n<p>Update <code>prek@latest</code> to 0.4.2.</p>\n</li>\n<li>\n<p>Update <code>editorconfig-checker@latest</code> to 3.7.0.</p>\n</li>\n</ul>\n<h2>2.79.9</h2>\n<ul>\n<li>\n<p>Update <code>vacuum@latest</code> to 0.26.7.</p>\n</li>\n<li>\n<p>Update <code>tombi@latest</code> to 1.0.0.</p>\n</li>\n</ul>\n<h2>2.79.8</h2>\n<ul>\n<li>\n<p>Update <code>parse-dockerfile@latest</code> to 0.1.6.</p>\n</li>\n<li>\n<p>Update <code>knope@latest</code> to 0.23.0.</p>\n</li>\n</ul>\n<h2>2.79.7</h2>\n<ul>\n<li>\n<p>Update <code>typos@latest</code> to 1.46.3.</p>\n</li>\n<li>\n<p>Update <code>rclone@latest</code> to 1.74.2.</p>\n</li>\n<li>\n<p>Update <code>mise@latest</code> to 2026.5.15.</p>\n</li>\n<li>\n<p>Update <code>tombi@latest</code> to 0.11.7.</p>\n</li>\n</ul>\n<h2>2.79.6</h2>\n<ul>\n<li>\n<p>Update <code>wasm-bindgen@latest</code> to 0.2.122.</p>\n</li>\n<li>\n<p>Update <code>mise@latest</code> to 2026.5.14.</p>\n</li>\n<li>\n<p>Update <code>cargo-deny@latest</code> to 0.19.7.</p>\n</li>\n<li>\n<p>Update <code>vacuum@latest</code> to 0.26.6.</p>\n</li>\n</ul>\n<h2>2.79.5</h2>\n<ul>\n<li>\n<p>Update <code>jaq@latest</code> to 3.0.0. (<a href=\"https://redirect.github.com/taiki-e/install-action/pull/1861\">#1861</a>, thanks <a href=\"https://github.com/MusicalNinjaDad\"><code>@​MusicalNinjaDad</code></a>)</p>\n</li>\n<li>\n<p>Update <code>wasmtime@latest</code> to 45.0.0.</p>\n</li>\n<li>\n<p>Update <code>wasm-tools@latest</code> to 1.250.0.</p>\n</li>\n<li>\n<p>Update <code>tombi@latest</code> to 0.11.6.</p>\n</li>\n<li>\n<p>Update <code>mise@latest</code> to 2026.5.13.</p>\n</li>\n</ul>\n<h2>2.79.4</h2>\n<ul>\n<li>\n<p>Update <code>martin@latest</code> to 1.10.1.</p>\n</li>\n<li>\n<p>Update <code>prek@latest</code> to 0.4.1.</p>\n</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/taiki-e/install-action/blob/main/CHANGELOG.md\">taiki-e/install-action's changelog</a>.</em></p>\n<blockquote>\n<h1>Changelog</h1>\n<p>All notable changes to this project will be documented in this file.</p>\n<p>This project adheres to <a href=\"https://semver.org\">Semantic Versioning</a>.</p>\n<!-- raw HTML omitted -->\n<h2>[Unreleased]</h2>\n<h2>[2.79.10] - 2026-05-27</h2>\n<ul>\n<li>\n<p>Update <code>tombi@latest</code> to 1.1.0.</p>\n</li>\n<li>\n<p>Update <code>prek@latest</code> to 0.4.2.</p>\n</li>\n<li>\n<p>Update <code>editorconfig-checker@latest</code> to 3.7.0.</p>\n</li>\n</ul>\n<h2>[2.79.9] - 2026-05-26</h2>\n<ul>\n<li>\n<p>Update <code>vacuum@latest</code> to 0.26.7.</p>\n</li>\n<li>\n<p>Update <code>tombi@latest</code> to 1.0.0.</p>\n</li>\n</ul>\n<h2>[2.79.8] - 2026-05-26</h2>\n<ul>\n<li>\n<p>Update <code>parse-dockerfile@latest</code> to 0.1.6.</p>\n</li>\n<li>\n<p>Update <code>knope@latest</code> to 0.23.0.</p>\n</li>\n</ul>\n<h2>[2.79.7] - 2026-05-24</h2>\n<ul>\n<li>\n<p>Update <code>typos@latest</code> to 1.46.3.</p>\n</li>\n<li>\n<p>Update <code>rclone@latest</code> to 1.74.2.</p>\n</li>\n<li>\n<p>Update <code>mise@latest</code> to 2026.5.15.</p>\n</li>\n<li>\n<p>Update <code>tombi@latest</code> to 0.11.7.</p>\n</li>\n</ul>\n<h2>[2.79.6] - 2026-05-23</h2>\n<ul>\n<li>\n<p>Update <code>wasm-bindgen@latest</code> to 0.2.122.</p>\n</li>\n<li>\n<p>Update <code>mise@latest</code> to 2026.5.14.</p>\n</li>\n<li>\n<p>Update <code>cargo-deny@latest</code> to 0.19.7.</p>\n</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/60ae4ce63c7aeb6e96d7f572c1ec7fafbb17ca80\"><code>60ae4ce</code></a> Release 2.79.10</li>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/9ab4a661ec8c2700944cd767a28e0d9221321fcf\"><code>9ab4a66</code></a> Update biome manifest</li>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/f88f6cfa22c08b2b641106147f850573ef292b3b\"><code>f88f6cf</code></a> Update <code>tombi@latest</code> to 1.1.0</li>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/22ea1d2817ee5eab8003e96f0f56b84818b90411\"><code>22ea1d2</code></a> Update <code>prek@latest</code> to 0.4.2</li>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/96a339da4a84036b8b0e7e191bee37923ec9f22a\"><code>96a339d</code></a> Update <code>editorconfig-checker@latest</code> to 3.7.0</li>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/796dfb752b8dac958edf2fa327c83465628ffe84\"><code>796dfb7</code></a> Update cargo-nextest manifest</li>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/8f531eaecd1898bc3da7d104ad91bee98d1b97bd\"><code>8f531ea</code></a> Release 2.79.9</li>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/8205558b9c72eb3c9d16ab95c5cd7e9d24e0d081\"><code>8205558</code></a> Update <code>vacuum@latest</code> to 0.26.7</li>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/eb38d1ae87caedea6e16bd17c068aeda33a7c125\"><code>eb38d1a</code></a> Update <code>tombi@latest</code> to 1.0.0</li>\n<li><a href=\"https://github.com/taiki-e/install-action/commit/8a5a6fd7149807a0b9ec5c13119e4e4415afdb97\"><code>8a5a6fd</code></a> Update prek manifest</li>\n<li>Additional commits viewable in <a href=\"https://github.com/taiki-e/install-action/compare/65851e10cd6c377f11a60e600abc07cb08643468...60ae4ce63c7aeb6e96d7f572c1ec7fafbb17ca80\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=taiki-e/install-action&package-manager=github_actions&previous-version=2.79.3&new-version=2.79.10)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n\n\n</details>\n\n<!-- stage-review-badge-begin -->\n\n---\n\n<a href=\"https://stagereview.app/marmot-protocol/mdk/pull/318\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://stagereview.app/assets/gh-open-in-stage-dark.svg\">\n    <img src=\"https://stagereview.app/assets/gh-open-in-stage-light.svg\" alt=\"Open in Stage\">\n  </picture>\n</a>\n\n<!-- stage-review-badge-end -->",
+    "closed_by": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/marmot-protocol/mdk/issues/318/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/marmot-protocol/mdk/issues/318/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "dc727101e4e577a97df38d91688f352b9de7dc66",
+    "node_id": "C_kwDOI3GlzNoAKGRjNzI3MTAxZTRlNTc3YTk3ZGYzOGQ5MTY4OGYzNTJiOWRlN2RjNjY",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-27T20:03:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-27T20:03:34Z"
+      },
+      "message": "chore: add secp-vs-bls crypto benchmark (#684)\n\nCompares secp256k1 (v0/v1/v2) and BLS12-381 (v3) for wallet-side blinding and\nproof verification (per-proof vs batch), with a data-driven summary. Also fixes\nthe stale import path in bench-bls-verify.",
+      "tree": {
+        "sha": "80939bb1aac69890e6ca80158fba63371239f8bd",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/80939bb1aac69890e6ca80158fba63371239f8bd"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/dc727101e4e577a97df38d91688f352b9de7dc66",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqF04WCRC1aQ7uu5UhlAAA+QEQAKPc2/yLu9AK35ILOETPjWDZ\n9SphrIpL52PjdljfrelOaNflR9PbVisgj7nhAhcLMkbZls4dFKFrLSC0Z2uj4b3t\n3wR6lDvSvH7qezGrFJJIxpQK/8l0dO9gXWNT8QLKke5ZzubXHEflLZE4SLuE25Tn\n5jbjptTsPGIde9kc1mFyPiMtmb0zicr9LyxB8Cekz7/MfYwom42pMH8Csj1JrZ5J\n7g1Z2c75/yhnNyV9PI9LVHbJkoHJUsQS7NVvY+2cNQHvFNdpFeoryMn75VepMok/\ndB6zhqmMHT5M24gLTwm5gEMOpY5vuDZDvD2E0fwkiMJTTEJVAHanGGEWa0rB6yS9\nn5cL21KvnWd4mIVknrJSZeYmu2SVkIkga8Izl0GF3yMnZ2AbpyQB5KjH4O5Pa7tK\neE1HIZDaUstQuqm/7d2shEJfTqAjDI4YHw8W61dMJwvME3M+/KFl0gFrYtmYtanc\nOM3JSniJjZxMe9ucGmmLLl2NH6mVPwi+5a4ijSZzz7ammXKoWLoEQa28RBYVc3S5\n5ETbLXdUwR8Fz6OGo3okBveDS4PI8j1PG0tdqKHIEWRaSScuwUQXSw62Z9AKuTxv\neeuKfCPS2KDcpLCNAuYRfK3ANQfw6dM/+1oK0ITxI9jmZNYhvzDzSOtFrnehs2sj\nUdYSYjXsojny2XC6aPf8\n=X3zM\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 80939bb1aac69890e6ca80158fba63371239f8bd\nparent 4764b675b539c197e9bfb60a6e9271a39bd0c8ff\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1779912214 +0100\ncommitter GitHub <noreply@github.com> 1779912214 +0100\n\nchore: add secp-vs-bls crypto benchmark (#684)\n\nCompares secp256k1 (v0/v1/v2) and BLS12-381 (v3) for wallet-side blinding and\nproof verification (per-proof vs batch), with a data-driven summary. Also fixes\nthe stale import path in bench-bls-verify.",
+        "verified_at": "2026-05-27T20:03:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/dc727101e4e577a97df38d91688f352b9de7dc66",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/dc727101e4e577a97df38d91688f352b9de7dc66",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/dc727101e4e577a97df38d91688f352b9de7dc66/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4764b675b539c197e9bfb60a6e9271a39bd0c8ff",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/4764b675b539c197e9bfb60a6e9271a39bd0c8ff",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/4764b675b539c197e9bfb60a6e9271a39bd0c8ff"
+      }
+    ]
+  }
+]
