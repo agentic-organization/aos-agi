@@ -1,0 +1,1401 @@
+[
+  {
+    "sha": "bc01c1841d3a5831462a0e1b618910648e44cb66",
+    "node_id": "C_kwDOJlsjrNoAKGJjMDFjMTg0MWQzYTU4MzE0NjJhMGUxYjYxODkxMDY0OGU0NGNiNjY",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:50:34Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:50:34Z"
+      },
+      "message": "feat: GRASP-06 /prs/ fallback and --git-server option\n\nReplaces the personal-fork fallback with GRASP-06's /prs/ path, so PR\nbranches land on an existing server the reviewer already has access to.\nAdds a --git-server flag to ngit send for cases where the user wants to\ntarget a specific server explicitly.\n\nnostr:nevent1qqs0k3qev4xpgqmyak0sajzpz4l6ya04nnjj2px7n9l3st5v5ls4elgpz3mhxue69uhhyetvv9ujuerpd46hxtnfduzy9tn7",
+      "tree": {
+        "sha": "5b9addee7af4609350ad85bb814d4281c6817606",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/5b9addee7af4609350ad85bb814d4281c6817606"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/bc01c1841d3a5831462a0e1b618910648e44cb66",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQiVsACgkQaOFUhtc/\ndeGNZw/6A6FCbd93nwb7wAcidoiqsC2Ra7hnWANgISzD5PiyAGl1LAC6+mTActwb\nHlabf/e7lK3PXtmYDCcJbxq38ZcPEkRl/IULebcrVLEdLVcTMBbAvSm89uG05Z1T\n4htsJOozAB4C3RuCdyElP7ete3FO0/SVG+wU+B/La0rNKXDALfjGe1jYtz42i/q5\n/OgQdYzilF/NbvSRVB9JMt1sIfM554AlPlgD5cS7ehkOz6YfqjcbctTEIUCUHLCJ\nFXX7uwuZsRDZdOJnEIFuw2DfHmRksrkxc4pazuDUwLrha58pTE1Wb0w5fqfXwZV1\niMuDozCckFAeaB3Iq68m1ii2rwa9sv5j8I9VqA0Y6HLyXckUeqQugDmwud7N6FEV\nUJUgNiam9B9wB9PQz9eBKt64yADc3qMEI9XfQH/oF+O8FBWhIE1JyyjuvHFbFNhG\nwmTNW7gPE39jEmdsmEGaW2eup+qVrCPzXsNpDVAWI9P6ejPeXWliPfGk/7+yg02x\nho6eeQLrfNMVbnLzPhwQCbS/4Wm2vAetfh+t6sot/nZJo6mG9CU0Bym/wXualy58\n6uTlohkAPIqUmR32m3Bl8iwoTkAck61G1ZrB0pbF76PafSZQFI2vSj1rJaY+2HfC\n7dSnlquuTiGepkXNUm/+Z+cl5t6rAD4w5uPIn5V8j0M903rzeJs=\n=JDaV\n-----END PGP SIGNATURE-----",
+        "payload": "tree 5b9addee7af4609350ad85bb814d4281c6817606\nparent f2631a0ba96603968e0e647f9cdf3ef57ac001fc\nparent dc1ce9a0a435a39810e4440d23850db89774887f\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779468634 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779468634 +0000\n\nfeat: GRASP-06 /prs/ fallback and --git-server option\n\nReplaces the personal-fork fallback with GRASP-06's /prs/ path, so PR\nbranches land on an existing server the reviewer already has access to.\nAdds a --git-server flag to ngit send for cases where the user wants to\ntarget a specific server explicitly.\n\nnostr:nevent1qqs0k3qev4xpgqmyak0sajzpz4l6ya04nnjj2px7n9l3st5v5ls4elgpz3mhxue69uhhyetvv9ujuerpd46hxtnfduzy9tn7\n",
+        "verified_at": "2026-05-22T16:51:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/bc01c1841d3a5831462a0e1b618910648e44cb66",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/bc01c1841d3a5831462a0e1b618910648e44cb66",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/bc01c1841d3a5831462a0e1b618910648e44cb66/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f2631a0ba96603968e0e647f9cdf3ef57ac001fc",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/f2631a0ba96603968e0e647f9cdf3ef57ac001fc",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/f2631a0ba96603968e0e647f9cdf3ef57ac001fc"
+      },
+      {
+        "sha": "dc1ce9a0a435a39810e4440d23850db89774887f",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/dc1ce9a0a435a39810e4440d23850db89774887f",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/dc1ce9a0a435a39810e4440d23850db89774887f"
+      }
+    ]
+  },
+  {
+    "sha": "dc1ce9a0a435a39810e4440d23850db89774887f",
+    "node_id": "C_kwDOJlsjrNoAKGRjMWNlOWEwYTQzNWEzOTgxMGU0NDQwZDIzODUwZGI4OTc3NDg4N2Y",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:41:41Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:41:41Z"
+      },
+      "message": "test(send): add send_pr with GRASP-06 server via --git-server ws:// URL\n\nCovers the path in select_servers_push_refs_and_generate_pr_or_pr_update_event\nwhere --git-server supplies a ws:// base URL (user_server_is_direct_url=false).\npush.rs calls format_grasp_server_url_as_grasp06_prs_url to convert\nws://127.0.0.1:PORT → http://127.0.0.1:PORT/prs/<npub>/<id>.git before\nprepending it to to_try.\n\nVerifies:\n- PR event clone tag carries the GRASP-06 /prs/ URL, not a standard clone URL\n- All three servers (both announcement grasps + GRASP-06 extra server) receive\n  refs/nostr/<event_id> at the contributor tip\n- GRASP-06 server stores the ref at prs/<contributor_pubkey_hex>/<id>.git\n- The GRASP-06 server's URL does not appear in the repo announcement clone tag\n- No KIND_PULL_REQUEST_UPDATE is emitted",
+      "tree": {
+        "sha": "5b9addee7af4609350ad85bb814d4281c6817606",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/5b9addee7af4609350ad85bb814d4281c6817606"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/dc1ce9a0a435a39810e4440d23850db89774887f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQh0YACgkQaOFUhtc/\ndeEI+BAAouuPtOpq7csN2RqVw2uCUG0DcqWyEZZp9hYKv+6uENXpPUQWXckMOCUs\ncPPkNLsEdXganMYa+Vy1zJ5axbpwJAE07EV+TZZZ6lA9Fm+V9ONp1gtNJ1FgWDQD\ndRPuAPSPK/xYiHlmvQbuKzor1hPlKSJFjAzH+gEpTvEZWoPy8aNqMd6inXP7thkC\ne7Sgy7PnEraPAlXW1jHvBaashAkgyMJQLQaFOsCc4R15a8oz1MzAGt6w7Lf60IEj\n9I9w9rDRWLKU+ZDm9njbrdd7TgiTQWgiQMzxWpJbHoqf3muaFcGI/r4dX0iikG8Z\nPfJBc51bclr6PeiNC6DKfoowXl5EihL2rwv938VHu7KnjwQb8CcMp91LmE34NYWu\nqbHZUInd7wRKJOGvjRcnQHcUThgoAKqPXYqRFt1hg0C/ayBbNWL86v6b9tCLyY7b\n6Oz3FphmCfX1s5pdDiTvbuYDZk9lePNySm+9BRHDOzrnpHQa8BShIHndwpUCImrs\nBd5sXsTZ5ZP1mJMwo1VQm3l0PzqH1xtMdXq2oat9IZytAH+Ry8mRGu5gVYIlyY9I\nm3eWaVkLXbY7Nj7UxvQXyccK97mI0/84nx0xb/jQSz6+Kz8QIw5EQaqWmfwekArc\nhm2jUIV4Wx6y1a3hLLjyoRPHeKLsqUW9tQpcQ15a3pmWntjigv4=\n=qFvl\n-----END PGP SIGNATURE-----",
+        "payload": "tree 5b9addee7af4609350ad85bb814d4281c6817606\nparent 2c21e0dcb3fd9a19ce3d0b3b0cdda3b1961a95f1\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779468101 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779468101 +0000\n\ntest(send): add send_pr with GRASP-06 server via --git-server ws:// URL\n\nCovers the path in select_servers_push_refs_and_generate_pr_or_pr_update_event\nwhere --git-server supplies a ws:// base URL (user_server_is_direct_url=false).\npush.rs calls format_grasp_server_url_as_grasp06_prs_url to convert\nws://127.0.0.1:PORT → http://127.0.0.1:PORT/prs/<npub>/<id>.git before\nprepending it to to_try.\n\nVerifies:\n- PR event clone tag carries the GRASP-06 /prs/ URL, not a standard clone URL\n- All three servers (both announcement grasps + GRASP-06 extra server) receive\n  refs/nostr/<event_id> at the contributor tip\n- GRASP-06 server stores the ref at prs/<contributor_pubkey_hex>/<id>.git\n- The GRASP-06 server's URL does not appear in the repo announcement clone tag\n- No KIND_PULL_REQUEST_UPDATE is emitted\n",
+        "verified_at": "2026-05-22T16:51:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/dc1ce9a0a435a39810e4440d23850db89774887f",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/dc1ce9a0a435a39810e4440d23850db89774887f",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/dc1ce9a0a435a39810e4440d23850db89774887f/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2c21e0dcb3fd9a19ce3d0b3b0cdda3b1961a95f1",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/2c21e0dcb3fd9a19ce3d0b3b0cdda3b1961a95f1",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/2c21e0dcb3fd9a19ce3d0b3b0cdda3b1961a95f1"
+      }
+    ]
+  },
+  {
+    "sha": "2c21e0dcb3fd9a19ce3d0b3b0cdda3b1961a95f1",
+    "node_id": "C_kwDOJlsjrNoAKDJjMjFlMGRjYjNmZDlhMTljZTNkMGIzYjBjZGRhM2IxOTYxYTk1ZjE",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:27:22Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:27:22Z"
+      },
+      "message": "test(send): add send_pr with vanilla git server via --git-server\n\nCovers the path in select_servers_push_refs_and_generate_pr_or_pr_update_event\nwhere --git-server supplies a direct .git URL (user_server_is_direct_url=true).\n\nVerifies:\n- PR event clone tag carries the vanilla server URL, not a grasp URL\n- All three servers (both announcement grasps + vanilla) receive\n  refs/nostr/<event_id> at the contributor tip\n- The vanilla server does not appear in the repo announcement clone tag\n- No KIND_PULL_REQUEST_UPDATE is emitted",
+      "tree": {
+        "sha": "e41a2117410acd2df38e462834f3dab01e4de78e",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/e41a2117410acd2df38e462834f3dab01e4de78e"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/2c21e0dcb3fd9a19ce3d0b3b0cdda3b1961a95f1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQg+oACgkQaOFUhtc/\ndeEnSBAAtgFyNDfuS2GvmlHrcvuLJe1kmjbRLb7BmNYuCr01KvLJkmUZv7Gihv7n\nMmp/3+FjOUF1aKCIhyDjftZ5hFc4ljJQge3TfGhhDq0LfjQR6wIL8S19LqU6486U\n49jP2ulUYB2xDd8WAyHShIbffpVY8PCIHjCWjwx3lJmM6j2NEVlq/fv4vgxy6dqO\ndWmX0vvzvZteXWMe+s8SvvpBUVJDHZajuAel13fuYD1amUTZ/VsP855HlAYCJ7ne\ny9R190f4p7NZlHYcdTSL05QP00wfMFRWX9KoG2Bfdzp/CMUN6I3nLAB18BGy6i3e\nnDFGxXP964pL1NtcMwKCHp/67P/pytTbrwjajLEfnZHE/3gaLF2BZPIm6ZnyrxoS\ng+EQdU4NvPZcod5RMPjgVC7Zn6D9Zw0S6WPyiaqAgwvVC+ItF+2mPllbKh01ICMs\nFthJn6SC2iEgeR33h9dXpRgS6xbaFEIVfjUEhhJIIQ1I2FyYTU/q7CEmH/PjteV2\nlIRMxrQ1zQxke9pwf4g+jHFZVaBYLELxluZftInpOrxhYghJVPmcqwnm9ElNUuln\nlkECQQTqhYj77S1n4mOTX3NLtBJpO8whM0/kS5xhAIf46Ov/PnLO4aa7saEn25BO\nvBvXF6R5fo0OeglhLzU108ZZy/M76VKtNlOwPKY0BN1CHY3kk3I=\n=nDRi\n-----END PGP SIGNATURE-----",
+        "payload": "tree e41a2117410acd2df38e462834f3dab01e4de78e\nparent 7a8f45ebc4a48b048eb7cdf7b03a464c02ebbeaf\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779467242 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779467242 +0000\n\ntest(send): add send_pr with vanilla git server via --git-server\n\nCovers the path in select_servers_push_refs_and_generate_pr_or_pr_update_event\nwhere --git-server supplies a direct .git URL (user_server_is_direct_url=true).\n\nVerifies:\n- PR event clone tag carries the vanilla server URL, not a grasp URL\n- All three servers (both announcement grasps + vanilla) receive\n  refs/nostr/<event_id> at the contributor tip\n- The vanilla server does not appear in the repo announcement clone tag\n- No KIND_PULL_REQUEST_UPDATE is emitted\n",
+        "verified_at": "2026-05-22T16:51:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/2c21e0dcb3fd9a19ce3d0b3b0cdda3b1961a95f1",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/2c21e0dcb3fd9a19ce3d0b3b0cdda3b1961a95f1",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/2c21e0dcb3fd9a19ce3d0b3b0cdda3b1961a95f1/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7a8f45ebc4a48b048eb7cdf7b03a464c02ebbeaf",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/7a8f45ebc4a48b048eb7cdf7b03a464c02ebbeaf",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/7a8f45ebc4a48b048eb7cdf7b03a464c02ebbeaf"
+      }
+    ]
+  },
+  {
+    "sha": "7a8f45ebc4a48b048eb7cdf7b03a464c02ebbeaf",
+    "node_id": "C_kwDOJlsjrNoAKDdhOGY0NWViYzRhNDhiMDQ4ZWI3Y2RmN2IwM2E0NjRjMDJlYmJlYWY",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:05:05Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:05:05Z"
+      },
+      "message": "docs(changelog): GRASP-06 fallback and --git-server option\n\nConsolidates the four previous changelog commits for these features\ninto a single entry.",
+      "tree": {
+        "sha": "1dac1a421d52d97547b9589a96a744f82820326f",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/1dac1a421d52d97547b9589a96a744f82820326f"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/7a8f45ebc4a48b048eb7cdf7b03a464c02ebbeaf",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQfrEACgkQaOFUhtc/\ndeHZIBAAq79AcF6eD7iVDbJeUbsLTUIpnbf7BQtVdzw6aZQha1o8p7BOzj1fL9wt\nO+mBEPS6ewnfXD9TCKiKpou+vsvlS8rCBEpP5Rdtw4q9mjXgGjTln2xX4EXVZvVs\nUzeDFWHZJvHyBXfSZ4zKCvi1rOWBVCk2fNy0npbOqg9crY5IUl+bh1dEsmdC7eHV\nmeBM2WGf5nKxWumJk9vrchZlQxjwo1HXsrLJgRAAvGUrGyshH0gwsJknEQ25Ih0I\nbxn/tMJUnvWSKi6tSo9WqWKFyggt/WiNDsJ4ozEL48HLQHa3mwRvFvcrI2RZEfyv\nOWuCxD1v0NbOHrgtJBYkScSga3RGW92qklV3rrxU3hA2WUwMOYw0++aReFUuRbuT\n95GfnqdcpAefbl3iONJMgJiO0CZS5zwttZSgiUEdaiilhPeYirnrPLIVpHswvybw\nVM4iAHN9fiFf4IFT3sIoFo0bTAlGIFXmiVgsnTZp08zGp6Pq/oPLfwamKp+gw8K9\nfNsqPrfgrPmpF8aM48vRMle+UW31nOPQRBeqmnBxNnfmes5rYFUS4fGpXnIk0lfM\nj99YMxAdWBUK6PtUUknIli0dAqm+cntUF3nLiWb2EtxiQheTQLQWA1HkcOZk3Dfl\ngWygCazllsCXjZvYA40rVycEECpwOJo53Hcfn98/45pW7w+z5xw=\n=Zm1r\n-----END PGP SIGNATURE-----",
+        "payload": "tree 1dac1a421d52d97547b9589a96a744f82820326f\nparent d95ab720f24036fbd4505ef59e134c43066b66a5\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779465905 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779465905 +0000\n\ndocs(changelog): GRASP-06 fallback and --git-server option\n\nConsolidates the four previous changelog commits for these features\ninto a single entry.\n",
+        "verified_at": "2026-05-22T16:51:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/7a8f45ebc4a48b048eb7cdf7b03a464c02ebbeaf",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/7a8f45ebc4a48b048eb7cdf7b03a464c02ebbeaf",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/7a8f45ebc4a48b048eb7cdf7b03a464c02ebbeaf/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d95ab720f24036fbd4505ef59e134c43066b66a5",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d95ab720f24036fbd4505ef59e134c43066b66a5",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/d95ab720f24036fbd4505ef59e134c43066b66a5"
+      }
+    ]
+  },
+  {
+    "sha": "d95ab720f24036fbd4505ef59e134c43066b66a5",
+    "node_id": "C_kwDOJlsjrNoAKGQ5NWFiNzIwZjI0MDM2ZmJkNDUwNWVmNTllMTM0YzQzMDY2YjY2YTU",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:05:00Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T16:05:00Z"
+      },
+      "message": "feat(send): add --git-server option to specify git server for PR push\n\nAdds a --git-server flag to ngit send (and the -o git-server= push option\nfor git-remote-nostr). The specified server is tried first; if it fails the\nusual GRASP-server fallback path still runs. On exhausted-fallback bail\nmessages the error now includes a hint to use --git-server / -o git-server=.",
+      "tree": {
+        "sha": "898ea9d9d27d878fc99a0140443a3a7f62e7079e",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/898ea9d9d27d878fc99a0140443a3a7f62e7079e"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/d95ab720f24036fbd4505ef59e134c43066b66a5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQfqwACgkQaOFUhtc/\ndeEuaRAAoke0ydmFpLq50NgYxhC82VWofzsTVTjds2hC8l/bOIFr2kR5whxnWQ9D\nUPKIVttSZPNcOmbSTPucmvWuPBmnItug+AsMk0cKP3J6aNvXrnOdd2802mIZOsYC\nkSKulJHxJGphHaeDHnYfkVrJqgzKIXl2tIIRD6ni1Oamd9XQysERP/uXkb5zY42A\nZj879AVh9N5rGsBcZfifL+8iEY9N3xvfy3PyLHD572RgAXlcb21rAawkjqAS2KE/\noIjrCWMEXttcXKQqw4sBJufxtmwedh2JpOdf1Ef/J3/QQx5V0A4npzxXK7LUybLY\nKwOL3dC8kSmGJEchoRpHJg5bwms/OuPdbQSljeYbUdiO82YhBXz+lxl3FG2mdnYb\nI+4WD/+lkKwS4MrE2RYTWyisEGYN8Hpdy6n+ePVae3lxHxdi1SRJPcAiof0ki/Ze\nj+yPKTdfF/IFYykztMYLHulXbj2/HO/MT6l47L/bc4DCMzy4FJODt0R6jZIBbDC8\nm8OU4SEja+hFfaJTg8yJTzfaSxMQpTb4PdhkoK5VMNxHUVQgAzGH2dPf6CXGf9qS\n7ug8rf+SCchsIHDJW2g9ktSzrwpfo4+UZ0xAG7eWJi5xsPdYm4E1ZAuNdylhMnUE\nKt7nhQGQASmgCEo3L2o+AQdajcULykV4f0ZqIPw1Ueeyss2kmOQ=\n=tRxb\n-----END PGP SIGNATURE-----",
+        "payload": "tree 898ea9d9d27d878fc99a0140443a3a7f62e7079e\nparent 54fce44b60c1bd50174e9147de4718206077854b\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779465900 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779465900 +0000\n\nfeat(send): add --git-server option to specify git server for PR push\n\nAdds a --git-server flag to ngit send (and the -o git-server= push option\nfor git-remote-nostr). The specified server is tried first; if it fails the\nusual GRASP-server fallback path still runs. On exhausted-fallback bail\nmessages the error now includes a hint to use --git-server / -o git-server=.\n",
+        "verified_at": "2026-05-22T16:51:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d95ab720f24036fbd4505ef59e134c43066b66a5",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/d95ab720f24036fbd4505ef59e134c43066b66a5",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d95ab720f24036fbd4505ef59e134c43066b66a5/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "54fce44b60c1bd50174e9147de4718206077854b",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/54fce44b60c1bd50174e9147de4718206077854b",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/54fce44b60c1bd50174e9147de4718206077854b"
+      }
+    ]
+  },
+  {
+    "sha": "54fce44b60c1bd50174e9147de4718206077854b",
+    "node_id": "C_kwDOJlsjrNoAKDU0ZmNlNDRiNjBjMWJkNTAxNzRlOTE0N2RlNDcxODIwNjA3Nzg1NGI",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T12:19:31Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T12:19:31Z"
+      },
+      "message": "fix(push): replace GRASP jargon with plain-English user messages\n\nNo user should need to know about GRASP-06, KIND_USER_GRASP_LIST, or\n/prs/ endpoints. Rewrite all six affected eprintln!/bail! strings to\ndescribe what is actually happening in plain terms:\n\n- 'repository grasp servers' instead of 'repository grasp servers'\n  (term kept, but context clarified)\n- fallback warning now says servers are down / not accepting the PR\n  and that it is pushing to servers in the user server list instead\n- error messages no longer mention KIND_USER_GRASP_LIST or GRASP-06",
+      "tree": {
+        "sha": "2a8136f5ff176b5106c63e1f30b1757e83963af5",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/2a8136f5ff176b5106c63e1f30b1757e83963af5"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/54fce44b60c1bd50174e9147de4718206077854b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQSdMACgkQaOFUhtc/\ndeF5vw//V9GSBIr5NseJPkD6zkOoS5D+v4Jj0VZXNof2zpdFCJ8bMhc3tmZoWa8v\nDu/vhXv5l64pSd1fNQg46L07ZQVBNylvSTExY26sL/pT4Wr5fU8/zpJMmVqbohDV\nlx3cl8yitkHhuEcPQEMo4GZePyvZeq1XijsdvVbRB4N14amVyafZXx0XyrfSwToO\nnC/lBnZ2hQVsrkIq6nx8eNIOUd2rgv5EGJ2my4Gq9F3zp+VJXXbJcyo2R/989Xrb\ncGH73Ke/LqjPXrieA3G/0Ryj+JF4bLRcRhy8FhONddBk23QKxUvToRNeSZ4QOUru\nwrvzHEHUbKCXHB3mJTvz5QnTgAoXAU597ycEh3d1ubnSluBXIPZ29eOy4mb7FXhT\nTsgXEovwIdtTpogbu3TXAD6YcTkcv4MWn23yKBdW7wl0Rpk5IP2ju9vquERAvygp\nP0YUnU4oveSJ6neq4QtatKA8OA89SxwkBGLS5MwN0nV5E81Bs2Y8hkI+FYiZPktf\nGRuYCml6xmbDR7P3vRX6XDmTFKEB8eJCeN8wiI3UQ+OfStOW5liwWJ9bN2rEuXVU\nmZ10xWkZ1eo3h8Cz8IULGLbPGQX/eon2065nLwcem0VQ2YFojIg63Zot4byCf70f\nzQywdubb6ikZqRi1p0rNXtMau08eFz7aEQbmtV7TtczSdJP11Aw=\n=WfoB\n-----END PGP SIGNATURE-----",
+        "payload": "tree 2a8136f5ff176b5106c63e1f30b1757e83963af5\nparent d2e9afb2f13bf2cecd5c35b546a4cde8edcfa336\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779452371 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779452371 +0000\n\nfix(push): replace GRASP jargon with plain-English user messages\n\nNo user should need to know about GRASP-06, KIND_USER_GRASP_LIST, or\n/prs/ endpoints. Rewrite all six affected eprintln!/bail! strings to\ndescribe what is actually happening in plain terms:\n\n- 'repository grasp servers' instead of 'repository grasp servers'\n  (term kept, but context clarified)\n- fallback warning now says servers are down / not accepting the PR\n  and that it is pushing to servers in the user server list instead\n- error messages no longer mention KIND_USER_GRASP_LIST or GRASP-06\n",
+        "verified_at": "2026-05-22T16:51:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/54fce44b60c1bd50174e9147de4718206077854b",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/54fce44b60c1bd50174e9147de4718206077854b",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/54fce44b60c1bd50174e9147de4718206077854b/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d2e9afb2f13bf2cecd5c35b546a4cde8edcfa336",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d2e9afb2f13bf2cecd5c35b546a4cde8edcfa336",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/d2e9afb2f13bf2cecd5c35b546a4cde8edcfa336"
+      }
+    ]
+  },
+  {
+    "sha": "d2e9afb2f13bf2cecd5c35b546a4cde8edcfa336",
+    "node_id": "C_kwDOJlsjrNoAKGQyZTlhZmIyZjEzYmYyY2VjZDVjMzViNTQ2YTRjZGU4ZWRjZmEzMzY",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T11:50:11Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T11:50:11Z"
+      },
+      "message": "feat(push): GRASP-06 /prs/ fallback replaces personal-fork\n\nWhen pushing a PR / PR-Update and all repo grasp servers are\nunreachable, push to <grasp-server>/prs/<contributor-npub>/<id>.git\non a server from the contributor's KIND_USER_GRASP_LIST (or the\ndefault grasp set), and emit a PR event whose `clone` tag names\nthat URL. No kind-30617 personal-fork announcement is ever\ncreated by this flow.\n\nThe legacy personal-fork branch in select_servers_push_refs_and_-\ngenerate_pr_or_pr_update_event is deleted entirely; the interactive\n\"enter alternative git repo url\" prompt goes with it.\n\nAdds format_grasp_server_url_as_grasp06_prs_url helper. Widens\nis_grasp_server_clone_url to also match /prs/{npub}/{id}.git.\n\nCloses the red test added in c85f011.",
+      "tree": {
+        "sha": "666a7a28dd3e469bd79d38f2064634df018151c1",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/666a7a28dd3e469bd79d38f2064634df018151c1"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/d2e9afb2f13bf2cecd5c35b546a4cde8edcfa336",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQQvMACgkQaOFUhtc/\ndeG6dBAAnp8+kSThf6XWTP8T5tESfwn8Cy0lBDo0O1m9AYb0+828Of1qmmFnaCl5\n3b1hhW0bYCUFg0fD+aY5wmPWivczXeoxLkTn9cbEHmGNGSC8RhTF8/KBcfFWk7Vc\n2pN3gnNQepqGqduMdzKcwfeiZuTRtvpHHouJTga3dasbvgO5PSGch5c5G0p9cvZd\n3NWFlKa91my6tG/kvvfybwMReDx15lQcHOvQp6EbW7Hq6h0aRzPJ9uOAuaNP9OCC\nS4mD3v0p3Zju0KUN2rLSA4nO7FlSZK+7nZp4n7SqNWiLwe00Fr6LcJCq8Mua2v/M\nTrq/yRj4mqpSPZJHD2TdjskxS21EmCv0Sn+9qQVXcwFCUuiKC5K9Lqh/ylsevEyx\n6EhnZI1VMPXjhtf/aac3WHyN867trXEcGkvg4sR9bC53O2J1elC3JyQfC9xFzySX\nonWeFPddXGnu/DHOeNhbzmB0n0q5nLpQnDi7rGEKMtQG9Xms7ZRx7FL9WqRiVGrb\nmk2hNJV0rARP7WVIEjSXOAsk93Ftvb3MM6Bf04DMH+BWUEv2HhYl/fC7BOAuTqpf\ncq/XeZAFKwPzC1zSr7H/MwkanQ6Agpnvgiy6w9uS1s7twUpZwVelrxzBmRB3r+sn\ndX/FSyR4yHNKMEh8ND3ZGzmcFzstsUosxYfS/NwqKnjphLZLvco=\n=HsgX\n-----END PGP SIGNATURE-----",
+        "payload": "tree 666a7a28dd3e469bd79d38f2064634df018151c1\nparent c85f0119c6d8b0c10b535297fe0061b54d7ad80d\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779450611 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779450611 +0000\n\nfeat(push): GRASP-06 /prs/ fallback replaces personal-fork\n\nWhen pushing a PR / PR-Update and all repo grasp servers are\nunreachable, push to <grasp-server>/prs/<contributor-npub>/<id>.git\non a server from the contributor's KIND_USER_GRASP_LIST (or the\ndefault grasp set), and emit a PR event whose `clone` tag names\nthat URL. No kind-30617 personal-fork announcement is ever\ncreated by this flow.\n\nThe legacy personal-fork branch in select_servers_push_refs_and_-\ngenerate_pr_or_pr_update_event is deleted entirely; the interactive\n\"enter alternative git repo url\" prompt goes with it.\n\nAdds format_grasp_server_url_as_grasp06_prs_url helper. Widens\nis_grasp_server_clone_url to also match /prs/{npub}/{id}.git.\n\nCloses the red test added in c85f011.\n",
+        "verified_at": "2026-05-22T16:51:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d2e9afb2f13bf2cecd5c35b546a4cde8edcfa336",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/d2e9afb2f13bf2cecd5c35b546a4cde8edcfa336",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d2e9afb2f13bf2cecd5c35b546a4cde8edcfa336/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c85f0119c6d8b0c10b535297fe0061b54d7ad80d",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/c85f0119c6d8b0c10b535297fe0061b54d7ad80d",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/c85f0119c6d8b0c10b535297fe0061b54d7ad80d"
+      }
+    ]
+  },
+  {
+    "sha": "c85f0119c6d8b0c10b535297fe0061b54d7ad80d",
+    "node_id": "C_kwDOJlsjrNoAKGM4NWYwMTE5YzZkOGIwYzEwYjUzNTI5N2ZlMDA2MWI1NGQ3YWQ4MGQ",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T11:22:11Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T11:22:11Z"
+      },
+      "message": "test(send): flip all-servers-down test to GRASP-06 /prs/ fallback\n\nTDD: test is intentionally red against current ngit. The follow-up\ncommit implements the GRASP-06 fallback in push.rs.\n\nAdds with_grasp_server_grasp06() builder method.",
+      "tree": {
+        "sha": "331e6c42be27ed909b9d5de6f48b960ea546974c",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/331e6c42be27ed909b9d5de6f48b960ea546974c"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/c85f0119c6d8b0c10b535297fe0061b54d7ad80d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQPGMACgkQaOFUhtc/\ndeHxVg//TcKEiIqdkl2KQHDR7frCwtQckaK/cVl/n8pT3MSoCaMY4I+S5DuYhjFE\n7UuUFyNBFZXlSfcxez5oiPFG8nQ/gJYdKLaA7+omuopbOTjQBm+0t0zL0i6SRhbN\nxRyY+wEgHdRfTagMIMpl6JMqbAUUKj+r8CFnolXG2rKAwuVAcDAE+P7JiiU8AONI\nTONCBe/efktu1J4iAtlSbwwl1y5os69ZfbnvMSddqacTnpgBWkIUbVqXSJ0IV6qJ\nt5tRNPHuwtabfAPySeMFnqFm4t8KEYlaPk57Bwq+NwH9w0tVTPB0O//V5QgS9P8W\ni6a4/M/H2zD9clckQijPelbjk5ijfJe0h4tYGmlnacx2BE09gOT92va92XpL2sNf\nX3Z1wz9RGXZAkyyTKSTf57h6JQfN3ROGIxEsmO3GgCNN/7aNKtpOn3eJxqsY4pRU\ngpq53E16rDseP76KQil2vNsjdPeFUNNPfqmmRk6jZycUQh51CIe5oLoMER+a8Ufc\n5PQT1C03TNTbL6Wg5Gp5I9+X+HpTQctBjhGuBXs4VTtE3U44qDQMnBFYXTHvrnjD\n0kE/a1tc86eefJPoi1T3l41bPeeP5HYCeRrtxetbYbsjr3TtgKB+EqonBUMjyH8n\nmMw0F6m9Y5c6ww5t8lxM6rmcO4sadlHbxjsYIMlQg7nKg8Hee9w=\n=ojC6\n-----END PGP SIGNATURE-----",
+        "payload": "tree 331e6c42be27ed909b9d5de6f48b960ea546974c\nparent f2631a0ba96603968e0e647f9cdf3ef57ac001fc\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779448931 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779448931 +0000\n\ntest(send): flip all-servers-down test to GRASP-06 /prs/ fallback\n\nTDD: test is intentionally red against current ngit. The follow-up\ncommit implements the GRASP-06 fallback in push.rs.\n\nAdds with_grasp_server_grasp06() builder method.\n",
+        "verified_at": "2026-05-22T16:51:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/c85f0119c6d8b0c10b535297fe0061b54d7ad80d",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/c85f0119c6d8b0c10b535297fe0061b54d7ad80d",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/c85f0119c6d8b0c10b535297fe0061b54d7ad80d/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f2631a0ba96603968e0e647f9cdf3ef57ac001fc",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/f2631a0ba96603968e0e647f9cdf3ef57ac001fc",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/f2631a0ba96603968e0e647f9cdf3ef57ac001fc"
+      }
+    ]
+  },
+  {
+    "sha": "f2631a0ba96603968e0e647f9cdf3ef57ac001fc",
+    "node_id": "C_kwDOJlsjrNoAKGYyNjMxYTBiYTk2NjAzOTY4ZTBlNjQ3ZjljZGYzZWY1N2FjMDAxZmM",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T10:47:52Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T10:47:52Z"
+      },
+      "message": "test(send): PR all servers down, user grasp list fallback\n\n8 rstest assertions via snapshot fixture. Adds\npublish_user_grasp_list harness helper (scenarios.rs).",
+      "tree": {
+        "sha": "a5d61e1f3589afb11e45cdac51c024e1da952e30",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/a5d61e1f3589afb11e45cdac51c024e1da952e30"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/f2631a0ba96603968e0e647f9cdf3ef57ac001fc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQNFkACgkQaOFUhtc/\ndeH9hw//TqhUB2Ep//oS6NwRu+2cxGuIRZO0rOEr4QwufT8yBcwiF5J8RUvEnR8w\ns+9EUuaimfd1XlhByBpxSqmOTZwGdige/Pa+XdIHYNgcMwRGQUk12f1QlRram9jY\nfHSG5+xQ838KJR5VnHetyt+CCH7etWIH2cgSozjQYJYUsJrjt7Os03igH64xliwe\nKpZY3ruAwwccdTJrKs+XYwIcsiVvoXLzpxWbFHW/S8gilJowWe2gp2Wb+Kk1G6HC\niArbA0gGMuz4Y0j/mEKe5si7pCwop0e81NHJtnIvD7NedUSfvT7ZR3wH3ye+faZK\nrVIu5Nq82VfJcdE5KZ4jGYYdjsNMYLzSOR0mNUUh/jyIQDkkEwBvAvBfmFIJNSbD\nwwk1aqqkuIc/9nP0eP7lDryv8sr1Pd6X4L3M8tZ9k2FfKfgrpQ/EsX7ozEmfsgEs\nB2LGJ5LiCzgHeUVZJle3RJJJiMSTU+Rk6cTrezNzcak4+407nZ9bV0YNnCNqiSPP\noLG3iRUUqxAmOpizw836nGuS6xzYrTapW430Elpq+U/XnqXzbOIJ8rFlGlllvXjU\nCIgTUXtBMWehfVNm4DlapV2AuwsdComqMJXgwzukfzR7xdtEGpNJXKN5trdcm2fL\nWRCQv5ZA1tZUVQVX5lqff/o5c+jmsVwR9kH3aCz/YIoA4Xsgpp8=\n=Ms3g\n-----END PGP SIGNATURE-----",
+        "payload": "tree a5d61e1f3589afb11e45cdac51c024e1da952e30\nparent d361d74877daeda2d533f745e9a7201cc4d09baf\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779446872 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779446872 +0000\n\ntest(send): PR all servers down, user grasp list fallback\n\n8 rstest assertions via snapshot fixture. Adds\npublish_user_grasp_list harness helper (scenarios.rs).\n",
+        "verified_at": "2026-05-22T11:10:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/f2631a0ba96603968e0e647f9cdf3ef57ac001fc",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/f2631a0ba96603968e0e647f9cdf3ef57ac001fc",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/f2631a0ba96603968e0e647f9cdf3ef57ac001fc/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d361d74877daeda2d533f745e9a7201cc4d09baf",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d361d74877daeda2d533f745e9a7201cc4d09baf",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/d361d74877daeda2d533f745e9a7201cc4d09baf"
+      }
+    ]
+  },
+  {
+    "sha": "d361d74877daeda2d533f745e9a7201cc4d09baf",
+    "node_id": "C_kwDOJlsjrNoAKGQzNjFkNzQ4NzdkYWVkYTJkNTMzZjc0NWU5YTcyMDFjYzRkMDliYWY",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T10:24:23Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T10:24:23Z"
+      },
+      "message": "refactor(test): kill primary grasp just before send, not before init\n\nSimpler and more realistic than the previous approach. With both grasps\nalive during publish_repo and clone_published_repo, the standard scenario\nhelpers can be used and no manual init steps are needed.\n\nThe key moment being tested — push_refs_and_generate_pr_or_pr_update_event\nhitting a dead first server, falling through to the second, and embedding\nthe second server's URL in the PR event's clone tag — is preserved. The\ncontributor's env (NGIT_GRASP_DEFAULT_SET) captures the dead server's URL\nat clone time, so the push loop still tries the primary first.",
+      "tree": {
+        "sha": "3a3e386292cee35755c901802dfb7c7e176afa46",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/3a3e386292cee35755c901802dfb7c7e176afa46"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/d361d74877daeda2d533f745e9a7201cc4d09baf",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQLtcACgkQaOFUhtc/\ndeGd7A/+MpjAmc7pYasL66Fcz9a4+DldNXgxY8q1TggMQrPLDUtH07/2L6r0ev0i\na2YfjD169iP2b9yCl1IFEoC2vcTEFh0zpOcL9gpor8Ghia7Vxhd7POoSM7/1vFyw\nNMcr2lr6w9dqtqAVMOkSnMZjaSIXpwndMB8jXn4RkwL6oYrquxdj/Mq190astZNq\nPPvmeLTim4lxdAkN7CS4BfCqs+4l3j5tgPu+IluFj25kApOASi+uzvcLSKpz7Mgb\nyT+xGje36z9vSOjmIQsRWcSyUeHti2ELhYv/i+s8r49MrJfT1hpxrnUp6FlHuDPz\n7JLl3WrnbPEY10xQkffg/XhX+BkXHG/eVlYmI2HA9o2b3OT18vw+tCvWdv+UGq7C\n4GA046k4SfQ/kJ/61PAVJPG8qiK4e1RgrU1qMuWcKxLknm7/wfOLWIYmTyZoTS5w\n31hwG6DasbF2fGtif/3qgpteckQLOis0UyAmfa/pIyhgX5zYdktjFxSok8inxYj4\nb6M9anuN3pPxiwqRSGhTSN89nD0nLVuDYDpRAxYakrZReeNS7sQRp+4Xp5c6teMG\ny/9eFK1Hu8gJKiJfkxWVboZBwIJlJDJ609KFn5cM1Ui6UvHZmyue8Z+evk6Qel2i\nsW8R8TOyl5qIs7JtvrCgQQ/+YBmaoV62KyvfgLu/HTxLZHtv2Eo=\n=B7z1\n-----END PGP SIGNATURE-----",
+        "payload": "tree 3a3e386292cee35755c901802dfb7c7e176afa46\nparent c191a690a748ebc4a68e91c3a91d57b525dd4b33\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779445463 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779445463 +0000\n\nrefactor(test): kill primary grasp just before send, not before init\n\nSimpler and more realistic than the previous approach. With both grasps\nalive during publish_repo and clone_published_repo, the standard scenario\nhelpers can be used and no manual init steps are needed.\n\nThe key moment being tested — push_refs_and_generate_pr_or_pr_update_event\nhitting a dead first server, falling through to the second, and embedding\nthe second server's URL in the PR event's clone tag — is preserved. The\ncontributor's env (NGIT_GRASP_DEFAULT_SET) captures the dead server's URL\nat clone time, so the push loop still tries the primary first.\n",
+        "verified_at": "2026-05-22T11:10:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d361d74877daeda2d533f745e9a7201cc4d09baf",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/d361d74877daeda2d533f745e9a7201cc4d09baf",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/d361d74877daeda2d533f745e9a7201cc4d09baf/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c191a690a748ebc4a68e91c3a91d57b525dd4b33",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/c191a690a748ebc4a68e91c3a91d57b525dd4b33",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/c191a690a748ebc4a68e91c3a91d57b525dd4b33"
+      }
+    ]
+  },
+  {
+    "sha": "c191a690a748ebc4a68e91c3a91d57b525dd4b33",
+    "node_id": "C_kwDOJlsjrNoAKGMxOTFhNjkwYTc0OGViYzRhNjhlOTFjM2E5MWQ1N2I1MjVkZDRiMzM",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T10:04:15Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T10:04:15Z"
+      },
+      "message": "test(send): PR with first server down, 8 rstest assertions\n\nAdd tests/send_pr_first_server_down.rs — companion to send_pr.rs that\nexercises the case where the first grasp listed in the kind-30617\nannouncement is unreachable throughout the entire arrange + act sequence.\n\nKey invariant under test: push_refs_and_generate_pr_or_pr_update_event\n(push.rs:736-753) builds the unsigned PR event on the first *successful*\npush. When the primary server is dead, the event is generated with the\nsecondary server's clone URL, which must therefore appear as the sole\nentry in the PR event's 'clone' tag.\n\nAlso verifies ngit init and nostr_push remain functional when the first\nlisted grasp server cannot be reached.\n\nAdd Harness::clone_url(url: &str) to test_harness/src/harness.rs — a\npublic wrapper around Repo::clone for tests that need to clone from an\narbitrary URL without a PublishedRepo handle (publish_repo is not usable\nhere because it assumes both grasps are alive during init).",
+      "tree": {
+        "sha": "560714b042617b69ebbff7f047b6ba9ad98b0bea",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/560714b042617b69ebbff7f047b6ba9ad98b0bea"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/c191a690a748ebc4a68e91c3a91d57b525dd4b33",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQKiAACgkQaOFUhtc/\ndeHkERAAl/S3JFnwjK1jVuy0CrHw4WFssqnUJfydgjhULV/rfKJdzW+/StXM4jiz\n/9r8tGaZ1YCzJmOi+rdm3izLLdp5qNpG98N5jvzTo4/Gu96jdOUlOf5r1ZnD2QON\nkLbtlXMZY2sFp052XGJ7m6QVzmhILHzvmqRA+44wNbvx8h3GxPSSCpyLj0gd1ORZ\neU9+zV5cpQ9oax76BY1FAhU3vpILXTI4CO9b3fJSRfWGDPNgNWBXlUqvY1R7SJ/n\neq8RQh2eFjlpwx3E11ZzyOtQpSeYfVw200w5qRBd5ikjGF0n3xpROLkXZjHmuoI1\nk4DmluxaiW1K/xWGi77YsB5713TMDCbD/IJbJKfGON9fgMWevpZfx+SgN7jHsxfW\nmDG61AQOS1lsoJ600+HpHy68IrHVaJhA0EZod1ned84hWL+7YwSISbFsdopoNyM2\nMl8mLnDLllSKr0sFavvuuW1dBb6/Nvz5cW0gFBYlAgCBZk05trQ4lzquCmB836dS\njiSnXkP0ha3GouilQFwO1CcWN/FstgeGJ6nclcFrtWOlHpT7kB0bx2dgpBWx9Q7B\nw3F4v5rg05Nq5alD1nhTD2OICSxn7XCGs9bZ0vQ5YwHl/A5WE8rWLLVLIco5B2xH\n17aqKzHT6pe1OYLEzk1blT8P/u2OJCeMUMAdMPNKcsTr1G4fsuE=\n=wez5\n-----END PGP SIGNATURE-----",
+        "payload": "tree 560714b042617b69ebbff7f047b6ba9ad98b0bea\nparent 35a0bba5b7b34f66539620d1e52eef2741955f3d\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779444255 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779444255 +0000\n\ntest(send): PR with first server down, 8 rstest assertions\n\nAdd tests/send_pr_first_server_down.rs — companion to send_pr.rs that\nexercises the case where the first grasp listed in the kind-30617\nannouncement is unreachable throughout the entire arrange + act sequence.\n\nKey invariant under test: push_refs_and_generate_pr_or_pr_update_event\n(push.rs:736-753) builds the unsigned PR event on the first *successful*\npush. When the primary server is dead, the event is generated with the\nsecondary server's clone URL, which must therefore appear as the sole\nentry in the PR event's 'clone' tag.\n\nAlso verifies ngit init and nostr_push remain functional when the first\nlisted grasp server cannot be reached.\n\nAdd Harness::clone_url(url: &str) to test_harness/src/harness.rs — a\npublic wrapper around Repo::clone for tests that need to clone from an\narbitrary URL without a PublishedRepo handle (publish_repo is not usable\nhere because it assumes both grasps are alive during init).\n",
+        "verified_at": "2026-05-22T11:10:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/c191a690a748ebc4a68e91c3a91d57b525dd4b33",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/c191a690a748ebc4a68e91c3a91d57b525dd4b33",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/c191a690a748ebc4a68e91c3a91d57b525dd4b33/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "35a0bba5b7b34f66539620d1e52eef2741955f3d",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/35a0bba5b7b34f66539620d1e52eef2741955f3d",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/35a0bba5b7b34f66539620d1e52eef2741955f3d"
+      }
+    ]
+  },
+  {
+    "sha": "35a0bba5b7b34f66539620d1e52eef2741955f3d",
+    "node_id": "C_kwDOJlsjrNoAKDM1YTBiYmE1YjdiMzRmNjY1Mzk2MjBkMWU1MmVlZjI3NDE5NTVmM2Q",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T09:43:56Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T09:45:38Z"
+      },
+      "message": "test(send): PR update with rebase, 8 rstest assertions\n\nAdd tests/send_pr_update_rebase.rs: rebase sibling of send_pr_update.rs.\nBetween the original PR send and the update send the maintainer advances\nmain a second time and the contributor fetches + rebases onto it.\n\nEight independent rstest cases share one OnceCell-backed arrange step:\n\n1. pr_update_event_exactly_one      - exactly one KIND_PULL_REQUEST_UPDATE\n2. a_tag_is_repo_coordinate         - 30617:<maintainer-hex>:<identifier>\n3. c_tag_is_update_tip              - tip OID after rebase + t5.md commit\n4. e_tag_is_original_pr_id          - uppercase E = original PR event ID\n5. p_tag_is_original_pr_author      - uppercase P = contributor pubkey\n6. merge_base_tag_is_new_fork_point - merge-base = post-rebase fork point\n                                      (new main tip), NOT original fork point\n7. both_grasps_have_update_ref      - refs/nostr/<update_event_id> on both\n8. no_new_pr_event                  - original PR count still exactly one\n\nArrangement: same two-grasp harness. Steps 1-6 mirror send_pr_update.rs\nexactly. Step 7 adds a second main advance; step 8 fetches + rebases\n(git fetch origin + git rebase origin/main). The precondition assertion in\ncase 6 checks rebased_merge_base_oid != original_fork_point_oid to keep\nthe merge-base assertion non-trivial.",
+      "tree": {
+        "sha": "ca640f56d37039783fb51d0fafcc357e75814dce",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/ca640f56d37039783fb51d0fafcc357e75814dce"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/35a0bba5b7b34f66539620d1e52eef2741955f3d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQJcMACgkQaOFUhtc/\ndeFE9A//a+O7PapZ+GMtaY3kHzZvnEurXStQ82gsnke4wnaqAhcFQpIbnrYx0iBI\nLoqCTr/d4re2ZeNkMoqdcXplUHX650H6tNQJ3Z/NRuvvRT5cWzefaebtJolF3a3I\nJCY5o+bDTBqcFUJE69ENR4XBCfj346kijQWJdFM3NiEBtq5VHG1wPHfnL+6qJu/l\nH1EbFRSn361UDPU4uzcz/m3+A1vlUE8oQw8qBP4psJ+MQ7qMKC89R/pz7uDJzoOH\nNkZKXbBZ/oTR4ZWqbNZRbw2XrLfOY4W2aXTXf9r3jlW3wi0Mjksrr/QkN1IMSQ0J\nVDobQKZ5ZJ9LUDK6KH31BwBvT9rkM8yrSyORWEYNBnDtR3AnrekcMff5LP+LglaO\nontLaRhlLcqwhevm9tWmEEO11bYlgVRsI1ra9j/GOPo+fAru+x6OTpFdqOw3mT9i\n7MRNgumRol2GVa57RnvmCROBtg1c5QAX2HACR809NO+G/962Iby0EznAL+vJZ1XG\nC/T1lWg89W3TBkGeJWnghf5WCMAYMD9xepW3LEPRCvMJ8OYWPIi0vcOUe5xUh0qu\n0GMTALK6t1LG+R6DvMlibhtP9SZEhoFzpBoyMzgAGhZN8p8I7uTzX7xBPzig1szw\nqMFn63YvCRBt7rsfWZgg4rdJFcRrYUyNIYBcolnAOC1rm50kygE=\n=T4s9\n-----END PGP SIGNATURE-----",
+        "payload": "tree ca640f56d37039783fb51d0fafcc357e75814dce\nparent 3053950485245d2636f3095e3bc146bd4ce96cee\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779443036 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779443138 +0000\n\ntest(send): PR update with rebase, 8 rstest assertions\n\nAdd tests/send_pr_update_rebase.rs: rebase sibling of send_pr_update.rs.\nBetween the original PR send and the update send the maintainer advances\nmain a second time and the contributor fetches + rebases onto it.\n\nEight independent rstest cases share one OnceCell-backed arrange step:\n\n1. pr_update_event_exactly_one      - exactly one KIND_PULL_REQUEST_UPDATE\n2. a_tag_is_repo_coordinate         - 30617:<maintainer-hex>:<identifier>\n3. c_tag_is_update_tip              - tip OID after rebase + t5.md commit\n4. e_tag_is_original_pr_id          - uppercase E = original PR event ID\n5. p_tag_is_original_pr_author      - uppercase P = contributor pubkey\n6. merge_base_tag_is_new_fork_point - merge-base = post-rebase fork point\n                                      (new main tip), NOT original fork point\n7. both_grasps_have_update_ref      - refs/nostr/<update_event_id> on both\n8. no_new_pr_event                  - original PR count still exactly one\n\nArrangement: same two-grasp harness. Steps 1-6 mirror send_pr_update.rs\nexactly. Step 7 adds a second main advance; step 8 fetches + rebases\n(git fetch origin + git rebase origin/main). The precondition assertion in\ncase 6 checks rebased_merge_base_oid != original_fork_point_oid to keep\nthe merge-base assertion non-trivial.\n",
+        "verified_at": "2026-05-22T11:10:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/35a0bba5b7b34f66539620d1e52eef2741955f3d",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/35a0bba5b7b34f66539620d1e52eef2741955f3d",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/35a0bba5b7b34f66539620d1e52eef2741955f3d/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3053950485245d2636f3095e3bc146bd4ce96cee",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/3053950485245d2636f3095e3bc146bd4ce96cee",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/3053950485245d2636f3095e3bc146bd4ce96cee"
+      }
+    ]
+  },
+  {
+    "sha": "3053950485245d2636f3095e3bc146bd4ce96cee",
+    "node_id": "C_kwDOJlsjrNoAKDMwNTM5NTA0ODUyNDVkMjYzNmYzMDk1ZTNiYzE0NmJkNGNlOTZjZWU",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T09:36:25Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T09:36:25Z"
+      },
+      "message": "test(send): PR update path, 8 rstest assertions\n\nAdd tests/send_pr_update.rs: end-to-end coverage of `ngit send\n--in-reply-to` (KIND_PULL_REQUEST_UPDATE, kind 1619) against a repo\nwhose kind-30617 announces two GRASP servers.\n\nEight independent rstest cases share one OnceCell-backed arrange step\n(same pattern as tests/send_pr.rs):\n\n1. pr_update_event_exactly_one      - exactly one KIND_PULL_REQUEST_UPDATE\n2. a_tag_is_repo_coordinate         - 30617:<maintainer-hex>:<identifier>\n3. c_tag_is_update_tip              - tip OID after the update commit (t5.md)\n4. e_tag_is_original_pr_id         - uppercase E = original PR event ID\n5. p_tag_is_original_pr_author     - uppercase P = contributor pubkey\n6. merge_base_tag_unchanged         - fork point unchanged (no rebase)\n7. both_grasps_have_update_ref      - refs/nostr/<update_event_id> on both\n8. no_new_pr_event                  - original PR count still exactly one\n\nArrangement: same two-grasp harness as send_pr.rs. Steps 1-5 mirror\nsend_pr.rs exactly (publish, clone, branch, t3+t4, advance main).\nStep 6 sends the original PR (capturing its event ID). Step 7 adds\nt5.md, step 8 sends the update via --in-reply-to <pr_event_id_hex>.",
+      "tree": {
+        "sha": "05348fd6ff2cdfce9c209a649bb4411b604e8e65",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/05348fd6ff2cdfce9c209a649bb4411b604e8e65"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/3053950485245d2636f3095e3bc146bd4ce96cee",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQI5kACgkQaOFUhtc/\ndeGGCxAAwPFkQehvCk8Wg6FoeFLzVwb+GoU4G/IAWsk2t7IYP+4fQH3z8JCj45Gg\nkYE7BtgxnFdLVRWqsB0GjxS2C5DoKP1PiNfphT67AfUvSQQFipgzUdN6B1h2GKiI\ny4nyH8Ob6aTy0lq8iFR/b/SpEcJN0WDEhS3yZ5wnJK9ZGsrxG95CqFXAFapFOh1Q\nk1x3RrS03NfTrDjRTQM9cnxHk146a3qs29fTVtuLGmwDxJgzXhozk2RJC0Jdnr+8\nKF3HCOQVlQyMZSJchA2vv5WZnN1ZMo1f2nQL6TLky0lpOiB4xy8f/zUIX2paoD+f\nOLga1wgWjaoI+wiP6sYlVgzvWBESgVUxdqNIKNIDNP6fFnz2MySO448OpQjLTcgX\nHQE8rrcunEXhU8fzU6JVxE/JZo+SOqtMQ5DBaP01I42C9zsNEMgx7AXW/88xip91\nfkRx0VDFnlvHKcMuFwBfS89faZe103jo7iAfIfTEFbwAawZkWNaoHp5nNuH9D7CD\nTIjUnhqzj/sbmswR700h+XAhT6wQafmif5Y+UWzhNFlRZUUN04GicOSZ3X30KRvJ\nJDVjbKMVtPb0fBfUkaz5u96tCk4rzDRUM4yD5mZ27ANKcG46Kzm2FlPy0lLUdBSh\nla0gQh19lQQud4jgikx0mmfXbzr/TuWCmKf/j0SbZRolXDa4nLo=\n=yuQj\n-----END PGP SIGNATURE-----",
+        "payload": "tree 05348fd6ff2cdfce9c209a649bb4411b604e8e65\nparent ad5afdfac210a90439ecf67a05bbef546e62a9c2\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779442585 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779442585 +0000\n\ntest(send): PR update path, 8 rstest assertions\n\nAdd tests/send_pr_update.rs: end-to-end coverage of `ngit send\n--in-reply-to` (KIND_PULL_REQUEST_UPDATE, kind 1619) against a repo\nwhose kind-30617 announces two GRASP servers.\n\nEight independent rstest cases share one OnceCell-backed arrange step\n(same pattern as tests/send_pr.rs):\n\n1. pr_update_event_exactly_one      - exactly one KIND_PULL_REQUEST_UPDATE\n2. a_tag_is_repo_coordinate         - 30617:<maintainer-hex>:<identifier>\n3. c_tag_is_update_tip              - tip OID after the update commit (t5.md)\n4. e_tag_is_original_pr_id         - uppercase E = original PR event ID\n5. p_tag_is_original_pr_author     - uppercase P = contributor pubkey\n6. merge_base_tag_unchanged         - fork point unchanged (no rebase)\n7. both_grasps_have_update_ref      - refs/nostr/<update_event_id> on both\n8. no_new_pr_event                  - original PR count still exactly one\n\nArrangement: same two-grasp harness as send_pr.rs. Steps 1-5 mirror\nsend_pr.rs exactly (publish, clone, branch, t3+t4, advance main).\nStep 6 sends the original PR (capturing its event ID). Step 7 adds\nt5.md, step 8 sends the update via --in-reply-to <pr_event_id_hex>.\n",
+        "verified_at": "2026-05-22T11:10:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/3053950485245d2636f3095e3bc146bd4ce96cee",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/3053950485245d2636f3095e3bc146bd4ce96cee",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/3053950485245d2636f3095e3bc146bd4ce96cee/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ad5afdfac210a90439ecf67a05bbef546e62a9c2",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/ad5afdfac210a90439ecf67a05bbef546e62a9c2",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/ad5afdfac210a90439ecf67a05bbef546e62a9c2"
+      }
+    ]
+  },
+  {
+    "sha": "ad5afdfac210a90439ecf67a05bbef546e62a9c2",
+    "node_id": "C_kwDOJlsjrNoAKGFkNWFmZGZhYzIxMGE5MDQzOWVjZjY3YTA1YmJlZjU0NmU2MmE5YzI",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T09:20:49Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T09:20:49Z"
+      },
+      "message": "test(send): PR happy path with two grasps, 8 rstest assertions\n\nAdd tests/send_pr.rs: end-to-end coverage of `ngit send --force-pr`\nagainst a repo whose kind-30617 announces two GRASP servers.\n\nEight independent rstest cases share one OnceCell-backed arrange step\n(same pattern as tests/init_state_fresh.rs):\n\n1. pr_event_exactly_one      - exactly one KIND_PULL_REQUEST on primary\n2. a_tag_is_repo_coordinate  - 30617:<maintainer-hex>:<identifier>\n3. c_tag_is_pr_tip           - tip OID of the feature branch\n4. merge_base_tag_is_fork_point - parent of first PR commit, not main tip\n5. branch_name_tag_matches   - \"feature\"\n6. clone_tag_is_primary_grasp_url - sole clone URL = first grasp's URL\n7. both_grasps_have_pr_ref   - refs/nostr/<event_id> on both bare repos\n8. no_pr_update_event        - zero KIND_PULL_REQUEST_UPDATE anywhere\n\nArrangement: maintainer pushes main *after* contributor branches\n(step 5), making merge_base_oid != main_tip_at_send_time so assertion\n4 is non-trivial. capture_snapshot bails if any two oids collide.\n\nHarness addition (test_harness/src/scenarios.rs):\nAdd PublishRepoOpts::additional_grasp_roles: Vec<String>. When\npopulated, publish_repo appends --grasp-server <url> for each role\nafter the existing \"repo\" server. Ordering rule:\n[repo, ...additional_grasp_roles] matches the announce clone-URL order.",
+      "tree": {
+        "sha": "14c4abf507350fb8f6d42e01e21327bcd254c431",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/14c4abf507350fb8f6d42e01e21327bcd254c431"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/ad5afdfac210a90439ecf67a05bbef546e62a9c2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQH/EACgkQaOFUhtc/\ndeGxKg/+MpMv0s62D5Syf+WT7fW/2XJluf8tO1DcD+VMdTHvla6HMvVxm1f6DC7u\nf0hJ68RlJpSXr2i6trt2a7ya5Fcw4yakFc8MnNtrMwcPe/NKapsaZ1Uk3FT+Q4iI\nNgoNWvYkh9fagkv3XXyAqacoOpOKDSgmT7YnFUolnw5reB05Ph47yl1Wy0ks8xGC\nyBSDls+ZPJ/e4O8jJbm/IDfHc/18gBWYBGwADUIaXsP8onoCDx+huWmQUDyS7PRB\ndGt1aC1UYbogaSBJAOF6wgCjIsOG4hozjyxBGtCGOhAoxXtf5S9M+9PC8KM5jfIz\ndWPRDjCmiYTJoRmecCfs9BN9wMv4Hfv3Zyta4N/eStZ1/6/qwNc2nouHYSyWqWoD\nJ5VdF/zNoi7cSuw0VqTOPwdhV+iA8mSN7JCx8uCKZZd5738N/Bl6FsB7UEGUhlCk\nsrflASKvrgZQY1BwYLmherxcV3PiQPbGVJw3XSZo5Q427ylGK9SwVuL6JtdXTW3p\nXUJh4FwvwD3/bS/UB8dL0YGd5p+laghB2+fpzfnD4H+VUDVbzoHw3IL4oF9nhW3K\ngsRlv5bHTCJLnMi8dih68SLq372UuvFrBbUWNaUN0dIvMU8y7EjMcKA/h5VH3zNQ\nloQ0U3+9+GPsxdEqrlsBhZG5VnqQmmrDZ9MY3rCEB/S3V7FaAgM=\n=Op69\n-----END PGP SIGNATURE-----",
+        "payload": "tree 14c4abf507350fb8f6d42e01e21327bcd254c431\nparent 9313896c16002eccf95541819b17afa4c2144070\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779441649 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779441649 +0000\n\ntest(send): PR happy path with two grasps, 8 rstest assertions\n\nAdd tests/send_pr.rs: end-to-end coverage of `ngit send --force-pr`\nagainst a repo whose kind-30617 announces two GRASP servers.\n\nEight independent rstest cases share one OnceCell-backed arrange step\n(same pattern as tests/init_state_fresh.rs):\n\n1. pr_event_exactly_one      - exactly one KIND_PULL_REQUEST on primary\n2. a_tag_is_repo_coordinate  - 30617:<maintainer-hex>:<identifier>\n3. c_tag_is_pr_tip           - tip OID of the feature branch\n4. merge_base_tag_is_fork_point - parent of first PR commit, not main tip\n5. branch_name_tag_matches   - \"feature\"\n6. clone_tag_is_primary_grasp_url - sole clone URL = first grasp's URL\n7. both_grasps_have_pr_ref   - refs/nostr/<event_id> on both bare repos\n8. no_pr_update_event        - zero KIND_PULL_REQUEST_UPDATE anywhere\n\nArrangement: maintainer pushes main *after* contributor branches\n(step 5), making merge_base_oid != main_tip_at_send_time so assertion\n4 is non-trivial. capture_snapshot bails if any two oids collide.\n\nHarness addition (test_harness/src/scenarios.rs):\nAdd PublishRepoOpts::additional_grasp_roles: Vec<String>. When\npopulated, publish_repo appends --grasp-server <url> for each role\nafter the existing \"repo\" server. Ordering rule:\n[repo, ...additional_grasp_roles] matches the announce clone-URL order.\n",
+        "verified_at": "2026-05-22T11:10:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/ad5afdfac210a90439ecf67a05bbef546e62a9c2",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/ad5afdfac210a90439ecf67a05bbef546e62a9c2",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/ad5afdfac210a90439ecf67a05bbef546e62a9c2/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9313896c16002eccf95541819b17afa4c2144070",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/9313896c16002eccf95541819b17afa4c2144070",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/9313896c16002eccf95541819b17afa4c2144070"
+      }
+    ]
+  },
+  {
+    "sha": "9313896c16002eccf95541819b17afa4c2144070",
+    "node_id": "C_kwDOJlsjrNoAKDkzMTM4OTZjMTYwMDJlY2NmOTU1NDE4MTliMTdhZmE0YzIxNDQwNzA",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T09:04:13Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T09:04:13Z"
+      },
+      "message": "remove all references to test_utils\n\ntest_utils has been fully deleted; test_harness is the sole test\nutility crate. Remove all historical comments and AGENTS.md entries\nthat mentioned test_utils.",
+      "tree": {
+        "sha": "7911baed8fabd577c021d6b8207c5afef5aa70de",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/7911baed8fabd577c021d6b8207c5afef5aa70de"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/9313896c16002eccf95541819b17afa4c2144070",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQHA4ACgkQaOFUhtc/\ndeE8LRAAlrcgOkxEf0Q7+0v5XAcUkw5lBDKMwI2MqpcF/GKzGI4oVpiXW9NDuNsa\n8zGqOZ5mLDHDHCgtC+nm2s4+zjPQHIoWd2yqtYETBuBmz3znAiwoYI/08I9vwtFr\nCcXCus3FG8O2CX/seLrlzY+yEQm9D2jA61306xawIJ3zcef9PCh53uuwj+BMwU+L\nPXJ3ZPV7wEj3KklBP64SGEZUCtrO9rCGQd53wGgCxDxOaskeyk65w3km9PTi2kpU\n8MFC+D9aKuaRIb4vRSIuXHT72zAxxXQ9Mieo8qocjsQEmpfvBNWHL8sHmtKm5V4G\nXLTssipwx5PVY1F+VdU6laQgWIs0yMsz3PMl3pqwhnvWD7vSympEYub4d0N7m+Us\nrT0a1TrZ21tvYLTKQb5C3pK7BMs6vMf1NUd/nVHaslMEx1+t80w4RVO01jUisVRf\ndLlI+X0I0/H6skQ4Q5iEivH8qKdech0214KlUUcWYoXTt7WrhmbGNmJmNe2F06Wa\nmwCyZQKkzZILRFzSWNONuotMjIwbzv7z2Jw7K7pBerm5cXB1zfdq7Te6cFRVTtJE\nN+kAwdlOo9i8BWxCAvdGFtUALRr2v5n3wGole6crO+J+4/vuPeeSoDzPXMJ3QJaU\ndlLEI4wUh6Ein0PYGmg4AUC130iNXXo5cA4W6tVFbWfuUE/rl8Y=\n=Yt3z\n-----END PGP SIGNATURE-----",
+        "payload": "tree 7911baed8fabd577c021d6b8207c5afef5aa70de\nparent 0be2e766421f3e82680268756b51d4d06573e76b\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779440653 +0000\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779440653 +0000\n\nremove all references to test_utils\n\ntest_utils has been fully deleted; test_harness is the sole test\nutility crate. Remove all historical comments and AGENTS.md entries\nthat mentioned test_utils.\n",
+        "verified_at": "2026-05-22T11:10:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/9313896c16002eccf95541819b17afa4c2144070",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/9313896c16002eccf95541819b17afa4c2144070",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/9313896c16002eccf95541819b17afa4c2144070/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0be2e766421f3e82680268756b51d4d06573e76b",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/0be2e766421f3e82680268756b51d4d06573e76b",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/0be2e766421f3e82680268756b51d4d06573e76b"
+      }
+    ]
+  },
+  {
+    "sha": "0be2e766421f3e82680268756b51d4d06573e76b",
+    "node_id": "C_kwDOJlsjrNoAKDBiZTJlNzY2NDIxZjNlODI2ODAyNjg3NTZiNTFkNGQwNjU3M2U3NmI",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T08:22:03Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T08:22:03Z"
+      },
+      "message": "fix(flake): add cargoLock.lockFile to buildRustPackage\n\nWithout cargoLock, cargoHash, cargoDeps, or cargoVendorDir set,\nbuildRustPackage errors at evaluation time. Use cargoLock.lockFile\nso the derivation can be evaluated without a pre-computed hash.",
+      "tree": {
+        "sha": "b4d929f73bfc5ce009f80b9ff0c68ce14430d54a",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/b4d929f73bfc5ce009f80b9ff0c68ce14430d54a"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/0be2e766421f3e82680268756b51d4d06573e76b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQEisACgkQaOFUhtc/\ndeFRHBAAiCVf818ylRXaAVf9J5Qb8T3AjscpYCYx+rT/Dm5pkELtQrFIgq5CQ7uA\nGxn7dyYUmgTxIugEdeJle33/6PWhHWtrJuYYIlBFNMeni0yRQLX9lnJz6jkk4gzX\nxtSpmRMzutB6RSStb/TMcnMiAANl0xxiWhpCxMGpZs1geUfTcg2mlF9XxltfxPhq\nFaLIJqbfzzuD+8c+wrFfHnTbGeaJh86XGXb144/NZx0JJMvcJ0zVCUe+tnvfJMb9\npz6OemjScEN7ujrsIco9yiDZn6udcILxRGdMYFbOtnG2kOrgf4gxM/28PkHVgMAD\nC0LNujU4CvMI/YEbj8hEc22Gr97E9k6IbDQDwR5PFEUVY9viWuoESuOIGOEgwRh3\n+uqjcrBw/knAOFvMIWysTIR28nPnAGKXnSvescFZpAyC7ZQiB1VzUhOLK5DAfx3E\ns6E4Mn31aQgRoh9gRmnrzba5jXbaFWNjyeL59n5uq+3vCxGAfwa6ic91IOvq7Af3\nGlJYY9K7DuA8PQYhriwTLht8zZ5znBkJgnXxWaHMaS0AMyBjhhcC4whPCHGfDovg\nImLRRvIXUgVy/ZJ4Nj6IIOyIDwtZA7wMBXHb5SI47XYXSb0s0uDPn0ar3ykZb9a9\nsgCzLoI38ELc6mA24j8JiD+aMuos1FQYfyoNM/chBbtaFwmm8hQ=\n=FbOt\n-----END PGP SIGNATURE-----",
+        "payload": "tree b4d929f73bfc5ce009f80b9ff0c68ce14430d54a\nparent 7edbfbc1e04c730ca05cdddd2fdc668a7b17c022\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779438123 +0100\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779438123 +0100\n\nfix(flake): add cargoLock.lockFile to buildRustPackage\n\nWithout cargoLock, cargoHash, cargoDeps, or cargoVendorDir set,\nbuildRustPackage errors at evaluation time. Use cargoLock.lockFile\nso the derivation can be evaluated without a pre-computed hash.\n",
+        "verified_at": "2026-05-22T08:22:51Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/0be2e766421f3e82680268756b51d4d06573e76b",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/0be2e766421f3e82680268756b51d4d06573e76b",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/0be2e766421f3e82680268756b51d4d06573e76b/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7edbfbc1e04c730ca05cdddd2fdc668a7b17c022",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/7edbfbc1e04c730ca05cdddd2fdc668a7b17c022",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/7edbfbc1e04c730ca05cdddd2fdc668a7b17c022"
+      }
+    ]
+  },
+  {
+    "sha": "7edbfbc1e04c730ca05cdddd2fdc668a7b17c022",
+    "node_id": "C_kwDOJlsjrNoAKDdlZGJmYmMxZTA0YzczMGNhMDVjZGRkZDJmZGM2NjhhN2IxN2MwMjI",
+    "commit": {
+      "author": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T08:10:43Z"
+      },
+      "committer": {
+        "name": "DanConwayDev",
+        "email": "DanConwayDev@protonmail.com",
+        "date": "2026-05-22T08:11:46Z"
+      },
+      "message": "chore: remove packages from legacy test harness from flake.nix\n\nwe had pinned the dependencies to commits in our log file.",
+      "tree": {
+        "sha": "82fcfc299c70de1470d8808030346c7a2e51995a",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/trees/82fcfc299c70de1470d8808030346c7a2e51995a"
+      },
+      "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/git/commits/7edbfbc1e04c730ca05cdddd2fdc668a7b17c022",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsRaN4Kb3mvfPwNXpaOFUhtc/deEFAmoQD8IACgkQaOFUhtc/\ndeHRshAAjVr6/va6yEW04TZNL2TEcq1ci1Nod9Y+KHmLbhXo9WW8JhrsYBB9t6Rc\nNlK6d05APXkl4S9vAxSyCf2xEgcs93KvaK8y38Mzg15AFss5wHbQ6VLq0VL6akoa\ncoIzoXFH4SHZ3PdHMwLbr4dJ6OwqrVHwCbRus8fMlTahhh2bBkQ2sBYc0Mbw1QP/\njucXDQ6Ffy0olPFqK0rx70Nrtxngig97+lYoOY/OkjGe0JJYiTgrwuu1mC5iEejD\nk3Hw9/R96iVIKsb5btkp2goEcPkt2wKCy7bP8JZ5wLw9Xxsi9HJQcyy34Qmk/Eid\nL4+0eZhxuf5OaK4sOto7ZEh3/YWfZ/JtxRbT5SUbnQLbPVp4vp9Cc8osv3HrTWCn\nt28c1XqEO8pxoAkdg1T9LjeF3ljKdPCwtaCmvCu/lrrnMFHVGuZMzDOvjWZYiEVq\ntTw7lVMWLc8vc8twd6j2K3ZjxOZG6fEPqRmeml9ClX4SchEyr2EbKfhZIMoK0Wpe\neSbcHE898g6Kh/mO24Es3vcfovrOktsjrV8YUMnpENk1cJTgjMJ6Rrwp+jCpX04/\nhsPgUCzMc//LxX0dNCThHk+8syDEgtcFoEAhWU4m/uQ0B2m2rotK0iJROMAksZY5\nFRYwonfxCxqwEVnF8YvKGVhUswZwF5uINYZDk2/r94OvdNtSHsc=\n=RFDN\n-----END PGP SIGNATURE-----",
+        "payload": "tree 82fcfc299c70de1470d8808030346c7a2e51995a\nparent 6eb46c44b1019d7ba0fee82d8d4c8930553c3f17\nauthor DanConwayDev <DanConwayDev@protonmail.com> 1779437443 +0100\ncommitter DanConwayDev <DanConwayDev@protonmail.com> 1779437506 +0000\n\nchore: remove packages from legacy test harness from flake.nix\n\nwe had pinned the dependencies to commits in our log file.\n",
+        "verified_at": "2026-05-22T08:13:19Z"
+      }
+    },
+    "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/7edbfbc1e04c730ca05cdddd2fdc668a7b17c022",
+    "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/7edbfbc1e04c730ca05cdddd2fdc668a7b17c022",
+    "comments_url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/7edbfbc1e04c730ca05cdddd2fdc668a7b17c022/comments",
+    "author": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DanConwayDev",
+      "id": 114834599,
+      "node_id": "U_kgDOBtg8pw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114834599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DanConwayDev",
+      "html_url": "https://github.com/DanConwayDev",
+      "followers_url": "https://api.github.com/users/DanConwayDev/followers",
+      "following_url": "https://api.github.com/users/DanConwayDev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DanConwayDev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DanConwayDev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DanConwayDev/subscriptions",
+      "organizations_url": "https://api.github.com/users/DanConwayDev/orgs",
+      "repos_url": "https://api.github.com/users/DanConwayDev/repos",
+      "events_url": "https://api.github.com/users/DanConwayDev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DanConwayDev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6eb46c44b1019d7ba0fee82d8d4c8930553c3f17",
+        "url": "https://api.github.com/repos/DanConwayDev/ngit-cli/commits/6eb46c44b1019d7ba0fee82d8d4c8930553c3f17",
+        "html_url": "https://github.com/DanConwayDev/ngit-cli/commit/6eb46c44b1019d7ba0fee82d8d4c8930553c3f17"
+      }
+    ]
+  }
+]

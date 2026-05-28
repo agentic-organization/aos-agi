@@ -1,0 +1,412 @@
+[
+  {
+    "sha": "994675aa13ea382300923a5e18277dc709e19699",
+    "node_id": "C_kwDOI3GlzNoAKDk5NDY3NWFhMTNlYTM4MjMwMDkyM2E1ZTE4Mjc3ZGM3MDllMTk2OTk",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-23T00:31:57Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-23T00:31:57Z"
+      },
+      "message": "refactor!: remove v4-deprecated APIs (#676)\n\nRemove the public symbols that were marked deprecated in v4.5.0, now that\nmain is the v5 clean-break trunk:\n\n- `deriveSecret` / `deriveBlindingFactor`: use `deriveSecretAndBlindingFactor`,\n  which derives both values for a counter in one call (and, for legacy BIP-32\n  keysets, avoids repeating the shared path derivation).\n- `Wallet.completeMelt` boolean `preferAsync` overload: pass\n  `{ preferAsync: true }` on the `CompleteMeltOptions` object instead. The two\n  overloads collapse back into a single signature.\n\nTests that consumed the removed helpers now derive the single values locally\nor pass the options object. Migration steps documented in migration-5.0.0.md.",
+      "tree": {
+        "sha": "4cc5123b8b6ddcddbc532828a899049fe0c6de34",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/4cc5123b8b6ddcddbc532828a899049fe0c6de34"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/994675aa13ea382300923a5e18277dc709e19699",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEPV9CRC1aQ7uu5UhlAAA5MMQAFPZGqiVf/TqUiGdU4w7nIiO\n/ie9wgtAlWZSOWYo1g1OOWrF5vyk2URRiVQmL+13/jWZXxqyzXKujT6IYkUqVprO\nMzR5Mptg1NDL21RkM3gVUabGrFNeaMV1jIMIfoYqUhxmroLGrD9xSv90c6L+oKWj\nScfznnbRAnzQRtWIVv6EXZX8cMz0DX0eGx8tXV/XJUX4cgm1N91tJKwMoTmssqYb\nA97zwu6TqgYUgMfqAv1iT1KvaPwyNL+fSu+VAPL6Ju5UXuUhU3xaaCxNUvodttJC\nCgs7MprAAbaO0t2YUMmxFx0ItmBN20jNVgzPqd1PsRePjj29EflY9zQAwCCvAbS4\nWaQPYkaLKRojaDtkgKqBhDkTTc/32oSCNMwfd4u/lWot308TuyAT5ReAWtXlTCRp\nfnlmEmLdTCq7vR4XVZigkzCb/YTWKgG5Pl9qZQ0ArSbOB88kCQ6JUnmQaxakez+6\n39346m46lWytg38MFM6ij3XWbPoSTy4ZmfTi2A3GX3QsVR4S0oFdqO+j2Pj2RSbi\nWhhGA1jb4mtGcZPIpXTa1lJjTFGbKVyT/aaL7LJfOdXPqlThyI4onCuHWZceNxBm\nq+yIkOUrB/NdO5L72Ob8dGC0yDdPigUj4UT0a/c7L+RR9Rq/u7sLRhg5lYVHoPTz\nwiaOAF8qiojHW6+A9TlU\n=gs01\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4cc5123b8b6ddcddbc532828a899049fe0c6de34\nparent 9be2d56346ec2b747655c4db65006be79c8f9861\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1779496317 +0200\ncommitter GitHub <noreply@github.com> 1779496317 +0200\n\nrefactor!: remove v4-deprecated APIs (#676)\n\nRemove the public symbols that were marked deprecated in v4.5.0, now that\nmain is the v5 clean-break trunk:\n\n- `deriveSecret` / `deriveBlindingFactor`: use `deriveSecretAndBlindingFactor`,\n  which derives both values for a counter in one call (and, for legacy BIP-32\n  keysets, avoids repeating the shared path derivation).\n- `Wallet.completeMelt` boolean `preferAsync` overload: pass\n  `{ preferAsync: true }` on the `CompleteMeltOptions` object instead. The two\n  overloads collapse back into a single signature.\n\nTests that consumed the removed helpers now derive the single values locally\nor pass the options object. Migration steps documented in migration-5.0.0.md.",
+        "verified_at": "2026-05-23T00:31:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/994675aa13ea382300923a5e18277dc709e19699",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/994675aa13ea382300923a5e18277dc709e19699",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/994675aa13ea382300923a5e18277dc709e19699/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9be2d56346ec2b747655c4db65006be79c8f9861",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/9be2d56346ec2b747655c4db65006be79c8f9861",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/9be2d56346ec2b747655c4db65006be79c8f9861"
+      }
+    ]
+  },
+  {
+    "sha": "9be2d56346ec2b747655c4db65006be79c8f9861",
+    "node_id": "C_kwDOI3GlzNoAKDliZTJkNTYzNDZlYzJiNzQ3NjU1YzRkYjY1MDA2YmU3OWM4Zjk4NjE",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-22T14:00:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-22T14:00:55Z"
+      },
+      "message": "feat(mintinfo): add supportedMethods(op) to list usable mint/melt methods (#673)\n\n* feat(mintinfo): add supportedMethods(op) to list usable mint/melt methods\n\nAdds a convenience for discovering what a consumer can mint or melt with:\n`MintInfo.supportedMethods('mint' | 'melt')` returns the advertised method-unit\nsettings (SwapMethod[]), or [] when the operation is disabled.\n\nThis is the discovery counterpart to the existing point-check\n`supportsMintMeltMethod(op, method, unit)`. Unlike `isSupported(4|5).params`,\nit is operation-named and excludes disabled operations, so \"supported\" means\nusable. Kept on MintInfo only (no Wallet wrapper) to match the existing\nmethod-query surface and avoid a duplicate entry point.\n\n* docs(usage): add Inspect Mint Capabilities recipe for the method-query API\n\nNew usage page documenting how to discover what a mint supports via\nwallet.getMintInfo(): supportedMethods(op) to list usable mint/melt methods,\nsupportsMintMeltMethod(op, method, unit) for a single check, and isSupported(num)\nfor raw NUT support. Adds it to the usage index and cross-links it from the\nCreate Wallet recipe.",
+      "tree": {
+        "sha": "40d824f192f43e7550c98af4c376a4f950309837",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/40d824f192f43e7550c98af4c376a4f950309837"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/9be2d56346ec2b747655c4db65006be79c8f9861",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEGGXCRC1aQ7uu5UhlAAAepUQAAxDwcUl8ztOQR2MU4KeWO2Y\nObZATaCUmSWD+bKf3RJnbbo7HAaKavz+pCV+H5vQbDh0BysBoSNJsWvRVklu0GfE\nKy7ty1CIO7S/iycWCOrcjWDPMxGIsFSua46qrt6fMf+Ms9OTptvQoPSR6MtMDc5O\nkUutmjIYEPwPcNsOr+hL/alEODq26StwlrnEDpxomFO+9YCdpNNEtUGHJbL562QR\nCNgDt3/grg2FPmYrwWIrf87osdetuSNBmxzQQ1e2P42AwRW/Bp39E/fyiSXjcbul\nt5sKw1ZpXQpBO7REJs9MQwtZwVCeatW40e6yfFVwZG9U2KjL87vCK4hryOi/UTw0\ni8fwbwDY0JoWnCuBk58koeQGwsb23zicR2O+IYV1QLNyZUpqeKU+Y/58GqfgYLDw\n/qATZ1ljgoy5wOs+WAaXNxIh+gMMcE0pW2w1j3eZ5DepL77ad/dtyFTh/LyP+8EW\nhYiqR55arL+PwwNx+Dd0u/cTc2K5y9/BVEun1Lg3S9RRlSNVtet83sWu7epaWhMd\nW1hNu89GhoUu2YmCer8xlv5CzCrdew2Mpurn+70Jh+TzF2lAo1mMLaSDd2NgmS+m\nApA8M2yEWkN6MFhKjr93tzhhzu9WONqVQlw3hYLu3PCsx+sgupVsYjSarYOIbLTe\nGuGnw4SqHfVu+T7sWpdf\n=JHul\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 40d824f192f43e7550c98af4c376a4f950309837\nparent 35da507bb4e3e33ee12a0801c917478c5015a48d\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1779458455 +0200\ncommitter GitHub <noreply@github.com> 1779458455 +0200\n\nfeat(mintinfo): add supportedMethods(op) to list usable mint/melt methods (#673)\n\n* feat(mintinfo): add supportedMethods(op) to list usable mint/melt methods\n\nAdds a convenience for discovering what a consumer can mint or melt with:\n`MintInfo.supportedMethods('mint' | 'melt')` returns the advertised method-unit\nsettings (SwapMethod[]), or [] when the operation is disabled.\n\nThis is the discovery counterpart to the existing point-check\n`supportsMintMeltMethod(op, method, unit)`. Unlike `isSupported(4|5).params`,\nit is operation-named and excludes disabled operations, so \"supported\" means\nusable. Kept on MintInfo only (no Wallet wrapper) to match the existing\nmethod-query surface and avoid a duplicate entry point.\n\n* docs(usage): add Inspect Mint Capabilities recipe for the method-query API\n\nNew usage page documenting how to discover what a mint supports via\nwallet.getMintInfo(): supportedMethods(op) to list usable mint/melt methods,\nsupportsMintMeltMethod(op, method, unit) for a single check, and isSupported(num)\nfor raw NUT support. Adds it to the usage index and cross-links it from the\nCreate Wallet recipe.",
+        "verified_at": "2026-05-22T14:00:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/9be2d56346ec2b747655c4db65006be79c8f9861",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/9be2d56346ec2b747655c4db65006be79c8f9861",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/9be2d56346ec2b747655c4db65006be79c8f9861/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "35da507bb4e3e33ee12a0801c917478c5015a48d",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/35da507bb4e3e33ee12a0801c917478c5015a48d",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/35da507bb4e3e33ee12a0801c917478c5015a48d"
+      }
+    ]
+  },
+  {
+    "sha": "35da507bb4e3e33ee12a0801c917478c5015a48d",
+    "node_id": "C_kwDOI3GlzNoAKDM1ZGE1MDdiYjRlM2UzM2VlMTJhMDgwMWM5MTc0NzhjNTAxNWE0OGQ",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-22T12:16:47Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-22T12:16:47Z"
+      },
+      "message": "refactor(crypto): split curve primitives (#667)\n\nRelease-As: 5.0.0-rc.1",
+      "tree": {
+        "sha": "596532b81e69af452741146485739298885aaf61",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/596532b81e69af452741146485739298885aaf61"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/35da507bb4e3e33ee12a0801c917478c5015a48d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEEkvCRC1aQ7uu5UhlAAAX74QAGqcbQDGogDL/uVSIPBoYN26\nQsPxVwtUHffVy9kQzHtecWbDu2qranWev7SDSJgGcm6N4XJczS1m6vJbUQeK/J/a\nQ5FXxolOBpRooL0V9Lt0H3wOUho0i2zb/5JhutJMZj0ciSvf66xQDsnJfNQe8iUA\nzWJ+m3DQbsuWKIz/Bc5wCQUZD5hc12abZfFY/fWmso1GzGX6LE7e1kUQr2nt0Dbu\nomP4JvKwSrByv0U+/rYcE/aICXlwqZEY6lDUCYK0/JaQG5ar/o9U3LqMjoB7T1jp\nX5MMP6mLH2HL+KX6tilTyH1EiLh43zu0YBSprfCXjfQKqlFyggN3uxkvD2GgQCdS\npOHdHqYpj2lCKuhJKuEB6Vr5Rta0+Wp+xnm8nBcTCTgA1rtJdiey+6YTLdB7KD8r\nMnXj2KOgqGDAz6kDchz8j9jY0nRWJMtVg01+eK4EBegtHzp4CS/0o7E42NwpeklT\nVzhLY/678OVYdMw2XCaL9Wy2wF31S9PhtDQisbs+hTJArCNPqxua8XQjMcWdbv6b\nQFtqERtfmVWQv/zW9HinFg/5SmrliqspcAZ44ec3etpzZNJ0bWjAHxfe4EcEe+Gp\nSMkHlU4QVKWpuI4N5iDUYjelvD3ViIr05rxHGdZ1CWLldG1U5xgN+KKDI8ck+2XI\nkcI1mgmh+mXVy45sPRS7\n=xgGV\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 596532b81e69af452741146485739298885aaf61\nparent a80dbf4d36ba4e1101a41180b46de0d59cd526fc\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1779452207 +0200\ncommitter GitHub <noreply@github.com> 1779452207 +0200\n\nrefactor(crypto): split curve primitives (#667)\n\nRelease-As: 5.0.0-rc.1",
+        "verified_at": "2026-05-22T12:16:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/35da507bb4e3e33ee12a0801c917478c5015a48d",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/35da507bb4e3e33ee12a0801c917478c5015a48d",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/35da507bb4e3e33ee12a0801c917478c5015a48d/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a80dbf4d36ba4e1101a41180b46de0d59cd526fc",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/a80dbf4d36ba4e1101a41180b46de0d59cd526fc",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/a80dbf4d36ba4e1101a41180b46de0d59cd526fc"
+      }
+    ]
+  },
+  {
+    "sha": "a80dbf4d36ba4e1101a41180b46de0d59cd526fc",
+    "node_id": "C_kwDOI3GlzNoAKGE4MGRiZjRkMzZiYTRlMTEwMWE0MTE4MGI0NmRlMGQ1OWNkNTI2ZmM",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-22T11:49:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-22T11:49:58Z"
+      },
+      "message": "feat(crypto)!: BLS12-381 v3 keysets (#661)\n\nAdds support for v3 keysets (keyset id prefix 02), which use BLS12-381 instead of secp256k1 for BDHKE.",
+      "tree": {
+        "sha": "d0858ebffc7ab825d22484f382eed9bcf40e5e55",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/d0858ebffc7ab825d22484f382eed9bcf40e5e55"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/a80dbf4d36ba4e1101a41180b46de0d59cd526fc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEELmCRC1aQ7uu5UhlAAAsFUQAIjrXDztGnRNo9/R852iANN/\nr3+kYXoxs4tkNnWWxn34L8fAl1fyTWQbsoZ5CYc+QRzQmM95RfB1v1IwNk0NFbxI\nVzw0YEBhzzSEM1TtZqcnWvylneVd9QLBIivuDx04eAGpkcGWzc2Qqc1xiHGoQkWu\nmvPhMUQrme1I8PkODTZuR91SOdyVZBevq3BsBvlkk/B7HSU1XRTU1udvHyUJeu1n\ntvJ+DXTNSWxpfqYF5Y7vKphR52A+/A5mFLhe8U7D4VjTyEY9XrUg3IfILwgMflly\nww8LPE4aLBI3oEgPNk3qWMqyMcH/6IcH/0C291SVkEzjm8/HhRKH+dFZhECrYXYC\nkcRI6jPrz1OylHNUZSVgietryu6NAHNzatwrKYYjlkuzr8/IFWFuPHG29Fkh+h3m\n1O6QbMdrU2QrNS05mttFFo6A8uwLGPKjZvzGbzcZ6TvlpRJu/qf5t+PvzNOiN2vv\nbkmsRuhIY2/93XsodLXsqDQ7ObZLDbnt+VeGeF0QYMqPymrieWayWsn3Hbx4VDqk\nifV57XIiSEThr1pulSI4zNSTb4M7/tH0zq5NReMBrEhJQtqNgbADVZoDWIe7yMsB\nrAZYJ5fry26kXwHwZS9PXQVdQ89nMFubfPW6XbC+lXKPB/EXXFVFNSdjxVKjd5D9\nc61TOdPw9g3fWgkDGX9/\n=38MQ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d0858ebffc7ab825d22484f382eed9bcf40e5e55\nparent 48f5ff33ba0caa950d6a10ece4f15abb4e5af296\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1779450598 +0200\ncommitter GitHub <noreply@github.com> 1779450598 +0200\n\nfeat(crypto)!: BLS12-381 v3 keysets (#661)\n\nAdds support for v3 keysets (keyset id prefix 02), which use BLS12-381 instead of secp256k1 for BDHKE.",
+        "verified_at": "2026-05-22T11:49:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/a80dbf4d36ba4e1101a41180b46de0d59cd526fc",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/a80dbf4d36ba4e1101a41180b46de0d59cd526fc",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/a80dbf4d36ba4e1101a41180b46de0d59cd526fc/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "48f5ff33ba0caa950d6a10ece4f15abb4e5af296",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/48f5ff33ba0caa950d6a10ece4f15abb4e5af296",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/48f5ff33ba0caa950d6a10ece4f15abb4e5af296"
+      }
+    ]
+  },
+  {
+    "sha": "48f5ff33ba0caa950d6a10ece4f15abb4e5af296",
+    "node_id": "C_kwDOI3GlzNoAKDQ4ZjVmZjMzYmEwY2FhOTUwZDZhMTBlY2U0ZjE1YWJiNGU1YWYyOTY",
+    "commit": {
+      "author": {
+        "name": "Rob Woodgate",
+        "email": "robwoodgate@users.noreply.github.com",
+        "date": "2026-05-22T10:50:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-22T10:50:10Z"
+      },
+      "message": "chore: document multi-major branch model and gate npm latest on LATEST_MAJOR (#670)\n\n* chore: document multi-major branch model and gate npm latest on LATEST_MAJOR\n\nEstablish the release machinery and docs for running several major lines in\nparallel ahead of v5 landing on main.\n\nversion.yml: introduce a workflow-level LATEST_MAJOR env var and key the npm\n`latest` dist-tag off it instead of a hardcoded major. Promoting a new major to\n`latest` is now a one-line, reviewed change; any major that is not LATEST_MAJOR\n(and is not a prerelease) falls through to `vN-lts` and can never accidentally\nbecome `latest`.\n\nDEVELOPER.md, CONTRIBUTING.md, AGENTS.md: rewrite the branching and release\nsections to be major-agnostic. main tracks the current major; each supported\nprior major is maintained on its own `vN-dev` LTS branch for fixes only.\nDocument the dist-tag rules, the LATEST_MAJOR knob, and a concise two-step\nmajor-transition cutover. The branch snapshot front-runs main to v5 so it is\ncorrect the moment the v5 stack merges.\n\n* docs: tidy npm dist-tags table in DEVELOPER.md",
+      "tree": {
+        "sha": "983410012cc737f5d74c024ba2eec9c47ff310d5",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/trees/983410012cc737f5d74c024ba2eec9c47ff310d5"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cashu-ts/git/commits/48f5ff33ba0caa950d6a10ece4f15abb4e5af296",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEDTiCRC1aQ7uu5UhlAAAFXYQAHNbX/fbep325oP+5Ki4Q6DE\nz6mwZQExBMOcpYE5pTDKMXSJF4Z+t4lkmvcGbUdppUGLh604fA8CzwzBfJNhvKBi\n3sb6w7ErlA9jOkE0VflQOyGuvOpQCBy/wa1hoz9hHrcRgWIXyoDy4uS2LKnOZX1q\nsL58iKvhcc7iN38BLxREkHH3fNXfhZtjn39EDQYz9Kd4jHAI/NChGOsYNqwOv+Ni\nu1QvH3SCZUud4FhmDwsv0sX9i4BxT2io1WG0c5EZ4Rdfn2uTy2l8eebeS4Gv5/lF\nM961h3aKBDil558bKXEF8TYMRd0WksIB0GrBfFTQOLfBvBzCzOl+QOBOTpjzlGSj\nKy2yerOJT9rzKFmxK/ZrhDRuXg0yGwvZ61W4OZY0S4I1Z6zG01gADqUShZRAqZen\neBCiPoBUeOLtvapykOLlLZSRJxmOEyckRqs+CnebzsODQIJabkyuea1cToq6o81z\nTVFvj8v9GysBm4b1nN8afx1G+wcKsQPgvL0D1I1QnFKIvuqbrdIL8G+5kmejBcb+\ndo/mT91Byl7tXQy84v9v+5wFpSR2Ku10m190ktoDEqi9OFW0BPRQfJ4Ut9zJEac2\nJragPrRHsnEKrO+LDZ2nB8jks0Tv/m2KrDw+HCJXCJRjHPrEFCw7x+eyIbBboKVA\nbAUHRstrMyNqkSdHk18C\n=7AWC\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 983410012cc737f5d74c024ba2eec9c47ff310d5\nparent be8126778944c04afd1d98b89d0b1167ba526436\nauthor Rob Woodgate <robwoodgate@users.noreply.github.com> 1779447010 +0200\ncommitter GitHub <noreply@github.com> 1779447010 +0200\n\nchore: document multi-major branch model and gate npm latest on LATEST_MAJOR (#670)\n\n* chore: document multi-major branch model and gate npm latest on LATEST_MAJOR\n\nEstablish the release machinery and docs for running several major lines in\nparallel ahead of v5 landing on main.\n\nversion.yml: introduce a workflow-level LATEST_MAJOR env var and key the npm\n`latest` dist-tag off it instead of a hardcoded major. Promoting a new major to\n`latest` is now a one-line, reviewed change; any major that is not LATEST_MAJOR\n(and is not a prerelease) falls through to `vN-lts` and can never accidentally\nbecome `latest`.\n\nDEVELOPER.md, CONTRIBUTING.md, AGENTS.md: rewrite the branching and release\nsections to be major-agnostic. main tracks the current major; each supported\nprior major is maintained on its own `vN-dev` LTS branch for fixes only.\nDocument the dist-tag rules, the LATEST_MAJOR knob, and a concise two-step\nmajor-transition cutover. The branch snapshot front-runs main to v5 so it is\ncorrect the moment the v5 stack merges.\n\n* docs: tidy npm dist-tags table in DEVELOPER.md",
+        "verified_at": "2026-05-22T10:50:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/48f5ff33ba0caa950d6a10ece4f15abb4e5af296",
+    "html_url": "https://github.com/cashubtc/cashu-ts/commit/48f5ff33ba0caa950d6a10ece4f15abb4e5af296",
+    "comments_url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/48f5ff33ba0caa950d6a10ece4f15abb4e5af296/comments",
+    "author": {
+      "login": "robwoodgate",
+      "id": 12084212,
+      "node_id": "MDQ6VXNlcjEyMDg0MjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12084212?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robwoodgate",
+      "html_url": "https://github.com/robwoodgate",
+      "followers_url": "https://api.github.com/users/robwoodgate/followers",
+      "following_url": "https://api.github.com/users/robwoodgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robwoodgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robwoodgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robwoodgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/robwoodgate/orgs",
+      "repos_url": "https://api.github.com/users/robwoodgate/repos",
+      "events_url": "https://api.github.com/users/robwoodgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robwoodgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "be8126778944c04afd1d98b89d0b1167ba526436",
+        "url": "https://api.github.com/repos/cashubtc/cashu-ts/commits/be8126778944c04afd1d98b89d0b1167ba526436",
+        "html_url": "https://github.com/cashubtc/cashu-ts/commit/be8126778944c04afd1d98b89d0b1167ba526436"
+      }
+    ]
+  }
+]

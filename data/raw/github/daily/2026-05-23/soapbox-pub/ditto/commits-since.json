@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "7c6c117741cbd9a99198820f947eeb0758c01b0c",
+    "node_id": "C_kwDOL5Eek9oAKDdjNmMxMTc3NDFjYmQ5YTk5MTk4ODIwZjk0N2VlYjA3NThjMDFiMGM",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T19:24:41Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T19:24:41Z"
+      },
+      "message": "Include highlights in mixed feeds by default\n\nThe kind 9802 toggle (feedIncludeHighlights) was off by default,\nso highlights only appeared on the dedicated /highlights page and\nwere invisible in the home Follows/Global/Communities tabs and on\nprofile pages. Default it to true so highlights show up alongside\nposts, reposts, articles, and the other social kinds that already\ndefault on. Users who don't want them can still turn the toggle\noff in feed settings.",
+      "tree": {
+        "sha": "cebfa1b077e91c2e9a7d4bb5a6d5eaebeb6ff6c9",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/cebfa1b077e91c2e9a7d4bb5a6d5eaebeb6ff6c9"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/7c6c117741cbd9a99198820f947eeb0758c01b0c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoQrXkACgkQchHR+ZdE\n+7fQkQ/7BLvt6BLr3rkIJff3/ZcM1y8lpdeuWLHP4y8/kM576pT5x9zqmRDC/dx1\ny0B2Sd1sUb7E+vWaa4grsSa+zs8pBcaW/M8OA7Um4zF0/Po6PJvhjXLf5DP+KbKj\nXMgFTSGJr91D5gAtPO3JbwgBEwriMHtK/HJSyN0dSnJ5O4AI+mSuu1V1z/qivgtO\ns8RoqY8vx631ujGnH1Rh0l8b3wnfwK8FHKNbkXsFl+NwDZe2dcoP6xpj/1J3PsHE\nSTYhTiQT0X+zE1ZubHP/VSqL1BSSZmZi+O10ECeRey7DwlLzCxGkqyUjlBuOqIw3\ncorUMlHy8Q7vLoEKlXKI7SL0pE1N1Q/2WOZBA2DcRwmxMXLiLRPtpYSfvrrlcoQV\n72jcOTn+vyefqg45x9vg4VAcX8BYou4o/skDxBUtZcutQAA6FDic/oyTnYejrlQe\nc1ooHPG0yMBzknntv2YV3gy/Q2T3SRcRp+9+6W4i2Bs+fPvCfiLIQ4EvfVvY0PKA\nUDcSaTaDnyf9ib1ImpWdS5X+7oYNYlVZbkbf6MIBR+vZxcnZlpdQC03ku2wP+D6B\n8P+tuoTWIHs5xiOPGdMXPAyCSciCUqXf1dqiAnKcdEUlcwSu6USwAt77YFV/Fu5F\ntvF8IidcmBKLozd//lYRQI3ptlJiMDo5SD6ETc0Fq72V3MwU7es=\n=R4WB\n-----END PGP SIGNATURE-----",
+        "payload": "tree cebfa1b077e91c2e9a7d4bb5a6d5eaebeb6ff6c9\nparent 70d85c1bd03c322413cffe1ef690e48f503bfcb3\nauthor Alex Gleason <alex@alexgleason.me> 1779477881 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779477881 -0500\n\nInclude highlights in mixed feeds by default\n\nThe kind 9802 toggle (feedIncludeHighlights) was off by default,\nso highlights only appeared on the dedicated /highlights page and\nwere invisible in the home Follows/Global/Communities tabs and on\nprofile pages. Default it to true so highlights show up alongside\nposts, reposts, articles, and the other social kinds that already\ndefault on. Users who don't want them can still turn the toggle\noff in feed settings.\n",
+        "verified_at": "2026-05-22T20:00:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/7c6c117741cbd9a99198820f947eeb0758c01b0c",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/7c6c117741cbd9a99198820f947eeb0758c01b0c",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/7c6c117741cbd9a99198820f947eeb0758c01b0c/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "70d85c1bd03c322413cffe1ef690e48f503bfcb3",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/70d85c1bd03c322413cffe1ef690e48f503bfcb3",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/70d85c1bd03c322413cffe1ef690e48f503bfcb3"
+      }
+    ]
+  },
+  {
+    "sha": "70d85c1bd03c322413cffe1ef690e48f503bfcb3",
+    "node_id": "C_kwDOL5Eek9oAKDcwZDg1YzFiZDAzYzMyMjQxM2NmZmUxZWY2OTBlNDhmNTAzYmZjYjM",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T19:21:46Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T19:21:46Z"
+      },
+      "message": "Polish NIP-84 highlight rendering\n\n- Render highlight source URLs as rich link previews via LinkEmbed\n  (matching how feed notes preview URLs), instead of the static URL\n  chip that just showed hostname + raw URL.\n- Drop the Highlighter icon from the top-right of the quote block.\n  The left accent border and serif type already mark it as a pull\n  quote, and the icon overlapped the text on long single-line\n  highlights.\n- Tighten 'context'-tag handling: only accept the tag when the\n  highlight appears verbatim inside it, per the spec's stated intent\n  ('surrounding content'). The previous heuristic ('context longer\n  than content') admitted malformed tags where the context didn't\n  actually wrap the highlight, leading to the awkward fallback that\n  showed context above and the highlight as a separate quote. With\n  the stricter check that fallback path is no longer reachable, so\n  remove it.\n- Swap the Highlighter (marker-pen) icon for the Quote (typographic\n  quotation-marks) icon in every other place a highlight is\n  represented: the comment-context icon map, the embedded-highlight\n  card label, the notifications header icons (single + grouped),\n  the feed-card KIND_HEADER_MAP, the Highlights sidebar item, and\n  the highlights toggle in Notification Settings.\n- Add a dedicated comment-context branch for kind 9802 so a reply\n  to a highlight reads 'Commenting on @sebastix's highlight'\n  (author attribution + hover-card preview via EmbeddedNote)\n  instead of the generic 'Commenting on a highlight'. Mirrors the\n  existing ReactionCommentContext / FollowListCommentContext\n  pattern.",
+      "tree": {
+        "sha": "16cef68ff8ed57e22b48f26fe0cb9658f65521f2",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/16cef68ff8ed57e22b48f26fe0cb9658f65521f2"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/70d85c1bd03c322413cffe1ef690e48f503bfcb3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoQrMoACgkQchHR+ZdE\n+7eEbw/9FNRG+X0bl/meRXZ5z8S/r9eYAnKDYSmcD+29yasGnIjOEAiw/X3uL9yl\nZ34F7mon3RyGlFeamd6KTIak4o/SeXydLMDwhDO2iSNzXTczoNoaCu4QG8no6C5H\nnDrvD+bvVp4xnrONOr7uA7emX85CUPDcgLlgyqmITg5ONWuJC0wNdqMFb4Twvvkj\ntVFFO+duv69UJDprOUmtkFTR9TMjLhfIJAnI2AR70n6qRFm3BAhR+bm0KSyacyeZ\nfRQS6qSMGEzGNSAZ7THW8rRozbcJAKcXbQl2hm5ZciOIYvPemSlASUUvPOMchBls\ncXXruqvPCF+3bJX9hiuktDe1BbTDRcTHlV42ThNybSLk9ORKhGBlBOKwTG5Cb05q\nczBiDmn9EvYqAKnn04mnZ7JYhPQct/AHQdXqhOhbR1sgIaYXqrW3hn9tnpLmZuTy\nZ/a1upWnNA+QL55XnY0L09K2FtoMyyYH8atjSX8eZP2SL76WKmVTRe77kXW8mNTq\ngv9JJKxWAFwW0das0H9VfGk9NNvEO2NaA+LeHkfWLxJUYhDolTvsgSotnuSygvC0\n/PJIRLD1OXKHoAGZZg76nUJ3Cw4iYEmPRCmCAbBxcvpZ0vULZXHm5a8ukIoek/sg\nOalwhUaS+iVlIzQod7zVC4U0R7rax1ox1wb+KWvohtYOqe0Eync=\n=Puvv\n-----END PGP SIGNATURE-----",
+        "payload": "tree 16cef68ff8ed57e22b48f26fe0cb9658f65521f2\nparent 93cccda024fe031cddedb045a50cb218b428dd71\nauthor Alex Gleason <alex@alexgleason.me> 1779477706 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779477706 -0500\n\nPolish NIP-84 highlight rendering\n\n- Render highlight source URLs as rich link previews via LinkEmbed\n  (matching how feed notes preview URLs), instead of the static URL\n  chip that just showed hostname + raw URL.\n- Drop the Highlighter icon from the top-right of the quote block.\n  The left accent border and serif type already mark it as a pull\n  quote, and the icon overlapped the text on long single-line\n  highlights.\n- Tighten 'context'-tag handling: only accept the tag when the\n  highlight appears verbatim inside it, per the spec's stated intent\n  ('surrounding content'). The previous heuristic ('context longer\n  than content') admitted malformed tags where the context didn't\n  actually wrap the highlight, leading to the awkward fallback that\n  showed context above and the highlight as a separate quote. With\n  the stricter check that fallback path is no longer reachable, so\n  remove it.\n- Swap the Highlighter (marker-pen) icon for the Quote (typographic\n  quotation-marks) icon in every other place a highlight is\n  represented: the comment-context icon map, the embedded-highlight\n  card label, the notifications header icons (single + grouped),\n  the feed-card KIND_HEADER_MAP, the Highlights sidebar item, and\n  the highlights toggle in Notification Settings.\n- Add a dedicated comment-context branch for kind 9802 so a reply\n  to a highlight reads 'Commenting on @sebastix's highlight'\n  (author attribution + hover-card preview via EmbeddedNote)\n  instead of the generic 'Commenting on a highlight'. Mirrors the\n  existing ReactionCommentContext / FollowListCommentContext\n  pattern.\n",
+        "verified_at": "2026-05-22T20:00:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/70d85c1bd03c322413cffe1ef690e48f503bfcb3",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/70d85c1bd03c322413cffe1ef690e48f503bfcb3",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/70d85c1bd03c322413cffe1ef690e48f503bfcb3/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "93cccda024fe031cddedb045a50cb218b428dd71",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/93cccda024fe031cddedb045a50cb218b428dd71",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/93cccda024fe031cddedb045a50cb218b428dd71"
+      }
+    ]
+  }
+]

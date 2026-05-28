@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "2a9a2d69702eb5ed7d167cf8c895b6a2827dcfd6",
+    "node_id": "C_kwDOQjhVC9oAKDJhOWEyZDY5NzAyZWI1ZWQ3ZDE2N2NmOGM4OTViNmEyODI3ZGNmZDY",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-21T21:39:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T21:39:10Z"
+      },
+      "message": "feat: add suspend/unsuspend user actions and clarify ban destructiveness (#83)\n\nWire up suspendpubkey/unsuspendpubkey/listsuspendedpubkeys NIP-86 RPC\nmethods as general-purpose moderation actions. Previously suspension was\nonly available through the age review flow.\n\n- Add suspendPubkey, unsuspendPubkey, listSuspendedPubkeys to adminApi\n- Add Suspend/Unsuspend buttons to UserActions (amber/green styling)\n- Add Suspended Users tab to UserManagement page\n- Track isSuspended state in useModerationStatus hook\n- Put Ban User behind a confirmation dialog with honest destructive\n  language (was \"Can be reversed\" — ban purges content from 16+ tables)\n- Update Unban tooltip to note purged content is not restored\n- Extract ConfirmDialog from DeleteConfirmDialog with configurable\n  pendingLabel prop\n- Document suspend_user exclusion from Zendesk resolutionActions\n  (suspension is a holding action, not a final resolution)",
+      "tree": {
+        "sha": "c55e5566559ce76cae8c59461a9a36cef727e3fe",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/c55e5566559ce76cae8c59461a9a36cef727e3fe"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/2a9a2d69702eb5ed7d167cf8c895b6a2827dcfd6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqD3t+CRC1aQ7uu5UhlAAAyMYQAJEu2EBJw5bKoqhMblcewj1g\nX7WaSBt7iVaMM/a2U6ZGkBLNTJCbDSVgN6Jf/bsPvRNKMdYEpDYosEhxx7p3++Kk\nkbl7EUQ5oMHHPYoOTN0sxQz1/azE6KKZJqvEgIzOPCubD+H462w0JP/SWSx8pp2h\nHchi5HoQNjOPWNJlUm7h+sQ5yFWMjpj+I7STugxkMdjVXNkYNJX/QDo6tuDV0kKm\nxHcM7v1jrlnyjeg2LuCZ3MLOf5EtvfyUW6VfsvWf23+zf0z8zxU5aliW0yDnad8d\n7g56Y+Zjk5AtQtsV73CAkIooAmR7u48ZDHFNfsIMickTPfk/b/1d1badsJgbyVuL\n/T6Q3HFK0+Xppe5En3HMsnzfuUi4H71lY2ZgUPVTVDGuCy4PNfdqvdr8b8L7kuc7\nVV67RzMTn+yMtRSKHcEywVT0rqsBaNlznQKjr2Gbk79noKICi8DOm3LO3EcLHUA6\nlYzIlVGDij3ne63eTGujW1vUvw2D6WTnmufqgs8iBl5Ewnb0OoyVBefBWfqi0ytk\ngQZa17dWfxE4xO/ecPV2hIow05b8BlhRq9NyE3Uiv5Uep61WzAG5Wufh41CqT8yC\n//8HJmYfgCkmwt30z8h0Us74gmSrlRC2E6TvP8T1g+D5KEs58m+Y6T2HWL/t1uez\nXTQI42Gl/uKmKxJZb2k5\n=sB6h\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c55e5566559ce76cae8c59461a9a36cef727e3fe\nparent ea4d1a4287c5fdf86289b175d86c11b363621687\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779399550 -0400\ncommitter GitHub <noreply@github.com> 1779399550 -0400\n\nfeat: add suspend/unsuspend user actions and clarify ban destructiveness (#83)\n\nWire up suspendpubkey/unsuspendpubkey/listsuspendedpubkeys NIP-86 RPC\nmethods as general-purpose moderation actions. Previously suspension was\nonly available through the age review flow.\n\n- Add suspendPubkey, unsuspendPubkey, listSuspendedPubkeys to adminApi\n- Add Suspend/Unsuspend buttons to UserActions (amber/green styling)\n- Add Suspended Users tab to UserManagement page\n- Track isSuspended state in useModerationStatus hook\n- Put Ban User behind a confirmation dialog with honest destructive\n  language (was \"Can be reversed\" — ban purges content from 16+ tables)\n- Update Unban tooltip to note purged content is not restored\n- Extract ConfirmDialog from DeleteConfirmDialog with configurable\n  pendingLabel prop\n- Document suspend_user exclusion from Zendesk resolutionActions\n  (suspension is a holding action, not a final resolution)",
+        "verified_at": "2026-05-21T21:39:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/2a9a2d69702eb5ed7d167cf8c895b6a2827dcfd6",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/2a9a2d69702eb5ed7d167cf8c895b6a2827dcfd6",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/2a9a2d69702eb5ed7d167cf8c895b6a2827dcfd6/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ea4d1a4287c5fdf86289b175d86c11b363621687",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/ea4d1a4287c5fdf86289b175d86c11b363621687",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/ea4d1a4287c5fdf86289b175d86c11b363621687"
+      }
+    ]
+  },
+  {
+    "sha": "ea4d1a4287c5fdf86289b175d86c11b363621687",
+    "node_id": "C_kwDOQjhVC9oAKGVhNGQxYTQyODdjNWZkZjg2Mjg5YjE3NWQ4NmMxMWIzNjM2MjE2ODc",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-21T16:34:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T16:34:22Z"
+      },
+      "message": "feat: wire age review actions to Keycast account suspension (#79) (#80)\n\n* feat: add keycast-client module with tests (#79)\n\nStandalone Keycast admin API client for account suspension.\nThree functions: suspendUser, unsuspendUser, banUser. Never throws --\nreturns KeycastResult { success, status?, error? }. Gracefully\ndegrades when not configured. Validates pubkey format before URL\ninterpolation. Handles SecretStoreSecret bindings.\n\n11 unit tests covering success, 4xx, 5xx, network error, missing\nconfig, empty token from unprovisioned SecretStoreSecret, and pubkey\nvalidation.\n\n* feat: wire Keycast suspend/unsuspend/ban into age review (#79)\n\nhandleUpdateAgeReviewCase: suspend on restricted_*, unsuspend on\ncleared, ban on denied_closed (reason: age_review_denied).\ncheckAgeReviewDeadlines cron: ban on auto-close (reason:\nage_review_expired). All calls are fire-and-forget side effects\nwrapped in try/catch -- never block primary operations.\n\nAgeReviewEnv extends both BulkModerateEnv and KeycastEnv.\nKEYCAST_URL and KEYCAST_SERVICE_TOKEN added to Env interface.\n7 integration tests covering all three transitions, graceful\ndegradation on failure/throw, and cron path assertion.\n\n* config: add Keycast and Zendesk deadline field to wrangler configs (#79)\n\nKEYCAST_URL var and KEYCAST_SERVICE_TOKEN Secrets Store binding added\nto all three environments (prod, staging, test). Inert until the\nsecret is provisioned in the shared store.\n\nZENDESK_FIELD_AGE_REVIEW_DEADLINE set to 16123853180303 in all three\nconfigs (folded from PR #77, already deployed).\n\n* fix(age-review): tighten Keycast transition handling\n\n* fix(age-review): always unsuspend and un-restrict on clear\n\nClearing a case that passed through intermediate states\n(submitted_for_review, needs_follow_up) after restriction skipped\nthe Keycast unsuspend and bulk un-age-restrict calls because the\ncheck required the immediately prior state to be restricted.\n\nBoth calls are idempotent, so fire them on every clear regardless\nof prior state.\n\nAdds regression tests for submitted_for_review → cleared and\nneeds_follow_up → cleared paths.\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "3ec49c849880535a6375e6961347160e3cd44b91",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/trees/3ec49c849880535a6375e6961347160e3cd44b91"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/git/commits/ea4d1a4287c5fdf86289b175d86c11b363621687",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDzQOCRC1aQ7uu5UhlAAA7ZcQAJ+mSgZT+Z5aS5YUSo0Fz4ZE\nFDega+AlGTc54PmRIMrxB9h0O6JRs1TvUKJA7gkCw1KyMuHd/ld8ed+6mzb4zEgl\ndRHIGINanPPut4FE5igZZUhF+fOXyH5dw0zLHvVsIsFJHidmDGUGvVr2i76FQKEc\nIMsxXzyfeOIM6k3kiCF/KBFNTSbS2114PW0mzoLdYni3OKvnTY20NQtKbGUuoqEx\nBlaSfeNq3q9uLwdl/MjjXnL+DHALU9sfdT1o6gT/GvHGdadjE3ynCTtojURobbE5\nyCMWx6PqUop5UNfb7kPnAW0jVmGVIC5KcCwbf0XXAWAnthF1OKmJEMDUFpPylyXK\ngldIlh2DL4mKhJSZRNBOoAZ7H71Dh0r59lMpsFGIaZb9puTxXwrsE8SzvbjFzG7Z\n6jWoCukMpTRvxYLhjIMz0X3TXj0C3mmp3fnCWpfTTA7QbY2iXzVyq4cNGds5U+Dw\nZaZ4RTdHhsJ41mGUn+REauYBJ829R2X2UWBFS+XvmP4ovMsHAMDlT5l4sb9+pfH/\nPAIXJ0o2AAnocBZ9vnXc6JG1SMFBy6y7P9j/2+baMYeXf20YY/xDhkvFae5tE8xV\n7ZMha8gjwAUJt0H6vqYws/zapZJi90cwDWAOOaZ8wangppGo/WRsKYvkAfHvkwGU\ndtgPK0dYug3DzAJ5qgcr\n=5cKr\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3ec49c849880535a6375e6961347160e3cd44b91\nparent f0e933e5dd0da535c82afdc7c29804860e13c12c\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779381262 -0400\ncommitter GitHub <noreply@github.com> 1779381262 -0300\n\nfeat: wire age review actions to Keycast account suspension (#79) (#80)\n\n* feat: add keycast-client module with tests (#79)\n\nStandalone Keycast admin API client for account suspension.\nThree functions: suspendUser, unsuspendUser, banUser. Never throws --\nreturns KeycastResult { success, status?, error? }. Gracefully\ndegrades when not configured. Validates pubkey format before URL\ninterpolation. Handles SecretStoreSecret bindings.\n\n11 unit tests covering success, 4xx, 5xx, network error, missing\nconfig, empty token from unprovisioned SecretStoreSecret, and pubkey\nvalidation.\n\n* feat: wire Keycast suspend/unsuspend/ban into age review (#79)\n\nhandleUpdateAgeReviewCase: suspend on restricted_*, unsuspend on\ncleared, ban on denied_closed (reason: age_review_denied).\ncheckAgeReviewDeadlines cron: ban on auto-close (reason:\nage_review_expired). All calls are fire-and-forget side effects\nwrapped in try/catch -- never block primary operations.\n\nAgeReviewEnv extends both BulkModerateEnv and KeycastEnv.\nKEYCAST_URL and KEYCAST_SERVICE_TOKEN added to Env interface.\n7 integration tests covering all three transitions, graceful\ndegradation on failure/throw, and cron path assertion.\n\n* config: add Keycast and Zendesk deadline field to wrangler configs (#79)\n\nKEYCAST_URL var and KEYCAST_SERVICE_TOKEN Secrets Store binding added\nto all three environments (prod, staging, test). Inert until the\nsecret is provisioned in the shared store.\n\nZENDESK_FIELD_AGE_REVIEW_DEADLINE set to 16123853180303 in all three\nconfigs (folded from PR #77, already deployed).\n\n* fix(age-review): tighten Keycast transition handling\n\n* fix(age-review): always unsuspend and un-restrict on clear\n\nClearing a case that passed through intermediate states\n(submitted_for_review, needs_follow_up) after restriction skipped\nthe Keycast unsuspend and bulk un-age-restrict calls because the\ncheck required the immediately prior state to be restricted.\n\nBoth calls are idempotent, so fire them on every clear regardless\nof prior state.\n\nAdds regression tests for submitted_for_review → cleared and\nneeds_follow_up → cleared paths.\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-21T16:34:22Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/ea4d1a4287c5fdf86289b175d86c11b363621687",
+    "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/ea4d1a4287c5fdf86289b175d86c11b363621687",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/ea4d1a4287c5fdf86289b175d86c11b363621687/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f0e933e5dd0da535c82afdc7c29804860e13c12c",
+        "url": "https://api.github.com/repos/divinevideo/divine-relay-manager/commits/f0e933e5dd0da535c82afdc7c29804860e13c12c",
+        "html_url": "https://github.com/divinevideo/divine-relay-manager/commit/f0e933e5dd0da535c82afdc7c29804860e13c12c"
+      }
+    ]
+  }
+]

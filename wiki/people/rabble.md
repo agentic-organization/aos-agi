@@ -77,6 +77,7 @@ Observed activity across 23 repos in the [divinevideo](https://github.com/divine
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/divinevideo/divine-mobile/`) shows **1 commit** by rabble on [[projects/divine-mobile]]: macOS data-protection keychain fix (#4574). Also active on divine-name-server commits in the same window.
 
 - 2026-05-14: Daily ingestion (`data/raw/github/daily/2026-05-14/divinevideo/divine-mobile/`) captured **16 commits** by [[people/rabble]] in the 24h window. Themes: mentions resolution across surfaces (#4353), For You feed routing through recommendations (#4309), plus additional UI and routing refinements in [[projects/divine-mobile]].
+- 2026-05-24: Daily ingestion (`data/raw/github/daily/2026-05-24/divinevideo/divine-mobile/`) shows **5 commits** by [[people/rabble]]: restore classic post form controls (#4686), make view tracking durable (#4677), revert BYOK nsec strip from Keycast OAuth (#4675), classify comment replies in notifications (#4673), recover collaborator invites from outgoing DM queue (#4642).
 
 ## Open questions
 - Full name, location, timezone?

@@ -1,0 +1,2647 @@
+[
+  {
+    "id": "12007196203",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/fix-authentication-deletion",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/fix-authentication-deletion",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:35:08Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9583479339",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 23,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/23",
+        "id": 3701066092,
+        "number": 23,
+        "head": {
+          "ref": "codex/fix-authentication-deletion",
+          "sha": "9b6e4b3cad9568a01fe7b4fe1637a047521bc123",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "32112485787e205eec48bf8d448a43b3ace9b697",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:35:05Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12007194678",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34297810314,
+      "ref": "refs/heads/master",
+      "head": "4f6088f3a27f1971dade6e2a84e035cab023f76c",
+      "before": "32112485787e205eec48bf8d448a43b3ace9b697"
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:35:06Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9582339544",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 136622811,
+      "login": "coderabbitai[bot]",
+      "display_login": "coderabbitai",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/issues/23",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/keycast",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/23/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/23/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/23/events",
+        "html_url": "https://github.com/marmot-protocol/keycast/pull/23",
+        "id": 4468167693,
+        "node_id": "PR_kwDONfLUZc7cmcls",
+        "number": 23,
+        "title": "Point production deploys at ghcr.io/marmot-protocol/keycast",
+        "user": {
+          "login": "erskingardner",
+          "id": 202880,
+          "node_id": "MDQ6VXNlcjIwMjg4MA==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/erskingardner",
+          "html_url": "https://github.com/erskingardner",
+          "followers_url": "https://api.github.com/users/erskingardner/followers",
+          "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+          "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+          "repos_url": "https://api.github.com/users/erskingardner/repos",
+          "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-05-18T10:05:16Z",
+        "updated_at": "2026-05-18T10:35:08Z",
+        "closed_at": "2026-05-18T10:35:05Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/23",
+          "html_url": "https://github.com/marmot-protocol/keycast/pull/23",
+          "diff_url": "https://github.com/marmot-protocol/keycast/pull/23.diff",
+          "patch_url": "https://github.com/marmot-protocol/keycast/pull/23.patch",
+          "merged_at": "2026-05-18T10:35:05Z"
+        },
+        "body": "## Summary\n- Updated production image defaults to `ghcr.io/marmot-protocol/keycast` in Compose and env examples.\n- Switched Docker OCI source metadata and deployment docs to the Marmot Protocol repository URL.\n- Added an upgrade note that GHCR must be public or the deploy host must authenticate if pulls return `unauthorized`.\n\n## Testing\n- `docker compose -f docker-compose.prod.yml config` renders the new `ghcr.io/marmot-protocol/keycast:master` image for API, web, and signer.\n- Verified no stale `erskingardner/keycast` references remain in the repo.\n- `git diff --check` passed.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Chores**\n  * Updated Docker image repository references to `marmot-protocol/keycast` across production deployment configurations.\n\n* **Documentation**\n  * Added troubleshooting guidance for GitHub Packages authentication during deployment.\n\n<!-- review_stack_entry_start -->\n\n[![Review Change Stack](https://storage.googleapis.com/coderabbit_public_assets/review-stack-in-coderabbit-ui.svg)](https://app.coderabbit.ai/change-stack/marmot-protocol/keycast/pull/23?utm_source=github_walkthrough&utm_medium=github&utm_campaign=change_stack)\n\n<!-- review_stack_entry_end -->\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/keycast/issues/23/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/23/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/issues/comments/4476577100",
+        "html_url": "https://github.com/marmot-protocol/keycast/pull/23#issuecomment-4476577100",
+        "issue_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/23",
+        "id": 4476577100,
+        "node_id": "IC_kwDONfLUZc8AAAABCtMlTA",
+        "user": {
+          "login": "coderabbitai[bot]",
+          "id": 136622811,
+          "node_id": "BOT_kgDOCCSy2w",
+          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-18T10:05:26Z",
+        "updated_at": "2026-05-18T10:07:03Z",
+        "body": "<!-- This is an auto-generated comment: summarize by coderabbit.ai -->\nNo actionable comments were generated in the recent review. 🎉\n\n<details>\n<summary>ℹ️ Recent review info</summary>\n\n<details>\n<summary>⚙️ Run configuration</summary>\n\n**Configuration used**: Organization UI\n\n**Review profile**: CHILL\n\n**Plan**: Pro\n\n**Run ID**: `053f11ec-b674-4a40-8d17-176c20491ea9`\n\n</details>\n\n<details>\n<summary>📥 Commits</summary>\n\nReviewing files that changed from the base of the PR and between 32112485787e205eec48bf8d448a43b3ace9b697 and 9b6e4b3cad9568a01fe7b4fe1637a047521bc123.\n\n</details>\n\n<details>\n<summary>📒 Files selected for processing (5)</summary>\n\n* `.env.example`\n* `Dockerfile`\n* `README.md`\n* `UPGRADE.md`\n* `docker-compose.prod.yml`\n\n</details>\n\n</details>\n\n---\n<!-- walkthrough_start -->\n\n## Walkthrough\n\nThis PR migrates the Docker image repository from `ghcr.io/erskingardner/keycast` to `ghcr.io/marmot-protocol/keycast`. All deployment configuration files (environment template, Dockerfile metadata, and production compose), plus README and UPGRADE documentation, are updated to reference the new repository.\n\n## Changes\n\n**Docker Image Repository Migration to marmot-protocol**\n\n| Layer / File(s) | Summary |\n|---|---|\n| **Deployment and build configuration** <br> `.env.example`, `Dockerfile`, `docker-compose.prod.yml` | The `KEYCAST_IMAGE` environment variable, Dockerfile metadata label, and the three keycast service images (`keycast-api`, `keycast-web`, `keycast-signer`) now reference `ghcr.io/marmot-protocol/keycast`. All services retain the same tag defaulting behavior (`${KEYCAST_IMAGE_TAG:-master}`). |\n| **Documentation and upgrade guidance** <br> `README.md`, `UPGRADE.md` | Deployment documentation is updated to show the new image repository. UPGRADE guide directs users to the new repository and adds troubleshooting guidance for GHCR `unauthorized` errors, recommending either public visibility or host authentication before retry. |\n\n---\n\n🎯 1 (Trivial) | ⏱️ ~3 minutes\n\n<!-- walkthrough_end -->\n<!-- pre_merge_checks_walkthrough_start -->\n\n<details>\n<summary>🚥 Pre-merge checks | ✅ 5</summary>\n\n<details>\n<summary>✅ Passed checks (5 passed)</summary>\n\n|         Check name         | Status   | Explanation                                                                                                                                                |\n| :------------------------: | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |\n|      Description Check     | ✅ Passed | Check skipped - CodeRabbit’s high-level summary is enabled.                                                                                                |\n|         Title check        | ✅ Passed | The title directly and precisely describes the main change: updating production deployment image references from erskingardner to marmot-protocol in GHCR. |\n|     Docstring Coverage     | ✅ Passed | No functions found in the changed files to evaluate docstring coverage. Skipping docstring coverage check.                                                 |\n|     Linked Issues check    | ✅ Passed | Check skipped because no linked issues were found for this pull request.                                                                                   |\n| Out of Scope Changes check | ✅ Passed | Check skipped because no linked issues were found for this pull request.                                                                                   |\n\n</details>\n\n<sub>✏️ Tip: You can configure your own custom pre-merge checks in the settings.</sub>\n\n</details>\n\n<!-- pre_merge_checks_walkthrough_end -->\n<!-- finishing_touch_checkbox_start -->\n\n<details>\n<summary>✨ Finishing Touches</summary>\n\n<details>\n<summary>🧪 Generate unit tests (beta)</summary>\n\n- [ ] <!-- {\"checkboxId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Create PR with unit tests\n- [ ] <!-- {\"checkboxId\": \"6ba7b810-9dad-11d1-80b4-00c04fd430c8\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Commit unit tests in branch `codex/fix-authentication-deletion`\n\n</details>\n\n</details>\n\n<!-- finishing_touch_checkbox_end -->\n<!-- tips_start -->\n\n---\n\n\n\n\n<sub>Comment `@coderabbitai help` to get the list of available commands and usage tips.</sub>\n\n<!-- tips_end -->\n<!-- internal state start -->\n\n\n<!-- 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= -->\n\n<!-- internal state end -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/keycast/issues/comments/4476577100/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": {
+          "id": 347564,
+          "client_id": "Iv1.6aaafe4fe882736b",
+          "slug": "coderabbitai",
+          "node_id": "A_kwHOB96YWc4ABU2s",
+          "owner": {
+            "login": "coderabbitai",
+            "id": 132028505,
+            "node_id": "O_kgDOB96YWQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/132028505?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/coderabbitai",
+            "html_url": "https://github.com/coderabbitai",
+            "followers_url": "https://api.github.com/users/coderabbitai/followers",
+            "following_url": "https://api.github.com/users/coderabbitai/following{/other_user}",
+            "gists_url": "https://api.github.com/users/coderabbitai/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/coderabbitai/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/coderabbitai/subscriptions",
+            "organizations_url": "https://api.github.com/users/coderabbitai/orgs",
+            "repos_url": "https://api.github.com/users/coderabbitai/repos",
+            "events_url": "https://api.github.com/users/coderabbitai/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/coderabbitai/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "name": "coderabbitai",
+          "description": "# Transforming Code Reviews with AI\r\n\r\n## Features\r\n\r\n**Automated Reviews**: Continuous reviews of the pull requests including incremental commits. \r\n\r\n**Summarization**: Generates high-level summary and a technical walkthrough of the PR changes. \r\n\r\n**Line-by-line review**: Provides line-by-line suggestions committable with one click.\r\n\r\n**Codebase verification**:  Verifies the impact on the overall codebase and identifies missing changes.\r\n\r\n**Insights into your code**:  Ask any questions on your codebase within the pull request \r\n\r\n**Chat about your code** : Chat with the bot around your code. The more you chat, the smarter it gets.\r\n\r\n**Issue Validation**:  Validates the PR against the linked issues and identifies other related issues \r\n\r\n\r\n\r\n",
+          "external_url": "https://coderabbit.ai?utm_source=cr_app&utm_medium=github",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "created_at": "2023-06-14T15:47:27Z",
+          "updated_at": "2026-03-14T07:58:44Z",
+          "permissions": {
+            "actions": "read",
+            "checks": "write",
+            "contents": "write",
+            "discussions": "read",
+            "issues": "write",
+            "members": "read",
+            "metadata": "read",
+            "pull_requests": "write",
+            "statuses": "write"
+          },
+          "events": [
+            "issues",
+            "issue_comment",
+            "label",
+            "organization",
+            "pull_request",
+            "pull_request_review",
+            "pull_request_review_comment",
+            "pull_request_review_thread",
+            "release",
+            "repository"
+          ]
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:05:26Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9582332458",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 23,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/23",
+        "id": 3701066092,
+        "number": 23,
+        "head": {
+          "ref": "codex/fix-authentication-deletion",
+          "sha": "9b6e4b3cad9568a01fe7b4fe1637a047521bc123",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "32112485787e205eec48bf8d448a43b3ace9b697",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:05:16Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12005935507",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/fix-authentication-deletion",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/fix-authentication-deletion",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:04:59Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12001572214",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/amber-auth-authorization-management",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/amber-auth-authorization-management",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:24:16Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12001571419",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34292207555,
+      "ref": "refs/heads/master",
+      "head": "32112485787e205eec48bf8d448a43b3ace9b697",
+      "before": "1f0610ca17e9d1f31633865bd441576fe6ca64d6"
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:24:14Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9578263353",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 22,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22",
+        "id": 3700398012,
+        "number": 22,
+        "head": {
+          "ref": "codex/amber-auth-authorization-management",
+          "sha": "24c8b75e2448380db49d8da84607f182fa003b93",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "1f0610ca17e9d1f31633865bd441576fe6ca64d6",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:24:13Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9578252151",
+    "type": "PullRequestReviewCommentEvent",
+    "actor": {
+      "id": 136622811,
+      "login": "coderabbitai[bot]",
+      "display_login": "coderabbitai",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "created",
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/comments/3257335654",
+        "pull_request_review_id": 4308397798,
+        "id": 3257335654,
+        "node_id": "PRRC_kwDONfLUZc7CJv9m",
+        "diff_hunk": "@@ -98,6 +98,32 @@ async function removeKey() {\n             toast.error(\"Failed to remove key\");\n         });\n }\n+\n+async function revokeAuthorization(authorization: AuthorizationWithRelations) {\n+    if (!user?.pubkey) return;\n+    if (!confirm(\"Revoke this authorization? Existing clients using it will lose access.\"))\n+        return;\n+\n+    const authorizationId = authorization.authorization.id;\n+    const endpoint = `/teams/${id}/keys/${pubkey}/authorizations/${authorizationId}`;\n+    const authHeader = await api.buildAuthHeader(endpoint, \"DELETE\", user.pubkey);\n+\n+    try {\n+        await api.delete(endpoint, {\n+            headers: {\n+                Authorization: authHeader,\n+            },\n+        });\n+\n+        authorizations = authorizations.filter(\n+            (item) => item.authorization.id !== authorizationId,\n+        );\n+        toast.success(\"Authorization revoked\");\n+    } catch (error) {\n+        const message = error instanceof Error ? error.message : String(error);\n+        toast.error(`Failed to revoke authorization: ${message}`);\n+    }",
+        "path": "web/src/routes/(app)/teams/[id]/keys/[pubkey]/+page.svelte",
+        "commit_id": "1de10e61ba7d0d142af1b2f38cebe7bce3dcc881",
+        "original_commit_id": "1de10e61ba7d0d142af1b2f38cebe7bce3dcc881",
+        "user": {
+          "login": "coderabbitai[bot]",
+          "id": 136622811,
+          "node_id": "BOT_kgDOCCSy2w",
+          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "_⚠️ Potential issue_ | _🟡 Minor_ | _⚡ Quick win_\n\n**Handle auth-header build failures in the revoke error path.**\n\n`buildAuthHeader` is currently outside `try/catch`, so revoke can fail without user-visible feedback if signing/header generation throws.\n\n \n\n<details>\n<summary>Proposed fix</summary>\n\n```diff\n async function revokeAuthorization(authorization: AuthorizationWithRelations) {\n     if (!user?.pubkey) return;\n     if (!confirm(\"Revoke this authorization? Existing clients using it will lose access.\"))\n         return;\n\n     const authorizationId = authorization.authorization.id;\n     const endpoint = `/teams/${id}/keys/${pubkey}/authorizations/${authorizationId}`;\n-    const authHeader = await api.buildAuthHeader(endpoint, \"DELETE\", user.pubkey);\n\n     try {\n+        const authHeader = await api.buildAuthHeader(endpoint, \"DELETE\", user.pubkey);\n         await api.delete(endpoint, {\n             headers: {\n                 Authorization: authHeader,\n             },\n         });\n```\n</details>\n\n<!-- suggestion_start -->\n\n<details>\n<summary>📝 Committable suggestion</summary>\n\n> ‼️ **IMPORTANT**\n> Carefully review the code before committing. Ensure that it accurately replaces the highlighted code, contains no missing lines, and has no issues with indentation. Thoroughly test & benchmark the code to ensure it meets the requirements.\n\n```suggestion\n    try {\n        const authHeader = await api.buildAuthHeader(endpoint, \"DELETE\", user.pubkey);\n        await api.delete(endpoint, {\n            headers: {\n                Authorization: authHeader,\n            },\n        });\n\n        authorizations = authorizations.filter(\n            (item) => item.authorization.id !== authorizationId,\n        );\n        toast.success(\"Authorization revoked\");\n    } catch (error) {\n        const message = error instanceof Error ? error.message : String(error);\n        toast.error(`Failed to revoke authorization: ${message}`);\n    }\n```\n\n</details>\n\n<!-- suggestion_end -->\n\n<details>\n<summary>🤖 Prompt for AI Agents</summary>\n\n```\nVerify each finding against current code. Fix only still-valid issues, skip the\nrest with a brief reason, keep changes minimal, and validate.\n\nIn `@web/src/routes/`(app)/teams/[id]/keys/[pubkey]/+page.svelte around lines 109\n- 125, The call to buildAuthHeader can throw but is currently outside the\ntry/catch so users get no feedback; move the await api.buildAuthHeader(endpoint,\n\"DELETE\", user.pubkey) into the same try block (or wrap it in its own try/catch)\nso any signing/header generation errors are caught and reported via toast.error,\nthen only call api.delete with the resulting authHeader and update\nauthorizations (referencing buildAuthHeader, api.delete, authorizationId,\nauthorizations, and toast.error).\n```\n\n</details>\n\n<!-- fingerprinting:phantom:poseidon:hawk -->\n\n<!-- This is an auto-generated comment by CodeRabbit -->\n\n✅ Addressed in commit 24c8b75",
+        "created_at": "2026-05-18T08:13:32Z",
+        "updated_at": "2026-05-18T08:21:20Z",
+        "html_url": "https://github.com/marmot-protocol/keycast/pull/22#discussion_r3257335654",
+        "pull_request_url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22",
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/marmot-protocol/keycast/pulls/comments/3257335654"
+          },
+          "html": {
+            "href": "https://github.com/marmot-protocol/keycast/pull/22#discussion_r3257335654"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22"
+          }
+        },
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/comments/3257335654/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "original_position": 28,
+        "position": 1,
+        "subject_type": "line"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22",
+        "id": 3700398012,
+        "number": 22,
+        "head": {
+          "ref": "codex/amber-auth-authorization-management",
+          "sha": "24c8b75e2448380db49d8da84607f182fa003b93",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "1f0610ca17e9d1f31633865bd441576fe6ca64d6",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:13:32Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12001370013",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34292009339,
+      "ref": "refs/heads/codex/amber-auth-authorization-management",
+      "head": "24c8b75e2448380db49d8da84607f182fa003b93",
+      "before": "f62a35f1e30e102fc48727930946ef408d7fbcb6"
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:19:20Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9577860693",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 136622811,
+      "login": "coderabbitai[bot]",
+      "display_login": "coderabbitai",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "review": {
+        "id": 4308397798,
+        "node_id": "PRR_kwDONfLUZc8AAAABAMzu5g",
+        "user": {
+          "login": "coderabbitai[bot]",
+          "id": 136622811,
+          "node_id": "BOT_kgDOCCSy2w",
+          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "**Actionable comments posted: 1**\n\n> [!CAUTION]\n> Some comments are outside the diff and can’t be posted inline due to platform limitations.\n> \n> \n> \n> <details>\n> <summary>⚠️ Outside diff range comments (1)</summary><blockquote>\n> \n> <details>\n> <summary>web/src/lib/components/SignInMenu.svelte (1)</summary><blockquote>\n> \n> `92-126`: _⚠️ Potential issue_ | _🟠 Major_ | _⚡ Quick win_\n> \n> **Clear `busy` when a connect session is canceled.**\n> \n> If the user clicks Cancel, Lines 133-135 abort the session and null out `connectController` before the `finally` block runs. That makes the guard on Line 121 fail, so `busy` never resets and the modal stays disabled until it is closed and reopened.\n> \n>  \n> \n> <details>\n> <summary>Suggested fix</summary>\n> \n> ```diff\n>  function cancelConnectLink() {\n>      connectController?.abort();\n>      connectSession?.cancel();\n> +    busy = null;\n>      connectController = null;\n>      connectSession = null;\n>      connectUri = \"\";\n>      connectError = null;\n>  }\n> ```\n> </details>\n> \n> \n> Also applies to: 132-139\n> \n> <details>\n> <summary>🤖 Prompt for AI Agents</summary>\n> \n> ```\n> Verify each finding against current code. Fix only still-valid issues, skip the\n> rest with a brief reason, keep changes minimal, and validate.\n> \n> In `@web/src/lib/components/SignInMenu.svelte` around lines 92 - 126, The finally\n> guard in startConnectSession prevents clearing busy when a session is canceled\n> because cancel logic nulls connectController before finally; update the finally\n> block in startConnectSession so it clears busy and resets connectController when\n> the current controller was used OR when the controller has been aborted (e.g.,\n> check controller.signal.aborted or similar), referencing connectController,\n> busy, controller and controller.signal.aborted to ensure busy is always cleared\n> on cancellation.\n> ```\n> \n> </details>\n> \n> </blockquote></details>\n> \n> </blockquote></details>\n\n<details>\n<summary>🤖 Prompt for all review comments with AI agents</summary>\n\n```\nVerify each finding against current code. Fix only still-valid issues, skip the\nrest with a brief reason, keep changes minimal, and validate.\n\nInline comments:\nIn `@web/src/routes/`(app)/teams/[id]/keys/[pubkey]/+page.svelte:\n- Around line 109-125: The call to buildAuthHeader can throw but is currently\noutside the try/catch so users get no feedback; move the await\napi.buildAuthHeader(endpoint, \"DELETE\", user.pubkey) into the same try block (or\nwrap it in its own try/catch) so any signing/header generation errors are caught\nand reported via toast.error, then only call api.delete with the resulting\nauthHeader and update authorizations (referencing buildAuthHeader, api.delete,\nauthorizationId, authorizations, and toast.error).\n\n---\n\nOutside diff comments:\nIn `@web/src/lib/components/SignInMenu.svelte`:\n- Around line 92-126: The finally guard in startConnectSession prevents clearing\nbusy when a session is canceled because cancel logic nulls connectController\nbefore finally; update the finally block in startConnectSession so it clears\nbusy and resets connectController when the current controller was used OR when\nthe controller has been aborted (e.g., check controller.signal.aborted or\nsimilar), referencing connectController, busy, controller and\ncontroller.signal.aborted to ensure busy is always cleared on cancellation.\n```\n\n</details>\n\n<details>\n<summary>🪄 Autofix (Beta)</summary>\n\nFix all unresolved CodeRabbit comments on this PR:\n\n- [ ] <!-- {\"checkboxId\": \"4b0d0e0a-96d7-4f10-b296-3a18ea78f0b9\"} --> Push a commit to this branch (recommended)\n- [ ] <!-- {\"checkboxId\": \"ff5b1114-7d8c-49e6-8ac1-43f82af23a33\"} --> Create a new PR with the fixes\n\n</details>\n\n---\n\n<details>\n<summary>ℹ️ Review info</summary>\n\n<details>\n<summary>⚙️ Run configuration</summary>\n\n**Configuration used**: Organization UI\n\n**Review profile**: CHILL\n\n**Plan**: Pro\n\n**Run ID**: `09730916-132c-49ee-812f-4633f92ba6e8`\n\n</details>\n\n<details>\n<summary>📥 Commits</summary>\n\nReviewing files that changed from the base of the PR and between 1f0610ca17e9d1f31633865bd441576fe6ca64d6 and 1de10e61ba7d0d142af1b2f38cebe7bce3dcc881.\n\n</details>\n\n<details>\n<summary>📒 Files selected for processing (14)</summary>\n\n* `api/src/api/http/routes.rs`\n* `api/src/api/http/teams.rs`\n* `api/src/api/types.rs`\n* `core/src/database.rs`\n* `core/src/types/authorization.rs`\n* `database/migrations/0003_add_authorization_name.sql`\n* `web/src/lib/components/AuthorizationCard.svelte`\n* `web/src/lib/components/SignInMenu.svelte`\n* `web/src/lib/nostr.ts`\n* `web/src/lib/types.ts`\n* `web/src/lib/utils/auth.ts`\n* `web/src/lib/utils/nostr.test.ts`\n* `web/src/routes/(app)/teams/[id]/keys/[pubkey]/+page.svelte`\n* `web/src/routes/(app)/teams/[id]/keys/[pubkey]/authorizations/new/+page.svelte`\n\n</details>\n\n</details>\n\n<!-- This is an auto-generated comment by CodeRabbit for review status -->",
+        "commit_id": "1de10e61ba7d0d142af1b2f38cebe7bce3dcc881",
+        "state": "commented",
+        "html_url": "https://github.com/marmot-protocol/keycast/pull/22#pullrequestreview-4308397798",
+        "pull_request_url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22",
+        "_links": {
+          "html": {
+            "href": "https://github.com/marmot-protocol/keycast/pull/22#pullrequestreview-4308397798"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22"
+          }
+        },
+        "submitted_at": "2026-05-18T08:13:33Z",
+        "updated_at": "2026-05-18T08:13:33Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22",
+        "id": 3700398012,
+        "number": 22,
+        "head": {
+          "ref": "codex/amber-auth-authorization-management",
+          "sha": "24c8b75e2448380db49d8da84607f182fa003b93",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "1f0610ca17e9d1f31633865bd441576fe6ca64d6",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:13:35Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9577860653",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 136622811,
+      "login": "coderabbitai[bot]",
+      "display_login": "coderabbitai",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "review": {
+        "id": 4308397798,
+        "node_id": "PRR_kwDONfLUZc8AAAABAMzu5g",
+        "user": {
+          "login": "coderabbitai[bot]",
+          "id": 136622811,
+          "node_id": "BOT_kgDOCCSy2w",
+          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "**Actionable comments posted: 1**\n\n> [!CAUTION]\n> Some comments are outside the diff and can’t be posted inline due to platform limitations.\n> \n> \n> \n> <details>\n> <summary>⚠️ Outside diff range comments (1)</summary><blockquote>\n> \n> <details>\n> <summary>web/src/lib/components/SignInMenu.svelte (1)</summary><blockquote>\n> \n> `92-126`: _⚠️ Potential issue_ | _🟠 Major_ | _⚡ Quick win_\n> \n> **Clear `busy` when a connect session is canceled.**\n> \n> If the user clicks Cancel, Lines 133-135 abort the session and null out `connectController` before the `finally` block runs. That makes the guard on Line 121 fail, so `busy` never resets and the modal stays disabled until it is closed and reopened.\n> \n>  \n> \n> <details>\n> <summary>Suggested fix</summary>\n> \n> ```diff\n>  function cancelConnectLink() {\n>      connectController?.abort();\n>      connectSession?.cancel();\n> +    busy = null;\n>      connectController = null;\n>      connectSession = null;\n>      connectUri = \"\";\n>      connectError = null;\n>  }\n> ```\n> </details>\n> \n> \n> Also applies to: 132-139\n> \n> <details>\n> <summary>🤖 Prompt for AI Agents</summary>\n> \n> ```\n> Verify each finding against current code. Fix only still-valid issues, skip the\n> rest with a brief reason, keep changes minimal, and validate.\n> \n> In `@web/src/lib/components/SignInMenu.svelte` around lines 92 - 126, The finally\n> guard in startConnectSession prevents clearing busy when a session is canceled\n> because cancel logic nulls connectController before finally; update the finally\n> block in startConnectSession so it clears busy and resets connectController when\n> the current controller was used OR when the controller has been aborted (e.g.,\n> check controller.signal.aborted or similar), referencing connectController,\n> busy, controller and controller.signal.aborted to ensure busy is always cleared\n> on cancellation.\n> ```\n> \n> </details>\n> \n> </blockquote></details>\n> \n> </blockquote></details>\n\n<details>\n<summary>🤖 Prompt for all review comments with AI agents</summary>\n\n```\nVerify each finding against current code. Fix only still-valid issues, skip the\nrest with a brief reason, keep changes minimal, and validate.\n\nInline comments:\nIn `@web/src/routes/`(app)/teams/[id]/keys/[pubkey]/+page.svelte:\n- Around line 109-125: The call to buildAuthHeader can throw but is currently\noutside the try/catch so users get no feedback; move the await\napi.buildAuthHeader(endpoint, \"DELETE\", user.pubkey) into the same try block (or\nwrap it in its own try/catch) so any signing/header generation errors are caught\nand reported via toast.error, then only call api.delete with the resulting\nauthHeader and update authorizations (referencing buildAuthHeader, api.delete,\nauthorizationId, authorizations, and toast.error).\n\n---\n\nOutside diff comments:\nIn `@web/src/lib/components/SignInMenu.svelte`:\n- Around line 92-126: The finally guard in startConnectSession prevents clearing\nbusy when a session is canceled because cancel logic nulls connectController\nbefore finally; update the finally block in startConnectSession so it clears\nbusy and resets connectController when the current controller was used OR when\nthe controller has been aborted (e.g., check controller.signal.aborted or\nsimilar), referencing connectController, busy, controller and\ncontroller.signal.aborted to ensure busy is always cleared on cancellation.\n```\n\n</details>\n\n<details>\n<summary>🪄 Autofix (Beta)</summary>\n\nFix all unresolved CodeRabbit comments on this PR:\n\n- [ ] <!-- {\"checkboxId\": \"4b0d0e0a-96d7-4f10-b296-3a18ea78f0b9\"} --> Push a commit to this branch (recommended)\n- [ ] <!-- {\"checkboxId\": \"ff5b1114-7d8c-49e6-8ac1-43f82af23a33\"} --> Create a new PR with the fixes\n\n</details>\n\n---\n\n<details>\n<summary>ℹ️ Review info</summary>\n\n<details>\n<summary>⚙️ Run configuration</summary>\n\n**Configuration used**: Organization UI\n\n**Review profile**: CHILL\n\n**Plan**: Pro\n\n**Run ID**: `09730916-132c-49ee-812f-4633f92ba6e8`\n\n</details>\n\n<details>\n<summary>📥 Commits</summary>\n\nReviewing files that changed from the base of the PR and between 1f0610ca17e9d1f31633865bd441576fe6ca64d6 and 1de10e61ba7d0d142af1b2f38cebe7bce3dcc881.\n\n</details>\n\n<details>\n<summary>📒 Files selected for processing (14)</summary>\n\n* `api/src/api/http/routes.rs`\n* `api/src/api/http/teams.rs`\n* `api/src/api/types.rs`\n* `core/src/database.rs`\n* `core/src/types/authorization.rs`\n* `database/migrations/0003_add_authorization_name.sql`\n* `web/src/lib/components/AuthorizationCard.svelte`\n* `web/src/lib/components/SignInMenu.svelte`\n* `web/src/lib/nostr.ts`\n* `web/src/lib/types.ts`\n* `web/src/lib/utils/auth.ts`\n* `web/src/lib/utils/nostr.test.ts`\n* `web/src/routes/(app)/teams/[id]/keys/[pubkey]/+page.svelte`\n* `web/src/routes/(app)/teams/[id]/keys/[pubkey]/authorizations/new/+page.svelte`\n\n</details>\n\n</details>\n\n<!-- This is an auto-generated comment by CodeRabbit for review status -->",
+        "commit_id": "1de10e61ba7d0d142af1b2f38cebe7bce3dcc881",
+        "state": "commented",
+        "html_url": "https://github.com/marmot-protocol/keycast/pull/22#pullrequestreview-4308397798",
+        "pull_request_url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22",
+        "_links": {
+          "html": {
+            "href": "https://github.com/marmot-protocol/keycast/pull/22#pullrequestreview-4308397798"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22"
+          }
+        },
+        "submitted_at": "2026-05-18T08:13:33Z",
+        "updated_at": "2026-05-18T08:13:33Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22",
+        "id": 3700398012,
+        "number": 22,
+        "head": {
+          "ref": "codex/amber-auth-authorization-management",
+          "sha": "24c8b75e2448380db49d8da84607f182fa003b93",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "1f0610ca17e9d1f31633865bd441576fe6ca64d6",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      },
+      "action": "updated"
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:13:35Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12001115116",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34291756910,
+      "ref": "refs/heads/codex/amber-auth-authorization-management",
+      "head": "f62a35f1e30e102fc48727930946ef408d7fbcb6",
+      "before": "1de10e61ba7d0d142af1b2f38cebe7bce3dcc881"
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:12:59Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9577646881",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 136622811,
+      "login": "coderabbitai[bot]",
+      "display_login": "coderabbitai",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/issues/22",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/keycast",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/22/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/22/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/22/events",
+        "html_url": "https://github.com/marmot-protocol/keycast/pull/22",
+        "id": 4467377952,
+        "node_id": "PR_kwDONfLUZc7cj5e8",
+        "number": 22,
+        "title": "Improve authorization management",
+        "user": {
+          "login": "erskingardner",
+          "id": 202880,
+          "node_id": "MDQ6VXNlcjIwMjg4MA==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/erskingardner",
+          "html_url": "https://github.com/erskingardner",
+          "followers_url": "https://api.github.com/users/erskingardner/followers",
+          "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+          "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+          "repos_url": "https://api.github.com/users/erskingardner/repos",
+          "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-05-18T08:07:27Z",
+        "updated_at": "2026-05-18T08:24:16Z",
+        "closed_at": "2026-05-18T08:24:13Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22",
+          "html_url": "https://github.com/marmot-protocol/keycast/pull/22",
+          "diff_url": "https://github.com/marmot-protocol/keycast/pull/22.diff",
+          "patch_url": "https://github.com/marmot-protocol/keycast/pull/22.patch",
+          "merged_at": "2026-05-18T08:24:13Z"
+        },
+        "body": "## Summary\n- route Amber sign-in through the existing Nostr Connect flow and update the button copy\n- add optional authorization nicknames with a SQLite migration and UI display\n- add API and UI support to revoke authorizations, including scoped backend deletion of redeemed user rows\n\n## Validation\n- cargo fmt --check\n- cargo check --workspace\n- cargo test --workspace (with temporary master.key, removed afterward)\n- cd web && bun run check\n- cd web && bun test\n- cd web && bun run build\n- git diff --check\n- browser smoke check for app shell/sign-in modal\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Assign nicknames to team key authorizations for clearer identification.\n  * Revoke individual authorizations from the UI.\n\n* **Bug Fixes**\n  * Authorization nicknames are trimmed and empty values are stored as null.\n\n* **Sign‑in**\n  * “Connect with Amber” sign-in flow added with improved session handling.\n\n* **Tests**\n  * Expanded coverage for authorization migrations, creation, revocation, and related lifecycle operations.\n\n<!-- review_stack_entry_start -->\n\n[![Review Change Stack](https://storage.googleapis.com/coderabbit_public_assets/review-stack-in-coderabbit-ui.svg)](https://app.coderabbit.ai/change-stack/marmot-protocol/keycast/pull/22?utm_source=github_walkthrough&utm_medium=github&utm_campaign=change_stack)\n\n<!-- review_stack_entry_end -->\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/keycast/issues/22/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/22/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/issues/comments/4475656992",
+        "html_url": "https://github.com/marmot-protocol/keycast/pull/22#issuecomment-4475656992",
+        "issue_url": "https://api.github.com/repos/marmot-protocol/keycast/issues/22",
+        "id": 4475656992,
+        "node_id": "IC_kwDONfLUZc8AAAABCsUbIA",
+        "user": {
+          "login": "coderabbitai[bot]",
+          "id": 136622811,
+          "node_id": "BOT_kgDOCCSy2w",
+          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-18T08:07:41Z",
+        "updated_at": "2026-05-18T08:24:04Z",
+        "body": "<!-- This is an auto-generated comment: summarize by coderabbit.ai -->\nNo actionable comments were generated in the recent review. 🎉\n\n<details>\n<summary>ℹ️ Recent review info</summary>\n\n<details>\n<summary>⚙️ Run configuration</summary>\n\n**Configuration used**: Organization UI\n\n**Review profile**: CHILL\n\n**Plan**: Pro\n\n**Run ID**: `597b9d0c-d618-4374-b71c-0add27b46de4`\n\n</details>\n\n<details>\n<summary>📥 Commits</summary>\n\nReviewing files that changed from the base of the PR and between f62a35f1e30e102fc48727930946ef408d7fbcb6 and 24c8b75e2448380db49d8da84607f182fa003b93.\n\n</details>\n\n<details>\n<summary>📒 Files selected for processing (2)</summary>\n\n* `web/src/lib/components/SignInMenu.svelte`\n* `web/src/routes/(app)/teams/[id]/keys/[pubkey]/+page.svelte`\n\n</details>\n\n<details>\n<summary>🚧 Files skipped from review as they are similar to previous changes (1)</summary>\n\n* web/src/routes/(app)/teams/[id]/keys/[pubkey]/+page.svelte\n\n</details>\n\n</details>\n\n---\n<!-- walkthrough_start -->\n\n## Walkthrough\n\nAdds optional authorization names (DB + types), persists trimmed nicknames on create, exposes DELETE endpoint to revoke authorizations (transactionally removes redemptions), updates UI to create and revoke nicknamed authorizations, and refactors Nostr Connect signin to accept signerKind options and adjust Amber support detection.\n\n## Changes\n\n**Authorization Naming and Revocation**\n\n| Layer / File(s) | Summary |\n|---|---|\n| **Database schema and backend data model** <br> `database/migrations/0003_add_authorization_name.sql`, `core/src/types/authorization.rs`, `core/src/database.rs` | Migration adds nullable `name` TEXT column to `authorizations`; `Authorization` struct gains optional `name` field populated via `FromRow`; test fixtures and assertions updated to include the new column. |\n| **API request contracts** <br> `api/src/api/types.rs`, `web/src/lib/types.ts` | `AddAuthorizationRequest.name` becomes `Option<String>` with `#[serde(default)]`; web `Authorization` type gains nullable `name` field. |\n| **Authorization endpoints and routes** <br> `api/src/api/http/routes.rs`, `api/src/api/http/teams.rs` | DELETE route wired to `remove_authorization`; `add_authorization` normalizes incoming name (trim + empty-to-None); `remove_authorization` validates admin access, resolves stored key, ensures authorization exists, deletes related `user_authorizations` and authorization record within transaction. |\n| **Authorization card component with revoke** <br> `web/src/lib/components/AuthorizationCard.svelte` | Accepts `onRevoke` callback prop; displays authorization `name` with `secret` on separate line when name exists, otherwise secret only; replaces copy button with revoke button that disables during async revocation. |\n| **Authorization creation and revocation pages** <br> `web/src/routes/(app)/teams/[id]/keys/[pubkey]/authorizations/new/+page.svelte`, `web/src/routes/(app)/teams/[id]/keys/[pubkey]/+page.svelte` | New page collects nickname input, trims and includes `name` as `null` when empty in POST payload; key page adds `revokeAuthorization` handler confirming action, calling DELETE endpoint, filtering local state, and displaying success/error toasts. |\n| **Backend tests for authorization features** <br> `api/src/api/http/teams.rs` | Test module adds `TestKeyManager` pass-through implementation; test setup applies migration and sets global `KEYCAST_STATE`; `add_authorization` test verifies name persistence and trimming; `remove_authorization` tests verify targeted deletion and access control rejection via mismatched key paths. |\n\n**Nostr Connect Refactoring**\n\n| Layer / File(s) | Summary |\n|---|---|\n| **Nostr signer options and support detection** <br> `web/src/lib/nostr.ts` | New `NostrConnectSigninOptions` type parameterizes `relays` and `signerKind`; `createNostrConnectSigninSession` accepts options object instead of array parameter; `isAmberSigninSupported()` checks Android user agent instead of `AmberClipboardSigner.SUPPORTED`; `getAmberUser()` function removed. |\n| **Sign-in menu Nostr Connect integration** <br> `web/src/lib/components/SignInMenu.svelte` | New `ConnectSessionStartOptions` type with `autoOpen`, `busyState`, and optional `signerKind`; `BusyState` type expanded to include `\"amber\"`; `startConnectLink` and new `startAmberConnect` delegate to generalized `startConnectSession`; Amber option retitled to \"Connect with Amber\" with updated readiness and busy text. |\n| **Auth utilities and sign-in method simplification** <br> `web/src/lib/utils/auth.ts` | `SigninMethod` union reduced from `\"extension\" | \"nip46-bunker\" | \"amber\"` to `\"extension\" | \"nip46-bunker\"`; Amber imports removed; `userFromSigninMethod` handles only remaining cases. |\n| **Nostr Connect test coverage** <br> `web/src/lib/utils/nostr.test.ts` | Imports `createNostrConnectSigninSession`; adds test verifying Amber signer session creation produces `nostrconnect:` URI with correct `perms` query parameter. |\n\n🎯 3 (Moderate) | ⏱️ ~25 minutes\n\n<!-- walkthrough_end -->\n<!-- pre_merge_checks_walkthrough_start -->\n\n<details>\n<summary>🚥 Pre-merge checks | ✅ 4 | ❌ 1</summary>\n\n### ❌ Failed checks (1 warning)\n\n|     Check name     | Status     | Explanation                                                                           | Resolution                                                                         |\n| :----------------: | :--------- | :------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------- |\n| Docstring Coverage | ⚠️ Warning | Docstring coverage is 25.00% which is insufficient. The required threshold is 80.00%. | Write docstrings for the functions missing them to satisfy the coverage threshold. |\n\n<details>\n<summary>✅ Passed checks (4 passed)</summary>\n\n|         Check name         | Status   | Explanation                                                                                                                                                               |\n| :------------------------: | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\n|      Description Check     | ✅ Passed | Check skipped - CodeRabbit’s high-level summary is enabled.                                                                                                               |\n|         Title check        | ✅ Passed | The title 'Improve authorization management' accurately summarizes the main changes: adding authorization nicknames, revoke functionality, and Nostr Connect integration. |\n|     Linked Issues check    | ✅ Passed | Check skipped because no linked issues were found for this pull request.                                                                                                  |\n| Out of Scope Changes check | ✅ Passed | Check skipped because no linked issues were found for this pull request.                                                                                                  |\n\n</details>\n\n<sub>✏️ Tip: You can configure your own custom pre-merge checks in the settings.</sub>\n\n</details>\n\n<!-- pre_merge_checks_walkthrough_end -->\n<!-- finishing_touch_checkbox_start -->\n\n<details>\n<summary>✨ Finishing Touches</summary>\n\n<details>\n<summary>🧪 Generate unit tests (beta)</summary>\n\n- [ ] <!-- {\"checkboxId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Create PR with unit tests\n- [ ] <!-- {\"checkboxId\": \"6ba7b810-9dad-11d1-80b4-00c04fd430c8\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Commit unit tests in branch `codex/amber-auth-authorization-management`\n\n</details>\n\n</details>\n\n<!-- finishing_touch_checkbox_end -->\n<!-- This is an auto-generated comment: all tool run failures by coderabbit.ai -->\n\n> [!WARNING]\n> There were issues while running some tools. Please review the errors and either fix the tool's configuration or disable the tool if it's a critical failure.\n> \n> <details>\n> <summary>🔧 ESLint</summary>\n> \n> > If the error stems from missing dependencies, add them to the package.json file. For unrecoverable errors (e.g., due to private dependencies), disable the tool in the CodeRabbit configuration.\n> \n> ESLint skipped: no ESLint configuration detected in root package.json. To enable, add `eslint` to devDependencies.\n> \n> \n> \n> </details>\n\n<!-- end of auto-generated comment: all tool run failures by coderabbit.ai -->\n<!-- tips_start -->\n\n---\n\n\n\n\n<sub>Comment `@coderabbitai help` to get the list of available commands and usage tips.</sub>\n\n<!-- tips_end -->\n<!-- internal state start -->\n\n\n<!-- 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 -->\n\n<!-- internal state end -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/keycast/issues/comments/4475656992/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": {
+          "id": 347564,
+          "client_id": "Iv1.6aaafe4fe882736b",
+          "slug": "coderabbitai",
+          "node_id": "A_kwHOB96YWc4ABU2s",
+          "owner": {
+            "login": "coderabbitai",
+            "id": 132028505,
+            "node_id": "O_kgDOB96YWQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/132028505?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/coderabbitai",
+            "html_url": "https://github.com/coderabbitai",
+            "followers_url": "https://api.github.com/users/coderabbitai/followers",
+            "following_url": "https://api.github.com/users/coderabbitai/following{/other_user}",
+            "gists_url": "https://api.github.com/users/coderabbitai/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/coderabbitai/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/coderabbitai/subscriptions",
+            "organizations_url": "https://api.github.com/users/coderabbitai/orgs",
+            "repos_url": "https://api.github.com/users/coderabbitai/repos",
+            "events_url": "https://api.github.com/users/coderabbitai/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/coderabbitai/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "name": "coderabbitai",
+          "description": "# Transforming Code Reviews with AI\r\n\r\n## Features\r\n\r\n**Automated Reviews**: Continuous reviews of the pull requests including incremental commits. \r\n\r\n**Summarization**: Generates high-level summary and a technical walkthrough of the PR changes. \r\n\r\n**Line-by-line review**: Provides line-by-line suggestions committable with one click.\r\n\r\n**Codebase verification**:  Verifies the impact on the overall codebase and identifies missing changes.\r\n\r\n**Insights into your code**:  Ask any questions on your codebase within the pull request \r\n\r\n**Chat about your code** : Chat with the bot around your code. The more you chat, the smarter it gets.\r\n\r\n**Issue Validation**:  Validates the PR against the linked issues and identifies other related issues \r\n\r\n\r\n\r\n",
+          "external_url": "https://coderabbit.ai?utm_source=cr_app&utm_medium=github",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "created_at": "2023-06-14T15:47:27Z",
+          "updated_at": "2026-03-14T07:58:44Z",
+          "permissions": {
+            "actions": "read",
+            "checks": "write",
+            "contents": "write",
+            "discussions": "read",
+            "issues": "write",
+            "members": "read",
+            "metadata": "read",
+            "pull_requests": "write",
+            "statuses": "write"
+          },
+          "events": [
+            "issues",
+            "issue_comment",
+            "label",
+            "organization",
+            "pull_request",
+            "pull_request_review",
+            "pull_request_review_comment",
+            "pull_request_review_thread",
+            "release",
+            "repository"
+          ]
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:07:41Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9577637819",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 22,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/22",
+        "id": 3700398012,
+        "number": 22,
+        "head": {
+          "ref": "codex/amber-auth-authorization-management",
+          "sha": "24c8b75e2448380db49d8da84607f182fa003b93",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "1f0610ca17e9d1f31633865bd441576fe6ca64d6",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:07:27Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12000882879",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/amber-auth-authorization-management",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/amber-auth-authorization-management",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:07:14Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9555911793",
+    "type": "MemberEvent",
+    "actor": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "display_login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "member": {
+        "login": "erskingardner",
+        "id": 202880,
+        "node_id": "MDQ6VXNlcjIwMjg4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/202880?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/erskingardner",
+        "html_url": "https://github.com/erskingardner",
+        "followers_url": "https://api.github.com/users/erskingardner/followers",
+        "following_url": "https://api.github.com/users/erskingardner/following{/other_user}",
+        "gists_url": "https://api.github.com/users/erskingardner/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/erskingardner/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/erskingardner/subscriptions",
+        "organizations_url": "https://api.github.com/users/erskingardner/orgs",
+        "repos_url": "https://api.github.com/users/erskingardner/repos",
+        "events_url": "https://api.github.com/users/erskingardner/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/erskingardner/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "action": "added"
+    },
+    "public": true,
+    "created_at": "2026-05-17T12:58:14Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11971774071",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/fix-amber-login-and-team",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/fix-amber-login-and-team",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-17T12:52:33Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9555827948",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 21,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/21",
+        "id": 3696959225,
+        "number": 21,
+        "head": {
+          "ref": "codex/fix-amber-login-and-team",
+          "sha": "28419d8c0f6850523e14afa148d3c16519f76c47",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "0ebf1461f8b5ee6bc1e8bbb75e19b8ff59a10de9",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-17T12:52:27Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11971772121",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34262409544,
+      "ref": "refs/heads/master",
+      "head": "1f0610ca17e9d1f31633865bd441576fe6ca64d6",
+      "before": "0ebf1461f8b5ee6bc1e8bbb75e19b8ff59a10de9"
+    },
+    "public": true,
+    "created_at": "2026-05-17T12:52:28Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11969096327",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34259736406,
+      "ref": "refs/heads/codex/fix-amber-login-and-team",
+      "head": "28419d8c0f6850523e14afa148d3c16519f76c47",
+      "before": "07dc2b63ff4f5ca50740efc137e09766860bf2be"
+    },
+    "public": true,
+    "created_at": "2026-05-17T10:55:42Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11969052196",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34259692169,
+      "ref": "refs/heads/codex/fix-amber-login-and-team",
+      "head": "07dc2b63ff4f5ca50740efc137e09766860bf2be",
+      "before": "90959b391623ee6998ed71cda7d30cfe8e2794c5"
+    },
+    "public": true,
+    "created_at": "2026-05-17T10:53:31Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11968025107",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34258663895,
+      "ref": "refs/heads/codex/fix-amber-login-and-team",
+      "head": "90959b391623ee6998ed71cda7d30cfe8e2794c5",
+      "before": "3632fad1cb1c004d15f1d6a931c89992c743c406"
+    },
+    "public": true,
+    "created_at": "2026-05-17T10:03:31Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9553420696",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 21,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/21",
+        "id": 3696959225,
+        "number": 21,
+        "head": {
+          "ref": "codex/fix-amber-login-and-team",
+          "sha": "28419d8c0f6850523e14afa148d3c16519f76c47",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "0ebf1461f8b5ee6bc1e8bbb75e19b8ff59a10de9",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-17T09:53:06Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11967776553",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/fix-amber-login-and-team",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/fix-amber-login-and-team",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-17T09:52:15Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9539377848",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 20,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/20",
+        "id": 3694735015,
+        "number": 20,
+        "head": {
+          "ref": "codex/nip46-amber-signin",
+          "sha": "52694de30258ce3e399c7f763c6ff293ad801cd9",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "cb6e7d42e48366efd5583218fd2305e16c93b34c",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-16T15:03:46Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11945400684",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34236008100,
+      "ref": "refs/heads/master",
+      "head": "0ebf1461f8b5ee6bc1e8bbb75e19b8ff59a10de9",
+      "before": "cb6e7d42e48366efd5583218fd2305e16c93b34c"
+    },
+    "public": true,
+    "created_at": "2026-05-16T15:03:47Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9539058205",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 20,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/20",
+        "id": 3694735015,
+        "number": 20,
+        "head": {
+          "ref": "codex/nip46-amber-signin",
+          "sha": "52694de30258ce3e399c7f763c6ff293ad801cd9",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "cb6e7d42e48366efd5583218fd2305e16c93b34c",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-16T14:41:09Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11944837586",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/nip46-amber-signin",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/nip46-amber-signin",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-16T14:40:42Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9514607955",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 133520431,
+      "login": "cammclain",
+      "display_login": "cammclain",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cammclain",
+      "avatar_url": "https://avatars.githubusercontent.com/u/133520431?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-15T16:48:59Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11910474822",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/audit-nostr-reads-and-image",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/audit-nostr-reads-and-image",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-15T15:41:17Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11910471856",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34201094157,
+      "ref": "refs/heads/master",
+      "head": "cb6e7d42e48366efd5583218fd2305e16c93b34c",
+      "before": "f6dc4e6816d5f120b3f041a268dd8c181f279245"
+    },
+    "public": true,
+    "created_at": "2026-05-15T15:41:13Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9512200024",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 19,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/19",
+        "id": 3690519986,
+        "number": 19,
+        "head": {
+          "ref": "codex/audit-nostr-reads-and-image",
+          "sha": "84fbb1e219f1044fcc54ab89644f708e4416842b",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "f6dc4e6816d5f120b3f041a268dd8c181f279245",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T15:41:12Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11910408113",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34201030439,
+      "ref": "refs/heads/codex/audit-nostr-reads-and-image",
+      "head": "84fbb1e219f1044fcc54ab89644f708e4416842b",
+      "before": "2e1f885f8f40e9f30085d36799c76919f75a4e93"
+    },
+    "public": true,
+    "created_at": "2026-05-15T15:39:39Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9511715442",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 19,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/19",
+        "id": 3690519986,
+        "number": 19,
+        "head": {
+          "ref": "codex/audit-nostr-reads-and-image",
+          "sha": "84fbb1e219f1044fcc54ab89644f708e4416842b",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "f6dc4e6816d5f120b3f041a268dd8c181f279245",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T15:27:57Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11909718788",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/audit-nostr-reads-and-image",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/audit-nostr-reads-and-image",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-15T15:22:48Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11902738577",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/fix-csp-login-inline-script",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/fix-csp-login-inline-script",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-15T12:38:52Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11902729558",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34193360241,
+      "ref": "refs/heads/master",
+      "head": "f6dc4e6816d5f120b3f041a268dd8c181f279245",
+      "before": "7a3996ce1e0826f6287186148f0463a2220efbdf"
+    },
+    "public": true,
+    "created_at": "2026-05-15T12:38:38Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9505218726",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 18,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/18",
+        "id": 3689567502,
+        "number": 18,
+        "head": {
+          "ref": "codex/fix-csp-login-inline-script",
+          "sha": "a1ba77df5a72612ce92e0f816d871c198436a6c1",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "7a3996ce1e0826f6287186148f0463a2220efbdf",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T12:38:37Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9505141102",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 18,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/18",
+        "id": 3689567502,
+        "number": 18,
+        "head": {
+          "ref": "codex/fix-csp-login-inline-script",
+          "sha": "a1ba77df5a72612ce92e0f816d871c198436a6c1",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "7a3996ce1e0826f6287186148f0463a2220efbdf",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T12:36:30Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11902639722",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/fix-csp-login-inline-script",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/fix-csp-login-inline-script",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-15T12:36:20Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11901378429",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/docker-image-publishing",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/docker-image-publishing",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-15T12:03:27Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11901375219",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34192006067,
+      "ref": "refs/heads/master",
+      "head": "7a3996ce1e0826f6287186148f0463a2220efbdf",
+      "before": "6538fff284390703625de908d13c1041c824f947"
+    },
+    "public": true,
+    "created_at": "2026-05-15T12:03:22Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9503997085",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 17,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/17",
+        "id": 3689273927,
+        "number": 17,
+        "head": {
+          "ref": "codex/docker-image-publishing",
+          "sha": "47cd678ef95028a12d8cb7eb9278461f3569efe7",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "6538fff284390703625de908d13c1041c824f947",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T12:03:21Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11901088274",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34191719108,
+      "ref": "refs/heads/codex/docker-image-publishing",
+      "head": "47cd678ef95028a12d8cb7eb9278461f3569efe7",
+      "before": "582ff2970056dbbc888f997833a034e58afa5102"
+    },
+    "public": true,
+    "created_at": "2026-05-15T11:56:20Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9503225227",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 17,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/17",
+        "id": 3689273927,
+        "number": 17,
+        "head": {
+          "ref": "codex/docker-image-publishing",
+          "sha": "47cd678ef95028a12d8cb7eb9278461f3569efe7",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "6538fff284390703625de908d13c1041c824f947",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T11:39:59Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11900488748",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/docker-image-publishing",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/docker-image-publishing",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-15T11:39:42Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11895883910",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/keycast-hardening-upgrade-tests",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/keycast-hardening-upgrade-tests",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-15T09:36:03Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11895882114",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34186511374,
+      "ref": "refs/heads/master",
+      "head": "6538fff284390703625de908d13c1041c824f947",
+      "before": "c30a6ad62d909937304ae32be9096cb900e7e1ee"
+    },
+    "public": true,
+    "created_at": "2026-05-15T09:36:00Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9499067334",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 16,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/16",
+        "id": 3688571765,
+        "number": 16,
+        "head": {
+          "ref": "codex/keycast-hardening-upgrade-tests",
+          "sha": "6a0ccce70611dd69c5abd2d10b7dc07581890270",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "c30a6ad62d909937304ae32be9096cb900e7e1ee",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T09:35:59Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11895290685",
+    "type": "PushEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "repository_id": 905106533,
+      "push_id": 34185920059,
+      "ref": "refs/heads/codex/keycast-hardening-upgrade-tests",
+      "head": "6a0ccce70611dd69c5abd2d10b7dc07581890270",
+      "before": "a81e921e84a49631eb7c740a53c7d770978ad7a9"
+    },
+    "public": true,
+    "created_at": "2026-05-15T09:20:36Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9498453435",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 16,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/keycast/pulls/16",
+        "id": 3688571765,
+        "number": 16,
+        "head": {
+          "ref": "codex/keycast-hardening-upgrade-tests",
+          "sha": "6a0ccce70611dd69c5abd2d10b7dc07581890270",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "c30a6ad62d909937304ae32be9096cb900e7e1ee",
+          "repo": {
+            "id": 905106533,
+            "url": "https://api.github.com/repos/marmot-protocol/keycast",
+            "name": "keycast"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T09:18:23Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11895185497",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 905106533,
+      "name": "marmot-protocol/keycast",
+      "url": "https://api.github.com/repos/marmot-protocol/keycast"
+    },
+    "payload": {
+      "ref": "codex/keycast-hardening-upgrade-tests",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/keycast-hardening-upgrade-tests",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-15T09:17:54Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  }
+]

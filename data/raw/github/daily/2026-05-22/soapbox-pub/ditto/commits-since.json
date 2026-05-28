@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "93cccda024fe031cddedb045a50cb218b428dd71",
+    "node_id": "C_kwDOL5Eek9oAKDkzY2NjZGEwMjRmZTAzMWNkZGVkYjA0NWE1MGNiMjE4YjQyOGRkNzE",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T04:05:25Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T04:05:55Z"
+      },
+      "message": "Auto-finalize tapKeySig-only Taproot inputs on PSBT v2 extract\n\nWhen NIP-07 sends a BIP-375 silent-payment PSBT to a signer, the signer\nfollows BIP-174's split between 'signed' and 'finalized': it records\nthe Schnorr signature in PSBT_IN_TAP_KEY_SIG (0x13) and leaves the\nfinalizing step (wrapping that signature into a single-item witness\nstack per BIP-341 §'Validation') to a separate Finalizer role.\n\nDitto's wallet was treating that PSBT shape as un-finalized and\nrefusing to extract it with 'input N is not finalized (no scriptSig or\nwitness)'. Symptom in the UI: send to an sp1… address via NIP-07\nfails at the extraction step.\n\nThe parser now surfaces tapKeySig on ParsedPsbtV2Input, and\nextractTxFromSignedPsbtV2 auto-finalizes Taproot key-path inputs by\nsetting finalScriptWitness = [tapKeySig] before the on-the-wire checks.\nThat's what @scure/btc-signer's own finalizeIdx does for taproot\nkey-path spends.\n\nThe local NSecSignerBtc path is unaffected — it already calls\ntx.finalize() before re-emitting the PSBT v2, so finalScriptWitness is\npopulated and the new auto-finalize branch is inert. This is the first\nend-to-end NIP-07 SP send the extractor has actually seen — the latent\nbug has been in the silent-payment path since it was introduced in\n9be302e9.",
+      "tree": {
+        "sha": "d3979a26f99a1f111ee77a705814453b6e49f7e5",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/d3979a26f99a1f111ee77a705814453b6e49f7e5"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/93cccda024fe031cddedb045a50cb218b428dd71",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoP1iMACgkQchHR+ZdE\n+7feWhAAoycN5z2MFg+7PgUr2XOsyPXSOeop2ezA/eHFZq4m9WcvqtMIoMGCuaFx\nmFeZ0b45/KXOg6AbgDIxZ7IfyctG1YLeFes4PNAJNbN/ZL7xvTaSk22YP5TrjYgE\nuuYfUCQNhUSerA4kPniUHCN7egCykxdepkeagP9NJrumnIK/2fIdRfgeO1cWH8p9\nLvwg6JpcYYfcOggrlWDiY0cE5WScOdtxVIRwhQo5SE6pf9e99lO+cfVkDRMyAqh1\n17t8yMx8n/9DGdo+6CA931hOR+xDJE2+Srjm4+guUGrhLiYrWLyCA1vjoUIM+QYj\nFX33uw/rbJs8VjWfdItU+kkLKt34GGXRlTbhFnzjV9/TB2WpUYAWt7+B7mmAqY0Y\nZ9sDQPpC8oMoNd9220uN6EvzjLHeFjo+YONagToP+MD+oyf4QhiSHzyaaKrTYHoy\nIOpxmo1RYLbrdFIrDo9nKPuyvxcqpE2xhle5Eb2tO9HLRXDBcDrMH8bM69OlWDpM\nBoTbZS/g3a+DmTaVuCZRzj//Bv160fvnPWFwK05pnHIgX4igX6SgwiVcGWC2YwmH\nuBBurXYh8IHHv17LjfXRtbc7sVEDKuG8TbDKNAYaD5jN+i9iuX9XHtC4CtSsjJx6\nxMmz8DuyMQAkcRkKAI9cCOjBm67RuQDSZC1gk0rtCn209BTzbwU=\n=/wie\n-----END PGP SIGNATURE-----",
+        "payload": "tree d3979a26f99a1f111ee77a705814453b6e49f7e5\nparent c10f9d5f6c2a7f2bedead957775eb39eb17b64c3\nauthor Alex Gleason <alex@alexgleason.me> 1779422725 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779422755 -0500\n\nAuto-finalize tapKeySig-only Taproot inputs on PSBT v2 extract\n\nWhen NIP-07 sends a BIP-375 silent-payment PSBT to a signer, the signer\nfollows BIP-174's split between 'signed' and 'finalized': it records\nthe Schnorr signature in PSBT_IN_TAP_KEY_SIG (0x13) and leaves the\nfinalizing step (wrapping that signature into a single-item witness\nstack per BIP-341 §'Validation') to a separate Finalizer role.\n\nDitto's wallet was treating that PSBT shape as un-finalized and\nrefusing to extract it with 'input N is not finalized (no scriptSig or\nwitness)'. Symptom in the UI: send to an sp1… address via NIP-07\nfails at the extraction step.\n\nThe parser now surfaces tapKeySig on ParsedPsbtV2Input, and\nextractTxFromSignedPsbtV2 auto-finalizes Taproot key-path inputs by\nsetting finalScriptWitness = [tapKeySig] before the on-the-wire checks.\nThat's what @scure/btc-signer's own finalizeIdx does for taproot\nkey-path spends.\n\nThe local NSecSignerBtc path is unaffected — it already calls\ntx.finalize() before re-emitting the PSBT v2, so finalScriptWitness is\npopulated and the new auto-finalize branch is inert. This is the first\nend-to-end NIP-07 SP send the extractor has actually seen — the latent\nbug has been in the silent-payment path since it was introduced in\n9be302e9.\n",
+        "verified_at": "2026-05-22T04:21:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/93cccda024fe031cddedb045a50cb218b428dd71",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/93cccda024fe031cddedb045a50cb218b428dd71",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/93cccda024fe031cddedb045a50cb218b428dd71/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c10f9d5f6c2a7f2bedead957775eb39eb17b64c3",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/c10f9d5f6c2a7f2bedead957775eb39eb17b64c3",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/c10f9d5f6c2a7f2bedead957775eb39eb17b64c3"
+      }
+    ]
+  },
+  {
+    "sha": "c10f9d5f6c2a7f2bedead957775eb39eb17b64c3",
+    "node_id": "C_kwDOL5Eek9oAKGMxMGY5ZDVmNmMyYTdmMmJlZGVhZDk1Nzc3NWViMzllYjE3YjY0YzM",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T03:57:06Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T03:57:06Z"
+      },
+      "message": "Attach BIP-375 ECDH share + DLEQ proof to signed SP PSBTs\n\nThe local nsec signer was previously resolving silent-payment outputs\nto concrete P2TR scripts and signing — correct on-chain, but the\nfinalized PSBT carried no proof that the resolution was honest. Any\nexternal BIP-375 verifier inspecting the signed PSBT would see the\noutput scripts but no PSBT_GLOBAL_SP_ECDH_SHARE / PSBT_GLOBAL_SP_DLEQ\nrows tying them to the input keys; the resolution had to be taken on\nfaith.\n\nNow the signer:\n\n  - aggregates the senders' tweaked private keys with\n    aggregateSenderPrivateKey() (already in silentPayments.ts),\n  - computes C = a \\u00b7 B_scan per recipient scan key with\n    computeBip375EcdhShare(),\n  - generates the matching BIP-374 DLEQ proof with the new dleq.ts\n    primitive (verified against the canonical\n    bip374_{generate,verify}_proof.csv test vectors \\u2014 28 cases),\n  - emits one PSBT_GLOBAL_SP_ECDH_SHARE + PSBT_GLOBAL_SP_DLEQ pair per\n    scan key (keyed by the 33-byte scan key, per the spec), and\n  - clears PSBT_GLOBAL_TX_MODIFIABLE to 0 as BIP-375 requires once\n    every output script has been written.\n\nA new silentPaymentGlobals option on encodePsbtV2 carries this through.\nThe 311-test suite still passes (and the existing BIP-375 fast-path\ntest exercises the new code path).\n\ndleq.ts is adapted from the equivalent module in ditto-extension, with\nthe @noble/curves v1 / v2 API translated (schnorr.Point \\u2192\nsecp256k1.ProjectivePoint, .toBytes \\u2192 .toRawBytes, P.is0() \\u2192\nP.equals(POINT_ZERO)) to match the rest of the codebase, and the\njsdom-realm taggedHash workaround applied.",
+      "tree": {
+        "sha": "3bf4b4579d197cbe76be3daa46bbbde6c79a7f4a",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/3bf4b4579d197cbe76be3daa46bbbde6c79a7f4a"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/c10f9d5f6c2a7f2bedead957775eb39eb17b64c3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoP1BIACgkQchHR+ZdE\n+7dFKw/+OuGietodw5cFR8bapkdNG7uoKXAk8KLz6TbECrqA7H55d8r0McBz0ysK\nTBZ+lDTDG6CLTf2w5WdpVhxduQSQLwzjoqxaKiU14aixXm/jHDM+zIzK/hYdnrjp\n4z4Pa5jzbXJ5D8CLmtofKoSbKkA0lh6JG+uLM0tWKE0h5HpWQyE4S3wqv2Nsn31O\nNcttzC8B3LakahSYwOSQvTowwdifTXJg8e1ynJivca8tv+jhWPkzpWNzC6tOaNrE\nAjeuRMK3c7sX163wIbRR1ac4yWsqiaOgJ7ccglzlPS/ZqYCxIb6CfoFROLJWtW2b\nyj6jtf9d88Nyn+Nq4NHT+aIC3LrDjVMggv2NCWBp1adTmHX5Wv8dddj1ur62a0WA\nBhgrV6gcyD5Fgt4DU2RIdKNhy4QK/YU96bmREvQLDRZ2jPSP+c80ABDQg1CqaV89\nRvZnhK12L7VQN+qzAj8sm0U7YAJlSgAEhpiIs1svyxcT+zzNo4YM4BiUWqm/7ZLj\npfSR0R17QpICpclLomDCXuwW+E5mhh0n5gUvtueeuG8Mq/g7GWLcIQuu5Jxd8xAx\n91paZN/11XFrzrIJDY2nmchIU1c8k6LHcZ3tZ2tqPJ/XUmSA1+xZvDdlZJvSljSy\nuQ4oIqD94qR/0SeF05uJ9PiEy4pMziSf4KiEd1psTsYD1bLNSMM=\n=6DyD\n-----END PGP SIGNATURE-----",
+        "payload": "tree 3bf4b4579d197cbe76be3daa46bbbde6c79a7f4a\nparent d647bf584a3ad1769444bff8eda1a4cb64016fe9\nauthor Alex Gleason <alex@alexgleason.me> 1779422226 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779422226 -0500\n\nAttach BIP-375 ECDH share + DLEQ proof to signed SP PSBTs\n\nThe local nsec signer was previously resolving silent-payment outputs\nto concrete P2TR scripts and signing — correct on-chain, but the\nfinalized PSBT carried no proof that the resolution was honest. Any\nexternal BIP-375 verifier inspecting the signed PSBT would see the\noutput scripts but no PSBT_GLOBAL_SP_ECDH_SHARE / PSBT_GLOBAL_SP_DLEQ\nrows tying them to the input keys; the resolution had to be taken on\nfaith.\n\nNow the signer:\n\n  - aggregates the senders' tweaked private keys with\n    aggregateSenderPrivateKey() (already in silentPayments.ts),\n  - computes C = a \\u00b7 B_scan per recipient scan key with\n    computeBip375EcdhShare(),\n  - generates the matching BIP-374 DLEQ proof with the new dleq.ts\n    primitive (verified against the canonical\n    bip374_{generate,verify}_proof.csv test vectors \\u2014 28 cases),\n  - emits one PSBT_GLOBAL_SP_ECDH_SHARE + PSBT_GLOBAL_SP_DLEQ pair per\n    scan key (keyed by the 33-byte scan key, per the spec), and\n  - clears PSBT_GLOBAL_TX_MODIFIABLE to 0 as BIP-375 requires once\n    every output script has been written.\n\nA new silentPaymentGlobals option on encodePsbtV2 carries this through.\nThe 311-test suite still passes (and the existing BIP-375 fast-path\ntest exercises the new code path).\n\ndleq.ts is adapted from the equivalent module in ditto-extension, with\nthe @noble/curves v1 / v2 API translated (schnorr.Point \\u2192\nsecp256k1.ProjectivePoint, .toBytes \\u2192 .toRawBytes, P.is0() \\u2192\nP.equals(POINT_ZERO)) to match the rest of the codebase, and the\njsdom-realm taggedHash workaround applied.\n",
+        "verified_at": "2026-05-22T04:21:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/c10f9d5f6c2a7f2bedead957775eb39eb17b64c3",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/c10f9d5f6c2a7f2bedead957775eb39eb17b64c3",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/c10f9d5f6c2a7f2bedead957775eb39eb17b64c3/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d647bf584a3ad1769444bff8eda1a4cb64016fe9",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/d647bf584a3ad1769444bff8eda1a4cb64016fe9",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/d647bf584a3ad1769444bff8eda1a4cb64016fe9"
+      }
+    ]
+  },
+  {
+    "sha": "d647bf584a3ad1769444bff8eda1a4cb64016fe9",
+    "node_id": "C_kwDOL5Eek9oAKGQ2NDdiZjU4NGEzYWQxNzY5NDQ0YmZmOGVkYTFhNGNiNjQwMTZmZTk",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T03:44:37Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T03:44:37Z"
+      },
+      "message": "Back psbtV2 codec with @scure/btc-signer's _RawPSBTV2\n\nThe previous implementation was a hand-rolled PSBTv2 + BIP-375 encoder\nand parser — ~705 lines walking bytes by hand. It also forced the local\nnsec signer to splice PSBT_IN_FINAL_SCRIPTWITNESS rows into the encoded\nPSBT after the fact (encodePsbtV2WithWitnesses, ~140 lines of post-hoc\nbyte surgery) because the public encoder couldn't emit them.\n\nDelegating to the library's internal _RawPSBTV2 coder removes both\npiles of code: the magic/framing/varint/per-field-codec work is now the\nlibrary's job, and the encoder accepts a finalScriptWitness on\nPsbtV2Input directly. The library's _RawPSBTV2 (vs. its more strict\nRawPSBTV2 used by Transaction) leaves PSBT_OUT_SCRIPT optional on\noutputs that only carry PSBT_OUT_SP_V0_INFO — exactly the property\nBIP-375 needs from a constructor-side codec.\n\nThe public API (encodePsbtV2 / parsePsbtV2 /\nextractTxFromSignedPsbtV2 / encodeCompactSize / PsbtV2Input / etc.) is\nunchanged; only the internals were rewired. The full PSBTv2 + bitcoin\ntest suites pass without modification.\n\nOne library-error message swap: PSBT v0 input now hits a sniff in our\nown decoder before being handed off, so the error wording stays the\nproject's familiar 'only PSBT v2 is supported' instead of the\nlibrary's internal 'PSBTv0: missing unsignedTx'.",
+      "tree": {
+        "sha": "ed2431e355b01c39fee4edc54414dccf433470a5",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/ed2431e355b01c39fee4edc54414dccf433470a5"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/d647bf584a3ad1769444bff8eda1a4cb64016fe9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoP0SUACgkQchHR+ZdE\n+7eNoxAAmSnXk3hmJFUM+zWhmgUfASP9ktTQLtgFQNhDauy8oPKsWLBE87HsqUbU\n+XyjH17LBkgQSgN0VcVCNfaB6150mTJycQquSQcX6CbsI5HuVOD6+p3cQShuW6/x\nqIDS67BY7LOwGBy/j2Gwz9HHn1VYZ7gmVg9Qo2zo7Eu57yddSAqf1lrgW2uJieGZ\nK3lV0V+JfiPMKKZ0npNEu7dy2K5Kps9f8IDTB2Sorz0OQeqzb40Gluzd98VefgYc\n6e9bTHMsaK9pg3J5JuzHtdF4W20NbNvZLjoBGp4/IzS8cBYnZ6s0McY3qCBL+zwL\nXNStY2TQHDCeEK+vdevrS8f74U2l5Qj6YMkg2RiTbTrF4LrFBUGsDhUDikZMbyQc\ncS+3kY0WwuvA85U/EmUrxZKUk4W8/0D8VaAzMi/Rx2d7jtuOoeo5/SVafqBDpYDa\nrlcTkgcBjgM4FpldT1AnNQtXQEvRxevEKh/UDlveGQMmKbXgT2Wwm9nx9W94DQ+K\n1qYmKbSuiv/yQLLAT/NDCMoGHCuyBMkPLm+3La2iO0cWPmpi513ftLEOdDjB/XK/\nGOVCDqm+6w3EtvvxcFEv+GSl+J1h/4gnoxCAWaHMf+cK4ZcjaZi4lps65zwBKDNK\nOIFFkO3phkgrizpD8CfELpB6gvAzD2X5g72mQBKNODdOQ4xXv/M=\n=zzmY\n-----END PGP SIGNATURE-----",
+        "payload": "tree ed2431e355b01c39fee4edc54414dccf433470a5\nparent 163f9211b4f5c7b46d5914b19bbb2a0ab572d604\nauthor Alex Gleason <alex@alexgleason.me> 1779421477 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779421477 -0500\n\nBack psbtV2 codec with @scure/btc-signer's _RawPSBTV2\n\nThe previous implementation was a hand-rolled PSBTv2 + BIP-375 encoder\nand parser — ~705 lines walking bytes by hand. It also forced the local\nnsec signer to splice PSBT_IN_FINAL_SCRIPTWITNESS rows into the encoded\nPSBT after the fact (encodePsbtV2WithWitnesses, ~140 lines of post-hoc\nbyte surgery) because the public encoder couldn't emit them.\n\nDelegating to the library's internal _RawPSBTV2 coder removes both\npiles of code: the magic/framing/varint/per-field-codec work is now the\nlibrary's job, and the encoder accepts a finalScriptWitness on\nPsbtV2Input directly. The library's _RawPSBTV2 (vs. its more strict\nRawPSBTV2 used by Transaction) leaves PSBT_OUT_SCRIPT optional on\noutputs that only carry PSBT_OUT_SP_V0_INFO — exactly the property\nBIP-375 needs from a constructor-side codec.\n\nThe public API (encodePsbtV2 / parsePsbtV2 /\nextractTxFromSignedPsbtV2 / encodeCompactSize / PsbtV2Input / etc.) is\nunchanged; only the internals were rewired. The full PSBTv2 + bitcoin\ntest suites pass without modification.\n\nOne library-error message swap: PSBT v0 input now hits a sniff in our\nown decoder before being handed off, so the error wording stays the\nproject's familiar 'only PSBT v2 is supported' instead of the\nlibrary's internal 'PSBTv0: missing unsignedTx'.\n",
+        "verified_at": "2026-05-22T04:21:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/d647bf584a3ad1769444bff8eda1a4cb64016fe9",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/d647bf584a3ad1769444bff8eda1a4cb64016fe9",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/d647bf584a3ad1769444bff8eda1a4cb64016fe9/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "163f9211b4f5c7b46d5914b19bbb2a0ab572d604",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/163f9211b4f5c7b46d5914b19bbb2a0ab572d604",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/163f9211b4f5c7b46d5914b19bbb2a0ab572d604"
+      }
+    ]
+  },
+  {
+    "sha": "163f9211b4f5c7b46d5914b19bbb2a0ab572d604",
+    "node_id": "C_kwDOL5Eek9oAKDE2M2Y5MjExYjRmNWM3YjQ2ZDU5MTRiMTliYmIyYTBhYjU3MmQ2MDQ",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T03:36:20Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T03:36:20Z"
+      },
+      "message": "Adopt ditto-extension's silentPayments.ts superset\n\nThe decoder half of the two files was already identical; this picks up\nthe full BIP-352 sender derivation (multi-recipient grouping by scan\nkey, input-eligibility matrix with NUMS-H detection, K_max checks), the\nBIP-375 ECDH-share helpers (aggregateSenderPrivateKey,\ncomputeBip375EcdhShare, deriveSPOutputScriptFromShare),\nencodeSilentPaymentAddress, p2trScriptPubKey, and tweakNsecForTaproot.\n\nThe new derivation is verified against the canonical\nsend_and_receive_test_vectors.json from BIP-352; all 27 sender vectors\nnow pass.\n\nInternal differences from the extension's copy:\n\n- @noble/curves v1 / @noble/hashes v1 imports (matches the rest of the\n  codebase); Point.fromBytes -> Point.fromHex, .toBytes -> .toRawBytes,\n  P.is0() replaced with an affine point-at-infinity check.\n- taggedHash copies its TextEncoder output into a fresh Uint8Array to\n  dodge the jsdom-realm prototype mismatch noble's u8a check trips on.\n- validateSilentPaymentAddress (already used in SendBitcoinDialog) kept\n  as a thin try/catch around decodeSilentPaymentAddress.\n\nNSecSignerBtc's BIP-375 fast path is rewritten to use\nderiveSilentPaymentOutputs, which handles all recipients in a single\ncall and groups them correctly by scan key. The old bespoke single-\nrecipient helper (deriveSilentPaymentOutputScript) is gone.\n\nAlso bumps the BTC price query's staleTime from 30s to 60s so the\nwallet page stops refetching on every mount while mempool.space's\nunderlying feed only refreshes once a minute.",
+      "tree": {
+        "sha": "6bafe8d25109793a6f25f8ff94dd3e6414eb19ef",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/6bafe8d25109793a6f25f8ff94dd3e6414eb19ef"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/163f9211b4f5c7b46d5914b19bbb2a0ab572d604",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoPzzQACgkQchHR+ZdE\n+7dD6A/9FzqJY6maImRWo6MuX0oBWjMJWY2USzUWMC6YG7C3glYMf3TulB0vHwd3\n6nENOFHyTrPBpgjD70DLKbehOokinXwnuvCFp3rjseQinBXDL+SomLetEFM1WUe9\ncXDm2zGKL/GpjELJ17ZQRfzWt8ysJI9B5/CZMFUTodo29zki64fc3IbLAZ3SrOgW\nKDZomnIbQnclNQUxsP3wB7a2lYGvWoekTxh9yMNcLCZI0IDB0h1VPsS/WLl7WnW7\nI/vDXgKz1S3CSc/oysapVMNbtWosJNLW2guAGszy7UVkVNp2rU07xUl2VB2qnwmA\n43R/oD6WFPXC+ThSU55JZXDATWp1yDIxVke1CysSCA/ZPUZl9bVRPDKL08fop51Z\niw4CG/fK76fiXWf77dH+BgzSBxiWz+7zaN6aQApklM28pWJBQZ+bhHln3R+qG67q\noIqGsBYP7mx/OOubn2jiVXMrxeBIOOFgJvAKrJoJMs0KmNAaoUJ3THJoKmyCTgid\n+i9pG3sOykmjsciXCM7VhlIzAL0gUzbSDLHR305XQJuHtn6YbdYppRwJAZZggZVe\nnmhIu1Ycz3/RkwJGov3hr16RwShBmhqzKD8UdkfztR+r53PggcFznRBc9ID39VmL\noYUQ0D41GI44i9tVu7+/Vzg7JDteb1mVVZrhTPSvgS5zFcFmUFc=\n=QSCC\n-----END PGP SIGNATURE-----",
+        "payload": "tree 6bafe8d25109793a6f25f8ff94dd3e6414eb19ef\nparent 96227a73f1d999c2d01a8ed06bc9baa787c48d46\nauthor Alex Gleason <alex@alexgleason.me> 1779420980 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779420980 -0500\n\nAdopt ditto-extension's silentPayments.ts superset\n\nThe decoder half of the two files was already identical; this picks up\nthe full BIP-352 sender derivation (multi-recipient grouping by scan\nkey, input-eligibility matrix with NUMS-H detection, K_max checks), the\nBIP-375 ECDH-share helpers (aggregateSenderPrivateKey,\ncomputeBip375EcdhShare, deriveSPOutputScriptFromShare),\nencodeSilentPaymentAddress, p2trScriptPubKey, and tweakNsecForTaproot.\n\nThe new derivation is verified against the canonical\nsend_and_receive_test_vectors.json from BIP-352; all 27 sender vectors\nnow pass.\n\nInternal differences from the extension's copy:\n\n- @noble/curves v1 / @noble/hashes v1 imports (matches the rest of the\n  codebase); Point.fromBytes -> Point.fromHex, .toBytes -> .toRawBytes,\n  P.is0() replaced with an affine point-at-infinity check.\n- taggedHash copies its TextEncoder output into a fresh Uint8Array to\n  dodge the jsdom-realm prototype mismatch noble's u8a check trips on.\n- validateSilentPaymentAddress (already used in SendBitcoinDialog) kept\n  as a thin try/catch around decodeSilentPaymentAddress.\n\nNSecSignerBtc's BIP-375 fast path is rewritten to use\nderiveSilentPaymentOutputs, which handles all recipients in a single\ncall and groups them correctly by scan key. The old bespoke single-\nrecipient helper (deriveSilentPaymentOutputScript) is gone.\n\nAlso bumps the BTC price query's staleTime from 30s to 60s so the\nwallet page stops refetching on every mount while mempool.space's\nunderlying feed only refreshes once a minute.\n",
+        "verified_at": "2026-05-22T04:21:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/163f9211b4f5c7b46d5914b19bbb2a0ab572d604",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/163f9211b4f5c7b46d5914b19bbb2a0ab572d604",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/163f9211b4f5c7b46d5914b19bbb2a0ab572d604/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "96227a73f1d999c2d01a8ed06bc9baa787c48d46",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/96227a73f1d999c2d01a8ed06bc9baa787c48d46",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/96227a73f1d999c2d01a8ed06bc9baa787c48d46"
+      }
+    ]
+  },
+  {
+    "sha": "96227a73f1d999c2d01a8ed06bc9baa787c48d46",
+    "node_id": "C_kwDOL5Eek9oAKDk2MjI3YTczZjFkOTk5YzJkMDFhOGVkMDZiYzliYWE3ODdjNDhkNDY",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T03:08:28Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T03:08:28Z"
+      },
+      "message": "Test BIP-375 silent payment send pipeline",
+      "tree": {
+        "sha": "b5165cb46ea7fdfbfaa1a5410e58c3c9b691fded",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/b5165cb46ea7fdfbfaa1a5410e58c3c9b691fded"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/96227a73f1d999c2d01a8ed06bc9baa787c48d46",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoPyKwACgkQchHR+ZdE\n+7e8KQ/8DiWBzsPnD5Pa9OIA6FZ07cT2XiwwEI4MpO3FRrQ4voaEZOWsAnGyigtl\nHX8N/GFrH+RHq98KFqmrtuz+AaGXE9JQl1wqFZ/hUCNppDqRR5AjTTEYFwkvipc7\n6U47dvX1OHIenMC+/SkKOUyp1eR0aIXFVq5ItiaZVr/tYI4t9MWb361EfB73O4OM\nHySwxe6q6BTFGR5sH4ostmFUDK8lnEp7Oa3VTQ4MnJuvdNxOLNmSyja6w9s7PX2V\nJ3m0vFj5kmq9P0bFiy272TYV0/l4kLEkUTIsxrHydR+3PLCbRzrFrya7pE30OjAt\n3v0TjownKzJu8Q4mdyq8alnZzDHkQc0Oiai4BnIFS6VB37mRK015qAFzwk+QUWva\n+bzZcYMR0+bD3ITj3d87UnldyLIynYMgaGWjShckBG3+NIJoDIQshWFiOYVLdnr1\nafTcPerfEI6WX5ZqHiS6lC4WrqKLJbn45Zz95l5uI2OUGi/nXigL2sOX00+AW+1d\n+kZEANWYgeOJbFPBJimH01UJYXuZrXONbxyycSN1Eb+PrNeNm3pV+lxfk4xSWyum\naBB2XVAGXeLeVvGPhAWStsiw0q0+gfuug42D19WD755z6JkCFqq/DGxZ8QxLq0W6\nIAgACNTWs/+CJTuqormpXHguKMPp4Bm/QXg9YIwYEHIR/gIss+g=\n=tkpv\n-----END PGP SIGNATURE-----",
+        "payload": "tree b5165cb46ea7fdfbfaa1a5410e58c3c9b691fded\nparent 9be302e9ecd5ddbfea5119c7acb6d98dc1e10485\nauthor Alex Gleason <alex@alexgleason.me> 1779419308 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779419308 -0500\n\nTest BIP-375 silent payment send pipeline\n",
+        "verified_at": "2026-05-22T04:21:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/96227a73f1d999c2d01a8ed06bc9baa787c48d46",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/96227a73f1d999c2d01a8ed06bc9baa787c48d46",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/96227a73f1d999c2d01a8ed06bc9baa787c48d46/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9be302e9ecd5ddbfea5119c7acb6d98dc1e10485",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/9be302e9ecd5ddbfea5119c7acb6d98dc1e10485",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/9be302e9ecd5ddbfea5119c7acb6d98dc1e10485"
+      }
+    ]
+  },
+  {
+    "sha": "9be302e9ecd5ddbfea5119c7acb6d98dc1e10485",
+    "node_id": "C_kwDOL5Eek9oAKDliZTMwMmU5ZWNkNWRkYmZlYTUxMTljN2FjYjZkOThkYzFlMTA0ODU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T02:54:45Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T02:54:45Z"
+      },
+      "message": "Send Bitcoin to BIP-352 silent payment addresses",
+      "tree": {
+        "sha": "35cad82e4bd72c28bca0bd2e01b25024e74c592e",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/35cad82e4bd72c28bca0bd2e01b25024e74c592e"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/9be302e9ecd5ddbfea5119c7acb6d98dc1e10485",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoPxXUACgkQchHR+ZdE\n+7fA1Q//SyiMc7RKtGFNA54g9HGkwiEOsUVDvMT9k2Gw56Xk5qkRf1yweTl0oIaB\nQ6K+2kizAHy2MYi0/tsQkXWro/C/Yd0rFBs+oCO3pLDxLNovVOKOm/3kvCj0wc8d\nKoP+ZzIymlQBFFtP14dnAOChFaA1vWVTOnGg6a6vRt9jGFHogwzk/qNjYRJxHLZn\ni9tDq9BW675I3tJNWY5lt0vc8dL8Hotrwla9jcI/XRrh+Asw0R63M1L+10qxZht3\nwPNn1rLttFo7LusSsDG/RZ2e862qNVHn6CIzc1AprTBrqML0c1mtMUg70e3NHwiI\nLv0pYsBCesHeIZc7ft2Fqmh/O1LI6VjEu8rHVK2rZqpvFyKCcjcWVfTm4tFaVj6v\nFWdr2bwLGllm8dHqH3S9caZW4E5lvfpL8du/sZfUQI3ahaHUO3pH49LOAlIthGLb\nSSfCzIJvo+7IUTeUXNzSYdfBk3AKGotNdTdwW1curxM4P7XBmlMRoThnYLYzSHaQ\nVPMbhax8FGizsdJkIT378KRl1XqbpXM9mw5SCsD1TvyHSKD/FrwoUTBmCV6PeAPm\n/N+30VTQ5vupQEszB8jCZIXiak/7KiBpVxVVULPBuJ5pE5KgWVU8zHwX8SCk4oO/\n8qdAMF1pGljfiScnW41+fFxn7yYOaHD+ceI0o6Wc7VljKzZy3r4=\n=OLDb\n-----END PGP SIGNATURE-----",
+        "payload": "tree 35cad82e4bd72c28bca0bd2e01b25024e74c592e\nparent a3ec237aea62d77c832d19a5b125cea7f269ed75\nauthor Alex Gleason <alex@alexgleason.me> 1779418485 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779418485 -0500\n\nSend Bitcoin to BIP-352 silent payment addresses\n",
+        "verified_at": "2026-05-22T04:21:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/9be302e9ecd5ddbfea5119c7acb6d98dc1e10485",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/9be302e9ecd5ddbfea5119c7acb6d98dc1e10485",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/9be302e9ecd5ddbfea5119c7acb6d98dc1e10485/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3ec237aea62d77c832d19a5b125cea7f269ed75",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a3ec237aea62d77c832d19a5b125cea7f269ed75",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/a3ec237aea62d77c832d19a5b125cea7f269ed75"
+      }
+    ]
+  },
+  {
+    "sha": "a3ec237aea62d77c832d19a5b125cea7f269ed75",
+    "node_id": "C_kwDOL5Eek9oAKGEzZWMyMzdhZWE2MmQ3N2M4MzJkMTlhNWIxMjVjZWE3ZjI2OWVkNzU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T02:23:20Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-22T02:23:20Z"
+      },
+      "message": "Replace bitcoinjs-lib with @scure/btc-signer\n\nDrops bitcoinjs-lib, ecpair, @bitcoinerlab/secp256k1, and the buffer\npolyfill in favor of @scure/btc-signer + @noble/curves. The new stack\nis pure-Uint8Array (no Node Buffer), audited, and ~5x smaller.\n\nP2TR address derivation, PSBT construction, local Schnorr signing, and\nfinalization all run through @scure/btc-signer. Existing P2TR address\nregression fixtures pass unchanged, confirming byte-for-byte parity\nwith the previous derivation.",
+      "tree": {
+        "sha": "693093c372660575f79a35067f44d0141ed0e3e2",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/693093c372660575f79a35067f44d0141ed0e3e2"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/a3ec237aea62d77c832d19a5b125cea7f269ed75",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoPvhgACgkQchHR+ZdE\n+7czxBAA445nu+21SJA6XzwnDEMsUnr+Jj8sd2ZIzMRstpIkgsnK4nefSHqNpLbI\n5ZIURf6br7XfkaYsakZgyTa979uNVPr7AdejEMgZuq0Rxbfhnf2AyCI7hYBgF2mx\nyT+qGZBA05q4otIEUyCGR2s+IPSyl89F1vqnQqNdu4Z8W/B/U+KNy7McnrNNANEf\nmpSFQhk9xFIz5mnx2TcSCcrIYIbFTuXRamTwgGRK53GdVYT0bAkFicnE9PJQ3sBQ\nUsZmD5iTkZ8Wzr3ud3IBp3I4dg5Rgy/nU1hkjcLMx4sVxcaZsbzATuHwNqM4INYC\nkPel+m1Z0J2c+fQ33ORPR/DuaOsjfN83R3jlVUs3G9tFYHDq9w8Aq/EvLp4ORnFY\nSyxGRbAUoyFFrV0kp9wl30xfTkrJ/Y/5O4u5a8nNAvZFLBeYmj21JogYX07iRdgN\nLANlsSKb4hHPoB1e5ndLuafJKOfNzAIdj3XNYpupuPFclNileDNCsVS0iZN+hYO6\nJqxzHtc1jf+R9NM0xaskEiU7lXI2++rnTtXF0stDiwDVtagN/iHn6mu4RsysB0vU\nS4/K4F4xoNNb7/TyIldnjtSX+VU4sBJ3WX0fNO4ehIbwlatGTD3HAnfj7GnNqusz\ng4wkcO8KDHg+kOHYZUfE3yvkqjWjdQbHkrGQ9sGIoEn9mB8pz50=\n=3ozg\n-----END PGP SIGNATURE-----",
+        "payload": "tree 693093c372660575f79a35067f44d0141ed0e3e2\nparent 053ddbb0465616e3f7dae37e7679cf9d242bc80a\nauthor Alex Gleason <alex@alexgleason.me> 1779416600 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779416600 -0500\n\nReplace bitcoinjs-lib with @scure/btc-signer\n\nDrops bitcoinjs-lib, ecpair, @bitcoinerlab/secp256k1, and the buffer\npolyfill in favor of @scure/btc-signer + @noble/curves. The new stack\nis pure-Uint8Array (no Node Buffer), audited, and ~5x smaller.\n\nP2TR address derivation, PSBT construction, local Schnorr signing, and\nfinalization all run through @scure/btc-signer. Existing P2TR address\nregression fixtures pass unchanged, confirming byte-for-byte parity\nwith the previous derivation.\n",
+        "verified_at": "2026-05-22T04:21:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a3ec237aea62d77c832d19a5b125cea7f269ed75",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/a3ec237aea62d77c832d19a5b125cea7f269ed75",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a3ec237aea62d77c832d19a5b125cea7f269ed75/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "053ddbb0465616e3f7dae37e7679cf9d242bc80a",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/053ddbb0465616e3f7dae37e7679cf9d242bc80a",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/053ddbb0465616e3f7dae37e7679cf9d242bc80a"
+      }
+    ]
+  },
+  {
+    "sha": "053ddbb0465616e3f7dae37e7679cf9d242bc80a",
+    "node_id": "C_kwDOL5Eek9oAKDA1M2RkYmIwNDY1NjE2ZTNmN2RhZTM3ZTc2NzljZjlkMjQyYmM4MGE",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-21T20:12:55Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-21T20:12:55Z"
+      },
+      "message": "Scan QR codes for wallet Send recipient\n\nAdd a camera button inside the recipient input of the wallet's Send\ndialog. Tapping it opens a live QR scanner that reads on-chain\naddresses, BIP-21 `bitcoin:` URIs, and Nostr identifiers\n(npub/nprofile/nip05/hex, with or without a `nostr:` prefix).\nBitcoin addresses select directly; Nostr identifiers are routed\nthrough the existing dropdown for one-tap confirmation.\n\nUses the `qr-scanner` library (`getUserMedia` + ZXing/BarcodeDetector\nunder the hood), keeping a single implementation across web,\nWKWebView, and Android WebView. The native @capacitor-mlkit plugin\nwould have been faster but only supports CocoaPods on iOS, which\nDitto's SPM-based project can't use.\n\nThe dialog uses a callback ref on the <video> element instead of\n`useRef`. Radix Dialog mounts DialogContent lazily through a Portal,\nso a plain ref is null on the first effect tick after `isOpen` flips\ntrue \\u2014 the scanner would then bail before construction and the\nuser would see a silent black square. The callback ref re-runs the\neffect once the element actually attaches.\n\nOther defensive measures (each turns a silent failure into a readable\nerror instead of a black screen):\n\n  - Secure-context and `mediaDevices` feature guards up front.\n  - A 6-second readiness watchdog. If `start()` neither resolves nor\n    rejects, or resolves but the video never reaches HAVE_METADATA,\n    flip to an error state.\n  - Retry once without `facingMode: 'environment'` on\n    OverconstrainedError (laptops without rear cameras, locked-down\n    WebViews).\n  - Wider error mapping: NotReadableError, SecurityError, and\n    OverconstrainedError now produce actionable messages.\n\nDialog sizing is constrained so it never escapes the viewport: width\ncaps at `min(380px, 100vw-2rem)`, height at `100svh-2rem` (using\nsmall-viewport-height to avoid iOS Safari address-bar shift), and the\nsquare video container caps its own height to match its width.\n\nCSP gets two new directives so qr-scanner's blob-backed decoder\nworker (used as a fallback on devices without BarcodeDetector) can\nconstruct: `worker-src 'self' blob:; child-src 'self' blob:`. The\ngrant is narrow \\u2014 same-origin scripts and blob URLs only, no\nwildcard widening of `script-src`. `child-src` is included as a\nfallback for older browsers that haven't implemented `worker-src`.\n\nAndroid gains the `CAMERA` permission needed by WebView's\n`getUserMedia`. iOS `NSCameraUsageDescription` was already present.",
+      "tree": {
+        "sha": "3fc5f2487bf1a8c8927680fa3fb1cc1619273a24",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/3fc5f2487bf1a8c8927680fa3fb1cc1619273a24"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/053ddbb0465616e3f7dae37e7679cf9d242bc80a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoPZ0cACgkQchHR+ZdE\n+7dkLw/7Bpb+0BZEboKHpuFCRjzjO3sIEOnRwXDolJyQZNjzAd83FmLDF17ACc01\nobv7mDqRuaYNZr1Gk7YQIkQZV8FoAzBoLaJVG4rFUml3qSmEZv2D82mvSblv8Vqx\nO8iRz5Qi7UrsFoEXegR/Sy9YgIy4qJ+FdAmcJO4f6QehFW9/LgorP6+GCge33oXZ\nWubG7KkjByYDGrr0WrkZtkxHy/7mv7PAFtZ1CQ1OMtsTwke/Qa272sOKP4ou3Hie\nkA1UriIXlXduj6DGw1pfjzTt3Ofxok6H4oxqpawPJK+5mPJJ6qpy7nZW+3Qpzc6H\n3x7WxNL/QQMa5ntkpUVXiQ816SHsMY+rSEVl5Mf1Z+Kv4dU9rnupGX2aP1ewb0DJ\nQRqh40je+EqVl51M3e32dMRKfncY2q/zAOKVubXGy9cNvsYdD8uCHzxQtz88homQ\nwjFild1cI34QVQmWETyEqhHu8isF0YC2QFEKtnhm5ELdrpuMX/V5iGbHKyiLYpNy\nAyJI6jZGX0YBFniuQJVnD+KLdHqX7arHUV5C0/8+Sp4qiKTgMDDgMXyMpHE2kUMt\n904XrQ+9LNdiyrjjGyWFn0FHlieAp3Lue3X7qDS2RWOcaVFiHYAOaimMNZ5hzeQ2\nNtR+CGdZE2TWoO6IvplG6dNMGKXL9jo7O2BxTWJKjCNimwlgTXY=\n=sgVw\n-----END PGP SIGNATURE-----",
+        "payload": "tree 3fc5f2487bf1a8c8927680fa3fb1cc1619273a24\nparent dc122791a73caa78fcc06f1bd3e406123710c3c1\nauthor Alex Gleason <alex@alexgleason.me> 1779394375 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779394375 -0500\n\nScan QR codes for wallet Send recipient\n\nAdd a camera button inside the recipient input of the wallet's Send\ndialog. Tapping it opens a live QR scanner that reads on-chain\naddresses, BIP-21 `bitcoin:` URIs, and Nostr identifiers\n(npub/nprofile/nip05/hex, with or without a `nostr:` prefix).\nBitcoin addresses select directly; Nostr identifiers are routed\nthrough the existing dropdown for one-tap confirmation.\n\nUses the `qr-scanner` library (`getUserMedia` + ZXing/BarcodeDetector\nunder the hood), keeping a single implementation across web,\nWKWebView, and Android WebView. The native @capacitor-mlkit plugin\nwould have been faster but only supports CocoaPods on iOS, which\nDitto's SPM-based project can't use.\n\nThe dialog uses a callback ref on the <video> element instead of\n`useRef`. Radix Dialog mounts DialogContent lazily through a Portal,\nso a plain ref is null on the first effect tick after `isOpen` flips\ntrue \\u2014 the scanner would then bail before construction and the\nuser would see a silent black square. The callback ref re-runs the\neffect once the element actually attaches.\n\nOther defensive measures (each turns a silent failure into a readable\nerror instead of a black screen):\n\n  - Secure-context and `mediaDevices` feature guards up front.\n  - A 6-second readiness watchdog. If `start()` neither resolves nor\n    rejects, or resolves but the video never reaches HAVE_METADATA,\n    flip to an error state.\n  - Retry once without `facingMode: 'environment'` on\n    OverconstrainedError (laptops without rear cameras, locked-down\n    WebViews).\n  - Wider error mapping: NotReadableError, SecurityError, and\n    OverconstrainedError now produce actionable messages.\n\nDialog sizing is constrained so it never escapes the viewport: width\ncaps at `min(380px, 100vw-2rem)`, height at `100svh-2rem` (using\nsmall-viewport-height to avoid iOS Safari address-bar shift), and the\nsquare video container caps its own height to match its width.\n\nCSP gets two new directives so qr-scanner's blob-backed decoder\nworker (used as a fallback on devices without BarcodeDetector) can\nconstruct: `worker-src 'self' blob:; child-src 'self' blob:`. The\ngrant is narrow \\u2014 same-origin scripts and blob URLs only, no\nwildcard widening of `script-src`. `child-src` is included as a\nfallback for older browsers that haven't implemented `worker-src`.\n\nAndroid gains the `CAMERA` permission needed by WebView's\n`getUserMedia`. iOS `NSCameraUsageDescription` was already present.\n",
+        "verified_at": "2026-05-21T20:15:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/053ddbb0465616e3f7dae37e7679cf9d242bc80a",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/053ddbb0465616e3f7dae37e7679cf9d242bc80a",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/053ddbb0465616e3f7dae37e7679cf9d242bc80a/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dc122791a73caa78fcc06f1bd3e406123710c3c1",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/dc122791a73caa78fcc06f1bd3e406123710c3c1",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/dc122791a73caa78fcc06f1bd3e406123710c3c1"
+      }
+    ]
+  },
+  {
+    "sha": "dc122791a73caa78fcc06f1bd3e406123710c3c1",
+    "node_id": "C_kwDOL5Eek9oAKGRjMTIyNzkxYTczY2FhNzhmY2MwNmYxYmQzZTQwNjEyMzcxMGMzYzE",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-21T19:13:35Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-21T19:13:35Z"
+      },
+      "message": "Add Bitcoin APIs editor to Wallet settings\n\nSurfaces `esploraApis` in Settings > Advanced > Wallet (and on the dedicated\n/settings/wallet route, which renders the same WalletSettings component).\nUsers can add HTTPS Esplora roots, reorder them to control the failover\npriority, remove individual endpoints, and restore the default list of\nmempool.space -> mempool.emzy.de -> blockstream.info.\n\nRemoval is blocked when only one endpoint remains, matching the Zod\nschema's .min(1) constraint. The default list is now exported from\nsrc/lib/esplora.ts as DEFAULT_ESPLORA_APIS so App.tsx (default config) and\nthe settings UI (restore button + diff check) share a single source of\ntruth.",
+      "tree": {
+        "sha": "d8e23375016e20dca37622c261dfe423d23cfd88",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/d8e23375016e20dca37622c261dfe423d23cfd88"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/dc122791a73caa78fcc06f1bd3e406123710c3c1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoPWV8ACgkQchHR+ZdE\n+7dqDw//dO8B0Qgu1wI7l+gT/PLoI+V/n0mGUfzr/q0e4a4PXFF/qdLqBzZIUNl+\njEVcjTvxcSiElonk0tKRCpa8f2ep0sUJHYcr2FAJWjugDDmcsc+7WUJoszNg4auv\na9lSvlbydm6fvd4kvq79ZCWKoL+1zQn2l7sRvAh9JY9T4l+LFDnRA0OW+JhLMVDF\n0Ns4EIyC43m4V8i6zNsDSowBTZ7vrEPshA9PTmf6FLIh6lqvXy2S+hdMD3AlyvS8\nhm/OgYP8PgnfVJazbIGvO1lv2CyFI9OmKFWl6k8h6J7l0CnReM5hqjFZi6/sX0uC\ns99VlRuB3xzi0oBIDv0BiX4hSdTo1NI0PxxHGx12wmaLtgRtumyKKSr447r7uJEw\nKY11bLql824pwDiDyqw9gXjoIUCwCUQYHVXYXg9PuU9ZE4gMDWDfvK7mXad5LTYS\nJFT57eTGZ3lBu2MbO8XFBm+4xmO41z0lH4M2irwOffv8X4usvHkSXdjISIuPB6wB\npLxHnDdFxYtvzlLiCky9LVafRq+IbyS+MQPbxiduHBIoFNG9R68MrHOZPmFv+lhn\nU9+rwF6swo0tTDDJFE5QN1/cY2vezH+ssHNgSAWCLf8WcTh7tx6nat5NmaYVKkq0\nG5LBBBTkmff4sdHD52nzJz7CLeQ7wi/80LhppKOURCeAozf4OtM=\n=ZEFF\n-----END PGP SIGNATURE-----",
+        "payload": "tree d8e23375016e20dca37622c261dfe423d23cfd88\nparent 406371af885db19330d78df08824e65dd29df1b0\nauthor Alex Gleason <alex@alexgleason.me> 1779390815 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779390815 -0500\n\nAdd Bitcoin APIs editor to Wallet settings\n\nSurfaces `esploraApis` in Settings > Advanced > Wallet (and on the dedicated\n/settings/wallet route, which renders the same WalletSettings component).\nUsers can add HTTPS Esplora roots, reorder them to control the failover\npriority, remove individual endpoints, and restore the default list of\nmempool.space -> mempool.emzy.de -> blockstream.info.\n\nRemoval is blocked when only one endpoint remains, matching the Zod\nschema's .min(1) constraint. The default list is now exported from\nsrc/lib/esplora.ts as DEFAULT_ESPLORA_APIS so App.tsx (default config) and\nthe settings UI (restore button + diff check) share a single source of\ntruth.\n",
+        "verified_at": "2026-05-21T19:14:21Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/dc122791a73caa78fcc06f1bd3e406123710c3c1",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/dc122791a73caa78fcc06f1bd3e406123710c3c1",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/dc122791a73caa78fcc06f1bd3e406123710c3c1/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "406371af885db19330d78df08824e65dd29df1b0",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/406371af885db19330d78df08824e65dd29df1b0",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/406371af885db19330d78df08824e65dd29df1b0"
+      }
+    ]
+  },
+  {
+    "sha": "406371af885db19330d78df08824e65dd29df1b0",
+    "node_id": "C_kwDOL5Eek9oAKDQwNjM3MWFmODg1ZGIxOTMzMGQ3OGRmMDg4MjRlNjVkZDI5ZGYxYjA",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-21T18:56:40Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-21T18:56:40Z"
+      },
+      "message": "Esplora REST failover with abort signals and timeouts\n\nReplace the single `esploraBaseUrl: string` with `esploraApis: string[]`\nand route every Esplora REST call through a new `esploraFetch` helper\nthat handles ordered failover across multiple API endpoints.\n\nThe failover client:\n\n- Tries URLs in order with a per-attempt 15s timeout. mempool.space has\n  a shadowban-style rate-limit behaviour where requests are silently\n  absorbed and never reply; the timeout converts that hang into a\n  regular failover signal so the next URL is tried.\n- On `429` / `5xx` / network error / timeout, parks the URL in a\n  module-level cool-down with exponential backoff (30s, 60s, 120s,\n  240s, 300s cap) and advances to the next.\n- Resets a URL's failure count on the first 2xx response, so the\n  primary comes back into rotation as soon as it recovers.\n- Treats configurable `skipStatuses` (e.g. `404` on `/v1/prices`) as\n  endpoint-capability mismatches: skip without penalising the endpoint.\n  This lets non-mempool backends like Blockstream coexist in the list\n  even though they don't expose the price extension.\n- Composes a caller-supplied AbortSignal with the per-attempt timeout\n  via AbortSignal.any. Caller aborts (e.g. TanStack Query queryFn\n  unmounts) propagate immediately; timeouts mark the endpoint failed\n  and try the next URL.\n- Falls back to cooled-down endpoints when *every* URL is in cool-down,\n  rather than failing outright.\n\nDefault list is mempool.space -> mempool.emzy.de -> blockstream.info.\n\nEvery Esplora-touching helper in `src/lib/bitcoin.ts` (plus\n`verifyOnchainZap` in `useOnchainZaps`) now takes\n`(input, esploraApis: string[], signal?: AbortSignal)`. TanStack Query\ncallers thread their `queryFn` signal through; broadcast mutations call\nwithout an explicit signal but still get the 15s per-attempt timeout.",
+      "tree": {
+        "sha": "5c960eda0daa453189c37ce29237a76b70c42dbe",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/5c960eda0daa453189c37ce29237a76b70c42dbe"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/406371af885db19330d78df08824e65dd29df1b0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoPVWgACgkQchHR+ZdE\n+7f+3BAAoM5QEFTTgmZtJBaUVs9HwrneIi8aoxAgW2XWgoUEp6tqaRnPzulS7iDy\n+R9VTZ923FhyzOLcChiRzpV7ijIC9+KiDJnbCTyQEsxt0jUrTQ29GadwRWAzPGOR\n5058BMvifc+dugKjGq/2eEAw2rKDifAr/girGwqZOb8KKAKjGh1hbXr1/uEgEmjd\nlctX9HA8MgYugVVSc+gDd2Can2uDPJuBfLmIpd05ErreGTEH+ZUw6VzKDw7uNlw3\ncBN3AAJ+HA2AWR385I74sbfHhkvkPwrqKjtbpczi/kVi3d1z/jvEt9IiXtHyvZQX\nxwY6+MRs1Kd0jWG2H66AEnN8TfW4bG5ybKZfXvk1xQez1MMvbSr0DBVic+V+X6Ec\n7XkGDrKyabghwpimQMZaRQ1wGYtV5k2geN5aBYBkujaWn+hLbeIDzpApYopHVMRT\nIYmpkeIUt1pqCmbrTw3YN4tiaVYQwI9e2SuJCwlwuRPs3ipiI3U9PT0yMOhXCsvw\ntpHivnnkolRV6ApXCNmCKKKoS/XWPbg1ZTk6QlC1VaLScT0xZyVnZaCJeNd46tDx\nQqCQcITDvIumbhrBP+td0TIuxxmyYaYHMS8VrlQjNaSCI68F/6d2v4CkL/D564ix\nC2NMYey0P14nsWJ/eSBHS7lAk0qNhv/tOZiglseZIjTA+C8YDPM=\n=GAX0\n-----END PGP SIGNATURE-----",
+        "payload": "tree 5c960eda0daa453189c37ce29237a76b70c42dbe\nparent a256e360d860376f0e3680044a25adf5ddcfe038\nauthor Alex Gleason <alex@alexgleason.me> 1779389800 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779389800 -0500\n\nEsplora REST failover with abort signals and timeouts\n\nReplace the single `esploraBaseUrl: string` with `esploraApis: string[]`\nand route every Esplora REST call through a new `esploraFetch` helper\nthat handles ordered failover across multiple API endpoints.\n\nThe failover client:\n\n- Tries URLs in order with a per-attempt 15s timeout. mempool.space has\n  a shadowban-style rate-limit behaviour where requests are silently\n  absorbed and never reply; the timeout converts that hang into a\n  regular failover signal so the next URL is tried.\n- On `429` / `5xx` / network error / timeout, parks the URL in a\n  module-level cool-down with exponential backoff (30s, 60s, 120s,\n  240s, 300s cap) and advances to the next.\n- Resets a URL's failure count on the first 2xx response, so the\n  primary comes back into rotation as soon as it recovers.\n- Treats configurable `skipStatuses` (e.g. `404` on `/v1/prices`) as\n  endpoint-capability mismatches: skip without penalising the endpoint.\n  This lets non-mempool backends like Blockstream coexist in the list\n  even though they don't expose the price extension.\n- Composes a caller-supplied AbortSignal with the per-attempt timeout\n  via AbortSignal.any. Caller aborts (e.g. TanStack Query queryFn\n  unmounts) propagate immediately; timeouts mark the endpoint failed\n  and try the next URL.\n- Falls back to cooled-down endpoints when *every* URL is in cool-down,\n  rather than failing outright.\n\nDefault list is mempool.space -> mempool.emzy.de -> blockstream.info.\n\nEvery Esplora-touching helper in `src/lib/bitcoin.ts` (plus\n`verifyOnchainZap` in `useOnchainZaps`) now takes\n`(input, esploraApis: string[], signal?: AbortSignal)`. TanStack Query\ncallers thread their `queryFn` signal through; broadcast mutations call\nwithout an explicit signal but still get the 15s per-attempt timeout.\n",
+        "verified_at": "2026-05-21T19:14:21Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/406371af885db19330d78df08824e65dd29df1b0",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/406371af885db19330d78df08824e65dd29df1b0",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/406371af885db19330d78df08824e65dd29df1b0/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a256e360d860376f0e3680044a25adf5ddcfe038",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/a256e360d860376f0e3680044a25adf5ddcfe038",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/a256e360d860376f0e3680044a25adf5ddcfe038"
+      }
+    ]
+  }
+]

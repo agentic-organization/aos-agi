@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "c913bab2a114b60675c6909539739ca712bb2c6c",
+    "node_id": "C_kwDOH-XoldoAKGM5MTNiYWIyYTExNGI2MDY3NWM2OTA5NTM5NzM5Y2E3MTJiYjJjNmM",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-22T15:39:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-22T15:39:34Z"
+      },
+      "message": "feat(mint): implement NUT-29 batched minting (#958)\n\n* feat(mint): implement NUT-29 batch minting\n\n* feat(mint): enforce exact amount balance checks per payment method for batched minting\n\n* test(mint): add test cases for NUT-29 batched minting endpoints\n\n* test(mint): rename test_mint_api_batch.py to test_mint_batch.py\n\n* test(mint): separate API tests from direct internal ledger method tests\n\n* perf(mint): use batched DB methods with row locks for setting pending quotes\n\n* fix(test): accept both UNPAID and PAID states during quote check assertion to handle CI fake wallet auto-settling races\n\n* refactor(mint): use dedicated add_batch_features for NUT-29 mint info configuration\n\n* test(mint): move batch minting api tests to main api test file\n\n* test(mint): add concurrency tests for batch minting race conditions\n\n* test(mint): hoist and format imports\n\n* feat(mint): rate limit backend checks for mint quotes\n\n* fix(mint): regenerate gRPC proto to include last_checked in Nut04Quote\n\n* chore: fix ruff and formatting issues on generated gRPC files\n\n* fix(mint): prevent mint_batch race condition by adding quote.issued check during pending state transition\n\n* test(mint): add race condition regression test for double-mints through permutation deadlocks\n\n* fix(mint): fix TOCTOU vulnerability in get_mint_quote allowing state overwrites\n\n* fix: prevent TOCTOU race condition in mint quote rate limiting\n\n* fix(mint): add missing error codes for NUT-29 batch minting\n\n* fix(mint): restore management RPC protobuf import\n\n* fix(mint): handle CancelledError in mint_batch\n\n* fix(mint): handle CancelledError in mint_batch\n\n* chore: revert ledger.py line endings to CRLF\n\n* fix(mint): restore async_melt and batch mint models lost in rebase\n\n* fix issues\n\n* fix issues\n\n---------\n\nCo-authored-by: callebtc <93376500+callebtc@users.noreply.github.com>",
+      "tree": {
+        "sha": "717ef3d687e3064df31ddf311e19d83c178c2d8e",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/717ef3d687e3064df31ddf311e19d83c178c2d8e"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/c913bab2a114b60675c6909539739ca712bb2c6c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqEHi2CRC1aQ7uu5UhlAAAMkIQAAZFvc9/hgBYely1IWvUKFJT\nGpImB82Ih2/W1jW4vdsoUKIT5Osz9VvrIWRsCPVk27ZYeeDLyR0MRMaIY5OAt/dL\nYxcp9zWfr5qwsHVBtIZ1Z0JnMYD4VNrI/9VeuciYeF3MJJ9sVrI8F8s/Mx8lWTwp\nzprLYR9mzr3o47diAL/HVsbXt+uPoJILAJMO7iYpzSz3x+vCfce3fLFHLLUuUL84\n/X3zQiYLAR2uRZJszHRlUmZbU4BRA64xKN2Lu8Tgs7xXmhuYPIVAj8lxC20Gca9u\nqtsGOdH4Tnx0OxMaODPvIq99yWYMfJe14m4GBYK47oaZW42BULMjCmayQl5RUCfL\nu+/EG2sekNxRGRWivgEl6fOrZbLFR4Sd4SRCIjk0LQV6x/Nl+FrLAXWMRv8Dhrdk\ns/2DHcQDxQgVJlbLZRTV+iAZ1R3acIOnnT73hKm88I5l3IYRVgNOO0AZ/PQDJ/+a\nXNcDWm7LX+hOoWwNJZsBy5/lmnX75DVXXI57O0QkfBknCJJjiL3b2tKKte9J88t7\nAskI+qihBtBPaLWTFsd10Ob4/bTaA5EYPx2VaNAFhuGIfBCy5+e26UtTXZDMYjfZ\nFLj2/nmiUsnX45lBOhk4QwHC/bG8xeKhRWptordk+fKb6u0I18oq5hPGcl6EW1B6\niDNqDfbff4Kqj2CJztlw\n=oxlx\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 717ef3d687e3064df31ddf311e19d83c178c2d8e\nparent 85c959e745e069ede68d194facfdb938016a0552\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1779464374 +0200\ncommitter GitHub <noreply@github.com> 1779464374 -0500\n\nfeat(mint): implement NUT-29 batched minting (#958)\n\n* feat(mint): implement NUT-29 batch minting\n\n* feat(mint): enforce exact amount balance checks per payment method for batched minting\n\n* test(mint): add test cases for NUT-29 batched minting endpoints\n\n* test(mint): rename test_mint_api_batch.py to test_mint_batch.py\n\n* test(mint): separate API tests from direct internal ledger method tests\n\n* perf(mint): use batched DB methods with row locks for setting pending quotes\n\n* fix(test): accept both UNPAID and PAID states during quote check assertion to handle CI fake wallet auto-settling races\n\n* refactor(mint): use dedicated add_batch_features for NUT-29 mint info configuration\n\n* test(mint): move batch minting api tests to main api test file\n\n* test(mint): add concurrency tests for batch minting race conditions\n\n* test(mint): hoist and format imports\n\n* feat(mint): rate limit backend checks for mint quotes\n\n* fix(mint): regenerate gRPC proto to include last_checked in Nut04Quote\n\n* chore: fix ruff and formatting issues on generated gRPC files\n\n* fix(mint): prevent mint_batch race condition by adding quote.issued check during pending state transition\n\n* test(mint): add race condition regression test for double-mints through permutation deadlocks\n\n* fix(mint): fix TOCTOU vulnerability in get_mint_quote allowing state overwrites\n\n* fix: prevent TOCTOU race condition in mint quote rate limiting\n\n* fix(mint): add missing error codes for NUT-29 batch minting\n\n* fix(mint): restore management RPC protobuf import\n\n* fix(mint): handle CancelledError in mint_batch\n\n* fix(mint): handle CancelledError in mint_batch\n\n* chore: revert ledger.py line endings to CRLF\n\n* fix(mint): restore async_melt and batch mint models lost in rebase\n\n* fix issues\n\n* fix issues\n\n---------\n\nCo-authored-by: callebtc <93376500+callebtc@users.noreply.github.com>",
+        "verified_at": "2026-05-22T15:39:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/c913bab2a114b60675c6909539739ca712bb2c6c",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/c913bab2a114b60675c6909539739ca712bb2c6c",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/c913bab2a114b60675c6909539739ca712bb2c6c/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "85c959e745e069ede68d194facfdb938016a0552",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/85c959e745e069ede68d194facfdb938016a0552",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/85c959e745e069ede68d194facfdb938016a0552"
+      }
+    ]
+  }
+]
