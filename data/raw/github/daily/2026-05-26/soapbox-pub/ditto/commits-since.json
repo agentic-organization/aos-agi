@@ -1,0 +1,412 @@
+[
+  {
+    "sha": "6b88ac28033507bba19c70673f206be197fa534e",
+    "node_id": "C_kwDOL5Eek9oAKDZiODhhYzI4MDMzNTA3YmJhMTljNzA2NzNmMjA2YmUxOTdmYTUzNGU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T22:04:10Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T22:04:10Z"
+      },
+      "message": "Portal the Send-recipient dropdown out of the dialog body\n\nThe recipient picker rendered its results inside an absolute-positioned\ndiv nested under DialogContent's overflow-hidden + the body wrapper's\noverflow-y-auto, so longer result lists got clipped at the dialog's\nbottom edge.\n\nSwitch the dropdown to a Radix Popover anchored to the input, portalled\ninto DialogContent via PortalContainerProvider (mirrors the pattern in\nThemeSelector). DialogContent is now overflow-visible so the popover can\nextend past it, while the body wrapper carries max-h-[calc(95vh-3rem)]\nto keep the dialog itself bounded and scrollable. The popover stays\ninside the dialog's RemoveScroll boundary so touch-scroll inside the\nresults list still works on mobile.\n\nAlso export PopoverAnchor from the wrapped popover module so picker-style\ncombobox patterns can anchor a popover to a custom element.",
+      "tree": {
+        "sha": "964b488a662e7be932370d406c6513149cd7384f",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/964b488a662e7be932370d406c6513149cd7384f"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/6b88ac28033507bba19c70673f206be197fa534e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoUx1oACgkQchHR+ZdE\n+7eM+g/+Mse0csgrqdl3mmbLIISptg8XSj2QoZRqJfIO7j/8OUoudUbzJm3qsCCK\nMM0xoeSbvb8ri9OUZ2rKM5B4NEMJECf4EObMRt6gC7Miz/vhBZRB+cCbzVW+Wj6y\nLLGdLpDYv24ABfc2oDnAK7ZL0mDVpopdvhiWAHlUR21VzdFvH5pck24LYfv+3XN2\n13barTk7DI64OQAeGxXPSQJXC3W/2MEsbZhROofQMu77Q6rg+cyc8ctUPVnlOdbS\nnxB31qhHH9CKWaC8TdOdod9J9Rxw/wnHQehFablv/kTu+YuZ1Kt+OdS5frskAtIF\nX6C/mTYcTqZ8ouBuim581n47NI2hEIb0wQiszLJFuNuvwWle5tjJaFAuKVx/qwbv\n7aiZBuCKOxJKaoWjTncE/HQoJZMTe5Y9crAtND4XjxVpnZvLT+a95pcW2qrQM/UW\n9ukeB5rQy7pAFaEGqMG0Bbo1U6RsCKmDjdlLz2ndh/chf13T6TuYtt6i5aXee/Vz\nAommK4hw2iQECSOI/isp4ujPrYaDnj0W4JFyPWROY8ulcogqPEQI5Cz3z9YCnFFo\nBbp2e5QNyo0mPeEG/IqAmEB51cbXYUo0VXpc4ckNbiR20UEt0DlrxeXl+L0Ok18s\ng4i6YL+8XR1pU6uhEsiM+T+tzoWMFqZVeg0f7QA/uk+Bh0v6X8k=\n=8ioE\n-----END PGP SIGNATURE-----",
+        "payload": "tree 964b488a662e7be932370d406c6513149cd7384f\nparent 2238f94edeb3ee54289efa5a994a58695ec5b9ef\nauthor Alex Gleason <alex@alexgleason.me> 1779746650 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779746650 -0500\n\nPortal the Send-recipient dropdown out of the dialog body\n\nThe recipient picker rendered its results inside an absolute-positioned\ndiv nested under DialogContent's overflow-hidden + the body wrapper's\noverflow-y-auto, so longer result lists got clipped at the dialog's\nbottom edge.\n\nSwitch the dropdown to a Radix Popover anchored to the input, portalled\ninto DialogContent via PortalContainerProvider (mirrors the pattern in\nThemeSelector). DialogContent is now overflow-visible so the popover can\nextend past it, while the body wrapper carries max-h-[calc(95vh-3rem)]\nto keep the dialog itself bounded and scrollable. The popover stays\ninside the dialog's RemoveScroll boundary so touch-scroll inside the\nresults list still works on mobile.\n\nAlso export PopoverAnchor from the wrapped popover module so picker-style\ncombobox patterns can anchor a popover to a custom element.\n",
+        "verified_at": "2026-05-25T22:47:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/6b88ac28033507bba19c70673f206be197fa534e",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/6b88ac28033507bba19c70673f206be197fa534e",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/6b88ac28033507bba19c70673f206be197fa534e/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2238f94edeb3ee54289efa5a994a58695ec5b9ef",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/2238f94edeb3ee54289efa5a994a58695ec5b9ef",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/2238f94edeb3ee54289efa5a994a58695ec5b9ef"
+      }
+    ]
+  },
+  {
+    "sha": "2238f94edeb3ee54289efa5a994a58695ec5b9ef",
+    "node_id": "C_kwDOL5Eek9oAKDIyMzhmOTRlZGViM2VlNTQyODllZmE1YTk5NGE1ODY5NWVjNWI5ZWY",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T21:45:52Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T21:45:52Z"
+      },
+      "message": "Soften the raw-Bitcoin-address privacy notice in Send dialog\n\nThe on-chain privacy callout was destructive-red, required ticking a\ncheckbox before the Send button enabled, and forced a two-tap confirm\nregardless of amount. That was overkill for an informational warning\nabout an inherent Bitcoin property — sending to a bc1 address isn't\nitself dangerous.\n\nDrop the checkbox + acknowledgement state, stop using raw-address as a\ntrigger for the two-tap arm (large amounts still arm), and restyle the\nAlert as a soft amber notice with the same Learn-more popover.",
+      "tree": {
+        "sha": "cad509093f8cebeafe5f234193fee63408220674",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/cad509093f8cebeafe5f234193fee63408220674"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/2238f94edeb3ee54289efa5a994a58695ec5b9ef",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoUwxAACgkQchHR+ZdE\n+7fZkRAAwNRzUz8mJhvgVNiYopERuviOgr5wt/N8gRK6sOzhuLc4Um9H9M9gCCWq\nnKaY0sdZGap+hSyFQW6636fuJ+TCedCHFVeRl+jz1qCIz4qAcHxiKXwdDrw5aPcx\nMxjIgd5zuNx71jabTa2SMW1MsbAakoZ7qQrGPyMGRV38Es3kN18sgJCycDFOXHP5\nkVaIW3R2MrH3hVkXDZBJIav3f3CDPGiXs6ltluLhDoxMvVFdkiZ3OmbilZI8CxKh\nD/Fu2bm3TR/AEMMR9/YshNTa2PRqo3rr2UpvFsu7mke+6Xs14pKTA53nDyd8mPjh\nLkaGsdNiURLk4yla7u2STPaKfVoPWILyityrQv20Ia8+cMAhm8bNRvW0N7HM3bRo\nBp8Emy5sj+4hdXbYfLtjuxtoSkwUoh3DZ68vidsdqX98x5WLwAXo2gdtcZYWc0oh\nYGLVJEElTr9+HsAnnkJjSa5FsI2XyZiHNeLFVVrp/nqQYsyEbUDXkcMT7RFS5LuG\nO6haComwZDI7ymMhUSJ/CC5Zc8rRnDbpUHMwFqrSiB61EmLuLIv/avtmA0g7F2IX\nL+Mn30bhKkGlSBBSzwmbk/RumqN8aNKZKp+rIj005l0vhFyWATJ8GjqwdGOmv4sn\nEdw8USRBD4IYBhtSC7kb2QtnTcNk/rZUg1ajGrQqyi4kar7KNSU=\n=63Ni\n-----END PGP SIGNATURE-----",
+        "payload": "tree cad509093f8cebeafe5f234193fee63408220674\nparent f9248da8147bce3292f9583c4726a65a78745765\nauthor Alex Gleason <alex@alexgleason.me> 1779745552 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779745552 -0500\n\nSoften the raw-Bitcoin-address privacy notice in Send dialog\n\nThe on-chain privacy callout was destructive-red, required ticking a\ncheckbox before the Send button enabled, and forced a two-tap confirm\nregardless of amount. That was overkill for an informational warning\nabout an inherent Bitcoin property — sending to a bc1 address isn't\nitself dangerous.\n\nDrop the checkbox + acknowledgement state, stop using raw-address as a\ntrigger for the two-tap arm (large amounts still arm), and restyle the\nAlert as a soft amber notice with the same Learn-more popover.\n",
+        "verified_at": "2026-05-25T22:47:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/2238f94edeb3ee54289efa5a994a58695ec5b9ef",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/2238f94edeb3ee54289efa5a994a58695ec5b9ef",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/2238f94edeb3ee54289efa5a994a58695ec5b9ef/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f9248da8147bce3292f9583c4726a65a78745765",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/f9248da8147bce3292f9583c4726a65a78745765",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/f9248da8147bce3292f9583c4726a65a78745765"
+      }
+    ]
+  },
+  {
+    "sha": "f9248da8147bce3292f9583c4726a65a78745765",
+    "node_id": "C_kwDOL5Eek9oAKGY5MjQ4ZGE4MTQ3YmNlMzI5MmY5NTgzYzQ3MjZhNjVhNzg3NDU3NjU",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T21:41:52Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T21:41:52Z"
+      },
+      "message": "Surface both sp and bc1 rows when a BIP-21 URI carries both\n\nA BIP-21 URI like `bitcoin:bc1q…?sp=sp1q…` advertises a silent-payment\nrecipient with an on-chain fallback. The dropdown collapsed this to the\nsp row only, hiding the fallback path even though the sender might\nprefer the (cheaper, simpler) on-chain leg.\n\nSplit the URI into independent `btcCandidate` and `spCandidate` strings\nand show whichever rows are valid. Sp goes first so the privacy-\npreferred option is selected by default, matching the QR scanner's\nprioritization.",
+      "tree": {
+        "sha": "c6b3018c907b1bab8fe2f67b3461bbb66877c274",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/c6b3018c907b1bab8fe2f67b3461bbb66877c274"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/f9248da8147bce3292f9583c4726a65a78745765",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoUwiAACgkQchHR+ZdE\n+7dl+A//WPoB7EOnn0Tyyc3Tbjq4SvEkImT1f5NNrLuvWrqqedmm8F1QRrf01K1G\nH3N5D5v80q3xG46otbFTaDi8cmKYwD8mIpDtcn4Hb03ncUhRmH80pfACjCt8pnnQ\n7q3yrvJLsaF8l25U/O0YPeAhHk+4Vt5Qvm+H9x/ENuDWeaD78xLUN39/LY+EkJBj\n4dnnlpegQ0OsEXWfuJ3Ujif16k+ev/0N8KJXUApx1j8YGtQ7b1f6GkPSTh3gNo5i\n5a+kI1DnOiqGYbxaMNN8Nlnn/+kjK3hwmGeahjaGOXfiRPcQYEEAPcW1Nv2Cs9dR\n8HXhrXTmXe7sO5f4zU1nrDVN084JzOeTC7bzpLUIWxMtEMH//g19UHbjcBPK5jwI\naiqNUyuc8xaCZ0xTU/mGwdisLab35udlUh4tvzIJJ8ZCuR+Uvh4LowNeBr+8T+gf\naosApCiUXIVtRcTFKm4YnJnl4lcAYoGeQWB+33XhQm8rDJGW71mRBfhtz4zhyioJ\n/tbZl6PuuJ37GCKdwiVS0DzfojHw5PDRpGwQt18UakoAEtzUvMx+qltAUIJbQuZh\nRyD5i4GVMLKkUC/O76dqRmLfZ4JGpRvgIjb7sOo/CVMYltswduDAweN7ll8IixU7\nVKulYHdDh1ajiu7pX5gmaNxL078NSCC4JVfBX6iUmV4GncEMDhs=\n=+akQ\n-----END PGP SIGNATURE-----",
+        "payload": "tree c6b3018c907b1bab8fe2f67b3461bbb66877c274\nparent 0b248d48dfd7a548ae463860ddeb8e64856994cb\nauthor Alex Gleason <alex@alexgleason.me> 1779745312 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779745312 -0500\n\nSurface both sp and bc1 rows when a BIP-21 URI carries both\n\nA BIP-21 URI like `bitcoin:bc1q…?sp=sp1q…` advertises a silent-payment\nrecipient with an on-chain fallback. The dropdown collapsed this to the\nsp row only, hiding the fallback path even though the sender might\nprefer the (cheaper, simpler) on-chain leg.\n\nSplit the URI into independent `btcCandidate` and `spCandidate` strings\nand show whichever rows are valid. Sp goes first so the privacy-\npreferred option is selected by default, matching the QR scanner's\nprioritization.\n",
+        "verified_at": "2026-05-25T22:47:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/f9248da8147bce3292f9583c4726a65a78745765",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/f9248da8147bce3292f9583c4726a65a78745765",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/f9248da8147bce3292f9583c4726a65a78745765/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0b248d48dfd7a548ae463860ddeb8e64856994cb",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0b248d48dfd7a548ae463860ddeb8e64856994cb",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/0b248d48dfd7a548ae463860ddeb8e64856994cb"
+      }
+    ]
+  },
+  {
+    "sha": "0b248d48dfd7a548ae463860ddeb8e64856994cb",
+    "node_id": "C_kwDOL5Eek9oAKDBiMjQ4ZDQ4ZGZkN2E1NDhhZTQ2Mzg2MGRkZWI4ZTY0ODU2OTk0Y2I",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T21:38:58Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T21:38:58Z"
+      },
+      "message": "Suppress profile search when wallet recipient is an address or BIP-21 URI\n\nWhen a bitcoin: URI was pasted into the Send dialog, the parsed sp1…\nrecipient row appeared for a frame, then got buried under stale NIP-50\nsearch results matching parts of the URI string. Raw bc1/sp1 addresses\nwere mostly spared only because the relay's NIP-50 search rarely matches\nrandom bech32 strings.\n\nSkip useSearchProfiles entirely (and drop any prior results) once the\ntrimmed input parses as a valid Bitcoin address, silent payment address,\nor bitcoin: URI. Also avoids leaking the recipient address to the search\nrelay.\n\nRegression-of: 52275082",
+      "tree": {
+        "sha": "f143a85ed341e28e61f763f15dcaa69577f8ab6c",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/f143a85ed341e28e61f763f15dcaa69577f8ab6c"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/0b248d48dfd7a548ae463860ddeb8e64856994cb",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoUwXIACgkQchHR+ZdE\n+7eb0xAAznDPZ3Zq94UFtc1U3T+NOqA1h43XybBEfmr3lsQkrMbOHVNFOseWERdO\nV9xJEgcXJx5Zf/vh0H5U4aJdMkC1vo7kBJCj0E5znkUX5KYN0XXpFV9c9yFs4bHy\nOU4fuSzv4nXiFkVNjbwEc7esicnqPyTVdQ9Uf8jN3QpvIGN7Hd37Ew9507rVxWuY\nT1KNq/ZIN7Mr7Z4L9XzeQD0PPkdb6m8QaSn5BKNfwsbj+cT+4G8TBxw8GW582uUp\nfPgexlmQWU9PqXG9J+JSdvDUll9HiGpMU9VyQyUQYwTuGjwXWI3LirHLZ7idt9jW\nYOct61WhzoS29fN4zAC0xO5J5fKm+jWim5KXqyaYFM9n9GsYNIfOTnKrbPpNjTaa\nhv6CDPUS6DDlxE3Qnvo+heeYudKT4SMgchC7zMymPtvInyWaAtk6iPwh1/Ku1563\nvJzTBtvU747iDSBUFBv/umLgsR0JK9KQYCMpK17Lwc7DCwq2jHi+Ow/WMy08j6HM\nl/Io7rb3BvqhkSiHIvOeYIGsTPXou7zIAQ51iFKp7soKqy65odARRLxFlHmtajQm\n2ZWHvegqvLlfQEPEDWvKX1S5Gjosj6JIJMABneyvQh+m0wkJ1acEXuC+YFt/MMPH\nPhsqDyOyN1+275c6SobnVkjZGBEzSYoJdGOXMy/L/BWr8GMNcS4=\n=l9Th\n-----END PGP SIGNATURE-----",
+        "payload": "tree f143a85ed341e28e61f763f15dcaa69577f8ab6c\nparent 5227508257536d203c8c0e692ebc0d42bf6b94ca\nauthor Alex Gleason <alex@alexgleason.me> 1779745138 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779745138 -0500\n\nSuppress profile search when wallet recipient is an address or BIP-21 URI\n\nWhen a bitcoin: URI was pasted into the Send dialog, the parsed sp1…\nrecipient row appeared for a frame, then got buried under stale NIP-50\nsearch results matching parts of the URI string. Raw bc1/sp1 addresses\nwere mostly spared only because the relay's NIP-50 search rarely matches\nrandom bech32 strings.\n\nSkip useSearchProfiles entirely (and drop any prior results) once the\ntrimmed input parses as a valid Bitcoin address, silent payment address,\nor bitcoin: URI. Also avoids leaking the recipient address to the search\nrelay.\n\nRegression-of: 52275082\n",
+        "verified_at": "2026-05-25T22:47:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0b248d48dfd7a548ae463860ddeb8e64856994cb",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/0b248d48dfd7a548ae463860ddeb8e64856994cb",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/0b248d48dfd7a548ae463860ddeb8e64856994cb/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5227508257536d203c8c0e692ebc0d42bf6b94ca",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/5227508257536d203c8c0e692ebc0d42bf6b94ca",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/5227508257536d203c8c0e692ebc0d42bf6b94ca"
+      }
+    ]
+  },
+  {
+    "sha": "5227508257536d203c8c0e692ebc0d42bf6b94ca",
+    "node_id": "C_kwDOL5Eek9oAKDUyMjc1MDgyNTc1MzZkMjAzYzhjMGU2OTJlYmMwZDQyYmY2Yjk0Y2E",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T21:34:54Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-25T21:34:54Z"
+      },
+      "message": "Accept BIP-21 URIs pasted into the wallet Send recipient field\n\nThe Send Bitcoin dialog's QR scanner already parses bitcoin:<addr>?sp=…\nURIs, but pasting the same URI into the input field fell through to the\nplain on-chain validator and was rejected.\n\nExtract the BIP-21 parsing into parseBitcoinUri() and reuse it from both\nthe scanner and the input-time recipient detection, so paste matches the\nscan behaviour: prefer a valid sp= silent payment, otherwise fall back\nto the on-chain address.",
+      "tree": {
+        "sha": "892cb45fabe191b84ef6e458691e1e6c0137b6e0",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/892cb45fabe191b84ef6e458691e1e6c0137b6e0"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/5227508257536d203c8c0e692ebc0d42bf6b94ca",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoUwH4ACgkQchHR+ZdE\n+7cVfw/9EQ9vwMYY2LeRGHov4zJo2phKJkBg/MACCvof3+lSdYkLvDmTWLHgxMh3\nZQwChEWKWwlAXWqChIjnAeJCTKp8yBPHY37Goqwzur2gDTgaIoEJSwnjbSg14KcZ\nypI0hks+ndsq++4W+dmBdr8dN0g+q60+Udpq9rNgi9nPPu3178pR3hHr4h3+FBD1\nnLWLwhCorGWYH0ty1rwxknkAi6mIkcrYr2wHIcNIg+/jO74u5uX6SSkd2wSuVWZ/\nioqrxyVmAPs7djVOk9pBGhL9ll6zSIIhD9StHJfNgme2rYaj4/Xm5S8wDuBoVPA3\n9cs0kVz56HinHfWwbq9q5SgimBICJ55h2hzHLzoY/QguFgQFwB2PqoFOQCjkBwcZ\ng509l6xX1BJ+8LLHeiPCmioeMG+9hrhtwuEXzvIgLsHs2KvA30frSwuHni7Mx9CH\nfNy0Yq3yk+f9ntL1QJTGGC3wSiwenzR/avpRdymC46nhXrLrv3zjPvIfbdKr7vlt\nBdejJNSqDpVfq/tPhkl2MiHOtU5LRc/07afhocg5deQjzPulkov49Izz2lN/3c7C\nc776C8hv/XwjIIjHmA2Ko3Yx+HWVqhHbOVLVjs67Ew1y2EMKBEbm4ipIA4TVEWPL\nNigVnSbzrSgoAxH2VOiDL3D9bc1WBebubZlrbAo7pQSBgQzWI0Y=\n=pe51\n-----END PGP SIGNATURE-----",
+        "payload": "tree 892cb45fabe191b84ef6e458691e1e6c0137b6e0\nparent 7a5820ca93f833b56cf368fc40c91e42c63f912f\nauthor Alex Gleason <alex@alexgleason.me> 1779744894 -0500\ncommitter Alex Gleason <alex@alexgleason.me> 1779744894 -0500\n\nAccept BIP-21 URIs pasted into the wallet Send recipient field\n\nThe Send Bitcoin dialog's QR scanner already parses bitcoin:<addr>?sp=…\nURIs, but pasting the same URI into the input field fell through to the\nplain on-chain validator and was rejected.\n\nExtract the BIP-21 parsing into parseBitcoinUri() and reuse it from both\nthe scanner and the input-time recipient detection, so paste matches the\nscan behaviour: prefer a valid sp= silent payment, otherwise fall back\nto the on-chain address.\n",
+        "verified_at": "2026-05-25T22:47:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/5227508257536d203c8c0e692ebc0d42bf6b94ca",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/5227508257536d203c8c0e692ebc0d42bf6b94ca",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/5227508257536d203c8c0e692ebc0d42bf6b94ca/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7a5820ca93f833b56cf368fc40c91e42c63f912f",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/7a5820ca93f833b56cf368fc40c91e42c63f912f",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/7a5820ca93f833b56cf368fc40c91e42c63f912f"
+      }
+    ]
+  }
+]

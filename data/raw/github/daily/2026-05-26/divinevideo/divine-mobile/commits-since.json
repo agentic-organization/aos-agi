@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "48a15a82eff31f3f4c587eadaf779578b2e7463b",
+    "node_id": "C_kwDOO71yAtoAKDQ4YTE1YTgyZWZmMzFmM2Y0YzU4N2VhZGFmNzc5NTc4YjJlNzQ2M2I",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-26T04:03:16Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-26T04:03:16Z"
+      },
+      "message": "feat(dm): wire full emoji picker for custom reactions (#4711)",
+      "tree": {
+        "sha": "ed37a85b30aa5a931b8dde39ae4152c4db2a73e3",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/ed37a85b30aa5a931b8dde39ae4152c4db2a73e3"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/48a15a82eff31f3f4c587eadaf779578b2e7463b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqFRuECRC1aQ7uu5UhlAAA1woQAJQ4uT2UwsOBhuoVtCp9ieu6\n+ONHlqHgcOh6kIRyApCOtxiv3gs9qKYMEqSh03MXHcdFWFGeiVq6RQm9Y8sIAbpq\nsaUUH6clH7Wfb7GO2C28twW9P1HQw4hVJUn9IeHbeBhHFKC+zKGcLJ8Ds6s4gtsv\nT5AJOX4aXrYSyRhILrQu75fFgT1cZ+3fFxxKr8HrDYzNT+edvemC5u1DnPhywrqs\niHIpOmZZqskXsqaJK9EVsZqf9Ts9PnnbdeQFuLglh9jajyfohv5rWuKU+2DMZqlL\n/oMU7dEsWmlEi5GhiMYj0sD6p71CusF53frgR4zy199hxkPbKPoZNmcNWqwjwHHE\nWm9qIIvgAyt6BpqWMxA1fZMQ7gwMXBRxQOgIP+Yl1O1tqsv1NR49yoDUazxgIaHb\nzalzyK9J2LhCEPMicT+JExfd5Wf4uD1xQzWezGvtgYw0gBDyOlM9uSvr/9Ejjt/3\nJ/Wp//lC++QKn43WunfcV+tQVILbK326ThYhjiMGf4/f4a0bmkafZXBYHnT/Luuy\ncJWBrlyZdItZQIaIfHWqtBDhyBDVNmb4O1As/fDSIWW7d0XyV9QcsrHWKQYynlSj\nTCbDgQQwVAYE4mHM7CO4DrhEhxsuELiM+Pn3mnpnnGKnCYbDx6tZcxhwm9Y8TPsc\n4QUZmtU+SSs7SUVy5plE\n=fNUp\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ed37a85b30aa5a931b8dde39ae4152c4db2a73e3\nparent 9e21aedec57bbfbe3e4c711b5c2e10272364d1d7\nauthor Meylis <meylis@divine.video> 1779768196 +0500\ncommitter GitHub <noreply@github.com> 1779768196 +0500\n\nfeat(dm): wire full emoji picker for custom reactions (#4711)",
+        "verified_at": "2026-05-26T04:03:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/48a15a82eff31f3f4c587eadaf779578b2e7463b",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/48a15a82eff31f3f4c587eadaf779578b2e7463b",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/48a15a82eff31f3f4c587eadaf779578b2e7463b/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9e21aedec57bbfbe3e4c711b5c2e10272364d1d7",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/9e21aedec57bbfbe3e4c711b5c2e10272364d1d7",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/9e21aedec57bbfbe3e4c711b5c2e10272364d1d7"
+      }
+    ]
+  },
+  {
+    "sha": "9e21aedec57bbfbe3e4c711b5c2e10272364d1d7",
+    "node_id": "C_kwDOO71yAtoAKDllMjFhZWRlYzU3YmJmYmUzZTRjNzExYjVjMmUxMDI3MjM2NGQxZDc",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-25T19:42:16Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-25T19:42:16Z"
+      },
+      "message": "refactor(providers): break remaining transitive app_providers dependency cycle (#4720)\n\n* refactor(providers): relocate createBlockedAuthorFilter, make app_providers a pure barrel\n\nMove createBlockedAuthorFilter into moderation_providers.dart — its only\ndependencies (contentBlocklistRepositoryProvider, contentPolicyEngineProvider)\nalready live there — and reduce app_providers.dart to export-only. This\nremoves the last symbol that forced split leaf modules to import the\naggregator back, so the aggregator no longer participates in a dependency\ncycle.\n\nmoderation_providers itself now imports auth/repository directly instead of\nthe aggregator (dropping the feedAspectRatio hide that only existed to avoid\nthe barrel re-export collision).\n\nRefs #4554.\n\n* refactor(providers): redirect provider modules off the app_providers barrel\n\nReplace the app_providers.dart import with direct sibling-leaf imports across\nthe remaining 30 provider modules, matching the pattern already used by\nsocial_providers/upload_media_providers. This breaks the transitive\naggregator -> (export) leaf -> (import) aggregator cycle that the #4506 split\nleft behind: no file under lib/providers/ imports the aggregator anymore.\n\nThe ~130 screen/widget/router consumers intentionally stay on the barrel\nre-export — that is the separate #4339 compatibility-barrel removal. Pure\nimport-path change; no runtime behavior change and generated files unaffected.\n\nCloses #4554.",
+      "tree": {
+        "sha": "d278d2561f62541a9ac5d090226fcba3ed2804a4",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/d278d2561f62541a9ac5d090226fcba3ed2804a4"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/9e21aedec57bbfbe3e4c711b5c2e10272364d1d7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqFKYYCRC1aQ7uu5UhlAAA+4IQADN4Gd0RnclJ7Rby3zYVGN6e\nSmSQVVT/zA18Tkb80j3Z9hyGB+sglFF3jsw/w7IB7NL9P3KFt5jRu6uiMxcVYCCw\nY0EE6DFnEHS2gB3FtL0vTeIqmmcNWFwY3pGR8BG6wmcsRgz0V69WzII5m7bI7Xz8\nw9WO4k45XLQg4UgF/SPn3b+CITPCAfh3qdsPt9aSaK2iP1ah2ezibNpVN4TyD2Vr\naHqqBHZNfkY5PVOw1vUFGVWo5t/3pZ5ztp4KkecAaPi2V9gz1545cKmeUhZfRX9T\nw6fKiNLHtMKMhcihae1A4kPE/75Rk01cEAyF8XaNKriZAo29Co1dsx1Nw+MmdvDu\nmYiu42OlXHR3C9lhO9FOKJIbnVlON9pn6O0F61X8gUuZ/iUSHkwOkdEOhM1mz53U\nZuXwOqH73GdrIM08AFE1oN5iNl/95oyE+iATIIf/3a561Myyp1HNAtA0W3+3mFC3\n09DEpEZPRTmE3YP7GFECUnfJCQbQFYMkEwfIkGSMWvSXrQOxqt2OnUxuAjXcwBDU\nYY/QjoM/2Q1P9onHQxsMVSfQwZdOh63GTnJdxAOtwz08NCIzH5zRGGgcXJza5Q0R\nK3o21i/9g1LOn0HPBU3KcpE08DjOeQlmYUVFEwPhq/HGfZA/jG7RP/PD4DHFQpDB\npKx4VeVMD0mOBXJXTAZz\n=Gqrv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d278d2561f62541a9ac5d090226fcba3ed2804a4\nparent b4303d85f2c3b5d170ffa0ef1d9c724bb8c9e9ae\nauthor Meylis <meylis@divine.video> 1779738136 +0500\ncommitter GitHub <noreply@github.com> 1779738136 +0200\n\nrefactor(providers): break remaining transitive app_providers dependency cycle (#4720)\n\n* refactor(providers): relocate createBlockedAuthorFilter, make app_providers a pure barrel\n\nMove createBlockedAuthorFilter into moderation_providers.dart — its only\ndependencies (contentBlocklistRepositoryProvider, contentPolicyEngineProvider)\nalready live there — and reduce app_providers.dart to export-only. This\nremoves the last symbol that forced split leaf modules to import the\naggregator back, so the aggregator no longer participates in a dependency\ncycle.\n\nmoderation_providers itself now imports auth/repository directly instead of\nthe aggregator (dropping the feedAspectRatio hide that only existed to avoid\nthe barrel re-export collision).\n\nRefs #4554.\n\n* refactor(providers): redirect provider modules off the app_providers barrel\n\nReplace the app_providers.dart import with direct sibling-leaf imports across\nthe remaining 30 provider modules, matching the pattern already used by\nsocial_providers/upload_media_providers. This breaks the transitive\naggregator -> (export) leaf -> (import) aggregator cycle that the #4506 split\nleft behind: no file under lib/providers/ imports the aggregator anymore.\n\nThe ~130 screen/widget/router consumers intentionally stay on the barrel\nre-export — that is the separate #4339 compatibility-barrel removal. Pure\nimport-path change; no runtime behavior change and generated files unaffected.\n\nCloses #4554.",
+        "verified_at": "2026-05-25T19:42:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/9e21aedec57bbfbe3e4c711b5c2e10272364d1d7",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/9e21aedec57bbfbe3e4c711b5c2e10272364d1d7",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/9e21aedec57bbfbe3e4c711b5c2e10272364d1d7/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b4303d85f2c3b5d170ffa0ef1d9c724bb8c9e9ae",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b4303d85f2c3b5d170ffa0ef1d9c724bb8c9e9ae",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/b4303d85f2c3b5d170ffa0ef1d9c724bb8c9e9ae"
+      }
+    ]
+  },
+  {
+    "sha": "b4303d85f2c3b5d170ffa0ef1d9c724bb8c9e9ae",
+    "node_id": "C_kwDOO71yAtoAKGI0MzAzZDg1ZjJjM2I1ZDE3MGZmYTBlZjFkOWM3MjRiYjhjOWU5YWU",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-25T15:02:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-25T15:02:58Z"
+      },
+      "message": "fix(comments): restore rounded corners on inline video player (#4706)\n\n* fix(video-comment-player): refactor video player layout and improve overlay positioning\n\n* fix(comment-item): add rounded corners to video player and update padding in invite card\n\n* fix(comment-item): wrap inline video player with rounded corners in tests\n\n* chore: fix review comments",
+      "tree": {
+        "sha": "84024417de4c14955e399759ea469503c5f7c8a5",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/84024417de4c14955e399759ea469503c5f7c8a5"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/b4303d85f2c3b5d170ffa0ef1d9c724bb8c9e9ae",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqFGSiCRC1aQ7uu5UhlAAANEAQAHtsoNsE/yzsrRu4jLMCO3yS\nh0tmRDCCaEKwxtXFi0hhnOFfKZz1FBAwBlzmNphy2a+N6M0ervqehcppcGOSR52W\nYRr+v3gzplG4nQqvtS5qCLCxOls8stisgH6dUCLVcjh7C5CVsXB06sXwMlyIOqZT\nbAjkzaDjeQL4tOvrUeF5UEIDTZ7tiQzFQ1GUUbd3kYfo1T1Z/UVF3Ruom/YX94/q\nIhMA/B0827CUEZIugjvAQIX8/JDbfXXubWOSbPbHPa2R44fULRDFh6pAtIbM7tTd\npNjUn5cslZPvbCp3eTL65l6fBotpivSDMezalWcS0MKZJQkGF4tIL3VM4f0O7ONg\nLWKWI4TbiQfLc16XcS7z3Uj53+uU4rbUz6SVAXPBSf+v/fJ9yGWFHHcmPDv5yhkH\nMzGLSMg9dx0g9dGBMNbYEDUzFNTnvwsEc8n+X/Q13ODlVFFPA478XGbPkJ13wTpy\nAvGqSZ5FXpk+v8Hh/me+UuVwS4Hxnu0HcDzwR8czjAbdYbwyLrdtdRwmDDopz9rk\ndEPT1iI4P4Pnvp2Z8xU2Coryg6Yube31wXjHLokvQjtZJxXwPZ9TZfXUUVdpx10t\nib7dxFZBNYxxx9SlkQu6BIWBL2Ww8/1S9ot7/MmtRHm3uUMQMwGUvPGb2f+Wmozw\nkccp7yxj6WtBm2ggU+ED\n=B8SE\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 84024417de4c14955e399759ea469503c5f7c8a5\nparent ff9356f0dfaad31900e271c894b7f6f8f1971d20\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1779721378 +0700\ncommitter GitHub <noreply@github.com> 1779721378 +0200\n\nfix(comments): restore rounded corners on inline video player (#4706)\n\n* fix(video-comment-player): refactor video player layout and improve overlay positioning\n\n* fix(comment-item): add rounded corners to video player and update padding in invite card\n\n* fix(comment-item): wrap inline video player with rounded corners in tests\n\n* chore: fix review comments",
+        "verified_at": "2026-05-25T15:02:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b4303d85f2c3b5d170ffa0ef1d9c724bb8c9e9ae",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/b4303d85f2c3b5d170ffa0ef1d9c724bb8c9e9ae",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b4303d85f2c3b5d170ffa0ef1d9c724bb8c9e9ae/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ff9356f0dfaad31900e271c894b7f6f8f1971d20",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ff9356f0dfaad31900e271c894b7f6f8f1971d20",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/ff9356f0dfaad31900e271c894b7f6f8f1971d20"
+      }
+    ]
+  },
+  {
+    "sha": "ff9356f0dfaad31900e271c894b7f6f8f1971d20",
+    "node_id": "C_kwDOO71yAtoAKGZmOTM1NmYwZGZhYWQzMTkwMGUyNzFjODk0YjdmNmY4ZjE5NzFkMjA",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-25T09:14:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-25T09:14:07Z"
+      },
+      "message": "feat(dm): auto-grow message composer to 5 lines (#4620) (#4709)\n\nThe composer was locked to one line in a fixed-height pill, so long\nmessages scrolled horizontally with no way to insert a line break. Match\nthe comments / inline composers: minHeight pill + minLines 1 / maxLines\n5, multiline keyboard, Return inserts a newline (send is the button\nonly), and drop withNoTextScaling so the field honours system font\nscaling.\n\nMarkdown selection toolbar (#4621) and the trim/newline send path are\nunchanged. Adds multiline-config and newline-preservation tests.",
+      "tree": {
+        "sha": "6dd1e9efb400080e4cf526df444a459c0a70bdce",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/6dd1e9efb400080e4cf526df444a459c0a70bdce"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/ff9356f0dfaad31900e271c894b7f6f8f1971d20",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqFBLfCRC1aQ7uu5UhlAAAYnkQADGsJlJZXBAbgcEtpUqFNQ21\nkw3vXUdpwq8KoVMHZ1uc3pJrWUIW8Y/+YNwesBUhaw1ukq7q7eAQx56ofoyskZ9U\npdvkzIEs4uYh0lnUkanRTYH30GFH+yRXhXozwQum14lEHJzpMwUDtrdCalybsTKY\n7ptKGRm1z/UUFVIedVEsb/0RbZTYnvy+1QFgOKuFFMOIXm6s1bMkIDFe6BDiMHhI\nqj+1YUK+wfKis92wFfottMeAxzSeB9BWIL5VU0BDRIQWvpuKy66vEfWxzuOWX+5k\nJxfzlwSFjhJLScN/GFZtssk++j1IRYynlPPQsYF5kpxjVKh/HVxHuLd52mknz7Yh\n1ZxW7nK/85gOUpT/ydSfDxtVcxgWnISNmHwwmzLLhvC9RFsBxEPUoGu7axVi0Gr9\nMyXSv2SupmaSuYGjUHQ9LsrejBORbux49CIGZtgpSBIzwSycPB7ynsD5sMeglMGt\n8TnFZlGoqu6VgxNljRrcoSC5VK8ljrdzCA/VmfY53lx8g4SsCZpBI6GQCQXzgAmg\nog6+2Bus5HYfxHs/XjoETgVP16p8CG25lr0ZKzXdgXmnu9cEAQdCqYJvD7h5886g\nRfcuAwPLVzgj3D6pi/XNOIPXrstYFj9EYNNfgxKca43RoDXuXoRwrl7G8595A/Jk\nPqsUqy7qwWYJQf9dtuHZ\n=43R6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6dd1e9efb400080e4cf526df444a459c0a70bdce\nparent dbd35d92a36a612367d25f7b27154d11d19f842e\nauthor Meylis <meylis@divine.video> 1779700447 +0500\ncommitter GitHub <noreply@github.com> 1779700447 +0500\n\nfeat(dm): auto-grow message composer to 5 lines (#4620) (#4709)\n\nThe composer was locked to one line in a fixed-height pill, so long\nmessages scrolled horizontally with no way to insert a line break. Match\nthe comments / inline composers: minHeight pill + minLines 1 / maxLines\n5, multiline keyboard, Return inserts a newline (send is the button\nonly), and drop withNoTextScaling so the field honours system font\nscaling.\n\nMarkdown selection toolbar (#4621) and the trim/newline send path are\nunchanged. Adds multiline-config and newline-preservation tests.",
+        "verified_at": "2026-05-25T09:14:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ff9356f0dfaad31900e271c894b7f6f8f1971d20",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/ff9356f0dfaad31900e271c894b7f6f8f1971d20",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/ff9356f0dfaad31900e271c894b7f6f8f1971d20/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dbd35d92a36a612367d25f7b27154d11d19f842e",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/dbd35d92a36a612367d25f7b27154d11d19f842e",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/dbd35d92a36a612367d25f7b27154d11d19f842e"
+      }
+    ]
+  }
+]

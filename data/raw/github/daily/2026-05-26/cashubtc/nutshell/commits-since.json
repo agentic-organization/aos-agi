@@ -1,0 +1,171 @@
+[
+  {
+    "sha": "31e3ae3990d1c592b795c4a893249ce8735a45dd",
+    "node_id": "C_kwDOH-XoldoAKDMxZTNhZTM5OTBkMWM1OTJiNzk1YzRhODkzMjQ5Y2U4NzM1YTQ1ZGQ",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-25T13:11:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-25T13:11:29Z"
+      },
+      "message": "Merge pull request #1017 from gorrdy/fix/lnbits-missing-preimage\n\nfix(lnbits): tolerate missing preimage in payment status response",
+      "tree": {
+        "sha": "9c421cab5ba6aed12f81f44f20c0f8b7d7b70fd0",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/9c421cab5ba6aed12f81f44f20c0f8b7d7b70fd0"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/31e3ae3990d1c592b795c4a893249ce8735a45dd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqFEqBCRC1aQ7uu5UhlAAA86YQAK3HvQUZm5NY5Y45twr3k/t8\nrlZnBFQ4jUS9iOv6V5Vd4vg6LuBAZ9eA0Igv+p/RdRJLQ16TJC/RyD/rIVxaWz61\nEssmz1zUpfBm0eLbp8UssKZwTF7h3U62AKkSP3+X3L1b+7tMCJa4/o/6MJ24HXEf\nEJ8ogPanNJjSKkFoFf/ON/RnMBwb0g6u38YaXcnscHrOt9sk9kAubiOORMdEL9RX\n4tcIXKD8aOSmJt12JiQy/o30hLl1sYetq5PErvPr/8xNkOoexFqJSTQnyted1TxB\nMq3h7C+fJbK39MtN2lkTbOzhNIjAz4Kufvgn/yUg7VeFJ7G8jR0LrnkCx75yFrf7\nxlisJmCpxW/FbChlYvi4PluOZfCBQtVHF9J2jJIzp+fgY/Z3P0fBXsSUrBd1oBJ6\nrcKzq9/dS+4QFKjtKNODXfIFtrBOtg42VP9QfS+sYYQjd8eb5GqmZqehVeKiUN8A\nG0Tkrg+JGG6lr+AI2ZHNSZY4Q9bN5SIHwAumKMeI5edUs9FZGpSKbHZrXe2WqGdT\nNd5Ci7CdTmglgHNwYAuNka3npYduDtw9lfAmM+DYhGstVyhptB5jrEogpkO8HoaE\nlDfYdOEmvWo3P0iOopLvpIU/3CW8KmxgEBEqHQNn/Wcl8obyduoAD1aQUi/WDZJG\ntBGCKOJc8M3n1/ZmxwGq\n=OIo+\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9c421cab5ba6aed12f81f44f20c0f8b7d7b70fd0\nparent c913bab2a114b60675c6909539739ca712bb2c6c\nparent 5e415bc07693246a49795253840e6118c9c4c215\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1779714689 +0200\ncommitter GitHub <noreply@github.com> 1779714689 +0200\n\nMerge pull request #1017 from gorrdy/fix/lnbits-missing-preimage\n\nfix(lnbits): tolerate missing preimage in payment status response",
+        "verified_at": "2026-05-25T13:11:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/31e3ae3990d1c592b795c4a893249ce8735a45dd",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/31e3ae3990d1c592b795c4a893249ce8735a45dd",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/31e3ae3990d1c592b795c4a893249ce8735a45dd/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c913bab2a114b60675c6909539739ca712bb2c6c",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/c913bab2a114b60675c6909539739ca712bb2c6c",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/c913bab2a114b60675c6909539739ca712bb2c6c"
+      },
+      {
+        "sha": "5e415bc07693246a49795253840e6118c9c4c215",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/5e415bc07693246a49795253840e6118c9c4c215",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/5e415bc07693246a49795253840e6118c9c4c215"
+      }
+    ]
+  },
+  {
+    "sha": "5e415bc07693246a49795253840e6118c9c4c215",
+    "node_id": "C_kwDOH-XoldoAKDVlNDE1YmMwNzY5MzI0NmE0OTc5NTI1Mzg0MGU2MTE4YzljNGMyMTU",
+    "commit": {
+      "author": {
+        "name": "Ubuntu",
+        "email": "dvorakh1997@gmail.com",
+        "date": "2026-05-25T07:17:38Z"
+      },
+      "committer": {
+        "name": "Ubuntu",
+        "email": "dvorakh1997@gmail.com",
+        "date": "2026-05-25T07:17:38Z"
+      },
+      "message": "fix(lnbits): tolerate missing preimage in payment status response\n\nLNbits doesn't always include `preimage` in the payment status payload\n— notably for pending or failed payments, and for some backend\nconfigurations even on settled ones. Direct subscript access raises\n`KeyError` and breaks status polling. Use `.get()` so `preimage` falls\nthrough as `None`, which `PaymentStatus` already accepts.",
+      "tree": {
+        "sha": "9c421cab5ba6aed12f81f44f20c0f8b7d7b70fd0",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/9c421cab5ba6aed12f81f44f20c0f8b7d7b70fd0"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/5e415bc07693246a49795253840e6118c9c4c215",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/5e415bc07693246a49795253840e6118c9c4c215",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/5e415bc07693246a49795253840e6118c9c4c215",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/5e415bc07693246a49795253840e6118c9c4c215/comments",
+    "author": {
+      "login": "gorrdy",
+      "id": 80678558,
+      "node_id": "MDQ6VXNlcjgwNjc4NTU4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80678558?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gorrdy",
+      "html_url": "https://github.com/gorrdy",
+      "followers_url": "https://api.github.com/users/gorrdy/followers",
+      "following_url": "https://api.github.com/users/gorrdy/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gorrdy/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gorrdy/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gorrdy/subscriptions",
+      "organizations_url": "https://api.github.com/users/gorrdy/orgs",
+      "repos_url": "https://api.github.com/users/gorrdy/repos",
+      "events_url": "https://api.github.com/users/gorrdy/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gorrdy/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gorrdy",
+      "id": 80678558,
+      "node_id": "MDQ6VXNlcjgwNjc4NTU4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80678558?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gorrdy",
+      "html_url": "https://github.com/gorrdy",
+      "followers_url": "https://api.github.com/users/gorrdy/followers",
+      "following_url": "https://api.github.com/users/gorrdy/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gorrdy/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gorrdy/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gorrdy/subscriptions",
+      "organizations_url": "https://api.github.com/users/gorrdy/orgs",
+      "repos_url": "https://api.github.com/users/gorrdy/repos",
+      "events_url": "https://api.github.com/users/gorrdy/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gorrdy/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c913bab2a114b60675c6909539739ca712bb2c6c",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/c913bab2a114b60675c6909539739ca712bb2c6c",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/c913bab2a114b60675c6909539739ca712bb2c6c"
+      }
+    ]
+  }
+]
