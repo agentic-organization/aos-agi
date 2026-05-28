@@ -21,6 +21,7 @@ Mobile Cashu wallet focused on performance and usability. One of the earliest an
 - 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/minibits-cash/minibits_wallet/`) shows **2 commits** by [[people/minibits-cash]] and keshav0479: fix NWC and donation flows, and NUT-12 offline ecash DLEQ proof validation (#198). **2 issues updated**.
 - 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/minibits-cash/minibits_wallet/`) shows **0 commits** in the 24h window but **36 events** and **43 updated PRs** — sustained PR/issue activity.
 - 2026-05-26: Daily ingestion (`data/raw/github/daily/2026-05-26/minibits-cash/minibits_wallet/`) shows **1 commit** by minibits-cash: "Transaction lifecycle methods".
+- 2026-05-27: Daily ingestion (`data/raw/github/daily/2026-05-27/minibits-cash/minibits_wallet/`) shows **1 commit** by [[people/minibits-cash]]: "Basic transaction search".
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
