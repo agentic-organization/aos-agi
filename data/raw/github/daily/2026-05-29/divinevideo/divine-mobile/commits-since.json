@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "c3a0710a5c06c984799c12ba800b6790703c1263",
+    "node_id": "C_kwDOO71yAtoAKGMzYTA3MTBhNWMwNmM5ODQ3OTljMTJiYTgwMGI2NzkwNzAzYzEyNjM",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-28T08:44:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T08:44:27Z"
+      },
+      "message": "fix(notifications): remove mark-all-read-on-leave, restore unread badge correctness (#4729) (#4758)\n\n* fix(notifications): remove mark-all-read-on-leave, keep unread badge correct (#4729)\n\nMarkAllReadOnDispose fired repository.markAllAsRead() whenever the user\nleft the notifications surface, optimistically zeroing the badge in a way\nthat fought the repository snapshot (the single source of truth) and made\nunread state feel unreliable.\n\nRemove the on-leave policy from both NotificationsPage and the inbox\nscaffold and delete the widget. Unread now changes only on deliberate read\ntransitions — per-item tap (NotificationFeedItemTapped -> markAsRead) and\nthe explicit mark-all in notification settings. Realtime arrivals still\nincrement unread through the repository snapshot, which the badge cubit\nsubscribes to.\n\nTests invert the unmount assertions (leaving the screen must NOT mark all\nread); per-item-read convergence (badge_converges_after_tap_read_back) and\nrealtime-arrival increment (repository acceptRealtime test) already pin the\nbadge contract.\n\n* refactor(notifications): remove orphaned mark-all-read bloc event (#4729)\n\nRemoving MarkAllReadOnDispose left NotificationFeedMarkAllRead +\n_onMarkAllRead with no UI dispatcher: the only live \"mark all read\" is\nthe notification settings screen, which calls repository.markAllAsRead()\ndirectly. The bloc event/handler were dead code.\n\nDelete the event, its bloc registration + handler, the onMarkAllRead\nReportable site, the three orphaned bloc tests, and the now-unused\nmarkAllAsRead setUp stub. Reword the NotificationsPage doc so it no\nlonger implies a mark-all action exists on the feed surface.\n\nNo behavior change — per-item read (NotificationFeedItemTapped ->\nmarkAsRead) and the settings mark-all path are untouched.",
+      "tree": {
+        "sha": "d605b2de837d70d128dee54accafb3d5e1a09182",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/d605b2de837d70d128dee54accafb3d5e1a09182"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/c3a0710a5c06c984799c12ba800b6790703c1263",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGABrCRC1aQ7uu5UhlAAAghwQACqO90zAk3EEGmpY6KeZsFnX\nYzYJ99XNtkEFnY6aPCkrFNRISCNwB0AoyZQOXyk5XbFlkImgMjIsiQegC2aQEwm+\nZtv0MA01wo/BKeH7VFeD7Fp7LJZzLoZQ0/Rs4cEwzwPHMnadgaZtiqyRGLFNs/ui\naXPGYxrMOmGXXsAGSnETFE5b+Q3VELziWhKd5KWsK3A3Z6Z4llhGTPDRjPheUYvy\nD9KwLvAuSZ2YfHG1iOzL/NjMo3Ghd4XlKQGxvKWzqkcAXYMx+XgbeYGzXwvf80MA\nhQw5lf9BYIf8mgrHgqfNQzpGUO6Trcd1c8Asz9TI5NvoLhIreUcJsFfX0TfizPgD\nAONrJzsWyIqjntY9o4xsxYVqyC5VeyC3JxlkKkKrrpnMMLIRj102bGiCDjyaNJUs\npx8KdNFXDjQucA38xlQMupvwz2TBPQpArxO6cHzlU8h2CNF0T3ToqObe9OCch2b8\naqcVipx691tUK0xw9ZyMJto6KeOQVW6rETvAbgt8vhQV3lm2hnmZpnPE3FhiymL2\nOrvZoQvCrz0ljPKbRwwxH09pIeabV07H5EjKAG4ceaEW28GQG8AbNRUBol+51nH6\nPxqB+pC3FfyteVTt/7KpT479ECuyT0KeeBE85poN+xsEcfslkfrC//8QYtDAY181\nyytpqMRg2awH+ZVhmNDD\n=GIFT\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d605b2de837d70d128dee54accafb3d5e1a09182\nparent b30a72f00f40fbd75e1ccf3168c9feb7210c10c5\nauthor Meylis <meylis@divine.video> 1779957867 +0500\ncommitter GitHub <noreply@github.com> 1779957867 +0500\n\nfix(notifications): remove mark-all-read-on-leave, restore unread badge correctness (#4729) (#4758)\n\n* fix(notifications): remove mark-all-read-on-leave, keep unread badge correct (#4729)\n\nMarkAllReadOnDispose fired repository.markAllAsRead() whenever the user\nleft the notifications surface, optimistically zeroing the badge in a way\nthat fought the repository snapshot (the single source of truth) and made\nunread state feel unreliable.\n\nRemove the on-leave policy from both NotificationsPage and the inbox\nscaffold and delete the widget. Unread now changes only on deliberate read\ntransitions — per-item tap (NotificationFeedItemTapped -> markAsRead) and\nthe explicit mark-all in notification settings. Realtime arrivals still\nincrement unread through the repository snapshot, which the badge cubit\nsubscribes to.\n\nTests invert the unmount assertions (leaving the screen must NOT mark all\nread); per-item-read convergence (badge_converges_after_tap_read_back) and\nrealtime-arrival increment (repository acceptRealtime test) already pin the\nbadge contract.\n\n* refactor(notifications): remove orphaned mark-all-read bloc event (#4729)\n\nRemoving MarkAllReadOnDispose left NotificationFeedMarkAllRead +\n_onMarkAllRead with no UI dispatcher: the only live \"mark all read\" is\nthe notification settings screen, which calls repository.markAllAsRead()\ndirectly. The bloc event/handler were dead code.\n\nDelete the event, its bloc registration + handler, the onMarkAllRead\nReportable site, the three orphaned bloc tests, and the now-unused\nmarkAllAsRead setUp stub. Reword the NotificationsPage doc so it no\nlonger implies a mark-all action exists on the feed surface.\n\nNo behavior change — per-item read (NotificationFeedItemTapped ->\nmarkAsRead) and the settings mark-all path are untouched.",
+        "verified_at": "2026-05-28T08:44:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/c3a0710a5c06c984799c12ba800b6790703c1263",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/c3a0710a5c06c984799c12ba800b6790703c1263",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/c3a0710a5c06c984799c12ba800b6790703c1263/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b30a72f00f40fbd75e1ccf3168c9feb7210c10c5",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b30a72f00f40fbd75e1ccf3168c9feb7210c10c5",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/b30a72f00f40fbd75e1ccf3168c9feb7210c10c5"
+      }
+    ]
+  },
+  {
+    "sha": "b30a72f00f40fbd75e1ccf3168c9feb7210c10c5",
+    "node_id": "C_kwDOO71yAtoAKGIzMGE3MmYwMGY0MGZiZDc1ZTFjY2YzMTY4YzlmZWI3MjEwYzEwYzU",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-28T08:44:11Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T08:44:11Z"
+      },
+      "message": "fix(notifications): suppress duplicate local push render on iOS alert pushes (#4731) (#4760)\n\n* fix(notifications): suppress duplicate local push render on iOS alert pushes (#4731)\n\ndivine-push-service builds an APNS aps.alert (+ content_available) for\nevery push (fcm_sender.rs build_apns_config, merged in #17). On iOS\nbackground/terminated the OS presents that alert AND content_available\nwakes the background isolate, which then built a second, local\nnotification — two banners for one push. Android stays data-only\n(notification:None) so it never double-rendered.\n\nGuard _firebaseMessagingBackgroundHandler to render a local notification\nonly for data-only messages. FlutterFire surfaces the OS-presented alert\nas RemoteMessage.notification, so shouldRenderLocalPushNotification()\nreturns false whenever it is set; tapping the OS banner still routes via\nonMessageOpenedApp / getInitialMessage (message.data) unchanged.\n\nForeground is unaffected (no setForegroundNotificationPresentationOptions,\nso iOS does not OS-present in foreground; the app stays the sole renderer\nthere). Client-side defensive fix per #4731; payload contract tracked in\ndivine-push-service#20.\n\n* refactor(notifications): tighten push de-dup guard clarity and tests (#4731)\n\nSelf-review polish on the #4760 duplicate-push fix (no behavior change to\nshouldRenderLocalPushNotification):\n\n- Move title/body extraction below the render guard so we don't build\n  display strings for messages we drop, and don't read data['body'] twice.\n- Reframe the helper doc: the data-only iOS branch is defensive (the push\n  service always sends aps.alert today); rendering happens on Android.\n- Cover the predicate's edges (empty-string body, non-String body,\n  OS-alert-with-no-data-body) and document that the handler's early-return\n  is verified on-device, not in unit tests.",
+      "tree": {
+        "sha": "19a8593e57599249f50ec068e83405985c956428",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/19a8593e57599249f50ec068e83405985c956428"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/b30a72f00f40fbd75e1ccf3168c9feb7210c10c5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGABbCRC1aQ7uu5UhlAAAAgUQADXNf6Vm2K+bNyHkHHNAEXsK\nuoHAqpGz30u3QC2OWrhcy0aV9tlFkUAD0/jy/cmkEuIgP06eskF2BiQuTnTbFFIG\nQRuKbGZ9Zy7xWtp7qiSxpDdXxEIZUpq3wCfSG9y9QDmeva9lVrxIYLeLLWEem5km\nDRLZBYoUzaGnR75pV4f7A0nEcTqZlorshpp9UdwobwGkiNacNVgrgS53tB0Otsbi\ntL9tsw5DGFtgszaGHHfXIgy15XQoYa84sAzk2HMH1CXQTKwPzxAPLoN08ycgZ4Qz\n8Kyx33wzqTCkPhMwivyleO9KiV2rBy3L3uq2Iu49IhIT8U0bwRWe6PFONTXtShZ8\nUMS6FCK4PDXBwPfXqBflpP39Mr/wOIb04cSX1tx5wYFGw0Fc1OX8ZKOTD4XSnoBe\nNJ4O9A7wSrbn6Y/mcs7j2OksNrJEXeax3KIYnx42y+WsfoNY6jEOTfUk1PYZAlgs\ny6qxutb+0OkYRU+VptWGkG+9Z9e9tFngqwaxcl8arfTNNtiDf0XMP6Y9lt/0Unh0\nQl3mStGKG3lKAq80HD2WsF8MWfGgKAczmr9kaFnOuGC2H2HMZon5+RxXnwYNsal5\nA3l6evfUEwYyx9wDiZmwnyln7slZs09EPMgKshvEDqUBolJrcSE30GSkY6Wt5skx\nQ1qMzMCdwdLPXmJR6Gx5\n=1mxJ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 19a8593e57599249f50ec068e83405985c956428\nparent 4dd2e9ad543f2689fe6b9aa3b9170490c94042fe\nauthor Meylis <meylis@divine.video> 1779957851 +0500\ncommitter GitHub <noreply@github.com> 1779957851 +0500\n\nfix(notifications): suppress duplicate local push render on iOS alert pushes (#4731) (#4760)\n\n* fix(notifications): suppress duplicate local push render on iOS alert pushes (#4731)\n\ndivine-push-service builds an APNS aps.alert (+ content_available) for\nevery push (fcm_sender.rs build_apns_config, merged in #17). On iOS\nbackground/terminated the OS presents that alert AND content_available\nwakes the background isolate, which then built a second, local\nnotification — two banners for one push. Android stays data-only\n(notification:None) so it never double-rendered.\n\nGuard _firebaseMessagingBackgroundHandler to render a local notification\nonly for data-only messages. FlutterFire surfaces the OS-presented alert\nas RemoteMessage.notification, so shouldRenderLocalPushNotification()\nreturns false whenever it is set; tapping the OS banner still routes via\nonMessageOpenedApp / getInitialMessage (message.data) unchanged.\n\nForeground is unaffected (no setForegroundNotificationPresentationOptions,\nso iOS does not OS-present in foreground; the app stays the sole renderer\nthere). Client-side defensive fix per #4731; payload contract tracked in\ndivine-push-service#20.\n\n* refactor(notifications): tighten push de-dup guard clarity and tests (#4731)\n\nSelf-review polish on the #4760 duplicate-push fix (no behavior change to\nshouldRenderLocalPushNotification):\n\n- Move title/body extraction below the render guard so we don't build\n  display strings for messages we drop, and don't read data['body'] twice.\n- Reframe the helper doc: the data-only iOS branch is defensive (the push\n  service always sends aps.alert today); rendering happens on Android.\n- Cover the predicate's edges (empty-string body, non-String body,\n  OS-alert-with-no-data-body) and document that the handler's early-return\n  is verified on-device, not in unit tests.",
+        "verified_at": "2026-05-28T08:44:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b30a72f00f40fbd75e1ccf3168c9feb7210c10c5",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/b30a72f00f40fbd75e1ccf3168c9feb7210c10c5",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/b30a72f00f40fbd75e1ccf3168c9feb7210c10c5/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4dd2e9ad543f2689fe6b9aa3b9170490c94042fe",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4dd2e9ad543f2689fe6b9aa3b9170490c94042fe",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/4dd2e9ad543f2689fe6b9aa3b9170490c94042fe"
+      }
+    ]
+  },
+  {
+    "sha": "4dd2e9ad543f2689fe6b9aa3b9170490c94042fe",
+    "node_id": "C_kwDOO71yAtoAKDRkZDJlOWFkNTQzZjI2ODlmZTZiOWFhM2I5MTcwNDkwYzk0MDQyZmU",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-28T08:43:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T08:43:14Z"
+      },
+      "message": "refactor(ui): extract NotificationSettingsScreen widgets and drop dead toggles (#4780)\n\nReplace the _buildSectionHeader/_buildNotificationCard/_buildActionCard/\n_buildInfoCard helper methods with small private widget classes, and drop\nthe four local-only toggles (system, push, sound, vibration): they never\npersisted and nothing consumed them. NotificationPreferences (the kind 3083\npush contract) has no slot for them, so they were no-op switches that misled\nusers into thinking they did something.\n\nIcons now use DivineIcon from the design system instead of raw Icons.*,\nmirroring the canonical notificationTypeIconSpec mapping (heart/chat/user/\nrepeat); the app-bar refresh action uses SvgIconSource(arrowClockwise).\n\nRemoves the 9 now-unused notificationSettings* l10n keys across all 18\nlocales and regenerates. Adds a toggle-persists test and reveals the\nmark-all-as-read card with ensureVisible in the two snackbar tests (the\nshorter screen now lands it at the viewport fold).",
+      "tree": {
+        "sha": "456ac00aa3e35af237527ac809b379cfc50127d9",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/456ac00aa3e35af237527ac809b379cfc50127d9"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/4dd2e9ad543f2689fe6b9aa3b9170490c94042fe",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGAAiCRC1aQ7uu5UhlAAA6rYQABVGOHd/Q9a+to6utajMwx6/\noNzUDC/XUjua1kq4Iaaap5SKWLsdOP6IlmbCbYgUpLOz2sUnOVxMYqnSC6qAlFNb\nWGmzr+jNtXFqMrVDCGZNVK5UDw6y/dN4ui8ep/1qz7V4tOiBNl9ktyExixgmcYl7\nL+S3Z5mFbRXtyOFcck/9w+rMa6OLO+HLdLe+FIXRGkhBOCP8qwarriMW54hihQMm\nB3XieTtmaXRhUYrlgWUytCIYMlxpSWqVveG5P5UhIoaRtQPJZmRR9uyvk3EsWsMT\npZ0uHMuUvx0E7/UqJoKTYUNBvTOChrZrmtMK7qNVqg/WSomTuNO/hFINUuUa7nUC\nCQJzeblR3qbZxGxBz56yZobqGdR5yMyfPrkvR1b1GpW6VTPYlrzdeolL2DS7HGlm\n3sunGsKZVplNhn0jxeozGaCMHbujyse6oRPWK4d8wY3+sZM4htC8fzXYnNCmX6rD\nteB4OVnefbqrIRVT0YGx6Mi4iaS5Nb/nUZtwCUtiI4wrxE0GHybFBbuf2x6KHCjp\nrVqclHGGXqdXnElHDgp/8UqwW9IeUeabwr4RiJMBG7AHUuUM60D2zIDhFpFnq7Bx\nMTCIGsPRrr48ys7HiO4ZtU+DRPu80oWo7a6dYVTcE5qy3OLOTm6M0gYMgA5EcrzH\nXkDd1IImo6Kf9gMjpTyZ\n=uXHH\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 456ac00aa3e35af237527ac809b379cfc50127d9\nparent 2928353ab8a083491c1c424a288973c7ada487e4\nauthor Meylis <meylis@divine.video> 1779957794 +0500\ncommitter GitHub <noreply@github.com> 1779957794 +0500\n\nrefactor(ui): extract NotificationSettingsScreen widgets and drop dead toggles (#4780)\n\nReplace the _buildSectionHeader/_buildNotificationCard/_buildActionCard/\n_buildInfoCard helper methods with small private widget classes, and drop\nthe four local-only toggles (system, push, sound, vibration): they never\npersisted and nothing consumed them. NotificationPreferences (the kind 3083\npush contract) has no slot for them, so they were no-op switches that misled\nusers into thinking they did something.\n\nIcons now use DivineIcon from the design system instead of raw Icons.*,\nmirroring the canonical notificationTypeIconSpec mapping (heart/chat/user/\nrepeat); the app-bar refresh action uses SvgIconSource(arrowClockwise).\n\nRemoves the 9 now-unused notificationSettings* l10n keys across all 18\nlocales and regenerates. Adds a toggle-persists test and reveals the\nmark-all-as-read card with ensureVisible in the two snackbar tests (the\nshorter screen now lands it at the viewport fold).",
+        "verified_at": "2026-05-28T08:43:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4dd2e9ad543f2689fe6b9aa3b9170490c94042fe",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/4dd2e9ad543f2689fe6b9aa3b9170490c94042fe",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4dd2e9ad543f2689fe6b9aa3b9170490c94042fe/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2928353ab8a083491c1c424a288973c7ada487e4",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/2928353ab8a083491c1c424a288973c7ada487e4",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/2928353ab8a083491c1c424a288973c7ada487e4"
+      }
+    ]
+  },
+  {
+    "sha": "2928353ab8a083491c1c424a288973c7ada487e4",
+    "node_id": "C_kwDOO71yAtoAKDI5MjgzNTNhYjhhMDgzNDkxYzFjNDI0YTI4ODk3M2M3YWRhNDg3ZTQ",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-28T08:37:04Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T08:37:04Z"
+      },
+      "message": "fix(layer): improve exported layer resolution to avoid blurry output (#4783)",
+      "tree": {
+        "sha": "1804c85cbccfcf9d9994b13656c17b52f456f294",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/1804c85cbccfcf9d9994b13656c17b52f456f294"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/2928353ab8a083491c1c424a288973c7ada487e4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqF/6wCRC1aQ7uu5UhlAAAGGwQAKsbUZoTZt+x8CpK9u9ZAvUz\nJssJlt51N9cl7aDMXeEvkpbeq56llLVZaNPqXlHSCwneA4y6HBQh+OlvrjO174+4\nTOEt8WMblZnzeWuCTdTGjLH0CN2TySN9xJk5Jb4qrpg+AARm09Dam2rThlOq6P9j\ne515KULz0YZdr85wO+b2XMWgMVdb3Xjjyf7Pm/bJQS/MGyy9QVM7Szl8XzDjBOi0\nNDxEtpDvJDtAT00iweNR7VG3Tdxp9zPS3frTK9B96sSDu4PHbI6frxsgb1JD5X3v\nf66A91T/HSHpPrdwzycSq/cOJxjY5PLNIpRnjBPiI0lvr2VHFRTeP1JsLJE9ggRV\newYNL/0hjvNwkgoL6A8nsu5OzgKCmKihGMaHu7FKV+z448nLm7j4K/zLuTcj6HL3\nXFBXly97gSXUABAcSFiBXGm5lZGh6LXDRgKhAo52xpIIEbuGusGdeNv0CWgaM2Lr\nd8QQudxC1/jRQppxqNThvaGG5rCDSeY7j/M9NxH5cyBlLoORkq+PEHH0WMrozeES\nFYwkPA+6mcvJJdjZO/Zyux+KZQ4TJVYZDk+tjNv8JSABCifodTsvo0p972ul/zgZ\nVKabTOcopWX78c0u7A1wjmociN7le4u4EiUKiWuxW54Kv/FL+m7DmZsFeM8Un3Mj\nlWFb5yGSXaePRyRZ9vZz\n=cQ6/\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1804c85cbccfcf9d9994b13656c17b52f456f294\nparent 6f35baa7175a94cef4f9db7d53864cbd6f39d8d9\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1779957424 +0700\ncommitter GitHub <noreply@github.com> 1779957424 +0200\n\nfix(layer): improve exported layer resolution to avoid blurry output (#4783)",
+        "verified_at": "2026-05-28T08:37:05Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/2928353ab8a083491c1c424a288973c7ada487e4",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/2928353ab8a083491c1c424a288973c7ada487e4",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/2928353ab8a083491c1c424a288973c7ada487e4/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6f35baa7175a94cef4f9db7d53864cbd6f39d8d9",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/6f35baa7175a94cef4f9db7d53864cbd6f39d8d9",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/6f35baa7175a94cef4f9db7d53864cbd6f39d8d9"
+      }
+    ]
+  },
+  {
+    "sha": "6f35baa7175a94cef4f9db7d53864cbd6f39d8d9",
+    "node_id": "C_kwDOO71yAtoAKDZmMzViYWE3MTc1YTk0Y2VmNGY5ZGI3ZDUzODY0Y2JkNmYzOWQ4ZDk",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-28T06:39:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T06:39:42Z"
+      },
+      "message": "refactor(models): extract URL resolution out of VideoEvent (#4748)\n\n* refactor(models): extract URL resolution out of VideoEvent\n\nMove the 5 URL-resolution methods (isValidVideoUrl, scoreVideoUrl,\nselectBestVideoUrl, extractVideoUrlFromContent, findAnyVideoUrlInTags) out of\nthe VideoEvent data model into a dedicated, tested VideoUrlResolver utility in\nthe same package. URL selection is business logic, not data, so it should not\nlive on the model.\n\nBehavior-preserving: methods moved verbatim; the only consolidation is the\napt.openvine.co -> api.openvine.co typo fix (previously duplicated across 3\nmethods) now in one private helper. The existing VideoEvent parsing/json/\nfilters tests (which exercise the factory delegating to the resolver) stay\ngreen, and the resolver gains 26 direct unit tests it never had as private\nmethods. video_event.dart drops ~144 lines.\n\nPart of #4338 (Wave 2). Closes #4740.\n\n* refactor(models): finish video URL typo normalization cleanup\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "75d0ed68fd778dc597239f9a771eaecba4b345ff",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/75d0ed68fd778dc597239f9a771eaecba4b345ff"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/6f35baa7175a94cef4f9db7d53864cbd6f39d8d9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqF+MuCRC1aQ7uu5UhlAAAgVIQACE2UwZRWLQ1YoL8r8UqmMYy\ns9qmsYA1ShS0lY9xmEOHa9AyxEBdurTbCy9yi/MCiTwEQMJN+zeQZGQQCEjwSX+A\nPAR/p46mAQPlNPoS/Or5ogku7TS/id7B9xoorRPw1d02SE0Z7TGfZqZRRTF68W/E\nds+uRk9mknQJqBOW3Lhe6xH8zK7bQgUZ7NuskYkiBVTorU3URLuhagLAfDm94/J1\nZ924EpQ3q72bkiphKjFs9wQXO+Fc4L04G2OLhkU9Ln07QREp7y4e/vD0NrFJn+eg\nZyWSMjYbjNZPDJJSPHl9qt7I5s/BpPDqnpxn431gFwCmd/Db0wO0FFau5PxoRW1u\n9fzJVKNP3cEWJHoxwgCzrUFnC/fYxaj9laBxJrdoDYibMaei9E6mXu65JEXbMmcT\nbqJDmzKZnGgwr8jKLgcUSeumYQd+we75NxLZRCfvDzYwwk4ZGXttEorWXfS3GvaP\nMuZGnrd2d3HR9OH8TcwwLZKU1eNf780n7Vk2NeCLaQ/8iE6VIjZ+/Iv+CcLcOWyV\nAYq36fumfnTkq1IJ8yOYH8FNCeKnyNwbkYYCuCkcIJJXUomx4QL5nu0vnl2eHI6V\nB03/pDD8fXiKEX8jJIHnLL94bRA0u7c0nXXIX5WeqG5KZ0zIp/MIt7KO0awMZu7Z\nm4Ol18hvafJq3+ZYzYyG\n=+Yqn\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 75d0ed68fd778dc597239f9a771eaecba4b345ff\nparent dcdf29c13ae7d04352e1b4c41711688610683b9c\nauthor Meylis <meylis@divine.video> 1779950382 +0500\ncommitter GitHub <noreply@github.com> 1779950382 +0500\n\nrefactor(models): extract URL resolution out of VideoEvent (#4748)\n\n* refactor(models): extract URL resolution out of VideoEvent\n\nMove the 5 URL-resolution methods (isValidVideoUrl, scoreVideoUrl,\nselectBestVideoUrl, extractVideoUrlFromContent, findAnyVideoUrlInTags) out of\nthe VideoEvent data model into a dedicated, tested VideoUrlResolver utility in\nthe same package. URL selection is business logic, not data, so it should not\nlive on the model.\n\nBehavior-preserving: methods moved verbatim; the only consolidation is the\napt.openvine.co -> api.openvine.co typo fix (previously duplicated across 3\nmethods) now in one private helper. The existing VideoEvent parsing/json/\nfilters tests (which exercise the factory delegating to the resolver) stay\ngreen, and the resolver gains 26 direct unit tests it never had as private\nmethods. video_event.dart drops ~144 lines.\n\nPart of #4338 (Wave 2). Closes #4740.\n\n* refactor(models): finish video URL typo normalization cleanup\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-28T06:39:43Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/6f35baa7175a94cef4f9db7d53864cbd6f39d8d9",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/6f35baa7175a94cef4f9db7d53864cbd6f39d8d9",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/6f35baa7175a94cef4f9db7d53864cbd6f39d8d9/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dcdf29c13ae7d04352e1b4c41711688610683b9c",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/dcdf29c13ae7d04352e1b4c41711688610683b9c",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/dcdf29c13ae7d04352e1b4c41711688610683b9c"
+      }
+    ]
+  },
+  {
+    "sha": "dcdf29c13ae7d04352e1b4c41711688610683b9c",
+    "node_id": "C_kwDOO71yAtoAKGRjZGYyOWMxM2FlN2QwNDM1MmUxYjRjNDE3MTE2ODg2MTA2ODNiOWM",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-28T06:37:02Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T06:37:02Z"
+      },
+      "message": "ci(architecture): ratchet UI imports of the service layer (#4737)",
+      "tree": {
+        "sha": "6d23ad0a0dedef6fe5902c91a702f0701f9e9b19",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/6d23ad0a0dedef6fe5902c91a702f0701f9e9b19"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/dcdf29c13ae7d04352e1b4c41711688610683b9c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqF+KOCRC1aQ7uu5UhlAAAvzwQAEOLQl4u6CatsUc5FU9kJ9eG\nMGvOtYHiGO7waU9tCss0UhPeLqg2MQ+gYuvh/gcigJQ90ZuikUigX5ySCRgY9GpM\nQoSLQVbDVDd9SBINLq0obdoS1UzmgZNDWmGt2tHTf5p/0S4anCIrX8YOpXJmXgJE\n1rqIEWnH9mntZo+0wZb79CSefDx+m6Gf52LjNCaDbmlfOQoFo/8HpOruUkQ5vrsH\n2ZhYlHM0phuq3v/WBFkWm5SQ2BGEOFPICrx7eF48Xe9hlhBV9cIeYPVFTCqGb5BB\nipmjoWc7WpTdr5b08sHXrvaZl/2/I0nM2UcgIOZJS74zZr8xPH24WkShoSrZmd4h\nE4MvniQKDELG6rpPvz4VOdEWP2x2gqa3okxBxNmR8t/1IErIp0JRmSmCB28X8cKC\nEwdm1+dt1jKPW4/uX5ap1AFvfWicqYFgcxfvdZ+/Brnm2a49ywz0UzHdenb8Z8tW\n9b0exZLvSTH59O2ePlTouyUjA70qswLxQ9HxcB0ApTge+BSz5ctfh9yH5BWHtTQH\naF6RATFg6lki6JbtKQ2ddw2ggy4Vrl/FFQTnUWqK0E/jG233X9GEF25mdu9Z2Z7a\n4hiuC+Gq7MGFqeA0fe6BdOfo1pPcBrtEleR3AH0RjJp71qegPB0wXy0J2TG99J+5\ndHzKL4s4oXjEZijVM/bU\n=JQQd\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6d23ad0a0dedef6fe5902c91a702f0701f9e9b19\nparent 9cff631b980d80b1f908e8c3f2c6c30558f847b4\nauthor Meylis <meylis@divine.video> 1779950222 +0500\ncommitter GitHub <noreply@github.com> 1779950222 +0500\n\nci(architecture): ratchet UI imports of the service layer (#4737)",
+        "verified_at": "2026-05-28T06:37:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/dcdf29c13ae7d04352e1b4c41711688610683b9c",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/dcdf29c13ae7d04352e1b4c41711688610683b9c",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/dcdf29c13ae7d04352e1b4c41711688610683b9c/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9cff631b980d80b1f908e8c3f2c6c30558f847b4",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/9cff631b980d80b1f908e8c3f2c6c30558f847b4",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/9cff631b980d80b1f908e8c3f2c6c30558f847b4"
+      }
+    ]
+  },
+  {
+    "sha": "9cff631b980d80b1f908e8c3f2c6c30558f847b4",
+    "node_id": "C_kwDOO71yAtoAKDljZmY2MzFiOTgwZDgwYjFmOTA4ZThjM2YyYzZjMzA1NThmODQ3YjQ",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-28T06:36:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T06:36:43Z"
+      },
+      "message": "refactor(state): migrate ContentFiltersScreen to a Cubit (#4750)",
+      "tree": {
+        "sha": "306c9008aac849161b391f5677b76a96a32ed24a",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/306c9008aac849161b391f5677b76a96a32ed24a"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/9cff631b980d80b1f908e8c3f2c6c30558f847b4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqF+J7CRC1aQ7uu5UhlAAA47gQAH2DUNv69MfEjsGxOOQCrcJ+\nSTlQVNcZ/9w34QiMW8IvPoPFJmTi8r3Q059K45LNnvXjEtEaddGI4fBVJ/nqDYG0\n/vUXlM4D3D0tQLFFwF4bvX7amH9+EX7DMU62xn/FtlSzAgq0cFIqUoWIUHONV6bF\n0CBnrEE8CvbfhOTtdp9QWiAkxRxH01U4KcNRmuegtEKjYiNk7smlDQukVzc8GkQp\nPIM3gK3tr5emTi0YrX9sszsl2l1RDulDUatZPU2DtEX8QfNYhQFmdkf34a+NY4Ai\nAVCqhDfUY3z74kYsdBzSEyrA2f+IQ8y51Tq2UKTd6Gf1pR3SbcHjbvDaH9RowOSu\ndKSg9JVz1epK9HLVWk9RVaD9qdkgO5qabio23RO8/DvxGqa/LPYqX8fPbB8K9AZ1\n/IpEvsMmx+ANamUrLBTo4UFSvPYbeE9izGb1qQ22oDH5BnVYQrGSfd59DqYMf4HC\nmgogIZYauEiw9h/42mIlaLxz/gfO/GgXPjDMXBhwipREL31VWV0Znqk28fD5okck\nyetpHQ11MyfrxrTtrA62i48h8YFfZKFxP3qEA/9MKDxddakf3J/BsHSN2t4hOey/\nf+iSwcZzdBuqwuYCXeHbiF92HMzF4bAdXhdvtv9Mev6Hlbnc7/pGVG2V3qZxeRGY\niLBsrAH5soguTZ6k30CS\n=xViz\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 306c9008aac849161b391f5677b76a96a32ed24a\nparent 4d8844331b735d0714808e0d794c3a31968064e2\nauthor Meylis <meylis@divine.video> 1779950203 +0500\ncommitter GitHub <noreply@github.com> 1779950203 +0500\n\nrefactor(state): migrate ContentFiltersScreen to a Cubit (#4750)",
+        "verified_at": "2026-05-28T06:36:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/9cff631b980d80b1f908e8c3f2c6c30558f847b4",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/9cff631b980d80b1f908e8c3f2c6c30558f847b4",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/9cff631b980d80b1f908e8c3f2c6c30558f847b4/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4d8844331b735d0714808e0d794c3a31968064e2",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4d8844331b735d0714808e0d794c3a31968064e2",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/4d8844331b735d0714808e0d794c3a31968064e2"
+      }
+    ]
+  },
+  {
+    "sha": "4d8844331b735d0714808e0d794c3a31968064e2",
+    "node_id": "C_kwDOO71yAtoAKDRkODg0NDMzMWI3MzVkMDcxNDgwOGUwZDc5NGMzYTMxOTY4MDY0ZTI",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-28T06:36:25Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T06:36:25Z"
+      },
+      "message": "fix(crashlytics): guard OtherProfileBloc emits/adds after close (#4752)",
+      "tree": {
+        "sha": "66c5fef9900b1223fce9eb2aeb4955302cf79a15",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/66c5fef9900b1223fce9eb2aeb4955302cf79a15"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/4d8844331b735d0714808e0d794c3a31968064e2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqF+JpCRC1aQ7uu5UhlAAAXcYQAEvwKpuHh1CenDajaEhB11oJ\nemyQcMHp5ta9f94SOTaRlo/YyOXqCsHaao7uRuIjcF43VbA50C6MESMGl6aqSEQn\n8ezIiUcKSkOCbfC/uYACCq7+AUMLIoMzc6/4lKi+drJoigCkTCl+zNsU5MZxEp/a\nEmJ0+sGzaFkrFr5DbW7SqPKRjQ4Mu8Ij06ECJao+LiLrXb+3OsXFpEp282j6V1Ol\nV+2VzxBVDawkEq5u7OwyvQ2KeOymAvVvdGuUfry13Hsedzzh29OzRVvsnILP0/+G\nS/kMcAs1Ibm+XK3IJ6ir81AcktorIfYUrPbkqjSeSU4lIF/2V/dvu74TcTIe1kjB\niV5rdqhaLHlaVkMUBHeXelI/3OwLxEp+Rb7/hU/ftUlET4Hyvbc/4zm6T3ShNqua\nDShJxvhuBxsIwjZOBZiVxNvyRzqbarMgYeM9eEQpAsAYOkWBt44NeYjkBksKoBfZ\nnLRyfRH6Ni7LWVWN37EtlvgvhN9+E5BKua+k4yp7nfMxRMFF8dGsP4wJHFAAiOgG\nl84SwcLp8UbN9l+1eWtDA7Cf9uxjnEj7lZthNstHVVKIUVpZxAuSaLvqdAmFxdUc\nXoKRMaojJXajWqbhOhXdBhM7jB0Btx0CUIFz8xVEs/KPiTWQgCo8CB8yljx4hKoj\nwN+3+ABpFzwFfS7a3cfD\n=E5X3\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 66c5fef9900b1223fce9eb2aeb4955302cf79a15\nparent 758a4b714561089f1660f8cca9aa81aafd2924f2\nauthor Meylis <meylis@divine.video> 1779950185 +0500\ncommitter GitHub <noreply@github.com> 1779950185 +0500\n\nfix(crashlytics): guard OtherProfileBloc emits/adds after close (#4752)",
+        "verified_at": "2026-05-28T06:36:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4d8844331b735d0714808e0d794c3a31968064e2",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/4d8844331b735d0714808e0d794c3a31968064e2",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4d8844331b735d0714808e0d794c3a31968064e2/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "758a4b714561089f1660f8cca9aa81aafd2924f2",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/758a4b714561089f1660f8cca9aa81aafd2924f2",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/758a4b714561089f1660f8cca9aa81aafd2924f2"
+      }
+    ]
+  },
+  {
+    "sha": "758a4b714561089f1660f8cca9aa81aafd2924f2",
+    "node_id": "C_kwDOO71yAtoAKDc1OGE0YjcxNDU2MTA4OWYxNjYwZjhjY2E5YWE4MWFhZmQyOTI0ZjI",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-28T06:36:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T06:36:07Z"
+      },
+      "message": "refactor(state): migrate AccountContentLabelsTile to a Cubit (#4751)",
+      "tree": {
+        "sha": "be593f6e5bf2fa7246e2013b3ea800870343b669",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/be593f6e5bf2fa7246e2013b3ea800870343b669"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/758a4b714561089f1660f8cca9aa81aafd2924f2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqF+JXCRC1aQ7uu5UhlAAAeFoQAFjCfan83GNMCUYsTilDhJIu\nlCWY15AZVGSVaZSOOTCQ91tWaryMYS0pHPGTctkh1YfOaHPIKaRoblTi2pH02Era\niruJ5FhYZrEXK3RzNw1JaBcjmGEhSIEP1Fmrmg2dXx+/eA4HnEpKZrTYyb7WljcO\nOZnk6hfHDwiATOkJp2+PHAFTZxxIBk6zEmsQu8bgLlJqQo5OEW+Ufwca+Tc9Z8lx\nkoVKY/RdoZnExESjnW95U1xpiiBrOoZsVDyyG64Dp1KXluYX5qHf9faAbKua079D\nVTxddRq+08nHAdLyssxdhCfyXcx0ZV3CG3pntqocPuJMVcTLhYGj9+eTOy40Lu5T\nW6CvGMXZ12VZf8aT28l9w6EjOSxOp9hr5lPsZGOW6tl1p2/sS5cGo75EruvXQFND\njoiP7b7r/cRnS9pNXnNnL7W6dmhszYJ8SZ6kqTFikxzALmf/CbzFnph8eRwvBxPR\nsU0AJQODA2MEOfAe6Ww5LHhjZMt9lL3C9r694xdFlsXWRBUNk1NRna+/jaMZdnrk\nFwy62/vNcZkptvmHpuR7y+RSYvUbcLECOmFL7zoe7GDe52eSLekpLMLqUfQpzPli\nbimWpNvnjQxE4QZ60Um+/RCzO0/jfQ/TUdFOuXYtN+gJ+fH4ENRj1xOaSPQHY3Gt\nc5iOij9dWQjjCcewAnxP\n=2Nzc\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree be593f6e5bf2fa7246e2013b3ea800870343b669\nparent 5325ce292770ad1263c588414adb319421e0ed07\nauthor Meylis <meylis@divine.video> 1779950167 +0500\ncommitter GitHub <noreply@github.com> 1779950167 +0500\n\nrefactor(state): migrate AccountContentLabelsTile to a Cubit (#4751)",
+        "verified_at": "2026-05-28T06:36:07Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/758a4b714561089f1660f8cca9aa81aafd2924f2",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/758a4b714561089f1660f8cca9aa81aafd2924f2",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/758a4b714561089f1660f8cca9aa81aafd2924f2/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5325ce292770ad1263c588414adb319421e0ed07",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/5325ce292770ad1263c588414adb319421e0ed07",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/5325ce292770ad1263c588414adb319421e0ed07"
+      }
+    ]
+  },
+  {
+    "sha": "5325ce292770ad1263c588414adb319421e0ed07",
+    "node_id": "C_kwDOO71yAtoAKDUzMjVjZTI5Mjc3MGFkMTI2M2M1ODg0MTRhZGIzMTk0MjFlMGVkMDc",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-28T06:35:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T06:35:44Z"
+      },
+      "message": "fix(notifications): gate owned-video addressable on authoritative ownership (#4730) (#4759)",
+      "tree": {
+        "sha": "74a89aa79fe77e44aac05ca4e3448c60aac108c4",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/74a89aa79fe77e44aac05ca4e3448c60aac108c4"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/5325ce292770ad1263c588414adb319421e0ed07",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqF+JACRC1aQ7uu5UhlAAAYL8QAIakXTRk76YleAijGhZcDShg\nVsYFv/AdFCxvVwMqo79Ybn5HUU++df6+hod8S3PIZu8JpPCPJ8E9A0ouDYMpx5fO\ntSzuIjMdGXwX+lAW7rCeoGh1w7tZn02ez5MG19lJr/+DTNyKpZCe40+2qiFBApJ6\n+uw99hHc+LNhcMOWMrxgxaaHecEEg7N0XgYt2iQV5jBXBk8Yc2rs1NTVPU/qyo07\ntZC7k2cHtN9n+oqmN9RF/VUfWMeOa8BgGlvud23jaiMh3s4S6deDXttKPO4X1CRg\nZsD5z11EP74x24sEPg5ev9Kyov6DU41mAbf52hkFkWPmHfWTUeMb7MuDhw/UiFfw\n7Q3TBE/dtHaN5s9RrLQKWxDYRdxPnzha00c1IKll4aayqmvVdlsDpFQX1D5QR51n\n1JEF01iYQaBptNCpOSnKmAaehLGl4LPaTQJhU0ndaH9gjW5KdrPrPLpg5GfKRCQf\n7ixC9F7OmNWSJLTr5BficBVQsdNRNeome6gceoUCf/7kfQVOUmN1PKz2ZiEQgXhv\nWJ1COu1FWw5OngSuh/hueuycT8v+VTvGO+0FEKXU72Q/z1s5qCp1T4aUEiUl84vy\n6bPaK1fpUPFc0WtFoZ3DtSpyqX3MmQ2nbcbkxQz+Z4rP9v9uI6hI0NXTcxZtaDgx\nQMlbbkxk5dbmTy1Tjh4/\n=Zs2L\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 74a89aa79fe77e44aac05ca4e3448c60aac108c4\nparent 6b1e4d8497b95d606357bcb4dfc722d4a03101aa\nauthor Meylis <meylis@divine.video> 1779950144 +0500\ncommitter GitHub <noreply@github.com> 1779950144 +0500\n\nfix(notifications): gate owned-video addressable on authoritative ownership (#4730) (#4759)",
+        "verified_at": "2026-05-28T06:35:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/5325ce292770ad1263c588414adb319421e0ed07",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/5325ce292770ad1263c588414adb319421e0ed07",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/5325ce292770ad1263c588414adb319421e0ed07/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6b1e4d8497b95d606357bcb4dfc722d4a03101aa",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/6b1e4d8497b95d606357bcb4dfc722d4a03101aa",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/6b1e4d8497b95d606357bcb4dfc722d4a03101aa"
+      }
+    ]
+  }
+]

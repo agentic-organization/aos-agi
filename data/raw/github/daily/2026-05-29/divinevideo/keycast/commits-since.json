@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "c235095a202bc1e2a775c35beaeaf89cc46de362",
+    "node_id": "C_kwDOQdzyrtoAKGMyMzUwOTVhMjAyYmMxZTJhNzc1YzM1YmVhZWFmODljYzQ2ZGUzNjI",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-28T15:57:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T15:57:49Z"
+      },
+      "message": "feat: approved minor onboarding via claim link (#244)\n\n* feat: add verified_minor flag and create-minor-account endpoint\n\nAdd approved minor onboarding: migration adds verified_minor column,\nnew service-token endpoint creates account + claim link, status\nendpoints return verified_minor flag via single combined query.\n\n* fix: make create-minor-account idempotent for retry safety\n\nOn duplicate username, check if the existing account is an unclaimed\napproved-minor (verified_minor=true, no email/password). If so, return\nor create a valid claim token instead of 409 Conflict. Normal users,\nclaimed accounts, and unrelated duplicates still conflict.\n\n* fix: address review feedback — tests, query collapse, 201/200, docs\n\n- Collapse two-query idempotency check into single\n  find_user_minor_status_by_username (eliminates TOCTOU gap)\n- Use create_with_prior_invalidation for retry token creation\n- Return 201 Created for new accounts, 200 OK for idempotent retries\n- Add Deserialize to CreateMinorAccountResponse for test parsing\n- Document APP_URL env var in CLAUDE.md\n- Add 8 integration tests: happy path, idempotent retry, conflict\n  (non-minor), conflict (claimed minor), invalid username, missing\n  token, wrong token, retry with expired token\n\n* fix: handle race condition on concurrent creates + add Vine conflict test\n\nCatch RepositoryError::Duplicate from create_minor_account INSERT and\nfall through to idempotent retry path instead of returning a confusing\n400. Add integration test for Vine preloaded user (unclaimed non-minor)\nreturning 409 Conflict.\n\n* fix: use claim_token.token consistently, add is_unclaimed doc comment\n\nUse the DB-returned token value in the happy-path claim URL for\nconsistency with the idempotent retry paths. Add doc comment noting\nthat is_unclaimed logic must stay in sync with the claim flow.",
+      "tree": {
+        "sha": "53d627e44057b9c7a7ee36daf7b44a4fef276bbf",
+        "url": "https://api.github.com/repos/divinevideo/keycast/git/trees/53d627e44057b9c7a7ee36daf7b44a4fef276bbf"
+      },
+      "url": "https://api.github.com/repos/divinevideo/keycast/git/commits/c235095a202bc1e2a775c35beaeaf89cc46de362",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGGX9CRC1aQ7uu5UhlAAAVhQQADNY8+wll/2xEF3woKkNj8Wy\new4Tr80l+P8F38qg3biB8J3zzE8IjvSeKm4HfD4vgcYQi0n9d9jUM56ELNO7lQUn\nRily7lrSJOJxMLqp8WOXjRmJYZx79OV7ZGjvBUqr0Wt19PWTqkNXKP9yUbZbb+8N\nXVt0//YdruSMrMFwJ/+mB3RMrcunCgM/CaQAfav9GacgqC4Z4mV2zwDVliVHStYp\nB1bi4YdeuYs4bX2E6OVOMbQj45E81otrKGL/t6+Ox8aSJZ6gULb7MjW6k57o4U+Y\n8ajvm+vAhgE2rzEJRV4+BFCCUAvm98nHBpilKfthRWgjYE1pQD6XZTk7Gk4peHnw\nj61dH19OuXBMfBQYN20aL12oCN9GYz97LGkQBrMZC1N/cCGA5Ku9UX9xSJ4cZiEp\ngiO51v2/MZVpqPyZXbJUtwFQFMv/bJM/g3SUy+ne/fR0vS85Uw7oW62XkC5/8HEi\nLf9iXX8gfTdOEW18qK4TAWOFjzPKGemUNRyxzjYqehe3n2XAwWcJfhE+XYaRAgKP\n8UVAbTlNuJIm14atEOgxFrif6tBCroufc1HButE4RsTYZS37u7MZw2v6MMZYsVYr\nQni1my9w07ktUAtvY9Lq3DGqc/20mn8vT6Ao2RMkfP/bfPORTpcjKYcsHlMi0xxN\nv4f5aiiYTVn884Ocq3xr\n=RgOB\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 53d627e44057b9c7a7ee36daf7b44a4fef276bbf\nparent 9bf165c4a91630904d5b20233a5183729657af9e\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779983869 -0400\ncommitter GitHub <noreply@github.com> 1779983869 -0400\n\nfeat: approved minor onboarding via claim link (#244)\n\n* feat: add verified_minor flag and create-minor-account endpoint\n\nAdd approved minor onboarding: migration adds verified_minor column,\nnew service-token endpoint creates account + claim link, status\nendpoints return verified_minor flag via single combined query.\n\n* fix: make create-minor-account idempotent for retry safety\n\nOn duplicate username, check if the existing account is an unclaimed\napproved-minor (verified_minor=true, no email/password). If so, return\nor create a valid claim token instead of 409 Conflict. Normal users,\nclaimed accounts, and unrelated duplicates still conflict.\n\n* fix: address review feedback — tests, query collapse, 201/200, docs\n\n- Collapse two-query idempotency check into single\n  find_user_minor_status_by_username (eliminates TOCTOU gap)\n- Use create_with_prior_invalidation for retry token creation\n- Return 201 Created for new accounts, 200 OK for idempotent retries\n- Add Deserialize to CreateMinorAccountResponse for test parsing\n- Document APP_URL env var in CLAUDE.md\n- Add 8 integration tests: happy path, idempotent retry, conflict\n  (non-minor), conflict (claimed minor), invalid username, missing\n  token, wrong token, retry with expired token\n\n* fix: handle race condition on concurrent creates + add Vine conflict test\n\nCatch RepositoryError::Duplicate from create_minor_account INSERT and\nfall through to idempotent retry path instead of returning a confusing\n400. Add integration test for Vine preloaded user (unclaimed non-minor)\nreturning 409 Conflict.\n\n* fix: use claim_token.token consistently, add is_unclaimed doc comment\n\nUse the DB-returned token value in the happy-path claim URL for\nconsistency with the idempotent retry paths. Add doc comment noting\nthat is_unclaimed logic must stay in sync with the claim flow.",
+        "verified_at": "2026-05-28T15:57:50Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/keycast/commits/c235095a202bc1e2a775c35beaeaf89cc46de362",
+    "html_url": "https://github.com/divinevideo/keycast/commit/c235095a202bc1e2a775c35beaeaf89cc46de362",
+    "comments_url": "https://api.github.com/repos/divinevideo/keycast/commits/c235095a202bc1e2a775c35beaeaf89cc46de362/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9bf165c4a91630904d5b20233a5183729657af9e",
+        "url": "https://api.github.com/repos/divinevideo/keycast/commits/9bf165c4a91630904d5b20233a5183729657af9e",
+        "html_url": "https://github.com/divinevideo/keycast/commit/9bf165c4a91630904d5b20233a5183729657af9e"
+      }
+    ]
+  },
+  {
+    "sha": "9bf165c4a91630904d5b20233a5183729657af9e",
+    "node_id": "C_kwDOQdzyrtoAKDliZjE2NWM0YTkxNjMwOTA0ZDViMjAyMzNhNTE4MzcyOTY1N2FmOWU",
+    "commit": {
+      "author": {
+        "name": "matthew bradley",
+        "email": "168114+mbradley@users.noreply.github.com",
+        "date": "2026-05-28T14:35:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-28T14:35:59Z"
+      },
+      "message": "feat: add batch-lookup endpoint for HubSpot contact enrichment (#245)\n\n* docs: add design spec and plan for HubSpot batch-lookup endpoint\n\n* feat: add POST /api/admin/users/batch-lookup for HubSpot enrichment\n\nService-token authenticated endpoint that accepts up to 1000 emails\nand returns user data (pubkey, status, email_verified, has_personal_key,\ncreated_at) for HubSpot contact enrichment via divine-invite-sync.\n\nServer-side email dedup and case-insensitive matching. Uses existing\n(tenant_id, email) index for efficient batch queries.\n\n* test: add 11 integration tests for batch-lookup endpoint",
+      "tree": {
+        "sha": "5004b5a20b27ba184d284015c5ab9251e9e661cc",
+        "url": "https://api.github.com/repos/divinevideo/keycast/git/trees/5004b5a20b27ba184d284015c5ab9251e9e661cc"
+      },
+      "url": "https://api.github.com/repos/divinevideo/keycast/git/commits/9bf165c4a91630904d5b20233a5183729657af9e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGFLQCRC1aQ7uu5UhlAAAz0gQAAHrHHkREJPfDWCIoi392Y/8\nNJdaPzBvVmkBFkur0SMaOo7sWFPwo2wbAgVPLaGRC+zsa2tEuT/IY7aDirwRsFhK\nUap6mDR9Uh4IyM6dj1f0FqLDNG0u1h0scY1V40TwYrG8PpLE8qJxByRNTfLvDDkA\nAT9XsJTl0bhZxI44ywcIaj9ZgJDlwzUfoo/G1/yGHV6VEPtN0Mc3AHJiMMGdt2oq\nTpAH8lZ97AmjCZCU29wzqD8eWxbXk5dqbKiHermazJUO+2P0Hvwg7F8yuLvmotd0\n6BaoA8BD7/AkMDzBkMT7p2P2sHFkIhpulDSjwKF7lxkM7jY8BQWEC9CFj2kERsTZ\n+BFqithsnPuhHNXY4RrQ8GjPTWsReGhjZH76EjmpmREzdJQNZQprXjiPSQa0bAqv\ndGzCnKYp2pFhMbZNV0nIKZwcLdqrmenT078Px42EVtZYYb+fwQoc9Go/qvsFGjJS\ndYImW5jqPxhvYsKyuUd6lo6cFHWI8wwWn8tUde6wmf3jzrlcgyGU+nheeO8DjFUH\ndvclIeqSgSo3ClDgQV3eA3vnjXL3rtgcdas9WZcZgfJ0SE1b607GsbTZa6JFkYml\nK9NbURvE0DT2jiQ22qwZtlmvK1Zbj9L9e6qYa408nrKRSHzMkvdMiUX/BvW4sEWH\n+tUL8gPPGJphXNyfcpyR\n=RR09\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5004b5a20b27ba184d284015c5ab9251e9e661cc\nparent 19f19207867e918791c8cd7923309fb147ba32b0\nauthor matthew bradley <168114+mbradley@users.noreply.github.com> 1779978959 -0400\ncommitter GitHub <noreply@github.com> 1779978959 -0400\n\nfeat: add batch-lookup endpoint for HubSpot contact enrichment (#245)\n\n* docs: add design spec and plan for HubSpot batch-lookup endpoint\n\n* feat: add POST /api/admin/users/batch-lookup for HubSpot enrichment\n\nService-token authenticated endpoint that accepts up to 1000 emails\nand returns user data (pubkey, status, email_verified, has_personal_key,\ncreated_at) for HubSpot contact enrichment via divine-invite-sync.\n\nServer-side email dedup and case-insensitive matching. Uses existing\n(tenant_id, email) index for efficient batch queries.\n\n* test: add 11 integration tests for batch-lookup endpoint",
+        "verified_at": "2026-05-28T14:36:02Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/keycast/commits/9bf165c4a91630904d5b20233a5183729657af9e",
+    "html_url": "https://github.com/divinevideo/keycast/commit/9bf165c4a91630904d5b20233a5183729657af9e",
+    "comments_url": "https://api.github.com/repos/divinevideo/keycast/commits/9bf165c4a91630904d5b20233a5183729657af9e/comments",
+    "author": {
+      "login": "mbradley",
+      "id": 168114,
+      "node_id": "MDQ6VXNlcjE2ODExNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "html_url": "https://github.com/mbradley",
+      "followers_url": "https://api.github.com/users/mbradley/followers",
+      "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbradley/orgs",
+      "repos_url": "https://api.github.com/users/mbradley/repos",
+      "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbradley/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19f19207867e918791c8cd7923309fb147ba32b0",
+        "url": "https://api.github.com/repos/divinevideo/keycast/commits/19f19207867e918791c8cd7923309fb147ba32b0",
+        "html_url": "https://github.com/divinevideo/keycast/commit/19f19207867e918791c8cd7923309fb147ba32b0"
+      }
+    ]
+  }
+]
