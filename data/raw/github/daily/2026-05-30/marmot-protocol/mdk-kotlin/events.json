@@ -1,0 +1,2434 @@
+[
+  {
+    "id": "9785703745",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/2",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/2/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/2/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/2/events",
+        "html_url": "https://github.com/marmot-protocol/mdk-kotlin/issues/2",
+        "id": 3776166830,
+        "node_id": "I_kwDOQlmVsM7hE7uu",
+        "number": 2,
+        "title": "Minify error",
+        "user": {
+          "login": "SubatomicPlanets",
+          "id": 133254461,
+          "node_id": "U_kgDOB_FNPQ",
+          "avatar_url": "https://avatars.githubusercontent.com/u/133254461?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/SubatomicPlanets",
+          "html_url": "https://github.com/SubatomicPlanets",
+          "followers_url": "https://api.github.com/users/SubatomicPlanets/followers",
+          "following_url": "https://api.github.com/users/SubatomicPlanets/following{/other_user}",
+          "gists_url": "https://api.github.com/users/SubatomicPlanets/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/SubatomicPlanets/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/SubatomicPlanets/subscriptions",
+          "organizations_url": "https://api.github.com/users/SubatomicPlanets/orgs",
+          "repos_url": "https://api.github.com/users/SubatomicPlanets/repos",
+          "events_url": "https://api.github.com/users/SubatomicPlanets/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/SubatomicPlanets/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 9799253854,
+            "node_id": "LA_kwDOQlmVsM8AAAACSBS_Xg",
+            "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/labels/enhancement",
+            "name": "enhancement",
+            "color": "a2eeef",
+            "default": true,
+            "description": "New feature or request"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignees": [
+          {
+            "login": "dannym-arx",
+            "id": 25923265,
+            "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/dannym-arx",
+            "html_url": "https://github.com/dannym-arx",
+            "followers_url": "https://api.github.com/users/dannym-arx/followers",
+            "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+            "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+            "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+            "repos_url": "https://api.github.com/users/dannym-arx/repos",
+            "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          }
+        ],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-01-02T11:22:52Z",
+        "updated_at": "2026-05-22T11:57:16Z",
+        "closed_at": null,
+        "assignee": {
+          "login": "dannym-arx",
+          "id": 25923265,
+          "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dannym-arx",
+          "html_url": "https://github.com/dannym-arx",
+          "followers_url": "https://api.github.com/users/dannym-arx/followers",
+          "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+          "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+          "repos_url": "https://api.github.com/users/dannym-arx/repos",
+          "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "I tested the newest version with minify enabled, and it gave me these errors while building:\n```\nMissing class java.awt.Component (referenced from: long com.sun.jna.Native$AWT.getComponentID(java.lang.Object) and 3 other contexts)\nMissing class java.awt.GraphicsEnvironment (referenced from: long com.sun.jna.Native$AWT.getComponentID(java.lang.Object))\nMissing class java.awt.HeadlessException (referenced from: long com.sun.jna.Native$AWT.getComponentID(java.lang.Object))\nMissing class java.awt.Window (referenced from: long com.sun.jna.Native$AWT.getWindowID(java.awt.Window) and 2 other contexts)\n```\n\nI fixed it in my app by adding `-dontwarn java.awt.*` to my project's proguard rules file. ",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/2/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/comments/4518435209",
+        "html_url": "https://github.com/marmot-protocol/mdk-kotlin/issues/2#issuecomment-4518435209",
+        "issue_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/2",
+        "id": 4518435209,
+        "node_id": "IC_kwDOQlmVsM8AAAABDVHZiQ",
+        "user": {
+          "login": "dannym-arx",
+          "id": 25923265,
+          "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dannym-arx",
+          "html_url": "https://github.com/dannym-arx",
+          "followers_url": "https://api.github.com/users/dannym-arx/followers",
+          "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+          "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+          "repos_url": "https://api.github.com/users/dannym-arx/repos",
+          "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-22T11:57:16Z",
+        "updated_at": "2026-05-22T11:57:16Z",
+        "body": "Please let me know if the PR I landed yesterday fixed it",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/comments/4518435209/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-22T11:57:16Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9785537390",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/4",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/4/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/4/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/4/events",
+        "html_url": "https://github.com/marmot-protocol/mdk-kotlin/issues/4",
+        "id": 3974335651,
+        "node_id": "I_kwDOQlmVsM7s44yj",
+        "number": 4,
+        "title": "Can't get keystore to work, can't use newMdk()",
+        "user": {
+          "login": "SubatomicPlanets",
+          "id": 133254461,
+          "node_id": "U_kgDOB_FNPQ",
+          "avatar_url": "https://avatars.githubusercontent.com/u/133254461?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/SubatomicPlanets",
+          "html_url": "https://github.com/SubatomicPlanets",
+          "followers_url": "https://api.github.com/users/SubatomicPlanets/followers",
+          "following_url": "https://api.github.com/users/SubatomicPlanets/following{/other_user}",
+          "gists_url": "https://api.github.com/users/SubatomicPlanets/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/SubatomicPlanets/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/SubatomicPlanets/subscriptions",
+          "organizations_url": "https://api.github.com/users/SubatomicPlanets/orgs",
+          "repos_url": "https://api.github.com/users/SubatomicPlanets/repos",
+          "events_url": "https://api.github.com/users/SubatomicPlanets/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/SubatomicPlanets/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [
+          {
+            "login": "dannym-arx",
+            "id": 25923265,
+            "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/dannym-arx",
+            "html_url": "https://github.com/dannym-arx",
+            "followers_url": "https://api.github.com/users/dannym-arx/followers",
+            "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+            "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+            "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+            "repos_url": "https://api.github.com/users/dannym-arx/repos",
+            "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          }
+        ],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-02-22T12:04:45Z",
+        "updated_at": "2026-05-22T11:52:33Z",
+        "closed_at": null,
+        "assignee": {
+          "login": "dannym-arx",
+          "id": 25923265,
+          "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dannym-arx",
+          "html_url": "https://github.com/dannym-arx",
+          "followers_url": "https://api.github.com/users/dannym-arx/followers",
+          "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+          "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+          "repos_url": "https://api.github.com/users/dannym-arx/repos",
+          "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 1,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "### Description\nIn my app I want to move from using `newMdkUnencrypted()` to using `newMdk()` but I can't get it to work. `newMdkUnencrypted()` and `newMdkWithKey()` work fine.\n\nI tried to call it like this but this won't work because I need to set up keystore first:\n`mdk = newMdk(filesDir.resolve(\"mdk.db\").absolutePath, packageName, \"mdk.db.key.default\", null)`\n\nFollowing the [encrypted-storage-plan.md](https://github.com/marmot-protocol/mdk/blob/master/crates/mdk-core/docs/encrypted-storage-plan.md#platform-store-initialization) guide for Android, I then added this to a new file in my project to setup keystore:\n``` Kotlin\npackage io.crates.keyring\n\nimport android.content.Context\n\nclass Keyring {\n    companion object {\n        init {\n            System.loadLibrary(\"mdk_uniffi\")\n        }\n\n        external fun setAndroidKeyringCredentialBuilder(context: Context)\n    }\n}\n```\n\nand then I call `Keyring.setAndroidKeyringCredentialBuilder(this)` before calling `newMdk()`. But when I run it, I get a crash with this error:\n```\njava.lang.UnsatisfiedLinkError: No implementation found for void io.crates.keyring.Keyring$Companion.setAndroidKeyringCredentialBuilder(android.content.Context) (tried Java_io_crates_keyring_Keyring_00024Companion_setAndroidKeyringCredentialBuilder and Java_io_crates_keyring_Keyring_00024Companion_setAndroidKeyringCredentialBuilder__Landroid_content_Context_2)\n```\n\n### Details\n- Tested on Android API 9\n- I tried disabling minify, but it's still the same error",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/4/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/comments/4518404420",
+        "html_url": "https://github.com/marmot-protocol/mdk-kotlin/issues/4#issuecomment-4518404420",
+        "issue_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/4",
+        "id": 4518404420,
+        "node_id": "IC_kwDOQlmVsM8AAAABDVFhRA",
+        "user": {
+          "login": "dannym-arx",
+          "id": 25923265,
+          "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dannym-arx",
+          "html_url": "https://github.com/dannym-arx",
+          "followers_url": "https://api.github.com/users/dannym-arx/followers",
+          "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+          "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+          "repos_url": "https://api.github.com/users/dannym-arx/repos",
+          "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-22T11:52:33Z",
+        "updated_at": "2026-05-22T11:52:33Z",
+        "body": "Ok, sorry for the huge delay on this one: \n\ncreate a keyring.kt with this EXACT package name: \n\n```kotlin\npackage io.crates.keyring\n\nimport android.content.Context\n\nclass Keyring {\n  companion object {\n    init {\n      System.loadLibrary(\"mdk_uniffi\")\n    }\n\n    external fun initializeNdkContext(context: Context)\n  }\n}\n```\n\nThe package MUST be io.crates.keyring and the class must be Keyring. the JNI symbol is hardcoded to that path in the upstream crate.\n\nthen in the call site: \n\n```kotlin\nKeyring.initializeNdkContext(applicationContext)  // before newMdk(...)\nmdk = newMdk(filesDir.resolve(\"mdk.db\").absolutePath, packageName, \"mdk.db.key.default\", null)\n```\n\nlet me know if this fixes it",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/comments/4518404420/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-22T11:52:33Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12226840408",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34517079192,
+      "ref": "refs/heads/master",
+      "head": "36bf4956b897a766fb803171f56b58d90b498430",
+      "before": "274dd01e7f51bc6974aa40e1f707cfcd3a1b2091"
+    },
+    "public": true,
+    "created_at": "2026-05-22T11:33:12Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12226659725",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34516898682,
+      "ref": "refs/heads/master",
+      "head": "274dd01e7f51bc6974aa40e1f707cfcd3a1b2091",
+      "before": "0515dbd2462680b22bc15fa0c6a70803a00c5d99"
+    },
+    "public": true,
+    "created_at": "2026-05-22T11:28:32Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12226532380",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34516771485,
+      "ref": "refs/heads/master",
+      "head": "0515dbd2462680b22bc15fa0c6a70803a00c5d99",
+      "before": "4459f319a338f1362493206028750e63351312ed"
+    },
+    "public": true,
+    "created_at": "2026-05-22T11:25:09Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12184044297",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34474435003,
+      "ref": "refs/heads/master",
+      "head": "4459f319a338f1362493206028750e63351312ed",
+      "before": "38c36e3b0f731aba600e9c41cae040e720fc6cd0"
+    },
+    "public": true,
+    "created_at": "2026-05-21T15:06:38Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12180037519",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34470423933,
+      "ref": "refs/heads/master",
+      "head": "38c36e3b0f731aba600e9c41cae040e720fc6cd0",
+      "before": "0fe7d0a300f253b981d49f086ff7cb86de0b4eba"
+    },
+    "public": true,
+    "created_at": "2026-05-21T13:48:15Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9737720209",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/3",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/3/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/3/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/3/events",
+        "html_url": "https://github.com/marmot-protocol/mdk-kotlin/issues/3",
+        "id": 3776200360,
+        "node_id": "I_kwDOQlmVsM7hFD6o",
+        "number": 3,
+        "title": "README should be updated",
+        "user": {
+          "login": "SubatomicPlanets",
+          "id": 133254461,
+          "node_id": "U_kgDOB_FNPQ",
+          "avatar_url": "https://avatars.githubusercontent.com/u/133254461?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/SubatomicPlanets",
+          "html_url": "https://github.com/SubatomicPlanets",
+          "followers_url": "https://api.github.com/users/SubatomicPlanets/followers",
+          "following_url": "https://api.github.com/users/SubatomicPlanets/following{/other_user}",
+          "gists_url": "https://api.github.com/users/SubatomicPlanets/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/SubatomicPlanets/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/SubatomicPlanets/subscriptions",
+          "organizations_url": "https://api.github.com/users/SubatomicPlanets/orgs",
+          "repos_url": "https://api.github.com/users/SubatomicPlanets/repos",
+          "events_url": "https://api.github.com/users/SubatomicPlanets/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/SubatomicPlanets/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 9799253835,
+            "node_id": "LA_kwDOQlmVsM8AAAACSBS_Sw",
+            "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/labels/documentation",
+            "name": "documentation",
+            "color": "0075ca",
+            "default": true,
+            "description": "Improvements or additions to documentation"
+          },
+          {
+            "id": 9799253862,
+            "node_id": "LA_kwDOQlmVsM8AAAACSBS_Zg",
+            "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/labels/good%20first%20issue",
+            "name": "good first issue",
+            "color": "7057ff",
+            "default": true,
+            "description": "Good for newcomers"
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T11:44:02Z",
+        "updated_at": "2026-05-21T12:14:21Z",
+        "closed_at": "2026-05-21T12:14:21Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "I noticed that the README file is wrong in some places.\n- `mdk.acceptWelcome(welcomeJson = welcome.eventJson)` should be `mdk.acceptWelcome(welcome)`. Same with `declineWelcome`.\n- `MessageProcessingResult` doesn't exist. Instead, `ProcessMessageResult` exists, but it's quite different.\n\nI just did a quick check, so there may be more issues. Some of these might also be the case in the MDK bindings for other languages.",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/3/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T12:14:23Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12175648032",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34466042566,
+      "ref": "refs/heads/master",
+      "head": "0fe7d0a300f253b981d49f086ff7cb86de0b4eba",
+      "before": "bd1752372af76602379fc8aff71b0c726bcfd818"
+    },
+    "public": true,
+    "created_at": "2026-05-21T12:14:21Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9737719292",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 6,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/pulls/6",
+        "id": 3723303785,
+        "number": 6,
+        "head": {
+          "ref": "docs/readme-fixes-issue-3",
+          "sha": "1c00e6655ac221584cb221b2ca14b069ab8a24e3",
+          "repo": {
+            "id": 1113167280,
+            "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin",
+            "name": "mdk-kotlin"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "bd1752372af76602379fc8aff71b0c726bcfd818",
+          "repo": {
+            "id": 1113167280,
+            "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin",
+            "name": "mdk-kotlin"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T12:14:19Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12175573035",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34465967690,
+      "ref": "refs/heads/docs/readme-fixes-issue-3",
+      "head": "1c00e6655ac221584cb221b2ca14b069ab8a24e3",
+      "before": "1a5fc6f563bac036b1cea1d53385d4dab2057663"
+    },
+    "public": true,
+    "created_at": "2026-05-21T12:12:40Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9737571149",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 251503545,
+      "login": "stage-review[bot]",
+      "display_login": "stage-review",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/stage-review[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251503545?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/events",
+        "html_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6",
+        "id": 4494406127,
+        "node_id": "PR_kwDOQlmVsM7d7Rtp",
+        "number": 6,
+        "title": "docs(readme): correct API references and document missing functions",
+        "user": {
+          "login": "dannym-arx",
+          "id": 25923265,
+          "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dannym-arx",
+          "html_url": "https://github.com/dannym-arx",
+          "followers_url": "https://api.github.com/users/dannym-arx/followers",
+          "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+          "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+          "repos_url": "https://api.github.com/users/dannym-arx/repos",
+          "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-05-21T12:09:58Z",
+        "updated_at": "2026-05-21T12:18:52Z",
+        "closed_at": "2026-05-21T12:14:19Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/pulls/6",
+          "html_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6",
+          "diff_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6.diff",
+          "patch_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6.patch",
+          "merged_at": "2026-05-21T12:14:19Z"
+        },
+        "body": "Closes #3.\n\nFixes the inaccuracies the issue called out (and the additional drift the reporter suspected might exist), then documents every previously-undocumented function on the `Mdk` API.\n\n## API corrections\n\n- `mdk.acceptWelcome(welcomeJson = welcome.eventJson)` → `mdk.acceptWelcome(welcome)` (same for `declineWelcome`).\n- `MessageProcessingResult` → `ProcessMessageResult`; the `when` block now reflects the real variants (`ApplicationMessage`, `Proposal`, `PendingProposal`, `ExternalJoinProposal`, `Commit`, `Unprocessable`, `IgnoredProposal`, `PreviouslyFailed`).\n- Removed the `processMessages` (plural) section — that function does not exist.\n- `updateGroupMetadata(...)` → `updateGroupData(mlsGroupId, GroupDataUpdate(...))`.\n- `newMdk(dbPath)` → `newMdk(dbPath, serviceId, dbKeyId, config)` in all three example sites.\n- `createMessage(...)` examples now pass the required `tags`/`eventTags` parameters (both `null` by default).\n- `getMessage(eventId)` → `getMessage(mlsGroupId, eventId)`.\n- `getMessages(mlsGroupId)` and `getPendingWelcomes()` updated to show the required `limit` / `offset` / `sortOrder` parameters.\n- `MdkUniffiError` → `MdkUniffiException` (subclasses: `Storage`, `Mdk`, `InvalidInput`).\n- `KeyPackageResult.keyPackage` is **Base64**, not hex; documented `tags` (kind `30443`) vs `tagsLegacy` (kind `443`), plus the previously-undocumented `hashRef` and `dTag` fields.\n- Data classes corrected: `ByteArray?` instead of `List<UByte>?` for image fields on `Group` / `Welcome`; added the previously-missing `Message.createdAt`, `Group.lastMessageProcessedAt`, and `Group.selfUpdateState`.\n\n## Newly documented functions\n\nThe previous README covered a small slice of the public API. The new sections cover every public symbol on the `Mdk` interface and every top-level helper in `src/main/kotlin/build/marmot/mdk/mdk_uniffi.kt`:\n\n- **Key packages:** `deleteKeyPackageFromStorage`, `deleteKeyPackageFromStorageByHashRef`; rotation note for `createKeyPackageForEventWithOptions`.\n- **Group queries:** `getRelays`.\n- **Group lifecycle:** `leaveGroup`, `selfDemote`, `selfUpdate`, `groupsNeedingSelfUpdate`, `deleteGroup`, `syncGroupMetadataFromMls`, `clearPendingCommit`, `mergePendingCommit`.\n- **Welcomes:** `processWelcome`, `getWelcome`, `acceptWelcomeJson`, `declineWelcomeJson`.\n- **Messages:** `getLastMessage`, `deleteMessagesForGroup`, `processMessageWithContext`.\n- **Encrypted media (messages):** `encryptMediaForUpload`(`WithOptions`), `createMediaImetaTag`, `parseMediaImetaTag`, `decryptMediaFromDownload`.\n- **Group images:** `prepareGroupImageForUpload`(`WithOptions`), `decryptGroupImage`, `deriveUploadKeypair`.\n- **Diagnostics:** `groupCapabilityUpgradeStatus`, `upgradeGroupCapabilities`, `groupRequiredProposals`, `groupMemberCapabilities`, `ownLeafIndex`, `groupLeafMap`, `getRatchetTreeInfo`, `pendingAddedMembersPubkeys`, `pendingRemovedMembersPubkeys`, `pendingMemberChanges`.\n- **Setup:** `initKeyringStore`, `newMdkWithKey`.\n\n**Coverage:** 50/50 interface methods and 7/7 top-level helpers are now referenced by name in the README.\n\n## Verification\n\n- Every claim cross-checked against the generated bindings in `src/main/kotlin/build/marmot/mdk/mdk_uniffi.kt`.\n- Prose scanned for AI writing patterns with `shaka scan` — **100/100 PASS**, 0 violations.\n\nDiff: +446 / −79 lines on `Readme.md`.\n\n@SubatomicPlanets — flagging since you filed the issue. The reporter also noted that \"some of these might also be the case in the MDK bindings for other languages.\" That's a fair guess — the same UniFFI source generates the Swift/Python bindings, so the equivalent READMEs likely need the same audit.\n\n<!-- stage-review-badge-begin -->\n\n---\n\n<a href=\"https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://stagereview.app/assets/gh-open-in-stage-dark.svg\">\n    <img src=\"https://stagereview.app/assets/gh-open-in-stage-light.svg\" alt=\"Open in Stage\">\n  </picture>\n</a>\n\n<!-- stage-review-badge-end -->\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Enhanced MDK Kotlin initialization guidance and keyring priming instructions\n  * Expanded key-package docs covering fields, publish/parse flows, rotation, and deletion from storage\n  * Extended group docs: relays, data updates, lifecycle ops, welcome handling, and sync/merge behaviors\n  * Updated message docs: creation (new optional tags), paginated/sortable retrieval, single-message access, deletion counts, and incoming-processing result variants\n  * Revised data type descriptions and Android integration examples to match updated APIs\n\n<!-- review_stack_entry_start -->\n\n[![Review Change Stack](https://storage.googleapis.com/coderabbit_public_assets/review-stack-in-coderabbit-ui.svg)](https://app.coderabbit.ai/change-stack/marmot-protocol/mdk-kotlin/pull/6?utm_source=github_walkthrough&utm_medium=github&utm_campaign=change_stack)\n\n<!-- review_stack_entry_end -->\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/comments/4508131341",
+        "html_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6#issuecomment-4508131341",
+        "issue_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6",
+        "id": 4508131341,
+        "node_id": "IC_kwDOQlmVsM8AAAABDLSgDQ",
+        "user": {
+          "login": "stage-review[bot]",
+          "id": 251503545,
+          "node_id": "BOT_kgDODv2juQ",
+          "avatar_url": "https://avatars.githubusercontent.com/in/2537991?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/stage-review%5Bbot%5D",
+          "html_url": "https://github.com/apps/stage-review",
+          "followers_url": "https://api.github.com/users/stage-review%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/stage-review%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/stage-review%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/stage-review%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/stage-review%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/stage-review%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/stage-review%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/stage-review%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/stage-review%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-21T12:10:27Z",
+        "updated_at": "2026-05-21T12:13:03Z",
+        "body": "<!-- stage-chapters-begin -->\nReady to review this PR? Stage has broken it down into 7 individual chapters for you:\n\n| | Title |\n|---|-------|\n| 1 | [Correct data class definitions and error types](https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6/chapters/1) |\n| 2 | [Update initialization and setup documentation](https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6/chapters/2) |\n| 3 | [Correct key package and Nostr event logic](https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6/chapters/3) |\n| 4 | [Document group lifecycle and query functions](https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6/chapters/4) |\n| 5 | [Update welcome message processing APIs](https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6/chapters/5) |\n| 6 | [Refine message creation and retrieval APIs](https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6/chapters/6) |\n| 7 | [Document advanced processing and media helpers](https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6/chapters/7) |\n\n<a href=\"https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://stagereview.app/assets/gh-open-in-stage-dark.svg\">\n    <img src=\"https://stagereview.app/assets/gh-open-in-stage-light.svg\" alt=\"Open in Stage\">\n  </picture>\n</a>\n\n<sub>Chapters generated by <a href=\"https://stagereview.app\">Stage</a> for commit 1c00e6655ac221584cb221b2ca14b069ab8a24e3 on May 21, 2026 12:13pm UTC.</sub>\n<!-- stage-chapters-end -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/comments/4508131341/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": {
+          "id": 2537991,
+          "client_id": "Iv23liQvIQLTY3ja8uDb",
+          "slug": "stage-review",
+          "node_id": "A_kwHODwHrbc4AJroH",
+          "owner": {
+            "login": "ReviewStage",
+            "id": 251784045,
+            "node_id": "O_kgDODwHrbQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/251784045?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ReviewStage",
+            "html_url": "https://github.com/ReviewStage",
+            "followers_url": "https://api.github.com/users/ReviewStage/followers",
+            "following_url": "https://api.github.com/users/ReviewStage/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ReviewStage/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ReviewStage/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ReviewStage/subscriptions",
+            "organizations_url": "https://api.github.com/users/ReviewStage/orgs",
+            "repos_url": "https://api.github.com/users/ReviewStage/repos",
+            "events_url": "https://api.github.com/users/ReviewStage/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ReviewStage/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "name": "Stage-Review",
+          "description": "Teams are shipping faster than ever with AI, but engineers are merging changes that neither they nor their reviewers fully understand, leading to bugs in production and overwhelming cognitive debt.\r\n\r\nStage is a new code review platform built for today’s fast moving teams. Instead of forcing readers to piece things together from unorganized diffs, Stage breaks changes down into structured chapters so teams can understand what's happening and ship with confidence.",
+          "external_url": "https://stagereview.app/",
+          "html_url": "https://github.com/apps/stage-review",
+          "created_at": "2025-12-25T19:10:57Z",
+          "updated_at": "2026-05-09T00:26:21Z",
+          "permissions": {
+            "checks": "read",
+            "contents": "write",
+            "deployments": "read",
+            "emails": "read",
+            "issues": "write",
+            "members": "read",
+            "merge_queues": "write",
+            "metadata": "read",
+            "pull_requests": "write",
+            "statuses": "read"
+          },
+          "events": [
+            "check_run",
+            "deployment_status",
+            "issue_comment",
+            "pull_request",
+            "pull_request_review",
+            "pull_request_review_comment",
+            "pull_request_review_thread"
+          ]
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T12:10:27Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9737562334",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 136622811,
+      "login": "coderabbitai[bot]",
+      "display_login": "coderabbitai",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136622811?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6",
+        "repository_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin",
+        "labels_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/labels{/name}",
+        "comments_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/comments",
+        "events_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/events",
+        "html_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6",
+        "id": 4494406127,
+        "node_id": "PR_kwDOQlmVsM7d7Rtp",
+        "number": 6,
+        "title": "docs(readme): correct API references and document missing functions",
+        "user": {
+          "login": "dannym-arx",
+          "id": 25923265,
+          "node_id": "MDQ6VXNlcjI1OTIzMjY1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/25923265?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dannym-arx",
+          "html_url": "https://github.com/dannym-arx",
+          "followers_url": "https://api.github.com/users/dannym-arx/followers",
+          "following_url": "https://api.github.com/users/dannym-arx/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dannym-arx/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dannym-arx/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dannym-arx/subscriptions",
+          "organizations_url": "https://api.github.com/users/dannym-arx/orgs",
+          "repos_url": "https://api.github.com/users/dannym-arx/repos",
+          "events_url": "https://api.github.com/users/dannym-arx/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dannym-arx/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-05-21T12:09:58Z",
+        "updated_at": "2026-05-21T12:18:52Z",
+        "closed_at": "2026-05-21T12:14:19Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/pulls/6",
+          "html_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6",
+          "diff_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6.diff",
+          "patch_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6.patch",
+          "merged_at": "2026-05-21T12:14:19Z"
+        },
+        "body": "Closes #3.\n\nFixes the inaccuracies the issue called out (and the additional drift the reporter suspected might exist), then documents every previously-undocumented function on the `Mdk` API.\n\n## API corrections\n\n- `mdk.acceptWelcome(welcomeJson = welcome.eventJson)` → `mdk.acceptWelcome(welcome)` (same for `declineWelcome`).\n- `MessageProcessingResult` → `ProcessMessageResult`; the `when` block now reflects the real variants (`ApplicationMessage`, `Proposal`, `PendingProposal`, `ExternalJoinProposal`, `Commit`, `Unprocessable`, `IgnoredProposal`, `PreviouslyFailed`).\n- Removed the `processMessages` (plural) section — that function does not exist.\n- `updateGroupMetadata(...)` → `updateGroupData(mlsGroupId, GroupDataUpdate(...))`.\n- `newMdk(dbPath)` → `newMdk(dbPath, serviceId, dbKeyId, config)` in all three example sites.\n- `createMessage(...)` examples now pass the required `tags`/`eventTags` parameters (both `null` by default).\n- `getMessage(eventId)` → `getMessage(mlsGroupId, eventId)`.\n- `getMessages(mlsGroupId)` and `getPendingWelcomes()` updated to show the required `limit` / `offset` / `sortOrder` parameters.\n- `MdkUniffiError` → `MdkUniffiException` (subclasses: `Storage`, `Mdk`, `InvalidInput`).\n- `KeyPackageResult.keyPackage` is **Base64**, not hex; documented `tags` (kind `30443`) vs `tagsLegacy` (kind `443`), plus the previously-undocumented `hashRef` and `dTag` fields.\n- Data classes corrected: `ByteArray?` instead of `List<UByte>?` for image fields on `Group` / `Welcome`; added the previously-missing `Message.createdAt`, `Group.lastMessageProcessedAt`, and `Group.selfUpdateState`.\n\n## Newly documented functions\n\nThe previous README covered a small slice of the public API. The new sections cover every public symbol on the `Mdk` interface and every top-level helper in `src/main/kotlin/build/marmot/mdk/mdk_uniffi.kt`:\n\n- **Key packages:** `deleteKeyPackageFromStorage`, `deleteKeyPackageFromStorageByHashRef`; rotation note for `createKeyPackageForEventWithOptions`.\n- **Group queries:** `getRelays`.\n- **Group lifecycle:** `leaveGroup`, `selfDemote`, `selfUpdate`, `groupsNeedingSelfUpdate`, `deleteGroup`, `syncGroupMetadataFromMls`, `clearPendingCommit`, `mergePendingCommit`.\n- **Welcomes:** `processWelcome`, `getWelcome`, `acceptWelcomeJson`, `declineWelcomeJson`.\n- **Messages:** `getLastMessage`, `deleteMessagesForGroup`, `processMessageWithContext`.\n- **Encrypted media (messages):** `encryptMediaForUpload`(`WithOptions`), `createMediaImetaTag`, `parseMediaImetaTag`, `decryptMediaFromDownload`.\n- **Group images:** `prepareGroupImageForUpload`(`WithOptions`), `decryptGroupImage`, `deriveUploadKeypair`.\n- **Diagnostics:** `groupCapabilityUpgradeStatus`, `upgradeGroupCapabilities`, `groupRequiredProposals`, `groupMemberCapabilities`, `ownLeafIndex`, `groupLeafMap`, `getRatchetTreeInfo`, `pendingAddedMembersPubkeys`, `pendingRemovedMembersPubkeys`, `pendingMemberChanges`.\n- **Setup:** `initKeyringStore`, `newMdkWithKey`.\n\n**Coverage:** 50/50 interface methods and 7/7 top-level helpers are now referenced by name in the README.\n\n## Verification\n\n- Every claim cross-checked against the generated bindings in `src/main/kotlin/build/marmot/mdk/mdk_uniffi.kt`.\n- Prose scanned for AI writing patterns with `shaka scan` — **100/100 PASS**, 0 violations.\n\nDiff: +446 / −79 lines on `Readme.md`.\n\n@SubatomicPlanets — flagging since you filed the issue. The reporter also noted that \"some of these might also be the case in the MDK bindings for other languages.\" That's a fair guess — the same UniFFI source generates the Swift/Python bindings, so the equivalent READMEs likely need the same audit.\n\n<!-- stage-review-badge-begin -->\n\n---\n\n<a href=\"https://stagereview.app/marmot-protocol/mdk-kotlin/pull/6\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://stagereview.app/assets/gh-open-in-stage-dark.svg\">\n    <img src=\"https://stagereview.app/assets/gh-open-in-stage-light.svg\" alt=\"Open in Stage\">\n  </picture>\n</a>\n\n<!-- stage-review-badge-end -->\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Enhanced MDK Kotlin initialization guidance and keyring priming instructions\n  * Expanded key-package docs covering fields, publish/parse flows, rotation, and deletion from storage\n  * Extended group docs: relays, data updates, lifecycle ops, welcome handling, and sync/merge behaviors\n  * Updated message docs: creation (new optional tags), paginated/sortable retrieval, single-message access, deletion counts, and incoming-processing result variants\n  * Revised data type descriptions and Android integration examples to match updated APIs\n\n<!-- review_stack_entry_start -->\n\n[![Review Change Stack](https://storage.googleapis.com/coderabbit_public_assets/review-stack-in-coderabbit-ui.svg)](https://app.coderabbit.ai/change-stack/marmot-protocol/mdk-kotlin/pull/6?utm_source=github_walkthrough&utm_medium=github&utm_campaign=change_stack)\n\n<!-- review_stack_entry_end -->\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/comments/4508129833",
+        "html_url": "https://github.com/marmot-protocol/mdk-kotlin/pull/6#issuecomment-4508129833",
+        "issue_url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/6",
+        "id": 4508129833,
+        "node_id": "IC_kwDOQlmVsM8AAAABDLSaKQ",
+        "user": {
+          "login": "coderabbitai[bot]",
+          "id": 136622811,
+          "node_id": "BOT_kgDOCCSy2w",
+          "avatar_url": "https://avatars.githubusercontent.com/in/347564?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coderabbitai%5Bbot%5D",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "followers_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/coderabbitai%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-21T12:10:12Z",
+        "updated_at": "2026-05-21T12:18:52Z",
+        "body": "<!-- This is an auto-generated comment: summarize by coderabbit.ai -->\n<!-- This is an auto-generated comment: failure by coderabbit.ai -->\n\n> [!CAUTION]\n> ## Review failed\n> \n> Pull request was closed or merged during review\n\n<!-- end of auto-generated comment: failure by coderabbit.ai -->\n\n<!-- walkthrough_start -->\n\n## Walkthrough\n\nThis PR updates the README.md to correct API usage examples and standardize data type documentation for the MDK Kotlin library. It fixes `ProcessMessageResult` handling, corrects `newMdk` initialization signature, updates message and group management operations, revises data type field definitions, and provides consistent integration examples throughout.\n\n## Changes\n\n**MDK Kotlin README API and Type Corrections**\n\n| Layer / File(s) | Summary |\n|---|---|\n| **Initialization and Keyring Setup** <br> `Readme.md` | `newMdk` initialization examples are updated to include `serviceId`, `dbKeyId`, and optional `config` parameters, with added guidance on keyring initialization via `initKeyringStore`. |\n| **Key Package Lifecycle** <br> `Readme.md` | Key package creation, publishing, parsing, and deletion examples are revised to document `KeyPackageResult` fields, clarify rotation using `KeyPackageOptions.existingDTag`, show both `kind:30443` and legacy `kind:443` event kinds, and support deletion by `hashRef` alongside event JSON. |\n| **Group Management Operations** <br> `Readme.md` | Group lifecycle documentation is expanded to include relay retrieval via `getRelays`, group data updates using `GroupDataUpdate`, and full set of operations (leave, self-demote, self-update, delete, sync, recover) with updated welcome processing and acceptance/decline examples. |\n| **Message Creation and Retrieval** <br> `Readme.md` | Message operation examples are updated to reflect new optional parameters (`tags`, `eventTags`) in `createMessage`, parameterized `getMessages` with `limit`, `offset`, and `sortOrder`, new `getMessage` by `eventId`, `getLastMessage`, and updated `deleteMessagesForGroup` returning deleted row count. |\n| **Message Processing and Error Handling** <br> `Readme.md` | Incoming message processing examples are rewritten to use correct `ProcessMessageResult` branching variants (message, proposal, pending, commit, ignored, unprocessable) and error handling is updated to catch `MdkUniffiException` variants instead of the previous incorrect error types. |\n| **Data Type Reference Documentation** <br> `Readme.md` | `Group` type now includes image, admin, last-message, and self-update fields with corrected `ByteArray?` for image data; `Message` clarifies fields like `nostrGroupId`, `eventId`, `senderPubkey`, `createdAt`, `processedAt`, `kind`, and `state`; `Welcome` uses `ByteArray?` for image material and updates admin/relay/state field names; `KeyPackageResult` corrects `hashRef` to `ByteArray` and standardizes field descriptions. |\n| **Android Integration Examples** <br> `Readme.md` | Coroutine-based `MdkManager` and complete-workflow examples are updated to use corrected `newMdk` parameters, new message creation argument shape with `tags`/`eventTags`, new `getMessages` parameters, and key-package publishing guidance preferring `kind:30443` with `tags`; ViewModel examples are similarly updated for consistency. |\n\n## Estimated code review effort\n\n🎯 2 (Simple) | ⏱️ ~12 minutes\n\n<!-- walkthrough_end -->\n<!-- pre_merge_checks_walkthrough_start -->\n\n<details>\n<summary>🚥 Pre-merge checks | ✅ 5</summary>\n\n<details>\n<summary>✅ Passed checks (5 passed)</summary>\n\n|         Check name         | Status   | Explanation                                                                                                                                                                                                                                       |\n| :------------------------: | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\n|      Description Check     | ✅ Passed | Check skipped - CodeRabbit’s high-level summary is enabled.                                                                                                                                                                                       |\n|         Title check        | ✅ Passed | The title clearly and specifically summarizes the main change: correcting API references and documenting previously-missing functions in the README.                                                                                              |\n|     Linked Issues check    | ✅ Passed | The PR comprehensively addresses issue `#3` by fixing acceptWelcome/declineWelcome signatures, replacing MessageProcessingResult with ProcessMessageResult, and performing a thorough audit that documents 50+ Mdk methods and 7 top-level helpers. |\n| Out of Scope Changes check | ✅ Passed | All changes are documentation-only and directly scoped to correcting API references and documenting functions per issue `#3`; no unrelated alterations are present.                                                                                 |\n|     Docstring Coverage     | ✅ Passed | No functions found in the changed files to evaluate docstring coverage. Skipping docstring coverage check.                                                                                                                                        |\n\n</details>\n\n<sub>✏️ Tip: You can configure your own custom pre-merge checks in the settings.</sub>\n\n</details>\n\n<!-- pre_merge_checks_walkthrough_end -->\n<!-- finishing_touch_checkbox_start -->\n\n<details>\n<summary>✨ Finishing Touches</summary>\n\n<details>\n<summary>🧪 Generate unit tests (beta)</summary>\n\n- [ ] <!-- {\"checkboxId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Create PR with unit tests\n- [ ] <!-- {\"checkboxId\": \"6ba7b810-9dad-11d1-80b4-00c04fd430c8\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Commit unit tests in branch `docs/readme-fixes-issue-3`\n\n</details>\n\n</details>\n\n<!-- finishing_touch_checkbox_end -->\n<!-- tips_start -->\n\n---\n\n\n\n\n<sub>Comment `@coderabbitai help` to get the list of available commands and usage tips.</sub>\n\n<!-- tips_end -->\n<!-- internal state start -->\n\n\n<!-- DwQgtGAEAqAWCWBnSTIEMB26CuAXA9mAOYCmGJATmriQCaQDG+Ats2bgFyQAOFk+AIwBWJBrngA3EsgEBPRvlqU0AgfFwA6NPEgQAfACgjoCEYDEZyAAUASpETZWaCrKPR1AGxJda+BogAKChI0WjYASi4mCmCxSABBKwBJSGCAM0oyBml0DHpfBkd2SGYkRHgMIkg07AwxeHwMZADbSDMANnDIOUhaTAxZZjBnAA8AGnt8bAps7qo62F6/RAB6YNC2MDT4EekwMuwSMABmSEAkwhK0RBoKDUgAZVxqbEQufG4yO4BhD3xEHLMxw0bgQyFa2G4fRoyFwsBIkBsAFF4gARACyiMgBAUMVEuASyRQGDQDEKVAY8BymHo2IKRQw+N4JAkDReHlkYFqdLYDLo1Vq9UayBJFD+MLhkDRtAA1gSUtSse8wF4pB5IHCPB8KIg7gBpEjyNIk3DYNBqhiwTCkV4GKBokiwxT2eBEYkm4K5egkEZoZjcLzVHbSLjMGVaUkkbi4ADqJA8TDYAQA7nGEyQuiteqIPBUSLH4ywSMnU4XwgBuSDkJNS6UBWgCKzUWATf4UFnZJK0Cb1/WyTsTJgYbZEcuQUi4e2IRBoUgBZgeRAAcVFEP7kGZ7E7o4hUJIy6m3BR1DQc4X+9XXcg58Px4AqpDqEWNM/wqPx5Pp9bT0uV9wt56xwdKwyFoCoiHzNNAi6HdHxpfBUhIABHbB4A9HNSlwFZ8DSNJ/kwxB8AoXAAHkKCUCgKwYdYaA/GcnxfdcfT9LxkAwfAkx4K5kGCZDUL5J4iFWDcGWgGdEArYJmHwKR6DYjAwG9JAaAZHhRWyKdaOtYEoGgWQPgA4k2BxWJxCFLhNJIKw1OkcpKhsaRsA8fELisvwbIs+yHCcyAk3URYJGceBMFwZp4m4f14AYagGgwCyJlc7g/jNeKQLAhKko8CZERGG5iQ8AApfAKnS6dMsgL4WAwiZbwwXg3KnFQvAmJJXUIugSuS6xghZKZEHZAAxbQvFoUcaxq+AcPgREYkI85JRlcbJuy7IoxiyAAgcAQGA8LjgweAgqFICYa2ajAApzWgklqvBR17RsGGlOjPMczRpQNe7HtIFBkAAISuEh2gAFnWtj8ThEZR25dh+LE9bpQqehjgABkBwHji6CQYTEgAZEgiBJeQAnhvJIFR9GJn9F51SuWB7LSADaFEohtMgI8nhKRQ40DXZXhQZg6MDONaGQRor1/FYIMLSAXnhH7ZBoeIYjQWQAH4QfwfFsaU4BbzlmgAF0VdHUIlHoCyNCokIaFoeJcAma8NB264LNc9T/htu2xYPDR/g8NJ713R5HxZgA5Egk3ZJZCh5a35tlNhHWFgCCG4ZUNzVDUtV5t75G4ElPvhfniVIGP1qULwaDu/O6P60VmEeQi6O7OMHRIKuHpruuG8Okg5YACRpumB2otv3ur0h+sIxEpAZaM/OI1ahUrDX0wmIhf0gZDKEpZpx3snbZEQcI143nMMgYWRtvhAIvDQKRrxbOM0hREgpJoR+/YDx8T4PRAw7oMC9wn5f3flmCue5fwtlkHUa89onhQjQLXFgaIFwDlvhQYCeQwIVVYOoCYbAKCkEwaBSoOCMLHx8iWNgzQ6pu0lmwNeDp6EkAmCSFaMYqEkHygRDAzdtq5mYdwxoFDqGfhyAEcc2MrgThsk3MBrcLKIEnhQB+ql6qIAsnPWEFVeQ5QoVkFwUY+RsFAmgdaBi9IyNMco+8vxQgS3novJow8rYkHtKYpICc0BMwps4f47igqeIdN4mcfDDFWKCkg5gKJ2IYDsSNH+EI+Z0RocEPOwRryeJroRWx+B7FaNgAvUyzisxUUsZk/mR0swUEkCQXJoRex51QhQ0xrVriRV3r+L4aA85qBzLgWQ9516hBIEHE0iAJgQmGUoa83TenwH6TvRJ3B7K8WCLQDqqCxy/ntMwAQlA5kqAWeoJZ/AkwYFxmgNIV0lDjG2QeS5aQ0Q9MYbgGw1ALQOmgMEEgV00j4ApqlSo8RaCm12fs7UVhsACBzhMngQKiD2SkjJcFlBEBQphQaOFHwsGVFRRQL4lpKjSAoXhJJAQKjqF7DUyo3cWGVnDjWApvZwgswqlIHuXAkSogxMvDi6RMh1ByAAViRisUVRIbhGlmAnWAihhQkwAOwrEVYqVOKouaZzRd0eQhkSDAgAGrb22FFYpURRRTjAJ8h6fIZzaCaPiUg5AqCxzULiwSRJ7AzBWPzCoKxpQaxzBgFYAgUIeFoD65wb8fUyhjdKAA+rUCa2wNDSnxAqOq/x7BRQwOQegvlYT2EtI9bNmB1ppMIrHAAjEjMVNakacSnKy1myauAAGpUbtEgJmQASESKoAJyQCDTkUW9kNj6tDMCAwFhIDEWEHiWpyA0h1yHRUN69ADjSCMEkKchw2jHC5cidEmJEByscvQfZ0sHzWynWMvkggRD1CkDaKA/UdhEmiCZBER7eUvAFt6X0/ocgEXQBGKMzCGbZgEZwrEaA3roEgBBh9eJ1b4hTAWNgQiMCsttAiSMO1ZiwnhHJBSIwlLFBdtZKcYFnreQLYsIjxkUOu3crI0gtH00kxgjQRigGAxEtoEGqo2J+a4AtCgEKoGTRmkgAFGpwUdS4fiNgUC+JGPcuPdUWaJsTmNBkxUNh0wSQ7wAtx+EAHmLSBWAMj4wpSSERIUQdkLYKiEYlONfq/UUgEWmLMM0IGnXKGhPwIjFBlRWlNF9N1jmFVel4udYoGmMTIH5vIQcTwKhYglNOIyoFECWzznUHeU79DGHAFAEC/B6ZoDwIQQLLq+QJhjlwXg/B51PpyD0Jg5EVBqE0NoXQYBDAmB0qCb6uQcAEGIGQILjXKrsC4FQDiDgnAuB1QoHrqh1BaB0KVsrpgDBjrCBO2gHADAACJLvTssPEJI03nWwXsI4fma3sKMCJdaEE8IkuYjM8gXUgbMtohRLqaWYio70ieGayAAADKsNYYdEhOWaeAAAvaKos2L8qQihYIyAYetnbL82giOFQw57AaTsiPkx+X4E4mTMPBzDhhxQhU6h0CgtWNtQK2wcgw8pbgalgCDpFnCIjnONKqi8HgKUSoY4UJ9CFXqA0nEO5fShgyDHWBUDekK6bRUEPS4w/bgXDjiPefhuaDDnOH06Iw4mDDgSiB7ew6d7jfGF8Xcw8tKeumXvGYzhZxTaFOZT0rHSVmtIvwOL/L4AIDWiwc5gDzmr8zM98TEyTgEa3CMODIzJqTkmXgPfyBz3kDgBeKGiih2tF4YFYeW0fCb7JFBp7sAKUUmKzufK05h4pdplQURMxdwqJPKeC7yOKdUFd1xG5fRIH5Sg62ageDVMJfE+V7jERDvwOPpefe0xIGkGHU7ryG/YFr8b3plL6/o5AQAOASLgdF7JJ+9laIEALgEEx78gPhGftmaAH+smQUsO14ABv+I+JMOmxSMmZ8ogl8AY7wQWXe60t8UgH8aQYASgb89KvsmBZmzc4CUCdQJQwSCC0+LAko2M9waCIQFAPqlAX0OKjmCguCIUXQlMyAZm+aMGAmQm60bCkYmESg/C5AEwm+2+smgUCmFMVGqwvw+A0oSSPQ6+kASQKIzaFk5+muU+f2DeI8FkiO2IrmHgKm8I7wMBaojuYkMOKwfe6eTMzuA4H2fO74bG0gRh8EZiecRABm1sKwBEREjU8IsezArCnOsObhDUs4gAZAQTDr5bgu4a6SYw6SLSKGE96FoE6VqkTkSQH0B6Hk4tw0TuFKKETXieEITuhYBmLlyty0BgCigcRMC1CaBqF1AsD16iICy0I2T14FDCgejBBJg1K4DKQG4CDzDiaiww4sYaTuEcYaAABUiOcmQUDIzQJhKm9edUiUpUKwTW6gKwtQvRDUAgXgKwLobE6y4e3UrIfUHIRoCy96eAkEXQCojGlAooYWfB9eFmQG423BBupq4mMOY0GAyaU0Iw7CMUqx0hGxU6cA8IyRfI5BNmVIQxzISAdAXAMOFRHOScMudEKwGwfqTsuAYA3RX0CoeBnI16IRlIluAEFoVoOQRJX0om28Mm6JMI8EMOesJAisVAqsMOFYYJ7hpOnOBxO0NSvO+ObE1wKiv4VODuCRJODu/weQlAGKOcXuje1stsXupx7shpDume+RsO1wj4opsOzCiOLJxKyA68B4ySHJj48mao2I/J8sgpSsIppm9JS6jJskvoYEARloHwYpze7GDkTkiOhRB+fuBu3pCsfphe9AVpeQzgoEqOOQAk4eys8SWY+WNSTiimBg8QeQoo8AG6vIwyU+/xLEAhOIUw4g5AYAAg/09ARcdEfACoZiBqlI1YnMHg7xHoQJ2Ig4ip2AcQMOoY0oiOd+cOjKMoG0lAROa4FOfYl4TOLoYuyc8EecU4WWxG4c+hriGR1hgkth9h7AjhiO6Svorc2oU6Rg5gN2TkyBS82IjGIhMpWuIs9Muula96fA3AIekU64DIJyW6uGIcjQ18sIqA2wAYqAyRWuYAjQ7IFY7OvgOQoMWY2w5Au+jEiUREkwvmRw3W8IiQO6OGBgWs5AyADppAp2kAHagMwqKwYAiqAAHEYIiO0pyfQNRQhCyGeUfrHpwJKAAo4BdldraENvthViTG9jVlNvVo9k1gtqkGgMts9s4PIF1pzFQFtv1rtkpSNjAGNqgGWupXVjNg1iJfNgyD4MEs8c5UoN0L8A9E9qtvIPMNaOttRaZX1jtoNoYAYAANoADe52gVxO52HA8VrJ8aaAQMDAA6iqgMVawq/aDA52Yw52ecsISV52R2bAGgoYhV52VpREjFJASVVaxwRVIEDVSVgMvFRVK2L2sgZVv+yAFQVpq+WulxfolalxEJ4gKO6ODZTEQGvJCEay8Iy51YMoi5vehOkUxO6ZsOW5VOPAph+Ou5RAFpJsTpCumAbm1AsOAuQutKIuAQ+5Oa3Q8IUUq+/Eh5NSRkEu9es+PcGgNV1FP0Pl0oOCQGZGAyZV0e52AAvmMHFQlZ2GVQlfGrQP2iEAwLxWkP2v2gAEx42Ko1UlWwBlUVUnY1V1W4DtUcDtBIytV5A031rdUGUuBlXZR67IBj7jxvXUQxRrCxn4joVT60jSBUTwCXrG5jyp5m6CyW7hFJzV6X5DW4AUAznFJcG2RVB95kYD5EBD6B6sIkyIAFqfLijwjgXnFIBwj0Dc2p7rjp68aWYUHMBDp4wEyw6Z4V5oyVFl6nb54+2A1FXA2g3g1eCQ19XJUmLwCOBw0I0pXErI3JWo1oB420BIzCrCoCBp0qBpDE1Nhk0hDHZVW0CU1PD1W5hNVVqAwM20BM2Az021Ws2R3nYDUnmQB20T4R714Kh1FzV8Z5leFgYZ4GjJ480O3sBLqzTx6FoODhQgW20IyxYEnID/UCx91rQ9De6DxH7U6ZbQFrSi0Vz149Ar5r6O0SEhyspA2cwg1+Bg0sAQ3qAt3R2x3w2I2slJ0J2kDxpVrV1VppCAztC0A43tDtD52lXJXk0l1l3ODU2V0cB421q1001IPtAs3+VlUgpJxmKP7P5n5v6HxAGNlvVmj8Fzlhh7xxjv7fiZL0AAC8kAz4GgYuQd52Id99YdikUNyVMN7939iVydqVVaR+JAgMeNaAWdaAiqeNEDpNUDRdlV1V3V5d8D5ASVeNxwNd52bVCDxwA6GDvVhdSYhE0o5t9yEIKw6GaY2hNeos/wgoGAXA51D+v+L+3ArMx4QBdecueJv44B9JSRfgkOyAaBJAJJYQmW2BK8ART8dJu41Q0ecKLjfd4TiA0CDAAtTAHKsgBxlU6gWwBmOYs1a0SBLqXeRt9AaSBGI64aS+1jUsghUYKwf5uYTtC1mRiwl9HZXZAEyGYgPT7sUh8mGxh1VMxpYZChShHjWqL5N9Sgd9D0XDEdZVCARApN/DSNpdQjxKv9JAog7QDAGdxw+NvFcjhd46MDKjcDNNJz2juj6jee/a6DTdmDyVbdjGjOBhEp7TAY5Qrozw454OxhdQphXlVYdOlhnEVACc2qV53eZO6+95bDHDSzj94dz90N7EcdH9id2zAj8aAgvFvFiqaAVamVR+aAaA5zCjlzyjtVqjNNDdLzDzjVFef9hjhlZVhKrJ+OURYi3eJDYOAs2I3hzgT5NwaOfIoRT289RE9eMO6E6gXu2EuEDoFp2RREuRlAiOLqcIfAsIdlzolQXgwwhCkOWmFAzAKLt9od6L3DL9slzAOLAjX9qNwq7QeN/aWjeV7QAg9YNL5VijFN1zFdjz4j9zjNCDnFXVrzRjyV2DwoD+/LAsKh6enYxD81TUtjfLDoUizsPzd+ZauuOYFI+ImrJEZEOrlTV6u4yA9+qTiiyi14QB2Ip67EjAPS7oPdVR0weak+c2rRNrCzdrlmKzUdTrLrWzKNqVvFwqiqJz/a87eN7Qqdgb0D9LVNTLiqwqKDCDYDeNnLbNCjIx6geZEoMOxpGRQr2IkxV1iwMxcxGiCxgtyxcJIzkmAQPSEUpqa0VJ9KuxGU9gUO0gA4+TnsVxbUEaJxchwRshWJvU7IWwQ0dA7xXGgZ7dXxhEYAvxcuiAEJ4Uz+k5HyiwYJC0EJS00JQhsJwz6xIUw7vco7T9PD52azGz8d07OzP9wqJASM2NqMJA3rIj67wbVzDLNz+7iqiqe7jz7QvFLzPVXL7zGHv5wTMcfIfjB4iOaJek8IoroKrp4TpJwa5JlJ7hsTfs8Tj4ctODJMLFbJlSRwwQO0scPJyZApQpysKs1O1TxmcujGTIPUVMMOWs1wOsApeg3nwHsgXg19wdtrnD9r4752r9zrmzn9+LqNvF+exLxwwqGQ+jIndLpdobajbL7QzzMnbLiqSMLVcbSnrdKnEoKJ9A4p0RJA2nx4WIunBuWxSg0pPOpeCpqtdDXuapXump5EOpBoepI8HsRpchdAppntCMGrVpNAJ+8zjHiXY7mLE7oEb9HHGXM7uzMjDdRzoK/aVahNRXxdm7jLCDiqVa0nOjUbjzC7L3inx7jXdb7dLXtpnCnX7M6JBuMssOHnfpUXseFjHj7Jhc7pQUao/ZtAQgLwkmjG05Yg0w0rwZmxoL2xcucPETsuAtB8qwDTBCDBeyS+LRDIVjVAhHfA6+za8QC48EhR0ZJAst2IYPKZvpwp5us029vuu9AEmZfQZEUr+OTuN5bu7tnuxZ4tZZDHizD9u3LHqXU7x3XHJA8a/avF9Y87JAAgfH6Vt3SjJX4nYb1X7QL3rLSVUnh79X33HzEo0QrZuYYAsI6wDRu5/blZtA1ZXoWben8EAuiPUrsO85qxIBq1COYOCrW1HY6pe1AgvYKpAEjOjQw4kAjDGAjkHge9DqRdVW/AcS8gZi5ODYTY9pZDcX7DCXaL6vLdfDR3eLJ3P9aQxwDAgD/aJvMjeNgM5vIbVvZXDvJLVX4//aR7LdrvK1+pbiPz71aoQ1NZenbvhEHvxFN7h5XEruNhmfSLB/AQ+fq+R8KvTHGLLHrfuLpAbrqVXroqxv/aOVwqvFBVRVJNFzd3lvW7CDvFSMO3m9zZa8UkGM/fqk13hD34EwQGHjCYwoDSgo87ETNgPV65TUI+uZKPutU6aWl1y21DPlX3T4p8ycJ1C0vZy5qj1x8PRCCqenrxEBLqQqA3EyAyB8A/aeeFGD7RwHW5paBcDQDL3WhLkvaBeOwnLxLyI5QYqHC/jt2Y6OsDuaXNvnf0y6pUGAgMSRhdzYT+th+YnP/o82y5AC66//QGNP2d6z9IBPkUxkgKTCABMAlXogQBaqtSkFIFILtdfmg9RtMdW+btdEc8LG8kf2vIHkwc6/C2jOD8IacU21oRHP8zdDY8uBSrXACqxwh4Q1uORKthQE27xcR20gq/rIJjryDb+gjAlsbz9ZoAl2O7XGmc0/4F1aWP/WBtbySr9oUYk/DgA0IU7N0IBv3RjIOUZQjlzyj4DIsvzQHbQzC7dCFhYRigM5+BiLBwgf0fKwttQIMAvufy26q9lme3c7Hw31jKUoK9ANSrVnuyzZnKrAHSkoAyzDQNs8Ic4vfT8q9VdKjpYKiZV6zbYBspWKyocVwDxoayiAeNHcXDh0B40VNCKlsKrSSM0gDAdoGkA9bHBOyRzY4H63JYhAq0tAYVMcGOBztaAgMPoNnQzqKowGpwF4eVkgDkta0AMdoJnRJAE1cqvFQGAwGzp40q02dKKNXRN4VcVAvFVOoDBIB4ilKBgV4eBw+HCxvhWJX4bQHjSVZ8REAVSLrwIQ/1rUZjf4ao0BEGAYqBgSAJAHOxIBbAqvOgGQnYBWA/g1sJKtUH8wsIVRaopAMRA5Q1JQUZAQ0UaAXAmjVR52AYg4NITSRlAd/XkBQDyh3pDRMVeGqaIb5KB3kZlaMNXksgUB3AuALwLaONFjAAx7bc9Kr1sAxj7RcYx0aBFoA2BagMSBgI8ElyIBCUogaUIaNVqHA0xaojMVmIwCRivAhYh6CWLVoOiKxNZKsS/BLLwAnEdY4sVwDtH/Byx6wtdHQB3QOBpAeYw0edgAA6GAKcRONwCzj5xc4xccACDTroPhu6EgHoBnGLiFxC4iwJYEBCHoeUJ6M9OGleq1tYIM46cduOvGziZ0NYkgJeJ+xFopgp4y9NwUvEzo2xSvYpJeJSCgxtqNIS0GpglBPiUK8IVACMUaBVBMsBEIyP6BJDSANAU4qABQ2lDhh2EzCYsBhi4Q8Jc+lCbCRoHXxYZ9yCY18StXnLoShCmEinumBPwPAnyXA1puQDtJIT5IsOSjOohoyC1tO+AaQBgAADk+IfvG0SujXAi6DuJ9h5G4mMQlIcKUNPiHUD8TkAvEHjKBBwiCpNAv4yAKj2uC9AayCGXiL5VlEth4IoWeHkZULhtRvoI4nUA8ClhvYiMWaUoOs3TRs8zxjGKKFmkyyMZgcoOaLGBCnp8AE8S+HaJUEiyIStxO468cABWAri/hm6PQIVQDHkkuxHGRAIaKiqmjVRyo1UblLVGyiQ4T5ccV+NLJT4uxSUvKY6PW4vAGxZYrKblJ0YjB4JboGKOOK7H2B4YhHegFAAqhBjHhuAGweqBdCwA04qoa4YZSvzEhzidAIOvVMdFSQlA44pMM4AhKVAKplU87IRBdBFMuxhUtgOOKUDtinE52eqf6Lyk5SNpBUoqVwHOz3j3sRY9aXlPE7jJapTYp6SW0wBa5xxSJLEJ4DeroJI4NJD4BSBNRkN5AX3KXu3V9RYB7OUQQiCZHry0UEILArIFSBJjJEdidxRDhyFKDUY5cNQOoBrU9TqYf0iIWaZVLVELS2Wao5aV6LAiPSGpsQbPi6Gx4pi+xc0tUVtN8J5Rdp10tUeICjGNVTp5Y7KRzPYZwgHoe06medkYrro1C645ihLOLEiyGp1U9KVwFLFvSGpH0lqY0G+kShWgMA4IHCCaC1JAZoKPHP8EGrrj90y+HYD3WHrMIWmUGZiTBiiGAtQOCEeCRSDlwcS3YXEryGhlpySSX2gcmtlqFCI9tHQK4dZjgFUxZYbqyRZAKKjbRxxSCicZeqqhTijTNUcYLOOTI2lUylpK0+mSrMdFMyhwLM4IGzK1mOiuZO0pWVLPHFxTLoCs+IFOBsgxwTpeUs6blIulPSrp+0m6cRDwCl97gTAfSDyzuGyiGZVUqHDVI1mNiy5aonWV9Jums9zQLhQYsiTU4X5ikmFcvgzD4hiBI4+WJAnBCYz1A5cSMgVMECFTL0MZ+MgUETK1DWS90gICsGxGlgYBnOj2M0DcAAroAPQTITUpoFnmUzOYxcumWtOXnxVRAzM+gdXJ7GxixZ9cnmY3L5mbS8AxENIOPKQJTzrQ7cq2YgC7nCz6p/chqYPOlk5jFS9edlO6MaqwK1Zr02BavOKTjj4K/IQmSgX+RchiZbvFwvQDAmLVmQZoU0KpOWAuiqg2TBhXcHuCdTuA/RSRZLgUAcoBYsoguU9Lxz4BTC7Cm6aGLPZRxaFlQQKe3QJmOMUsZQevERldpttooiANIPIA8luie4WWPHHKnDSaKGpRcm6bTNWlEBwFm0mpNzLNC8yh5FY5RQFO7m5TYapo/WP2PJK2ASpHYvRRWLBHCp0ReNUAfJ2OCiAa0iqUEYDFUD9ou+adBgPSM5GAwyhtaUIDlRUHycDevFEgDx1hGaNQRRzfGkYPWnrDpEtge8eOKKVVp9e+zKpSuyxoCA0gf9HjpxWOBDLMqegqtEDHpHZVaA3fEgFSLAaiABAfFbKqALQBQie+DdKtKANLoGBYlPIgkUyHjTSjdesor4WKMsoEj7K8aPODLHlGPh3l5FPbHFUSU1YTSbyIUSmFoBkJ1AFUVoklSRjnKrKzy15f8HeU0BRRJMfQEAA= -->\n\n<!-- internal state end -->",
+        "reactions": {
+          "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/issues/comments/4508129833/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": {
+          "id": 347564,
+          "client_id": "Iv1.6aaafe4fe882736b",
+          "slug": "coderabbitai",
+          "node_id": "A_kwHOB96YWc4ABU2s",
+          "owner": {
+            "login": "coderabbitai",
+            "id": 132028505,
+            "node_id": "O_kgDOB96YWQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/132028505?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/coderabbitai",
+            "html_url": "https://github.com/coderabbitai",
+            "followers_url": "https://api.github.com/users/coderabbitai/followers",
+            "following_url": "https://api.github.com/users/coderabbitai/following{/other_user}",
+            "gists_url": "https://api.github.com/users/coderabbitai/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/coderabbitai/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/coderabbitai/subscriptions",
+            "organizations_url": "https://api.github.com/users/coderabbitai/orgs",
+            "repos_url": "https://api.github.com/users/coderabbitai/repos",
+            "events_url": "https://api.github.com/users/coderabbitai/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/coderabbitai/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "name": "coderabbitai",
+          "description": "# Transforming Code Reviews with AI\r\n\r\n## Features\r\n\r\n**Automated Reviews**: Continuous reviews of the pull requests including incremental commits. \r\n\r\n**Summarization**: Generates high-level summary and a technical walkthrough of the PR changes. \r\n\r\n**Line-by-line review**: Provides line-by-line suggestions committable with one click.\r\n\r\n**Codebase verification**:  Verifies the impact on the overall codebase and identifies missing changes.\r\n\r\n**Insights into your code**:  Ask any questions on your codebase within the pull request \r\n\r\n**Chat about your code** : Chat with the bot around your code. The more you chat, the smarter it gets.\r\n\r\n**Issue Validation**:  Validates the PR against the linked issues and identifies other related issues \r\n\r\n\r\n\r\n",
+          "external_url": "https://coderabbit.ai?utm_source=cr_app&utm_medium=github",
+          "html_url": "https://github.com/apps/coderabbitai",
+          "created_at": "2023-06-14T15:47:27Z",
+          "updated_at": "2026-03-14T07:58:44Z",
+          "permissions": {
+            "actions": "read",
+            "checks": "write",
+            "contents": "write",
+            "discussions": "read",
+            "issues": "write",
+            "members": "read",
+            "metadata": "read",
+            "pull_requests": "write",
+            "statuses": "write"
+          },
+          "events": [
+            "issues",
+            "issue_comment",
+            "label",
+            "organization",
+            "pull_request",
+            "pull_request_review",
+            "pull_request_review_comment",
+            "pull_request_review_thread",
+            "release",
+            "repository"
+          ]
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T12:10:12Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "9737552873",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 6,
+      "pull_request": {
+        "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin/pulls/6",
+        "id": 3723303785,
+        "number": 6,
+        "head": {
+          "ref": "docs/readme-fixes-issue-3",
+          "sha": "1c00e6655ac221584cb221b2ca14b069ab8a24e3",
+          "repo": {
+            "id": 1113167280,
+            "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin",
+            "name": "mdk-kotlin"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "bd1752372af76602379fc8aff71b0c726bcfd818",
+          "repo": {
+            "id": 1113167280,
+            "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin",
+            "name": "mdk-kotlin"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T12:09:58Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12175429753",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "ref": "docs/readme-fixes-issue-3",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/docs/readme-fixes-issue-3",
+      "master_branch": "master",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-21T12:09:23Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12174419092",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34464815278,
+      "ref": "refs/heads/master",
+      "head": "bd1752372af76602379fc8aff71b0c726bcfd818",
+      "before": "22fba032f80fe17d4762166721285edd56f26a52"
+    },
+    "public": true,
+    "created_at": "2026-05-21T11:45:47Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12167256808",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34457658303,
+      "ref": "refs/heads/master",
+      "head": "22fba032f80fe17d4762166721285edd56f26a52",
+      "before": "309303cd09b14959fcb4fe8e3963cf86f2829c97"
+    },
+    "public": true,
+    "created_at": "2026-05-21T08:57:06Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "12075887091",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34366444961,
+      "ref": "refs/heads/master",
+      "head": "309303cd09b14959fcb4fe8e3963cf86f2829c97",
+      "before": "03e84eb6fb5dc354de74b12a0f0f6b2c4ecca78d"
+    },
+    "public": true,
+    "created_at": "2026-05-19T15:48:58Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11909896592",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34200519112,
+      "ref": "refs/heads/master",
+      "head": "03e84eb6fb5dc354de74b12a0f0f6b2c4ecca78d",
+      "before": "7d0f2c10de8817e31649f4087019f8a4f98ecb6a"
+    },
+    "public": true,
+    "created_at": "2026-05-15T15:27:09Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11908967798",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34199591335,
+      "ref": "refs/heads/master",
+      "head": "7d0f2c10de8817e31649f4087019f8a4f98ecb6a",
+      "before": "9a0ee553cbcc66905f1efa846832e916efdd274f"
+    },
+    "public": true,
+    "created_at": "2026-05-15T15:04:52Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11900416557",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34191046730,
+      "ref": "refs/heads/master",
+      "head": "9a0ee553cbcc66905f1efa846832e916efdd274f",
+      "before": "9e15400695ec8eca24eb453d762b86fcf1d3ba1a"
+    },
+    "public": true,
+    "created_at": "2026-05-15T11:37:40Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11894609626",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34185239359,
+      "ref": "refs/heads/master",
+      "head": "9e15400695ec8eca24eb453d762b86fcf1d3ba1a",
+      "before": "ecb406f1e5a479f5b18707cf5813d96920f2f665"
+    },
+    "public": true,
+    "created_at": "2026-05-15T09:02:37Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11849216070",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 34139878074,
+      "ref": "refs/heads/master",
+      "head": "ecb406f1e5a479f5b18707cf5813d96920f2f665",
+      "before": "c04ca5ef758d32f8d0e567c868c18f9b625d4786"
+    },
+    "public": true,
+    "created_at": "2026-05-14T11:00:15Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11689074041",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33980191016,
+      "ref": "refs/heads/master",
+      "head": "c04ca5ef758d32f8d0e567c868c18f9b625d4786",
+      "before": "9afa4897c44abe9643aaf66ebcd51e5d49bd84f2"
+    },
+    "public": true,
+    "created_at": "2026-05-11T10:24:05Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11681542931",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33972667322,
+      "ref": "refs/heads/master",
+      "head": "9afa4897c44abe9643aaf66ebcd51e5d49bd84f2",
+      "before": "0df9c82c6ef4b675dc6256ad4d1a0314d98bed61"
+    },
+    "public": true,
+    "created_at": "2026-05-11T07:16:52Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11594164232",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33885236182,
+      "ref": "refs/heads/master",
+      "head": "0df9c82c6ef4b675dc6256ad4d1a0314d98bed61",
+      "before": "216a709574ab127312e8e0598ff8484ceac5c66b"
+    },
+    "public": true,
+    "created_at": "2026-05-08T14:50:03Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11593660091",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33884733142,
+      "ref": "refs/heads/master",
+      "head": "216a709574ab127312e8e0598ff8484ceac5c66b",
+      "before": "64b6d5318e23120a8cd253ddd9126d16f2cd1c92"
+    },
+    "public": true,
+    "created_at": "2026-05-08T14:38:01Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11591305262",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33882383397,
+      "ref": "refs/heads/master",
+      "head": "64b6d5318e23120a8cd253ddd9126d16f2cd1c92",
+      "before": "a3042240760647ab7a970ac0afae08448942b7b3"
+    },
+    "public": true,
+    "created_at": "2026-05-08T13:43:25Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11590243164",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33881321238,
+      "ref": "refs/heads/master",
+      "head": "a3042240760647ab7a970ac0afae08448942b7b3",
+      "before": "2f413a1e90524ce0814bfe8f2b7958f9673156bc"
+    },
+    "public": true,
+    "created_at": "2026-05-08T13:18:20Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11590205184",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33881283560,
+      "ref": "refs/heads/master",
+      "head": "2f413a1e90524ce0814bfe8f2b7958f9673156bc",
+      "before": "02efd15b3ff6ebb40c2288107d611b1e6df42371"
+    },
+    "public": true,
+    "created_at": "2026-05-08T13:17:27Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11530467888",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33821626499,
+      "ref": "refs/heads/master",
+      "head": "02efd15b3ff6ebb40c2288107d611b1e6df42371",
+      "before": "5d9c24c06a2c3ffd7a80416a26f672d83bd6a331"
+    },
+    "public": true,
+    "created_at": "2026-05-07T09:18:32Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11528502289",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33819660610,
+      "ref": "refs/heads/master",
+      "head": "5d9c24c06a2c3ffd7a80416a26f672d83bd6a331",
+      "before": "cfaba836bf2d296d283abd94b182ead15dabfd9c"
+    },
+    "public": true,
+    "created_at": "2026-05-07T08:30:51Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11527875046",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33819033585,
+      "ref": "refs/heads/master",
+      "head": "cfaba836bf2d296d283abd94b182ead15dabfd9c",
+      "before": "2a093c6fc01f8fb38a6da38642fe702692c31010"
+    },
+    "public": true,
+    "created_at": "2026-05-07T08:15:08Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11527811503",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33818969942,
+      "ref": "refs/heads/master",
+      "head": "2a093c6fc01f8fb38a6da38642fe702692c31010",
+      "before": "95d1a37e77723214f4bc8a54d294da1d14b82d73"
+    },
+    "public": true,
+    "created_at": "2026-05-07T08:13:29Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11527763184",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33818921504,
+      "ref": "refs/heads/master",
+      "head": "95d1a37e77723214f4bc8a54d294da1d14b82d73",
+      "before": "ceaee52ce2e2407c0a14fd7ca70659ca2721dba6"
+    },
+    "public": true,
+    "created_at": "2026-05-07T08:12:13Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11527756846",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33818915205,
+      "ref": "refs/heads/master",
+      "head": "ceaee52ce2e2407c0a14fd7ca70659ca2721dba6",
+      "before": "0c22f9f04ade5329c4d24863dc31d5f4c4055c25"
+    },
+    "public": true,
+    "created_at": "2026-05-07T08:12:03Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11527724724",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33818883139,
+      "ref": "refs/heads/master",
+      "head": "0c22f9f04ade5329c4d24863dc31d5f4c4055c25",
+      "before": "0bdded278ccf9c7eb3ab513afb46cc18560c0b84"
+    },
+    "public": true,
+    "created_at": "2026-05-07T08:11:14Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11527490308",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33818648985,
+      "ref": "refs/heads/master",
+      "head": "0bdded278ccf9c7eb3ab513afb46cc18560c0b84",
+      "before": "182c2b4a7657fc3ac89d67c95d1b6eb8c3cb6329"
+    },
+    "public": true,
+    "created_at": "2026-05-07T08:05:18Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11526804857",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33817963600,
+      "ref": "refs/heads/master",
+      "head": "182c2b4a7657fc3ac89d67c95d1b6eb8c3cb6329",
+      "before": "9a1c6535de115048f2ede61778b62d347b14e53b"
+    },
+    "public": true,
+    "created_at": "2026-05-07T07:48:09Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11524222234",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33815379826,
+      "ref": "refs/heads/master",
+      "head": "9a1c6535de115048f2ede61778b62d347b14e53b",
+      "before": "5431c8d65daf575bbef7200db22fc8e4504d94a3"
+    },
+    "public": true,
+    "created_at": "2026-05-07T06:37:57Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11486269613",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33777465594,
+      "ref": "refs/heads/master",
+      "head": "5431c8d65daf575bbef7200db22fc8e4504d94a3",
+      "before": "f4a304e9587fea360607d5756164f3befcfd1789"
+    },
+    "public": true,
+    "created_at": "2026-05-06T12:12:34Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11483996007",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33775193214,
+      "ref": "refs/heads/master",
+      "head": "f4a304e9587fea360607d5756164f3befcfd1789",
+      "before": "960cd20b554ecdce2c33e185903d274a988c7608"
+    },
+    "public": true,
+    "created_at": "2026-05-06T11:16:35Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11444520773",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33735798280,
+      "ref": "refs/heads/master",
+      "head": "960cd20b554ecdce2c33e185903d274a988c7608",
+      "before": "4179997852a55b28a79d61031211c9a426dca9fb"
+    },
+    "public": true,
+    "created_at": "2026-05-05T15:20:42Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11398016135",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33689448027,
+      "ref": "refs/heads/master",
+      "head": "4179997852a55b28a79d61031211c9a426dca9fb",
+      "before": "80771e1abba86c5aaf54cc502b8dc5e5f639fd01"
+    },
+    "public": true,
+    "created_at": "2026-05-04T16:24:17Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11392119750",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33683558128,
+      "ref": "refs/heads/master",
+      "head": "80771e1abba86c5aaf54cc502b8dc5e5f639fd01",
+      "before": "4f61cc3de11cc8d0832211f36be716e54a614afc"
+    },
+    "public": true,
+    "created_at": "2026-05-04T14:00:48Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11391998354",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33683436812,
+      "ref": "refs/heads/master",
+      "head": "4f61cc3de11cc8d0832211f36be716e54a614afc",
+      "before": "141e3616df372db70f890124abe100043227479b"
+    },
+    "public": true,
+    "created_at": "2026-05-04T13:58:13Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11389867033",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33681308062,
+      "ref": "refs/heads/master",
+      "head": "141e3616df372db70f890124abe100043227479b",
+      "before": "9db94d30f0aa60a6e5f64a78e3150dc6b49d70b3"
+    },
+    "public": true,
+    "created_at": "2026-05-04T13:08:43Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11389771109",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33681212580,
+      "ref": "refs/heads/master",
+      "head": "9db94d30f0aa60a6e5f64a78e3150dc6b49d70b3",
+      "before": "0ac4910142ae882b2585a4208c18a86434dc2dee"
+    },
+    "public": true,
+    "created_at": "2026-05-04T13:06:29Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11385649579",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33677089765,
+      "ref": "refs/heads/master",
+      "head": "0ac4910142ae882b2585a4208c18a86434dc2dee",
+      "before": "65630ebfd38f62531d337ea3e198430b5c32ddf4"
+    },
+    "public": true,
+    "created_at": "2026-05-04T11:19:41Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
+    "id": "11276300870",
+    "type": "PushEvent",
+    "actor": {
+      "id": 25923265,
+      "login": "dannym-arx",
+      "display_login": "dannym-arx",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dannym-arx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25923265?"
+    },
+    "repo": {
+      "id": 1113167280,
+      "name": "marmot-protocol/mdk-kotlin",
+      "url": "https://api.github.com/repos/marmot-protocol/mdk-kotlin"
+    },
+    "payload": {
+      "repository_id": 1113167280,
+      "push_id": 33567692544,
+      "ref": "refs/heads/master",
+      "head": "65630ebfd38f62531d337ea3e198430b5c32ddf4",
+      "before": "258dbda746a7934fdbabd640eca85dfea5eb4545"
+    },
+    "public": true,
+    "created_at": "2026-05-01T01:16:53Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  }
+]

@@ -1,0 +1,376 @@
+[
+  {
+    "id": "9792253376",
+    "type": "ReleaseEvent",
+    "actor": {
+      "id": 41898282,
+      "login": "github-actions[bot]",
+      "display_login": "github-actions",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41898282?"
+    },
+    "repo": {
+      "id": 1040092575,
+      "name": "cashubtc/cdk-swift",
+      "url": "https://api.github.com/repos/cashubtc/cdk-swift"
+    },
+    "payload": {
+      "action": "published",
+      "release": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/releases/327942510",
+        "assets_url": "https://api.github.com/repos/cashubtc/cdk-swift/releases/327942510/assets",
+        "upload_url": "https://uploads.github.com/repos/cashubtc/cdk-swift/releases/327942510/assets{?name,label}",
+        "html_url": "https://github.com/cashubtc/cdk-swift/releases/tag/v0.17.0-rc.0",
+        "id": 327942510,
+        "author": {
+          "login": "github-actions[bot]",
+          "id": 41898282,
+          "node_id": "MDM6Qm90NDE4OTgyODI=",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+          "html_url": "https://github.com/apps/github-actions",
+          "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOPf6Nn84TjAFu",
+        "tag_name": "v0.17.0-rc.0",
+        "target_commitish": "main",
+        "name": "Version 0.17.0-rc.0",
+        "draft": false,
+        "immutable": false,
+        "prerelease": true,
+        "created_at": "2026-05-22T14:47:01Z",
+        "updated_at": "2026-05-22T14:47:19Z",
+        "published_at": "2026-05-22T14:47:06Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/cashubtc/cdk-swift/releases/assets/427154388",
+            "id": 427154388,
+            "node_id": "RA_kwDOPf6Nn84ZddvU",
+            "name": "cdkFFI.xcframework.zip",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 291658027,
+            "digest": "sha256:0b320f5ddfd7007a3a584ad1f6ef1822d18e89761d0c9590950b1146f344f469",
+            "download_count": 2,
+            "created_at": "2026-05-22T14:47:07Z",
+            "updated_at": "2026-05-22T14:47:19Z",
+            "browser_download_url": "https://github.com/cashubtc/cdk-swift/releases/download/v0.17.0-rc.0/cdkFFI.xcframework.zip"
+          }
+        ],
+        "tarball_url": "https://api.github.com/repos/cashubtc/cdk-swift/tarball/v0.17.0-rc.0",
+        "zipball_url": "https://api.github.com/repos/cashubtc/cdk-swift/zipball/v0.17.0-rc.0",
+        "body": "## Changes\n- Built with CDK from cashubtc/cdk@v0.17.0-rc.0\n\n## Installation\nAdd cdk-swift to your Swift Package Manager dependencies:\n```swift\n.package(url: \"https://github.com/cashubtc/cdk-swift\", from: \"0.17.0-rc.0\")\n```\n",
+        "short_description_html": "<h2>Changes</h2>\n<ul>\n<li>Built with CDK from cashubtc/cdk@v0.17.0-rc.0</li>\n</ul>\n<h2>Installation</h2>\n<p>Add cdk-swift to your Swift Package Manager dependencies:</p>\n<div class=\"highlight highlight-source-swift notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content='.package(url: \"https://github.com/cashubtc/cdk-swift\", from: \"0.17.0-rc.0\")'><pre><span class=\"pl-kos\">.</span><span class=\"pl-k\">package</span><span class=\"pl-kos\">(</span>url<span class=\"pl-kos\">:</span> <span class=\"pl-s\">\"</span><span class=\"pl-s\">https://github.com/cashubtc/cdk-swift</span><span class=\"pl-s\">\"</span><span class=\"pl-kos\">,</span> from<span class=\"pl-kos\">:</span> <span class=\"pl-s\">\"</span><span class=\"pl-s\">0.17.0-rc.0</span></pre></div>",
+        "is_short_description_html_truncated": true
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-22T14:47:06Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12235181933",
+    "type": "PushEvent",
+    "actor": {
+      "id": 41898282,
+      "login": "github-actions[bot]",
+      "display_login": "github-actions",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41898282?"
+    },
+    "repo": {
+      "id": 1040092575,
+      "name": "cashubtc/cdk-swift",
+      "url": "https://api.github.com/repos/cashubtc/cdk-swift"
+    },
+    "payload": {
+      "repository_id": 1040092575,
+      "push_id": 34525406595,
+      "ref": "refs/heads/main",
+      "head": "d660f7707a48cd81812616ff8bb0aff555119f75",
+      "before": "d5a761275738ec2b5c04c9f57749d22b23f3e55a"
+    },
+    "public": true,
+    "created_at": "2026-05-22T14:47:03Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9790841347",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 175508099,
+      "login": "asmogo",
+      "display_login": "asmogo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/asmogo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/175508099?"
+    },
+    "repo": {
+      "id": 1040092575,
+      "name": "cashubtc/cdk-swift",
+      "url": "https://api.github.com/repos/cashubtc/cdk-swift"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 1,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/pulls/1",
+        "id": 3729101005,
+        "number": 1,
+        "head": {
+          "ref": "fix/uniffi-config-swift-module-name",
+          "sha": "6019b702569cb38343ebc70dff4a6d6a883c4904",
+          "repo": {
+            "id": 1047401397,
+            "url": "https://api.github.com/repos/asmogo/cdk-swift",
+            "name": "cdk-swift"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "065f1fcc8c914073178f03cc12b9a00c6f9abd86",
+          "repo": {
+            "id": 1040092575,
+            "url": "https://api.github.com/repos/cashubtc/cdk-swift",
+            "name": "cdk-swift"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-22T14:11:36Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12233581390",
+    "type": "PushEvent",
+    "actor": {
+      "id": 8606367,
+      "login": "thesimplekid",
+      "display_login": "thesimplekid",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?"
+    },
+    "repo": {
+      "id": 1040092575,
+      "name": "cashubtc/cdk-swift",
+      "url": "https://api.github.com/repos/cashubtc/cdk-swift"
+    },
+    "payload": {
+      "repository_id": 1040092575,
+      "push_id": 34523809584,
+      "ref": "refs/heads/main",
+      "head": "d5a761275738ec2b5c04c9f57749d22b23f3e55a",
+      "before": "065f1fcc8c914073178f03cc12b9a00c6f9abd86"
+    },
+    "public": true,
+    "created_at": "2026-05-22T14:11:38Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9790835404",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 8606367,
+      "login": "thesimplekid",
+      "display_login": "thesimplekid",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?"
+    },
+    "repo": {
+      "id": 1040092575,
+      "name": "cashubtc/cdk-swift",
+      "url": "https://api.github.com/repos/cashubtc/cdk-swift"
+    },
+    "payload": {
+      "review": {
+        "id": 4346172517,
+        "node_id": "PRR_kwDOPf6Nn88AAAABAw1UZQ",
+        "user": {
+          "login": "thesimplekid",
+          "id": 8606367,
+          "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thesimplekid",
+          "html_url": "https://github.com/thesimplekid",
+          "followers_url": "https://api.github.com/users/thesimplekid/followers",
+          "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+          "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+          "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+          "repos_url": "https://api.github.com/users/thesimplekid/repos",
+          "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "6019b702569cb38343ebc70dff4a6d6a883c4904",
+        "state": "approved",
+        "html_url": "https://github.com/cashubtc/cdk-swift/pull/1#pullrequestreview-4346172517",
+        "pull_request_url": "https://api.github.com/repos/cashubtc/cdk-swift/pulls/1",
+        "_links": {
+          "html": {
+            "href": "https://github.com/cashubtc/cdk-swift/pull/1#pullrequestreview-4346172517"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/cashubtc/cdk-swift/pulls/1"
+          }
+        },
+        "submitted_at": "2026-05-22T14:11:29Z",
+        "updated_at": "2026-05-22T14:11:29Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/pulls/1",
+        "id": 3729101005,
+        "number": 1,
+        "head": {
+          "ref": "fix/uniffi-config-swift-module-name",
+          "sha": "6019b702569cb38343ebc70dff4a6d6a883c4904",
+          "repo": {
+            "id": 1047401397,
+            "url": "https://api.github.com/repos/asmogo/cdk-swift",
+            "name": "cdk-swift"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "065f1fcc8c914073178f03cc12b9a00c6f9abd86",
+          "repo": {
+            "id": 1040092575,
+            "url": "https://api.github.com/repos/cashubtc/cdk-swift",
+            "name": "cdk-swift"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-22T14:11:30Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9778506211",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 175508099,
+      "login": "asmogo",
+      "display_login": "asmogo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/asmogo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/175508099?"
+    },
+    "repo": {
+      "id": 1040092575,
+      "name": "cashubtc/cdk-swift",
+      "url": "https://api.github.com/repos/cashubtc/cdk-swift"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 1,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/cdk-swift/pulls/1",
+        "id": 3729101005,
+        "number": 1,
+        "head": {
+          "ref": "fix/uniffi-config-swift-module-name",
+          "sha": "6019b702569cb38343ebc70dff4a6d6a883c4904",
+          "repo": {
+            "id": 1047401397,
+            "url": "https://api.github.com/repos/asmogo/cdk-swift",
+            "name": "cdk-swift"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "065f1fcc8c914073178f03cc12b9a00c6f9abd86",
+          "repo": {
+            "id": 1040092575,
+            "url": "https://api.github.com/repos/cashubtc/cdk-swift",
+            "name": "cdk-swift"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-22T08:39:51Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  }
+]

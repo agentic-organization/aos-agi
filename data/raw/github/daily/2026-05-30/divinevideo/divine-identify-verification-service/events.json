@@ -1,0 +1,633 @@
+[
+  {
+    "id": "9136570450",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 124421399,
+      "login": "DSanich",
+      "display_login": "DSanich",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DSanich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124421399?"
+    },
+    "repo": {
+      "id": 1172223550,
+      "name": "divinevideo/divine-identify-verification-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/issues/3",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/issues/3/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/issues/3/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/issues/3/events",
+        "html_url": "https://github.com/divinevideo/divine-identify-verification-service/issues/3",
+        "id": 4058967609,
+        "node_id": "I_kwDORd62Ps7x7u45",
+        "number": 3,
+        "title": "feat(identity): add a verified-links panel for batch publishing",
+        "user": {
+          "login": "mbradley",
+          "id": 168114,
+          "node_id": "MDQ6VXNlcjE2ODExNA==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mbradley",
+          "html_url": "https://github.com/mbradley",
+          "followers_url": "https://api.github.com/users/mbradley/followers",
+          "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+          "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+          "organizations_url": "https://api.github.com/users/mbradley/orgs",
+          "repos_url": "https://api.github.com/users/mbradley/repos",
+          "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/mbradley/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-03-11T15:34:57Z",
+        "updated_at": "2026-05-06T08:21:08Z",
+        "closed_at": null,
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Problem\n\nThe verification and publish steps are disconnected in the UI:\n\n1. **Quick Connect** (Step 2) verifies via OAuth but stores no session state about what was verified. The success banner is transient. As of `ff2697d`, the Advanced section auto-opens with the publish button visible after OAuth, but this only works for the single most recent verification.\n\n2. **Proof-post** (Step 3) has a publish button, but it only publishes the currently selected platform/identity from the form fields. There's no way to verify multiple platforms and publish them together.\n\n3. **Each publish is a full kind 0 replacement.** Verifying Twitter then publishing, then verifying Bluesky then publishing, means two kind 0 sign-and-broadcast cycles. The second one could race with the first if relays are slow.\n\n4. **No session state** tracks what's been verified. Refreshing the page loses all context about completed verifications.\n\n## Proposal\n\nAdd a **Verified Links** panel between Step 2 and Step 3 (hidden until first verification). It tracks all successful verifications in the current session and provides individual and batch publish.\n\n### UI\n\n```\n──────────────────────────────────────────────────\nYour Verified Links\n\n  ✅ bluesky: machination.org     [Publish]  [×]\n  ✅ twitter: mjb                  [Publish]  [×]\n\n  [Publish All to Nostr Profile]\n\n  Publish writes identity tags into your signed Nostr profile (kind 0).\n  \"Publish All\" adds all verified links in a single update.\n──────────────────────────────────────────────────\n```\n\n### Behavior\n\n- **Session-level `verifiedLinks` array** stores `{platform, identity, proof}` for each successful verification (OAuth or proof-post).\n- **OAuth callback** pushes to `verifiedLinks` and renders the panel.\n- **Proof-post success** pushes to `verifiedLinks` and renders the panel.\n- **Individual Publish** works like today: fetches kind 0, updates one `i` tag, signs, publishes.\n- **Publish All** fetches kind 0 once, adds/updates all `i` tags from `verifiedLinks`, signs once, publishes once. One signature prompt, one relay broadcast. This is the main UX win.\n- **Remove (×)** removes from session list (doesn't revoke verification).\n- **Panel hidden** when `verifiedLinks` is empty.\n\n### Cycle\n\nThe intended user flow becomes:\n\n```\nLog in (Step 1)\n  ↓\nVerify platform A (Quick Connect or proof-post)\n  ↓\nVerify platform B (Quick Connect or proof-post)\n  ↓\n... repeat as needed ...\n  ↓\nReview Verified Links panel\n  ↓\nPublish All → single kind 0 update with all identity tags\n```\n\n### Implementation notes\n\n- `verifiedLinks` is in-memory only (no persistence needed beyond the session)\n- The panel replaces the current pattern of the publish button living inside the Advanced section\n- Keep the existing Advanced publish button for backward compatibility (or remove it if the panel fully replaces the need)\n- `publishIdentityTagToNostr()` already handles tag deduplication (line 1784) so it's safe to publish tags that already exist in the profile\n\n### Context\n\nNear-term fix shipped in `ff2697d`: after OAuth callback, pre-fill the Advanced form and open the section so the publish button is reachable. This is a workaround. The verified links panel is the proper solution.",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/issues/3/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/issues/comments/4386249545",
+        "html_url": "https://github.com/divinevideo/divine-identify-verification-service/issues/3#issuecomment-4386249545",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/issues/3",
+        "id": 4386249545,
+        "node_id": "IC_kwDORd62Ps8AAAABBXDbSQ",
+        "user": {
+          "login": "DSanich",
+          "id": 124421399,
+          "node_id": "U_kgDOB2qFFw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/124421399?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/DSanich",
+          "html_url": "https://github.com/DSanich",
+          "followers_url": "https://api.github.com/users/DSanich/followers",
+          "following_url": "https://api.github.com/users/DSanich/following{/other_user}",
+          "gists_url": "https://api.github.com/users/DSanich/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/DSanich/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/DSanich/subscriptions",
+          "organizations_url": "https://api.github.com/users/DSanich/orgs",
+          "repos_url": "https://api.github.com/users/DSanich/repos",
+          "events_url": "https://api.github.com/users/DSanich/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/DSanich/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-06T08:21:08Z",
+        "updated_at": "2026-05-06T08:21:08Z",
+        "body": "@mbradley I created [PR](https://github.com/divinevideo/divine-identify-verification-service/pull/11) for this issue. Сould you take a look.\n\nсс @jalcine @NotThatKindOfDrLiz @rabble ",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/issues/comments/4386249545/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-06T08:21:08Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9136445918",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 124421399,
+      "login": "DSanich",
+      "display_login": "DSanich",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DSanich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124421399?"
+    },
+    "repo": {
+      "id": 1172223550,
+      "name": "divinevideo/divine-identify-verification-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 11,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/pulls/11",
+        "id": 3635387977,
+        "number": 11,
+        "head": {
+          "ref": "feat/3-verified-links-panel",
+          "sha": "6749b2e575d36766824be775388e1db2aa137321",
+          "repo": {
+            "id": 1229716244,
+            "url": "https://api.github.com/repos/DSanich/divine-identify-verification-service",
+            "name": "divine-identify-verification-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "dd8e52b8faf67800828dcd472d09702e59d2d91b",
+          "repo": {
+            "id": 1172223550,
+            "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service",
+            "name": "divine-identify-verification-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-06T08:17:35Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9125685654",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1172223550,
+      "name": "divinevideo/divine-identify-verification-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 10,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/pulls/10",
+        "id": 3633742980,
+        "number": 10,
+        "head": {
+          "ref": "feat/embed-postmessage-nip07-bridge",
+          "sha": "a4dda318ab69c64cd1002598813413e0570452bb",
+          "repo": {
+            "id": 1172223550,
+            "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service",
+            "name": "divine-identify-verification-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "dd8e52b8faf67800828dcd472d09702e59d2d91b",
+          "repo": {
+            "id": 1172223550,
+            "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service",
+            "name": "divine-identify-verification-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-06T00:18:23Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11463744839",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1172223550,
+      "name": "divinevideo/divine-identify-verification-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service"
+    },
+    "payload": {
+      "ref": "feat/embed-postmessage-nip07-bridge",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/embed-postmessage-nip07-bridge",
+      "master_branch": "main",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-06T00:18:01Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9096475360",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 124421399,
+      "login": "DSanich",
+      "display_login": "DSanich",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DSanich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124421399?"
+    },
+    "repo": {
+      "id": 1172223550,
+      "name": "divinevideo/divine-identify-verification-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service"
+    },
+    "payload": {
+      "action": "forked",
+      "forkee": {
+        "id": 1229716244,
+        "node_id": "R_kgDOSUv7FA",
+        "name": "divine-identify-verification-service",
+        "full_name": "DSanich/divine-identify-verification-service",
+        "private": false,
+        "owner": {
+          "login": "DSanich",
+          "id": 124421399,
+          "node_id": "U_kgDOB2qFFw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/124421399?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/DSanich",
+          "html_url": "https://github.com/DSanich",
+          "followers_url": "https://api.github.com/users/DSanich/followers",
+          "following_url": "https://api.github.com/users/DSanich/following{/other_user}",
+          "gists_url": "https://api.github.com/users/DSanich/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/DSanich/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/DSanich/subscriptions",
+          "organizations_url": "https://api.github.com/users/DSanich/orgs",
+          "repos_url": "https://api.github.com/users/DSanich/repos",
+          "events_url": "https://api.github.com/users/DSanich/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/DSanich/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/DSanich/divine-identify-verification-service",
+        "description": null,
+        "fork": true,
+        "url": "https://api.github.com/repos/DSanich/divine-identify-verification-service",
+        "forks_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/forks",
+        "keys_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/teams",
+        "hooks_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/hooks",
+        "issue_events_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/events",
+        "assignees_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/tags",
+        "blobs_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/languages",
+        "stargazers_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/stargazers",
+        "contributors_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/contributors",
+        "subscribers_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/subscribers",
+        "subscription_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/subscription",
+        "commits_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/merges",
+        "archive_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/downloads",
+        "issues_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/labels{/name}",
+        "releases_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/DSanich/divine-identify-verification-service/deployments",
+        "created_at": "2026-05-05T10:11:48Z",
+        "updated_at": "2026-05-05T10:11:48Z",
+        "pushed_at": "2026-05-06T07:53:46Z",
+        "git_url": "git://github.com/DSanich/divine-identify-verification-service.git",
+        "ssh_url": "git@github.com:DSanich/divine-identify-verification-service.git",
+        "clone_url": "https://github.com/DSanich/divine-identify-verification-service.git",
+        "svn_url": "https://github.com/DSanich/divine-identify-verification-service",
+        "homepage": null,
+        "size": 544,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": true,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": null,
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "main"
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-05T10:11:48Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11366821114",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1172223550,
+      "name": "divinevideo/divine-identify-verification-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service"
+    },
+    "payload": {
+      "repository_id": 1172223550,
+      "push_id": 33658249834,
+      "ref": "refs/heads/main",
+      "head": "dd8e52b8faf67800828dcd472d09702e59d2d91b",
+      "before": "1531b029e306a1e670bd4449a5e831ef08d1ba2d"
+    },
+    "public": true,
+    "created_at": "2026-05-03T23:37:21Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981524642",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1172223550,
+      "name": "divinevideo/divine-identify-verification-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 9,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/pulls/9",
+        "id": 3604803422,
+        "number": 9,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "b14e41e2d14a7929978ff70ff70066552cc746a8",
+          "repo": {
+            "id": 1172223550,
+            "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service",
+            "name": "divine-identify-verification-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "842eec0afc0cd99dc6a82bcbd1e97d406e7922e7",
+          "repo": {
+            "id": 1172223550,
+            "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service",
+            "name": "divine-identify-verification-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:18:04Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11274951142",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1172223550,
+      "name": "divinevideo/divine-identify-verification-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service"
+    },
+    "payload": {
+      "repository_id": 1172223550,
+      "push_id": 33566349389,
+      "ref": "refs/heads/main",
+      "head": "1531b029e306a1e670bd4449a5e831ef08d1ba2d",
+      "before": "842eec0afc0cd99dc6a82bcbd1e97d406e7922e7"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:18:05Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981399620",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1172223550,
+      "name": "divinevideo/divine-identify-verification-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4209267704,
+        "node_id": "PRR_kwDORd62Ps765FP4",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. Contribution standards check complete. Approved.",
+        "commit_id": "b14e41e2d14a7929978ff70ff70066552cc746a8",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-identify-verification-service/pull/9#pullrequestreview-4209267704",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/pulls/9",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-identify-verification-service/pull/9#pullrequestreview-4209267704"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/pulls/9"
+          }
+        },
+        "submitted_at": "2026-05-01T00:12:26Z",
+        "updated_at": "2026-05-01T00:12:26Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service/pulls/9",
+        "id": 3604803422,
+        "number": 9,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "b14e41e2d14a7929978ff70ff70066552cc746a8",
+          "repo": {
+            "id": 1172223550,
+            "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service",
+            "name": "divine-identify-verification-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "842eec0afc0cd99dc6a82bcbd1e97d406e7922e7",
+          "repo": {
+            "id": 1172223550,
+            "url": "https://api.github.com/repos/divinevideo/divine-identify-verification-service",
+            "name": "divine-identify-verification-service"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:12:28Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]

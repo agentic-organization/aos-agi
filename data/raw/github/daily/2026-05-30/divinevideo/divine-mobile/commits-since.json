@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "54d124ae390b99c0f9ccd0b8d5ac28b6a9dd9522",
+    "node_id": "C_kwDOO71yAtoAKDU0ZDEyNGFlMzkwYjk5YzBmOWNjZDBiOGQ1YWMyOGI2YTlkZDk1MjI",
+    "commit": {
+      "author": {
+        "name": "Meylis",
+        "email": "meylis@divine.video",
+        "date": "2026-05-30T04:32:28Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-30T04:32:28Z"
+      },
+      "message": "refactor(state): add VideoRecorderBloc with sequential() on start/stop (#4805)",
+      "tree": {
+        "sha": "e4856f35e01563d315ac65e857cb5d34e4b0994e",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/e4856f35e01563d315ac65e857cb5d34e4b0994e"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/54d124ae390b99c0f9ccd0b8d5ac28b6a9dd9522",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGmhcCRC1aQ7uu5UhlAAAZZYQAK38EkWQhTjguHIBpvPp10ut\nV+/oAen9kTvTd9jSgu5bJ066GuDttefC0i5Sk2dteBBBtH8xT1ePmNRjA+eREtIO\nQy7tqb+v5hCdTJT0kS8ZIRF3DrHK11IBJic7jpREQvM4mr2OljW43f5nUZFdxcxZ\nP+DIwn1BOVT/hUtL+z8bXcn+iYzCS2V9xPD3M4E96996ASQSPZfXqIepAxxm3A9k\nrg/2h5C++q14Oymyh8jelT/hRM7zKLE4FovEyQnpsQIsY0j+wQr7m0wYo62NGGdd\nlc9RK7QP0ezSB7skO5RNiTbwYiFtA9qpnuvJ7yQpzvGl4MySb12omERnKAqn50aG\nQ6WLUq1V8HiGpfAL/FdgufLro4Mh6dW7zd0lgasEKdnE9Iu8kbkCJ7uAdnmPWY1x\nograzMz0H/6I2LwXo3Fdvz0OWkU7PNdLqsDDh+UwJOOENX33FY+v8WCV+l08bZT7\nEVWWbDyIQ59yxGlQQGQ5Mdxve+ifUgShaT3q2cpEy8bFN8ZotqH+lSLrocFz5e1v\nC6Rb1N7o8hPSG4z/515ivxqDmNSPqDOGqAFZeFSkbVO3+H0poRAn+x0I95jAxgCA\nqSia+OIBEH8UwCzMqY4tFIK7BpQ1D7NB856piyP9jBRvf4JzGCe12JFdojVJPxEm\nV77+i5DPtbMP7LTN3Gwp\n=Lgzr\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e4856f35e01563d315ac65e857cb5d34e4b0994e\nparent d27d8c439895e664b31ea8046ac5d836f42a05db\nauthor Meylis <meylis@divine.video> 1780115548 +0500\ncommitter GitHub <noreply@github.com> 1780115548 +0500\n\nrefactor(state): add VideoRecorderBloc with sequential() on start/stop (#4805)",
+        "verified_at": "2026-05-30T04:32:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/54d124ae390b99c0f9ccd0b8d5ac28b6a9dd9522",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/54d124ae390b99c0f9ccd0b8d5ac28b6a9dd9522",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/54d124ae390b99c0f9ccd0b8d5ac28b6a9dd9522/comments",
+    "author": {
+      "login": "realmeylisdev",
+      "id": 53417906,
+      "node_id": "MDQ6VXNlcjUzNDE3OTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53417906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realmeylisdev",
+      "html_url": "https://github.com/realmeylisdev",
+      "followers_url": "https://api.github.com/users/realmeylisdev/followers",
+      "following_url": "https://api.github.com/users/realmeylisdev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realmeylisdev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realmeylisdev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realmeylisdev/subscriptions",
+      "organizations_url": "https://api.github.com/users/realmeylisdev/orgs",
+      "repos_url": "https://api.github.com/users/realmeylisdev/repos",
+      "events_url": "https://api.github.com/users/realmeylisdev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realmeylisdev/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d27d8c439895e664b31ea8046ac5d836f42a05db",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/d27d8c439895e664b31ea8046ac5d836f42a05db",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/d27d8c439895e664b31ea8046ac5d836f42a05db"
+      }
+    ]
+  },
+  {
+    "sha": "d27d8c439895e664b31ea8046ac5d836f42a05db",
+    "node_id": "C_kwDOO71yAtoAKGQyN2Q4YzQzOTg5NWU2NjRiMzFlYTgwNDZhYzVkODM2ZjQyYTA1ZGI",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-29T11:24:04Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-29T11:24:04Z"
+      },
+      "message": "fix(video-editor): split functionality with robust state management (#4809)\n\n* feat(video-editor): implement split functionality with error handling\n\n- Added state management for split operations in ClipEditorBloc, including isSplitting and lastSplitFailure.\n- Introduced localized error messages for split failures in multiple languages.\n- Updated UI components to reflect the new split state and prevent multiple split actions during an ongoing operation.\n- Enhanced video editor service to handle split rendering and added error handling for platform exceptions.\n- Implemented a snackbar notification for split failure events at the scaffold level.\n\n* test(video-player): add tests for setClips error handling\n\n* fix(video-editor): roll back failed clip splits\n\n* style(video-player): satisfy package formatter\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+      "tree": {
+        "sha": "2cc00bc3dfb61747e35e49203265861a075fe1f0",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/2cc00bc3dfb61747e35e49203265861a075fe1f0"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/d27d8c439895e664b31ea8046ac5d836f42a05db",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGXdUCRC1aQ7uu5UhlAAAaQYQAK1Pjc6sHlIrBwgMVj060LxH\nJvS26pGXKWZOgf3kS1LVLTAysN5DN5EPN4+JxsNBzMhJ+XrV7SW9TfqQHbr0MZae\nBtAYBuOJgZQQh0ZaHmLm7mBOq57a76g4dIQrQRSlmOaMI+ZV/Ft76V6pFXDx4sUx\nN8nvoECP0PNPaJzhAtczx7idjP78G13jYaWcj8FWISaB4fpMOYQWnTMpCx0Lz05k\n4+LvomYZdoqS0/RSAXTQtjP+rajo6dhtFEwMuUUrZh9bkR1yTfVdLXJvcDQirsut\nAlvcUde5b7eMM6S0mhs3Fc5kDcqOmDjyq5JzWdjFL1MHuQxqX5I0ExckPUSZ7izG\n4qTjWqHWJ8uTSSg/Fqz5R6lvV8nO+iZVoV1UcJl+gjbBu5BiWmOiSejIEZ0DlIop\nH8GiXWHHwTX6s3guVZDRsVN3UsAHBm0h0m9ym21iMDoM5VCHuwo+E0P4lZgEEa1C\nXLy/MfVr+wyoSamCtR0P5Yv2wojizUUcg00vlUae19YUrcHlMthVOJX+SR/tkvfU\nwU4eRpkKhp7Q0HgguS0fWLeGA/OTFQFpBHmXtIl8WFFVfh+HraTBf8Myl+J+7duq\n76ZE4wExhVCVsDKdBGVjAWpaRxnEXmMCPjwmUXFm4iueCVW30bo0y3BuLffLXJ7Y\n+dbE47ENClMN6GUb2qI8\n=7f90\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2cc00bc3dfb61747e35e49203265861a075fe1f0\nparent c3a0710a5c06c984799c12ba800b6790703c1263\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1780053844 +0700\ncommitter GitHub <noreply@github.com> 1780053844 +0200\n\nfix(video-editor): split functionality with robust state management (#4809)\n\n* feat(video-editor): implement split functionality with error handling\n\n- Added state management for split operations in ClipEditorBloc, including isSplitting and lastSplitFailure.\n- Introduced localized error messages for split failures in multiple languages.\n- Updated UI components to reflect the new split state and prevent multiple split actions during an ongoing operation.\n- Enhanced video editor service to handle split rendering and added error handling for platform exceptions.\n- Implemented a snackbar notification for split failure events at the scaffold level.\n\n* test(video-player): add tests for setClips error handling\n\n* fix(video-editor): roll back failed clip splits\n\n* style(video-player): satisfy package formatter\n\n---------\n\nCo-authored-by: Liz Sweigart <127434495+NotThatKindOfDrLiz@users.noreply.github.com>",
+        "verified_at": "2026-05-29T11:24:04Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/d27d8c439895e664b31ea8046ac5d836f42a05db",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/d27d8c439895e664b31ea8046ac5d836f42a05db",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/d27d8c439895e664b31ea8046ac5d836f42a05db/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c3a0710a5c06c984799c12ba800b6790703c1263",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/c3a0710a5c06c984799c12ba800b6790703c1263",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/c3a0710a5c06c984799c12ba800b6790703c1263"
+      }
+    ]
+  }
+]

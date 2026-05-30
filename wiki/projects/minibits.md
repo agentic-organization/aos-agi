@@ -27,6 +27,7 @@ Mobile Cashu wallet focused on performance and usability. One of the earliest an
 - 2026-05-27: Daily ingestion (`data/raw/github/daily/2026-05-27/minibits-cash/minibits_wallet/`) shows **1 commit** by [[people/minibits-cash]]: "Basic transaction search".
 - 2026-05-28: Daily ingestion (`data/raw/github/daily/2026-05-28/minibits-cash/minibits_wallet/`) shows **1 commit** by [[people/minibits-cash]]: "Remove copied icons". **43 updated PRs**, **1 issue updated**.
 - 2026-05-29: Daily ingestion (`data/raw/github/daily/2026-05-29/minibits-cash/minibits_wallet/`) shows **2 commits** by [[people/minibits-cash]]: "Optimize ecash denominations per mint" and "Update readme". **41 events** in the 24h window.
+- 2026-05-30: Daily ingestion (`data/raw/github/daily/2026-05-30/minibits-cash/minibits_wallet/`) shows **1 commit** by [[people/minibits-cash]]: "Fix loadMintFromCache". **41 events**, **43 updated PRs** in the 24h window.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

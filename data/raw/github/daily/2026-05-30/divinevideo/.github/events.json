@@ -1,0 +1,180 @@
+[
+  {
+    "id": "8981510509",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/.github/pulls/3",
+        "id": 3605266397,
+        "number": 3,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "058526e57b846e6a97ea0d6245619b95812840ba",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "20be6c7fbf98e38a6967b408701f48980dae0d23",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:27Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11274936248",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "repository_id": 1107165396,
+      "push_id": 33566334604,
+      "ref": "refs/heads/main",
+      "head": "a4de4067e37ff3a5a3892f48784b610aefd90bb6",
+      "before": "20be6c7fbf98e38a6967b408701f48980dae0d23"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:17:28Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981386087",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1107165396,
+      "name": "divinevideo/.github",
+      "url": "https://api.github.com/repos/divinevideo/.github"
+    },
+    "payload": {
+      "review": {
+        "id": 4209264878,
+        "node_id": "PRR_kwDOQf4A1M765Eju",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. Contribution standards check complete. Approved.",
+        "commit_id": "058526e57b846e6a97ea0d6245619b95812840ba",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/.github/pull/3#pullrequestreview-4209264878",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/.github/pulls/3",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/.github/pull/3#pullrequestreview-4209264878"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/.github/pulls/3"
+          }
+        },
+        "submitted_at": "2026-05-01T00:11:51Z",
+        "updated_at": "2026-05-01T00:11:51Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/.github/pulls/3",
+        "id": 3605266397,
+        "number": 3,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "058526e57b846e6a97ea0d6245619b95812840ba",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "20be6c7fbf98e38a6967b408701f48980dae0d23",
+          "repo": {
+            "id": 1107165396,
+            "url": "https://api.github.com/repos/divinevideo/.github",
+            "name": ".github"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:11:52Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]
