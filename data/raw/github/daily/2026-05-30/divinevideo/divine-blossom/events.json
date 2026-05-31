@@ -869,6 +869,38 @@
     }
   },
   {
+    "id": "11610105862",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1109098066,
+      "name": "divinevideo/divine-blossom",
+      "url": "https://api.github.com/repos/divinevideo/divine-blossom"
+    },
+    "payload": {
+      "ref": "fix/viewer-auth-bud01-get",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/viewer-auth-bud01-get",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-08T22:18:37Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
     "id": "11610105724",
     "type": "PushEvent",
     "actor": {
@@ -893,38 +925,6 @@
     },
     "public": true,
     "created_at": "2026-05-08T22:18:36Z",
-    "org": {
-      "id": 244841795,
-      "login": "divinevideo",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/divinevideo",
-      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
-    }
-  },
-  {
-    "id": "11610105862",
-    "type": "DeleteEvent",
-    "actor": {
-      "id": 76,
-      "login": "rabble",
-      "display_login": "rabble",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/rabble",
-      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
-    },
-    "repo": {
-      "id": 1109098066,
-      "name": "divinevideo/divine-blossom",
-      "url": "https://api.github.com/repos/divinevideo/divine-blossom"
-    },
-    "payload": {
-      "ref": "fix/viewer-auth-bud01-get",
-      "ref_type": "branch",
-      "full_ref": "refs/heads/fix/viewer-auth-bud01-get",
-      "pusher_type": "user"
-    },
-    "public": true,
-    "created_at": "2026-05-08T22:18:37Z",
     "org": {
       "id": 244841795,
       "login": "divinevideo",

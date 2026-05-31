@@ -1,0 +1,171 @@
+[
+  {
+    "sha": "795e1e4c14a62ba18d6ccf71ff155c87cc65561a",
+    "node_id": "C_kwDOH-XoldoAKDc5NWUxZTRjMTRhNjJiYTE4ZDZjY2Y3MWZmMTU1Yzg3Y2M2NTU2MWE",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-30T11:15:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-30T11:15:59Z"
+      },
+      "message": "Merge pull request #1027 from cashubtc/fix-cln-fee-math\n\nfix: correct fee amount calculation for clnrest/corelightningrest",
+      "tree": {
+        "sha": "a43131ee7feb7ddf051e59ff1cf9748c3321791a",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/a43131ee7feb7ddf051e59ff1cf9748c3321791a"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/795e1e4c14a62ba18d6ccf71ff155c87cc65561a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGsbvCRC1aQ7uu5UhlAAAf/IQAFw2irYNd4R7L5QmPwYrP75l\nMaQ0AS04zS/xpRsCSNEIlvSEpoh1QJ5lCatt2A9wgUtBOISwliOtF8AKuC3sPcAI\n1qTjvbIrFHWNAwBH/5Zez9djiZovJX14WVApwfhX00EC1xOWAKfOSPcUL1f6qhuM\nHw3+M+NBi4qqfoUi9035CTQRipyjaZfrKwC/Ts43aoxEiTTFtSU8FqtYDkn3y18J\naWkDsg62Bk1lfE3VNzv+iwF3VQUEQUcVgmV2YkgD1QoWuz7uLq2TWwM8M77dMOer\n2wyPPJNYljAbONQhUdYLJ3n6H95LlfQsXfg1QNsdrCd00VnGY7kd2YH6CQcDUB2z\ntHV99DSVDCntsVo7jgmo1o444Ep76tKDsXuNZySLrGNPpgaBwYPMwlpmznZ1ssNk\nY+qctIHuP/XyHr8DRHAugzwHUIk1xBB82RjrZ26n0qZSAj+S7glmFWYsbAlvm8gb\nHYXG9pyE+gmdMxmsv4rEkYyIHyik6Je+TKl1Ho9zyWHhHk+3Cq5TBfsyncH1SOn0\np5+YaE3FBtIvTTc/QW6jUtmxVnoxoffkGer+sl3OnUiwMhF6cQ95wjQ6khDlzINk\nmXG8DbBPP3Fn9JCnWO0QotkUiGbONx/uIsN7J6hew4RJ4vcmev7L/5oy0GLo0gcU\n/CcNgo9EaBc3L0a8rWwz\n=yOwk\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a43131ee7feb7ddf051e59ff1cf9748c3321791a\nparent 620d6297e9796c202dd71d25a50792c910dacc0b\nparent eb478aa33d0285d75166cbf73515e80a3acb6b0a\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1780139759 +0200\ncommitter GitHub <noreply@github.com> 1780139759 +0200\n\nMerge pull request #1027 from cashubtc/fix-cln-fee-math\n\nfix: correct fee amount calculation for clnrest/corelightningrest",
+        "verified_at": "2026-05-30T11:16:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/795e1e4c14a62ba18d6ccf71ff155c87cc65561a",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/795e1e4c14a62ba18d6ccf71ff155c87cc65561a",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/795e1e4c14a62ba18d6ccf71ff155c87cc65561a/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "620d6297e9796c202dd71d25a50792c910dacc0b",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/620d6297e9796c202dd71d25a50792c910dacc0b",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/620d6297e9796c202dd71d25a50792c910dacc0b"
+      },
+      {
+        "sha": "eb478aa33d0285d75166cbf73515e80a3acb6b0a",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/eb478aa33d0285d75166cbf73515e80a3acb6b0a",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/eb478aa33d0285d75166cbf73515e80a3acb6b0a"
+      }
+    ]
+  },
+  {
+    "sha": "eb478aa33d0285d75166cbf73515e80a3acb6b0a",
+    "node_id": "C_kwDOH-XoldoAKGViNDc4YWEzM2QwMjg1ZDc1MTY2Y2JmNzM1MTVlODBhM2FjYjZiMGE",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "cloudsupper@proton.me",
+        "date": "2026-05-30T08:43:50Z"
+      },
+      "committer": {
+        "name": "a1denvalu3",
+        "email": "cloudsupper@proton.me",
+        "date": "2026-05-30T10:25:57Z"
+      },
+      "message": "fix: correct fee math for clnrest and corelightningrest backends\n\nThis commit corrects a bug where the fee amount in msat was incorrectly calculated as a negative number in the 'clnrest' and 'corelightningrest' lightning backends. Regression tests are added to ensure this correctly subtracts 'amount_msat' from 'amount_sent_msat' going forward.",
+      "tree": {
+        "sha": "a43131ee7feb7ddf051e59ff1cf9748c3321791a",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/git/trees/a43131ee7feb7ddf051e59ff1cf9748c3321791a"
+      },
+      "url": "https://api.github.com/repos/cashubtc/nutshell/git/commits/eb478aa33d0285d75166cbf73515e80a3acb6b0a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/nutshell/commits/eb478aa33d0285d75166cbf73515e80a3acb6b0a",
+    "html_url": "https://github.com/cashubtc/nutshell/commit/eb478aa33d0285d75166cbf73515e80a3acb6b0a",
+    "comments_url": "https://api.github.com/repos/cashubtc/nutshell/commits/eb478aa33d0285d75166cbf73515e80a3acb6b0a/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "620d6297e9796c202dd71d25a50792c910dacc0b",
+        "url": "https://api.github.com/repos/cashubtc/nutshell/commits/620d6297e9796c202dd71d25a50792c910dacc0b",
+        "html_url": "https://github.com/cashubtc/nutshell/commit/620d6297e9796c202dd71d25a50792c910dacc0b"
+      }
+    ]
+  }
+]

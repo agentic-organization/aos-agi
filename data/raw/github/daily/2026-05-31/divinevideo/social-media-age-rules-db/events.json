@@ -1,0 +1,180 @@
+[
+  {
+    "id": "8981498559",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1122467096,
+      "name": "divinevideo/social-media-age-rules-db",
+      "url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 1,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db/pulls/1",
+        "id": 3605383729,
+        "number": 1,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "1ec398551f235ec0c867eae4ce30a9b053ca173e",
+          "repo": {
+            "id": 1122467096,
+            "url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db",
+            "name": "social-media-age-rules-db"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "da9d01388ee469f0f472b5aacd522e4433feaa7c",
+          "repo": {
+            "id": 1122467096,
+            "url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db",
+            "name": "social-media-age-rules-db"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:16:55Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11274923945",
+    "type": "PushEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1122467096,
+      "name": "divinevideo/social-media-age-rules-db",
+      "url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db"
+    },
+    "payload": {
+      "repository_id": 1122467096,
+      "push_id": 33566322261,
+      "ref": "refs/heads/main",
+      "head": "36e571dee77b9024ed716097edae8bf27617910e",
+      "before": "da9d01388ee469f0f472b5aacd522e4433feaa7c"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:16:56Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "8981373934",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 276363283,
+      "login": "clawidette",
+      "display_login": "clawidette",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clawidette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276363283?"
+    },
+    "repo": {
+      "id": 1122467096,
+      "name": "divinevideo/social-media-age-rules-db",
+      "url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db"
+    },
+    "payload": {
+      "review": {
+        "id": 4209262728,
+        "node_id": "PRR_kwDOQud9GM765ECI",
+        "user": {
+          "login": "clawidette",
+          "id": 276363283,
+          "node_id": "U_kgDOEHj4Ew",
+          "avatar_url": "https://avatars.githubusercontent.com/u/276363283?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/clawidette",
+          "html_url": "https://github.com/clawidette",
+          "followers_url": "https://api.github.com/users/clawidette/followers",
+          "following_url": "https://api.github.com/users/clawidette/following{/other_user}",
+          "gists_url": "https://api.github.com/users/clawidette/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/clawidette/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/clawidette/subscriptions",
+          "organizations_url": "https://api.github.com/users/clawidette/orgs",
+          "repos_url": "https://api.github.com/users/clawidette/repos",
+          "events_url": "https://api.github.com/users/clawidette/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/clawidette/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Automated review by Clawdette. PR #1 contribution standards check complete. Approved.",
+        "commit_id": "1ec398551f235ec0c867eae4ce30a9b053ca173e",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/social-media-age-rules-db/pull/1#pullrequestreview-4209262728",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db/pulls/1",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/social-media-age-rules-db/pull/1#pullrequestreview-4209262728"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/social-media-age-rules-db/pulls/1"
+          }
+        },
+        "submitted_at": "2026-05-01T00:11:24Z",
+        "updated_at": "2026-05-01T00:11:24Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db/pulls/1",
+        "id": 3605383729,
+        "number": 1,
+        "head": {
+          "ref": "codex/repo-contribution-guardrails",
+          "sha": "1ec398551f235ec0c867eae4ce30a9b053ca173e",
+          "repo": {
+            "id": 1122467096,
+            "url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db",
+            "name": "social-media-age-rules-db"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "da9d01388ee469f0f472b5aacd522e4433feaa7c",
+          "repo": {
+            "id": 1122467096,
+            "url": "https://api.github.com/repos/divinevideo/social-media-age-rules-db",
+            "name": "social-media-age-rules-db"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-01T00:11:25Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]
