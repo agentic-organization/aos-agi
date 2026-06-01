@@ -24,6 +24,9 @@ Bitcoin point-of-sale (PoS) Android application that lets merchants accept Bitco
 - 2026-05-17: `data/raw/github/daily/2026-05-17/cashubtc/Numo/` captured **1 commit** in the 24h window. Theme: validate auto-withdraw threshold against LNURL `minSendable` (#315). Committer: [[people/a1denvalu3]].
 
 - 2026-05-26: Daily ingestion (`data/raw/github/daily/2026-05-26/cashubtc/Numo/`) shows **1 commit** by [[people/a1denvalu3]]: update build.gradle.kts (#326).
+- 2026-05-31: Daily ingestion (`data/raw/github/daily/2026-05-31/cashubtc/Numo/`) shows **2 commits** by [[people/a1denvalu3]] in the 24h window. Themes: use `setDiscoveryTechnology` to suppress NFC polling on Android 15+ (#328), and fix Apple Pay popup trigger by suppressing active NFC polling (#327). **2 issues updated**.
+
+- 2026-06-01: Daily ingestion (`data/raw/github/daily/2026-06-01/cashubtc/Numo/`) shows **1 commit** by [[people/a1denvalu3]]: "Handle non-bolt11 mints by skipping lightning flow" (#324) — enables Numo to gracefully handle mints that do not support BOLT11 Lightning by skipping the lightning flow and rejecting unknown-mint swaps when the preferred mint lacks bolt11 support. Also fixes NDEF APDU READ BINARY boundary checks. **2 issues updated**. **100 events** in the 24h window.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

@@ -24,6 +24,9 @@ A **modular, TypeScript-first toolkit** for building Cashu wallets and applicati
 - 2026-05-21: Daily ingestion (`data/raw/github/daily/2026-05-21/cashubtc/coco/`) shows **2 commits** by [[people/egge21m]]: merge PR #166 fixing checkstate-loop, and dedupe proof state polling batches. **7 issues updated**.
 - 2026-05-22: Daily ingestion (`data/raw/github/daily/2026-05-22/cashubtc/coco/`) shows **0 commits** in the 24h window but **100 events** and **2 issues updated** — sustained PR/issue activity.
 - 2026-05-27: Daily ingestion (`data/raw/github/daily/2026-05-27/cashubtc/coco/`) shows **3 commits** by [[people/egge21m]]. Merge PR #183 introduces quote-first BOLT11 mint operations (decoupled quote-then-mint flow). Follow-up fixes: "fix(core): align mint watcher quote keys" and "fix(core): prevent duplicate melt quote operations". **3 issues updated**.
+- 2026-05-31: Daily ingestion (`data/raw/github/daily/2026-05-31/cashubtc/coco/`) shows **9 commits** by [[people/egge21m]] in the 24h window. Major merges: PR #187 (BOLT12 payments on onchain) and PR #184 (onchain payments). Follow-up fixes: reject amountless fixed bolt12 mint quotes, require explicit bolt12 mint amounts, preserve melt quote uniqueness in adapters, reject duplicate melt quote operations, keep bolt12 melt method data minimal. **5 issues updated** including onchain payments (#161), bolt12 payments (#160/#182), and reusable onchain mint quotes (#184).
+
+- 2026-06-01: Daily ingestion (`data/raw/github/daily/2026-06-01/cashubtc/coco/`) shows **2 commits**. Merge PR #188 by [[people/egge21m]]: "chore: remove redundant feature doc" by IgboPharaoh — cleanup of a redundant feature documentation file. **4 issues updated**. **100 events** in the 24h window.
 
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.

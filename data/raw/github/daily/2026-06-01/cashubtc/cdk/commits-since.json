@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "3b182b1905be4841149457b6a52fbbe5fa3f13c2",
+    "node_id": "C_kwDOJbajnNoAKDNiMTgyYjE5MDViZTQ4NDExNDk0NTdiNmE1MmZiYmU1ZmEzZjEzYzI",
+    "commit": {
+      "author": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-31T12:05:01Z"
+      },
+      "committer": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-31T12:07:58Z"
+      },
+      "message": "fix: env var multiple units",
+      "tree": {
+        "sha": "396a7f141aeb02af6b27c3af47e2dfc7423c32f3",
+        "url": "https://api.github.com/repos/cashubtc/cdk/git/trees/396a7f141aeb02af6b27c3af47e2dfc7423c32f3"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk/git/commits/3b182b1905be4841149457b6a52fbbe5fa3f13c2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQT7FBefWxISmS43iYljrW0Ju/53gwUCahwkngAKCRBjrW0Ju/53\ng7TyAQDgMr3EhbQDNbkmY9sk6BDDFddPkOyXS3e9NoTaeoR24QD9HF1Hj+xVFg9W\nw/hf075MrqDzHErpox3gKfqywbAvLgM=\n=i36H\n-----END PGP SIGNATURE-----",
+        "payload": "tree 396a7f141aeb02af6b27c3af47e2dfc7423c32f3\nparent bae1dd15bc0dabb5e5f0ff5a009ed379ee5c4ca4\nauthor thesimplekid <tsk@thesimplekid.com> 1780229101 +0200\ncommitter thesimplekid <tsk@thesimplekid.com> 1780229278 +0200\nchange-id ypnqrlzyurqvzontvqlxotzuvuttlvsy\n\nfix: env var multiple units\n",
+        "verified_at": "2026-05-31T12:08:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk/commits/3b182b1905be4841149457b6a52fbbe5fa3f13c2",
+    "html_url": "https://github.com/cashubtc/cdk/commit/3b182b1905be4841149457b6a52fbbe5fa3f13c2",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk/commits/3b182b1905be4841149457b6a52fbbe5fa3f13c2/comments",
+    "author": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bae1dd15bc0dabb5e5f0ff5a009ed379ee5c4ca4",
+        "url": "https://api.github.com/repos/cashubtc/cdk/commits/bae1dd15bc0dabb5e5f0ff5a009ed379ee5c4ca4",
+        "html_url": "https://github.com/cashubtc/cdk/commit/bae1dd15bc0dabb5e5f0ff5a009ed379ee5c4ca4"
+      }
+    ]
+  },
+  {
+    "sha": "bae1dd15bc0dabb5e5f0ff5a009ed379ee5c4ca4",
+    "node_id": "C_kwDOJbajnNoAKGJhZTFkZDE1YmMwZGFiYjVlNWYwZmY1YTAwOWVkMzc5ZWU1YzRjYTQ",
+    "commit": {
+      "author": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-31T11:56:57Z"
+      },
+      "committer": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-31T12:07:58Z"
+      },
+      "message": "fix: multiple keyset rotations",
+      "tree": {
+        "sha": "23168c09ee97f892237ebc30bf15865e39ebb14f",
+        "url": "https://api.github.com/repos/cashubtc/cdk/git/trees/23168c09ee97f892237ebc30bf15865e39ebb14f"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk/git/commits/bae1dd15bc0dabb5e5f0ff5a009ed379ee5c4ca4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQT7FBefWxISmS43iYljrW0Ju/53gwUCahwkngAKCRBjrW0Ju/53\ng81JAP44xwYT2Jw52xnp8YYUSP/bq9vcXhgCpmXbgAg0lpz7FgD/cxtcbLQfvzrz\nd00XPizLbC1Rntm97HgUZNQD5LGcrQ0=\n=I+Ns\n-----END PGP SIGNATURE-----",
+        "payload": "tree 23168c09ee97f892237ebc30bf15865e39ebb14f\nparent a1488006a947be0a957ca82bcf7db0d83c2f723d\nauthor thesimplekid <tsk@thesimplekid.com> 1780228617 +0200\ncommitter thesimplekid <tsk@thesimplekid.com> 1780229278 +0200\nchange-id wrtllyvtmqmrytouzyqzrvqmxnwmxzwt\n\nfix: multiple keyset rotations\n",
+        "verified_at": "2026-05-31T12:08:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk/commits/bae1dd15bc0dabb5e5f0ff5a009ed379ee5c4ca4",
+    "html_url": "https://github.com/cashubtc/cdk/commit/bae1dd15bc0dabb5e5f0ff5a009ed379ee5c4ca4",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk/commits/bae1dd15bc0dabb5e5f0ff5a009ed379ee5c4ca4/comments",
+    "author": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a1488006a947be0a957ca82bcf7db0d83c2f723d",
+        "url": "https://api.github.com/repos/cashubtc/cdk/commits/a1488006a947be0a957ca82bcf7db0d83c2f723d",
+        "html_url": "https://github.com/cashubtc/cdk/commit/a1488006a947be0a957ca82bcf7db0d83c2f723d"
+      }
+    ]
+  },
+  {
+    "sha": "a1488006a947be0a957ca82bcf7db0d83c2f723d",
+    "node_id": "C_kwDOJbajnNoAKGExNDg4MDA2YTk0N2JlMGE5NTdjYTgyYmNmN2RiMGQ4M2MyZjcyM2Q",
+    "commit": {
+      "author": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-31T11:54:09Z"
+      },
+      "committer": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-31T12:07:58Z"
+      },
+      "message": "fix: ensure backend support",
+      "tree": {
+        "sha": "35249f583a97e464ae877b78aa2cdb4662b83367",
+        "url": "https://api.github.com/repos/cashubtc/cdk/git/trees/35249f583a97e464ae877b78aa2cdb4662b83367"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk/git/commits/a1488006a947be0a957ca82bcf7db0d83c2f723d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQT7FBefWxISmS43iYljrW0Ju/53gwUCahwkngAKCRBjrW0Ju/53\ng9WCAQCbYapolMl5hqbD/fhajZDNJ7NchbDqve2T5CfvgIfXWwEAk44y6qa30vD1\n5Nh2G567Umh+f4vDwU6YF8EinXVFEgs=\n=LBvi\n-----END PGP SIGNATURE-----",
+        "payload": "tree 35249f583a97e464ae877b78aa2cdb4662b83367\nparent aaeffa83c7d9d2a1a642eea0978d8190c8e7b21f\nauthor thesimplekid <tsk@thesimplekid.com> 1780228449 +0200\ncommitter thesimplekid <tsk@thesimplekid.com> 1780229278 +0200\nchange-id prlzkqxqotnupzmxokkwrnwsxymzrkqt\n\nfix: ensure backend support\n",
+        "verified_at": "2026-05-31T12:08:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk/commits/a1488006a947be0a957ca82bcf7db0d83c2f723d",
+    "html_url": "https://github.com/cashubtc/cdk/commit/a1488006a947be0a957ca82bcf7db0d83c2f723d",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk/commits/a1488006a947be0a957ca82bcf7db0d83c2f723d/comments",
+    "author": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "aaeffa83c7d9d2a1a642eea0978d8190c8e7b21f",
+        "url": "https://api.github.com/repos/cashubtc/cdk/commits/aaeffa83c7d9d2a1a642eea0978d8190c8e7b21f",
+        "html_url": "https://github.com/cashubtc/cdk/commit/aaeffa83c7d9d2a1a642eea0978d8190c8e7b21f"
+      }
+    ]
+  },
+  {
+    "sha": "aaeffa83c7d9d2a1a642eea0978d8190c8e7b21f",
+    "node_id": "C_kwDOJbajnNoAKGFhZWZmYTgzYzdkOWQyYTFhNjQyZWVhMDk3OGQ4MTkwYzhlN2IyMWY",
+    "commit": {
+      "author": {
+        "name": "asmo",
+        "email": "asmogo@protonmail.com",
+        "date": "2026-05-31T11:39:41Z"
+      },
+      "committer": {
+        "name": "thesimplekid",
+        "email": "tsk@thesimplekid.com",
+        "date": "2026-05-31T12:07:55Z"
+      },
+      "message": "feat(mintd): allow multiple lightning backends per currency unit\n\nCo-authored-by: micah-shallom <micahshallom@gmail.com>",
+      "tree": {
+        "sha": "84784f53caf036307481d85355ab4b4af506454f",
+        "url": "https://api.github.com/repos/cashubtc/cdk/git/trees/84784f53caf036307481d85355ab4b4af506454f"
+      },
+      "url": "https://api.github.com/repos/cashubtc/cdk/git/commits/aaeffa83c7d9d2a1a642eea0978d8190c8e7b21f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQT7FBefWxISmS43iYljrW0Ju/53gwUCahwkmwAKCRBjrW0Ju/53\ng/zzAP97G0AiXbsaKJwI18TIcJO7JKCgZDKyX7A6E9pkwQ267QEA3QTMzwlpVQQH\n+Ggs5ropCAtwT7YE/HX+fHo512HIvwI=\n=bWAH\n-----END PGP SIGNATURE-----",
+        "payload": "tree 84784f53caf036307481d85355ab4b4af506454f\nparent 26dc17468d3e5dcdff12c06cb4146ee8ea2740b0\nauthor asmo <asmogo@protonmail.com> 1780227581 +0200\ncommitter thesimplekid <tsk@thesimplekid.com> 1780229275 +0200\nchange-id psuouqyqrvtowoqllzouxptullxlmvoy\n\nfeat(mintd): allow multiple lightning backends per currency unit\n\nCo-authored-by: micah-shallom <micahshallom@gmail.com>\n",
+        "verified_at": "2026-05-31T12:08:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/cdk/commits/aaeffa83c7d9d2a1a642eea0978d8190c8e7b21f",
+    "html_url": "https://github.com/cashubtc/cdk/commit/aaeffa83c7d9d2a1a642eea0978d8190c8e7b21f",
+    "comments_url": "https://api.github.com/repos/cashubtc/cdk/commits/aaeffa83c7d9d2a1a642eea0978d8190c8e7b21f/comments",
+    "author": {
+      "login": "asmogo",
+      "id": 175508099,
+      "node_id": "U_kgDOCnYKgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/175508099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/asmogo",
+      "html_url": "https://github.com/asmogo",
+      "followers_url": "https://api.github.com/users/asmogo/followers",
+      "following_url": "https://api.github.com/users/asmogo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/asmogo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/asmogo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/asmogo/subscriptions",
+      "organizations_url": "https://api.github.com/users/asmogo/orgs",
+      "repos_url": "https://api.github.com/users/asmogo/repos",
+      "events_url": "https://api.github.com/users/asmogo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/asmogo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "thesimplekid",
+      "id": 8606367,
+      "node_id": "MDQ6VXNlcjg2MDYzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8606367?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesimplekid",
+      "html_url": "https://github.com/thesimplekid",
+      "followers_url": "https://api.github.com/users/thesimplekid/followers",
+      "following_url": "https://api.github.com/users/thesimplekid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesimplekid/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesimplekid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesimplekid/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesimplekid/orgs",
+      "repos_url": "https://api.github.com/users/thesimplekid/repos",
+      "events_url": "https://api.github.com/users/thesimplekid/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesimplekid/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "26dc17468d3e5dcdff12c06cb4146ee8ea2740b0",
+        "url": "https://api.github.com/repos/cashubtc/cdk/commits/26dc17468d3e5dcdff12c06cb4146ee8ea2740b0",
+        "html_url": "https://github.com/cashubtc/cdk/commit/26dc17468d3e5dcdff12c06cb4146ee8ea2740b0"
+      }
+    ]
+  }
+]

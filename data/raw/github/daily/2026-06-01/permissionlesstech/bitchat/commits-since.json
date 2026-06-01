@@ -1,0 +1,412 @@
+[
+  {
+    "sha": "ffa0d7aa4f96f4273b99369fc7ae3851258debee",
+    "node_id": "C_kwDOPG3UANoAKGZmYTBkN2FhNGY5NmY0MjczYjk5MzY5ZmM3YWUzODUxMjU4ZGViZWU",
+    "commit": {
+      "author": {
+        "name": "jack",
+        "email": "212554440+jackjackbits@users.noreply.github.com",
+        "date": "2026-05-31T12:24:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-31T12:24:09Z"
+      },
+      "message": "[codex] Extract BLE link state store (#1310)\n\n* Refactor BLE transport event handling\n\n* Make image output paths unique\n\n* Keep queued Nostr read receipts alive\n\n* Refine BLE ingress fanout\n\n* Rediscover BLE service after invalidation\n\n* Extract BLE notification retry buffer\n\n* Extract BLE inbound write buffer\n\n* Extract BLE fragment assembly buffer\n\n* Tidy secure log handling from device run\n\n* Extract BLE outbound fragment scheduler\n\n* Harden app CI media tests\n\n* Redact BLE message content from logs\n\n* Extract BLE Noise session queues\n\n* Fix BLE read receipt UI updates\n\n* Allow self-authored RSR ingress replies\n\n* Harden read receipt queue test timing\n\n* Extract BLE outbound policy and incoming file storage\n\n* Avoid duplicate BLE link snapshots during send\n\n* Canonicalize Nostr relay URLs\n\n* Extract BLE link state store\n\n* Extract BLE connection scheduler\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+      "tree": {
+        "sha": "0b0c2b1e646f3bd62d521da11640da6b349ee80d",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/trees/0b0c2b1e646f3bd62d521da11640da6b349ee80d"
+      },
+      "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/commits/ffa0d7aa4f96f4273b99369fc7ae3851258debee",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqHChpCRC1aQ7uu5UhlAAA0hAQAELNjzs5+XYXAY/SR1scFMe5\nczuRfMw4GECWz+38bzZU45MnIb0rkNUqJ+vDogR9tXaxiYLzwhrVOm5kIuuUCHwR\nDkEIm1hBOtaSA62xY0uEF+xXiPkMnVQeZpdlEogwlMNSOc/MOu9SUJD4x4p4+Koe\nTwBi8Q2j+HDKhefq0mi4JfBy+Y0Ts/0BPHchf1U8UwBpXq9ZG33YGLDedkIcl5F2\nS0e7Nb+umrHzbOG51JPH9cG7ZnP/vyTUlo8a0D928N9aGK5gipbJG+clU7vowCSV\nZ0tffAeOJdkG3rvqsol5G34SuAocA5GNg7lIfZxr836JdOii5iRb/h5DoxwvZAMF\nq5TspKR+z9eR4tWo2l4n1egcyTvYloHxq8IOZs4mFy49b+cSQW1nFlm+ZlZQYH1k\nE3RT0yyyisox5ifTCYUc0Xabq4Ue8QSIq25mfAmPs/gfffu+YQfMQqtEgV6KyEVp\n8PcJ5zZUEyyMcbdfDqkM83vSGAcA21nG/odqsK/iZYkZOQWUL/aAzqYs1J0nnBoQ\n+0JEXBXSoUtKx3FdaH5oxV1oJTuJrz948Pwpyi4HHsWafs67oWLCiaYbAZzwZ7l+\n/sXNKippM+4EgEa5OXxKVuKUYY4oLF81FzX0uP8HL1TapKsmGWguZpY9NrXZt76Z\nx5QvifadYknKr1Eu4ybM\n=JhoU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0b0c2b1e646f3bd62d521da11640da6b349ee80d\nparent 9e84f5e822499f93877092fe0d48b888b285ceef\nauthor jack <212554440+jackjackbits@users.noreply.github.com> 1780230249 +0200\ncommitter GitHub <noreply@github.com> 1780230249 +0200\n\n[codex] Extract BLE link state store (#1310)\n\n* Refactor BLE transport event handling\n\n* Make image output paths unique\n\n* Keep queued Nostr read receipts alive\n\n* Refine BLE ingress fanout\n\n* Rediscover BLE service after invalidation\n\n* Extract BLE notification retry buffer\n\n* Extract BLE inbound write buffer\n\n* Extract BLE fragment assembly buffer\n\n* Tidy secure log handling from device run\n\n* Extract BLE outbound fragment scheduler\n\n* Harden app CI media tests\n\n* Redact BLE message content from logs\n\n* Extract BLE Noise session queues\n\n* Fix BLE read receipt UI updates\n\n* Allow self-authored RSR ingress replies\n\n* Harden read receipt queue test timing\n\n* Extract BLE outbound policy and incoming file storage\n\n* Avoid duplicate BLE link snapshots during send\n\n* Canonicalize Nostr relay URLs\n\n* Extract BLE link state store\n\n* Extract BLE connection scheduler\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+        "verified_at": "2026-05-31T12:24:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/ffa0d7aa4f96f4273b99369fc7ae3851258debee",
+    "html_url": "https://github.com/permissionlesstech/bitchat/commit/ffa0d7aa4f96f4273b99369fc7ae3851258debee",
+    "comments_url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/ffa0d7aa4f96f4273b99369fc7ae3851258debee/comments",
+    "author": {
+      "login": "jackjackbits",
+      "id": 212554440,
+      "node_id": "U_kgDODKtSyA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/212554440?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jackjackbits",
+      "html_url": "https://github.com/jackjackbits",
+      "followers_url": "https://api.github.com/users/jackjackbits/followers",
+      "following_url": "https://api.github.com/users/jackjackbits/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jackjackbits/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jackjackbits/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jackjackbits/subscriptions",
+      "organizations_url": "https://api.github.com/users/jackjackbits/orgs",
+      "repos_url": "https://api.github.com/users/jackjackbits/repos",
+      "events_url": "https://api.github.com/users/jackjackbits/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jackjackbits/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9e84f5e822499f93877092fe0d48b888b285ceef",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/9e84f5e822499f93877092fe0d48b888b285ceef",
+        "html_url": "https://github.com/permissionlesstech/bitchat/commit/9e84f5e822499f93877092fe0d48b888b285ceef"
+      }
+    ]
+  },
+  {
+    "sha": "9e84f5e822499f93877092fe0d48b888b285ceef",
+    "node_id": "C_kwDOPG3UANoAKDllODRmNWU4MjI0OTlmOTM4NzcwOTJmZTBkNDhiODg4YjI4NWNlZWY",
+    "commit": {
+      "author": {
+        "name": "jack",
+        "email": "212554440+jackjackbits@users.noreply.github.com",
+        "date": "2026-05-31T12:16:11Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-31T12:16:11Z"
+      },
+      "message": "[codex] Refactor BLE outbound scheduling and Noise queues (#1306)\n\n* Refactor BLE transport event handling\n\n* Make image output paths unique\n\n* Keep queued Nostr read receipts alive\n\n* Refine BLE ingress fanout\n\n* Rediscover BLE service after invalidation\n\n* Extract BLE notification retry buffer\n\n* Extract BLE inbound write buffer\n\n* Extract BLE fragment assembly buffer\n\n* Tidy secure log handling from device run\n\n* Extract BLE outbound fragment scheduler\n\n* Harden app CI media tests\n\n* Redact BLE message content from logs\n\n* Extract BLE Noise session queues\n\n* Fix BLE read receipt UI updates\n\n* Allow self-authored RSR ingress replies\n\n* Harden read receipt queue test timing\n\n* Extract BLE outbound policy and incoming file storage\n\n* Avoid duplicate BLE link snapshots during send\n\n* Canonicalize Nostr relay URLs\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+      "tree": {
+        "sha": "ad88e809b380e309a8fe93235670fe8fe85ff797",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/trees/ad88e809b380e309a8fe93235670fe8fe85ff797"
+      },
+      "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/commits/9e84f5e822499f93877092fe0d48b888b285ceef",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqHCaLCRC1aQ7uu5UhlAAA5wcQAAwFZ7V7jtyv/7LE5JjQuL08\nXLO/EVuC9mlq1rV27NBAPCgrMSdEL7LbzJQNoXWS153sHaDgRPv6SI5lJasdlXJP\np1c1H+3S089ECjVzNPVaBdmMJ/EjMv01gH9x9nvCXbMTgLPjiVoK7hahV8EGcvAK\nA6etMjdD2xBr1wp2wQ0geU63Lh8AdLiUJ19WefZN6SPZRBnJUIfKg9g4r0z/MfbV\n2/9p+862yC0HKm+Js86i1x4jk78Fa9VFaPD0MveI5HzYdGFKomr3jcZp2qdTvWsC\n4xHYd1qZPAZfhOYvdnzk+TCqTPIPDKxGVxs041tjvIdQnBQZOQCdQc/yUFACrhKr\njt2Un6h8AsgMg246gzHkOF8elB3uDfk3Em3+3wHkA9q0kBWMBHgnjFdD3EYSWs5G\nSpW4PJabChuAMVpPEfBsELkJ17upDuwCKPpbSrkaTxITdJ4XPwBNgROoPMk+53jH\ntVaKBXSiiJ8LuY4PciNb2g8V1rddRKAc+6cNjY4xdxT0YCj5McDx92AoZhLg2+ki\nTL/I8310TwsWca+loazfuYj1hGQheKyQ+OZeBHG8Whm7zY5Bf3U//W4Y8eedZ5jF\nwcchJOhZYZjPOkSgWwPULiCwojwzD68AWH++zjhbQszrm2jrSYyVOtP5SnQlO/L8\nwV3AO+0gPOk0bZjjfU1D\n=Cq3h\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ad88e809b380e309a8fe93235670fe8fe85ff797\nparent df36b19afedb10a354314c91bce6c624266eb19c\nauthor jack <212554440+jackjackbits@users.noreply.github.com> 1780229771 +0200\ncommitter GitHub <noreply@github.com> 1780229771 +0200\n\n[codex] Refactor BLE outbound scheduling and Noise queues (#1306)\n\n* Refactor BLE transport event handling\n\n* Make image output paths unique\n\n* Keep queued Nostr read receipts alive\n\n* Refine BLE ingress fanout\n\n* Rediscover BLE service after invalidation\n\n* Extract BLE notification retry buffer\n\n* Extract BLE inbound write buffer\n\n* Extract BLE fragment assembly buffer\n\n* Tidy secure log handling from device run\n\n* Extract BLE outbound fragment scheduler\n\n* Harden app CI media tests\n\n* Redact BLE message content from logs\n\n* Extract BLE Noise session queues\n\n* Fix BLE read receipt UI updates\n\n* Allow self-authored RSR ingress replies\n\n* Harden read receipt queue test timing\n\n* Extract BLE outbound policy and incoming file storage\n\n* Avoid duplicate BLE link snapshots during send\n\n* Canonicalize Nostr relay URLs\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+        "verified_at": "2026-05-31T12:16:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/9e84f5e822499f93877092fe0d48b888b285ceef",
+    "html_url": "https://github.com/permissionlesstech/bitchat/commit/9e84f5e822499f93877092fe0d48b888b285ceef",
+    "comments_url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/9e84f5e822499f93877092fe0d48b888b285ceef/comments",
+    "author": {
+      "login": "jackjackbits",
+      "id": 212554440,
+      "node_id": "U_kgDODKtSyA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/212554440?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jackjackbits",
+      "html_url": "https://github.com/jackjackbits",
+      "followers_url": "https://api.github.com/users/jackjackbits/followers",
+      "following_url": "https://api.github.com/users/jackjackbits/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jackjackbits/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jackjackbits/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jackjackbits/subscriptions",
+      "organizations_url": "https://api.github.com/users/jackjackbits/orgs",
+      "repos_url": "https://api.github.com/users/jackjackbits/repos",
+      "events_url": "https://api.github.com/users/jackjackbits/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jackjackbits/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "df36b19afedb10a354314c91bce6c624266eb19c",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/df36b19afedb10a354314c91bce6c624266eb19c",
+        "html_url": "https://github.com/permissionlesstech/bitchat/commit/df36b19afedb10a354314c91bce6c624266eb19c"
+      }
+    ]
+  },
+  {
+    "sha": "df36b19afedb10a354314c91bce6c624266eb19c",
+    "node_id": "C_kwDOPG3UANoAKGRmMzZiMTlhZmVkYjEwYTM1NDMxNGM5MWJjZTZjNjI0MjY2ZWIxOWM",
+    "commit": {
+      "author": {
+        "name": "jack",
+        "email": "212554440+jackjackbits@users.noreply.github.com",
+        "date": "2026-05-31T12:08:30Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-31T12:08:30Z"
+      },
+      "message": "[codex] Refine BLE ingress fanout (#1280)\n\n* Refactor BLE transport event handling\n\n* Make image output paths unique\n\n* Keep queued Nostr read receipts alive\n\n* Refine BLE ingress fanout\n\n* Rediscover BLE service after invalidation\n\n* Extract BLE notification retry buffer\n\n* Extract BLE inbound write buffer\n\n* Extract BLE fragment assembly buffer\n\n* Tidy secure log handling from device run\n\n* Allow self-authored RSR ingress replies\n\n* Harden read receipt queue test timing\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+      "tree": {
+        "sha": "42e1c73893c1b79fbeba129c6b3acb7f516e3b10",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/trees/42e1c73893c1b79fbeba129c6b3acb7f516e3b10"
+      },
+      "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/commits/df36b19afedb10a354314c91bce6c624266eb19c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqHCS+CRC1aQ7uu5UhlAAA1d0QACdX12L9GtkRYgiBDCVlMqGr\nt17MA85LS6gs04VkD2O7RZ8VtxVQEh4yIKhtGRhe7u0zZhEpGHP60O/RcEWNwY+8\nC7P5s5qkam27yq3MHZpRQr7J5k9i8RSyjm/6AYg9HHn57hHclSmnZ0pSG8lC7aWC\nYsdFhGjFi7C3BkYouPUXCjKx4ovrk0EF132DQ0jDnp7M3vNkCCaTKriKBhaEEiNV\n1hJSy1C2kfdLVLYhi1hYLlSP93cUOGLEKjSj5bGzkPqLMWAL6UanVndGvGkoD13b\nJa6TctkEzS+/kMXt/Q6mcLRtGog66O/k7krPs01hnu90KgPzpmPdG0WtnfLOkj0g\nsgh7XFmaJbEF+bZrjxxJmmmueH28TQhZ++OT+UMtADie6La2WJ8Oi+L/z17xzO6n\nXcJ5GgIO4BCL7azxLhaIDj9yKju4et4bPsUrqeNmfznt0MeV+BmDiNmaZGTmpfLx\nQYEYTFeOCYs4xHgo2OPubZe3JzcfCnDwU2TK8SohRd8ls2xE+km6F5ajHKzqozEe\n7FXwlMany6nkNUXkCG7T+AOTiJ2GtY9xra+4ZuEz6bD36UAoui5VSbFbvn2vBvgd\n0qqSWTwXz1LLgobL8WY2wDa6wqPGdA8NAvqiJA9TRjWYVVOpLiYtAUxqIdrTxZfl\nNxscAzLFDKyGnLAVEibk\n=wtYr\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 42e1c73893c1b79fbeba129c6b3acb7f516e3b10\nparent ab0da61533a1091ee2d50168d587985ff9ef18ff\nauthor jack <212554440+jackjackbits@users.noreply.github.com> 1780229310 +0200\ncommitter GitHub <noreply@github.com> 1780229310 +0200\n\n[codex] Refine BLE ingress fanout (#1280)\n\n* Refactor BLE transport event handling\n\n* Make image output paths unique\n\n* Keep queued Nostr read receipts alive\n\n* Refine BLE ingress fanout\n\n* Rediscover BLE service after invalidation\n\n* Extract BLE notification retry buffer\n\n* Extract BLE inbound write buffer\n\n* Extract BLE fragment assembly buffer\n\n* Tidy secure log handling from device run\n\n* Allow self-authored RSR ingress replies\n\n* Harden read receipt queue test timing\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+        "verified_at": "2026-05-31T12:08:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/df36b19afedb10a354314c91bce6c624266eb19c",
+    "html_url": "https://github.com/permissionlesstech/bitchat/commit/df36b19afedb10a354314c91bce6c624266eb19c",
+    "comments_url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/df36b19afedb10a354314c91bce6c624266eb19c/comments",
+    "author": {
+      "login": "jackjackbits",
+      "id": 212554440,
+      "node_id": "U_kgDODKtSyA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/212554440?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jackjackbits",
+      "html_url": "https://github.com/jackjackbits",
+      "followers_url": "https://api.github.com/users/jackjackbits/followers",
+      "following_url": "https://api.github.com/users/jackjackbits/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jackjackbits/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jackjackbits/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jackjackbits/subscriptions",
+      "organizations_url": "https://api.github.com/users/jackjackbits/orgs",
+      "repos_url": "https://api.github.com/users/jackjackbits/repos",
+      "events_url": "https://api.github.com/users/jackjackbits/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jackjackbits/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ab0da61533a1091ee2d50168d587985ff9ef18ff",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/ab0da61533a1091ee2d50168d587985ff9ef18ff",
+        "html_url": "https://github.com/permissionlesstech/bitchat/commit/ab0da61533a1091ee2d50168d587985ff9ef18ff"
+      }
+    ]
+  },
+  {
+    "sha": "ab0da61533a1091ee2d50168d587985ff9ef18ff",
+    "node_id": "C_kwDOPG3UANoAKGFiMGRhNjE1MzNhMTA5MWVlMmQ1MDE2OGQ1ODc5ODVmZjllZjE4ZmY",
+    "commit": {
+      "author": {
+        "name": "jack",
+        "email": "212554440+jackjackbits@users.noreply.github.com",
+        "date": "2026-05-31T11:58:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-31T11:58:27Z"
+      },
+      "message": "[codex] Refactor BLE transport event handling (#1266)\n\n* Refactor BLE transport event handling\n\n* Make image output paths unique\n\n* Keep queued Nostr read receipts alive\n\n* Allow self-authored RSR ingress replies\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+      "tree": {
+        "sha": "276272d127d71426a81fa0f12f20b308eed67022",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/trees/276272d127d71426a81fa0f12f20b308eed67022"
+      },
+      "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/commits/ab0da61533a1091ee2d50168d587985ff9ef18ff",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqHCJjCRC1aQ7uu5UhlAAACXEQAGLq9xSbUrA7nkilf0DV41fj\ndt39SW73H/a8JyQOmOFo6M6pasTw6uupgaB/sx3CT76NylJH6LMZY20ibaf4c7Mm\nwuqcE8TyvHzfr0nIfVqK2RF7K8++b31Z+1F05bbzRbA+iJaNtBzTxSAzkhRHGhtd\n86KRr9rAPuJZyXL4eL+/Z8JPbTON7lFU3s01oU0CcdXy2LUI5dV1dRD6OGKQ4Jdf\nnBGbqZGJqWeQ/IXfOwHv/QYfJZZ1qplod7p2W7VWrOh4SSDKL1K+wwy8vXX2hfGP\n1upFOeyQcxDCcNPKZizwFf61NwtbVMKAhWEXGT9VEWxRxZ2DGUMs4cOLiRpIMTWj\ntVqE7gFua7hWqGF7FH3C1tnDVKIMIOTiI4nIQLCZBCHiucqj1M+rUmUC+a1PN0q9\nOfvs2cg8QoPa+PbTOMKzcbS8p5tNuMU3AXrZ+6U9EO3dzoZ2IyF0mJYj1ckARlVS\n03x7drLcSlXXSzoy/kbEeHMHFCaLN8P/2uWP2MYP8OvjZRX3YQ6z5gUGmxEtB331\njnT8lSs9/j/9JlwUiCzrT972nenHjrqcV7pbWXEBcM/k1aUXAd/HsobQ0wTQNI7C\nhPG//FGzCg+Slz00a+twro1S7vBtcSe+sxrSQUFowcVigkidnHZFL6lrilUsCLxP\nz22b9wyk/lBvCGdmO77B\n=ZTGG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 276272d127d71426a81fa0f12f20b308eed67022\nparent 3be8fbf1c425337def5eb9b75aa9b563e22cf048\nauthor jack <212554440+jackjackbits@users.noreply.github.com> 1780228707 +0200\ncommitter GitHub <noreply@github.com> 1780228707 +0200\n\n[codex] Refactor BLE transport event handling (#1266)\n\n* Refactor BLE transport event handling\n\n* Make image output paths unique\n\n* Keep queued Nostr read receipts alive\n\n* Allow self-authored RSR ingress replies\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+        "verified_at": "2026-05-31T11:58:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/ab0da61533a1091ee2d50168d587985ff9ef18ff",
+    "html_url": "https://github.com/permissionlesstech/bitchat/commit/ab0da61533a1091ee2d50168d587985ff9ef18ff",
+    "comments_url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/ab0da61533a1091ee2d50168d587985ff9ef18ff/comments",
+    "author": {
+      "login": "jackjackbits",
+      "id": 212554440,
+      "node_id": "U_kgDODKtSyA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/212554440?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jackjackbits",
+      "html_url": "https://github.com/jackjackbits",
+      "followers_url": "https://api.github.com/users/jackjackbits/followers",
+      "following_url": "https://api.github.com/users/jackjackbits/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jackjackbits/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jackjackbits/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jackjackbits/subscriptions",
+      "organizations_url": "https://api.github.com/users/jackjackbits/orgs",
+      "repos_url": "https://api.github.com/users/jackjackbits/repos",
+      "events_url": "https://api.github.com/users/jackjackbits/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jackjackbits/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3be8fbf1c425337def5eb9b75aa9b563e22cf048",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/3be8fbf1c425337def5eb9b75aa9b563e22cf048",
+        "html_url": "https://github.com/permissionlesstech/bitchat/commit/3be8fbf1c425337def5eb9b75aa9b563e22cf048"
+      }
+    ]
+  },
+  {
+    "sha": "3be8fbf1c425337def5eb9b75aa9b563e22cf048",
+    "node_id": "C_kwDOPG3UANoAKDNiZThmYmYxYzQyNTMzN2RlZjVlYjliNzVhYTliNTYzZTIyY2YwNDg",
+    "commit": {
+      "author": {
+        "name": "GitHub Action",
+        "email": "action@github.com",
+        "date": "2026-05-31T07:17:57Z"
+      },
+      "committer": {
+        "name": "GitHub Action",
+        "email": "action@github.com",
+        "date": "2026-05-31T07:17:57Z"
+      },
+      "message": "Automated update of relay data - Sun May 31 07:17:57 UTC 2026",
+      "tree": {
+        "sha": "9da72f952fea4d8feb7ff14e0ca8f42d6cbcb188",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/trees/9da72f952fea4d8feb7ff14e0ca8f42d6cbcb188"
+      },
+      "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/commits/3be8fbf1c425337def5eb9b75aa9b563e22cf048",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/3be8fbf1c425337def5eb9b75aa9b563e22cf048",
+    "html_url": "https://github.com/permissionlesstech/bitchat/commit/3be8fbf1c425337def5eb9b75aa9b563e22cf048",
+    "comments_url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/3be8fbf1c425337def5eb9b75aa9b563e22cf048/comments",
+    "author": {
+      "login": "actions-user",
+      "id": 65916846,
+      "node_id": "MDQ6VXNlcjY1OTE2ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/actions-user",
+      "html_url": "https://github.com/actions-user",
+      "followers_url": "https://api.github.com/users/actions-user/followers",
+      "following_url": "https://api.github.com/users/actions-user/following{/other_user}",
+      "gists_url": "https://api.github.com/users/actions-user/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/actions-user/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/actions-user/subscriptions",
+      "organizations_url": "https://api.github.com/users/actions-user/orgs",
+      "repos_url": "https://api.github.com/users/actions-user/repos",
+      "events_url": "https://api.github.com/users/actions-user/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/actions-user/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "actions-user",
+      "id": 65916846,
+      "node_id": "MDQ6VXNlcjY1OTE2ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/actions-user",
+      "html_url": "https://github.com/actions-user",
+      "followers_url": "https://api.github.com/users/actions-user/followers",
+      "following_url": "https://api.github.com/users/actions-user/following{/other_user}",
+      "gists_url": "https://api.github.com/users/actions-user/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/actions-user/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/actions-user/subscriptions",
+      "organizations_url": "https://api.github.com/users/actions-user/orgs",
+      "repos_url": "https://api.github.com/users/actions-user/repos",
+      "events_url": "https://api.github.com/users/actions-user/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/actions-user/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "764f016d17976c10c469a30737e9049cce0fd80b",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/764f016d17976c10c469a30737e9049cce0fd80b",
+        "html_url": "https://github.com/permissionlesstech/bitchat/commit/764f016d17976c10c469a30737e9049cce0fd80b"
+      }
+    ]
+  }
+]

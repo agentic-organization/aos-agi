@@ -27,6 +27,8 @@ Key NUTs include the mandatory primitives (minting, melting via Lightning, BDHKE
 
 - 2026-05-14: `data/raw/github/daily/2026-05-14/cashubtc/nuts/` captured **2 commits** in the 24h window. Themes: new error code 12003 for expired keysets, NUT-29 error codes for duplicate quote IDs. Committers: gudnuf, kvngmikey.
 
+- 2026-06-01: Daily ingestion (`data/raw/github/daily/2026-06-01/cashubtc/nuts/`) shows **4 issues updated** (no new commits in the 24h window). **100 events** in the 24h window — sustained spec discussion activity.
+
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
 - Which Cashu library (cashu-ts, CDK, Nutshell, etc.) it builds on.

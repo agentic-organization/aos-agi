@@ -51,6 +51,10 @@ One of the two canonical mint stacks alongside [[projects/mintd]] (CDK/Rust).
 
 - 2026-05-25: Daily ingestion (`data/raw/github/daily/2026-05-25/cashubtc/nutshell/`) shows **34 PushEvents** and **1 updated issue** — continued high PR/issue churn but no default-branch commits in the 24h window. Actors: [[people/callebtc]], [[people/a1denvalu3]], [[people/codecov-bot]], KvngMikey, Codepocketdev, b-l-u-e, GEET3001.
 - 2026-05-26: Daily ingestion (`data/raw/github/daily/2026-05-26/cashubtc/nutshell/`) shows **2 commits** in the 24h window. Merge PR #1017 from gorrdy: tolerate missing preimage in LNbits payment status response. Committers: [[people/a1denvalu3]] (merge), gorrdy (author).
+- 2026-05-31: Daily ingestion (`data/raw/github/daily/2026-05-31/cashubtc/nutshell/`) shows **2 commits** in the 24h window — both by [[people/a1denvalu3]] (merge PR #1027) and joelklabo (author). Theme: fix fee math for `clnrest` and `corelightningrest` backends — correct fee amount calculation in the lightning backend layer. **5 issues updated** including max fee reserve on blink payment quotes (#1029), unit-aware conversion for melt `fee_limit_msat` (#1028), unpaid invoices in CLI invoice command (#1022), and wallet CLI raw proofs listing (#1026).
+
+- 2026-06-01: Daily ingestion (`data/raw/github/daily/2026-06-01/cashubtc/nutshell/`) shows **1 commit** by [[people/callebtc]]: "bump to 0.20.1" (#1030) — version bump release. **8 issues updated**. **98 events** in the 24h window.
+
 ## Open questions
 - Funding model and activity cadence.
 - Current deployment footprint and active user count, if any.

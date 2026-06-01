@@ -1,0 +1,4832 @@
+[
+  {
+    "id": "12192545832",
+    "type": "PushEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 34482892247,
+      "ref": "refs/heads/main",
+      "head": "1e5532824baa47791ec93984349ed56138f9b472",
+      "before": "948e8da3b00c48e9e325cf3acb2254c334e4bb84"
+    },
+    "public": true,
+    "created_at": "2026-05-21T18:21:41Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9752721710",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 148,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/148",
+        "id": 3724867098,
+        "number": 148,
+        "head": {
+          "ref": "feat/enable-creator-delete-pipeline",
+          "sha": "499bc3817526960866cc6d596a11b9f11d088a40",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T18:21:39Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9752428159",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 18184,
+      "login": "dcadenas",
+      "display_login": "dcadenas",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4339523459,
+        "node_id": "PRR_kwDOQYdZgc8AAAABAqffgw",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "✅ creator-delete pipeline is ready",
+        "commit_id": "499bc3817526960866cc6d596a11b9f11d088a40",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/148#pullrequestreview-4339523459",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/148",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-moderation-service/pull/148#pullrequestreview-4339523459"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/148"
+          }
+        },
+        "submitted_at": "2026-05-21T18:14:19Z",
+        "updated_at": "2026-05-21T18:14:19Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/148",
+        "id": 3724867098,
+        "number": 148,
+        "head": {
+          "ref": "feat/enable-creator-delete-pipeline",
+          "sha": "499bc3817526960866cc6d596a11b9f11d088a40",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-21T18:14:21Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "12191639502",
+    "type": "PushEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 34481988296,
+      "ref": "refs/heads/feat/enable-creator-delete-pipeline",
+      "head": "499bc3817526960866cc6d596a11b9f11d088a40",
+      "before": "bd30bef9eb3303bd81d7d4a8a8f81b491511331a"
+    },
+    "public": true,
+    "created_at": "2026-05-21T17:59:26Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9748859320",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 18184,
+      "login": "dcadenas",
+      "display_login": "dcadenas",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcadenas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18184?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4338870357,
+        "node_id": "PRR_kwDOQYdZgc8AAAABAp3oVQ",
+        "user": {
+          "login": "dcadenas",
+          "id": 18184,
+          "node_id": "MDQ6VXNlcjE4MTg0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/18184?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dcadenas",
+          "html_url": "https://github.com/dcadenas",
+          "followers_url": "https://api.github.com/users/dcadenas/followers",
+          "following_url": "https://api.github.com/users/dcadenas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/dcadenas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/dcadenas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/dcadenas/subscriptions",
+          "organizations_url": "https://api.github.com/users/dcadenas/orgs",
+          "repos_url": "https://api.github.com/users/dcadenas/repos",
+          "events_url": "https://api.github.com/users/dcadenas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/dcadenas/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "This needs two fixes before it can merge.\nThe creator-delete path must prove the delete author owns the target event, and transient relay lookup failures must stay retryable instead of becoming permanent failures.\n\n---\n**Additional required changes**\n\n- **[src/creator-delete/process.mjs:105](https://github.com/divinevideo/divine-moderation-service/blob/bd30bef9eb3303bd81d7d4a8a8f81b491511331a/src/creator-delete/process.mjs#L105)**\n  Validate that `target.pubkey` matches `kind5.pubkey` before extracting the sha256 or calling Blossom DELETE.\n  Right now a kind 5 event can reference another creator's video event, and this shared processor will still delete that target blob once the pipeline is enabled.\n  Record a terminal author-mismatch failure and skip Blossom when the authors do not match, then cover both the mismatch and success paths in tests.\n- **[src/creator-delete/process.mjs:105](https://github.com/divinevideo/divine-moderation-service/blob/bd30bef9eb3303bd81d7d4a8a8f81b491511331a/src/creator-delete/process.mjs#L105)**\n  Do not turn every null `fetchTargetEvent` result into `failed:permanent:target_unresolved`.\n  The production lookup also returns null for relay request failures or thrown fetches in `src/nostr/relay-client.mjs`, so a temporary outage, timeout, 429, 5xx, or indexing delay can make a valid delete stop retrying.\n  Split confirmed not-found from transient lookup failure, and record transient lookup failures as retryable so cron can complete the delete later.",
+        "commit_id": "bd30bef9eb3303bd81d7d4a8a8f81b491511331a",
+        "state": "changes_requested",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/148#pullrequestreview-4338870357",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/148",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-moderation-service/pull/148#pullrequestreview-4338870357"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/148"
+          }
+        },
+        "submitted_at": "2026-05-21T16:43:39Z",
+        "updated_at": "2026-05-21T16:43:39Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/148",
+        "id": 3724867098,
+        "number": 148,
+        "head": {
+          "ref": "feat/enable-creator-delete-pipeline",
+          "sha": "499bc3817526960866cc6d596a11b9f11d088a40",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-21T16:43:41Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9748121628",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 148,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/148",
+        "id": 3724867098,
+        "number": 148,
+        "head": {
+          "ref": "feat/enable-creator-delete-pipeline",
+          "sha": "499bc3817526960866cc6d596a11b9f11d088a40",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T16:24:24Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "12187700101",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "feat/enable-creator-delete-pipeline",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/enable-creator-delete-pipeline",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-21T16:24:17Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9715492609",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 147,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/147",
+        "id": 3718383030,
+        "number": 147,
+        "head": {
+          "ref": "feat/delete-action-validation",
+          "sha": "3f374cc087e995f591cb9b586d9c998798808d68",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "70b8d2fa615620c1ef33861d0d015398595643d6",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-20T23:56:51Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "12150375021",
+    "type": "PushEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 34440790026,
+      "ref": "refs/heads/main",
+      "head": "948e8da3b00c48e9e325cf3acb2254c334e4bb84",
+      "before": "70b8d2fa615620c1ef33861d0d015398595643d6"
+    },
+    "public": true,
+    "created_at": "2026-05-20T23:56:52Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9715269953",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4332955040,
+        "node_id": "PRR_kwDOQYdZgc8AAAABAkOloA",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Final pass is clean. The follow-up fixes remove the action-list drift, make DELETE a first-class normalized moderation action, keep the admin endpoint intentionally non-DELETE, and add regression coverage for the relay-skip path. Local lint and the full test suite passed, and the required GitHub Actions checks are green on commit 3f374cc.",
+        "commit_id": "3f374cc087e995f591cb9b586d9c998798808d68",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/147#pullrequestreview-4332955040",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/147",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-moderation-service/pull/147#pullrequestreview-4332955040"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/147"
+          }
+        },
+        "submitted_at": "2026-05-20T23:47:21Z",
+        "updated_at": "2026-05-20T23:47:21Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/147",
+        "id": 3718383030,
+        "number": 147,
+        "head": {
+          "ref": "feat/delete-action-validation",
+          "sha": "3f374cc087e995f591cb9b586d9c998798808d68",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "70b8d2fa615620c1ef33861d0d015398595643d6",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-20T23:47:23Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9715221694",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/147",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/147/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/147/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/147/events",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/147",
+        "id": 4488567254,
+        "node_id": "PR_kwDOQYdZgc7dogW2",
+        "number": 147,
+        "title": "feat: add DELETE to validActions on /api/v1/moderate",
+        "user": {
+          "login": "mbradley",
+          "id": 168114,
+          "node_id": "MDQ6VXNlcjE2ODExNA==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/168114?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mbradley",
+          "html_url": "https://github.com/mbradley",
+          "followers_url": "https://api.github.com/users/mbradley/followers",
+          "following_url": "https://api.github.com/users/mbradley/following{/other_user}",
+          "gists_url": "https://api.github.com/users/mbradley/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/mbradley/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/mbradley/subscriptions",
+          "organizations_url": "https://api.github.com/users/mbradley/orgs",
+          "repos_url": "https://api.github.com/users/mbradley/repos",
+          "events_url": "https://api.github.com/users/mbradley/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/mbradley/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-05-20T17:27:45Z",
+        "updated_at": "2026-05-20T23:56:51Z",
+        "closed_at": "2026-05-20T23:56:51Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/147",
+          "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/147",
+          "diff_url": "https://github.com/divinevideo/divine-moderation-service/pull/147.diff",
+          "patch_url": "https://github.com/divinevideo/divine-moderation-service/pull/147.patch",
+          "merged_at": "2026-05-20T23:56:51Z"
+        },
+        "body": "## Summary\n\n- Adds `DELETE` to the `validActions` array on the `/api/v1/moderate` endpoint\n- `BLOSSOM_ACTION_MAP` already maps `DELETE` -> `DELETE` -- the only thing blocking DELETE requests was this validation array\n- Prerequisite for relay-manager deletion alignment work (composable moderation actions, age review integration)\n\n## Test plan\n\n- [ ] `npx vitest run` passes (1,241 tests, all green)\n- [ ] Deploy to production, verify `/api/v1/moderate` accepts `action: \"DELETE\"` for a test hash",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/147/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/147/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/comments/4503548921",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/147#issuecomment-4503548921",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/147",
+        "id": 4503548921,
+        "node_id": "IC_kwDOQYdZgc8AAAABDG6z-Q",
+        "user": {
+          "login": "NotThatKindOfDrLiz",
+          "id": 127434495,
+          "node_id": "U_kgDOB5h-_w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127434495?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+          "html_url": "https://github.com/NotThatKindOfDrLiz",
+          "followers_url": "https://api.github.com/users/NotThatKindOfDrLiz/followers",
+          "following_url": "https://api.github.com/users/NotThatKindOfDrLiz/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NotThatKindOfDrLiz/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NotThatKindOfDrLiz/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NotThatKindOfDrLiz/subscriptions",
+          "organizations_url": "https://api.github.com/users/NotThatKindOfDrLiz/orgs",
+          "repos_url": "https://api.github.com/users/NotThatKindOfDrLiz/repos",
+          "events_url": "https://api.github.com/users/NotThatKindOfDrLiz/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NotThatKindOfDrLiz/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-20T23:45:20Z",
+        "updated_at": "2026-05-20T23:45:20Z",
+        "body": "Pushed a follow-up cleanup commit (3f374cc) onto this branch.\n\nWhat changed:\n- centralized moderation action constants so /api/v1/moderate, shared normalization, and uploader-history all agree on DELETE\n- kept /admin/api/moderate/:sha256 explicitly non-DELETE by deriving its allowlist from the shared action list\n- fixed notifyRelay() to skip DELETE before checking event_id or NOSTR_PRIVATE_KEY, which avoids false relay warnings for creator kind-5 deletes\n- added an end-to-end /api/v1/moderate regression test for DELETE\n- updated uploader-history expectations to include DELETE as a first-class moderation action\n\nValidation run locally on this branch:\n- npm run lint\n- npm test (1242/1242 passing)\n\nI am waiting on GitHub Actions now and will do one final review pass before approval once the remote checks finish.",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/comments/4503548921/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-20T23:45:20Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "12150080049",
+    "type": "PushEvent",
+    "actor": {
+      "id": 127434495,
+      "login": "NotThatKindOfDrLiz",
+      "display_login": "NotThatKindOfDrLiz",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NotThatKindOfDrLiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127434495?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 34440496175,
+      "ref": "refs/heads/feat/delete-action-validation",
+      "head": "3f374cc087e995f591cb9b586d9c998798808d68",
+      "before": "f7cd2492f84bdfaf19f2c92d3976e8f7ffbeddd9"
+    },
+    "public": true,
+    "created_at": "2026-05-20T23:45:00Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9702315986",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 147,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/147",
+        "id": 3718383030,
+        "number": 147,
+        "head": {
+          "ref": "feat/delete-action-validation",
+          "sha": "3f374cc087e995f591cb9b586d9c998798808d68",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "70b8d2fa615620c1ef33861d0d015398595643d6",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-20T17:27:45Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "12136370972",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "feat/delete-action-validation",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/delete-action-validation",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-20T17:27:27Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "12102151697",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 34392654079,
+      "ref": "refs/heads/worktree-fix-public-moderation-status",
+      "head": "101823d07375c0300b844b80c4cf6bab325bed46",
+      "before": "668ea7a0653f34cb394cad46443e5f35e0c5990e"
+    },
+    "public": true,
+    "created_at": "2026-05-20T04:35:31Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9670075806",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 146,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/146",
+        "id": 3713571404,
+        "number": 146,
+        "head": {
+          "ref": "worktree-fix-public-moderation-status",
+          "sha": "101823d07375c0300b844b80c4cf6bab325bed46",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "70b8d2fa615620c1ef33861d0d015398595643d6",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-20T03:43:59Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "12100618395",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "worktree-fix-public-moderation-status",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/worktree-fix-public-moderation-status",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-20T03:43:57Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9549623553",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 145,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/145",
+        "id": 3696375629,
+        "number": 145,
+        "head": {
+          "ref": "codex/use-16core-runners-20260517164530",
+          "sha": "31b44b25171f034d2f8740da9f090f6aef63454d",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "70b8d2fa615620c1ef33861d0d015398595643d6",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-17T04:48:07Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11961940921",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "codex/use-16core-runners-20260517164530",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/codex/use-16core-runners-20260517164530",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-17T04:48:05Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9547731590",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 144,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/144",
+        "id": 3696086561,
+        "number": 144,
+        "head": {
+          "ref": "fix/inbound-report-polling",
+          "sha": "9ce8749cbc91f1cfebb731ce5c4692314ebe29f1",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-17T02:05:20Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11959105800",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 34249732255,
+      "ref": "refs/heads/main",
+      "head": "70b8d2fa615620c1ef33861d0d015398595643d6",
+      "before": "40d93be0d9f70bb0c51ea17ba5699852e12dad28"
+    },
+    "public": true,
+    "created_at": "2026-05-17T02:05:21Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9547729634",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 143,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "id": 3680181945,
+        "number": 143,
+        "head": {
+          "ref": "fix/admin-video-poster-thumbnails",
+          "sha": "836ae73a37462424aff8430c8633c262647198a7",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-17T02:05:07Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11959101803",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 34249728214,
+      "ref": "refs/heads/main",
+      "head": "40d93be0d9f70bb0c51ea17ba5699852e12dad28",
+      "before": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311"
+    },
+    "public": true,
+    "created_at": "2026-05-17T02:05:08Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9547636696",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 144,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/144",
+        "id": 3696086561,
+        "number": 144,
+        "head": {
+          "ref": "fix/inbound-report-polling",
+          "sha": "9ce8749cbc91f1cfebb731ce5c4692314ebe29f1",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-17T01:55:10Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11958911923",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "fix/inbound-report-polling",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/inbound-report-polling",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-17T01:54:57Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9501238715",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 124421399,
+      "login": "DSanich",
+      "display_login": "DSanich",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DSanich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124421399?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4297405634,
+        "node_id": "PRR_kwDOQYdZgc8AAAABACU0wg",
+        "user": {
+          "login": "DSanich",
+          "id": 124421399,
+          "node_id": "U_kgDOB2qFFw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/124421399?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/DSanich",
+          "html_url": "https://github.com/DSanich",
+          "followers_url": "https://api.github.com/users/DSanich/followers",
+          "following_url": "https://api.github.com/users/DSanich/following{/other_user}",
+          "gists_url": "https://api.github.com/users/DSanich/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/DSanich/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/DSanich/subscriptions",
+          "organizations_url": "https://api.github.com/users/DSanich/orgs",
+          "repos_url": "https://api.github.com/users/DSanich/repos",
+          "events_url": "https://api.github.com/users/DSanich/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/DSanich/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Overall this PR looks solid and improves pre-playback UX by wiring thumbnail_url through the admin flow. I only left one small follow-up to align swipe-review poster fallback behavior with dashboard behavior when thumbnailUrl is missing 🙏\n\n",
+        "commit_id": "836ae73a37462424aff8430c8633c262647198a7",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/143#pullrequestreview-4297405634",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-moderation-service/pull/143#pullrequestreview-4297405634"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143"
+          }
+        },
+        "submitted_at": "2026-05-15T10:39:59Z",
+        "updated_at": "2026-05-15T10:39:59Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "id": 3680181945,
+        "number": 143,
+        "head": {
+          "ref": "fix/admin-video-poster-thumbnails",
+          "sha": "836ae73a37462424aff8430c8633c262647198a7",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-15T10:40:00Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9501238712",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 124421399,
+      "login": "DSanich",
+      "display_login": "DSanich",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DSanich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124421399?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4297405634,
+        "node_id": "PRR_kwDOQYdZgc8AAAABACU0wg",
+        "user": {
+          "login": "DSanich",
+          "id": 124421399,
+          "node_id": "U_kgDOB2qFFw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/124421399?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/DSanich",
+          "html_url": "https://github.com/DSanich",
+          "followers_url": "https://api.github.com/users/DSanich/followers",
+          "following_url": "https://api.github.com/users/DSanich/following{/other_user}",
+          "gists_url": "https://api.github.com/users/DSanich/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/DSanich/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/DSanich/subscriptions",
+          "organizations_url": "https://api.github.com/users/DSanich/orgs",
+          "repos_url": "https://api.github.com/users/DSanich/repos",
+          "events_url": "https://api.github.com/users/DSanich/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/DSanich/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Overall this PR looks solid and improves pre-playback UX by wiring thumbnail_url through the admin flow. I only left one small follow-up to align swipe-review poster fallback behavior with dashboard behavior when thumbnailUrl is missing 🙏\n\n",
+        "commit_id": "836ae73a37462424aff8430c8633c262647198a7",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/143#pullrequestreview-4297405634",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-moderation-service/pull/143#pullrequestreview-4297405634"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143"
+          }
+        },
+        "submitted_at": "2026-05-15T10:39:59Z",
+        "updated_at": "2026-05-15T10:39:59Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "id": 3680181945,
+        "number": 143,
+        "head": {
+          "ref": "fix/admin-video-poster-thumbnails",
+          "sha": "836ae73a37462424aff8430c8633c262647198a7",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      },
+      "action": "updated"
+    },
+    "public": true,
+    "created_at": "2026-05-15T10:40:00Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9501212473",
+    "type": "PullRequestReviewCommentEvent",
+    "actor": {
+      "id": 124421399,
+      "login": "DSanich",
+      "display_login": "DSanich",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DSanich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124421399?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "created",
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/comments/3247582844",
+        "pull_request_review_id": 4297405634,
+        "id": 3247582844,
+        "node_id": "PRRC_kwDOQYdZgc7Bki58",
+        "diff_hunk": "@@ -21,4 +21,9 @@ describe('swipe review provenance UI hooks', () => {\n     expect(swipeReviewHTML).toContain('Invalid Proof');\n     expect(swipeReviewHTML).toContain('c2pa-badge');\n   });\n+\n+  it('renders poster thumbnails before video playback starts', () => {\n+    expect(swipeReviewHTML).toContain('const posterUrl = escapeHtml(video.thumbnailUrl || \\'\\');');",
+        "path": "src/admin/swipe-review-ui.test.mjs",
+        "commit_id": "836ae73a37462424aff8430c8633c262647198a7",
+        "original_commit_id": "836ae73a37462424aff8430c8633c262647198a7",
+        "user": {
+          "login": "DSanich",
+          "id": 124421399,
+          "node_id": "U_kgDOB2qFFw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/124421399?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/DSanich",
+          "html_url": "https://github.com/DSanich",
+          "followers_url": "https://api.github.com/users/DSanich/followers",
+          "following_url": "https://api.github.com/users/DSanich/following{/other_user}",
+          "gists_url": "https://api.github.com/users/DSanich/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/DSanich/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/DSanich/subscriptions",
+          "organizations_url": "https://api.github.com/users/DSanich/orgs",
+          "repos_url": "https://api.github.com/users/DSanich/repos",
+          "events_url": "https://api.github.com/users/DSanich/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/DSanich/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Could we update this assertion to reflect the runtime fallback URL? That way the test protects the exact behavior we expect when thumbnailUrl is absent.\n\n```suggestion\n    expect(swipeReviewHTML).toContain('const posterUrl = escapeHtml(video.thumbnailUrl || `https://media.divine.video/${sha256}.jpg`);');\n```",
+        "created_at": "2026-05-15T10:39:12Z",
+        "updated_at": "2026-05-15T10:39:59Z",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/143#discussion_r3247582844",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/comments/3247582844"
+          },
+          "html": {
+            "href": "https://github.com/divinevideo/divine-moderation-service/pull/143#discussion_r3247582844"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143"
+          }
+        },
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/comments/3247582844/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "original_position": 6,
+        "position": 6,
+        "subject_type": "line"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "id": 3680181945,
+        "number": 143,
+        "head": {
+          "ref": "fix/admin-video-poster-thumbnails",
+          "sha": "836ae73a37462424aff8430c8633c262647198a7",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T10:39:12Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9501108302",
+    "type": "PullRequestReviewCommentEvent",
+    "actor": {
+      "id": 124421399,
+      "login": "DSanich",
+      "display_login": "DSanich",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DSanich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124421399?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "created",
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/comments/3247567760",
+        "pull_request_review_id": 4297405634,
+        "id": 3247567760,
+        "node_id": "PRRC_kwDOQYdZgc7BkfOQ",
+        "diff_hunk": "@@ -1428,6 +1428,7 @@ <h2 style=\"font-size:18px;color:#f8fafc;\">Creator Info</h2>\n     function createVideoCard(video) {\n       const { sha256, scores, detailedCategories, isUntriaged, classifierSummary } = video;\n       const videoUrl = '/admin/video/' + sha256 + '.mp4';\n+      const posterUrl = escapeHtml(video.thumbnailUrl || '');",
+        "path": "src/admin/swipe-review.html",
+        "commit_id": "836ae73a37462424aff8430c8633c262647198a7",
+        "original_commit_id": "836ae73a37462424aff8430c8633c262647198a7",
+        "user": {
+          "login": "DSanich",
+          "id": 124421399,
+          "node_id": "U_kgDOB2qFFw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/124421399?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/DSanich",
+          "html_url": "https://github.com/DSanich",
+          "followers_url": "https://api.github.com/users/DSanich/followers",
+          "following_url": "https://api.github.com/users/DSanich/following{/other_user}",
+          "gists_url": "https://api.github.com/users/DSanich/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/DSanich/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/DSanich/subscriptions",
+          "organizations_url": "https://api.github.com/users/DSanich/orgs",
+          "repos_url": "https://api.github.com/users/DSanich/repos",
+          "events_url": "https://api.github.com/users/DSanich/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/DSanich/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "Nice improvement with poster. To avoid blank previews when thumbnailUrl is missing, can we add the same fallback used in the dashboard (media.divine.video/${sha256}.jpg)?\n\n```suggestion\n      const posterUrl = escapeHtml(video.thumbnailUrl || `https://media.divine.video/${sha256}.jpg`);\n```",
+        "created_at": "2026-05-15T10:35:56Z",
+        "updated_at": "2026-05-15T10:39:59Z",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/143#discussion_r3247567760",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/comments/3247567760"
+          },
+          "html": {
+            "href": "https://github.com/divinevideo/divine-moderation-service/pull/143#discussion_r3247567760"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143"
+          }
+        },
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/comments/3247567760/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "original_position": 4,
+        "position": 4,
+        "subject_type": "line"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "id": 3680181945,
+        "number": 143,
+        "head": {
+          "ref": "fix/admin-video-poster-thumbnails",
+          "sha": "836ae73a37462424aff8430c8633c262647198a7",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T10:35:56Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9441944097",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 143,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/143",
+        "id": 3680181945,
+        "number": 143,
+        "head": {
+          "ref": "fix/admin-video-poster-thumbnails",
+          "sha": "836ae73a37462424aff8430c8633c262647198a7",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-14T02:39:32Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11833042475",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "fix/admin-video-poster-thumbnails",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/admin-video-poster-thumbnails",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-14T02:39:23Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9258236506",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 142,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/142",
+        "id": 3652842329,
+        "number": 142,
+        "head": {
+          "ref": "feat/video-thumbnail-modal",
+          "sha": "a8215cdb9b351db05e534ede27f49e9c33313347",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "cf1aaa92e76c63a19f8a79670111cffe41371334",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-09T00:46:46Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11613370869",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33904427592,
+      "ref": "refs/heads/main",
+      "head": "c2a5a7bb26e0ee7aeeade78ba52ac1f188670311",
+      "before": "cf1aaa92e76c63a19f8a79670111cffe41371334"
+    },
+    "public": true,
+    "created_at": "2026-05-09T00:46:47Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9257333128",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 142,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/142",
+        "id": 3652842329,
+        "number": 142,
+        "head": {
+          "ref": "feat/video-thumbnail-modal",
+          "sha": "a8215cdb9b351db05e534ede27f49e9c33313347",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "cf1aaa92e76c63a19f8a79670111cffe41371334",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T23:57:06Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11612361319",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "feat/video-thumbnail-modal",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/video-thumbnail-modal",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-08T23:56:51Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9257293999",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 141,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/141",
+        "id": 3648795211,
+        "number": 141,
+        "head": {
+          "ref": "hotfix/dashboard-poster-thumb",
+          "sha": "37568e9a6ba8cdc0f94a475fae1c739c2e430950",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "cf1aaa92e76c63a19f8a79670111cffe41371334",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:57:28Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9257293898",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/141",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/141/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/141/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/141/events",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/141",
+        "id": 4405504374,
+        "node_id": "PR_kwDOQYdZgc7ZfDJL",
+        "number": 141,
+        "title": "fix: show Blossom thumbnails as posters on video cards",
+        "user": {
+          "login": "rabble",
+          "id": 76,
+          "node_id": "MDQ6VXNlcjc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rabble",
+          "html_url": "https://github.com/rabble",
+          "followers_url": "https://api.github.com/users/rabble/followers",
+          "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+          "organizations_url": "https://api.github.com/users/rabble/orgs",
+          "repos_url": "https://api.github.com/users/rabble/repos",
+          "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rabble/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-05-08T09:57:28Z",
+        "updated_at": "2026-05-08T23:54:44Z",
+        "closed_at": "2026-05-08T23:54:44Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/141",
+          "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/141",
+          "diff_url": "https://github.com/divinevideo/divine-moderation-service/pull/141.diff",
+          "patch_url": "https://github.com/divinevideo/divine-moderation-service/pull/141.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\n\n#139 changed video preload from `\"auto\"` to `\"none\"` to stop the 50-parallel video fetch storm on dashboard render. Side effect: the regular `createVideoCard()` had no `poster` attribute and was relying on `preload=\"auto\"` to decode and display a first frame — without that, cards now show black boxes until you hover.\n\nAdd `poster=\"https://media.divine.video/{sha}.jpg\"`. Blossom auto-generates thumbnails keyed by the video sha (verified: HTTP 200 with real JPEG bytes for SAFE videos). For external Blossom imports the URL 404s and the poster simply doesn't render — graceful degradation, no console errors.\n\nThis restores the visual moderation experience without re-introducing the video preload storm.\n\n## Test plan\n\n- [ ] Reload `/admin/dashboard?action=REVIEW` — cards now show thumbnails for divine-uploaded videos\n- [ ] Network tab: `GET media.divine.video/{sha}.jpg` per card (cheap, cached at edge), still zero `/admin/video/*.mp4` until hover\n- [ ] Hover a card — video plays as before\n- [ ] External-Blossom imports (REVIEW) without a divine thumbnail show black boxes (acceptable — those videos can't be played either)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/141/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/141/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/comments/4410653556",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/141#issuecomment-4410653556",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/141",
+        "id": 4410653556,
+        "node_id": "IC_kwDOQYdZgc8AAAABBuU7dA",
+        "user": {
+          "login": "rabble",
+          "id": 76,
+          "node_id": "MDQ6VXNlcjc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rabble",
+          "html_url": "https://github.com/rabble",
+          "followers_url": "https://api.github.com/users/rabble/followers",
+          "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+          "organizations_url": "https://api.github.com/users/rabble/orgs",
+          "repos_url": "https://api.github.com/users/rabble/repos",
+          "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rabble/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-08T23:54:43Z",
+        "updated_at": "2026-05-08T23:54:43Z",
+        "body": "Superseded — switching to a thumbnail-in-card + click-to-fullscreen-modal architecture instead of preload tweaks. New PR coming.",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/comments/4410653556/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T23:54:43Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9230619277",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 141,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/141",
+        "id": 3648795211,
+        "number": 141,
+        "head": {
+          "ref": "hotfix/dashboard-poster-thumb",
+          "sha": "37568e9a6ba8cdc0f94a475fae1c739c2e430950",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "cf1aaa92e76c63a19f8a79670111cffe41371334",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:57:28Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11582573583",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "hotfix/dashboard-poster-thumb",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/hotfix/dashboard-poster-thumb",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:57:17Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9230235600",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 140,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/140",
+        "id": 3648693173,
+        "number": 140,
+        "head": {
+          "ref": "hotfix/cache-nostr-fallback",
+          "sha": "7805e1f69b46221bedd4c00a2334f44f466a22c8",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c42445cbd43bfd2b7531602f4f0fd0811ae832e9",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:46:26Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11582173863",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33873249422,
+      "ref": "refs/heads/main",
+      "head": "cf1aaa92e76c63a19f8a79670111cffe41371334",
+      "before": "c42445cbd43bfd2b7531602f4f0fd0811ae832e9"
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:46:27Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11582094741",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33873170027,
+      "ref": "refs/heads/hotfix/cache-nostr-fallback",
+      "head": "7805e1f69b46221bedd4c00a2334f44f466a22c8",
+      "before": "cbacf8f0885724392c32a2ad74cb845348b413f4"
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:44:22Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9229973428",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/140",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/140/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/140/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/140/events",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/140",
+        "id": 4405388752,
+        "node_id": "PR_kwDOQYdZgc7ZeqO1",
+        "number": 140,
+        "title": "fix(admin-video): per-fetch try/catch + KV-cache nostr fallback",
+        "user": {
+          "login": "rabble",
+          "id": 76,
+          "node_id": "MDQ6VXNlcjc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rabble",
+          "html_url": "https://github.com/rabble",
+          "followers_url": "https://api.github.com/users/rabble/followers",
+          "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+          "organizations_url": "https://api.github.com/users/rabble/orgs",
+          "repos_url": "https://api.github.com/users/rabble/repos",
+          "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rabble/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-05-08T09:39:07Z",
+        "updated_at": "2026-05-08T09:46:26Z",
+        "closed_at": "2026-05-08T09:46:26Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/140",
+          "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/140",
+          "diff_url": "https://github.com/divinevideo/divine-moderation-service/pull/140.diff",
+          "patch_url": "https://github.com/divinevideo/divine-moderation-service/pull/140.patch",
+          "merged_at": "2026-05-08T09:46:26Z"
+        },
+        "body": "## Summary\n\nDefense-in-depth on top of #138 + #139, plus a GCS direct fallback.\n\n**Two layers added to `/admin/video/{sha}.mp4` proxy:**\n\n1. **GCS direct fallback** — between stored-`content_url` and the relay-imeta fallback, hit `https://storage.googleapis.com/divine-blossom-media/{sha}` directly. The Blossom CDN sits in front of this bucket and the bucket is publicly readable, so when the CDN returns 404 (moderation enforcement, VCL gates, etc.) the underlying bytes are still reachable without auth or a relay roundtrip. Bucket name configurable via `env.GCS_BUCKET`. CSAM-handled-upstream-at-GCS still applies — these are the same bytes Blossom would have served.\n\n2. **KV-cache the Nostr imeta-url fallback** — the fallback added in #138 opened a fresh WebSocket to relay.divine.video on every miss. With a 50-card dashboard render hitting the proxy in parallel, that meant up to 50 concurrent WS connections per page load — exhausting per-isolate budgets and surfacing as 500/502. Cache the relay lookup result in MODERATION_KV with a 5-min TTL; sentinel empty string represents \"no event found\" so negative results are also cached. Write goes through `ctx.waitUntil`.\n\nThis commit also tightens per-fetch error handling on the upstream chain (CDN, transcode, admin bypass) so a single network hiccup can't 500 the whole request when later fallbacks are exactly designed to cover for it.\n\n**New proxy chain order:**\n1. `media.divine.video/{sha}` (CDN, unauthenticated)\n2. `media.divine.video/{sha}/720p.mp4` (transcoded MP4 if CDN returned non-playable)\n3. `/admin/api/blob/{sha}/content` (admin bypass with secret)\n4. Stored `content_url` candidates\n5. **NEW:** `storage.googleapis.com/divine-blossom-media/{sha}` (GCS direct)\n6. Nostr `imeta` URL via relay (KV-cached)\n7. 404\n\n## Test plan\n\n- [x] `npm test -- src/index.test.mjs` (136/136 pass)\n- [ ] Deploy and confirm the 500/502 spam in moderator console clears\n- [ ] `wrangler tail` shows `[ADMIN] Serving video from gcs-direct` for previously-404ing native videos\n- [ ] `wrangler tail` shows `[ADMIN] Serving video from nostr-imeta-url` for external Blossom videos (Plebs, etc.) on cache miss\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/140/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/140/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/comments/4405378614",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/140#issuecomment-4405378614",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/140",
+        "id": 4405378614,
+        "node_id": "IC_kwDOQYdZgc8AAAABBpS-Ng",
+        "user": {
+          "login": "rabble",
+          "id": 76,
+          "node_id": "MDQ6VXNlcjc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rabble",
+          "html_url": "https://github.com/rabble",
+          "followers_url": "https://api.github.com/users/rabble/followers",
+          "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+          "organizations_url": "https://api.github.com/users/rabble/orgs",
+          "repos_url": "https://api.github.com/users/rabble/repos",
+          "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rabble/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-08T09:39:16Z",
+        "updated_at": "2026-05-08T09:39:16Z",
+        "body": "<!-- divine-brain:pr-classifier:real-bug -->\n**[real-bug]** This diff adds critical error handling to the admin video proxy endpoint. However, there is a **real bug in the nostr imeta lookup logic**: the code now caches `imetaUrl` (including `null` values as empty strings), but the follow-up validation `if (imetaUrl && imetaUrl !== cdnUrl && imetaUrl !== adminBypassUrl)` runs outside the try/catch block that populates it. If the cache hit returns `null` (encoded as `''`), `imetaUrl` remains `null`, but if the relay lookup throws, the catch block only logs a warning without setting `imetaUrl` — leaving it uninitialized and causing the fallback fetch to be skipped entirely when it shouldn't be. The variable scoping and error path are broken: either initialize `imetaUrl = null` at the top level before the try block, or refactor the logic so the fetch attempt happens inside the protected scope.\n\n<details><summary>signals</summary>\n\n- \n  - \"let imetaUrl = null\" is declared inside a try block, making it potentially undefined in the outer scope\n  - The follow-up check \"if (imetaUrl && ...)\" at line 2882 runs *after* the try/catch, but imetaUrl may not be bound if the catch branch executes\n  - If the relay lookup throws and we catch it, imetaUrl is never assigned, yet the code proceeds to check it outside the try block\n  - The cache write and imeta fetch have been separated from their declaration scope, breaking the control flow\n\n</details>\n\n_— divine-brain pr-classifier_",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/comments/4405378614/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:39:16Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9229966783",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 140,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/140",
+        "id": 3648693173,
+        "number": 140,
+        "head": {
+          "ref": "hotfix/cache-nostr-fallback",
+          "sha": "7805e1f69b46221bedd4c00a2334f44f466a22c8",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c42445cbd43bfd2b7531602f4f0fd0811ae832e9",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:39:07Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11581838853",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "hotfix/cache-nostr-fallback",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/hotfix/cache-nostr-fallback",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:37:33Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9229740959",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 137,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/137",
+        "id": 3640546572,
+        "number": 137,
+        "head": {
+          "ref": "perf/dashboard-speedup-followup",
+          "sha": "357de7aae3d93e237e4479f3e6945d7176a0f779",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "ea153f789dedcb7db6842643636316ba5d30c946",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:32:41Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11581655622",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33872730980,
+      "ref": "refs/heads/main",
+      "head": "c42445cbd43bfd2b7531602f4f0fd0811ae832e9",
+      "before": "2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd"
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:32:42Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9229733131",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 139,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/139",
+        "id": 3648640657,
+        "number": 139,
+        "head": {
+          "ref": "hotfix/dashboard-preload-none",
+          "sha": "5a456abe1c549b902b7bdd139c625ef8d6761b84",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "bc1f50263517a6c940ef60f76b2c0192c5d37087",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:32:26Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11581646970",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33872722200,
+      "ref": "refs/heads/main",
+      "head": "2882e13bf3bdee2dbff8beea29ee35f5fc1ac9dd",
+      "before": "bc1f50263517a6c940ef60f76b2c0192c5d37087"
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:32:27Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9229639549",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 139,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/139",
+        "id": 3648640657,
+        "number": 139,
+        "head": {
+          "ref": "hotfix/dashboard-preload-none",
+          "sha": "5a456abe1c549b902b7bdd139c625ef8d6761b84",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "bc1f50263517a6c940ef60f76b2c0192c5d37087",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:29:49Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11581538884",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "hotfix/dashboard-preload-none",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/hotfix/dashboard-preload-none",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:29:41Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9229488726",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 138,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/138",
+        "id": 3648572516,
+        "number": 138,
+        "head": {
+          "ref": "hotfix/admin-video-playback-fallback-to-nostr",
+          "sha": "885a530b3134abf678a17ce872ea3e4799b091c8",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "ea153f789dedcb7db6842643636316ba5d30c946",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:25:34Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11581386099",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33872461087,
+      "ref": "refs/heads/main",
+      "head": "bc1f50263517a6c940ef60f76b2c0192c5d37087",
+      "before": "ea153f789dedcb7db6842643636316ba5d30c946"
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:25:36Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9229214686",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 138,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/138",
+        "id": 3648572516,
+        "number": 138,
+        "head": {
+          "ref": "hotfix/admin-video-playback-fallback-to-nostr",
+          "sha": "885a530b3134abf678a17ce872ea3e4799b091c8",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "ea153f789dedcb7db6842643636316ba5d30c946",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:18:03Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11581098109",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "hotfix/admin-video-playback-fallback-to-nostr",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/hotfix/admin-video-playback-fallback-to-nostr",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-08T09:17:53Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9225824656",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 124421399,
+      "login": "DSanich",
+      "display_login": "DSanich",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DSanich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124421399?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "review": {
+        "id": 4250477572,
+        "node_id": "PRR_kwDOQYdZgc79WSQE",
+        "user": {
+          "login": "DSanich",
+          "id": 124421399,
+          "node_id": "U_kgDOB2qFFw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/124421399?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/DSanich",
+          "html_url": "https://github.com/DSanich",
+          "followers_url": "https://api.github.com/users/DSanich/followers",
+          "following_url": "https://api.github.com/users/DSanich/following{/other_user}",
+          "gists_url": "https://api.github.com/users/DSanich/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/DSanich/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/DSanich/subscriptions",
+          "organizations_url": "https://api.github.com/users/DSanich/orgs",
+          "repos_url": "https://api.github.com/users/DSanich/repos",
+          "events_url": "https://api.github.com/users/DSanich/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/DSanich/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "@rabble Great follow-up PR — overall this looks solid!\n\nI ran tests locally and full suite passed.\n",
+        "commit_id": "357de7aae3d93e237e4479f3e6945d7176a0f779",
+        "state": "approved",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/137#pullrequestreview-4250477572",
+        "pull_request_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/137",
+        "_links": {
+          "html": {
+            "href": "https://github.com/divinevideo/divine-moderation-service/pull/137#pullrequestreview-4250477572"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/137"
+          }
+        },
+        "submitted_at": "2026-05-08T07:38:08Z",
+        "updated_at": "2026-05-08T07:38:08Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/137",
+        "id": 3640546572,
+        "number": 137,
+        "head": {
+          "ref": "perf/dashboard-speedup-followup",
+          "sha": "357de7aae3d93e237e4479f3e6945d7176a0f779",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "ea153f789dedcb7db6842643636316ba5d30c946",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-05-08T07:38:09Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11518184213",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33809337699,
+      "ref": "refs/heads/perf/dashboard-speedup-followup",
+      "head": "357de7aae3d93e237e4479f3e6945d7176a0f779",
+      "before": "de2507bf2138a46aa86645212cb185a120f85384"
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:58:45Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9172228357",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 137,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/137",
+        "id": 3640546572,
+        "number": 137,
+        "head": {
+          "ref": "perf/dashboard-speedup-followup",
+          "sha": "357de7aae3d93e237e4479f3e6945d7176a0f779",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "ea153f789dedcb7db6842643636316ba5d30c946",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:49:49Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11517941996",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "perf/dashboard-speedup-followup",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/perf/dashboard-speedup-followup",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:49:18Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11517937718",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33809091099,
+      "ref": "refs/heads/main",
+      "head": "ea153f789dedcb7db6842643636316ba5d30c946",
+      "before": "501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12"
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:49:08Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9172214414",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 133,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/133",
+        "id": 3629756285,
+        "number": 133,
+        "head": {
+          "ref": "feat/relay-quarantine-enforcement",
+          "sha": "4b366ac32021fb501a52ceacc0a1a1002557c49e",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "5b148cc4a17d9726164b53163e5a3eab1bc572c3",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:49:07Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11517722067",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33808875397,
+      "ref": "refs/heads/feat/relay-quarantine-enforcement",
+      "head": "4b366ac32021fb501a52ceacc0a1a1002557c49e",
+      "before": "7a1e4f768cc43705287ba4df69ce6dcfaa1d968d"
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:40:44Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11517717928",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33808871200,
+      "ref": "refs/heads/main",
+      "head": "501e2ac6568b2c91dc79a5e9e1fd0c06ce8a4c12",
+      "before": "5b148cc4a17d9726164b53163e5a3eab1bc572c3"
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:40:35Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9172037739",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 134,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/134",
+        "id": 3629761660,
+        "number": 134,
+        "head": {
+          "ref": "feat/report-only-review-pivot",
+          "sha": "619fdf6cac7d095ff60a422d5e79996df85eeb88",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "a163fe61c4e853c273af8cd52c50af033ff482aa",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:40:34Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11517468700",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33808621941,
+      "ref": "refs/heads/feat/report-only-review-pivot",
+      "head": "619fdf6cac7d095ff60a422d5e79996df85eeb88",
+      "before": "b136d166118b9d50e9a6e311adca0785a0564ee6"
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:30:58Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9171764518",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 136,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/136",
+        "id": 3640254714,
+        "number": 136,
+        "head": {
+          "ref": "perf/dashboard-speedup",
+          "sha": "ef0e0ee97ff956c0e95be37c541c29cbc1f1e183",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "f58525fc5e0b027e7d28814827c13320e17b2b81",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:27:32Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11517377812",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33808530940,
+      "ref": "refs/heads/main",
+      "head": "5b148cc4a17d9726164b53163e5a3eab1bc572c3",
+      "before": "f58525fc5e0b027e7d28814827c13320e17b2b81"
+    },
+    "public": true,
+    "created_at": "2026-05-07T02:27:33Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9170245682",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 136,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/136",
+        "id": 3640254714,
+        "number": 136,
+        "head": {
+          "ref": "perf/dashboard-speedup",
+          "sha": "ef0e0ee97ff956c0e95be37c541c29cbc1f1e183",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "f58525fc5e0b027e7d28814827c13320e17b2b81",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-07T01:24:07Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11515700033",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "perf/dashboard-speedup",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/perf/dashboard-speedup",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-07T01:23:13Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9169542442",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 135,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/135",
+        "id": 3639858942,
+        "number": 135,
+        "head": {
+          "ref": "fix/relay-admin-loud-cf-access-failure",
+          "sha": "a32bf60cb430312bcc4aef746da4af1c1c895ea2",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "a163fe61c4e853c273af8cd52c50af033ff482aa",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-07T00:49:15Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11514851660",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33806004967,
+      "ref": "refs/heads/main",
+      "head": "f58525fc5e0b027e7d28814827c13320e17b2b81",
+      "before": "a163fe61c4e853c273af8cd52c50af033ff482aa"
+    },
+    "public": true,
+    "created_at": "2026-05-07T00:49:16Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11514338807",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33805492468,
+      "ref": "refs/heads/fix/relay-admin-loud-cf-access-failure",
+      "head": "a32bf60cb430312bcc4aef746da4af1c1c895ea2",
+      "before": "6f2e2c0d7b894b6bfd358430566d6fc021807d7b"
+    },
+    "public": true,
+    "created_at": "2026-05-07T00:27:59Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9167435322",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 135,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/135",
+        "id": 3639858942,
+        "number": 135,
+        "head": {
+          "ref": "fix/relay-admin-loud-cf-access-failure",
+          "sha": "a32bf60cb430312bcc4aef746da4af1c1c895ea2",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "a163fe61c4e853c273af8cd52c50af033ff482aa",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-06T23:05:39Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11512259596",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "fix/relay-admin-loud-cf-access-failure",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/relay-admin-loud-cf-access-failure",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-06T23:05:15Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9099014336",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/134",
+        "repository_url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+        "labels_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/134/labels{/name}",
+        "comments_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/134/comments",
+        "events_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/134/events",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/134",
+        "id": 4383270561,
+        "node_id": "PR_kwDOQYdZgc7YWcR8",
+        "number": 134,
+        "title": "feat: report-only review (no pre-moderation of uploads)",
+        "user": {
+          "login": "rabble",
+          "id": 76,
+          "node_id": "MDQ6VXNlcjc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rabble",
+          "html_url": "https://github.com/rabble",
+          "followers_url": "https://api.github.com/users/rabble/followers",
+          "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+          "organizations_url": "https://api.github.com/users/rabble/orgs",
+          "repos_url": "https://api.github.com/users/rabble/repos",
+          "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rabble/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2026-05-05T10:16:24Z",
+        "updated_at": "2026-05-07T02:40:34Z",
+        "closed_at": "2026-05-07T02:40:34Z",
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/134",
+          "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/134",
+          "diff_url": "https://github.com/divinevideo/divine-moderation-service/pull/134.diff",
+          "patch_url": "https://github.com/divinevideo/divine-moderation-service/pull/134.patch",
+          "merged_at": "2026-05-07T02:40:34Z"
+        },
+        "body": "## Summary\n\nStops pre-moderating every upload. Content is playable by default; the team queue surfaces ONLY items a user has reported. Major policy shift agreed with @rabble during the 2026-05-04/05 cost-cut session — keeps T&S queue load proportional to report volume instead of upload volume.\n\n## What changes\n\n| Path | Before | After |\n|---|---|---|\n| `POST /api/v1/scan` | enqueues moderation | `{queued: false, reason: 'reactive_moderation'}` |\n| `POST /api/v1/batch-scan` | enqueues each video | per-item `status: 'reactive'` |\n| Relay polling cron | enqueues new kind:34236 events | logs observation, does not enqueue |\n| `POST /api/v1/report` (NSFW types) | queued for manual-review | writes `action: AGE_RESTRICTED, provider: 'user-report'` row directly |\n| `POST /api/v1/report` (other types) | queued for manual-review | writes `action: REVIEW, provider: 'user-report'` row directly |\n| `POST /api/v1/report` (AI types) | queued with `forceAIDetection: true` | writes REVIEW row + still records ai_detection_event for telemetry |\n\nNSFW report types matched: `nudity, porn, pornography, nsfw, sexual, sexual_content, explicit, adult, adult_content` (case- and underscore-insensitive). Helper: `isNsfwReportType` in `src/reports.mjs`.\n\n## Why this works\n\nDashboard's existing `FLAGGED` filter (`src/index.mjs:1488`) already queries `action IN ('REVIEW', 'AGE_RESTRICTED', 'PERMANENT_BAN') AND reviewed_by IS NULL` — both report-driven action types land there automatically. No dashboard change needed.\n\nFor absent-row sha256s (the new default for unreported uploads), `/check-result/{sha}` (`src/index.mjs:3890-3900`) returns `status: 'unknown', moderated: false, blocked: false, age_restricted: false` — clients treat as playable.\n\n## Conflict resolution on existing rows\n\n`ON CONFLICT(sha256) DO UPDATE` preserves PERMANENT_BAN, only allows upgrades:\n- `SAFE → REVIEW` allowed\n- `SAFE/REVIEW → AGE_RESTRICTED` allowed\n- Anything else → no change\n\nSo a moderator's prior decision (e.g., REVIEW with a reviewed_by) is not clobbered by a subsequent NSFW report.\n\n## Tests\n\n- 804/804 pass (run as `npx vitest run src/index.test.mjs src/reports.test.mjs`)\n- New helper unit tests: `isNsfwReportType` matches expected labels case-insensitively\n- New endpoint tests: NSFW report writes AGE_RESTRICTED row; non-NSFW report writes REVIEW row; scan + batch-scan + AI-report all assert the queue is NOT touched\n- Existing AI-detection telemetry assertions preserved\n\n## Cost shape\n\n| Layer | Before today's session | After PR #131 | After this PR |\n|---|---|---|---|\n| Hive billing | ~$6k/day | ~zero | ~zero (unchanged) |\n| T&S queue load | flagged-by-Hive uploads | every upload | reported items only |\n\n## Risk callouts (T&S team needs to know)\n\n1. **No automated NSFW/violence/hate pre-screen anymore.** Anything legal-but-bad lands publicly until a user reports it. (CSAM remains scanned upstream at GCS via Google hash-matching — unchanged by this PR.)\n2. **First report = team sees it** — there is no count threshold anymore. Spam-report potential exists; existing `user_reports` UNIQUE(sha256, reporter_pubkey) prevents the same pubkey from re-reporting.\n3. **Existing REVIEW backlog** is left untouched — moderators drain it; new uploads stop adding to it.\n4. **PR #132 plumbing** (`forceProvider`, `applyForceProvider`) is left in place but unused. Dead code, harmless. Can be removed later or repurposed if Hive returns.\n\n## Deploys via auto-CI\n\nAuto-deploy via `cloudflare/wrangler-action@v3` on push to main (`.github/workflows/ci.yml:78`). After merge, post-deploy verification:\n1. POST a test report with `report_type: 'nudity'` → assert new `action: AGE_RESTRICTED, provider: 'user-report'` row in `moderation_results`\n2. POST a test report with `report_type: 'violence'` → assert new `action: REVIEW, provider: 'user-report'` row\n3. Confirm `wrangler tail` shows zero queue activity for new Blossom uploads\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/134/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/134/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/comments/4378770010",
+        "html_url": "https://github.com/divinevideo/divine-moderation-service/pull/134#issuecomment-4378770010",
+        "issue_url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/134",
+        "id": 4378770010,
+        "node_id": "IC_kwDOQYdZgc8AAAABBP66Wg",
+        "user": {
+          "login": "rabble",
+          "id": 76,
+          "node_id": "MDQ6VXNlcjc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/76?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rabble",
+          "html_url": "https://github.com/rabble",
+          "followers_url": "https://api.github.com/users/rabble/followers",
+          "following_url": "https://api.github.com/users/rabble/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rabble/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rabble/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rabble/subscriptions",
+          "organizations_url": "https://api.github.com/users/rabble/orgs",
+          "repos_url": "https://api.github.com/users/rabble/repos",
+          "events_url": "https://api.github.com/users/rabble/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rabble/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-05T11:26:08Z",
+        "updated_at": "2026-05-05T11:26:08Z",
+        "body": "Pushed `b136d16` addressing the code review:\n\n- **C1** — `ON CONFLICT` now early-outs on `reviewed_by IS NOT NULL` for action/provider/categories/moderated_at. Moderator decisions are immutable to subsequent reports.\n- **I1** — `/api/v1/report` validates with `isValidSha256` + `isValidPubkey`, normalizes sha256 to lowercase, returns 400 on malformed input.\n- **I2** — NSFW reports now need 2 distinct `reporter_pubkey`s before auto AGE_RESTRICTED. First NSFW report writes REVIEW. Defends against single-token grief without dropping the user's \"auto age-restrict NSFW\" intent. (Full hardening would need NIP-98 sig — deferred.)\n- **I3** — New `REACTIVE_MODERATION_ONLY` env (defaulted `true` in `wrangler.toml`). Queue consumer ack-skips all messages, draining the in-flight queue without writing manual-review rows. Reversible via env flip.\n\nTests: 807/807 pass on changed files. New regression tests: malformed sha rejection, malformed pubkey rejection, first-NSFW = REVIEW, NSFW = AGE_RESTRICTED only at count >= 2.\n\nMinor items M1–M5 deferred to a follow-up PR per reviewer's guidance not to grow PR scope.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+        "reactions": {
+          "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/issues/comments/4378770010/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-05T11:26:08Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11434002330",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33725305782,
+      "ref": "refs/heads/feat/report-only-review-pivot",
+      "head": "b136d166118b9d50e9a6e311adca0785a0564ee6",
+      "before": "6a1a83503ce973ad45ef79aad6808ab118108e83"
+    },
+    "public": true,
+    "created_at": "2026-05-05T11:25:54Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9096635397",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 134,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/134",
+        "id": 3629761660,
+        "number": 134,
+        "head": {
+          "ref": "feat/report-only-review-pivot",
+          "sha": "619fdf6cac7d095ff60a422d5e79996df85eeb88",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "a163fe61c4e853c273af8cd52c50af033ff482aa",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-05T10:16:24Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11431297268",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "feat/report-only-review-pivot",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/report-only-review-pivot",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-05T10:15:39Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9096595596",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 133,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/133",
+        "id": 3629756285,
+        "number": 133,
+        "head": {
+          "ref": "feat/relay-quarantine-enforcement",
+          "sha": "4b366ac32021fb501a52ceacc0a1a1002557c49e",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "5b148cc4a17d9726164b53163e5a3eab1bc572c3",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-05T10:15:14Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11431260406",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "feat/relay-quarantine-enforcement",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/relay-quarantine-enforcement",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-05T10:14:43Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9081590642",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 132,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/132",
+        "id": 3623105564,
+        "number": 132,
+        "head": {
+          "ref": "feat/report-triggered-hive-recheck",
+          "sha": "1eef9d06a55082d4bf55c33f735910353ffca4f4",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "9c5907d753dadf22bc2132fa826267b7f45f1c3d",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-05T00:21:07Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11413878017",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33705258702,
+      "ref": "refs/heads/main",
+      "head": "a163fe61c4e853c273af8cd52c50af033ff482aa",
+      "before": "9c5907d753dadf22bc2132fa826267b7f45f1c3d"
+    },
+    "public": true,
+    "created_at": "2026-05-05T00:21:08Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9053122479",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 132,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/132",
+        "id": 3623105564,
+        "number": 132,
+        "head": {
+          "ref": "feat/report-triggered-hive-recheck",
+          "sha": "1eef9d06a55082d4bf55c33f735910353ffca4f4",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "9c5907d753dadf22bc2132fa826267b7f45f1c3d",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-04T09:49:18Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11382403610",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "feat/report-triggered-hive-recheck",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feat/report-triggered-hive-recheck",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-04T09:48:50Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11342288281",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33633683710,
+      "ref": "refs/heads/main",
+      "head": "9c5907d753dadf22bc2132fa826267b7f45f1c3d",
+      "before": "0f74a580d8b623411cee5cd2193a994aabe56d6d"
+    },
+    "public": true,
+    "created_at": "2026-05-03T03:18:49Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9027341296",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 131,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/131",
+        "id": 3619213481,
+        "number": 131,
+        "head": {
+          "ref": "fix/manual-review-default",
+          "sha": "c48950d6f6193e68b7993f0e6e9ee9a4f05f38af",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "0f74a580d8b623411cee5cd2193a994aabe56d6d",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-03T03:18:48Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11342254624",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33633650095,
+      "ref": "refs/heads/fix/manual-review-default",
+      "head": "c48950d6f6193e68b7993f0e6e9ee9a4f05f38af",
+      "before": "2e128ac9e89c4bc3bc540a7d2a99e73a87312b4a"
+    },
+    "public": true,
+    "created_at": "2026-05-03T03:16:34Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9027173926",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 131,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/131",
+        "id": 3619213481,
+        "number": 131,
+        "head": {
+          "ref": "fix/manual-review-default",
+          "sha": "c48950d6f6193e68b7993f0e6e9ee9a4f05f38af",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "0f74a580d8b623411cee5cd2193a994aabe56d6d",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-03T02:59:33Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11341966121",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "fix/manual-review-default",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/manual-review-default",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-03T02:59:26Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9027149821",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 130,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/130",
+        "id": 3619189437,
+        "number": 130,
+        "head": {
+          "ref": "feature/ai-detection-reporting",
+          "sha": "af5428209a1cdbc468db1d00837738e6afa76ea0",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "3b231c823e6a9f784adfc51f47f3ac034a2cad3f",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-03T02:56:26Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11341922371",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33633317395,
+      "ref": "refs/heads/main",
+      "head": "0f74a580d8b623411cee5cd2193a994aabe56d6d",
+      "before": "3b231c823e6a9f784adfc51f47f3ac034a2cad3f"
+    },
+    "public": true,
+    "created_at": "2026-05-03T02:56:27Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11341918878",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33633313934,
+      "ref": "refs/heads/feature/ai-detection-reporting",
+      "head": "af5428209a1cdbc468db1d00837738e6afa76ea0",
+      "before": "67d96ee79310b3af1e853c60e4b3e0866bbe00da"
+    },
+    "public": true,
+    "created_at": "2026-05-03T02:56:13Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11341804744",
+    "type": "PushEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "repository_id": 1099389313,
+      "push_id": 33633199711,
+      "ref": "refs/heads/feature/ai-detection-reporting",
+      "head": "67d96ee79310b3af1e853c60e4b3e0866bbe00da",
+      "before": "9274cb65d17913d4ba2a1434b6e880d21690bf01"
+    },
+    "public": true,
+    "created_at": "2026-05-03T02:48:58Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "9027054984",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 130,
+      "pull_request": {
+        "url": "https://api.github.com/repos/divinevideo/divine-moderation-service/pulls/130",
+        "id": 3619189437,
+        "number": 130,
+        "head": {
+          "ref": "feature/ai-detection-reporting",
+          "sha": "af5428209a1cdbc468db1d00837738e6afa76ea0",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "3b231c823e6a9f784adfc51f47f3ac034a2cad3f",
+          "repo": {
+            "id": 1099389313,
+            "url": "https://api.github.com/repos/divinevideo/divine-moderation-service",
+            "name": "divine-moderation-service"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-03T02:44:54Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "11341734860",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 76,
+      "login": "rabble",
+      "display_login": "rabble",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rabble",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76?"
+    },
+    "repo": {
+      "id": 1099389313,
+      "name": "divinevideo/divine-moderation-service",
+      "url": "https://api.github.com/repos/divinevideo/divine-moderation-service"
+    },
+    "payload": {
+      "ref": "feature/ai-detection-reporting",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feature/ai-detection-reporting",
+      "master_branch": "main",
+      "description": "Human in the loop content moderation service for diVine video platform - detects NSFW, violence, AI-generated content, and deepfakes",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-03T02:44:36Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  }
+]

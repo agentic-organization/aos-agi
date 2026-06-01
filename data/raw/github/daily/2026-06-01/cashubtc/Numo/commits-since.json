@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "a3c930d7e71da92260dcfa1c93dcdc4fd9fd254c",
+    "node_id": "C_kwDOPJQeE9oAKGEzYzkzMGQ3ZTcxZGE5MjI2MGRjZmExYzkzZGNkYzRmZDlmZDI1NGM",
+    "commit": {
+      "author": {
+        "name": "a1denvalu3",
+        "email": "43107113+a1denvalu3@users.noreply.github.com",
+        "date": "2026-05-31T10:44:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-31T10:44:26Z"
+      },
+      "message": "Handle non-bolt11 mints by skipping lightning flow (#324)\n\n* Handle non-bolt11 mints by skipping lightning flow\n\n* Reject unknown-mint swaps if preferred mint doesn't support bolt11\n\n* fix\n\n* Fix NDEF APDU error by correcting READ BINARY boundary checks\n\n* Clean up test_bip321.kt\n\n* Remove Bip321Test.kt\n\n* Revert AndroidManifest cleartext setting\n\n* Fix bypass of bolt11 support check leading to erroneous lightning flow",
+      "tree": {
+        "sha": "cb1838f4cb5c0d48aa3835f6aacf765f1d115937",
+        "url": "https://api.github.com/repos/cashubtc/Numo/git/trees/cb1838f4cb5c0d48aa3835f6aacf765f1d115937"
+      },
+      "url": "https://api.github.com/repos/cashubtc/Numo/git/commits/a3c930d7e71da92260dcfa1c93dcdc4fd9fd254c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqHBEKCRC1aQ7uu5UhlAAA5c0QABtFwdWJC7g4+f/LiYgoKzJI\nk/fCJPtqHo2jfGKXCTA0uSw3wZB2mUQkRZsI9uir6At0qPmouchk0YP3+jyPeqU2\nqikzaSiXQZemYg1Ext2mr2Eaz4QCfhMd5Qwf70fa28pz1KQnDn8uIcAnziXyrryK\nkaSmiImguMCmgn4/5XdJ0DQrNYEuWBf3TfFU1HdQGYCKn/Y1C/1t/mn29Gy8K/Jv\nSA5meaKkV8v5uoX4iUxwJ2i51+hhju30BplFDhe3dS83U7Iau78gj2BqVg1pQb6n\n1sCQ0s4dVAq7E3pi4ihMbtqAZ78a00dTtXxeymule7z+os+WcRhfm0y8AGnLul9e\n6Lrk39tQk4VP9FD3gFQLGu2n9azhwlZVuQmiFPxAxix4aM5doGxC+CogoTKY5LQQ\nuJ9KKwHkOkD5KS5TFPjkuc1TjYSOlZvbEYDwoOmnvziynvgl6pHHPxUPUhTay3Me\nzA2wFziCbSsCt3Eh0EfgrwFRP9/ahJbb6GFsIpHL12/ImTiO80rWwPbN/AsM5iX6\nryo5hMdT0PRfuGH8iud4LafIs/FBYTCKHdKnJnjHktcGEr1saW1pSjt50wYhR36B\nS1f2QRZHJFZVtTNC4JQV9hcd2kAEPszNrxZa0VyDdMCBgn8Jscwy4Z7ZDKQuHfvG\n6ToPnzP8KUDCJ9NQMGOW\n=XHbk\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree cb1838f4cb5c0d48aa3835f6aacf765f1d115937\nparent 9c39c0016eb353031dc83026160c8cade03a0009\nauthor a1denvalu3 <43107113+a1denvalu3@users.noreply.github.com> 1780224266 +0200\ncommitter GitHub <noreply@github.com> 1780224266 +0200\n\nHandle non-bolt11 mints by skipping lightning flow (#324)\n\n* Handle non-bolt11 mints by skipping lightning flow\n\n* Reject unknown-mint swaps if preferred mint doesn't support bolt11\n\n* fix\n\n* Fix NDEF APDU error by correcting READ BINARY boundary checks\n\n* Clean up test_bip321.kt\n\n* Remove Bip321Test.kt\n\n* Revert AndroidManifest cleartext setting\n\n* Fix bypass of bolt11 support check leading to erroneous lightning flow",
+        "verified_at": "2026-05-31T10:44:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cashubtc/Numo/commits/a3c930d7e71da92260dcfa1c93dcdc4fd9fd254c",
+    "html_url": "https://github.com/cashubtc/Numo/commit/a3c930d7e71da92260dcfa1c93dcdc4fd9fd254c",
+    "comments_url": "https://api.github.com/repos/cashubtc/Numo/commits/a3c930d7e71da92260dcfa1c93dcdc4fd9fd254c/comments",
+    "author": {
+      "login": "a1denvalu3",
+      "id": 43107113,
+      "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "html_url": "https://github.com/a1denvalu3",
+      "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+      "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+      "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+      "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+      "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c39c0016eb353031dc83026160c8cade03a0009",
+        "url": "https://api.github.com/repos/cashubtc/Numo/commits/9c39c0016eb353031dc83026160c8cade03a0009",
+        "html_url": "https://github.com/cashubtc/Numo/commit/9c39c0016eb353031dc83026160c8cade03a0009"
+      }
+    ]
+  }
+]

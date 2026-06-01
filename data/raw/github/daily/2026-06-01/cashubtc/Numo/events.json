@@ -1,0 +1,4741 @@
+[
+  {
+    "id": "10106765635",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/issues/167",
+        "repository_url": "https://api.github.com/repos/cashubtc/Numo",
+        "labels_url": "https://api.github.com/repos/cashubtc/Numo/issues/167/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/Numo/issues/167/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/Numo/issues/167/events",
+        "html_url": "https://github.com/cashubtc/Numo/pull/167",
+        "id": 3885811528,
+        "node_id": "PR_kwDOPJQeE87A6HPB",
+        "number": 167,
+        "title": "Feat/btcpay support",
+        "user": {
+          "login": "d4rp4t",
+          "id": 50369025,
+          "node_id": "MDQ6VXNlcjUwMzY5MDI1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/50369025?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/d4rp4t",
+          "html_url": "https://github.com/d4rp4t",
+          "followers_url": "https://api.github.com/users/d4rp4t/followers",
+          "following_url": "https://api.github.com/users/d4rp4t/following{/other_user}",
+          "gists_url": "https://api.github.com/users/d4rp4t/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/d4rp4t/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/d4rp4t/subscriptions",
+          "organizations_url": "https://api.github.com/users/d4rp4t/orgs",
+          "repos_url": "https://api.github.com/users/d4rp4t/repos",
+          "events_url": "https://api.github.com/users/d4rp4t/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/d4rp4t/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2026-02-02T13:01:03Z",
+        "updated_at": "2026-05-31T21:28:49Z",
+        "closed_at": null,
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/cashubtc/Numo/pulls/167",
+          "html_url": "https://github.com/cashubtc/Numo/pull/167",
+          "diff_url": "https://github.com/cashubtc/Numo/pull/167.diff",
+          "patch_url": "https://github.com/cashubtc/Numo/pull/167.patch",
+          "merged_at": null
+        },
+        "body": "This PR adds support for BTCPayServer with Cashu plugin (optionally) installed. ",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/Numo/issues/167/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/Numo/issues/167/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/issues/comments/4588154756",
+        "html_url": "https://github.com/cashubtc/Numo/pull/167#issuecomment-4588154756",
+        "issue_url": "https://api.github.com/repos/cashubtc/Numo/issues/167",
+        "id": 4588154756,
+        "node_id": "IC_kwDOPJQeE88AAAABEXmvhA",
+        "user": {
+          "login": "a1denvalu3",
+          "id": 43107113,
+          "node_id": "MDQ6VXNlcjQzMTA3MTEz",
+          "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/a1denvalu3",
+          "html_url": "https://github.com/a1denvalu3",
+          "followers_url": "https://api.github.com/users/a1denvalu3/followers",
+          "following_url": "https://api.github.com/users/a1denvalu3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/a1denvalu3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/a1denvalu3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/a1denvalu3/subscriptions",
+          "organizations_url": "https://api.github.com/users/a1denvalu3/orgs",
+          "repos_url": "https://api.github.com/users/a1denvalu3/repos",
+          "events_url": "https://api.github.com/users/a1denvalu3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/a1denvalu3/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-31T21:28:49Z",
+        "updated_at": "2026-05-31T21:28:49Z",
+        "body": "---\r\ntitle: \"Critical MitM Vulnerability and Uncaught Exception DoS in Payment Callback\"\r\nslug: network-security-config-mitm-and-callback-dos\r\ndate: 2026-05-31\r\nstatus: confirmed\r\nseverity: critical\r\ntarget: [cashubtc/numo]\r\nnuts: []\r\n---\r\n\r\n## Summary\r\nThis PR introduces two serious vulnerabilities. First, an insecure `network_security_config.xml` globally permits cleartext traffic and trusts user CA certificates, enabling trivial Man-in-the-Middle (MitM) attacks to steal the BTCPay API key and spoof payments. Second, a callback handling flaw in `PaymentRequestActivity` throws an uncaught exception when a payment fails on an expired invoice, resulting in a remote DoS (app crash).\r\n\r\n## Root Cause\r\n**1. Insecure Network Security Config:**\r\nIn `app/src/main/res/xml/network_security_config.xml`, the configuration is:\r\n```xml\r\n<network-security-config>\r\n    <base-config cleartextTrafficPermitted=\"true\">\r\n        <trust-anchors>\r\n            <certificates src=\"system\" />\r\n            <certificates src=\"user\" />\r\n        </trust-anchors>\r\n    </base-config>\r\n</network-security-config>\r\n```\r\nThis is applied globally in `AndroidManifest.xml`. It allows attackers to intercept the `Authorization: token` header sent by `BTCPayPaymentService`.\r\n\r\n**2. Uncaught Exception in Callback Handling:**\r\nIn `PaymentRequestActivity.kt` (lines 1224-1262), the NFC token redemption logic uses an `onFailure` callback. If `checkPaymentStatus` returns a state other than `PAID` or `PENDING` (e.g., `EXPIRED`), it executes:\r\n`else -> throw Exception(\"BTCPay redemption failed: ${e.message}\")`\r\nThis exception is thrown inside `uiScope.launch(Dispatchers.IO)`. Because the surrounding `try-catch` only catches `CashuPaymentHelper.RedemptionException`, the generic `Exception` remains uncaught, crashing the POS application.\r\n\r\n## Attack Steps\r\n**MitM / API Key Theft:**\r\n1. The merchant configures Numo to connect to their BTCPay Server.\r\n2. The attacker intercepts the network traffic (via rogue Wi-Fi or user cert).\r\n3. The attacker extracts the `Authorization: token <API_KEY>` from the intercepted request, or modifies the `checkPaymentStatus` response to `{\"status\": \"Settled\"}` to fake a successful payment.\r\n\r\n**Callback Crash (DoS):**\r\n1. The attacker waits for the POS BTCPay invoice to expire.\r\n2. The attacker taps an invalid or fake NFC Cashu token.\r\n3. `redeemToken` fails, triggering the `onFailure` callback.\r\n4. `checkPaymentStatus` returns `EXPIRED`.\r\n5. The `else` branch throws the unhandled generic `Exception`, crashing the POS app.\r\n\r\n## Impact\r\n- **Tier 1 (MitM):** An attacker can steal the merchant's BTCPay API key, escalating privileges, and spoof payment success to steal goods.\r\n- **Tier 3 (DoS):** An attacker can reliably crash the POS terminal by tapping a tag on an expired invoice.\r\n\r\n## Proposed Fix\r\n1. **Network Security:** Remove `network_security_config.xml` entirely or restrict it to `debug-overrides` for development only. Do not trust `user` certs or allow cleartext in `base-config`.\r\n2. **Callback Handling:** In `PaymentRequestActivity.kt`, replace `throw Exception(...)` with `withContext(Dispatchers.Main) { handlePaymentError(...) }` or change the `try-catch` to catch all `Exception` types, ensuring the UI recovers gracefully.\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/Numo/issues/comments/4588154756/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-31T21:28:49Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12609549322",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "feature/handle-non-bolt11-mints",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feature/handle-non-bolt11-mints",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-31T10:44:53Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "10097813334",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 324,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/324",
+        "id": 3730225153,
+        "number": 324,
+        "head": {
+          "ref": "feature/handle-non-bolt11-mints",
+          "sha": "7eb44543721b52d3f4db1c51bc4c649f066ff4cf",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "e9e7e4da348e38f128d894ecfb3fe9cd679df19f",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-31T10:44:27Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12609540395",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34899157912,
+      "ref": "refs/heads/main",
+      "head": "a3c930d7e71da92260dcfa1c93dcdc4fd9fd254c",
+      "before": "9c39c0016eb353031dc83026160c8cade03a0009"
+    },
+    "public": true,
+    "created_at": "2026-05-31T10:44:28Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12609475096",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34899092623,
+      "ref": "refs/heads/feature/handle-non-bolt11-mints",
+      "head": "7eb44543721b52d3f4db1c51bc4c649f066ff4cf",
+      "before": "17479050936dcc42e63c6c5128f9b881b0d04525"
+    },
+    "public": true,
+    "created_at": "2026-05-31T10:41:23Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "10085718786",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 328,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/328",
+        "id": 3774444615,
+        "number": 328,
+        "head": {
+          "ref": "fix-hce-apple-pay-popup",
+          "sha": "814e6f31b02fbe79ccc377a03fadbc5fb4cf2c53",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1be52f2b30a244f55a03a23f755703227d4f66c9",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-30T17:10:07Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12588711533",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34878316247,
+      "ref": "refs/heads/main",
+      "head": "9c39c0016eb353031dc83026160c8cade03a0009",
+      "before": "1be52f2b30a244f55a03a23f755703227d4f66c9"
+    },
+    "public": true,
+    "created_at": "2026-05-30T17:10:09Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12588659954",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34878264638,
+      "ref": "refs/heads/fix-hce-apple-pay-popup",
+      "head": "814e6f31b02fbe79ccc377a03fadbc5fb4cf2c53",
+      "before": "62cec652f3979bf1eafc7f9ebd1f6549b20be1c8"
+    },
+    "public": true,
+    "created_at": "2026-05-30T17:07:55Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "10085655761",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 328,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/328",
+        "id": 3774444615,
+        "number": 328,
+        "head": {
+          "ref": "fix-hce-apple-pay-popup",
+          "sha": "814e6f31b02fbe79ccc377a03fadbc5fb4cf2c53",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1be52f2b30a244f55a03a23f755703227d4f66c9",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-30T17:04:56Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12588588337",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "fix-hce-apple-pay-popup",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix-hce-apple-pay-popup",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-30T17:04:54Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12580832502",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34870428736,
+      "ref": "refs/heads/main",
+      "head": "1be52f2b30a244f55a03a23f755703227d4f66c9",
+      "before": "68df494718b2ba8976c620344ca90e1f728fde5d"
+    },
+    "public": true,
+    "created_at": "2026-05-30T11:35:24Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "10081503106",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 327,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/327",
+        "id": 3760035218,
+        "number": 327,
+        "head": {
+          "ref": "fix-apple-pay-popup",
+          "sha": "60bfeb54a6c6e0bb5a9d39e1b05c346edbcc3dee",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "68df494718b2ba8976c620344ca90e1f728fde5d",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-30T11:35:23Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9987373079",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 327,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/327",
+        "id": 3760035218,
+        "number": 327,
+        "head": {
+          "ref": "fix-apple-pay-popup",
+          "sha": "60bfeb54a6c6e0bb5a9d39e1b05c346edbcc3dee",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "68df494718b2ba8976c620344ca90e1f728fde5d",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-28T06:11:58Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12473889482",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "fix-apple-pay-popup",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix-apple-pay-popup",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-28T06:11:38Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9924701819",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 177870695,
+      "login": "gogonuk",
+      "display_login": "gogonuk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gogonuk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/177870695?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "forked",
+      "forkee": {
+        "id": 1250633014,
+        "node_id": "R_kgDOSoslNg",
+        "name": "Numo",
+        "full_name": "gogonuk/Numo",
+        "private": false,
+        "owner": {
+          "login": "gogonuk",
+          "id": 177870695,
+          "node_id": "U_kgDOCpoXZw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/177870695?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gogonuk",
+          "html_url": "https://github.com/gogonuk",
+          "followers_url": "https://api.github.com/users/gogonuk/followers",
+          "following_url": "https://api.github.com/users/gogonuk/following{/other_user}",
+          "gists_url": "https://api.github.com/users/gogonuk/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/gogonuk/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/gogonuk/subscriptions",
+          "organizations_url": "https://api.github.com/users/gogonuk/orgs",
+          "repos_url": "https://api.github.com/users/gogonuk/repos",
+          "events_url": "https://api.github.com/users/gogonuk/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/gogonuk/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/gogonuk/Numo",
+        "description": "Cashu and lightning PoS APP",
+        "fork": true,
+        "url": "https://api.github.com/repos/gogonuk/Numo",
+        "forks_url": "https://api.github.com/repos/gogonuk/Numo/forks",
+        "keys_url": "https://api.github.com/repos/gogonuk/Numo/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/gogonuk/Numo/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/gogonuk/Numo/teams",
+        "hooks_url": "https://api.github.com/repos/gogonuk/Numo/hooks",
+        "issue_events_url": "https://api.github.com/repos/gogonuk/Numo/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/gogonuk/Numo/events",
+        "assignees_url": "https://api.github.com/repos/gogonuk/Numo/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/gogonuk/Numo/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/gogonuk/Numo/tags",
+        "blobs_url": "https://api.github.com/repos/gogonuk/Numo/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/gogonuk/Numo/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/gogonuk/Numo/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/gogonuk/Numo/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/gogonuk/Numo/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/gogonuk/Numo/languages",
+        "stargazers_url": "https://api.github.com/repos/gogonuk/Numo/stargazers",
+        "contributors_url": "https://api.github.com/repos/gogonuk/Numo/contributors",
+        "subscribers_url": "https://api.github.com/repos/gogonuk/Numo/subscribers",
+        "subscription_url": "https://api.github.com/repos/gogonuk/Numo/subscription",
+        "commits_url": "https://api.github.com/repos/gogonuk/Numo/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/gogonuk/Numo/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/gogonuk/Numo/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/gogonuk/Numo/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/gogonuk/Numo/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/gogonuk/Numo/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/gogonuk/Numo/merges",
+        "archive_url": "https://api.github.com/repos/gogonuk/Numo/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/gogonuk/Numo/downloads",
+        "issues_url": "https://api.github.com/repos/gogonuk/Numo/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/gogonuk/Numo/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/gogonuk/Numo/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/gogonuk/Numo/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/gogonuk/Numo/labels{/name}",
+        "releases_url": "https://api.github.com/repos/gogonuk/Numo/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/gogonuk/Numo/deployments",
+        "created_at": "2026-05-26T20:31:46Z",
+        "updated_at": "2026-05-26T20:31:46Z",
+        "pushed_at": "2026-05-25T13:59:53Z",
+        "git_url": "git://github.com/gogonuk/Numo.git",
+        "ssh_url": "git@github.com:gogonuk/Numo.git",
+        "clone_url": "https://github.com/gogonuk/Numo.git",
+        "svn_url": "https://github.com/gogonuk/Numo",
+        "homepage": "",
+        "size": 15440,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "main"
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-26T20:31:46Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9866811499",
+    "type": "ReleaseEvent",
+    "actor": {
+      "id": 41898282,
+      "login": "github-actions[bot]",
+      "display_login": "github-actions",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41898282?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "published",
+      "release": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/releases/328897025",
+        "assets_url": "https://api.github.com/repos/cashubtc/Numo/releases/328897025/assets",
+        "upload_url": "https://uploads.github.com/repos/cashubtc/Numo/releases/328897025/assets{?name,label}",
+        "html_url": "https://github.com/cashubtc/Numo/releases/tag/v1.6",
+        "id": 328897025,
+        "author": {
+          "login": "github-actions[bot]",
+          "id": 41898282,
+          "node_id": "MDM6Qm90NDE4OTgyODI=",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+          "html_url": "https://github.com/apps/github-actions",
+          "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOPJQeE84TmpIB",
+        "tag_name": "v1.6",
+        "target_commitish": "main",
+        "name": "Release v1.6",
+        "draft": false,
+        "immutable": false,
+        "prerelease": false,
+        "created_at": "2026-05-25T13:49:11Z",
+        "updated_at": "2026-05-26T06:31:13Z",
+        "published_at": "2026-05-25T13:59:53Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/429394040",
+            "id": 429394040,
+            "node_id": "RA_kwDOPJQeE84ZmAh4",
+            "name": "numo-v1.6-arm64-v8a.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 34370547,
+            "digest": "sha256:ab3d13e211288771dc304a07989f0eb50844d29f4caec3ae8c2d9d843168845e",
+            "download_count": 43,
+            "created_at": "2026-05-25T13:54:35Z",
+            "updated_at": "2026-05-25T13:54:37Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6/numo-v1.6-arm64-v8a.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/429394038",
+            "id": 429394038,
+            "node_id": "RA_kwDOPJQeE84ZmAh2",
+            "name": "numo-v1.6-armeabi-v7a.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 28716685,
+            "digest": "sha256:1162ca823dd7bc8ba85297e0629edc72ac82b4e043a8d33cd08ec50a1e2a1372",
+            "download_count": 0,
+            "created_at": "2026-05-25T13:54:35Z",
+            "updated_at": "2026-05-25T13:54:37Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6/numo-v1.6-armeabi-v7a.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/429394042",
+            "id": 429394042,
+            "node_id": "RA_kwDOPJQeE84ZmAh6",
+            "name": "numo-v1.6-universal.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 74283389,
+            "digest": "sha256:f3d4ba1fbc453e7ca173bc3ea4b2b4782f50b05a05f8eba13fe3c5110db4d731",
+            "download_count": 3,
+            "created_at": "2026-05-25T13:54:35Z",
+            "updated_at": "2026-05-25T13:54:39Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6/numo-v1.6-universal.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/429394039",
+            "id": 429394039,
+            "node_id": "RA_kwDOPJQeE84ZmAh3",
+            "name": "numo-v1.6-x86.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 22769458,
+            "digest": "sha256:bdb7d98ed363bcd55e234fba576099caa03bb6db85d19cd587e44bc8888f802c",
+            "download_count": 0,
+            "created_at": "2026-05-25T13:54:35Z",
+            "updated_at": "2026-05-25T13:54:37Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6/numo-v1.6-x86.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/429394037",
+            "id": 429394037,
+            "node_id": "RA_kwDOPJQeE84ZmAh1",
+            "name": "numo-v1.6-x86_64.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 37336132,
+            "digest": "sha256:dff6ed84cc5f9f7c80399e6e8ed0fb99cc1a5d847572b37b9b36e92808d779fc",
+            "download_count": 0,
+            "created_at": "2026-05-25T13:54:35Z",
+            "updated_at": "2026-05-25T13:54:37Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6/numo-v1.6-x86_64.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/429394043",
+            "id": 429394043,
+            "node_id": "RA_kwDOPJQeE84ZmAh7",
+            "name": "numo-v1.6.aab",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/x-authorware-bin",
+            "state": "uploaded",
+            "size": 65579629,
+            "digest": "sha256:a1e37f355b144d519786ba5609717d45c30328cf08b7cad3d72f7fea36b4046c",
+            "download_count": 0,
+            "created_at": "2026-05-25T13:54:35Z",
+            "updated_at": "2026-05-25T13:54:38Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6/numo-v1.6.aab"
+          }
+        ],
+        "tarball_url": "https://api.github.com/repos/cashubtc/Numo/tarball/v1.6",
+        "zipball_url": "https://api.github.com/repos/cashubtc/Numo/zipball/v1.6",
+        "body": "# Numo v1.6 Release Notes\r\n\r\nWe are excited to announce Numo v1.6! This release brings a massive app-wide UI refresh, new features like wallet activity logging, and various improvements to ensure smoother transactions.\r\n\r\n## ✨ New Features & Improvements\r\n\r\n* **App-wide UI Refresh:** Experience a fresh new look with our updated design system, refined components, and redesigned screens across the entire app.\r\n* **Wallet Activity Logging:** We've introduced a new wallet activity logging system to help you keep better track of your transactions and wallet events.\r\n* **BTCMap Onboarding:** Added a new onboarding banner for BTCMap, hinting the merchant to add their location.\r\n* **Smarter Auto-withdrawals:** Auto-withdraw thresholds are now validated against the LNURL `minSendable` limit, preventing potential withdrawal errors and ensuring more reliable transactions.\r\n\r\n**Full Changelog**: https://github.com/cashubtc/Numo/compare/v1.5...v1.6",
+        "short_description_html": "<h1>Numo v1.6 Release Notes</h1>\n<p>We are excited to announce Numo v1.6! This release brings a massive app-wide UI refresh, new features like wallet activity logging, and various improvements to ensure smooth…</p>",
+        "is_short_description_html_truncated": true
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-25T13:59:53Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12338246965",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "a1denvalu3-patch-4",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/a1denvalu3-patch-4",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-25T13:49:20Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12338242541",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34628457758,
+      "ref": "refs/heads/main",
+      "head": "68df494718b2ba8976c620344ca90e1f728fde5d",
+      "before": "e9e7e4da348e38f128d894ecfb3fe9cd679df19f"
+    },
+    "public": true,
+    "created_at": "2026-05-25T13:49:13Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9866447538",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 326,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/326",
+        "id": 3742322399,
+        "number": 326,
+        "head": {
+          "ref": "a1denvalu3-patch-4",
+          "sha": "88268b2e3389ccd7104ab2e44ee66a44fcc51e5a",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "e9e7e4da348e38f128d894ecfb3fe9cd679df19f",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-25T13:49:12Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9866219920",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 326,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/326",
+        "id": 3742322399,
+        "number": 326,
+        "head": {
+          "ref": "a1denvalu3-patch-4",
+          "sha": "88268b2e3389ccd7104ab2e44ee66a44fcc51e5a",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "e9e7e4da348e38f128d894ecfb3fe9cd679df19f",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-25T13:42:22Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12337962075",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "a1denvalu3-patch-4",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/a1denvalu3-patch-4",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-25T13:42:18Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12330267964",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34620481108,
+      "ref": "refs/heads/feature/custom-unit-ecash",
+      "head": "783508ce4094c53182d40d926d711b7ab7736df1",
+      "before": "f5761e6fe04c5dbb9bd563c6538fcd07ee6377c1"
+    },
+    "public": true,
+    "created_at": "2026-05-25T10:18:03Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12274861456",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34565039029,
+      "ref": "refs/heads/feature/custom-unit-ecash",
+      "head": "f5761e6fe04c5dbb9bd563c6538fcd07ee6377c1",
+      "before": "d63ff7de0378b158837f1bb6bee13ea9e576e3ea"
+    },
+    "public": true,
+    "created_at": "2026-05-23T17:10:48Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12273841190",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34564017724,
+      "ref": "refs/heads/feature/custom-unit-ecash",
+      "head": "d63ff7de0378b158837f1bb6bee13ea9e576e3ea",
+      "before": "c3816f88dd6de44237703620f125fde8ce957837"
+    },
+    "public": true,
+    "created_at": "2026-05-23T16:26:26Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12273590804",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34563766990,
+      "ref": "refs/heads/feature/custom-unit-ecash",
+      "head": "c3816f88dd6de44237703620f125fde8ce957837",
+      "before": "f707e4692900e4a87c04876c0f2856c42476eda3"
+    },
+    "public": true,
+    "created_at": "2026-05-23T16:15:29Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12273196631",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34563372310,
+      "ref": "refs/heads/feature/custom-unit-ecash",
+      "head": "f707e4692900e4a87c04876c0f2856c42476eda3",
+      "before": "61e7872d9f225fa53079719a8aa393b388e2ad77"
+    },
+    "public": true,
+    "created_at": "2026-05-23T15:59:22Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9794180247",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 325,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/325",
+        "id": 3731332422,
+        "number": 325,
+        "head": {
+          "ref": "feature/custom-unit-ecash",
+          "sha": "783508ce4094c53182d40d926d711b7ab7736df1",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "e9e7e4da348e38f128d894ecfb3fe9cd679df19f",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-22T15:36:33Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12237321365",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "feature/custom-unit-ecash",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feature/custom-unit-ecash",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-22T15:36:24Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12230928061",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34521162156,
+      "ref": "refs/heads/feature/handle-non-bolt11-mints",
+      "head": "17479050936dcc42e63c6c5128f9b881b0d04525",
+      "before": "8de77a65f95726c892daf5db9b36ce611b9ffe68"
+    },
+    "public": true,
+    "created_at": "2026-05-22T13:12:23Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12230889774",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34521113520,
+      "ref": "refs/heads/feature/handle-non-bolt11-mints",
+      "head": "8de77a65f95726c892daf5db9b36ce611b9ffe68",
+      "before": "879c1f7355db5e58992c7fb910b172ca7c5cf53d"
+    },
+    "public": true,
+    "created_at": "2026-05-22T13:11:26Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12230516803",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34520750727,
+      "ref": "refs/heads/feature/handle-non-bolt11-mints",
+      "head": "879c1f7355db5e58992c7fb910b172ca7c5cf53d",
+      "before": "85b4b21dcb45d6ae260618d1d3b96666d3e7afaa"
+    },
+    "public": true,
+    "created_at": "2026-05-22T13:02:56Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12230509856",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34520743675,
+      "ref": "refs/heads/feature/handle-non-bolt11-mints",
+      "head": "85b4b21dcb45d6ae260618d1d3b96666d3e7afaa",
+      "before": "0fab3021c71f036d5f858de10816af351826c543"
+    },
+    "public": true,
+    "created_at": "2026-05-22T13:02:46Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12230181106",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34520416549,
+      "ref": "refs/heads/feature/handle-non-bolt11-mints",
+      "head": "0fab3021c71f036d5f858de10816af351826c543",
+      "before": "4ffd28e9472cdae9744ace44c2eeb9735f3e9f6a"
+    },
+    "public": true,
+    "created_at": "2026-05-22T12:55:22Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12228763422",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34519000089,
+      "ref": "refs/heads/feature/handle-non-bolt11-mints",
+      "head": "4ffd28e9472cdae9744ace44c2eeb9735f3e9f6a",
+      "before": "985a5d88a52b961e4aeef48175d1c008744be924"
+    },
+    "public": true,
+    "created_at": "2026-05-22T12:21:43Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9786438567",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 324,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/324",
+        "id": 3730225153,
+        "number": 324,
+        "head": {
+          "ref": "feature/handle-non-bolt11-mints",
+          "sha": "7eb44543721b52d3f4db1c51bc4c649f066ff4cf",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "e9e7e4da348e38f128d894ecfb3fe9cd679df19f",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-22T12:18:35Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12228631615",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "feature/handle-non-bolt11-mints",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feature/handle-non-bolt11-mints",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-22T12:18:30Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9763101267",
+    "type": "ReleaseEvent",
+    "actor": {
+      "id": 41898282,
+      "login": "github-actions[bot]",
+      "display_login": "github-actions",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41898282?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "published",
+      "release": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/releases/327405603",
+        "assets_url": "https://api.github.com/repos/cashubtc/Numo/releases/327405603/assets",
+        "upload_url": "https://uploads.github.com/repos/cashubtc/Numo/releases/327405603/assets{?name,label}",
+        "html_url": "https://github.com/cashubtc/Numo/releases/tag/v1.6-rc1",
+        "id": 327405603,
+        "author": {
+          "login": "github-actions[bot]",
+          "id": 41898282,
+          "node_id": "MDM6Qm90NDE4OTgyODI=",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+          "html_url": "https://github.com/apps/github-actions",
+          "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOPJQeE84Tg9Aj",
+        "tag_name": "v1.6-rc1",
+        "target_commitish": "main",
+        "name": "Release v1.6-rc1",
+        "draft": false,
+        "immutable": false,
+        "prerelease": true,
+        "created_at": "2026-05-21T23:24:46Z",
+        "updated_at": "2026-05-21T23:36:10Z",
+        "published_at": "2026-05-21T23:36:10Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/426566096",
+            "id": 426566096,
+            "node_id": "RA_kwDOPJQeE84ZbOHQ",
+            "name": "numo-v1.6-rc1-arm64-v8a.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 34370543,
+            "digest": "sha256:ff94475045711ca3a0a0943e7bfee3747581c35e57c68cc107b7c373274a1ef4",
+            "download_count": 3,
+            "created_at": "2026-05-21T23:32:47Z",
+            "updated_at": "2026-05-21T23:32:50Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6-rc1/numo-v1.6-rc1-arm64-v8a.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/426566095",
+            "id": 426566095,
+            "node_id": "RA_kwDOPJQeE84ZbOHP",
+            "name": "numo-v1.6-rc1-armeabi-v7a.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 28716681,
+            "digest": "sha256:d0dc1682905e53d2a676b23fcf88bf567731303745cc7dad2732f2e627684e38",
+            "download_count": 0,
+            "created_at": "2026-05-21T23:32:47Z",
+            "updated_at": "2026-05-21T23:33:57Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6-rc1/numo-v1.6-rc1-armeabi-v7a.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/426566097",
+            "id": 426566097,
+            "node_id": "RA_kwDOPJQeE84ZbOHR",
+            "name": "numo-v1.6-rc1-universal.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 74283385,
+            "digest": "sha256:c163833aa1c2f48598c6a64337c054d0c22d1eec3b768b05182f7a540aafd09b",
+            "download_count": 3,
+            "created_at": "2026-05-21T23:32:47Z",
+            "updated_at": "2026-05-21T23:32:51Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6-rc1/numo-v1.6-rc1-universal.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/426566099",
+            "id": 426566099,
+            "node_id": "RA_kwDOPJQeE84ZbOHT",
+            "name": "numo-v1.6-rc1-x86.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 22769454,
+            "digest": "sha256:9d696d98c03dc854d60257f5a2be30d15a31ac6f40cb06a5ef27974a4e9397b0",
+            "download_count": 0,
+            "created_at": "2026-05-21T23:32:47Z",
+            "updated_at": "2026-05-21T23:32:49Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6-rc1/numo-v1.6-rc1-x86.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/426566098",
+            "id": 426566098,
+            "node_id": "RA_kwDOPJQeE84ZbOHS",
+            "name": "numo-v1.6-rc1-x86_64.apk",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/vnd.android.package-archive",
+            "state": "uploaded",
+            "size": 37336128,
+            "digest": "sha256:af70257bde10e318d2cce8be4c137562f56027224f54784db11f88ad43ed8b67",
+            "download_count": 0,
+            "created_at": "2026-05-21T23:32:47Z",
+            "updated_at": "2026-05-21T23:33:52Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6-rc1/numo-v1.6-rc1-x86_64.apk"
+          },
+          {
+            "url": "https://api.github.com/repos/cashubtc/Numo/releases/assets/426566100",
+            "id": 426566100,
+            "node_id": "RA_kwDOPJQeE84ZbOHU",
+            "name": "numo-v1.6-rc1.aab",
+            "label": "",
+            "uploader": {
+              "login": "github-actions[bot]",
+              "id": 41898282,
+              "node_id": "MDM6Qm90NDE4OTgyODI=",
+              "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+              "html_url": "https://github.com/apps/github-actions",
+              "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+              "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+              "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+              "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+              "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+              "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+              "type": "Bot",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "content_type": "application/x-authorware-bin",
+            "state": "uploaded",
+            "size": 47322434,
+            "digest": "sha256:1eb9c223efe50d19f61077becc85ba55866c976228686ca6fde2bb209f78dd46",
+            "download_count": 0,
+            "created_at": "2026-05-21T23:32:47Z",
+            "updated_at": "2026-05-21T23:33:52Z",
+            "browser_download_url": "https://github.com/cashubtc/Numo/releases/download/v1.6-rc1/numo-v1.6-rc1.aab"
+          }
+        ],
+        "tarball_url": "https://api.github.com/repos/cashubtc/Numo/tarball/v1.6-rc1",
+        "zipball_url": "https://api.github.com/repos/cashubtc/Numo/zipball/v1.6-rc1",
+        "body": "## What's Changed\r\n* App-wide UI refresh: design system, components, and screen redesigns by @swedishfrenchpress in https://github.com/cashubtc/Numo/pull/233\r\n* refactor: remove temporary migration scripts by @a1denvalu3 in https://github.com/cashubtc/Numo/pull/314\r\n* Validate auto-withdraw threshold against LNURL minSendable by @a1denvalu3 in https://github.com/cashubtc/Numo/pull/315\r\n* Add wallet activity logging system by @a1denvalu3 in https://github.com/cashubtc/Numo/pull/316\r\n* Add wallet activity logging system (rebased) by @a1denvalu3 in https://github.com/cashubtc/Numo/pull/317\r\n* Add BTCMap onboarding banner by @a1denvalu3 in https://github.com/cashubtc/Numo/pull/318\r\n* Revert \"Add BTCMap onboarding banner\" by @a1denvalu3 in https://github.com/cashubtc/Numo/pull/320\r\n* Add BTCMap onboarding banner by @a1denvalu3 in https://github.com/cashubtc/Numo/pull/321\r\n* Update build.gradle.kts by @a1denvalu3 in https://github.com/cashubtc/Numo/pull/322\r\n* ci: Remove obsolete Java 21 override in release workflow by @a1denvalu3 in https://github.com/cashubtc/Numo/pull/323\r\n\r\n\r\n**Full Changelog**: https://github.com/cashubtc/Numo/compare/v1.5...v1.6-rc1",
+        "mentions_count": 2,
+        "mentions": [
+          {
+            "avatar_url": "https://avatars.githubusercontent.com/u/43107113?v=4",
+            "login": "a1denvalu3",
+            "profile_name": null,
+            "profile_url": "https://github.com/a1denvalu3",
+            "avatar_user_actor": true
+          },
+          {
+            "avatar_url": "https://avatars.githubusercontent.com/u/78821053?v=4",
+            "login": "swedishfrenchpress",
+            "profile_name": "Erik",
+            "profile_url": "https://github.com/swedishfrenchpress",
+            "avatar_user_actor": true
+          }
+        ],
+        "short_description_html": "<h2>What's Changed</h2>\n<ul>\n<li>App-wide UI refresh: design system, components, and screen redesigns by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/swedishfrenchpress/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/swedishfrenchpress\">@swedishfrenchpress</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4117786208\" data-permission-text=\"Title is private\" data-url=\"https://github.com/cashubtc/Numo/issues/233\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/cashubtc/Numo/pull/233/hovercard\" href=\"https://github.com/cashubtc/Numo/pull/233\">#233</a>\n</li>\n<li>refactor: remove temporary migration scripts by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/a1denvalu3/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/a1denvalu3\">@a1denvalu3</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4453893417\" data-permission-text=\"Title is private\" data-url=\"https://github.com/cashubtc/Numo/issues/314\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/cashubtc/Numo/pull/314/hovercard\" href=\"https://github.com/cashubtc/Numo/pull/314\">#314</a>\n</li>\n<li>Validate auto…</li>\n</ul>",
+        "is_short_description_html_truncated": true
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T23:36:10Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12203239258",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "fix-github-actions-java-version",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix-github-actions-java-version",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-21T23:24:51Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12203237461",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34493520429,
+      "ref": "refs/heads/main",
+      "head": "e9e7e4da348e38f128d894ecfb3fe9cd679df19f",
+      "before": "b433a1906add26f3e3002650e498e2de9f6be30c"
+    },
+    "public": true,
+    "created_at": "2026-05-21T23:24:47Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9762801435",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 323,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/323",
+        "id": 3726860853,
+        "number": 323,
+        "head": {
+          "ref": "fix-github-actions-java-version",
+          "sha": "3fb66351d3c78b69935002e13db24b02ae0f65f9",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "b433a1906add26f3e3002650e498e2de9f6be30c",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T23:24:46Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9762735562",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 323,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/323",
+        "id": 3726860853,
+        "number": 323,
+        "head": {
+          "ref": "fix-github-actions-java-version",
+          "sha": "3fb66351d3c78b69935002e13db24b02ae0f65f9",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "b433a1906add26f3e3002650e498e2de9f6be30c",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T23:22:05Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12203164634",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "fix-github-actions-java-version",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix-github-actions-java-version",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-21T23:21:51Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12202473240",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34492761896,
+      "ref": "refs/heads/main",
+      "head": "b433a1906add26f3e3002650e498e2de9f6be30c",
+      "before": "561fdd8cc5371ad34f0d547664ecd07eb6fa5e23"
+    },
+    "public": true,
+    "created_at": "2026-05-21T22:57:05Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9762103611",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 322,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/322",
+        "id": 3726773225,
+        "number": 322,
+        "head": {
+          "ref": "a1denvalu3-patch-3",
+          "sha": "a010b3366d74b07595e80c961a9562fc5de53f0f",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "561fdd8cc5371ad34f0d547664ecd07eb6fa5e23",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T22:57:03Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9762094279",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 322,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/322",
+        "id": 3726773225,
+        "number": 322,
+        "head": {
+          "ref": "a1denvalu3-patch-3",
+          "sha": "a010b3366d74b07595e80c961a9562fc5de53f0f",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "561fdd8cc5371ad34f0d547664ecd07eb6fa5e23",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T22:56:44Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12202461444",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "a1denvalu3-patch-3",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/a1denvalu3-patch-3",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-21T22:56:38Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9757600160",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 321,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/321",
+        "id": 3726127829,
+        "number": 321,
+        "head": {
+          "ref": "feature/btcmap-onboarding-popup",
+          "sha": "b5322fbded21f2543c545bfda711d69e53978138",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "db7204a583a824c6769e8cb96d5730aabcc90c76",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:32:52Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12197700295",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34488022970,
+      "ref": "refs/heads/main",
+      "head": "561fdd8cc5371ad34f0d547664ecd07eb6fa5e23",
+      "before": "db7204a583a824c6769e8cb96d5730aabcc90c76"
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:32:53Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9757403394",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 321,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/321",
+        "id": 3726127829,
+        "number": 321,
+        "head": {
+          "ref": "feature/btcmap-onboarding-popup",
+          "sha": "b5322fbded21f2543c545bfda711d69e53978138",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "db7204a583a824c6769e8cb96d5730aabcc90c76",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:27:21Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12197452566",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34487776452,
+      "ref": "refs/heads/main",
+      "head": "db7204a583a824c6769e8cb96d5730aabcc90c76",
+      "before": "fc9b004d79dc86ea707da1994c32b2fa960971a3"
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:26:17Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9757367016",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 320,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/320",
+        "id": 3726118167,
+        "number": 320,
+        "head": {
+          "ref": "revert-318-feature/btcmap-onboarding-popup",
+          "sha": "89f85fbc6dfe49568082770a10993de879bfbbb9",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "fc9b004d79dc86ea707da1994c32b2fa960971a3",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:26:15Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12197424511",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "feature/btcmap-onboarding-popup",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:25:32Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9757336739",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 320,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/320",
+        "id": 3726118167,
+        "number": 320,
+        "head": {
+          "ref": "revert-318-feature/btcmap-onboarding-popup",
+          "sha": "89f85fbc6dfe49568082770a10993de879bfbbb9",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "fc9b004d79dc86ea707da1994c32b2fa960971a3",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:25:24Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12197415959",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "revert-318-feature/btcmap-onboarding-popup",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/revert-318-feature/btcmap-onboarding-popup",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:25:19Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12197299681",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "feature/btcmap-onboarding-popup",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:22:12Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12197295753",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34487620941,
+      "ref": "refs/heads/main",
+      "head": "fc9b004d79dc86ea707da1994c32b2fa960971a3",
+      "before": "0bbc24c97a1a3cd69141c8a023ac47ead470abd1"
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:22:05Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9757219723",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 318,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/318",
+        "id": 3708561759,
+        "number": 318,
+        "head": {
+          "ref": "feature/btcmap-onboarding-popup",
+          "sha": "5128d7106cbd49ae2d861700c4183d5c5d7fb213",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "0bbc24c97a1a3cd69141c8a023ac47ead470abd1",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:22:04Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12196791895",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34487119370,
+      "ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "head": "5128d7106cbd49ae2d861700c4183d5c5d7fb213",
+      "before": "c68f0de6eaa55274a20232d1f9950178c19c679a"
+    },
+    "public": true,
+    "created_at": "2026-05-21T20:09:01Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9708359289",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 145858188,
+      "login": "ye0man",
+      "display_login": "ye0man",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ye0man",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145858188?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/issues/319",
+        "repository_url": "https://api.github.com/repos/cashubtc/Numo",
+        "labels_url": "https://api.github.com/repos/cashubtc/Numo/issues/319/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/Numo/issues/319/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/Numo/issues/319/events",
+        "html_url": "https://github.com/cashubtc/Numo/issues/319",
+        "id": 4489566295,
+        "node_id": "I_kwDOPJQeE88AAAABC5lYVw",
+        "number": 319,
+        "title": "remove coinos as a default / high priority mint",
+        "user": {
+          "login": "ye0man",
+          "id": 145858188,
+          "node_id": "U_kgDOCLGejA",
+          "avatar_url": "https://avatars.githubusercontent.com/u/145858188?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ye0man",
+          "html_url": "https://github.com/ye0man",
+          "followers_url": "https://api.github.com/users/ye0man/followers",
+          "following_url": "https://api.github.com/users/ye0man/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ye0man/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ye0man/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ye0man/subscriptions",
+          "organizations_url": "https://api.github.com/users/ye0man/orgs",
+          "repos_url": "https://api.github.com/users/ye0man/repos",
+          "events_url": "https://api.github.com/users/ye0man/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ye0man/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-05-20T20:07:15Z",
+        "updated_at": "2026-05-20T20:07:15Z",
+        "closed_at": null,
+        "assignee": null,
+        "issue_field_values": [],
+        "type": null,
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "The mint auditor (https://audit.8333.space/) has consistently shown the coinos nutshell mint to be unreliable when engaging in test mint swaps. For a few months now, 100% of swaps has failed due to stuck pending proofs. We shouldn't highlight them as a default / high priority mint while the issue persists.",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/Numo/issues/319/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/Numo/issues/319/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-20T20:07:17Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12084194054",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34374730758,
+      "ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "head": "c68f0de6eaa55274a20232d1f9950178c19c679a",
+      "before": "8e82021cd8e786e0a35acf7f224575856ffe1ee4"
+    },
+    "public": true,
+    "created_at": "2026-05-19T19:00:46Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12069860690",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34360434428,
+      "ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "head": "8e82021cd8e786e0a35acf7f224575856ffe1ee4",
+      "before": "e692d61122aded62990d992103bc6b016ca96060"
+    },
+    "public": true,
+    "created_at": "2026-05-19T13:50:29Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12064303694",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34354886199,
+      "ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "head": "e692d61122aded62990d992103bc6b016ca96060",
+      "before": "a17d7e52fc68e1f054beeb7bf2e8ca54b389f9e6"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:55:04Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12064239551",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34354822143,
+      "ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "head": "a17d7e52fc68e1f054beeb7bf2e8ca54b389f9e6",
+      "before": "b8f7eaa9dd7b006e9fe88524b045cca4b1cd5cab"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:53:35Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12063911445",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34354493946,
+      "ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "head": "b8f7eaa9dd7b006e9fe88524b045cca4b1cd5cab",
+      "before": "0a05c31e8727976fb797d38097cf5384cddca3b7"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:46:01Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12063863264",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34354445860,
+      "ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "head": "0a05c31e8727976fb797d38097cf5384cddca3b7",
+      "before": "2288b7a87cb62c4dce25e7c78a7f0f0df9c45b45"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:44:56Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12063683290",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34354265935,
+      "ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "head": "2288b7a87cb62c4dce25e7c78a7f0f0df9c45b45",
+      "before": "e9f4d38ac4d6df327a088b7aa8fe14fae7be4b74"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:40:47Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9635490538",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 318,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/318",
+        "id": 3708561759,
+        "number": 318,
+        "head": {
+          "ref": "feature/btcmap-onboarding-popup",
+          "sha": "5128d7106cbd49ae2d861700c4183d5c5d7fb213",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "0bbc24c97a1a3cd69141c8a023ac47ead470abd1",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:39:55Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12063641683",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34354224437,
+      "ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "head": "e9f4d38ac4d6df327a088b7aa8fe14fae7be4b74",
+      "before": "0bbc24c97a1a3cd69141c8a023ac47ead470abd1"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:39:50Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12063628200",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "feature/btcmap-onboarding-popup",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feature/btcmap-onboarding-popup",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-19T11:39:31Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9620456290",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 88546580,
+      "login": "4xvgal",
+      "display_login": "4xvgal",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/4xvgal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88546580?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/issues/313",
+        "repository_url": "https://api.github.com/repos/cashubtc/Numo",
+        "labels_url": "https://api.github.com/repos/cashubtc/Numo/issues/313/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cashubtc/Numo/issues/313/comments",
+        "events_url": "https://api.github.com/repos/cashubtc/Numo/issues/313/events",
+        "html_url": "https://github.com/cashubtc/Numo/issues/313",
+        "id": 4380441263,
+        "node_id": "I_kwDOPJQeE88AAAABBRg6rw",
+        "number": 313,
+        "title": "UI: adding QR code format from withdraw token",
+        "user": {
+          "login": "4xvgal",
+          "id": 88546580,
+          "node_id": "MDQ6VXNlcjg4NTQ2NTgw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/88546580?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/4xvgal",
+          "html_url": "https://github.com/4xvgal",
+          "followers_url": "https://api.github.com/users/4xvgal/followers",
+          "following_url": "https://api.github.com/users/4xvgal/following{/other_user}",
+          "gists_url": "https://api.github.com/users/4xvgal/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/4xvgal/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/4xvgal/subscriptions",
+          "organizations_url": "https://api.github.com/users/4xvgal/orgs",
+          "repos_url": "https://api.github.com/users/4xvgal/repos",
+          "events_url": "https://api.github.com/users/4xvgal/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/4xvgal/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2026-05-04T23:46:14Z",
+        "updated_at": "2026-05-20T16:27:06Z",
+        "closed_at": null,
+        "assignee": null,
+        "issue_field_values": [],
+        "type": {
+          "id": 17819606,
+          "node_id": "IT_kwDOBs9DwM4BD-fW",
+          "name": "Feature",
+          "description": "A request, idea, or new functionality",
+          "color": "blue",
+          "created_at": "2024-02-14T08:34:03Z",
+          "updated_at": "2024-10-08T20:27:44Z",
+          "is_enabled": true
+        },
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "Showing QR code of token would be Awesome",
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/Numo/issues/313/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/cashubtc/Numo/issues/313/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/issues/comments/4484472649",
+        "html_url": "https://github.com/cashubtc/Numo/issues/313#issuecomment-4484472649",
+        "issue_url": "https://api.github.com/repos/cashubtc/Numo/issues/313",
+        "id": 4484472649,
+        "node_id": "IC_kwDOPJQeE88AAAABC0ufSQ",
+        "user": {
+          "login": "4xvgal",
+          "id": 88546580,
+          "node_id": "MDQ6VXNlcjg4NTQ2NTgw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/88546580?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/4xvgal",
+          "html_url": "https://github.com/4xvgal",
+          "followers_url": "https://api.github.com/users/4xvgal/followers",
+          "following_url": "https://api.github.com/users/4xvgal/following{/other_user}",
+          "gists_url": "https://api.github.com/users/4xvgal/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/4xvgal/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/4xvgal/subscriptions",
+          "organizations_url": "https://api.github.com/users/4xvgal/orgs",
+          "repos_url": "https://api.github.com/users/4xvgal/repos",
+          "events_url": "https://api.github.com/users/4xvgal/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/4xvgal/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-05-19T04:43:53Z",
+        "updated_at": "2026-05-19T04:43:53Z",
+        "body": "Guess i payout little bit largely 😂\n\nIt would be great AnimatedQR on withdrawal page",
+        "pin": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/cashubtc/Numo/issues/comments/4484472649/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-19T04:43:53Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12008856872",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34299472246,
+      "ref": "refs/heads/main",
+      "head": "0bbc24c97a1a3cd69141c8a023ac47ead470abd1",
+      "before": "49eb21e7b6b19ea2309578d61b26cd83995c09c4"
+    },
+    "public": true,
+    "created_at": "2026-05-18T11:14:51Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9584996622",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 317,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/317",
+        "id": 3701368777,
+        "number": 317,
+        "head": {
+          "ref": "log-wallet-activity",
+          "sha": "6ca2967bae3a7ff6236d69e0595565b979b57622",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "49eb21e7b6b19ea2309578d61b26cd83995c09c4",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T11:14:50Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9584494085",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 317,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/317",
+        "id": 3701368777,
+        "number": 317,
+        "head": {
+          "ref": "log-wallet-activity",
+          "sha": "6ca2967bae3a7ff6236d69e0595565b979b57622",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "49eb21e7b6b19ea2309578d61b26cd83995c09c4",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T11:00:58Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12008120705",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34298736286,
+      "ref": "refs/heads/log-wallet-activity",
+      "head": "6ca2967bae3a7ff6236d69e0595565b979b57622",
+      "before": "083fbc3e62e37d9d291b4ed25b757153e2a638a5"
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:57:24Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12008028897",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "revert-316-log-wallet-activity",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/revert-316-log-wallet-activity",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:55:12Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12007686170",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "log-wallet-activity",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/log-wallet-activity",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:46:55Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12007481541",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "log-wallet-activity",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/log-wallet-activity",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:42:00Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12007479187",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34298094703,
+      "ref": "refs/heads/main",
+      "head": "49eb21e7b6b19ea2309578d61b26cd83995c09c4",
+      "before": "a4afafd769a743bba673d970c8b21aa063650f08"
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:41:56Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9583750766",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 316,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/316",
+        "id": 3698295639,
+        "number": 316,
+        "head": {
+          "ref": "log-wallet-activity",
+          "sha": "13b8cb64b3f8798ecebc42e939d752b551c87d95",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "a4afafd769a743bba673d970c8b21aa063650f08",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-18T10:41:55Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12004717114",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34295333538,
+      "ref": "refs/heads/log-wallet-activity",
+      "head": "13b8cb64b3f8798ecebc42e939d752b551c87d95",
+      "before": "c198d8a694f3682ed3b106828f69c483ad4c1b6e"
+    },
+    "public": true,
+    "created_at": "2026-05-18T09:37:19Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12004282117",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34294902932,
+      "ref": "refs/heads/log-wallet-activity",
+      "head": "c198d8a694f3682ed3b106828f69c483ad4c1b6e",
+      "before": "52da7503523f4b3235557b1019e1baafbb189ae0"
+    },
+    "public": true,
+    "created_at": "2026-05-18T09:27:22Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12002925567",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34293559417,
+      "ref": "refs/heads/log-wallet-activity",
+      "head": "52da7503523f4b3235557b1019e1baafbb189ae0",
+      "before": "ccdf94e0a09e5ce5304da6de3954bf1c319bebc3"
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:56:33Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "12002793110",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34293427223,
+      "ref": "refs/heads/log-wallet-activity",
+      "head": "ccdf94e0a09e5ce5304da6de3954bf1c319bebc3",
+      "before": "411e6318a428f98da30064e87f366f513f62298b"
+    },
+    "public": true,
+    "created_at": "2026-05-18T08:53:24Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9575750628",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 90146109,
+      "login": "MorrisMbithi",
+      "display_login": "MorrisMbithi",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MorrisMbithi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90146109?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-18T07:16:53Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9567018468",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 267916734,
+      "login": "spring9978",
+      "display_login": "spring9978",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/spring9978",
+      "avatar_url": "https://avatars.githubusercontent.com/u/267916734?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-05-18T01:12:08Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9562853402",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 316,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/316",
+        "id": 3698295639,
+        "number": 316,
+        "head": {
+          "ref": "log-wallet-activity",
+          "sha": "13b8cb64b3f8798ecebc42e939d752b551c87d95",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "a4afafd769a743bba673d970c8b21aa063650f08",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-17T20:18:21Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11982784314",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "log-wallet-activity",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/log-wallet-activity",
+      "master_branch": "main",
+      "description": "Cashu and lightning PoS APP",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-17T20:18:17Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11944840666",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "ref": "fix/auto-withdraw-min-threshold",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-16T14:40:50Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9539052877",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 315,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/315",
+        "id": 3690933395,
+        "number": 315,
+        "head": {
+          "ref": "fix/auto-withdraw-min-threshold",
+          "sha": "a0031203b3b58410e8bd6f415d655987ee1f9643",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "3bd75e7cbf67983246d820fd0885957c885ff078",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-16T14:40:45Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11944839366",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34235446047,
+      "ref": "refs/heads/main",
+      "head": "a4afafd769a743bba673d970c8b21aa063650f08",
+      "before": "3bd75e7cbf67983246d820fd0885957c885ff078"
+    },
+    "public": true,
+    "created_at": "2026-05-16T14:40:46Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11944570047",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34235176329,
+      "ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "head": "a0031203b3b58410e8bd6f415d655987ee1f9643",
+      "before": "cac9aac8432338407171f8d4f795c32465f7d9a7"
+    },
+    "public": true,
+    "created_at": "2026-05-16T14:29:17Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11944040741",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34234646425,
+      "ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "head": "cac9aac8432338407171f8d4f795c32465f7d9a7",
+      "before": "f02c14f64973e4ed6f104835e20864c2ac392fa7"
+    },
+    "public": true,
+    "created_at": "2026-05-16T14:07:54Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11943574463",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34234179488,
+      "ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "head": "f02c14f64973e4ed6f104835e20864c2ac392fa7",
+      "before": "7c38ab0292e8e45a8dff49ec6ec096dea50d9303"
+    },
+    "public": true,
+    "created_at": "2026-05-16T13:48:47Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11943456480",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34234061322,
+      "ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "head": "7c38ab0292e8e45a8dff49ec6ec096dea50d9303",
+      "before": "2f0824f618732fd30f923a2de6fc3896b6145d5e"
+    },
+    "public": true,
+    "created_at": "2026-05-16T13:43:56Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11919169925",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34209782868,
+      "ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "head": "2f0824f618732fd30f923a2de6fc3896b6145d5e",
+      "before": "0f8941dbbf497ee19ec73805b77e06ec1a7577ec"
+    },
+    "public": true,
+    "created_at": "2026-05-15T19:30:38Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11918972894",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34209585977,
+      "ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "head": "0f8941dbbf497ee19ec73805b77e06ec1a7577ec",
+      "before": "1a0b0ceeba41a9df91391a3c3e6e356cf922437c"
+    },
+    "public": true,
+    "created_at": "2026-05-15T19:25:09Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11913705441",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34204323993,
+      "ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "head": "1a0b0ceeba41a9df91391a3c3e6e356cf922437c",
+      "before": "507a98085a3a00afe17aa977f9454bcb4e8cdd1d"
+    },
+    "public": true,
+    "created_at": "2026-05-15T17:03:25Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11913447666",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34204066428,
+      "ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "head": "507a98085a3a00afe17aa977f9454bcb4e8cdd1d",
+      "before": "80828e6120a9e4f98b8b9a73aca6881fac87d710"
+    },
+    "public": true,
+    "created_at": "2026-05-15T16:56:56Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "11913374327",
+    "type": "PushEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "repository_id": 1016339987,
+      "push_id": 34203993110,
+      "ref": "refs/heads/fix/auto-withdraw-min-threshold",
+      "head": "80828e6120a9e4f98b8b9a73aca6881fac87d710",
+      "before": "9387ef53a2b6f1994b68ee7fc4e945197897d17f"
+    },
+    "public": true,
+    "created_at": "2026-05-15T16:55:00Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  },
+  {
+    "id": "9514657832",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 43107113,
+      "login": "a1denvalu3",
+      "display_login": "a1denvalu3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/a1denvalu3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43107113?"
+    },
+    "repo": {
+      "id": 1016339987,
+      "name": "cashubtc/Numo",
+      "url": "https://api.github.com/repos/cashubtc/Numo"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 315,
+      "pull_request": {
+        "url": "https://api.github.com/repos/cashubtc/Numo/pulls/315",
+        "id": 3690933395,
+        "number": 315,
+        "head": {
+          "ref": "fix/auto-withdraw-min-threshold",
+          "sha": "a0031203b3b58410e8bd6f415d655987ee1f9643",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "3bd75e7cbf67983246d820fd0885957c885ff078",
+          "repo": {
+            "id": 1016339987,
+            "url": "https://api.github.com/repos/cashubtc/Numo",
+            "name": "Numo"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-05-15T16:50:26Z",
+    "org": {
+      "id": 114246592,
+      "login": "cashubtc",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/cashubtc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114246592?"
+    }
+  }
+]

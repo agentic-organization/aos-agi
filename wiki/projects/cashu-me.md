@@ -27,6 +27,8 @@ The reference Cashu web wallet and the most widely deployed consumer entry point
 
 - 2026-05-15: `data/raw/github/daily/2026-05-15/cashubtc/cashu.me/` captured **1 commit** and **1 updated issue** in the 24h window. Themes: migration to cashu-ts v4 (PR #517). Committer: [[people/callebtc]].
 
+- 2026-06-01: Daily ingestion (`data/raw/github/daily/2026-06-01/cashubtc/cashu.me/`) shows **2 issues updated** (no new commits): #527 "Update docker ci release" by [[people/asmogo]], and #528 "Add seed-phrase-less wallets" by friedger. **43 events** in the 24h window.
+
 ## Open questions
 - Primary maintainers, funding model, and activity cadence.
 - Which Cashu library (cashu-ts, CDK, Nutshell, etc.) it builds on.
