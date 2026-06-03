@@ -6377,6 +6377,38 @@
     }
   },
   {
+    "id": "11539077333",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 202880,
+      "login": "erskingardner",
+      "display_login": "erskingardner",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erskingardner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
+    },
+    "repo": {
+      "id": 1133622341,
+      "name": "marmot-protocol/transponder",
+      "url": "https://api.github.com/repos/marmot-protocol/transponder"
+    },
+    "payload": {
+      "ref": "fix/issue-70-relay-tls",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/issue-70-relay-tls",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-05-07T12:48:49Z",
+    "org": {
+      "id": 200956832,
+      "login": "marmot-protocol",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/marmot-protocol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
+    }
+  },
+  {
     "id": "11539076879",
     "type": "PushEvent",
     "actor": {
@@ -6401,38 +6433,6 @@
     },
     "public": true,
     "created_at": "2026-05-07T12:48:48Z",
-    "org": {
-      "id": 200956832,
-      "login": "marmot-protocol",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/marmot-protocol",
-      "avatar_url": "https://avatars.githubusercontent.com/u/200956832?"
-    }
-  },
-  {
-    "id": "11539077333",
-    "type": "DeleteEvent",
-    "actor": {
-      "id": 202880,
-      "login": "erskingardner",
-      "display_login": "erskingardner",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/erskingardner",
-      "avatar_url": "https://avatars.githubusercontent.com/u/202880?"
-    },
-    "repo": {
-      "id": 1133622341,
-      "name": "marmot-protocol/transponder",
-      "url": "https://api.github.com/repos/marmot-protocol/transponder"
-    },
-    "payload": {
-      "ref": "fix/issue-70-relay-tls",
-      "ref_type": "branch",
-      "full_ref": "refs/heads/fix/issue-70-relay-tls",
-      "pusher_type": "user"
-    },
-    "public": true,
-    "created_at": "2026-05-07T12:48:49Z",
     "org": {
       "id": 200956832,
       "login": "marmot-protocol",

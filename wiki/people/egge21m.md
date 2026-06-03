@@ -37,6 +37,7 @@ TypeScript ecosystem of Cashu. Led the cashu-ts v3 migration; architected the co
 - 2026-05-19: Daily ingestion (`data/raw/github/daily/2026-05-19/cashubtc/coco/`) shows **31 commits** by Egge21M in the 24h window on [[projects/coco]]: history refactor merged, rebased operation projection fix, legacy send token preservation, IndexedDB failed-melt exclusion.
 - 2026-05-20: Daily ingestion (`data/raw/github/daily/2026-05-20/cashubtc/coco/`) shows **3 commits** by Egge21M on [[projects/coco]]: merge PR #178 removing legacy melt quotes, merge PR #177 for blinded signature recovery, and fix validating restored proof keyset units in core.
 - 2026-05-27: Daily ingestion (`data/raw/github/daily/2026-05-27/cashubtc/coco/`) shows **3 commits** by Egge21M on [[projects/coco]]: merge PR #183 (quote-first BOLT11 mint operations), "fix(core): align mint watcher quote keys", and "fix(core): prevent duplicate melt quote operations".
+- 2026-05-31: Daily ingestion (`data/raw/github/daily/2026-05-31/cashubtc/coco/`) shows **9 commits** by Egge21M on [[projects/coco]]: merge PR #187 (BOLT12 payments on onchain), merge PR #184 (onchain payments), and follow-up fixes for bolt12 mint quotes, melt quote uniqueness, and duplicate melt quote prevention.
 
 ## Open questions
 - Full name, location, timezone?

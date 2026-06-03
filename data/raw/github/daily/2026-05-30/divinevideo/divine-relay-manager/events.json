@@ -1427,38 +1427,6 @@
     }
   },
   {
-    "id": "12249601156",
-    "type": "DeleteEvent",
-    "actor": {
-      "id": 168114,
-      "login": "mbradley",
-      "display_login": "mbradley",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/mbradley",
-      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
-    },
-    "repo": {
-      "id": 1110988043,
-      "name": "divinevideo/divine-relay-manager",
-      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager"
-    },
-    "payload": {
-      "ref": "config/zendesk-secrets-store-bindings",
-      "ref_type": "branch",
-      "full_ref": "refs/heads/config/zendesk-secrets-store-bindings",
-      "pusher_type": "user"
-    },
-    "public": true,
-    "created_at": "2026-05-22T21:16:37Z",
-    "org": {
-      "id": 244841795,
-      "login": "divinevideo",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/divinevideo",
-      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
-    }
-  },
-  {
     "id": "12249601031",
     "type": "PushEvent",
     "actor": {
@@ -1480,6 +1448,38 @@
       "ref": "refs/heads/main",
       "head": "38b1393ffd90ead531dc87c5d303b69c9184dfe2",
       "before": "5d1ef6b75640d4e801c22b5709b01a251d63576b"
+    },
+    "public": true,
+    "created_at": "2026-05-22T21:16:37Z",
+    "org": {
+      "id": 244841795,
+      "login": "divinevideo",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/divinevideo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244841795?"
+    }
+  },
+  {
+    "id": "12249601156",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 168114,
+      "login": "mbradley",
+      "display_login": "mbradley",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168114?"
+    },
+    "repo": {
+      "id": 1110988043,
+      "name": "divinevideo/divine-relay-manager",
+      "url": "https://api.github.com/repos/divinevideo/divine-relay-manager"
+    },
+    "payload": {
+      "ref": "config/zendesk-secrets-store-bindings",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/config/zendesk-secrets-store-bindings",
+      "pusher_type": "user"
     },
     "public": true,
     "created_at": "2026-05-22T21:16:37Z",

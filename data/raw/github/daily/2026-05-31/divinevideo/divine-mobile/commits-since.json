@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "4edf414cc425abcacae2f1704fe2396c324e2e6c",
+    "node_id": "C_kwDOO71yAtoAKDRlZGY0MTRjYzQyNWFiY2FjYWUyZjE3MDRmZTIzOTZjMzI0ZTJlNmM",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-30T11:30:57Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-30T11:30:57Z"
+      },
+      "message": "chore(tests): fix analyzer print statement issues with debugPrint (#4821)\n\n* chore(tests): fix analyzer print statement issues with debugPrint\n\n* fix(tools): revert standalone CLI scripts to print to keep dart run working\n\ndebugPrint from package:flutter/foundation pulls in dart:ui transitively,\nwhich is unavailable under the bare Dart VM, breaking 'dart run' for these\nstandalone tools. It also buffers output, risking loss of the error+stack\nbefore exit(1). Use print + file-level avoid_print ignore instead, and\nre-add dart:typed_data for Uint8List in test_upload.dart.",
+      "tree": {
+        "sha": "f982b95f2d60d78834a30bbbbfc2baab577b5f80",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/f982b95f2d60d78834a30bbbbfc2baab577b5f80"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/4edf414cc425abcacae2f1704fe2396c324e2e6c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGspxCRC1aQ7uu5UhlAAAOiIQAE2W5/pwLK0pyYsGy/B7npUe\nj/r+W7TT68OmYwHXXxYXIkd6xlDEAqh1NcZd1JVbr+1wLp92+Ca73lgk4fM/pYia\nXb9xVC6VSgx+mKTzeWNwG1mto3eUAtfFB6Ye/p6BnB8Xf4xKhs7OHuucjsZWVSn5\nI/4/TtaU7lf25F2n8wR1pF91G6se3vIMQFZugivTKI16jrp+brlxHXgLrRmNTO/J\nJ3kUVl0BR0jmhCM8vgWBd9YnR37pTZ+bw3gLWEF8cYguK7YjZ50QhtAVAqeQ0OEL\nGoaNU3G8YQ6xekl6jnUgHwgjPi6JbTPWirXN7DgeSwxBJOUaRIDUjvyEvxP270Hj\nlaM5MjdemyNvhVcGZRXriLYYFrkJh8p+HdP1q1p2nPNlu4fpx1Dz3PQ5zljBykO+\nPFu0D67uO2GeE8znDexksyMbE8b/Qp6jJoZ2oK4zNPGoA8xoEMlKHv199WiSUL7a\n+YZnNeEgP7zBK5YFZhXF8t3fJawOId1k4o7drJAvEOzAMF60wjWqZckDTHhcEkcc\nENPV5oQxEx3hv+GSrDS/BlRSVgWsfOtr/TOkOgRlv7S8neJBwBcBJbj+upQIgWlW\nHz6s7/9TSEZwGw558+2Iafjzl7qYiCsSZF9eqmFQJs+GzN807jRdFnQUURw+/t15\nuEMJu9RwqHtHSD6hjQ4u\n=7K2D\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f982b95f2d60d78834a30bbbbfc2baab577b5f80\nparent a8ca3999d7d0addd27a59d9c1fbf9f12866d2293\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1780140657 +0700\ncommitter GitHub <noreply@github.com> 1780140657 +0700\n\nchore(tests): fix analyzer print statement issues with debugPrint (#4821)\n\n* chore(tests): fix analyzer print statement issues with debugPrint\n\n* fix(tools): revert standalone CLI scripts to print to keep dart run working\n\ndebugPrint from package:flutter/foundation pulls in dart:ui transitively,\nwhich is unavailable under the bare Dart VM, breaking 'dart run' for these\nstandalone tools. It also buffers output, risking loss of the error+stack\nbefore exit(1). Use print + file-level avoid_print ignore instead, and\nre-add dart:typed_data for Uint8List in test_upload.dart.",
+        "verified_at": "2026-05-30T11:30:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4edf414cc425abcacae2f1704fe2396c324e2e6c",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/4edf414cc425abcacae2f1704fe2396c324e2e6c",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/4edf414cc425abcacae2f1704fe2396c324e2e6c/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a8ca3999d7d0addd27a59d9c1fbf9f12866d2293",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/a8ca3999d7d0addd27a59d9c1fbf9f12866d2293",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/a8ca3999d7d0addd27a59d9c1fbf9f12866d2293"
+      }
+    ]
+  },
+  {
+    "sha": "a8ca3999d7d0addd27a59d9c1fbf9f12866d2293",
+    "node_id": "C_kwDOO71yAtoAKGE4Y2EzOTk5ZDdkMGFkZGQyN2E1OWQ5YzFmYmY5ZjEyODY2ZDIyOTM",
+    "commit": {
+      "author": {
+        "name": "Alex Frei",
+        "email": "40503456+hm21@users.noreply.github.com",
+        "date": "2026-05-30T11:30:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-30T11:30:31Z"
+      },
+      "message": "fix(video-recorder): prevent clearing video publish state when returning from editor (#4829)\n\n* fix(video-recorder): prevent clearing video publish state when returning from editor\n\n* fix(video-recorder): add autosave functionality to video editor tests\n\n* fix(video-editor): remove autosave state from VideoEditorProviderState in tests\n\n* fix(video-recorder): keep editor state when opening camera from editor\n\nLibrary/draft-resume opens the editor without mounting the recorder, so a previously persisted classic/upload recorder mode survives. Opening the in-editor camera dispatched VideoRecorderInitializeRequested without a fromEditor flag, triggering a mode-restore that called reset()/clearAll() and wiped the in-memory editor title/description/clips.\n\nThread fromEditor from screen -> event -> bloc and skip the mode-restore when opened from the editor. Adds mutation-sensitive tests for both paths.",
+      "tree": {
+        "sha": "52902a072498cc5759f6fceac9f34cee71125d3c",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/trees/52902a072498cc5759f6fceac9f34cee71125d3c"
+      },
+      "url": "https://api.github.com/repos/divinevideo/divine-mobile/git/commits/a8ca3999d7d0addd27a59d9c1fbf9f12866d2293",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGspXCRC1aQ7uu5UhlAAAtFcQABVK1a9fiSYJMIPeZy7OyeKX\nMAibl/ct3MwGulRC+ustX1InkH6Okhs/13RRruhl2ZLvRFsNVaStNGIHkDFDkdWp\nX/Upuux3Py/CCsldPHqtAcq7qrC6qjdUR27PHnhSxYMMTjmShtcjheA0Eqovq9v3\nD0VRUYG/eBwPcsHxycG7RNYIoDpV1T1dpvq9chKI2MhNuyJRdhVCBBbT/REyAOT1\npNY7FliJdA1Qwkq+6uTAxacY5+WxocMOYIh1uHJM89IVHazNAXuvN1+d41wq9aX0\nXkQPwyN66U8D9CPG+RqX3/PotOCOfKziqyhjySXZN5fGgAmBQC7NPG3yuDInoGz9\nspa8qILcsT3lG0PsR9h9epyVqAJrbqRUT2UR/Mu2Yr0fFdTVZOpd9TnOcLNLHbXT\nA9bUWqPB+FJ7h6S2ZwrOKQxx5AytiOmLvFlsHNla41F8H8+S9qZ5IsVHGWRm8AeU\navtOB7chRlndxsTfI6kqEy9re1gGZHJC3xKzJ1MZn1bJJeHz93VN5zfMKmWI11g1\nB/0w6EsHv5DgztKJICA6gI4hLLzTEGQqhJvA+Pmenb1+TMq4+bRDUhNi7RK9Keo+\nMEvkC/PxcR6/nTIFJ0mfaqdczubN6TJj/7+7XVWJER142Ck7eKBFM37cXaM4K/rI\nm8Fc+Tl2Tu8m+HguZiPw\n=kUZP\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 52902a072498cc5759f6fceac9f34cee71125d3c\nparent 54d124ae390b99c0f9ccd0b8d5ac28b6a9dd9522\nauthor Alex Frei <40503456+hm21@users.noreply.github.com> 1780140631 +0700\ncommitter GitHub <noreply@github.com> 1780140631 +0700\n\nfix(video-recorder): prevent clearing video publish state when returning from editor (#4829)\n\n* fix(video-recorder): prevent clearing video publish state when returning from editor\n\n* fix(video-recorder): add autosave functionality to video editor tests\n\n* fix(video-editor): remove autosave state from VideoEditorProviderState in tests\n\n* fix(video-recorder): keep editor state when opening camera from editor\n\nLibrary/draft-resume opens the editor without mounting the recorder, so a previously persisted classic/upload recorder mode survives. Opening the in-editor camera dispatched VideoRecorderInitializeRequested without a fromEditor flag, triggering a mode-restore that called reset()/clearAll() and wiped the in-memory editor title/description/clips.\n\nThread fromEditor from screen -> event -> bloc and skip the mode-restore when opened from the editor. Adds mutation-sensitive tests for both paths.",
+        "verified_at": "2026-05-30T11:30:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/a8ca3999d7d0addd27a59d9c1fbf9f12866d2293",
+    "html_url": "https://github.com/divinevideo/divine-mobile/commit/a8ca3999d7d0addd27a59d9c1fbf9f12866d2293",
+    "comments_url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/a8ca3999d7d0addd27a59d9c1fbf9f12866d2293/comments",
+    "author": {
+      "login": "hm21",
+      "id": 40503456,
+      "node_id": "MDQ6VXNlcjQwNTAzNDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40503456?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hm21",
+      "html_url": "https://github.com/hm21",
+      "followers_url": "https://api.github.com/users/hm21/followers",
+      "following_url": "https://api.github.com/users/hm21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hm21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hm21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hm21/subscriptions",
+      "organizations_url": "https://api.github.com/users/hm21/orgs",
+      "repos_url": "https://api.github.com/users/hm21/repos",
+      "events_url": "https://api.github.com/users/hm21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hm21/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "54d124ae390b99c0f9ccd0b8d5ac28b6a9dd9522",
+        "url": "https://api.github.com/repos/divinevideo/divine-mobile/commits/54d124ae390b99c0f9ccd0b8d5ac28b6a9dd9522",
+        "html_url": "https://github.com/divinevideo/divine-mobile/commit/54d124ae390b99c0f9ccd0b8d5ac28b6a9dd9522"
+      }
+    ]
+  }
+]

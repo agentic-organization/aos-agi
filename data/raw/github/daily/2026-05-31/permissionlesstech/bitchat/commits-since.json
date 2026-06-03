@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "764f016d17976c10c469a30737e9049cce0fd80b",
+    "node_id": "C_kwDOPG3UANoAKDc2NGYwMTZkMTc5NzZjMTBjNDY5YTMwNzM3ZTkwNDljY2UwZmQ4MGI",
+    "commit": {
+      "author": {
+        "name": "jack",
+        "email": "212554440+jackjackbits@users.noreply.github.com",
+        "date": "2026-05-30T12:13:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-30T12:13:26Z"
+      },
+      "message": "[codex] Refactor app runtime and ownership architecture (#1104)\n\n* Refactor app runtime and view model architecture\n\n* Move app ownership into stores and coordinators\n\n* Fix smoke test environment injection\n\n* Stabilize fragmentation package tests\n\n* Fix coordinator build warnings\n\n* Clean up chat view model warnings\n\n* Fix Nostr relay startup coalescing\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+      "tree": {
+        "sha": "1775e5fbd7a0cca2a7a5954e1e20bfdb6b12f23f",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/trees/1775e5fbd7a0cca2a7a5954e1e20bfdb6b12f23f"
+      },
+      "url": "https://api.github.com/repos/permissionlesstech/bitchat/git/commits/764f016d17976c10c469a30737e9049cce0fd80b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqGtRmCRC1aQ7uu5UhlAAAnQ8QADBMFHFtMWhkbxj24YDxle7g\nd478dPzo/F6jeBH83xheRuvh/45THPF9BXyP/lcO8t8DXTXGBddIYd3Tyl1Y5Ruo\ntU2DOsnrb4VquFMKVJ0yrJ6fEacloY2JTTGVAIXeSNL6j1OXsQJQWQoEV1QXHTKg\n/Ri6QrxeObEicKwp/lAdcU4L2jvlJI8kSx8qvGa0TpbeF5YUgciwOXuxwab6vK2z\nK83F7/Tu4Cq6NmCgvv8lXFXdC2/Ixmh/t0O3CZlW6c8HiRMLrXFKRgXkNDrMVhhn\nUd0MMhQDx1/8Ta4hnGstBv5WhLDdXRdOooV777qzL580+boWy/TqEpbAZe6k78Tg\n1Ip1zTzi2xXnkOJO5B6YTYHNS3uRyD4dUZ7NlHanB+EZCalN3P98BtEsQAzJQjG6\nD5+ZEl1sW8/+4JEANlavAxJLaHnQdjW5uz5OVKGMEBIvi30bq26sYAQmn2IuDYPx\nRHNC1qBGXVqxy95w3zvf9Lw8/YzGOATPe08X3Gvuyp0B1QEOcX6lC6WiBNPRZMj5\nFnOpYHBC2F1/5aCFe59njG4Mk8ydVsyMdB+7p2BGm8xc268oFhZ8CkbGgD5u5Whp\nfRJLBHZ32kbLe1Eg50Zg6bBHo1SHIZw7lOP4dKt/nuRPAW6VM1PG211Chw6yH28f\nERMx2tlmVJwDTYRrhwJM\n=9IYj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1775e5fbd7a0cca2a7a5954e1e20bfdb6b12f23f\nparent a6cb8872fb0453974a387aa57d32dd51631429d1\nauthor jack <212554440+jackjackbits@users.noreply.github.com> 1780143206 +0200\ncommitter GitHub <noreply@github.com> 1780143206 +0200\n\n[codex] Refactor app runtime and ownership architecture (#1104)\n\n* Refactor app runtime and view model architecture\n\n* Move app ownership into stores and coordinators\n\n* Fix smoke test environment injection\n\n* Stabilize fragmentation package tests\n\n* Fix coordinator build warnings\n\n* Clean up chat view model warnings\n\n* Fix Nostr relay startup coalescing\n\n---------\n\nCo-authored-by: jack <jackjackbits@users.noreply.github.com>",
+        "verified_at": "2026-05-30T12:13:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/764f016d17976c10c469a30737e9049cce0fd80b",
+    "html_url": "https://github.com/permissionlesstech/bitchat/commit/764f016d17976c10c469a30737e9049cce0fd80b",
+    "comments_url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/764f016d17976c10c469a30737e9049cce0fd80b/comments",
+    "author": {
+      "login": "jackjackbits",
+      "id": 212554440,
+      "node_id": "U_kgDODKtSyA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/212554440?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jackjackbits",
+      "html_url": "https://github.com/jackjackbits",
+      "followers_url": "https://api.github.com/users/jackjackbits/followers",
+      "following_url": "https://api.github.com/users/jackjackbits/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jackjackbits/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jackjackbits/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jackjackbits/subscriptions",
+      "organizations_url": "https://api.github.com/users/jackjackbits/orgs",
+      "repos_url": "https://api.github.com/users/jackjackbits/repos",
+      "events_url": "https://api.github.com/users/jackjackbits/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jackjackbits/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a6cb8872fb0453974a387aa57d32dd51631429d1",
+        "url": "https://api.github.com/repos/permissionlesstech/bitchat/commits/a6cb8872fb0453974a387aa57d32dd51631429d1",
+        "html_url": "https://github.com/permissionlesstech/bitchat/commit/a6cb8872fb0453974a387aa57d32dd51631429d1"
+      }
+    ]
+  }
+]
