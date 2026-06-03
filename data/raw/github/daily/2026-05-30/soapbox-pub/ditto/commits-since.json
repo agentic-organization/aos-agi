@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "bcc318bc8cd043fadbfccf5b5a58a68b43de645b",
+    "node_id": "C_kwDOL5Eek9oAKGJjYzMxOGJjOGNkMDQzZmFkYmZjY2Y1YjVhNThhNjhiNDNkZTY0NWI",
+    "commit": {
+      "author": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-30T00:13:18Z"
+      },
+      "committer": {
+        "name": "Alex Gleason",
+        "email": "alex@alexgleason.me",
+        "date": "2026-05-30T00:13:18Z"
+      },
+      "message": "Replace genUserName with \"Anonymous\" fallback\n\nRemove the deterministic adjective+noun username generator and use a\nplain \"Anonymous\" fallback wherever a user has no name/display_name.\nDeletes src/lib/genUserName.ts and its test, drops all imports, and\nupdates the NoteContent test to assert the new fallback.",
+      "tree": {
+        "sha": "d39f12fe4b12ee84e509e3c0609172eddce03f59",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/git/trees/d39f12fe4b12ee84e509e3c0609172eddce03f59"
+      },
+      "url": "https://api.github.com/repos/soapbox-pub/ditto/git/commits/bcc318bc8cd043fadbfccf5b5a58a68b43de645b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEESof9JJzQIzN3kpf4chHR+ZdE+7cFAmoaK54ACgkQchHR+ZdE\n+7f6lQ/+Jtp711Ysg6l4k6ys9SBS7/ZSld457yn20qJ1L3aRsLWpc8zrbqynXzx2\ns78+JB+5lKaoS5KVBh2lPoiOfKOzex07iQJqlZgFtudaQa5EZhvpldAMio8Ssxcx\nfvVYqVeBvIHBS/yIssKptc4o2Ew3if55RhRubn61TI29sWw7M/vNHImNvLCGm42d\nahEdtePdHt/h5s9Sptx+AGPdVhEO/CE5WnufvUhcPmMyn+XJ8FrlP35PjKZk0ncu\ndUFy8KbsBeAC3MXUTxJ9HzhFcIb+n2iCjl7GOZZep24coHyk7xmx8fXpOf8T7X1T\nfZQ7wkcMinoEPAqYVp6fZ0KOBJycey4AcZFSpgZ1Zrwy52pqB6eTqH5eCQlR3HCu\npOpe1h8oUG8Lb6QK3g7ZxPnH+VpHCO4GdQP5xgcT1at82X6TIQiLwao92jo0fEAh\nxSugEjlCpMpKDqDVHFAbzFwAgsX+kWJxIvYZrBcj5mghkYmhLr6Cs5oGzHtNE2xE\n+tzjEw3wDa10of/rNLXp7AhgtRFVSvjtptNMG7ExMWRhBCRJDAGBj7SvqgYe/n6U\n6lQAb2/q7B15d2kM/VjHeOXKKqAJE0kwR2/uR6+gznWdqSBPGBT7wOS6UdTF4tV6\nSm7wSgceEsapLnN/y/rf/vxlp0rDd3+ZV0g/8ooQ/P7A1OGKBOQ=\n=Wu4X\n-----END PGP SIGNATURE-----",
+        "payload": "tree d39f12fe4b12ee84e509e3c0609172eddce03f59\nparent 1bbc05635b7c7259c50fdd2a38879bc8dd49d91a\nauthor Alex Gleason <alex@alexgleason.me> 1780099998 +0200\ncommitter Alex Gleason <alex@alexgleason.me> 1780099998 +0200\n\nReplace genUserName with \"Anonymous\" fallback\n\nRemove the deterministic adjective+noun username generator and use a\nplain \"Anonymous\" fallback wherever a user has no name/display_name.\nDeletes src/lib/genUserName.ts and its test, drops all imports, and\nupdates the NoteContent test to assert the new fallback.\n",
+        "verified_at": "2026-05-30T00:15:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/bcc318bc8cd043fadbfccf5b5a58a68b43de645b",
+    "html_url": "https://github.com/soapbox-pub/ditto/commit/bcc318bc8cd043fadbfccf5b5a58a68b43de645b",
+    "comments_url": "https://api.github.com/repos/soapbox-pub/ditto/commits/bcc318bc8cd043fadbfccf5b5a58a68b43de645b/comments",
+    "author": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexgleason",
+      "id": 3639540,
+      "node_id": "MDQ6VXNlcjM2Mzk1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3639540?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgleason",
+      "html_url": "https://github.com/alexgleason",
+      "followers_url": "https://api.github.com/users/alexgleason/followers",
+      "following_url": "https://api.github.com/users/alexgleason/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgleason/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgleason/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgleason/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgleason/orgs",
+      "repos_url": "https://api.github.com/users/alexgleason/repos",
+      "events_url": "https://api.github.com/users/alexgleason/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgleason/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1bbc05635b7c7259c50fdd2a38879bc8dd49d91a",
+        "url": "https://api.github.com/repos/soapbox-pub/ditto/commits/1bbc05635b7c7259c50fdd2a38879bc8dd49d91a",
+        "html_url": "https://github.com/soapbox-pub/ditto/commit/1bbc05635b7c7259c50fdd2a38879bc8dd49d91a"
+      }
+    ]
+  }
+]

@@ -27,6 +27,15 @@
 - People pages updated: [[people/thesimplekid]], [[people/egge21m]], [[people/minibits-cash]], [[people/alexgleason]]
 - Files modified: 9 wiki pages
 
+## [2026-05-30] ingest | Daily GitHub ingestion run 2026-05-30 + wiki synthesis
+- Run: `data/raw/github/daily/2026-05-30/` (110 repos attempted, 0 errors, run_id: 20260530T060702Z-github-daily)
+- Notable activity synthesized into wiki pages:
+  - [[projects/divine-mobile]] — 2 commits by [[people/realmeylisdev]] and [[people/hm21]] (VideoRecorderBloc sequential() refactor, video-editor split functionality with robust state management). **25 issues updated**.
+  - [[projects/minibits]] — 1 commit by [[people/minibits-cash]] ("Fix loadMintFromCache"). **41 events**, **43 updated PRs**.
+  - [[projects/ditto]] — 1 commit by [[people/alexgleason]] on GitHub mirror ("Replace genUserName with 'Anonymous' fallback"). **100 events**.
+- People pages updated: [[people/realmeylisdev]], [[people/hm21]], [[people/minibits-cash]], [[people/alexgleason]]
+- Files modified: 7 wiki pages
+
 ## [2026-05-22] ingest | Daily GitHub ingestion run 2026-05-22 + wiki synthesis
 - Run: `data/raw/github/daily/2026-05-22/` (110 repos attempted, 0 errors, run_id: 20260522T060056Z-github-daily)
 - Notable activity synthesized into wiki pages:
